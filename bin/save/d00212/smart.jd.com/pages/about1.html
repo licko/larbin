@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>京东智能</title>
+    <meta content="智能硬件，智能手环，智能手表，智能生活，智能社区，微联，JD，京东首发，智能试用" name="keywords">
+    <meta content="京东智能是京东成立的子集团，主要负责未来京东集团在智能领域的相关业务。京东智能建立了开放的线上页面，让所有对智能感兴趣的人都能来体验智能，试用、购买智能新品。同时，京东建立了线下京东JD+智能奶茶馆，通过奶茶馆的运营，让爱智能的人一起来玩智能，感受智能。" name="description">
+    <link href="http://static.360buyimg.com/nsng/jingzhi/2.0/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet"  href="http://misc.360buyimg.com/jdf/1.0.0/unit/??ui-base/1.0.0/ui-base.css,shortcut/2.0.0/shortcut.css,global-header/1.0.0/global-header.css,myjd/2.0.0/myjd.css,nav/2.0.0/nav.css,shoppingcart/2.0.0/shoppingcart.css,global-footer/1.0.0/global-footer.css,service/1.0.0/service.css,basePatch/1.0.0/basePatch.css"/>
+    <script type="text/javascript">window.pageConfig = {compatible: true}</script>
+    <link rel="stylesheet" href="http://static.360buyimg.com/nsng/smart/2.0/skin/common.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/nsng/smart/2.0/skin/about.css"/>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body class="root61">
+<div id="shortcut-2014" tag="10">
+    <div class="w">
+        <ul class="fl">
+            <li class="return-jd"><a href="http://www.jd.com/">京东首页</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="fore1" id="ttbar-login">
+                <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore2">
+                <div class="dt">
+                    <a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore3 dorpdown" id="ttbar-myjd">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://home.jd.com/">我的京东</a>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore4">
+                <div class="dt">
+                    <a target="_blank" href="http://vip.jd.com/">京东会员</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore5">
+                <div class="dt">
+                    <a target="_blank" href="http://b.jd.com/">企业采购</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore6 dorpdown" id="ttbar-apps">
+                <div class="dt cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://app.jd.com/">手机京东</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore7 dorpdown" id="ttbar-atte">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>关注京东
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore8 dorpdown" id="ttbar-serv">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>客户服务
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore9 dorpdown" id="ttbar-navs">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>网站导航
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+<div class="header-wrap">
+    <div class="w smart-header">
+        <div id="logo-2014" tag="1">
+            <a href="http://smart.jd.com/" class="logo">京东智能</a>
+        </div>
+        <div id="search-2014" tag="2">
+            <ul id="shelper" class="hide"></ul>
+            <div class="form">
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
+                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+            </div>
+        </div>
+        <div id="settleup-2014" tag="3">
+            <div class="cw-icon">
+                <i class="ci-left"></i>
+                <i class="ci-right">&gt;</i>
+                <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+            </div>
+        </div>
+        <div id="hotwords-2014"></div>
+        <div class="links">
+            <ul>
+                <li tag="4" class="curr"><a href="http://smart.jd.com/">首页</a></li>
+                <li tag="5"><a target="_blank" href="http://jingzhi.jd.com/">社区</a></li>
+                <li tag="6"><a target="_blank" href="http://smarthome.jd.com/">微联</a></li>
+                <li tag="7"><a target="_blank" href="http://try.smart.jd.com/">试用</a></li>
+                <li tag="8"><a target="_blank" href="http://sale.jd.com/act/hXAiw4m1WF.html">众筹</a></li>
+                <li tag="9"><a target="_blank" href="http://new.jd.com/">首发</a></li>
+            </ul>
+        </div>
+
+        <span class="clr"></span>
+    </div>
+</div>
+
+<div id="about">
+    <div class="w">
+        <div class="left">
+            <div class="ab_sideMenu">
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about1.html"><i></i>京东智能</a></h3>
+                    <ul>
+                        <!--当前加 “cur”-->
+                        <li><a href="about1.html#1" target="_self">关于京东智能</a></li>
+                        <li><a href="about1.html#2" target="_self">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about2.html"><i></i>智能社区</a></h3>
+                    <ul>
+                        <li><a href="about2.html#1" target="_self">关于智能社区</a></li>
+                        <li><a href="about2.html#2" target="_self">玩转社区</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about3.html"><i></i>京东微联</a></h3>
+                    <ul>
+                        <li><a href="about3.html#1" target="_self">关于京东微联</a></li>
+                        <li><a href="about3.html#2" target="_self">厂商加入</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about4.html"><i></i>JD<sup>+</sup>孵化器</a></h3>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about5.html"><i></i>JD<sup>+</sup>首发</a></h3>
+                    <ul>
+                        <li><a href="about5.html#1" target="_self">关于JD<sup>+</sup>首发</a></li>
+                        <li><a href="about5.html#2" target="_self">商家报名</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="ab_article">
+                <h2 class="pmTit">京东智能</h2>
+                <div class="pmCon">
+                    <a  class="anchor_line" name="1"></a>
+                    <h4>关于京东智能</h4>
+                    <p>
+                        京东智能是京东成立的子集团，主要负责未来京东集团在智能领域的相关业务。京东智能的使命是聚焦于真正热爱生活的人，并且让他们生活的简单、快乐。
+                        <br /><br />
+                        在此使命下，我们提出了“JD+开放平台”计划。“JD+开放平台”是针对智能行业初创企业、传统企业打造的开放服务平台。我们将针对被服务企业，为他们提供投资孵化、设计、营销、供应链、互联互通、云等六大核心资源，帮助合作企业孵化优质产品，助力企业成功。同时，对于智能用户，我们提供了“京东微联”APP，即让用户使用一款App就可以控制海量的智能设备。未来，我们会继续专注提升“京东微联”App的用户体验，在开放性、场景化、第三方服务方面进行提升，让用户体验未来智能生活。
+                        <br /><br />
+                        京东智能建立了开放的线上页面(smart.jd.com)，让所有对智能感兴趣的人都能来体验智能，试用、购买智能新品。同时，京东建立了线下京东JD+智能奶茶馆，未来奶茶馆聚焦于创业孵化、行业交流、新品首发路演、智能领域重要信息发布等。通过奶茶馆的运营，让爱智能的人一起来玩智能，感受智能。
+                    </p>
+                    <br /><br />
+                    <a  class="anchor_line" name="2"></a>
+                    <h4>联系我们</h4>
+                    <p>
+                        1、地址：北京市大兴区亦庄经济技术开发区荣华中路19号朝林广场A座28层<br />
+                        2、邮编：100101<br />
+                        3、关注京东智能微信公众号：<br />
+                        <img src="http://static.360buyimg.com/nsng/smart/imgs/ewm_big.jpg" width="220">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" tag="70">
+    <div class="w">
+        <div class="footer-group">
+            <h3><a href="http://smart.jd.com/">京东智能</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#1">关于京东智能</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#2">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://jingzhi.jd.com/">智能社区</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://try.smart.jd.com/">JD<sup>+</sup>试用</a></li>
+                <li><a target="_blank" href="http://jingzhi.jd.com/open/bsite/square">小站广场</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://smarthome.jd.com/">京东微联</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smartcloud.jd.com/app">微联APP</a></li>
+                <li><a target="_blank" href="http://devsmart.jd.com/dev/index">开发者中心</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://new.jd.com/">JD<sup>+</sup>首发</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#1">关于JD<sup>+</sup>首发</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#2">商家报名</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2004-2015 京东JD.com 版权所有
+        </div>
+    </div>
+</div>
+<script src="http://static.360buyimg.com/nsng/jingzhi/common/js/jquery-1.11.2.min.js"></script>
+<script src="http://static.360buyimg.com/nsng/jingzhi/common/js/juicer-min.js"></script>
+<script src="http://static.360buyimg.com/nsng/smart/2.0/js/common.js"></script>
+<script src="http://static.360buyimg.com/nsng/smart/2.0/js/about.js"></script>
+<script>
+seajs.use(['http://misc.360buyimg.com/jdf/1.0.0/unit/globalInit/2.0.0/globalInit.js'],function(globalInit){
+    globalInit();
+    (function(){
+        var A="";
+        var B=[""];
+        B=pageConfig.FN_GetRandomData(B);
+        $("#hotwords-2014").html(A);
+        $("#key").val(B).css("color","#ccc").bind("focus",function(){if (this.value==B){this.value="";this.style.color="#333"}}).bind("blur",function(){if (!this.value){this.value=B;this.style.color="#999"}});
+    })();
+});
+</script>
+</body>
+</html>

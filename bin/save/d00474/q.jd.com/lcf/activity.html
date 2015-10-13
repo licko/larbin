@@ -1,0 +1,1398 @@
+<link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css?t=20140703"/>
+<script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.8.3/jquery.js,base/1.1.0/js/base.js"></script>
+<style>
+</style>
+	<!--header-->
+	<!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+	<!--header end-->
+<div class="mainDiv" style="position: relative;">
+	<div class="getOther" style="positoin:absolute;">
+		<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <script>
+	function isMobilePhone() {
+	
+		function getCookie(sName) {
+			var sCookies = document.cookie ;
+			if ("string" == typeof(sName)) {
+				var sRE = "(?:; )?"+sName+"=([^;]*);?" ;
+				var reRE = new RegExp(sRE) ;
+				if (reRE.test(sCookies)) {
+					return decodeURIComponent(RegExp["$1"]) ;
+				} else {
+					return null ;
+				}
+			} else {
+				return sCookies ;
+			}
+		}
+				
+		var pcPageTip = '您将要跳转到电脑版网页，会使用较多手机上网流量，是否继续？';
+		var cUrl = window.location.href;
+		var referrer = document.referrer;
+		var mIndex = 'http://m.jd.com/?v=1';
+		
+		var mFlag = window.location.hash, pcmFlag = getCookie('pcm');
+		
+		/*
+		if(mFlag == '#m'){
+			if (confirm(pcPageTip)) {
+				return;
+			}
+		}
+		*/
+		
+        var userAgent = navigator.userAgent;
+        if(userAgent){
+			userAgent = userAgent.toUpperCase();
+			if(userAgent.indexOf("PAD")>-1){
+                 return;
+            }
+			var mobilePhoneList = ["IOS","IPHONE","ANDROID","WINDOWS PHONE"];
+			for(var i=0,len=mobilePhoneList.length;i<len;i++){
+				if(userAgent.indexOf(mobilePhoneList[i])>-1){
+									
+											function isPcPage(url) {
+							var pcDomains = ['sale.jd.com', 'pinpaijie.jd.com', 'jrj.jd.com'];
+							for (var i = 0, len = pcDomains.length; i < len; i++) {
+								if (url.indexOf(pcDomains[i]) != -1) return true;
+							}
+							return false;
+						}
+						
+        				var mUrl = cUrl.replace(/sale\.jd\.com\/act/,'m.jd.com/sale/act');
+						
+						// no sale m & mc
+						if(isPcPage(mUrl) || mFlag == '#m' || pcmFlag == '1') {
+							if (confirm(pcPageTip)) {
+								return;
+							} else {
+								/*
+								if (referrer && referrer != '') {
+									if (referrer === cUrl) {
+										window.location.href = mIndex;
+										return;
+									} else {
+										window.location.href = referrer;
+										return;
+									}
+								} else {
+									window.location.href = mIndex;
+									return;
+								}
+								*/
+								window.location.href = 'http://m.jd.com';
+								return;
+							}
+						}
+						
+						// M page
+						if (mUrl.indexOf('m.jd.com') != -1) {
+							var tempUrl = cUrl.replace("http://","");
+							var newmUrl = "http://h5.m.jd.com/active/fastshop/index.html?url="+tempUrl;
+							window.location.href = newmUrl;
+							return;
+						}
+        							}
+             }
+         }
+     }
+	 
+	 
+			 isMobilePhone();
+	 </script> 
+  <!--JA统计--> 
+  <script>var jdpts=new Object();jdpts._st=new Date().getTime();</script> 
+  <meta content="京东轻众筹聚合页活动为您推荐当下最流行的品牌,欢迎参加京东轻众筹聚合页" name="description" /> 
+  <meta content="京东轻众筹聚合页,京东全品类活动,京东" name="keywords" /> 
+  <title>
+							轻众筹聚合页 - 京东全品类专题活动-京东
+			</title> 
+  <link rel="icon" href="http://www.jd.com/favicon.ico" mce_href="http://www.jd.com/favicon.ico" type="image/x-icon" /> 
+  <link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css?t=1509301101" charset="gb2312" /> 
+  <link type="text/css" rel="stylesheet" href="http://misc.360buyimg.com/jdf/1.0.0/unit/??ui-base/1.0.0/ui-base.css,shortcut/2.0.0/shortcut.css,global-header/1.0.0/global-header.css,myjd/2.0.0/myjd.css,nav/2.0.0/nav.css,shoppingcart/2.0.0/shoppingcart.css,global-footer/1.0.0/global-footer.css,service/1.0.0/service.css" /> 
+  <link rel="stylesheet" type="text/css" href="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/css/??jdCssInit.css,css_cube_application_layout.css?t=201508141600" /> 
+  <script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js?t=1509301101"></script> 
+  <!--[if lte IE 7]><script type="text/javascript" src="http://static.360buyimg.com/jshop/common/jquery/json2.js"></script><![endif]--> 
+  <script type="text/javascript" src="http://misc.360buyimg.com/??jdf/1.0.0/unit/base/1.0.0/base.js"></script> 
+  <script type="text/javascript" src="http://static.360buyimg.com/jshop/sale-p/view/stable/??seajs-combo.js?t=1509301101"></script> 
+  <style>
+		
+.single-place{position:absolute;bottom:0;left:0;}
+.userdefined-153704 .j-module{zoom:1; overflow:hidden;}
+
+    </style> 
+ </head> 
+ <body> 
+  <input type="hidden" id="JSHOP_CHANNEL_FLAG" value="ipad" /> 
+  <input type="hidden" value="348049" id="pageInstance_appId" /> 
+  <input type="hidden" value="8174560" id="pageInstance_id" /> 
+  <input type="hidden" id="moduleScript" value="&lt;script type=&quot;text/javascript&quot; moduleinit=&quot;module&quot; src=&quot;http://sale.jd.com/jm.htm?js=/script/module/user-define/UserDefine.js&amp;t=1509301101&quot;&gt;&lt;/script&gt;" /> 
+  <input id="resourcePath" type="hidden" value="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/" /> 
+  <input id="timestamp" type="hidden" value="201508141600" /> 
+  <input id="testSidebar" type="hidden" value="test" /> 
+  <script type="text/javascript">
+    (function(){var a=document.getElementById("nav-2013");if(!a){return};var b=document.createElement("div");b.className="w";b.style.position="relative";b.style.paddingLeft="210px";b.style.width=window.pageConfig.compatible?"1000px":"780px";b.innerHTML=a.innerHTML;a.parentNode.className="";a.style.paddingLeft="0";a.style.marginBottom="0";a.innerHTML="";a.appendChild(b)})();
+    </script> 
+  <div class="layoutcontainer" isfixed="0" style="margin:0 auto;width:px; background:#ecf0f1 url()   repeat;"> 
+   <div class="layoutarea"> 
+    <div class="layout" id="8174559"> 
+     <div class="layout_one w990 "> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="layoutarea"> 
+    <div class="layout" id="8174563" style="width:100%;"> 
+     <div class="layout_one  "> 
+      <div class=" userdefined-153704   " instanceid="8174564" style="margin-bottom: 10px;" module-name="UserDefine"> 
+       <div class="mc" style=";min-height:0px;"> 
+        <div class="j-module" module-function="autoCenter,rid" module-param="{}"> 
+         <div class="userDefinedArea" style="width:auto;"> 
+          <style type="text/css">.clearfix{ clear:both; zoom:1;}
+/*Carousel css*/
+.wrapga{ width:100%; margin:0 auto; background:#f3f3f3;}
+.banner{ width: 100%; height:auto; position: relative; overflow: hidden; margin:0 auto;}
+.banner-btn{display:none;}
+.banner-btn a{display:block;position:absolute;top:50%; width:60px ;height:100px; margin-top:-50px; opacity:0.5;filter:alpha(opacity=50) color:rgb(255, 255, 255);overflow:hidden;z-index:4; background:#000;}
+.wrapga .prevBtn{left:11%;}
+.wrapga .nextBtn{right:11%;}
+.banner-img{font-size:0;*word-spacing:-1px;/* IE6、7 */ letter-spacing:-3px;position:relative;}
+.banner-img li{width:16.66%; position:relative; overflow:hidden; display:inline-block;*display:inline;*zoom:1;/* IE6、7 */ vertical-align:top;letter-spacing:normal;word-spacing:normal;font-size:12px;}
+.banner-img li a{ width:100%; height:auto; display:block; position:relative;}
+.banner-img li img{ display:block; width:100%;}
+.banner-btn span{ width:60px;height:100px;cursor:pointer;display:block;}
+.banner .nextBtn span{background:url(http://img10.360buyimg.com/cms/jfs/t1786/357/657205620/1482/b290c158/55d6c873Na119da34.png) top center no-repeat;}
+.banner .prevBtn span{background:url(http://img12.360buyimg.com/cms/jfs/t1780/213/655785787/1462/d4904238/55d6c873N3d3b6d97.png) top center no-repeat;}
+.banner-circle{position:absolute;left:50%;bottom:15px;height:13px;text-align:center;font-size:0;}
+.banner-circle li{border-radius:10px;margin-left:12px;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1;}
+.banner-circle li a{display:block;padding-top:15px;width:15px;height:0;border-radius:50%;background:#90bce1;overflow:hidden;}
+.banner-circle .selected a{background:#4faeff;}
+/*Tab css*/
+.showDl{ width:100%; margin:0 auto; background:#ecf0f1;}
+.weeks{ width:1060px; height:550px;margin:80px auto 0; background:#ecf0f1;}
+.weekItem{width:1060px; height:48px; display:block; margin:0 auto; background:url(http://img13.360buyimg.com/cms/jfs/t1639/90/946380110/6470/f843da1a/55dbc209N7b4dcf36.png) no-repeat;}
+.weekItem li{float:left; height:48px; width:353px; text-align:center;cursor:pointer;}
+.weekItem .titw1{ background:url(http://img11.360buyimg.com/cms/jfs/t1678/244/729553266/3624/6ed61ae0/55dbc208N97205848.png) 0 0 no-repeat #ecf0f1;}
+.weekItem .titw2{ background:url(http://img11.360buyimg.com/cms/jfs/t1678/244/729553266/3624/6ed61ae0/55dbc208N97205848.png) -360px 0 no-repeat #ecf0f1;}
+.weekItem .titw3{ background:url(http://img11.360buyimg.com/cms/jfs/t1678/244/729553266/3624/6ed61ae0/55dbc208N97205848.png) -707px 0 no-repeat #ecf0f1;}
+.weekItem li.on{background:none; cursor:pointer;}
+.box01_c{width:1060px; height:480px; position:relative; overflow:hidden;}
+.box01_c dl{ width:103%; height:480px; display:block;}
+.box01_c dl dd{ width:250px; height:450px; float:left; margin:17px 22px 13px 0; overflow:hidden; position:relative;}
+.box01_c dl dd .dlDiv{ width:250px; height:450px;background:#EEEEEE;}
+.dlDiv .igDiv{ width:250xp; height:250xp; position:relative;}
+.dlDiv .igDiv .twm{ width:160px; height:160px; display:none; position:absolute; top:45px; left:45px; background:#fff;}
+.dlDiv .igDiv .twm img{ width:100%; display:block;}
+.dlDiv .igDiv .thzz{ width:35px; height:20px; display:block; position:absolute; bottom:0; left:50%; margin-left:-17px;}
+.dlDiv .txtDiv{ width:250px; height:200px; position:relative; background:#FFF; text-align:center;}
+.dlDiv .txtDiv .tzTit{ line-height:36px; font-family:"微软雅黑"; font-size:24px; color:#000; font-weight:bold; padding-top:15px;}
+.dlDiv .txtDiv .lineDiv{ width:64px; height:1px; margin:6px auto 15px; background:#000;}
+.dlDiv .txtDiv .zcTz{ line-height:24px; font-size:14px; font-family:"微软雅黑"; text-align:center; color:#595757;}
+.dlDiv .txtDiv .txtTwm{ width:142px; height:40px; line-height:40px; margin:20px auto 0; border-radius:20px; color:#FFF; font-size:18px; background:#4faeff; box-shadow:0 5px 2px #2485d7; cursor:pointer; font-family:"微软雅黑";}
+.dlDiv .txtDiv .txtTwma{ background:#2485d7 !important; box-shadow:0 5px 2px #4faeff !important;}
+/*Auto css*/
+.showZ{ width:100%; height:auto; margin:115px auto; position:relative; overflow:hidden;}
+.showZ .groupa{ width:37.5%; height:auto; position:relative; float:left;}
+.showZ .groupb{ width:25%; height:auto; position:relative; float:left;}
+.showZ .groupc{ width:37.5%; height:auto; position:relative; float:left;}
+.aoRow{ overflow:hidden; position:relative;}
+.aoRow img{ width:100%; display:block;}
+.fullz{ width:100%; overflow:hidden; position:relative;}
+.clearbox{ clear:both;}
+.fgDiv{ width:100%; height:100%; position:absolute; top:0; left:0; background:#000; opacity:0.3;}
+/*A css*/
+.gaTop .aoRow{ width:33.33%; float:left;}
+.gaBom .bomaL{ width:66.66%; float:left;}
+.gaBom .bomaL .bomaLt{ width:100%;}
+.gaBom .bomaL .bomaLb .aoRow{ width:50%; float:left;}
+.gaBom .bomaR{ width:33.34%; float:left;}
+/*B css*/
+.gbTop .topbL{ width:50%; float:left;}
+.gbTop .topbR{ width:50%; float:left;}
+/*C css*/
+.gcTop .topcL{ width:66.66%; float:left;}
+.gcTop .topcR{ width:33.34%; float:left;}
+.gcTop .topcL .topcLt{ width:100%;}
+.gcTop .topcL .topcLt .aoRow{ width:50%; float:left;}
+.gcBom .bomcL{ width:33.33%; float:left;}
+.gcBom .bomcR{ width:66.67%; float:left;}
+/*last css*/
+.rowBg{ width:100%;}
+.zBg1{ height:501px; margin-top:120px; background:url(http://img10.360buyimg.com/cms/jfs/t1525/197/766702832/192659/7c96bbc7/55dc29cdNea477344.jpg) top center no-repeat;}
+.rowAn{ width:1200px; height:501px; margin:0 auto; position:relative;}
+.pofixa{ width:800px; height:200px; position:absolute; top:0; left:50%; margin-left:-400px; background:url(http://img10.360buyimg.com/cms/jfs/t1339/90/632745183/22712/5de9b99f/55dc1efbNae12088f.png) no-repeat;}
+.pofixa a{ width:200px; height:200px; display:block; margin-right:100px; float:left;}
+.pofixa .btna{ background:url(http://img12.360buyimg.com/cms/jfs/t1324/95/525154085/20897/3dd90711/55dc1efcN912b1ad8.png) 0 0 no-repeat;}
+.pofixa .btnb{ background:url(http://img12.360buyimg.com/cms/jfs/t1324/95/525154085/20897/3dd90711/55dc1efcN912b1ad8.png) -300px 0 no-repeat;}
+.pofixa .btnc{ background:url(http://img12.360buyimg.com/cms/jfs/t1324/95/525154085/20897/3dd90711/55dc1efcN912b1ad8.png) -600px 0 no-repeat;}
+.bgnone{ background:none !important;}
+.zBg2{ height:600px; background:url(http://img10.360buyimg.com/cms/jfs/t1759/151/861599810/86997/72d3295c/55dc29cdN5064ced7.jpg) top center no-repeat;}
+.zBg3{ height:400px; background:url(http://img12.360buyimg.com/cms/jfs/t1831/215/791262150/110617/d142f20c/55daf68fN4204b051.jpg) top center no-repeat;}
+.rowBg .bg3Po{ width:1200px; height:400px; margin:0 auto; position:relative;}
+#conz2{ width:100px; height:1px; position:absolute; top:-135px; left:0; opacity:0;}
+.zBg4{ height:650px; background:url(http://img10.360buyimg.com/cms/jfs/t1744/58/886895406/140956/21d65bf0/55dafdbbN8b64c15b.jpg) top center no-repeat;}
+.zBg5{ height:400px; background:url(http://img14.360buyimg.com/cms/jfs/t1756/297/800703306/120463/48ccb12/55daf68fN287b0b99.jpg) top center no-repeat;}
+.rowBg .bg5Po{ width:1200px; height:400px; margin:0 auto; position:relative;}
+#conz3{ width:100px; height:1px; position:absolute; top:-135px; left:0; opacity:0;}
+.zBg6{ height:740px; background:url(http://img13.360buyimg.com/cms/jfs/t1378/199/526905931/87336/1b23dc62/55de7278N2c37f516.jpg) top center no-repeat #eeeeee;}
+.rowBg .rowZn{ width:1200px; height:650px; position:relative; margin:0 auto;}
+/*change css*/
+.aniShow{ position:relative;}
+.shrowz{ width:204px; height:360px;  position:absolute; bottom:142px; right:233px;}
+.shrowcon{ position:relative;  width:204px; height:360px; overflow:hidden;}
+.shrowcon p{ position:absolute; top:0; left:0;}
+.showlist1{ display:block;}
+.showlist2{ display:none;}
+.showlist3{ display:none;}
+.showlist4{ display:none;}
+.showlist5{ display:none;}
+.shbtn2 { height:8px; position:absolute; top:460px; left:35px; z-index:20px}
+.shbtn2 p{ width:15px; height:15px; float:left; margin:0 10px 0 0; background:#91a7c8; border:1px solid #CCCCCC; border-radius:15px;}
+
+.spanBtn{ width:666px; height:400px; padding:150px 0 0 50px;}
+.txtBtn{ width:666px; height:80px; display:block; color:#595757; cursor:pointer;}
+.txtBtn p{ line-height:32px; margin-right:12px; font-size:32px; font-family:"宋体"; display:block; float:left;}
+.txtBtn span{ line-height:38px; display:block; font-size:18px; width:435px; float:left; font-family:"微软雅黑";}
+/*fixed css*/
+.pofixL{ width:75px; height:255px; position:fixed; top:50%; left:10px; margin-top:-127px; display:none;}
+.pofixL a{ width:75px; height:75px; display:block; margin-top:15px;}
+.pofixL .zzmcc{ width:75px; height:75px; display:block; position:relative;}
+.pzBza{ width:237px; height:75px; display:block; position:absolute; top:0; left:0; display:none;}
+/*R nav*/
+.pofixR{ width:70px; height:250px; position:fixed; bottom:20px; right:40px;background:url(http://img10.360buyimg.com/cms/jfs/t1765/341/928175196/6586/77bc6e45/55dd3990Ne1404d62.png) no-repeat; display:none;}
+.pofixR a{ width:70px; height:70px; display:block; margin-top:20px;}
+.pofixR .btna{ background:url(http://img13.360buyimg.com/cms/jfs/t1810/185/877637127/4598/e1bc42c9/55dc3837Na154df60.png) 0 0 no-repeat;}
+.pofixR .btnb{ background:url(http://img13.360buyimg.com/cms/jfs/t1810/185/877637127/4598/e1bc42c9/55dc3837Na154df60.png) 0 -90px no-repeat;}
+.pofixR .btnc{ background:url(http://img13.360buyimg.com/cms/jfs/t1810/185/877637127/4598/e1bc42c9/55dc3837Na154df60.png) 0 -180px no-repeat;}
+/*fixedpobd css*/
+.fixedbd{ width:100%; height:100%; position:fixed; top:0; left:0; display:none;}
+.opBlock{ width:100%; height:100%; background:#000; opacity:0.5; position:absolute; top:0; left:0;}
+.qaDiv{ width:600px; height:370px; padding:10px 30px; position:absolute; top:50%; left:50%; margin-left:-300px; margin-top:-185px; background:#FFF; box-shadow:-5px -5px 2px #CCC; overflow:auto;}
+.qaDiv p{ font-size:14px; color:#0a668c; font-family:"微软雅黑"; line-height:20px; margin-top:6px; font-weight:bold;}
+.qaDiv p span{ color:#000; font-size:14px; line-height:18px; display:block; font-weight:normal;}
+.qaDiv .closeBtn{ display:block; float:right; margin:-5px -30px 0 0; font-size:42px; cursor:pointer; color:#b7b9ba;}
+.pzGom{ width:100%; height:100%; display:block; position:absolute; top:0; left:0; text-align:center; opacity:0;}
+.pzGoma{ width:50%; left:25%;}
+.pzGomb{ top:25%;}
+.fullz .pzGom img{ width:80%; height:auto; display:block; background:#FFF; margin:8%;}
+</style> 
+          <div class="wrapga" id="bdz"> 
+           <div class="banner"> 
+            <div class="banner-btn"> 
+             <a href="javascript:;" class="prevBtn" clstag="sale|keycount|8174564|1"><span></span></a> 
+             <a href="javascript:;" class="nextBtn" clstag="sale|keycount|8174564|2"><span></span></a> 
+            </div> 
+            <ul class="banner-img clearfix"> 
+             <li class="lbLs"> <a target="_blank" href="http://sale.jd.com/act/lZ2yfrEbNFvzYmjx.html" clstag="sale|keycount|8174564|3"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1288/92/1273880325/285329/205d7ba8/55faa3e5N651438fd.jpg" alt="" /></a></li> 
+             <li class="lbLs"> <a target="_blank" href="http://sale.jd.com/act/RcsnFwuMibapV6.html" clstag="sale|keycount|8174564|4"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1849/99/222113052/156273/630caa94/55f7f1aaNf2ea5a5f.png" alt="" /></a> </li> 
+             <li class="lbLs"><a target="_blank" href="http://sale.jd.com/act/t1Dk3Px2GJ.html" clstag="sale|keycount|8174564|5"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t2038/361/211905716/190214/51c3f83a/55f69383N9f3f9781.jpg" alt="" /></a> </li> 
+             <li class="lbLs"><a target="_blank" href="http://sale.jd.com/act/0udIOESwr6zX.html" clstag="sale|keycount|8174564|6"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t2425/176/188313456/280256/ff13a2d2/55f63ae5N9029f4a4.jpg" alt="" /></a> </li> 
+             <li class="lbLs"> <a target="_blank" href="http://q.jd.com/lcf/aggregatePage.html" clstag="sale|keycount|8174564|7"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1651/188/712989618/292624/463b1d6d/55db1619Nc482c03c.jpg" alt="" /></a></li> 
+             <li class="lbLs"> <a target="_blank" href="http://sale.jd.com/act/zSmctasurxVDeN.html" clstag="sale|keycount|8174564|8"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1639/331/982566878/246521/7a7da499/55db1618N737add6f.jpg" alt="" /></a> </li> 
+            </ul> 
+            <ul class="banner-circle" style="margin-left: -39px;"> 
+            </ul> 
+           </div> 
+          </div> 
+          <div class="showDl"> 
+           <div class="weeks"> 
+            <ul class="weekItem" id="weektab"> 
+             <li class="titw1"></li> 
+             <li class="titw2"></li> 
+             <li class="titw3"></li> 
+            </ul> 
+            <div class="box01_c" id="weekcon"> 
+             <div style="position:relative;"> 
+              <dl> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2197/353/447373209/24862/d0d9171d/560901e8Nbc50cd3d.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1972/151/428229706/12295/befe8aae/560903abN86ee405f.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2028009774458.html" clstag="sale|keycount|8174564|9">中医江湖</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">中医江湖</p> 
+                  <p class="zcTz">武林高手 谁与争锋</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t2206/353/402136441/29291/574deafc/560901e8Nd291bc45.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2440/136/421418148/12264/13c2b649/560903aaNc3a7c4e4.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2028524504569.html" clstag="sale|keycount|8174564|10">安全早知道</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">安全早知道</p> 
+                  <p class="zcTz">发现您身边的安全</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1813/356/1768083001/27010/a7b87627/560901e9Na8bbbde7.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1879/220/411548012/12269/70a3590f/560903abNf0a1eb83.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2028198749143.html" clstag="sale|keycount|8174564|11">留住时间</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">留住时间</p> 
+                  <p class="zcTz">修复照片 给父母一份专属回忆</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t2182/243/409908757/13384/bf5a3c69/560901e8N00d0de4b.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1822/195/1740182459/12323/c830a055/560903abN91dbcc28.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2104679337366.html" clstag="sale|keycount|8174564|12">定制心理咨询师</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">定制心理咨询师</p> 
+                  <p class="zcTz">你们需要倾听者</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+              </dl> 
+              <dl> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1945/213/419462173/32881/2695faca/560901e8Nb8027611.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1984/148/439126703/12298/7f41e0b5/560903abN21984eda.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2027673122835.html" clstag="sale|keycount|8174564|13">让糯米兔动起来</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">让糯米兔动起来</p> 
+                  <p class="zcTz">支持原创动漫电影</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1870/44/419455438/35038/ea387ad2/560906acN39e20000.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1771/20/1726552273/12317/566d7749/560903abN10959373.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2104658397341.html" clstag="sale|keycount|8174564|14">真情无价</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">真情无价</p> 
+                  <p class="zcTz">帮助星星父亲治疗眼睛</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2197/353/447373209/24862/d0d9171d/560901e8Nbc50cd3d.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2494/225/432388113/12194/50015c47/560903aaNd9e021b4.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2028497308975.html" clstag="sale|keycount|8174564|15">读书万卷</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">读书万卷</p> 
+                  <p class="zcTz">书中自有颜如玉</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2335/294/431676355/34033/f29485d/560901e8Ncb708359.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t2437/144/418460814/12204/2f923069/560903aaN166f682f.jpg" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2028107103636.html" clstag="sale|keycount|8174564|16">创业艰辛</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">创业艰辛</p> 
+                  <p class="zcTz">单身妈妈的不寻常之路</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+              </dl> 
+              <dl> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1639/242/1043823896/13192/ee4d88d2/55dd3d6dN0ca1e561.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1825/1/923615054/539/c98cb0f/55dd6793N073b4454.png" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2023800326183.html" clstag="sale|keycount|8174564|17">支援天津</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">筹钱！</p> 
+                  <p class="zcTz">祈福之外，尽自己绵薄之力</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1321/73/580112578/7725/184936c7/55dd3d6eNd6e35f6c.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1696/42/813471886/539/87a42/55dd6793N174efd41.png" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2020598422336.html" clstag="sale|keycount|8174564|18">Cloudlock</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">Cloudlock</p> 
+                  <p class="zcTz">颠覆你对锁的认识</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1651/128/806100338/10927/8c9351f8/55dd3d6eNf4c52625.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1300/358/604484910/539/1c10f1ec/55dd6793N4674865f.png" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/1771955479141.html" clstag="sale|keycount|8174564|19">如果我会说人话</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">如果我会说人话</p> 
+                  <p class="zcTz">如果我会说人话</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+               <dd> 
+                <div class="dlDiv"> 
+                 <div class="igDiv mouseImg"> 
+                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1324/292/586012886/12498/53e2d387/55dd3d6eN525e8e85.jpg" /> 
+                  <span class="twm"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1696/47/806876268/541/c947d5f7/55dd6793Naa13b4ff.png" /></span> 
+                  <span class="thzz"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1681/215/1176017129/1139/5b10ddfc/55daacc2Ncf73cc96.png" /></span> 
+                 </div> 
+                 <div class="txtDiv"> 
+                  <p class="tzTit"><a target="_blank" href="http://q.jd.com/lcf/project/details/2022580449147.html" clstag="sale|keycount|8174564|20">让爱美的你更美</a></p> 
+                  <div class="lineDiv"></div> 
+                  <p class="zcTz">让爱美的你更美</p> 
+                  <p class="zcTz">让爱美的你更美</p> 
+                  <div class="txtTwm mouseHover">
+                    查看二维码 
+                  </div> 
+                 </div> 
+                </div> 
+               </dd> 
+              </dl> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="showZ"> 
+           <div class="groupD groupa"> 
+            <div class="fullz gaTop zgDiv"> 
+             <div class="aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1759/34/826123999/21816/ca78830b/55db1616Ndfc402a5.jpg" /> 
+              <span class="pzGom"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1765/161/943388626/547/4043ca2/55dd6d8eN30063c87.png" /></span> 
+             </div> 
+             <div class="aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1711/35/898403056/10483/9bac5804/55db1616Nfc095b5a.jpg" /> 
+              <span class="pzGom"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1819/233/963578882/537/7ac7a031/55dd6d8eN96f639f5.png" /></span> 
+             </div> 
+             <div class="aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1804/117/777505613/5179/5e4202d5/55dae4a4N5d3e5f47.jpg" /> 
+             </div> 
+             <div class="fgDiv"></div> 
+            </div> 
+            <div class="clearbox"></div> 
+            <div class="fullz gaBom zgDiv"> 
+             <div class="bomaL"> 
+              <div class="bomaLt aoRow"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1168/250/1349797310/27243/7c239a80/55db1617N532c190e.jpg" /> 
+               <span class="pzGom pzGoma"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1807/278/934553220/556/a91abfd/55dd6dceN5a119db0.png" /></span> 
+              </div> 
+              <div class="bomaLb"> 
+               <div class="aoRow"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1807/214/791330142/5887/cbdc8149/55dae4a4N52c92647.jpg" /> 
+               </div> 
+               <div class="aoRow"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1168/244/1336427321/10348/acd2531c/55db1616N998155cf.jpg" /> 
+                <span class="pzGom"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1714/131/1028005248/537/68162e06/55dd6dceNe23fcee0.png" /></span> 
+               </div> 
+              </div> 
+              <div class="clearbox"></div> 
+             </div> 
+             <div class="bomaR aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1831/312/795826548/21264/44cb3b76/55db1617Nca9274b3.jpg" /> 
+              <span class="pzGom pzGomb"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1759/334/904279474/550/8a2c5508/55dd6dceN90fa11a1.png" /></span> 
+             </div> 
+             <div class="fgDiv"></div> 
+            </div> 
+           </div> 
+           <div class="groupD groupb zgDiv"> 
+            <div class="fullz gbTop"> 
+             <div class="topbL aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1708/98/869596884/27562/3bc285f/55db1617N4ef564c3.jpg" /> 
+              <span class="pzGom pzGomb"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1777/16/953329825/521/653725bb/55dd6e21Nf41fb247.png" /></span> 
+             </div> 
+             <div class="topbR"> 
+              <div class="aoRow"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1720/73/868238027/21435/9897242b/55db1616Nc6a4fc75.jpg" /> 
+               <span class="pzGom"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1378/265/488249638/554/612feb5b/55dd6e21N6fe73bd9.png" /></span> 
+              </div> 
+              <div class="aoRow"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1168/111/1317951578/5155/42096eb0/55dae4a6N70001237.jpg" /> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="clearbox"></div> 
+            <div class="fullz gbBom"> 
+             <div class="aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1810/47/801593520/46278/ab6b9bf3/55db1617N6c359472.jpg" /> 
+              <span class="pzGom pzGoma"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1750/231/971490851/544/4c8f9110/55dd6e20N55ce2f9e.png" /></span> 
+             </div> 
+            </div> 
+            <div class="fgDiv"></div> 
+           </div> 
+           <div class="groupD groupc"> 
+            <div class="fullz gcTop zgDiv"> 
+             <div class="topcL"> 
+              <div class="topcLt"> 
+               <div class="aoRow"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1753/93/860063622/11294/6bbe8fe7/55db1616N3ffba087.jpg" /> 
+                <span class="pzGom"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1816/75/924025243/542/355cf7c/55dd6e97Nd693b649.png" /></span> 
+               </div> 
+               <div class="aoRow"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1168/107/1343502727/5193/a51643e1/55dae4a7N11ec1970.jpg" /> 
+               </div> 
+              </div> 
+              <div class="clearbox"></div> 
+              <div class="topcLb aoRow"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1300/11/493945600/37292/f74303c2/55db1617N7d7e4d6d.jpg" /> 
+               <span class="pzGom pzGoma"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1813/89/938492756/554/20c9abbd/55dd6e97N9a48e8e8.png" /></span> 
+              </div> 
+             </div> 
+             <div class="topcR aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1822/48/810384436/17794/5fcaabc0/55db1616N15151345.jpg" /> 
+              <span class="pzGom pzGomb"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1771/156/919134465/526/ba0aded6/55dd6e97N1c9607a4.png" /></span> 
+             </div> 
+             <div class="fgDiv"></div> 
+            </div> 
+            <div class="clearbox"></div> 
+            <div class="fullz gcBom zgDiv"> 
+             <div class="bomcL aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1696/307/687011779/4914/e47765e7/55dae4a8N43bde052.jpg" /> 
+             </div> 
+             <div class="bomcR aoRow"> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1681/224/1225270476/34667/47447cc0/55db1617Na84f8c6f.jpg" /> 
+              <span class="pzGom pzGoma"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1738/29/968158640/547/ee591989/55dd6eccNb9b1cef2.png" /></span> 
+             </div> 
+             <div class="fgDiv"></div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="rowBg zBg1" id="conz1"> 
+           <div class="rowAn"> 
+            <div class="pofixa navMz"> 
+             <a href="#conz1" class="btna" clstag="sale|keycount|8174564|21"></a> 
+             <a href="#conz2" class="btnb" clstag="sale|keycount|8174564|22"></a> 
+             <a href="#conz3" class="btnc" style="margin-right:0;" clstag="sale|keycount|8174564|23"></a> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="rowBg zBg2"></div> 
+          <div class="rowBg zBg3"> 
+           <div class="bg3Po"> 
+            <div id="conz2"></div> 
+           </div> 
+          </div> 
+          <div class="rowBg zBg4"> 
+           <div class="rowZn"> 
+            <div class="shrowz"> 
+             <div class="shrowcon"> 
+              <p class="showlist1"> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1753/333/888307049/38731/88cf4826/55dafdbaN17383d5c.jpg" alt="" /> </p> 
+              <p class="showlist2"> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1708/341/855842895/55122/c0de4ff0/55dafdbbNc933c2bc.jpg" alt="" /> </p> 
+              <p class="showlist3"> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1288/239/479624779/65274/42cb0eb8/55dafdbbN497bbdef.jpg" alt="" /> </p> 
+              <p class="showlist4"> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1789/61/788536639/32834/933e8e6a/55dafdbbN7a39a5ec.jpg" alt="" /> </p> 
+              <p class="showlist5"> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1834/297/806037293/62755/dedf41a2/55dafdbbNed7d2754.jpg" alt="" /> </p> 
+             </div> 
+             <div class="shbtn2"> 
+              <p class="btn1" id="btn2a" style="background:#4faeff;"> </p> 
+              <p class="btn2" id="btn2b"> </p> 
+              <p class="btn3" id="btn2c"> </p> 
+              <p class="btn4" id="btn2d"> </p> 
+              <p class="btn5" id="btn2e"> </p> 
+             </div> 
+            </div> 
+            <div class="spanBtn"> 
+             <div class="txtBtn btn1" id="btn1a" style="color:#4faeff;"> 
+              <p>STEP1</p> 
+              <span>关注“京东商城众筹大趴”微信公众号，时刻掌握项目进度和信息。</span> 
+             </div> 
+             <div class="txtBtn btn2" id="btn1b"> 
+              <p>STEP2</p> 
+              <span>在公众号的底栏中找到轻众筹，点击进入轻众筹首页。</span> 
+             </div> 
+             <div class="txtBtn btn3" id="btn1c"> 
+              <p>STEP3</p> 
+              <span>发起→点击底栏的“+”号→登陆京东账号→进入项目发起页。</span> 
+             </div> 
+             <div class="txtBtn btn4" id="btn1d"> 
+              <p>STEP4</p> 
+              <span>依次填写所有信息。</span> 
+             </div> 
+             <div class="txtBtn btn5" id="btn1e"> 
+              <p>STEP5</p> 
+              <span>填写完成后、点击发起后分享到微信、微博，展开传播与分享。</span> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="rowBg zBg5"> 
+           <div class="bg5Po"> 
+            <div id="conz3"></div> 
+           </div> 
+          </div> 
+          <div class="rowBg zBg6"></div> 
+          <div class="pofixL"> 
+           <a href="#conz1" class="btna" style="margin-top:0;" clstag="sale|keycount|8174564|24"><span class="zzmcc"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1678/202/777394928/3789/77eca364/55dc2f8fN047a6dfe.png" /><em class="pzBza"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1759/116/858775885/7141/878782e8/55dc2f8fN0704cfd9.png" /></em></span></a> 
+           <a href="#conz2" class="btnb" clstag="sale|keycount|8174564|25"><span class="zzmcc"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1345/183/762071838/4746/9687f677/55dc2f8fNb86c6dda.png" /><em class="pzBza"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1714/290/904955977/9026/483f44d9/55dc2f8fN0d0fa936.png" /></em></span></a> 
+           <a href="#conz3" class="btnc" clstag="sale|keycount|8174564|26"><span class="zzmcc"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1738/232/929858199/4151/6ce5d0bb/55dc2f8fN0f55e27f.png" /><em class="pzBza"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1828/328/870208873/8341/6f14e1a/55dc2f8fNfb9c80f4.png" /></em></span></a> 
+          </div> 
+          <div class="pofixR navMz"> 
+           <a href="javascript:void(0)" class="btna qaZom" style="margin-top:0;" clstag="sale|keycount|8174564|27"></a> 
+           <a href="mailto:crowd@jd.com" class="btnb" clstag="sale|keycount|8174564|28"></a> 
+           <a href="#bdz" class="btnc" clstag="sale|keycount|8174564|29"></a> 
+          </div> 
+          <div class="fixedbd"> 
+           <div class="opBlock"></div> 
+           <div class="qaDiv"> 
+            <span class="closeBtn">&times;</span> 
+            <p>Q：为什么我会在手机端注册不了京东账户？<span>A：请在PC尝试注册（<a href="https://www.jd.com" clstag="sale|keycount|8174564|30">https://www.jd.com</a>）</span></p> 
+            <p>Q：为什么我发的项目小编推荐找不到？<span>A：轻众筹是基于熟人社交圈的分享传播，项目如果没有进行分享传播其他人是看不见的。</span></p> 
+            <p>Q：我可以发起几个轻众筹？<span>A：每个账号每月可以发起5次轻众筹。</span></p> 
+            <p>Q：怎样的可以上轻众筹的小编推荐？<span>A：尽量提高支持人数和支持金额，约接近阈值排名越靠前。</span></p> 
+            <p>Q：为什么有的项目有固定档位，我发的却没有？<span>A：固定档位只对于轻众筹认证用户开放，具体认证事宜可以邮件咨询<a href="mailto:crowd@jd.com" clstag="sale|keycount|8174564|31">jdjr-qcz@jd.com</a>。</span></p> 
+            <p>Q：轻众筹收费吗？<span>A：业界良心，纯免费，没有平台费。</span></p> 
+            <p>Q：朋友们支持我的钱会放在哪里？<span>A：众筹中的项目，支持人所支持的金额暂由京东保管，众筹成功后由发起人直接提现至银行卡。如果项目众筹失败，支持人所支持款项原路退回。</span></p> 
+            <p>Q：支付好复杂，可不可以开通微信支付？<span>A：不可能，只有京东支付。</span></p> 
+            <p>Q：众筹成功后为什么会有“审核中”的状态？<span>A：对于所筹金额大于300的项目我们会进行人工审核，确认没有盗刷、套现等风险后进行放款处理，处理时长在1-2个工作日内。</span></p> 
+            <p>Q：轻众筹如何提现?<span>A：项目所筹期限结束后进入项目详情页，下方的“我要支持”按钮会变为“我要提现”。点击提现即可。</span></p> 
+            <p>Q：为什么提现的时候让我去小金库，这俩有毛关系？<span>A：对于没有实名验证的京东账户我们会进行实名验证，进入小金库存入1元钱可以进行实名验证。如果不想存入1元钱，可以进入京东钱包（https://www.jdpay.com/）登录时输入与所发起轻众筹一致的京东账户，进行实名验证。验证成功后返回轻众筹提现即可。</span></p> 
+            <p>Q：提现后多长时间到账：<span>A：视银行速度。</span></p> 
+           </div> 
+          </div> 
+          <script type="text/javascript">$(function(){
+        var $banner=$('.banner');
+        var $banner_ul=$('.banner-img');
+        var $btn=$('.banner-btn');
+        var $btn_a=$btn.find('a')
+        var v_width=$banner.width();
+        var page=1;
+        var timer=null;
+        var btnClass=null;
+        var page_count=$banner_ul.find('li').length;//把这个值赋给小圆点的个数
+        var banner_cir='<li class="selected" href="#"><a></a></li>';
+        for(var i=1;i<page_count;i++){
+                //动态添加小圆点
+                banner_cir+="<li><a href='#'></a></li>";
+                }
+        $('.banner-circle').append(banner_cir);
+        var cirLeft=$('.banner-circle').width()*(-0.5);
+        $('.banner-circle').css({'marginLeft':cirLeft});
+        $banner_ul.width(page_count*v_width);
+        function move(obj,classname){
+                //手动及自动播放
+        if(!$banner_ul.is(':animated')){
+                if(classname=='prevBtn'){
+                        if(page==1){
+                                        $banner_ul.animate({left:-v_width*(page_count-1)});
+                                        page=page_count; 
+                                        cirMove();
+                        }
+                        else{
+                                        $banner_ul.animate({left:'+='+v_width},"slow");
+
+                                        page--;
+
+                                        cirMove();
+                        }      
+                }
+                else{
+                        if(page==page_count){
+                                        $banner_ul.animate({left:0});
+                                        page=1;
+                                        cirMove();
+                                }
+                        else{
+                                        $banner_ul.animate({left:'-='+v_width},"slow");
+                                        page++;
+                                        cirMove();
+                                }
+                        }
+                }
+        }
+        function cirMove(){
+                //检测page的值，使当前的page与selected的小圆点一致
+                $('.banner-circle li').eq(page-1).addClass('selected')
+                   .siblings().removeClass('selected');
+
+        }
+        $banner.mouseover(function(){
+                $btn.css({'display':'block'});
+                clearInterval(timer);
+                                }).mouseout(function(){
+                $btn.css({'display':'none'});      
+                clearInterval(timer);
+                timer=setInterval(move,3000);
+                                }).trigger("mouseout");//激活自动播放
+        $btn_a.mouseover(function(){
+                //实现透明渐变，阻止冒泡
+                        $(this).animate({opacity:0.8},'fast');
+                        $btn.css({'display':'block'});
+                         return false;
+                }).mouseleave(function(){
+                        $(this).animate({opacity:0.5},'fast');
+                        $btn.css({'display':'none'});
+                         return false;
+                }).click(function(){
+                        //手动点击清除计时器
+                        btnClass=this.className;
+                        clearInterval(timer);
+                        timer=setInterval(move,3000);
+                        move($(this),this.className);
+                });
+        $('.banner-circle li').live('click',function(){
+                        var index=$('.banner-circle li').index(this);
+                        $banner_ul.animate({left:-v_width*index},'slow');
+                        page=index+1;
+                        cirMove();
+                });
+});
+</script> 
+          <script type="text/javascript">function week_init(){
+	$("#weektab li").each(function(i){
+		$(this).click(function(){week_click(i);}).hover(function(){$(this).addClass('hover');},function(event){$(this).removeClass('hover');});
+	});
+	var w = 1;
+	if (w!==0){ w=0;} 
+	week_click(w);
+	$("#weekcon dl:last").css({"padding-bottom":"0","margin-bottom":"0"});
+}
+function week_click(num){
+	$("#weektab li").removeClass('on').eq(num).addClass('on');
+	$curdl=$("#weekcon dl").eq(num);
+	var posi=$curdl.position();
+	$("#weekcon").animate({scrollTop:posi.top},1000);
+}
+$(function(){
+	
+	week_init();
+});
+</script> 
+          <script type="text/javascript">$(".mouseHover").mouseenter(function(){	
+	$(this).parent().siblings().find(".twm").show();
+	$(this).text("扫一扫支持")
+	$(this).addClass("txtTwma")
+});
+$(".mouseHover").mouseleave(function(){	
+	$(this).parent().siblings().find(".twm").hide();
+	$(this).text("查看二维码")
+	$(this).removeClass("txtTwma")
+});
+$(".mouseImg").mouseenter(function(){	
+	$(this).find(".twm").show();
+	$(this).siblings().find(".txtTwm").text("扫一扫支持")
+	$(this).siblings().find(".txtTwm").addClass("txtTwma")
+});
+$(".mouseImg").mouseleave(function(){	
+	$(this).find(".twm").hide();
+	$(this).siblings().find(".txtTwm").text("查看二维码")
+	$(this).siblings().find(".txtTwm").removeClass("txtTwma")
+});
+</script> 
+          <script type="text/javascript">$(".zgDiv").mouseenter(function(){
+	$(this).find(".fgDiv").css("opacity","0")
+	$(this).find(".pzGom").css("opacity","1")
+})
+$(".groupD").mouseout(function(){
+	$(this).find(".fgDiv").css("opacity","0.3")
+	$(this).find(".pzGom").css("opacity","0")
+});
+$(".navMz a").mouseenter(function(){
+	$(this).addClass("bgnone")
+})
+$(".navMz a").mouseout(function(){
+	$(this).removeClass("bgnone")
+});
+$(".pofixL a").mouseenter(function(){
+	$(this).find(".pzBza").css("display","block")
+})
+$(".pofixL a").mouseleave(function(){
+	$(this).find(".pzBza").css("display","none")
+})
+</script> 
+          <script type="text/javascript">$(document).ready(function() {
+    $(".btn1").click(function(){
+		$(".showlist1").fadeIn(500).siblings().hide(500);
+		$("#btn1a").css("color","#4faeff").siblings().css("color","#595757");
+		$("#btn2a").css("background","#4faeff").siblings().css("background","#91a7c8");
+	});
+    $(".btn2").click(function(){
+		$(".showlist2").fadeIn(500).siblings().hide(500);
+		$("#btn1b").css("color","#4faeff").siblings().css("color","#595757");
+		$("#btn2b").css("background","#4faeff").siblings().css("background","#91a7c8");
+	})
+    $(".btn3").click(function(){
+		$(".showlist3").fadeIn(500).siblings().hide(500);
+		$("#btn1c").css("color","#4faeff").siblings().css("color","#595757");
+		$("#btn2c").css("background","#4faeff").siblings().css("background","#91a7c8");
+	})
+    $(".btn4").click(function(){
+		$(".showlist4").fadeIn(500).siblings().hide(500);
+		$("#btn1d").css("color","#4faeff").siblings().css("color","#595757");
+		$("#btn2d").css("background","#4faeff").siblings().css("background","#91a7c8");
+	})
+    $(".btn5").click(function(){
+		$(".showlist5").fadeIn(500).siblings().hide(500);
+		$("#btn1e").css("color","#4faeff").siblings().css("color","#595757");
+		$("#btn2e").css("background","#4faeff").siblings().css("background","#91a7c8");
+	})
+});
+</script> 
+          <script type="text/javascript">$(window).scroll(function(){
+	if ($(window).scrollTop()>450){
+		$(".pofixL, .pofixR").show(300);
+		}else{
+			$(".pofixL, .pofixR").hide(300);
+		};
+});
+$(".qaZom").click(function(){
+	$(".fixedbd").css("display","block")
+});
+$(".closeBtn").click(function(){
+	$(".fixedbd").css("display","none")
+});
+</script> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class=" userdefined-153704   " instanceid="8039860" style="margin-bottom:0px;" module-name="UserDefine"> 
+       <div class="mc" style=";min-height:0px;"> 
+        <div class="j-module" module-function="autoCenter,rid" module-param="{}"> 
+         <div class="userDefinedArea" style="width:auto;"> 
+          <script>var jaq = jaq || [];
+jaq.push(['account', 'UA-J2011-12']);
+jaq.push(['domain', 'jrapp.jd.com']);
+(function () {
+    var ja = document.createElement('script');
+    ja.type = 'text/javascript';
+    ja.async = true;
+    ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ja, s);
+})();
+
+var jaq = jaq || [];
+jaq.push(['account', 'UA-J2011-12']);
+jaq.push(['domain', 'jr.jd.com']);
+(function () {
+    var ja = document.createElement('script');
+    ja.type = 'text/javascript';
+    ja.async = true;
+    ja.src = ('https:' == document.location.protocol ? 'https://click' : 'http://click') + '.jr.jd.com/wl.dev.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ja, s);
+})();
+</script> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="layoutarea"> 
+    <div class="layout" id="8544035"> 
+     <div class="layout_one w990 "> 
+      <div class=" userdefined-153704   " instanceid="8039849" style="margin-bottom:0px;" module-name="UserDefine"> 
+       <div class="mc" style=";min-height:0px;"> 
+        <div class="j-module" module-function="autoCenter,rid" module-param="{}"> 
+         <div class="userDefinedArea" style="width:auto;"> 
+          <table id="__01" border="0" cellpadding="0" cellspacing="0" width="990"> 
+           <tbody> 
+            <tr> 
+             <td><a href="http://sale.jd.com/act/w2kQpxmqCS.html?cpdad=1DLSUE" target="_blank" clstag="sale|keycount|dibuhulian|jianerhuo"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1741/42/1352746808/26660/38cce4b5/55e43c51N76149837.jpg" alt="" height="200" width="330" /></a></td> 
+             <td><a href="http://sale.jd.com/act/sK60nD3fSIji5.html" target="_blank" clstag="sale|keycount|dibuhulian|wanbigger"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1300/176/1184094653/51328/b0a06625/55f621a1Nd8f52ed6.png" alt="" height="200" width="330" /></a></td> 
+             <td><a href="http://sale.jd.com/act/rKhJit1fWVDR.html" target="_blank" clstag="sale|keycount|dibuhulian|dapaimianxigou"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t2077/92/355127862/63220/818a19ae/560244a1Na44de18a.jpg" alt="" height="200" width="330" /></a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <style type="text/css">.kuanghulian{ width:990px; height:428px;background:#FFF;}
+.jinrongtop{ margin:10px 0 ;}
+.kuanghulian ul{width:990px; height:171px; margin-left:5px;  }
+.kuanghulian li{float:left; width:247px; height:171px; overflow:hidden; display:block;position:relative;margin-bottom: 10px;}
+.jItem01{ width:247px; height:171px; overflow:hidden;margin-bottom: 10px; }
+ 
+ 
+ .dask{
+	width: 240px;
+	height: 45px;
+	overflow: hidden;
+	position: absolute;
+	top: 171px;
+
+}
+.jItem02{float:left; width:330px; height:171px; overflow:hidden;margin-bottom: 10px; }
+ 
+ 
+ .dask1{
+	width: 240px;
+	height: 45px;
+	overflow: hidden;
+	position: absolute;
+	top: 171px;
+
+}
+</style> 
+          <script>$(function () {
+$(".jItem01").hover(
+	function () {
+		$(this).find(".dask").stop().delay(50).animate({"top":126,opacity:1},302)
+	 },
+	function () {
+		$(this).find(".dask").stop().animate({"top":171,opacity:0},302)
+	}
+	
+)
+})
+</script> 
+          <script>$(function () {
+$(".jItem02").hover(
+	function () {
+		$(this).find(".dask1").stop().delay(50).animate({"top":126,opacity:1},302)
+	 },
+	function () {
+		$(this).find(".dask1").stop().animate({"top":171,opacity:0},302)
+	}
+	
+)
+})
+</script> 
+          <div class="kuanghulian"> 
+           <div style=" width:990px; height:62px;" class="jinrongtop"> 
+            <a href="http://jr.jd.com/" target="_blank" clstag="sale|keycount|jrdibuhulian|lian00"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t304/176/395426471/11326/4587655b/540f1b65Nd08d9557.jpg" alt="" height="62" width="990" /></a> 
+           </div> 
+           <ul> 
+            <li> 
+             <div class="jItem01"> 
+              <div class="dask" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t565/43/478031708/3817/6374e7f6/546b3c28N4351c7d3.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://z.jd.com/project/details/25306.html" target="_blank" clstag="sale|keycount|8039849|5"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t2053/206/416787101/20677/cd90fd0c/5608b59eN9497dd37.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem01"> 
+              <div class="dask" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t667/97/480990427/3620/f2784551/546b3c23Na88d20a1.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://licai.jd.com" target="_blank" clstag="sale|keycount|8039849|6"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1888/286/413617739/22015/e2ab1cf5/5608b64eNdd7233d0.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem01"> 
+              <div class="dask" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t778/83/1449794255/3653/49be3c02/553f1f3cNd0e6e596.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://sale.jd.com/act/zRW2vbGBtjsdSx.html" target="_blank" clstag="sale|keycount|8039849|7"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1765/144/1752198424/25071/862e38f1/5608b61eN19bb71f5.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem01"> 
+              <div class="dask" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t1537/206/407955095/3866/80893df1/558017faN587f746f.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://jr.jd.com/" target="_blank" clstag="sale|keycount|5325222|7"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t979/342/1202058206/28014/dc26f3b7/558014aeN8ef115bf.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+           </ul> 
+           <ul> 
+            <li> 
+             <div class="jItem02"> 
+              <div class="dask1" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t667/97/480990427/3620/f2784551/546b3c23Na88d20a1.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://dq.jd.com/" target="_blank" clstag="sale|keycount|8039849|9"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t2212/234/197952546/24026/a406a85b/55f66440N782dcf3d.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem02"> 
+              <div class="dask1" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1657/131/214858790/3856/e915dd2f/55810a3aN9523af58.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://sale.jd.com/act/edVcRn1p7wBI5.html" target="_blank" clstag="sale|keycount|8039849|10"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t2038/104/361025991/22515/354c2829/56036a49Nb543af69.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem02"> 
+              <div class="dask1" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t529/153/482385457/3612/b6df4b8a/546b3c23N9405c745.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://sale.jd.com/act/SWZ80IsJY5.html" target="_blank" clstag="sale|keycount|8039849|11"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1828/7/68910406/21319/5447deaf/55cc15adNee6424b7.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+            <li> 
+             <div class="jItem02"> 
+              <div class="dask1" style="opacity:0;"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1582/230/433287274/3921/d44184ab/5583c049N5a9f1954.png" alt="" height="45" width="240" /> 
+              </div> 
+              <a href="http://sale.jd.com/act/S27euQEWftZArX.html" target="_blank" clstag="sale|keycount|8039849|12"><img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t2188/231/194190286/24261/a4fbb524/55f66445N4677f4ae.jpg" alt="" height="171" width="240" /></a> 
+             </div> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class=" userdefined-153704   " instanceid="8039851" style="margin-bottom:0px;" module-name="UserDefine"> 
+       <div class="mt" style="text-align:center;"> 
+       </div> 
+       <div class="mc" style="background: url(http://img11.360buyimg.com/cms/jfs/t2236/149/2296339/17341/6315107f/55e56f44N8a55e0a7.jpg) top;;min-height:0px;"> 
+        <div class="j-module" module-function="autoCenter,rid" module-param="{}"> 
+         <div class="userDefinedArea" style="width:auto;"> 
+          <div class="celan"> 
+           <div class="celan_po_ab"> 
+            <div> 
+             <div class="cl_header_area"> 
+              <div class="cl_header_img"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img13.360buyimg.com/cms/jfs/t1144/103/528806203/4232/3d0eba11/552cacacN0dc5d234.gif" alt="" /> 
+               <span></span> 
+              </div> 
+              <div class="cl_header_menu clearfix"> 
+               <a href="http://jr.jd.com/" class="home" target="_blank" clstag="sale|keycount|zuocedaohang|shouye"></a> 
+               <a href="http://sale.jd.com/act/sK60nD3fSIji5.html" target="_blank" class="bigger" clstag="sale|keycount|zuocedaohang|wanbigger"></a> 
+               <a href="http://sale.jd.com/act/w2kQpxmqCS.html" class="jianhuo" target="_blank" clstag="sale|keycount|zuocedaohang|jianerhuo"></a> 
+               <a href="http://sale.jd.com/act/UOtkAQrT0vo73.html" class="brand" target="_blank" clstag="sale|keycount|zuocedaohang|dapaimianxigou"></a> 
+              </div> 
+              <div class="cl_content"> 
+               <a href="http://licai.jd.com/" target="_blank" clstag="sale|keycount|zuocedaohang|licai"> 理财天天赚&gt; </a> 
+               <a href="http://z.jd.com/new.html" target="_blank" clstag="sale|keycount|zuocedaohang|zhongchou">众筹High翻天&gt;</a> 
+               <a href="http://baitiao.jd.com/activity/third" target="_blank" clstag="sale|keycount|zuocedaohang|baitiao">随心分期购&gt;</a> 
+               <a href="http://bao.jd.com/" target="_blank" clstag="sale|keycount|zuocedaohang|baoxian">保险乐无忧&gt;</a> 
+               <div class="cl_content_jd_jr"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t988/286/507133191/8804/6b49cc9b/552cacadN29eb19e4.png" alt="" /> 
+               </div> 
+               <div class="cl_content_jd_qb"> 
+                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img10.360buyimg.com/cms/jfs/t1702/66/604366411/10518/10d675de/55c9d211N67236792.png" width="80px" alt="" /> 
+               </div> 
+              </div> 
+              <div class="cl_footer"> 
+               <span> <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img12.360buyimg.com/cms/jfs/t1033/161/532937104/1390/fd23188f/552cacabN4a55fa7c.png" alt="" /> </span> 
+              </div> 
+             </div> 
+             <div class="cl_mouse_btn"> 
+              <div class="cl_mouse_btn_img"> 
+               <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img11.360buyimg.com/cms/jfs/t1111/155/524215491/3517/cd6120ff/552cacacNee434951.gif" alt="" /> 
+               <span></span> 
+              </div> 
+              <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/g10/M00/13/04/rBEQWFFj4PUIAAAAAAAESxyqJLUAADvdAIHC9oAAARj186.gif" original="http://img14.360buyimg.com/cms/jfs/t871/206/525175874/2558/3dfc5c0d/552cacacNb406449c.png" alt="" /> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <script type="text/javascript">$(function(){
+        var mouse_btn=$(".cl_mouse_btn"),
+            cl_header_area=$(".cl_header_area"),
+            celan_po_ab=$(".celan_po_ab"),
+            celan=$(".celan");
+        mouse_btn.bind("mouseenter",function(){
+            celan.stop().animate({"left":"0"});
+            celan_po_ab.stop().animate({"opacity":"100","time":500});
+            cl_header_area.stop().animate({"opacity":"100"});
+            $(this).stop().animate({"opacity":"0"},function(){
+                $(this).css("display","none");
+            })
+        });
+        cl_header_area.bind("mouseleave",function(){
+            celan.stop().animate({"left":"-172"},function(){
+                 mouse_btn.css("display","block");
+                mouse_btn.stop().animate({"opacity":"1"},300);
+            });
+            cl_header_areaa.stop().animate({"opacity":"0"});
+           
+        });
+    })
+</script> 
+          <style>html,body{
+        height: 100%;
+    }
+     .celan{
+        height:100%;
+        width: 170px;
+        background: #252525;
+        position: fixed;
+        left: -174px;
+        top: 0;
+        z-index:9999;
+        font-family:"微软雅黑"
+      } 
+      .cl_header_area{
+        padding-top: 5px;
+        opacity: 0;
+      }
+      .cl_header_menu{
+        padding-top: 6px;
+        margin: auto;
+        width: 160px;
+      }
+      .cl_header_menu a{
+        display: block;
+        height: 69px;
+        width:69px;
+        margin:5px;
+        font-size: 12px;
+        float: left;
+      }
+      
+      .cl_header_img{
+        position: relative;
+        margin-bottom: 7px;
+      }
+      .cl_header_img span{
+        border-style: solid;
+        border-width: 8px;
+        display: block;
+        height: 0px;
+        width: 0px;
+        border-color: #ea544a transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom:-14px;
+        margin-left:-4px;
+      }
+      .cl_header_menu .home{
+            
+            background:url(http://img13.360buyimg.com/cms/jfs/t1246/318/1063005464/2668/2d1ddc9a/556d2975N33b8d302.png) no-repeat;
+      }
+      .cl_header_menu .bigger{
+       
+            background:url(http://img13.360buyimg.com/cms/jfs/t1666/24/56526364/2852/a0b02e95/556d2975N95c3f66b.png) no-repeat;
+      }
+      .cl_header_menu .jianhuo{
+            background:url(http://img11.360buyimg.com/cms/jfs/t1249/102/1052976487/2242/e8559fc/556d2975N50566908.png) no-repeat;
+
+      }
+     
+      .cl_header_menu .brand{
+            background: url(http://img11.360buyimg.com/cms/jfs/t1684/27/56473874/2117/631e75da/556d2975N6093ba1d.png) no-repeat;
+      }
+      .cl_content{
+        width: 102px;
+        margin:18px auto 0;
+
+      }
+      .cl_content a{
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        margin-bottom:5px;
+        border:1px solid #fff;  
+      }
+      .cl_content a:hover{
+        border: 1px solid #ea544a;
+        color:#ea544a;
+      }
+      .cl_content a.cl_content_jd_jr:hover,.cl_content a.cl_content_jd_qb:hover{
+        border: 1px solid #ea544a;
+        color:#ea544a;
+      }
+      .cl_content .cl_content_jd_jr,.cl_content .cl_content_jd_qb{
+        color: #fff;
+         border:1px solid #fff; 
+        height: 90px;
+        text-align: center;
+        font-size:12px;
+        margin-bottom:5px; 
+      }
+      .cl_content .cl_content_jd_jr img,.cl_content .cl_content_jd_qb img{
+            padding-top: 5px;
+      }
+      .cl_content .cl_content_jd_jr p,.cl_content .cl_content_jd_qb p{
+        line-height: 24px;
+        height: 24px;
+      }
+      .cl_footer{
+        padding-top: 20px;
+        text-align: center;
+      }
+      .cl_footer img{
+        
+      }
+      .celan_po_ab>div{
+        position: relative;
+      }
+      .cl_mouse_btn_img{
+         position: relative;
+         margin-bottom:14px; 
+      }
+      .cl_mouse_btn{
+        position: absolute;
+        right: -60px;
+        top: 0;
+        width: 58px;
+        padding-top: 24px;
+        margin-bottom:16px;
+        height: 100%;
+        background: #252525;
+        text-align: center;
+      }
+      .cl_mouse_btn_img span{
+        border-style: solid;
+        border-width: 8px;
+        display: block;
+        height: 0px;
+        width: 0px;
+        border-color: #ea544a transparent transparent transparent;
+        position: absolute;
+        left: 50%;
+        bottom:-14px;
+        margin-left:-7px;
+      }
+      .celan_po_ab{
+        height: 100%;
+      }
+      .celan_po_ab>div{
+        height: 100%
+      }
+</style> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <!-- add by zhaohongbo --> 
+   <!-- 活动页面参数向下传递 --> 
+   <script>
+(function() {
+    var jHref = $("a[href^='http'], area[href^='http']"), search = location.search;
+    jHref.each(function() {
+        var _this = $(this);
+        var href = _this.attr("href"),arrUrl = href.split("?");
+        if(arrUrl.length === 1) {
+            _this.attr("href", href + search);
+        } else {
+            _this.attr("href", href + "&" + search.substring(1));
+        }
+    });
+})()
+</script> 
+  </div> 
+  <script type="text/javascript" src="http://www.jd.com/hotwords.aspx?Position=A-index-013" charset="gb2312"></script> 
+  <!--201509 by cdwanchuan--> 
+  <script type="text/javascript" src="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/script/??module/utils.js,module/Module.js?t=201508141600"></script> 
+  <script type="text/javascript" src="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/script/??CookieUtil.js,lib-v1.js?t=201508141600"></script> 
+  <script src="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/script/view/entrance.js?t=201508141600"></script> 
+  <script src="http://static.360buyimg.com/jshop/sale-p/view/20150708113635/script/??jshop.lib-v1.js?t=201508141600"></script> 
+  <script>
+		(function() {
+						var uin = '';
+			$('a,area').each(function() {
+				var _t = $(this);
+				var href = _t.attr('href');
+				if (href.indexOf('?') == -1) {
+					href = href + '?uin=' + uin;
+				} else {
+					href = href + '&uin=' + uin;
+				}
+			});
+		})()
+	</script>  
+ </body>
+</html>
+	</div>
+	<div class="gq_common">
+		<!-- <img src="http://storage.360buyimg.com/openicloud.q.jd.com/wolfberry_m_images/funding_footer.jpg" width="100%"> -->
+	</div>
+</div>
+
+<script>
+      window.jrBase = {
+         navId: 'nav-zhongchou',
+         headerFix: true,
+         feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=106'
+      };
+    </script>
+<script type="text/javascript">
+    (function () {
+        if (typeof jrBase !== 'undefined') {
+            if (typeof jrBase.navId !== 'undefined') {
+                var mainNav = document.getElementById(jrBase.navId);
+                if (mainNav) {
+                    mainNav.className += ' current'
+                }
+            }
+            if (typeof jrBase.navSubId !== 'undefined') {
+                var subNav = document.getElementById(jrBase.navSubId);
+                if (subNav) {
+                    subNav.className += ' current'
+                }
+            }
+        }
+    })();
+</script>
+	<!--
+	-->
+<!-- scripts -->
+<script type="text/javascript">
+    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();
+</script>
+<script type="text/javascript">
+	$(function(){
+		$(".getOther").css("positoin:absolute");
+	})
+</script>

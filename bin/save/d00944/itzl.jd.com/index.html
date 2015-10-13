@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1210"/>
+    <title>造乐—京东潮流数码</title>
+    <link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css" media="all"/>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="http://misc.360buyimg.com/user/channel-ZL/1.0.0/css/channel-zl.css"
+          source="combo"/>
+    <link type="text/css" rel="stylesheet"
+          href="http://misc.360buyimg.com/user/channel-ZL/1.0.0??/widget/common/common.css,/widget/focus-top/focus-top.css,/widget/gb-nav/gb-nav.css,/widget/sport-scroll/sport-scroll.css,/widget/vision/vision.css,/widget/commodity/commodity.css,/widget/sports/sports.css,/widget/social-cicle/social-cicle.css,/widget/partner/partner.css,/widget/bottom-focus/bottom-focus.css"
+          source="widget"/>
+</head>
+
+<script>
+    /** 页面加载时执行 */
+    $(document).ready(function () {
+        initPrice();
+        initZdPrice();
+        initZdDesc();
+    });
+
+    /**  */
+    function initPrice() {
+        var skus = "";
+        var items = $("#commodity").find("span[class='price']").each(function () {
+            skus += $(this).attr("floor3") + ",";
+        });
+
+        $.ajax({
+            url: "http://p.3.cn/prices/mgets?skuIds=" + skus,
+            dataType: "jsonp",
+            success: function (data) {
+                $.each(data, function () {
+                    if (this.p > -1) {
+                        $("#commodity").find("span[floor3='" + this.id + "']").html("京东价：" + this.p +"元");
+                    }
+                });
+            }
+        });
+    }
+
+    function initZdPrice() {
+        var skus = "";
+        var items = $(".silder-panel").find("a[floor4-sku-id]").each(function () {
+            skus += $(this).attr("floor4-sku-id") + ",";
+        });
+        $.ajax({
+            url: "http://p.3.cn/prices/mgets?skuIds=" + skus,
+            dataType: "jsonp",
+            success: function (data) {
+                $.each(data, function () {
+                    if (this.p > -1) {
+                        var tips = $(".silder-panel").find("a[floor4-sku-id='" + this.id + "']").attr("data-tips");
+                        $(".silder-panel").find("a[floor4-sku-id='" + this.id + "']").attr("data-tips", tips.replace("class='sku_price'></span>", "class='sku_price'> ￥" + this.p + "</span>"));
+                    }
+                });
+            }
+        });
+    }
+
+    function adFilter(ad){
+        if (ad == "") return "";
+        var a_start = ad.indexOf('<a');
+        var a_end = ad.indexOf('</a>') + '</a>'.length ;
+        var tmp_str = ad.substring(a_start, a_end);
+        return ad.replace(tmp_str, "");
+    }
+
+    function initZdDesc() {
+        var skus = "";
+        var items = $(".silder-panel").find("a[floor4-sku-id]").each(function () {
+            var tmp_sku = $(this).attr("floor4-sku-id").replace("J_","AD_");
+            skus += tmp_sku + ",";
+        });
+        $.ajax({
+            url: "http://ad.3.cn/ads/mgets?skuids=" + skus,
+            dataType: "jsonp",
+            success: function (data) {
+                $.each(data, function () {
+                    var ad =  adFilter(this.ad);
+                    if (ad.length >= 1) {
+                        ad = $.trim(ad);
+                        var skuid=this.id.replace("AD_","J_");
+                        var tips = $(".silder-panel").find("a[floor4-sku-id='" + skuid + "']").attr("data-tips");
+                        var index_t = tips.indexOf("class='sku_def'>")+"class='sku_def'>".length;
+                        var tips_h = tips.substring(0, index_t);
+                        var tips_e = tips.substring(tips.indexOf("</span>", index_t));
+                        $(".silder-panel").find("a[floor4-sku-id='" + skuid + "']").attr("data-tips", tips_h + ad + tips_e);
+                    }
+                });
+            }
+        });
+    }
+</script>
+<body id="music">
+
+
+<!--  /widget/header/header.tpl -->
+<!-- header-->
+<div id="shortcut-2013">
+    <div class="w">
+        <ul class="fl lh">
+            <li class="fore1 ld"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏京东</a></li>
+        </ul>
+        <ul class="fr lh">
+            <li class="fore1" id="loginbar">您好！欢迎来到京东！<a href="javascript:login()">[登录]</a>&nbsp;<a
+                    href="javascript:regist()">[免费注册]</a></li>
+            <li class="fore2 ld">
+                <s></s>
+                <a href="http://jd2008.jd.com/JdHome/OrderList.aspx" rel="nofollow">我的订单</a>
+            </li>
+            <li class="fore2-1 ld" id="jd-vip">
+                <s></s>
+                <a target="_blank" rel="nofollow" href="http://vip.jd.com">会员俱乐部</a>
+            </li>
+            <li class="fore3 ld menu" id="app-jd" data-widget="dropdown">
+                <s></s><i></i><span class="outline"></span><span class="blank"></span>
+                <a href="http://app.jd.com/" target="_blank">手机京东</a><b></b>
+            </li>
+            <li class="fore4 ld menu" id="biz-service" data-widget="dropdown">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                客户服务
+                <b></b>
+
+                <div class="dd">
+                    <div><a href="http://help.jd.com/index.html" target="_blank">帮助中心</a></div>
+                    <div><a href="http://myjd.jd.com/repair/orderlist.action" target="_blank" rel="nofollow">售后服务</a>
+                    </div>
+                    <div><a href="http://chat.jd.com/jdchat/custom.action" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="http://myjd.jd.com/opinion/list.action" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="http://www.jd.com/contact/service.html" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+            <li class="fore5 ld menu" id="site-nav" data-widget="dropdown">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                网站导航
+                <b></b>
+
+                <div class="dd lh">
+                    <dl class="item fore1">
+                        <dt>特色栏目</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://mobile.jd.com/index.do">京东通信</a></div>
+                            <div><a href="http://jdstar.jd.com/" target="_blank">校园之星</a></div>
+                            <div><a target="_blank" href="http://my.jd.com/personal/guess.html">为我推荐</a></div>
+                            <div><a target="_blank" href="http://shipingou.jd.com/">视频购物</a></div>
+                            <div><a target="_blank" href="http://club.jd.com/">京东社区</a></div>
+                            <div><a target="_blank" href="http://read.jd.com/">在线读书</a></div>
+                            <div><a target="_blank" href="http://diy.jd.com/">装机大师</a></div>
+                            <div><a target="_blank" href="http://giftcard.jd.com/market/index.action">京东E卡</a></div>
+                            <div><a target="_blank" href="http://channel.jd.com/jiazhuang.html">家装城</a></div>
+                            <div><a target="_blank" href="http://dapeigou.jd.com/">搭配购</a></div>
+                            <div><a target="_blank" href="http://xihuan.jd.com/">我喜欢</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore2">
+                        <dt>企业服务</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://giftcard.jd.com/company/index">企业客户</a></div>
+                            <div><a target="_blank" href="http://sale.jd.com/p10997.html">办公直通车</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore3">
+                        <dt>旗下网站</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://en.jd.com/">English Site</a></div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+
+<div id="o-header-2013">
+    <div class="w" id="header-2013">
+        <div id="logo-2013" class="ld"><a href="http://www.jd.com/" hidefocus="true"><b></b><img
+                src="http://misc.360buyimg.com/lib/img/e/logo-201305.png" width="270" height="60" alt="京东"></a></div>
+        <!--logo end-->
+        <div id="search-2013">
+            <div class="i-search ld">
+                <ul id="shelper" class="hide">
+                </ul>
+                <div class="form">
+                    <input type="text" class="text" accesskey="s" id="key" autocomplete="off"
+                           onkeydown="javascript:if(event.keyCode==13) search('key');">
+                    <input type="button" value="搜索" class="button" onclick="search('key');return false;">
+                </div>
+            </div>
+            <div id="hotwords"></div>
+        </div>
+        <!--search end-->
+        <div id="my360buy-2013">
+            <dl>
+                <dt class="ld"><s></s><a href="http://home.jd.com/">我的京东</a><b></b></dt>
+                <dd>
+                    <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                </dd>
+            </dl>
+        </div>
+        <!--my360buy end-->
+        <div id="settleup-2013">
+            <dl>
+                <dt class="ld"><s></s><span class="shopping"><span id="shopping-amount"></span></span><a
+                        href="http://cart.jd.com/cart/cart.html" id="settleup-url">去购物车结算</a> <b></b></dt>
+                <dd>
+                    <div class="prompt">
+                        <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <!--settleup end-->
+    </div>
+    <!--header end-->
+    <div class="w">
+        <div id="nav-2013">
+            <div id="categorys-2013">
+                <div class="mt ld">
+                    <h2><a href="http://www.jd.com/allSort.aspx">全部商品分类<b></b></a></h2>
+                </div>
+                <div id="_JD_ALLSORT" class="mc"></div>
+            </div>
+            <div id="treasure"></div>
+            <ul id="navitems-2013">
+                <li class="fore1" id="nav-home"><a href="http://www.jd.com/">首页</a></li>
+                <li class="fore2" id="nav-fashion"><a href="http://fashion.jd.com/">服装城</a></li>
+                <li class="fore3" id="nav-chaoshi"><a href="http://channel.jd.com/chaoshi.html">食品</a></li>
+                <li class="fore4" id="nav-tuan"><a href="http://tuan.jd.com/" target="_blank">团购</a></li>
+                <li class="fore5" id="nav-auction"><a href="http://auction.jd.com/">夺宝岛</a></li>
+                <li class="fore6" id="nav-shan"><a href="http://red.jd.com/">闪购</a></li>
+                <li class="fore7" id="nav-jinrong"><a href="http://jr.jd.com/" target="_blank">金融</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //设置导航选中
+    (function () {
+        if (pageConfig.navId) {
+            var object = document.getElementById("nav-" + pageConfig.navId);
+            if (object)object.className += " curr";
+        }
+    })();
+
+    //设置导航100%宽
+    (function () {
+        var a = document.getElementById("nav-2013");
+        if (!a) {
+            return
+        }
+        ;
+        var b = document.createElement("div");
+        b.className = "w";
+        b.style.position = "relative";
+        b.style.paddingLeft = "210px";
+        b.style.width = window.pageConfig.compatible && window.pageConfig.wideVersion ? "1000px" : "1000px";
+        b.innerHTML = a.innerHTML;
+        a.parentNode.className = "clearfix";
+        a.style.paddingLeft = "0";
+        a.style.marginBottom = "0";
+        a.innerHTML = "";
+        a.appendChild(b)
+    })();
+</script>
+<!-- /header -->
+<!--/ /widget/header/header.tpl -->
+<!-- main -->
+<div class="wrapper">
+    <div class="topbanner">
+
+        <!--  /widget/focus-top/focus-top.tpl -->
+        <div id="focus-top" class="focus focus-top">
+            <span class="focus_weixin"></span>
+            <a class="sinaweibo"></a>
+            <a class="qqweibo"></a>
+            <a class="douban"></a>
+            <a class="renren"></a>
+        </div>
+        <!--/ /widget/focus-top/focus-top.tpl -->
+
+    </div>
+    <div class="wrap-gb-nav">
+
+        <!--  /widget/gb-nav/gb-nav.tpl -->
+        <!-- header-->
+        <div id="gb-nav" class="gb-nav elevator">
+            <div class="inner_nav ">
+                <a class="curr handler" href="javascript:void(0)" end="#vision" target="_self" data-idx="0">造视</a>
+                <a href="javascript:void(0)" end="#commodity" target="_self" class="handler" data-idx="1">造物</a>
+                <a href="javascript:void(0)" end="#sports" target="_self" class="handler" data-idx="2">造动</a>
+                <a href="javascript:void(0)" end="#circle" target="_self" class="handler" data-idx="3">造圈</a>
+                <a href="javascript:void(0)" end="#partner" target="_self" class="handler" data-idx="4">跨界合作伙伴</a>
+            </div>
+        </div>
+        <!-- /header -->
+        <!--/ /widget/gb-nav/gb-nav.tpl -->
+    </div>
+
+    <!--  /widget/sport-scroll/sport-scroll.tpl -->
+<div id="g-slider">
+    <div id="g-scroll">
+        <ul class="silder-panel">
+                                        
+                    <li class="silder-item" data-bgcolor="#141414">
+                        <a href="http://group.jd.com/thread/20000241/20941735/20001112.htm" class="slider-item-a" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t2122/232/351521590/509343/eafd0cc3/560260ebN91d2ad1b.jpg"></a>
+                                        </li>
+                                            
+                    <li class="silder-item" data-bgcolor="#141414">
+                        <a href="http://item.jd.com/1184923.html" class="slider-item-a" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1483/239/660925111/187215/622ca76/55d68155N3001425a.jpg"></a>
+                                        </li>
+                                    </ul>
+        <div class="num-ctrl">
+                                                <span class="num-ctrl-item" class="curr"></span>
+                                                                <span class="num-ctrl-item"></span>
+                                    </div>
+    </div>
+</div>    <!--/ /widget/sport-scroll/sport-scroll.tpl -->
+    <div class="content">
+    
+    <!--  /widget/vision/vision.tpl -->
+    <div class="vision floor">
+        <div class="tit"></div>
+        <div class="tc">
+                                                <a class="vision_l" href="http://item.jd.com/1400513.html" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1939/54/110656322/184709/ebcf3910/55efc961N99676a74.jpg" width="600" height="692">
+                                                    <span class="icon_video"></span>
+                                                <span class="hover_layer"></span></a>
+                <div class="vision_r">
+                                                                <a class="vision_r_1" href="http://item.jd.com/1289241.html " target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1300/192/156944533/58530/a998f541/55d300f5Ne6499393.jpg" width="295" height="437">
+                        <span class="hover_layer"></span>
+                    </a>
+                                                                <a class="vision_r_2" href="http://group.jd.com/thread/20000241/20875455/20001141.htm" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1321/246/152706378/36842/934b7283/55d300c5N0e954fee.jpg" width="295" height="437">
+                        <span class="hover_layer"></span>
+                    </a>
+                                                                <a class="vision_r_3" href="http://item.jd.com/1680678.html" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1069/132/1355582806/69297/3bab7a85/55d30129N9ab45538.jpg" width="600" height="245">
+                        <span class="hover_layer"></span>
+                    </a>
+                                            </div>
+        </div>
+    </div>
+    <!--/ /widget/vision/vision.tpl -->
+<!--  /widget/commodity/commodity.tpl -->
+<div class="commodity floor" id="commodity">
+                        <div class="tit"></div>
+            <a class="commodity_a commodity_l" href="http://item.jd.com/1613442.html"  target="_blank">
+                <img src="http://img10.360buyimg.com/yushou/jfs/t964/111/1191720978/124530/e739417d/5580e56bN5550ca0f.jpg" width="295" height="520">
+                <span class="sku">
+                    <span class="name">猫王（MAOKING）Tesslor 典藏级收音机蓝牙音响</span>
+                    <span class="price" floor3="J_1613442" id="J_1613442"></span>
+                </span>
+            </a>
+        <div class="commodity_m">
+                                <a class="commodity_a commodity_m_1" href="http://item.jd.com/1706486.html"  target="_blank">
+            <img src="http://img10.360buyimg.com/yushou/jfs/t1669/26/380590330/56659/6dd869f4/55d3031cN8d502833.jpg" width="600" height="255">
+            <span class="sku">
+                <span class="name">电蟒（CrazyBoa）2 Face 可定制图案 智能云音响 蓝牙音箱 情人礼物 生日礼物 创意礼品</span>
+                <span class="price" floor3="J_1706486" id="J_1706486"></span>
+            </span>
+        </a>
+                                <a class="commodity_a commodity_m_1" href="http://item.jd.com/960142.html"  target="_blank">
+            <img src="http://img10.360buyimg.com/yushou/jfs/t1771/232/472309405/37351/e40ac0/55d30324Nd969a520.jpg" width="600" height="255">
+            <span class="sku">
+                <span class="name">威索尼可（VSONIC） GR07 BASS 低频加强版入耳耳机 hifi新旗舰</span>
+                <span class="price" floor3="J_960142" id="J_960142"></span>
+            </span>
+        </a>
+                            </div>
+            <a class="commodity_a commodity_r" href="http://item.jd.com/1315238.html" target="_blank">
+            <img src="http://img10.360buyimg.com/yushou/jfs/t1270/280/1348140939/69389/700d5355/55d3033bN208a22e2.jpg" width="295" height="520">
+            <span class="sku">
+                <span class="name">B&O（Bang & Olufsen）BeoPlay A2 真皮腕带便携蓝牙音箱 绿色</span>
+                <span class="price" floor3="J_1315238" id="J_1315238"></span>
+            </span>
+            </a>
+            </div>    <!--/ /widget/commodity/commodity.tpl -->
+
+<!--  /widget/sports/sports.tpl -->
+<div class="sports floor">
+    <div class="tit"><span id="sports" class="floor_tar"></span></div>
+    <div class="tc">
+        <div id="sport-slider">
+            <div id="sport-scroll">
+                <ul class="silder-panel">
+                                                                                                                        <li class="silder-item">
+                                <a  class="slider-item-a"><img src="http://img10.360buyimg.com/yushou/jfs/t1813/342/496767724/324869/10f0593e/55d3f6a1N585782f4.jpg"></a>
+                                                                                                                            <a class="tips cursor_add" floor4-sku-id="J_1184923"
+                               data-tips="<a class='sku' href='http://item.jd.com/1184923.html' target='_blank'><img src='http://img10.360buyimg.com/yushou/jfs/t1834/182/537374872/32268/3a8e3808/55d3f6d1Nb55ef6c0.png'/><span class='sku_tit'> JBL Reflect BT 蓝牙无线运动耳机 绿色</span><span class='sku_def'> JBL Reflect BT 蓝牙无线运动耳机 绿色</span><span id='J_1184923' class='sku_price'></span></a>" style="left:506px;top:381px;">
+                            </a>
+                                                                                                                            </li>
+                            <li class="silder-item">
+                                <a  class="slider-item-a"><img src="http://img10.360buyimg.com/yushou/jfs/t1189/298/1097972846/251495/4f4358c6/55756e61N9ccad409.jpg"></a>
+                                                                                                                            <a class="tips cursor_add" floor4-sku-id="J_1291220"
+                               data-tips="<a class='sku' href='http://item.jd.com/1291220.html' target='_blank'><img src='http://img10.360buyimg.com/yushou/jfs/t1309/52/434115947/16973/b178104/55756ee2Nc5d9cc08.jpg'/><span class='sku_tit'>魔声（Monster）UFC 头戴式包耳DJ耳机 重低音 线控带麦 红色（130554）</span><span class='sku_def'>魔声（Monster）UFC 头戴式包耳DJ耳机 重低音 线控带麦 红色（130554）</span><span id='J_1291220' class='sku_price'></span></a>" style="left:632px;top:199px;">
+                            </a>
+                                                                                                                            </li>
+                            <li class="silder-item">
+                                <a  class="slider-item-a"><img src="http://img10.360buyimg.com/yushou/jfs/t1042/60/494687712/279568/fe889d6b/552b3f39N8e192244.jpg"></a>
+                                                                                                                            <a class="tips cursor_add" floor4-sku-id="J_1400513"
+                               data-tips="<a class='sku' href='http://item.jd.com/1400513.html' target='_blank'><img src='http://img10.360buyimg.com/yushou/jfs/t1090/276/497907099/15021/f6e62b7/552b3f90N6d02eb25.jpg'/><span class='sku_tit'>Yurbuds  Inspire 400  激励系列 专业级运动入耳式耳机 完美支持苹果手机 男款 动感黑</span><span class='sku_def'>Yurbuds  Inspire 400  激励系列 专业级运动入耳式耳机 完美支持苹果手机 男款 动感黑</span><span id='J_1400513' class='sku_price'></span></a>" style="left:211px;top:520px;">
+                            </a>
+                                                                                                                            </li>
+                            <li class="silder-item">
+                                <a  class="slider-item-a"><img src="http://img10.360buyimg.com/yushou/jfs/t1525/54/412970044/301265/5daf2649/55d3f725Ncae6f008.jpg"></a>
+                                                                                                                            <a class="tips cursor_add" floor4-sku-id="J_1429425"
+                               data-tips="<a class='sku' href='http://item.jd.com/1429425.html' target='_blank'><img src='http://img10.360buyimg.com/yushou/jfs/t1270/92/1435460263/48681/b88f473/55d3f75fN0e4c8ae0.png'/><span class='sku_tit'>飞利浦（PHILIPS）SHB5800BK 无线蓝牙NFC入耳式 运动耳机 USB直充 超长待机 防潮防汗 智能耳麦 饱满重低音</span><span class='sku_def'>飞利浦（PHILIPS）SHB5800BK 无线蓝牙NFC入耳式 运动耳机 USB直充 超长待机 防潮防汗 智能耳麦 饱满重低音</span><span id='J_1429425' class='sku_price'></span></a>" style="left:697px;top:286px;">
+                            </a>
+                                                                                                                            </li>
+                            <li class="silder-item">
+                                <a  class="slider-item-a"><img src="http://img10.360buyimg.com/yushou/jfs/t1345/277/415847673/212706/4d9be333/55d3f77eNb6feef23.jpg"></a>
+                                                                                                                            <a class="tips cursor_add" floor4-sku-id="J_1559437"
+                               data-tips="<a class='sku' href='http://item.jd.com/1559437.html' target='_blank'><img src='http://img10.360buyimg.com/yushou/jfs/t1798/74/484400221/26713/8bc03b61/55d3f7a9N22b38239.png'/><span class='sku_tit'>森海塞尔（Sennheiser） CX686G Sports 入耳式运动耳机 安卓版 带来完整而丰富的音质 绿色</span><span class='sku_def'>森海塞尔（Sennheiser） CX686G Sports 入耳式运动耳机 安卓版 带来完整而丰富的音质 绿色</span><span id='J_1559437' class='sku_price'></span></a>" style="left:451px;top:308px;">
+                            </a>
+                                                            </li>
+                </ul>
+                <div class="ui-switchable-page">
+                    <a href="javascript:void(0)" class="pre"></a>
+                    <a href="javascript:void(0)" class="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--/ /widget/sports/sports.tpl -->
+<!--  /widget/social-cicle/social-cicle.tpl -->
+<div class="social-cicle floor">
+    <div class="tit"><span id="circle" class="floor_tar"></span></div>
+    <div class="tc">
+
+                                                            <div class="cicle_l">
+                <a class="cicle_l_1" href="http://group.jd.com/circle/20000241/20001113.htm" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1768/202/1699770350/45247/10e7efc9/5603a039N7c5925e8.jpg" width="600" height="290"></a>
+                                                                            <a class="cicle_l_2" href="http://group.jd.com/circle/20000241/20001142.htm" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1972/20/380957723/45880/88e42508/5603a01eN48056e88.jpg" width="600" height="290"></a>
+            </div>
+            <div class="cicle_r">
+                                                            
+                                                                                                                    <div class="cicle_r_1">
+                    
+                    <img src="http://img10.360buyimg.com/yushou/jfs/t1837/226/343504537/45218/14405940/560398b2N2add1c32.jpg" width="295" height="300">
+                                                                                                            <a  target="_blank" class="avatar"><img src="http://storage.jd.com/i.imageUpload/c9b1cbc0d0a1cdf431333833363938343835333836_mid.jpg" width="95" height="95"></a>
+
+                    <a target="_blank" class="author">EROS H06</a>
+
+                    <div class="def">专业HIFI</div>
+                    <a href="http://group.jd.com/thread/20000241/20940167/20001142.htm" target=" _blank" class="tit">高颜值潮品播放器</a>
+
+                    <div class="quote">EROS H06 HIFI播放器真颜！这个颜值算高了吧？（多图杀猫）</div>
+                </div>
+                                                                                                                                    <div class="cicle_r_2">
+                    
+                    <img src="http://img10.360buyimg.com/yushou/jfs/t2068/12/365008147/25798/cc6b1e7/56039b10Nbfe4d243.jpg" width="295" height="300">
+                                                                                                            <a  target="_blank" class="avatar"><img src="http://storage.jd.com/i.imageUpload/6a645f3636366138373461646131623631343431353430333038353830_mid.jpg" width="95" height="95"></a>
+
+                    <a target="_blank" class="author">森海塞尔PX100简评</a>
+
+                    <div class="def">潮流耳机</div>
+                    <a href="http://group.jd.com/thread/20000241/20939462/20001113.htm" target=" _blank" class="tit">深海收藏款</a>
+
+                    <div class="quote">有多少人还记得若干年前，有这样一款耳机，可以折叠，材质一流，金属质感超强，还有一个炫酷的收纳包装----森海塞尔 PX100。那个时候还不认识森海塞尔这个牌子，还不知道什么叫煲耳机，还不知道怎么去辨别音质，但看到这款耳机的第一眼，就迷上了它。</div>
+                </div>
+                                        </div>
+
+    </div>
+    </div>
+
+    
+<!--/ /widget/social-cicle/social-cicle.tpl -->
+
+<!--  /widget/partner/partner.tpl -->
+<div class="partner floor">
+    <div class="tit"></div>
+    <div class="tc">
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t901/365/223062800/5717/d231af78/550c00a9Nfd3de956.jpg" width="200" height="110"></a>
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1243/260/233012591/6043/8735f277/550c00b1N8bdb40ea.jpg" width="200" height="110"></a>
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t994/257/229551021/5844/ce86caa8/550c00bfN1e2300c3.jpg" width="200" height="110"></a>
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t856/32/215155354/6021/17a0ad3/550c0102N66737255.jpg" width="200" height="110"></a>
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t796/55/229072911/7612/ab094a03/550c00eaNcbc21d05.jpg" width="200" height="110"></a>
+                    <a href="http://itzl.jd.com/" target="_blank"><img src="http://img10.360buyimg.com/yushou/jfs/t1255/171/231025159/6505/3ba95a6c/550c00c9Nc1c75a05.jpg" width="200" height="110"></a>
+            </div>
+</div>
+
+<!--/ /widget/partner/partner.tpl -->
+    </div>
+
+    <!--  /widget/bottom-focus/bottom-focus.tpl -->
+    <div class="bottom-focus floor">
+        <div class="st">关注我们</div>
+        <div class="focus tc">
+            <a class="sinaweibo"></a>
+            <a class="qqweibo"></a>
+            <a class="douban"></a>
+            <a class="renren"></a>
+
+            <div class="focus_wx"></div>
+        </div>
+    </div>
+
+    <!--/ /widget/bottom-focus/bottom-focus.tpl -->
+</div>
+
+<!-- /main -->
+
+<!--  /widget/footer/footer.tpl -->
+<!-- footer -->
+<div class="w">
+    <div id="service-2013">
+        <dl class="fore1">
+            <dt><b></b><strong>购物指南</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-56.html" target="_blank" rel="nofollow">购物流程</a></div>
+                <div><a href="http://help.jd.com/help/question-57.html" target="_blank" rel="nofollow">会员介绍</a></div>
+                <div><a href="http://help.jd.com/help/question-181.html" target="_blank" rel="nofollow">团购/机票</a></div>
+                <div><a href="http://help.jd.com/help/question-61.html" target="_blank" rel="nofollow">常见问题</a></div>
+                <div><a href="http://help.jd.com/help/question-63.html" target="_blank" rel="nofollow">大家电</a></div>
+                <div><a href="http://help.jd.com/index.html" target="_blank" rel="nofollow">联系客服</a></div>
+            </dd>
+        </dl>
+        <dl class="fore2">
+            <dt><b></b><strong>配送方式</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-64.html" target="_blank" rel="nofollow">上门自提</a></div>
+                <div><a href="http://help.jd.com/help/question-360.html" target="_blank" rel="nofollow">211限时达</a></div>
+                <div><a href="http://help.jd.com/help/distribution-768.html" target="_blank" rel="nofollow">配送服务查询</a>
+                </div>
+                <div><a href="http://help.jd.com/help/question-892.html#help2215" target="_blank"
+                        rel="nofollow">配送费收取标准</a></div>
+                <div><a href="http://market.jd.com/giftcard/index.html#one5" target="_blank" rel="nofollow">如何送礼</a>
+                </div>
+                <div><a href="http://help.en.360buy.com/help/question-2.html" target="_blank">Global Shipping</a></div>
+            </dd>
+        </dl>
+        <dl class="fore3">
+            <dt><b></b><strong>支付方式</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-67.html" target="_blank" rel="nofollow">货到付款</a></div>
+                <div><a href="http://help.jd.com/help/question-68.html" target="_blank" rel="nofollow">在线支付</a></div>
+                <div><a href="http://help.jd.com/help/question-71.html" target="_blank" rel="nofollow">分期付款</a></div>
+                <div><a href="http://help.jd.com/help/question-69.html" target="_blank" rel="nofollow">邮局汇款</a></div>
+                <div><a href="http://help.jd.com/help/question-70.html" target="_blank" rel="nofollow">公司转账</a></div>
+            </dd>
+        </dl>
+        <dl class="fore4">
+            <dt><b></b><strong>售后服务</strong></dt>
+            <dd>
+                <div><a href="http://myjd.jd.com/afs/help/afshelp.action" target="_blank" rel="nofollow">售后政策</a></div>
+                <div><a href="http://help.jd.com/help/question-99.html" target="_blank" rel="nofollow">价格保护</a></div>
+                <div><a href="http://help.jd.com/help/question-100.html" target="_blank" rel="nofollow">退款说明</a></div>
+                <div><a href="http://myjd.jd.com/repair/repairs.action" target="_blank" rel="nofollow">返修/退换货</a></div>
+                <div><a href="http://help.jd.com/help/question-881.html" target="_blank" rel="nofollow">取消订单</a></div>
+            </dd>
+        </dl>
+        <dl class="fore5">
+            <dt><b></b><strong>特色服务</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-79.html" target="_blank">夺宝岛</a></div>
+                <div><a href="http://help.jd.com/help/question-86.html" target="_blank">DIY装机</a></div>
+                <div><a href="http://fuwu.jd.com/" target="_blank" rel="nofollow">延保服务</a></div>
+                <div><a href="http://market.jd.com/giftcard/index.html" target="_blank" rel="nofollow">京东卡</a></div>
+                <div><a href="http://help.jd.com/help/question-91.html" target="_blank" rel="nofollow">节能补贴</a></div>
+            </dd>
+        </dl>
+        <span class="clr"></span>
+    </div>
+</div>
+
+<div class="w">
+    <div id="footer-2013">
+        <div class="links">
+            <a href="http://www.jd.com/intro/about.aspx" target="_blank" rel="nofollow">关于我们</a>|<a
+                href="http://www.jd.com/contact/" target="_blank" rel="nofollow">联系我们</a>|<a
+                href="http://zhaopin.jd.com/" target="_blank" rel="nofollow">人才招聘</a>|<a
+                href="http://www.jd.com/contact/joinin.aspx" target="_blank" rel="nofollow">商家入驻</a>|<a
+                href="http://sale.jd.com/act/y3surX7qpM.html" target="_blank" rel="nofollow">广告服务</a>|<a
+                href="http://app.jd.com/" target="_blank" rel="nofollow">手机京东</a>|<a
+                href="http://club.jd.com/links.aspx" target="_blank">友情链接</a>|<a href="http://cps.jd.com/"
+                                                                                 target="_blank">销售联盟</a>|<a
+                target="_blank" href="http://club.jd.com/">京东社区</a>|<a target="_blank"
+                                                                       href="http://gongyi.jd.com">京东公益</a>
+        </div>
+        <div class="copyright">
+            北京市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;互联网药品信息服务资格证编号(京)-非经营性-2011-0034<br>
+            <a target="_blank" href="http://misc.360buyimg.com/skin/df/i/com/f_music.jpg" rel="nofollow">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号<br>
+            <a target="_blank" href="http://misc.360buyimg.com/wz/wlwhjyxkz.jpg">网络文化经营许可证京网文[2011]0168-061号</a>&nbsp;&nbsp;Copyright&nbsp;&copy;&nbsp;2004-2014&nbsp;&nbsp;京东JD.com&nbsp;版权所有<br/>
+            京东旗下网站：<a href="http://www.360top.com/" target="_blank">360TOP</a>&nbsp;&nbsp;<a
+                href="http://www.minitiao.com/" target="_blank">迷你挑</a>&nbsp;&nbsp;<a target="_blank"
+                                                                                      href="http://en.jd.com/">English
+            Site</a>
+        </div>
+        <div class="authentication">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026" target="_blank"
+               rel="nofollow"><img data-lazyload="http://img10.360buyimg.com/da/20110329/108_40_zZOKnl.gif" width="108"
+                                   height="40" alt="经营性网站备案中心"></a>
+            <script type="text/JavaScript">function CNNIC_change(eleId) {
+                var str = document.getElementById(eleId).href;
+                var str1 = str.substring(0, (str.length - 6));
+                str1 += CNNIC_RndNum(6);
+                document.getElementById(eleId).href = str1;
+            }
+            function CNNIC_RndNum(k) {
+                var rnd = "";
+                for (var i = 0; i < k; i++) rnd += Math.floor(Math.random() * 10);
+                return rnd;
+            }</script>
+            <a href="https://ss.cnnic.cn/verifyseal.dll?sn=2008070300100000031&ct=df&pa=294005" tabindex="-1"
+               id="urlknet" target="_blank" rel="nofollow"><img alt="&#x53EF;&#x4FE1;&#x7F51;&#x7AD9;" name="CNNIC_seal"
+                                                                border="true"
+                                                                data-lazyload="http://img11.360buyimg.com/da/g8/M03/0C/0E/rBEHaFCFC5QIAAAAAAASVQX9RAYAACb2wHUV1kAABJt760.gif"
+                                                                width="108" height="40" oncontextmenu="return false;"
+                                                                onclick="CNNIC_change('urlknet')"/></a><a
+                href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow"><img
+                data-lazyload="http://img12.360buyimg.com/da/g5/M02/0D/17/rBEIDE_nzcIIAAAAAAB30mYXo5QAACrhACj22IAAHfq378.png"
+                width="108" height="40" alt="朝阳网络警察"></a><a href="https://search.szfw.org/cert/l/CX20120111001803001836"
+                                                            target="_blank" rel="nofollow"><img
+                data-lazyload="http://img13.360buyimg.com/da/20120221/112_40_WvArIl.png" width="112" height="40"></a>
+        </div>
+    </div>
+</div>
+<!-- /footer -->
+<!--/ /widget/footer/footer.tpl -->
+<script type="text/javascript" src="http://misc.360buyimg.com/user/channel-ZL/1.0.0/js/channel-zl.js"
+        source="widget"></script>
+<script type="text/javascript"
+        src="http://misc.360buyimg.com/user/channel-ZL/1.0.0??/widget/focus-top/focus-top.js,/widget/gb-nav/gb-nav.js,/widget/sport-scroll/sport-scroll.js,/widget/sports/sports.js"
+        source="widget"></script>
+</body>
+</html>

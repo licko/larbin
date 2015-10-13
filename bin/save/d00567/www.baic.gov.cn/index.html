@@ -1,0 +1,1398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::::北京市工商局:::::</title>
+<link rel=stylesheet type=text/css href="./images/main_3.css">
+		
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(_url,_other)
+{//alert("aaa");
+	window.open(_url,'newpage',_other);	
+}
+
+//企业信用单体查询需要的函数.
+
+function fnsubmit(){
+			var name=document.getElementById("zhcxModel_ent_name").value;
+			var regno=document.getElementById("zhcxModel_lic_reg_no").value;
+			if(name==""&&regno==""){
+							}
+			document.form1.action="http://qyxy.baic.gov.cn/";
+			document.charset='utf-8';
+			document.form1.submit();
+		}
+
+
+
+	function Getenter ( obj )
+	{
+		key = event.keyCode;
+		if(key==13)
+		{
+			//qyxy.txt_cx.value = '';
+			document.all(obj).focus();
+		}
+	}
+//年检和验照2个查询用到的。
+function validLen(obj,len,desc,flag){
+  var objText=obj.value.trim();
+  if(flag){
+    if(objText.lenbyte()==0){
+      alert("提示："+desc+"不能为空！");
+      obj.select();
+      return false;
+    }
+  }
+  if(objText.lenbyte()>len){
+    alert("提示："+desc+"的长度不能超过"+len+"位！");
+    obj.select();
+    return false;
+  }
+  return true;
+}	
+String.prototype.trim  =  function()
+{
+        //  用正则表达式将前后空格
+        //  用空字符串替代。
+        return  this.replace(/(^\s*)|(\s*$)/g,  "");
+}
+
+/*** 返回字节数 中文算二位，英文算一位 ***/
+String.prototype.lenbyte = function() {
+  return this.replace(/[^\x00-\xff]/g,"**").length;
+}
+
+
+
+//-->
+</script>
+
+
+
+
+
+
+	    <style type="text/css">
+<!--
+.banner #ess_bannerpane .box_url {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+-->
+.tzgg a:hover { text-decoration:none;}
+
+* {
+	margin:0;
+	padding:0px;
+}
+.syyjxx{ width:1000px; height:74px;margin:6px auto 0px;background:url(http://www.beijing.gov.cn/images/wza2010/index/syyjxx_bg20150330.png) no-repeat;  position:relative; border: solid 1px #FF0000; }
+.syyjxx ul.left {width:150px; height:74px;float:left;color:#d61800; font-family: "微软雅黑", "Microsoft YaHei";font-size:20px; font-weight:bold; text-align:center;margin-left:80px;padding-top:10px;line-height:24px;}
+.syyjxx ul.content{width:740px; height:74px; float:left;color:#666; font-family: "宋体", "SimSun"; font-size:13px;padding-top:8px;}
+.syyjxx ul.gb{width:20px; height:74px;float:left;padding-top:10px;}
+.syyjxx .close{ position:absolute; right:7px; top:9px; cursor:pointer;}
+
+        </style>
+
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+for(i=1;i<=n;i++){
+var menu=document.getElementById(name+i);
+var con=document.getElementById("con_"+name+"_"+i);
+var conn=document.getElementById("conn_"+name+"_"+i);
+menu.className=i==cursel?"hover":"";
+con.style.display=i==cursel?"block":"none";
+conn.style.display=i==cursel?"block":"none";
+}
+}
+//-->
+</script>
+
+<link href="./images/css_14.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.list1 span a{color:#c9421d; line-height:25px;}
+
+
+</style>
+<script language="JavaScript">
+function lanmulianjie(name){
+switch (name)
+{
+case "西城分局":
+document.write('<a href="./xxgk/jqdt/fjdt/xcfj/">西城分局</a>');
+break;
+case "东城分局":
+document.write('<a href="./xxgk/jqdt/fjdt/dcfj/">东城分局</a>');
+break;
+case "朝阳分局":
+document.write('<a href="./xxgk/jqdt/fjdt/cyfj/">朝阳分局</a>');
+break;
+case "海淀分局":
+document.write('<a href="./xxgk/jqdt/fjdt/hdfj/">海淀分局</a>');
+break;
+case "顺义分局":
+document.write('<a href="./xxgk/jqdt/fjdt/syfj/">顺义分局</a>');
+break;
+case "丰台分局":
+document.write('<a href="./xxgk/jqdt/fjdt/ftfj/">丰台分局</a>');
+break;
+case "密云分局":
+document.write('<a href="./xxgk/jqdt/fjdt/myfj/">密云分局</a>');
+break;
+case "昌平分局":
+document.write('<a href="./xxgk/jqdt/fjdt/cpfj/">昌平分局</a>');
+break;
+case "大兴分局":
+document.write('<a href="./xxgk/jqdt/fjdt/dxfj/">大兴分局</a>');
+break;
+case "燕山分局":
+document.write('<a href="./xxgk/jqdt/fjdt/ysfj/">燕山分局</a>');
+break;
+case "平谷分局":
+document.write('<a href="./xxgk/jqdt/fjdt/pgfj/">平谷分局</a>');
+break;
+case "石景山分局":
+document.write('<a href="./xxgk/jqdt/fjdt/sjsfj/">石景山分局</a>');
+break;
+case "房山分局":
+document.write('<a href="./xxgk/jqdt/fjdt/fsfj/">房山分局</a>');
+break;
+case "怀柔分局":
+document.write('<a href="./xxgk/jqdt/fjdt/hrfj/">怀柔分局</a>');
+break;
+case "延庆分局":
+document.write('<a href="./xxgk/jqdt/fjdt/yqfj/">延庆分局</a>');
+break;
+case "通州分局":
+document.write('<a href="./xxgk/jqdt/fjdt/tzfj/">通州分局</a>');
+break;
+case "门头沟分局":
+document.write('<a href="./xxgk/jqdt/fjdt/mtgfj/">门头沟分局</a>');
+break;
+
+case "市局动态":
+document.write('<a href="./xxgk/jqdt/sjdt/">市局动态</a>');
+break;
+
+case "人员招录":
+document.write('<a href="./xxgk/tzgg/ryzl/">人员招录</a>');
+break;
+case "法制工作":
+document.write('<a href="./xxgk/tzgg/fzgz/">法制工作</a>');
+break;
+case "企个监管":
+document.write('<a href="./xxgk/tzgg/qgjg/">企个监管</a>');
+break;
+case "外资业务":
+document.write('<a href="./xxgk/tzgg/wzyw/">外资业务</a>');
+break;
+case "经济检查":
+document.write('<a href="./xxgk/tzgg/jjjc/">经济检查</a>');
+break;
+case "合同业务":
+document.write('<a href="./xxgk/tzgg/htyw/">合同业务</a>');
+break;
+case "市场监管":
+document.write('<a href="./xxgk/tzgg/scjg/">市场监管</a>');
+break;
+case "消保业务":
+document.write('<a href="./xxgk/tzgg/xbyw/">消保业务</a>');
+break;
+case "广告监管":
+document.write('<a href="./xxgk/tzgg/ggjg/">广告监管</a>');
+break;
+case "商标业务":
+document.write('<a href="./xxgk/tzgg/sbyw/">商标业务</a>');
+break;
+case "电子商务":
+document.write('<a href="./xxgk/tzgg/dzsw/">电子商务</a>');
+break;
+case "中关村示范区":
+document.write('<a href="./xxgk/tzgg/zgcsfq/">中关村示范区</a>');
+break;
+case "绿色通道":
+document.write('<a href="./xxgk/tzgg/lstd/">绿色通道</a>');
+break;
+case "电动自行车备案":
+document.write('<a href="./xxgk/tzgg/ddzxcba1/">电动自行车备案</a>');
+break;
+case "其他业务":
+document.write('<a href="./xxgk/tzgg/qtyw/">来信反馈</a>');
+break;
+case "登记业务":
+document.write('<a href="./xxgk/tzgg/djyw/">登记业务</a>');
+break;
+
+
+
+
+}
+}
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type=text/javascript src="./images/jquery-1_3.7.2.min.js"></script>
+<script type=text/javascript src="./images/main_3.js"></script>
+<script src="./images/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="./images/news_tab.js"></script>
+		
+<script language="javascript"> 
+function changeList(obj, id, event)
+{
+	var obj2 = document.getElementById(id).getElementsByTagName("dl");
+	
+	event = event || window.event;
+	if (event.type == "mouseover") {
+		for (var i = 0; i < obj2.length; i++) {
+			if (obj2[i].className == "") {
+				if (i != obj2.length - 1) {
+					obj2[i].className = "bg";
+				} else {
+					obj2[i].className = "bg nobg";
+				}
+			}
+		}
+		obj.className = "";
+	}
+}
+</script>
+
+
+
+
+
+
+</head>
+
+<body onload="MM_preloadImages('images/cnicoa_01.gif','images/cnicoa_02.gif','images/cnicoa_03.gif','images/cnicoa_04.gif','images/cnicoa_05.gif','images/cnicoa_06.gif','images/cnicoa_07.gif')">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="background:url(images/tcbg.jpg) top center no-repeat;">
+  <tr>
+    <td valign="top">
+      <table width="1002" height="25" border="0" class="boxcenter" cellpadding="0" cellspacing="0" background="./images/toptitbg.gif">
+      <tr>
+        <td width="21">&nbsp;</td>
+        <td width="338" align="left" class="hui12" style="padding-top:2px;">
+        <script type="text/javascript">
+   <!--
+   tmpDate = new Date();
+   date = tmpDate.getDate();
+   month = tmpDate.getMonth() + 1 ;
+   year = tmpDate.getYear();
+   year = tmpDate.getYear();
+   year = year>1900 ? year : year+1900;
+   document.write("今天是&nbsp;"+year + "年" + month + "月" + date + "日&nbsp;");
+   
+   myArray = new Array(6);
+   myArray[0] = "星期日"
+   myArray[1] = "星期一"
+   myArray[2] = "星期二"
+   myArray[3] = "星期三"
+   myArray[4] = "星期四"
+   myArray[5] = "星期五"
+   myArray[6] = "星期六"
+   weekday = tmpDate.getDay();
+   document.write(myArray[weekday])
+   //-->
+</script>&nbsp;
+<script type="text/javascript">
+var LunarDaysOfMonth = new Array
+(
+0xd4a8, 0xd4a0, 0xda50, 0x5aa8, 0x56a0, 0xaad8, 0x25d0, 0x92d0, 0xc958, 0xa950, // 2001-2010 
+0xb4a0, 0xb550, 0xb550, 0x55a8, 0x4ba0, 0xa5b0, 0x52b8, 0x52b0, 0xa930, 0x74a8, // 2011-2020 
+0x6aa0, 0xad50, 0x4da8, 0x4b60, 0x9570, 0xa4e0, 0xd260, 0xe930, 0xd530, 0x5aa0, // 2021-2030 
+0x6b50, 0x96d0, 0x4ae8, 0x4ad0, 0xa4d0, 0xd258, 0xd250, 0xd520, 0xdaa0, 0xb5a0, // 2031-2040 
+0x56d0, 0x4ad8, 0x49b0, 0xa4b8, 0xa4b0, 0xaa50, 0xb528, 0x6d20, 0xada0, 0x55b0 // 2041-2050 
+);
+
+// 数组LunarLeapYear存放农历2001年到2050年闰月的月份，如没有则为0，从高到低，每字节存两年 
+var LunarLeapYear = new Array
+(
+0x40, 0x02, 0x07, 0x00, 0x50, // 2001-2010 
+0x04, 0x09, 0x00, 0x60, 0x04, // 2011-2020 
+0x00, 0x20, 0x60, 0x05, 0x00, // 2021-2030 
+0x30, 0xb0, 0x06, 0x00, 0x50, // 2031-2040 
+0x02, 0x07, 0x00, 0x50, 0x03 // 2041-2050 
+);
+
+
+// 返回农历iLunarYear年的闰月月份，如没有则返回0 
+function GetLeapMonth(iLunarYear)
+{ 
+var Leap = LunarLeapYear[(iLunarYear - 2001) >> 1];
+return (((iLunarYear - 2001) & 1) == 0) ? (Leap >> 4) : (Leap & 0x0f);
+}
+
+// 返回农历iLunarYer年iLunarMonth月的天数，结果是一个长整数
+// 如果iLunarMonth不是闰月， 高字为0，低字为该月的天数
+// 如果iLunarMonth是闰月， 高字为后一个月的天数，低字为前一个月的天数
+function LunarMonthDays(iLunarYear, iLunarMonth)
+{ 
+var High;
+var Low;
+var Bit;
+
+High = 0;
+Low = 29;
+Bit = 16 - iLunarMonth;
+if ((iLunarMonth > GetLeapMonth(iLunarYear)) && (GetLeapMonth(iLunarYear) > 0)) Bit--;
+if ((LunarDaysOfMonth[iLunarYear - 2001] & (1 << Bit)) > 0) Low++;
+if (iLunarMonth == GetLeapMonth(iLunarYear))
+{
+High = ((LunarDaysOfMonth[iLunarYear - 2001] & (1 << (Bit-1))) > 0) ? 30 : 29;
+}
+
+return Low + (High << 16);
+}
+
+// 返回农历iLunarYear年的总天数
+function LunarYearDays(iLunarYear)
+{ 
+var Days;
+var tmp;
+
+Days = 0;
+for (var i=1; i <= 12; i++)
+{
+tmp = LunarMonthDays(iLunarYear, i);
+Days = Days + ((tmp >> 16) & 0xffff); //取高位 
+Days = Days + (tmp & 0xffff); //取低位 
+}
+
+return Days;
+}
+
+// 将农历iLunarYear年格式化成天干地支记年法表示的字符串 
+function FormatLunarYear(iLunarYear)
+{ 
+var szText1 = new String("甲乙丙丁戊己庚辛壬癸");
+var szText2 = new String("子丑寅卯辰巳午未申酉戌亥");
+var strYear;
+
+strYear = szText1.substr((iLunarYear - 4) % 10, 1);
+strYear = strYear + szText2.substr((iLunarYear - 4) % 12, 1);
+
+return strYear + "年";
+}
+
+// 将农历iLunarMonth月格式化成农历表示的字符串
+function FormatLunarMonth(iLunarMonth)
+{ 
+var szText = new String("正二三四五六七八九十");
+var strMonth;
+
+if (iLunarMonth <= 10)
+{
+strMonth = szText.substr(iLunarMonth - 1, 1);
+}
+else if (iLunarMonth == 11) strMonth = "十一";
+else strMonth = "十二";
+
+return strMonth + "月";
+}
+
+// 将农历iLunarDay日格式化成农历表示的字符串
+function FormatLunarDay(iLunarDay)
+{ 
+var szText1 = new String("初十廿三");
+var szText2 = new String("一二三四五六七八九十");
+var strDay;
+if ((iLunarDay != 20) && (iLunarDay != 30))
+{
+strDay = szText1.substr((iLunarDay - 1) / 10, 1) + szText2.substr((iLunarDay - 1) % 10, 1);
+}
+else if (iLunarDay != 20)
+{
+strDay = szText1.substr(iLunarDay / 10, 1) + "十";
+}
+else
+{
+strDay = "二十";
+}
+
+return strDay;
+}
+
+// 将公历日期转换为农历日期，返回农历表示的字符串
+function GetLunarDateString(SolarDate)
+{
+var tmp;
+var iLunarYear;
+var iLunarMonth;
+var iLunarDay;
+var Leap = false;
+var MinMilli = 1000 * 60;
+var HrMilli = MinMilli * 60;
+var DyMilli = HrMilli * 24;
+
+// 从2001年1月1日算起，给定的公历日期已经过去的天数
+// 11323是1970年1月1日到2001年1月1日之间的天数，因为Date是从1970年1月1日作为起点的
+var iSpanDays = Math.round(SolarDate.getTime() / DyMilli) - 11323;
+
+// 公历2001年1月24日为农历2001年正月初一，差23天
+if (iSpanDays < 23)
+{
+iYear = 2000;
+iLunarMonth = 12;
+iLunarDay = iSpanDays + 7;
+}
+else
+{
+// 从农历2001年正月初一算起 
+iSpanDays = iSpanDays - 23;
+iLunarYear = 2001;
+iLunarMonth = 1;
+iLunarDay = 1;
+
+// 计算农历年 
+tmp = LunarYearDays(iLunarYear);
+while (iSpanDays >= tmp)
+{
+iSpanDays -= tmp;
+iLunarYear++;
+tmp = LunarYearDays(iLunarYear);
+}
+
+// 计算农历月 
+tmp = LunarMonthDays(iLunarYear, iLunarMonth) & 0xffff; //取低字
+while (iSpanDays >= tmp)
+{
+iSpanDays -= tmp;
+if (iLunarMonth == GetLeapMonth(iLunarYear)) // 该年该月闰月
+{
+tmp = LunarMonthDays(iLunarYear, iLunarMonth) >> 16; //取高字
+if (iSpanDays < tmp)
+{
+Leap = (tmp > 0) ? true : false; // 闰月的后个月？
+break;
+}
+iSpanDays = iSpanDays - tmp;
+}
+
+iLunarMonth++;
+tmp = LunarMonthDays(iLunarYear,iLunarMonth) & 0xffff; //取低字
+}
+
+// 计算农历日 
+iLunarDay += iSpanDays;
+}
+
+return FormatLunarYear(iLunarYear) + (Leap ? "闰" : "") + FormatLunarMonth(iLunarMonth) + FormatLunarDay(iLunarDay);
+}
+
+var today= new Date(); // 今天是2004-3-5
+var str = GetLunarDateString(today);
+document.write("农历"+str);
+
+</script>        </td>
+        <td width="329" align="left" class="hui12" style="padding-top:1px;"></td>
+        <td width="314" align="right">
+        	<table border="0" cellspacing="0" cellpadding="0">
+	          <tr>
+	            <td><a href="#"><img src="./images/toplink_01.gif" width="93" height="21"></a></td>
+	            <td><a href="#"><img src="./images/toplink_02.gif" width="103" height="21"></a></td>
+	          </tr>
+	        </table>
+        </td>
+        </tr>
+    </table>
+      <table width="1000" height="450" border="0" class="boxcenter" cellpadding="0" cellspacing="0">
+        <tr > 
+        	 
+          <td style="height:50px;overflow:visible;" valign="bottom">
+          	<!--<iframe  src="./tybf/sytb/index.htm" frameBorder=0 
+                			width=1000 scrolling=no height=455 allowTransparency="true"></iframe>-->
+<script type="text/javascript" src="http://www.beijing.gov.cn/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.ajax({
+			url : 'http://www.beijing.gov.cn/sy/hsyj/pushAlarm_5926.jsonp',
+			dataType : "jsonp",
+			scriptCharset:'gb2312',
+			jsonp : "pushInfoJsonpCallBack",
+			jsonpCallback:"pushInfoJsonpCallBack",
+			success : function(data) {
+				if(data.length<1){
+					$("#hsyjxx").css('display','none'); 
+				}else{
+				$.each(data,function(i,json){
+				$("#hsyjxx").append('<ul class="left">'+json.title+'</ul>');
+				$("#hsyjxx").append('<ul class="content"><a href="'+json.link+'" target="_blank">'+json.content+'</a></ul>');
+				$("#hsyjxx").append('<ul class="gb"><img src="http://www.beijing.gov.cn/images/wza2010/index/hsyjxx_gb_20150415.jpg" width="18" height="55" title="关闭红色预警信息" alt="关闭红色预警信息" class="close"></ul>');
+				$("#hsyjxx").find(".close").bind("click", function (){
+					$("#hsyjxx").css('display','none'); 
+				});
+					
+				})
+				}
+			},
+			 error:function(){
+		           alert('fail');
+		    }
+		});
+	//红色预警信息关闭
+	})
+</script>
+
+<div class="syyjxx" id="hsyjxx" ></div>
+
+<div class="banner" style="border:1px solid blue;overflow:visible;">
+			
+  <div id="ess_bannerpane" class="bannercont">
+            <div class="zb_main_tagsContainer">
+              <ul class="zb_tag_contaniner">
+                <li class=zb_cur_tag>
+  						
+                                                 <a href="./zxbs/djzc/bszn/qtcyzn/201409/t20140903_1191030.html" target="_blank" title="北京市新增产业的禁止和限制目录(2015版)">北京市新增产业的禁止和...</a>                                                
+                                                 <a href="http://wsdj.baic.gov.cn" target="_blank" title="登记注册网上办理">登记注册网上办理</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/zxlgzd/nzgszx/201408/t20140827_1187088.html" target="_blank" title="公司及分公司注销登记一次性告知单301">公司及分公司注销登记一...</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/qtcyzn/201509/t20150929_1239817.html" target="_blank" title="&quot;三证合一、一照一码”登记制度改革问题解答003">"三证合一、一照一码”登...</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/tglgzd/201408/t20140827_1187105.html" target="_blank" title="如何办理企业名称预先核准">如何办理企业名称预先核准</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/sllgzd/nzgssllgzd/201408/t20140827_1187039.html" target="_blank" title="如何办理有限责任公司设立登记">如何办理有限责任公司设...</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/qtcyzn/201408/t20140827_1187106.html" target="_blank" title="投资办照通用指南及风险提示001">投资办照通用指南及风险...</a>                                                
+                                                 <a href="./zxbs/djzc/bszn/qtcyzn/201408/t20140827_1187119.html" target="_blank" title="北京市登记注册代理机构名录">北京市登记注册代理机构名录</a>                                                
+  					</li>
+  					<li>
+  						
+                                             
+                                                   <a href="./xxgk/zfgzdt/201507/t20150714_1225937.htm" target="_blank" title="经营者不得用企业字号“傍名牌”">经营者不得用企业字号“...</a>                                                
+                                                
+                                                   <a href="./xxgk/zfgzdt/201507/t20150714_1225928.htm" target="_blank" title="禁止开业后自行停业连续六个月以上或者成立后无正当理由超过六个月未开业">禁止开业后自行停业连续...</a>                                                
+                                                
+                                                   <a href="./xxgk/zfgzdt/201507/t20150714_1225938.htm" target="_blank" title="用未注册商标冒充注册商标">用未注册商标冒充注册商标</a>                                                
+                                                
+                                                   <a href="./xxgk/zfgzdt/201407/t20140710_1083696.htm" target="_blank" title="市场主办方应当履行相关义务维护市场秩序">市场主办方应当履行相关...</a>                                                
+                                                
+                                                   <a href="./xxgk/zfgzdt/201507/t20150714_1225924.htm" target="_blank" title="经营者不得无照经营">经营者不得无照经营</a>                                                
+                                                
+
+
+  					</li>
+  					<li>
+  						
+
+                                               
+                                                   <a href="./zmhd/xfjs/201503/t20150323_1210913.html" target="_blank" title="流量去哪儿了？">流量去哪儿了？</a>                                                
+                                                
+                                                   <a href="./zmhd/xfjs/201505/t20150525_1218961.html" target="_blank" title="警惕航班取消短信诈骗">警惕航班取消短信诈骗</a>                                                
+                                                
+                                                   <a href="./zmhd/xfjs/201505/t20150511_1217231.html" target="_blank" title="购买蚕丝被的几点提示">购买蚕丝被的几点提示</a>                                                
+                                                
+                                                   <a href="./zmhd/xfjs/201503/t20150323_1210883.html" target="_blank" title="充电宝购买需谨慎">充电宝购买需谨慎</a>                                                
+                                                
+                                                   <a href="./zmhd/xfjs/201505/t20150511_1217232.html" target="_blank" title="如何买到放心虾">如何买到放心虾</a>                                                
+                                                
+                                                   <a href="http://www.baic.gov.cn/zmhd/" target="_blank" title="在线投诉举报">在线投诉举报</a>                                                
+                                                
+  					</li>
+              </ul>
+              <ul class=zb_pages>
+                <li id="dengji" class=curPage> <img src="./images/san-1_6.png" border="0" usemap="#Map3">
+                    <map name="Map3">
+                  
+		    <area shape="rect" coords="3,1,208,37" href="javascript:showC('dengji', 1)"> <!--办照指南-->
+                    <area shape="rect" coords="4,42,210,78" href="javascript:showC('jingying', 1)"><!--守法经营-->
+                   <area shape="rect" coords="3,86,203,116" href="javascript:showC('weiquan', 1)"><!--消费维权-->
+                  
+                    </map>
+                    <!--登记 usemap="#Map3"-->
+                </li>
+                <li id="jingying" style="display:none"> <img src="./images/san-2_6.png" border="0" usemap="#Map3">
+                <!--经营 usemap="#Map3"-->
+                </li>
+                <li id="weiquan" style="display:none"> <img src="./images/san-3_6.png" border="0" usemap="#Map3">
+                <!--维权 usemap="#Map3"-->
+                </li>
+              </ul>
+            </div>
+            <img src="./images/tm-bj_5.png" border="0" usemap="#Map" class="box_url">
+            <map name="Map">
+            		<!--办事咨询-->
+	              <area shape="circle" coords="206,69,46" target="_blank" href="./zxfw2/" />
+	              <!--企业课堂-->
+<!--
+	              <area shape="circle" coords="344,69,42" target="_blank" href="./zxfw2/qykt/" />
+-->
+	              <!--数据发布-->
+	              <area shape="circle" coords="274,138,41" target="_blank" href="./zxfw2/sjfb/" />
+	              
+                      <!--首都之窗-->
+	              <area shape="circle" coords="354,168,30,180" target="_blank" href="http://www.beijing.gov.cn/" />
+
+	              <!--企业信息网-->
+	              <area shape="rect" coords="51,157,219,189" target="_blank" href="http://qyxy.baic.gov.cn" />
+	              <!--企业信息网-->
+	              <area shape="rect" coords="85,110,177,158" target="_blank" href="http://qyxy.baic.gov.cn" />
+    				</map>
+  </div>
+ <div style="widht:447px;"  valign="bottom">
+              <!--  <table width="447px;" height="50" border="0" cellpadding="0" cellspacing="0" style="widht:446px;background:url(images/sousuokuang.png);background-repeat: no-repeat;margin-left:10px;">
+			<form name="searchform" id="searchform" onSubmit="return setSearchword(this);" action="/was40/search?channelid=59662" method="post" target="_blank" >
+			<input type="hidden" name="searchword" value="">
+			  <input type="hidden" name="templet" value="outline_search20140828.jsp">
+			        <tr  style="widht:198px;"> 
+			          <td>
+			          		&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/sousuo.png" width="28" height="28">			          	</td>
+       		  <td style=" width:300px;">
+			          			<input type="text" id="keyword" name="keyword" style="height:22px;width:280px;" onClick="javascript:this.value='';"> 
+			          		</td>
+				          	<td>
+							<input type="image" name="imageField3" id="imageField3" src="./images/ssousu_button.png">
+				          				          	</td>
+	          </tr> 
+			   </form> 
+                        
+                </table>-->
+			<!--	<div style="overflow:visible;position:absoulte;z-index:999;"><iframe src="http://www.baic.gov.cn:7021/business/index/index_search.jsp" width="445px" height="350px" frameborder="0"   scrolling=no style="overflow:visible;position:absoulte;z-index:999;" allowTransparency="true">   </iframe> </div>  -->     
+<div style="overflow:visible;position:absoulte;z-index:999;">
+<iframe src="/tybf/sytb/index_917.htm" width="445" height="50"  frameborder="0"  allowTransparency="true" scroll=no style="position:absoulte;z-index:5555;">   </iframe> 
+</div>
+
+
+			<!--<div style="overflow:visible;position:absoulte;z-index:999;">
+			<object style="border:0px" type="text/x-scriptlet" data="http://www.baic.gov.cn:7021/business/index/index_search.jsp" width=100% height=40></object>
+			</div>--> 
+			
+			</div>
+             
+	</div>
+	
+<script>
+			function showC(li_id, flag){
+					var ids = "dengji,jingying,weiquan";
+					var idsArr = ids.split(",");
+					for(var i=0;i<idsArr.length;i++){
+							var tempId = idsArr[i];
+							document.getElementById(tempId).style.display = "none"	
+					}
+					
+					
+					for(var i=0;i<idsArr.length;i++){
+							var tempId = idsArr[i];
+							if(tempId == li_id){
+								document.getElementById(tempId).style.display = "";
+								if(typeof(flag) != "undefined"){
+									LBClick();
+								}
+							}
+					}
+			}	
+		</script>
+
+
+          </td>
+        </tr> <tr  height="2px";><td></td></tr>
+        
+      </table>
+      <table width="1000" height="37" class="boxcenter" border="0" cellspacing="0" cellpadding="0" background="./images/navbg.gif">
+  <tr>
+    <td width="657">
+       <table height="37" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15"></td>
+    <td width="80" align="center" class="navin"><a href="./">首页</a></td>
+    <td width="17" align="center"><img src="./images/navline.gif" width="2" height="37"></td>
+    <td width="80" align="center" class="navout"><a href="./xxgk/">信息公开</a></td>
+    <td width="17" align="center"><img src="./images/navline.gif" width="2" height="37"></td>
+    <td width="80" align="center" class="navout"><a href="./zxbs/">在线办事</a></td>
+    <td width="17" align="center"><img src="./images/navline.gif" width="2" height="37"></td>
+    <td width="80" align="center" class="navout"><a href="./zmhd/">互动交流</a></td>
+    <td width="17" align="center"><img src="./images/navline.gif" width="2" height="37"></td>
+    <td width="80" align="center" class="navout"><a href="./zxfw2/">资讯服务</a></td>
+    <td width="17" align="center"><img src="./images/navline.gif" width="2" height="37"></td>
+    <td width="80" align="center" class="navout"><a href="http://qyxy.baic.gov.cn/" target="_blank">信用公示</a></td>
+  </tr>
+</table>
+    </td>
+   <!--<td width="345" align="left">
+<form name="searchform" id="searchform" onSubmit="return setSearchword(this);" action="/was40/search?channelid=40557" method="post" target="_blank" >
+			  <input type="hidden" name="searchword" value="">
+			  <input type="hidden" name="templet" value="outline_search_new.jsp">
+        <table height="37" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="21"><img src="./images/ijs.gif" width="21" height="20"></td>
+                <td width="54">站内搜索</td>
+                <td width="137" valign="middle"><input type="text" id="keyword" name="keyword" value="关键字" onClick="javascript:this.value='';" class="inpsch"></td>
+                <td valign="middle" style="padding-top:2px;"><input type="image" name="imageField3" id="imageField3" src="./images/schb1.gif">
+                  <a href="/html/advsearch.html"><img src="./images/schb2.gif" width="70" height="19"></a>
+                                                             </td>
+              </tr>
+          </table>
+</form>
+    </td>-->
+  </tr>
+			</table>
+      <table width="1002" border="0" class="boxcenter" cellpadding="0" cellspacing="0" id="tzgg" bgcolor="#FFFFFF">
+        <tr>
+          <td width="790" valign="top"><div class="bgcor2">
+              <div class="zwgk boxcenter" ><a href="./xxgk/">更多>></a></div>
+              <div class="gsn1">
+              <table width="790" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="42" height="23">&nbsp;</td>
+<td width="96" align="center" class="gsn2">通知公告</td>
+    <td width="140">&nbsp;</td>
+    <td width="30"style="text-decoration:none"><a href="./xxgk/tzgg/" style="width:30px;height;30px;" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+    <td width="45">&nbsp;</td>
+ <td width="99" align="center" class="gsn2">局情动态</td>
+    <td width="280">&nbsp;</td>
+   <td width="33"style="text-decoration:none"><a href="./xxgk/jqdt/" style="width:30px;height;30px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+    <td width="25">&nbsp;</td>
+  </tr>
+</table>
+              </div>
+              <div class="bor1" style="height:312px;">
+                <table width="773" class="boxcenter" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+    <td width="287" valign="top">
+      <ul class="list1">
+	  
+        <li><span>[来信反馈]</span><a href="./xxgk/tzgg/qtyw/201509/t20150929_1239924.html" target="_blank" title="公众来信处理情况通报（8月份）">公众来信处理情况通报（8月份）</a></li>
+		
+        <li><span>[登记业务]</span><a href="./xxgk/tzgg/djyw/201509/t20150928_1239676.htm" target="_blank" title="关于本市实行“三证合一、一照一码”登记制度改革的公告">关于本市实行“三证合一、一照一码”</a></li>
+		
+        <li><span>[市场监管]</span><a href="./xxgk/tzgg/scjg/201509/t20150906_1236247.html" target="_blank" title="2014年度北京市诚信示范市场考核验收结果公示">2014年度北京市诚信示范市场考核验收</a></li>
+		
+        <li><span>[财政性资金]</span><a href="./xxgk/czxzj/201508/t20150820_1232865.htm" target="_blank" title="北京市工商行政管理局2014年度部门决算说明">北京市工商行政管理局2014年度部门决</a></li>
+		
+        <li><span>[来信反馈]</span><a href="./xxgk/tzgg/qtyw/201508/t20150804_1229210.html" target="_blank" title="公众来信处理情况通报（7月份）">公众来信处理情况通报（7月份）</a></li>
+		
+        <li><span>[意见征集]</span><a href="./zmhd/jjzj/201508/t20150804_1229208.html" target="_blank" title="关于对《北京市工商行政管理局政府信息公开办法》公开征集意见的反馈">关于对《北京市工商行政管理局政府信</a></li>
+		
+        <li><span>[人员招录]</span><a href="./xxgk/tzgg/ryzl/201507/t20150721_1226918.html" target="_blank" title="北京市工商局事业单位2015年面向社会公开招考工作人员第三批拟录用人员公示">北京市工商局事业单位2015年面向社会</a></li>
+		
+        <li><span>[意见征集]</span><a href="./zmhd/jjzj/201507/t20150720_1226786.html" target="_blank" title="公众形象调查问卷（二）">公众形象调查问卷（二）</a></li>
+		
+        <li><span>[人员招录]</span><a href="./xxgk/tzgg/ryzl/201507/t20150720_1226767.html" target="_blank" title="北京市工商局2015年接收安置军转干部面试公告">北京市工商局2015年接收安置军转干部</a></li>
+		
+        <li><span>[企个监管]</span><a href="./xxgk/tzgg/qgjg/201507/t20150717_1226348.html" target="_blank" title="2013、2014年度市场主体年报公示结束 本市企业年报公示率超九成">2013、2014年度市场主体年报公示结束</a></li>
+		
+        <li><span>[意见征集]</span><a href="./zmhd/jjzj/201507/t20150716_1226259.html" target="_blank" title="关于对《北京市工商行政管理局政府信息公开办法》公开征集意见的通知">关于对《北京市工商行政管理局政府信</a></li>
+		
+        <li><span>[人员招录]</span><a href="./xxgk/tzgg/ryzl/201507/t20150714_1225798.html" target="_blank" title="北京市工商局事业单位2015年面向社会公开招考工作人员第二批拟录用人员公示">北京市工商局事业单位2015年面向社会</a></li>
+		
+      </ul>
+    </td>
+    <td width="23" valign="top">&nbsp;</td>
+    <td width="169" valign="top" class="gsn3">
+      <h1>
+       
+         <a href="./zmhd/zxft/shipin/201509/t20150929_1239938.htm"><img src="./zmhd/zxft/shipin/201509/W020150929443301825373.jpg" width='156' height='104'></a><br>
+         2015年工商专题栏目《热点播报》第五期
+              
+      </h1>
+    </td>
+    <td width="294" valign="top">
+         <div id="test_cont1">
+           <ul class="list1" style="margin-left:-8px;" >
+		   
+        <li><span>[<a href="./xxgk/jqdt/sjdt/">市局动态</a>]</span><a href="./xxgk/jqdt/sjdt/201509/t20150929_1239860.htm" target="_blank" title="北京市发出首张“一照一码”营业执照">北京市发出首张“一照一码”营业执照</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/sjdt/">市局动态</a>]</span><a href="./xxgk/jqdt/sjdt/201509/t20150929_1239858.htm" target="_blank" title="今年前八个月人民调解为消费者挽回经济损失200万元">今年前八个月人民调解为消费者挽回经</a></li>
+		
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/sjsfj/">石景山分局</a>]</span><a href="./xxgk/jqdt/fjdt/sjsfj/201509/t20150930_1240410.html" target="_blank" title="石景山分局党组书记、局长李广隆节前慰问基层干部">石景山分局党组书记、局长李广隆节前</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/sjsfj/">石景山分局</a>]</span><a href="./xxgk/jqdt/fjdt/sjsfj/201509/t20150930_1240409.html" target="_blank" title="9月29日上午，石景山发出全区首张加载“统一社会信用代码”的营业执照">9月29日上午，石景山发出全区首张加</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/sjsfj/">石景山分局</a>]</span><a href="./xxgk/jqdt/fjdt/sjsfj/201509/t20150930_1240411.html" target="_blank" title="石景山分局对八大处文化节进行督导检查">石景山分局对八大处文化节进行督导检</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/myfj/">密云分局</a>]</span><a href="./xxgk/jqdt/fjdt/myfj/201509/t20150930_1240394.html" target="_blank" title="密云分局水库工商所深化渔街品牌建设">密云分局水库工商所深化渔街品牌建设</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/hrfj/">怀柔分局</a>]</span><a href="./xxgk/jqdt/fjdt/hrfj/201509/t20150930_1240390.html" target="_blank" title="29日，怀柔分局发放首张“三证合一”营业执照">29日，怀柔分局发放首张“三证合一”</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/myfj/">密云分局</a>]</span><a href="./xxgk/jqdt/fjdt/myfj/201509/t20150930_1240393.html" target="_blank" title="密云分局颁发全县首份加载统一社会信用代码的营业执照">密云分局颁发全县首份加载统一社会信</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/yqfj/">延庆分局</a>]</span><a href="./xxgk/jqdt/fjdt/yqfj/201509/t20150930_1240385.html" target="_blank" title="延庆县首家养老服务类绿色通道揭牌">延庆县首家养老服务类绿色通道揭牌</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/yqfj/">延庆分局</a>]</span><a href="./xxgk/jqdt/fjdt/yqfj/201509/t20150930_1240386.html" target="_blank" title="延庆工商分局参加我县“七五”普法规划研讨会">延庆工商分局参加我县“七五”普法规</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/yqfj/">延庆分局</a>]</span><a href="./xxgk/jqdt/fjdt/yqfj/201509/t20150930_1240382.html" target="_blank" title="延庆工商分局迎接“三证合一、一照一码”时代到来">延庆工商分局迎接“三证合一、一照一</a></li>
+		
+        <li><span>[<a href="./xxgk/jqdt/fjdt/yqfj/">延庆分局</a>]</span><a href="./xxgk/jqdt/fjdt/yqfj/201509/t20150930_1240383.html" target="_blank" title="延庆工商分局积极参与我县创建全国县级文明城市工作">延庆工商分局积极参与我县创建全国县</a></li>
+		
+      </ul>
+       </div>
+    </td>
+  </tr>
+</table>
+              </div>
+              <div class="bsfw boxcenter"><a href="./zxbs/">更多>></a></div>
+              <div class="bor2" style="height:254px;">
+                <table width="745" class="fw" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="181" valign="top">
+   <table width="99%" class="ht" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="14">&nbsp;</td>
+    <td width="131">合同示范文本</td>
+    <td width="33"><a href="./zxbs/htsfwb/" target="_blank"><img src="./images/more2.jpg" width="12" height="10"></a></td>
+  </tr>
+</table>
+<table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+  </tr>
+</table>
+
+      <table width="100%" class="lmt" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22">&nbsp;</td>
+    <td width="41"><img src="./images/icon1_1.jpg" width="18" height="13"></td>
+    <td align="left"><a href="./zxbs/htsfwb/shxfl/" target="_blank">生活消费类</a></td>
+  </tr>
+</table><table width="100%" height="15"border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+  </tr>
+</table>
+      <table width="100%" class="lmt" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22">&nbsp;</td>
+    <td width="41"><img src="./images/icon2_1.jpg" width="18" height="17"></td>
+    <td align="left"><a href="./zxbs/htsfwb/nznyl/" target="_blank">农资农业类</a></td>
+  </tr>
+</table>
+<table width="100%" height="15"border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+  </tr>
+</table>
+
+
+      <table width="100%" class="lmt" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22">&nbsp;</td>
+    <td width="41"><img src="./images/icon3_1.jpg" width="16" height="16"></td>
+    <td align="left"><a href="./zxbs/htsfwb/scjyl/" target="_blank">生产经营类</a></td>
+  </tr>
+</table>
+<table width="100%" height="15"border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+  </tr>
+</table>
+      <table width="100%" class="lmt" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22">&nbsp;</td>
+    <td width="41"><img src="./images/icon4_1.jpg" width="17" height="18"></td>
+    <td align="left"><a href="./zxbs/htsfwb/jzgcl/" target="_blank">建筑工程类</a></td>
+  </tr>
+</table>
+<table width="100%" height="15" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+  </tr>
+</table>
+      <table width="100%" class="lmt" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22">&nbsp;</td>
+    <td width="41"><img src="./images/icon1_1.jpg" width="18" height="13"></td>
+    <td align="left"><a href="./zxbs/htsfwb/spaql/" target="_blank">食品安全类</a></td>
+  </tr>
+</table>
+
+    </td>
+    <td>&nbsp;</td>
+    <td width="540" valign="top">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="265" valign="top">
+      <table width="100%" class="ht" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15">&nbsp;</td>
+    <td width="221">登记注册办事指南</td>
+    <td><a href="./zxbs/djzc/bszn/" target="_blank"><img src="./images/more2.jpg" width="12" height="10"></a></td>
+  </tr>
+</table>
+      <ul class="list2">
+    
+        <li><a href="./zxbs/djzc/bszn/tglgzd/201408/t20140827_1187105.html" target="_blank" title="如何办理企业名称预先核准">如何办理企业名称预先核准</a></li>
+	  
+        <li><a href="./zxbs/djzc/bszn/bglgzd/nzgsbg/201408/t20140827_1187060.html" target="_blank" title="有限责任公司变更登记（备案）一次性告知单201">有限责任公司变更登记（备案）一次</a></li>
+	  
+        
+      </ul>
+    </td>
+    <td>&nbsp;</td>
+    <td width="265" valign="top">
+      <table width="100%" class="ht" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15">&nbsp;</td>
+    <td width="221">登记注册表格下载</td>
+    <td><a href="./zxbs/djzc/bgxz/"><img src="./images/more2.jpg" width="12" height="10"></a></td>
+  </tr>
+</table>
+      <ul class="list2">
+  
+        <li><a href="./zxbs/djzc/bgxz/djzc_qt/201408/t20140827_1187177.html" target="_blank" title="指定（委托）书">指定（委托）书</a></li>
+		
+
+        
+      </ul>
+    </td>
+  </tr>
+</table>
+       <table width="100%" style="margin-top:18px;" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="265" valign="top">
+      <table width="100%" class="ht" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15">&nbsp;</td>
+    <td width="221">报告公示</td>
+    <td><a href="./zxbs/njyz/bszn/" target="_blank"><img src="./images/more2.jpg" width="12" height="10"></a></td>
+  </tr>
+</table>
+      <ul class="list2">
+       
+        <li><a href="./zxbs/njyz/bszn/201509/t20150929_1239856.htm" target="_blank" title="个体工商户恢复正常记载状态的办理流程">个体工商户恢复正常记载状态的办理</a></li>
+	  
+        <li><a href="./zxbs/njyz/bszn/201509/t20150929_1239851.htm" target="_blank" title="企业（农民专业合作社）移出经营异常名录的办理流程">企业（农民专业合作社）移出经营异</a></li>
+	  
+        <li><a href="./zxbs/njyz/bszn/201409/t20140929_1193202.htm" target="_blank" title="企业信息公示暂行条例">企业信息公示暂行条例</a></li>
+	  
+      </ul>
+    </td>
+    <td>&nbsp;</td>
+    <td width="265" valign="top">
+      <table width="100%" class="ht" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="15">&nbsp;</td>
+    <td width="221">其他业务</td>
+    <td><a href="./zxbs/"><img src="./images/more2.jpg" width="12" height="10"></a></td>
+  </tr>
+</table>
+      <ul class="list2 gsn4">
+       
+        <li><a href="http://www.baic.gov.cn/zxbs/ggxk/bszn/" target="_blank" title="广告许可">广告许可</a></li>
+	  
+        <li><a href="http://www.baic.gov.cn/zxbs/dcdydj/dcdy_zhinan/" target="_blank" title="动产抵押登记">动产抵押登记</a></li>
+	  
+        <li><a href="http://www.baic.gov.cn/zxbs/ddzxcba/ddzxc/" target="_blank" title="电动自行车备案">电动自行车备案</a></li>
+	  
+        <li><a href="http://www.baic.gov.cn/zxbs/pmhdba/pmhd_bszn/" target="_blank" title="拍卖活动备案">拍卖活动备案</a></li>
+	  
+      </ul>
+    </td>
+  </tr>
+</table>
+    </td>
+  </tr>
+</table>
+              </div>
+      <div class="gsn5 boxcenter"><a href="./zmhd/">更多>></a></div>
+      <div class="bor2" style="height:124px; border:1px #c9f4bb solid; border-top:0px;">
+      <table width="746" style="width:746" class="boxcenter" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="368" valign="top"><table width="368" class="gsn6" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15">&nbsp;</td>
+        <td width="319">投诉回复选登</td>
+        <td width="34"><a href="./zmhd/dxal/"><img src="./images/gsn8.gif" width="12" height="10"></a></td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="64%" valign="top" class="gsn7">
+          	 <ul class="list2" >
+               <li>
+[<font color="red">投诉回复</font>]<a href="./zmhd/dxal/201509/t20150907_1236473.html" target="_blank" title="举证责任由谁承担？">举证责任由谁承担？</a>&nbsp;&nbsp;&nbsp;&nbsp;(2015-09-07)</li> <li>
+[<font color="red">投诉回复</font>]<a href="./zmhd/dxal/201508/t20150824_1233619.html" target="_blank" title="网络交易平台不能提供经营者真实信息也要担责">网络交易平台不能提供经营者真...</a>&nbsp;&nbsp;&nbsp;&nbsp;(2015-08-24)</li> <li>
+[<font color="red">投诉回复</font>]<a href="./zmhd/dxal/201508/t20150810_1230746.html" target="_blank" title="向霸王条款说“不”">向霸王条款说“不”</a>&nbsp;&nbsp;&nbsp;&nbsp;(2015-08-10)</li> <li>
+[<font color="red">投诉回复</font>]<a href="./zmhd/dxal/201507/t20150724_1227253.html" target="_blank" title="网站擅自封存网络游戏账号怎么办？">网站擅自封存网络游戏账号怎么办？</a>&nbsp;&nbsp;&nbsp;&nbsp;(2015-07-24)</li>
+            </ul>
+          </tr>
+      </table></td>
+    <td width="7" valign="top"></td>
+    <td width="370" valign="top">
+    	<table width="100%" class="gsn6" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15">&nbsp;</td>
+        <td width="319"><ul class="gsn8"><li id="one1" class="hover" onclick="setTab('one',1,2)"><b>消费提示</b></li></ul></td>
+        <td width="34"><a href="./zmhd/xfjs/" id="conn_one_1"><img src="./images/gsn8.gif" width="12" height="10"></a></td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="#"></a>
+            <ul class="list2" id="con_one_1">
+             
+        <li><a href="./zmhd/xfjs/201509/t20150907_1236472.html" target="_blank" title="如何选购性价比高的蜂蜜">如何选购性价比高的蜂蜜</a></li>
+		
+        <li><a href="./zmhd/xfjs/201508/t20150824_1233618.html" target="_blank" title="如何解读化妆品标签">如何解读化妆品标签</a></li>
+		
+        <li><a href="./zmhd/xfjs/201508/t20150810_1230741.html" target="_blank" title="向未成年人售卖手机不合法">向未成年人售卖手机不合法</a></li>
+		
+        <li><a href="./zmhd/xfjs/201507/t20150724_1227252.html" target="_blank" title="理性办理预付费卡">理性办理预付费卡</a></li>
+		
+            </ul>
+           </td>
+          </tr>
+      </table></td>
+     </tr>
+</table>
+      </div>
+              <table width="776" height="80" border="0" cellspacing="0" cellpadding="0" class="mar4">
+              <tr>
+                <td width="560" valign="top"><img src="./images/gsn6.jpg" width="777" height="108" usemap="#Map4" border="0"></td>
+              </tr>
+            </table>
+            </div>
+          </td>
+          <td width="212" valign="top" style=" background:url(images/rbgs2.gif) left 59px repeat-x;">
+            <div class="bgcor1" style=" height:910px;">
+              
+              <table width="208" height="145" class="margin4" border="0" cellpadding="0" cellspacing="0" background="./images/zfxxgk.gif">
+                <tr>
+                <td width="208" align="center" valign="top"><table width="100%" height="38" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="38">&nbsp;</td>
+                  </tr>
+                </table>
+                  <table width="150" border="0" cellpadding="0" cellspacing="0" background="./images/zwgkdot.gif" class="zfxxgk" style="margin-right:4px; margin-bottom:5px;">
+                    <tr>
+                      <td width="22" height="28" valign="top">&nbsp;</td>
+                      <td width="128" align="left" valign="middle"><a href="http://zfxxgk.beijing.gov.cn/fgdyna.prorghome.prOrgHomeFrame.do?menuType=2&GM_T_CATALOG_INFO/SYS_ORGAN_ID=87">政府信息公开指南</a></td>
+                    </tr>
+                    <tr>
+                      <td height="28" valign="top">&nbsp;</td>
+                      <td align="left" valign="middle"><a href="http://zfxxgk.beijing.gov.cn/foreground.pr.prStaticForward.do?forwardType=tree&query/orgID=87" target="_blank">政府信息公开目录</a></td>
+                    </tr>
+                    <tr>
+                      <td height="28" valign="top">&nbsp;</td>
+                      <td align="left" valign="middle"><a href="http://zfxxgk.beijing.gov.cn/showInfo.jsp?docType=1&query/orgID=87" target="_blank">政府信息公开年报</a></td>
+                    </tr>
+                    <tr>
+                      <td height="28" valign="top">&nbsp;</td>
+                      <td align="left" valign="middle"><a href="http://zfxxgk.beijing.gov.cn/showInfo.jsp?docType=3&query/orgID=87" target="_blank">依申请公开</a></td>
+                    </tr>
+                    <tr>
+                      <td height="28" valign="top">&nbsp;</td>
+                      <td align="left" valign="middle"><a href="http://zfxxgk.beijing.gov.cn/showInfo.jsp?docType=6&query/orgID=87" target="_blank">监督投诉</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="./images/zfxxgkbk.gif" width="208" height="20"></td>
+              </tr>
+          </table>
+          
+          <table width="208" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:5px;">
+              <tr>
+                <td width="208" align="center" valign="top">
+                <table width="193" border="0" cellpadding="0" cellspacing="1" bgcolor="#d5e4ec">
+                  <tr>
+                    <td width="193" height="200" align="center" bgcolor="#FFFFFF" style="padding-bottom:5px;">
+                    <table width="180" border="0" cellspacing="0" cellpadding="0" class="adsmg">
+					<tr>
+			                <td width="208" height="60" align="center" style="padding-bottom:5px;"><a href="http://qyxy.baic.gov.cn/beijing" target="_blank"><img src="./images/xinxibaogao.jpg" width="160" height="100" border="0" style="cursor:pointer;"></a></td>
+			              </tr>	
+                      <tr>
+                		<td width="208" height="60" align="center" style="padding-bottom:5px;"><a href="./zmhd/"  target="_blank"><img src="./images/jb.jpg" width="160" height="100" border="0" style="cursor:pointer;"></a>
+                		 </td>
+			              </tr>
+			          <tr>
+			                <td width="208" height="60" align="center" style="padding-bottom:5px;"><a href="http://www.baic.gov.cn/mess/message/leavemess_new.jsp" target="_blank"><img src="./images/gsn9.jpg" width="160" height="100" border="0" style="cursor:pointer;"></a></td>
+			              </tr>
+					  
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table>
+           
+              <table width="208" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:10px;">
+              <tr>
+                <td width="208" align="center" valign="top">
+                <table width="193" border="0" cellpadding="0" cellspacing="1" bgcolor="#d5e4ec">
+                  <tr>
+                    <td width="193" height="160" align="center" bgcolor="#FFFFFF" style="padding-bottom:5px;">
+                    <table width="180" border="0" cellspacing="0" cellpadding="0" class="adsmg">
+                     	
+                      <tr>
+                        <td width="180" align="center"><a href="http://www.baic.gov.cn:7023/gsglj/"><img src="./yqlj/201507/W020150706285539249518.jpg" alt="" border="0" width="165" ></a><!--<a href="http://www.baic.gov.cn:7023/gsglj/">职权信息公开</a>--></td>
+                        </tr>
+						
+                      <tr>
+                        <td width="180" align="center"><a href="http://www.baic.gov.cn//test/201412/t20141205_1199253.htm"><img src="./yqlj/201502/W020150213515808860445.jpg" alt="" border="0" width="165" ></a><!--<a href="http://www.baic.gov.cn//test/201412/t20141205_1199253.htm">信息公开成绩单</a>--></td>
+                        </tr>
+						
+                      <tr>
+                        <td width="180" align="center"><a href="http://eservice.beijing.gov.cn/sj/xzfwzy/fwsx/244/245/269/index_64.htm"><img src="./yqlj/201409/W020140904255129839527.jpg" alt="" border="0" width="165" ></a><!--<a href="http://eservice.beijing.gov.cn/sj/xzfwzy/fwsx/244/245/269/index_64.htm">公共服务目录</a>--></td>
+                        </tr>
+						
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table>
+              <table width="193" border="0" cellspacing="0" cellpadding="0" class="boxcenter">
+
+                <form id="form" name="form6" method="post" action="">
+                  <tr>
+                    <td width="211"><img src="./images/yqlj.gif" width="193" height="40"></td>
+                  </tr>
+                  <tr>
+                    <td height="165" align="center" style=" background-color:#dcf1f7; border:1px #c0dfeb solid; border-top:none; height:95px; padding-bottom:20px;"><table width="191" height="75" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto 3px;">
+                      <tr>
+                        <td width="196" height="30" align="center" valign="top"><select name="select" class="linkinput" id="select"  onChange="window.open(this.value,'_blank')">
+                          <option>---全国工商系统网站---</option>
+						  <option value="http://www.saic.gov.cn">国家工商行政管理总局</option>
+							<option value="http://www.sgs.gov.cn">上海红盾信息网</option>
+							<option value="http://www.tjaic.gov.cn">天津红盾信息网</option>
+							<option value="http://www.cqgs12315.cn">重庆工商红盾网</option>
+							<option value="http://www.hebgs.gov.cn">河北省工商行政管理局</option>          
+							<option value="http://www.sxaic.gov.cn">山西红盾信息网</option>
+							<option value="http://www.lngs.gov.cn">辽宁红盾信息网</option>
+							<option value="http://www.hljaic.gov.cn">黑龙江红盾信息网</option>     
+							<option value="http://www.zjaic.gov.cn">浙江红盾信息网</option>
+							<option value="http://www.fjaic.gov.cn">福建红盾信息网</option>
+							<option value="http://www.sdaic.gov.cn">山东红盾信息网</option>		
+							<option value="http://www.egs.gov.cn/">湖北红盾信息网</option>
+							<option value="http://www.gdgs.gov.cn">广东红盾信息网</option>
+							<option value="http://aic.hainan.gov.cn">海南红盾信息网</option>
+							<option value="http://www.gzaic.org.cn">贵州红盾信息网</option>          
+							<option value="http://www.gsaic.gov.cn">甘肃红盾信息网</option>
+							<option value="http://www.ngsh.gov.cn">宁夏红盾信息网</option>
+							<option value="http://www.nmgs.gov.cn">内蒙古自治区红盾信息网</option>
+							<option value="http://www.jlgs.gov.cn">吉林红盾信息网</option>
+							<option value="http://www.jsgsj.gov.cn">江苏省工商局</option>
+							<option value="http://www.ahaic.gov.cn">安徽红盾信息网</option>
+							<option value="http://www.jxaic.gov.cn/">江西红盾信息网</option>
+							<option value="http://www.haaic.gov.cn">河南红盾信息网</option>
+							<option value="http://www.hnaic.gov.cn">湖南红盾信息网</option>
+							<option value="http://www.gxhd.com.cn/">广西红盾信息网</option>
+							<option value="http://www.scaic.gov.cn">四川红盾信息网</option>
+							<option value="http://www.ynaic.gov.cn">云南红盾信息网</option>
+							<option value="http://www.snaic.gov.cn">陕西省工商局</option>
+							<option value="http://www.qhaic.gov.cn">青海红盾信息网</option>
+							<option value="http://www.xjaic.gov.cn">新疆红盾信息网</option>			
+							<option value="http://www.dlgs.gov.cn">大连市工商局</option>
+							<option value="http://www.xm.fjaic.gov.cn">厦门市工商局</option>
+							<option value="http://www.szaic.gov.cn">深圳市红盾信息网</option>
+							<option value="http://www.ccgs.gov.cn/">长春市工商局</option>
+							<option value="http://www.njgs.gov.cn">南京市工商局</option>		
+							<option value="http://www.jngsj.gov.cn">济南市工商局</option>
+							<option value="http://www.gzaic.gov.cn">广州市工商局</option>			
+							<option value="http://www.xags.gov.cn">西安市工商局</option>					
+							<option value="http://www.nbaic.gov.cn">宁波市工商局</option>
+							<option value="http://www.qdaic.gov.cn">青岛红盾信息网</option>
+							<option value="http://www.sygsj.gov.cn">沈阳红盾信息网</option>
+							<option value="http://www.hrbgs.gov.cn">哈尔滨市红盾信息网</option>
+							<option value="http://www.hzaic.gov.cn">杭州市红盾信息网</option>
+							<option value="http://www.whhd.gov.cn">武汉市工商局</option>
+							<option value="http://www.cdgs.gov.cn">成都市工商局</option>
+                        </select></td>
+                      </tr>
+<!--
+                      <tr>
+                        <td height="30" align="center" valign="top"><select name="select" class="linkinput" id="select"  onChange="window.open(this.value,'_blank')">
+                          <option>---北京市各政府机构网站---</option>
+						  <option value="http://www.beijing.gov.cn/bf/bgtlzhym/default.htm">市人民政府办公厅</option>
+							<option value="http://www.bjpc.gov.cn/">市发展和改革委员会</option>
+						    <option value="http://www.bjedu.gov.cn/">市教育委员会</option>
+							<option value="http://www.bjkw.gov.cn">市科学技术委员会</option>
+							<option value="http://http://www.bjeit.gov.cn//">市经济信息化委</option>
+							<option value="http://www.bjethnic.gov.cn/">市民族事务委员会</option>
+							<option value="http://www.bjgaj.gov.cn/">市公安局</option>
+							<option value="http://www.bjsupervision.gov.cn/">市监察局</option>
+							<option value="http://www.bjmzj.gov.cn/">市民政局</option>
+							<option value="http://www.bjsf.gov.cn/">市司法局</option>			
+							<option value="http://www.bjcz.gov.cn/">市财政局</option>
+							<option value="http://www.bjld.gov.cn/">市人力资源和社会保障局</option>
+							<option value="http://www.bjgtj.gov.cn/">市国土资源局</option>
+						    <option value="http://www.bjepb.gov.cn/">市环境保护局</option>
+							<option value="http://www.bjghw.gov.cn/">市规划委员会</option>
+							<option value="http://www.bjjs.gov.cn/">市住房和城乡建设委</option>
+							<option value="http://www.bjmac.gov.cn/index.jsp">市市政市容管理委员会</option>
+                            <option value="http://www.bjjtw.gov.cn">市交通委</option>
+                            <option value="http://www.bjnw.gov.cn">市农村工作委员会</option>
+                            <option value="http://www.bjwater.gov.cn">市水务局</option>			
+							<option value="http://www.bjmbc.gov.cn">市商务委</option>
+							<option value="http://www.bcbnet.org/">市文化局</option>
+							<option value="http://www.bjhb.gov.cn/">市卫生局</option>
+							<option value="http://www.bjfc.gov.cn/">市人口和计生委</option>
+							<option value="http://www.bjab.gov.cn/">市审计局</option>
+							<option value="http://www.bjfao.gov.cn/newsite/index.asp">市人民政府外事办公室</option>
+							<option value="http://www.bjshjs.gov.cn/">市社会建设工作办公室</option>
+							<option value="http://www.bjgzw.gov.cn">市国有资产监督管理委员会</option>
+							<option value="http://www.tax861.gov.cn/">市地方税务局</option>
+							<option value="http://www.baic.gov.cn">市工商行政管理局</option>
+							<option value="http://www.bjtsb.gov.cn/">市质量技术监督局</option>
+							<option value="http://www.bjsafety.gov.cn/">市安全生产监督管理局</option>
+							<option value="http://www.bjrt.gov.cn">市广播电视局</option>
+							<option value="http://www.bjppb.gov.cn/">市新闻出版局</option>
+							<option value="http://www.bjww.gov.cn/">市文物局</option>
+							<option value="http://www.bjsports.gov.cn/">市体育局</option>
+							<option value="http://www.bjstats.gov.cn/">市统计局</option>
+							<option value="http://www.greenbeijing.gov.cn/">市园林绿化局</option>
+							<option value="http://www.bjta.gov.cn/">市旅游局</option>
+							<option value="http://www.beijing.gov.cn/htm/jrgzj.htm">市金融工作局</option>
+							<option value="http://www.bjipo.gov.cn/">市知识产权局</option>
+							<option value="http://www.bjrf.gov.cn/">市民防局</option>
+							<option value="http://www.bjqb.gov.cn/">市人民政府侨务办公室</option>
+							<option value="http://www.bjfzb.gov.cn/">市人民政府法制办公室</option>
+							<option value="http://www.bjxfb.gov.cn/">市委市政府信访办公室</option>
+							<option value="http://www.bjyjs.gov.cn/">市人民政府研究室</option>
+                        </select></td>
+                      </tr>
+-->
+                      <tr>
+                        <td height="30" align="center" valign="top"><select name="select" class="linkinput" id="select" onChange="window.open(this.value,'_blank')">
+                          <option>---各区县工商分局网站---</option>
+						  <option value="http://www.baic.gov.cn/fjzd/dcfj/">东城分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/xcfj">西城分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/cyfj">朝阳分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/hrfj/">怀柔分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/hdfj">海淀分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/ftfj/">丰台分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/sjsfj/">石景山分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/mtgfj/">门头沟分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/fsfj/">房山分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/tzfj/">通州分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/syfj/">顺义分局</option>
+						  <option value="http://dx.baic.gov.cn/">大兴分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/myfj/">密云分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/cpfj/">昌平分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/pgfj/">平谷分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/yqfj/">延庆分局</option>
+						  <option value="http://www.baic.gov.cn/fjzd/ysfj/">燕山分局</option>  
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td height="30" align="center" valign="top"><select name="select" class="linkinput" id="select" onChange="window.open(this.value,'_blank')">
+                          <option>---其它---</option>
+						  <option value="http://www.cr.gov.hk">香港公司注册处</option>
+                        </select></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </form>
+              </table>
+            </div>
+          </td>
+        </tr>
+    </table>
+     
+     <table width="1002" height="31" border="0" class="boxcenter" cellpadding="0" cellspacing="0" background="./images/abk.gif" bgcolor="#FFFFFF">
+        <tr>
+          <td width="1002" height="31" align="center" valign="top" class="qb12 paddingt7"> </td>
+        </tr>
+      </table>
+      <table width="1002" height="9" border="0" class="boxcenter" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="1002" align="center" class="sh12bq paddingb11">主办单位：北京市工商行政管理局 京ICP备13045770号<br />
+          投诉举报：12315　通信地址：北京市海淀区苏州街36号 　邮编:100080 <br />
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/01/000/0000/60427917/CA010000000604279170004.js' type='text/javascript'%3E%3C/script%3E"));</script>
+&nbsp; <a href="http://weibo.com/u/2417856193?topnav=1&wvr=6&topsug=1" target="_blank"><img src="/images/weibo.png" width="80" height="80" border="0" style="cursor:pointer;"></a>
+</td>
+        </tr>
+<tr>
+<td></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<map name="Map" id="Map">
+<area shape="rect" coords="347,9,440,31" href="#" />
+</map>
+<map name="Map2" id="Map2"><area shape="rect" coords="338,0,456,25" href="#" /></map>
+
+<map name="Map4" id="Map4">
+  <!--<area shape="rect" coords="3,2,107,106" href="http://www.baic.gov.cn/zyfj/tamfj" target="_blank" />
+  <area shape="rect" coords="115,5,216,105" href="http://www.baic.gov.cn/zyfj/jcfj" target="_blank" />
+  <area shape="rect" coords="226,5,327,104" href="http://www.baic.gov.cn/zyfj/yzkfqfj" target="_blank" />
+  <area shape="rect" coords="337,4,441,105" href="http://www.baic.gov.cn/zyfj/jdcfj" target="_blank"/>
+  <area shape="rect" coords="448,5,552,107" href="http://www.baic.gov.cn/zyfj/zyspfj" target="_blank" />
+  <area shape="rect" coords="561,6,662,105" href="http://www.baic.gov.cn/zyfj/xzfj" target="_blank" />
+  <area shape="rect" coords="673,3,775,105" href="http://www.baic.gov.cn/zyfj/zgcfj" target="_blank" />-->
+
+
+<area shape="rect" coords="3,2,157,106" href="./zyfj/tamfj/" target="_blank" />
+  <area shape="rect" coords="160,5,310,105" href="./zyfj/jcfj/" target="_blank" />
+  <area shape="rect" coords="315,5,465,104" href="./zyfj/yzkfqfj/" target="_blank" />
+<!--
+  <area shape="rect" coords="337,4,441,105" href="./zyfj/jdcfj/" target="_blank"/>
+  <area shape="rect" coords="448,5,552,107" href="./zyfj/zyspfj/" target="_blank" />
+-->
+  <area shape="rect" coords="470,6,620,105" href="./zyfj/xzfj/" target="_blank" />
+  <area shape="rect" coords="625,3,775,105" href="./zyfj/zgcfj/" target="_blank" />
+</map>
+<map name="Map5" id="Map5"><area shape="rect" coords="2,2,64,23" href="#" /></map>
+
+<div id="floatWindow" style="position:absolute">
+
+	<a href='http://www.baic.gov.cn/xxgk/tzgg/djyw/201509/t20150928_1239676.htm' target="_blank"> 
+		<img src='./pf/201507/W020150928495906328170.jpg' border="0" width='300' height='180'> 
+	</a>
+</div>
+<script src="http://www.baic.gov.cn/js/pf.js"></script>
+
+
+
+
+<script LANGUAGE='JavaScript'>
+<!--
+MM_openBrWindow('./tcxx/201409/t20140903_1190966.htm','top=50,left=100,width=660,height=450,resizable=yes,scrollbars=yes')
+//-->
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="gbk" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <script>
+    //abtest
+    ;(function(){
+        //新url
+        var newUrl="http://www.paipai.com/indexnew.shtml",
+            abtest = getCookie('abtest');
+
+
+        if("m" != getQuery("entry") && (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
+            window.location.href="http://www.paipai.com/m2/index.html";
+        }
+
+        if(getQuery("isJump") === '0'){
+            //判断是否从新首页手动跳转回来，若是就不执行abtest
+            return false;
+        }
+        
+        if(abtest=="true"){
+            //如果上次是新首页；则这次也是
+            window.location.href=newUrl;
+        }else{
+
+            var visitkey=getCookie('visitkey');
+            if(visitkey){
+                //如果有visitkey，则取模
+                var limit=20;//放量比例
+                var yu=visitkey%100;
+                if(yu<=limit){
+                    var exdate = new Date();
+                    exdate.setDate(exdate.getDate()+30);                                    
+                    document.cookie="abtest=true;expires="+exdate.toGMTString()+";path=/;domain=.paipai.com";
+                    window.location.href=newUrl;
+                }               
+            }
+        }
+        function getQuery(name,url){ 
+           //参数：变量名，url为空则表从当前页面的url中取  
+            var u  = arguments[1] || window.location.search,
+                reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+                r = u.substr(u.indexOf("\?")+1).match(reg);
+            return r!=null?r[2]:"";
+        }
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) {
+                return parts.pop().split(";").shift();
+            } else {
+                return "";
+            }
+        };
+
+    })();
+    </script>
+	<script>var speedTimePoint=[[(new Date()),1470,113,1]]; var _speedMark = new Date();</script>
+	<meta name="Description" content="拍拍网 - 京东旗下大型、安全网上交易平台，提供各类服饰、美容、家居、数码、母婴、珠宝… 更有二手、拍卖、海外、产地直达优质特价商品...同时提供担保交易(先收货后付款)、七天无理由退换货等安全交易保障服务，让你全面安心享受网上购物乐趣！" />
+	<meta name="Keywords" content="拍拍网 京东 服饰、美容、家居、数码、母婴、珠宝、二手、拍卖、海外、产地直达、担保交易、七天无理由退换货、安全交易" />
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<link rel="canonical" href="http://www.paipai.com" />  
+	<link rel="dns-prefetch" href="http://static.paipaiimg.com" />
+	<link rel="dns-prefetch" href="http://member.paipai.com" />  
+	<link rel="dns-prefetch" href="http://opr.paipai.com" />
+	<link rel="dns-prefetch" href="http://service.paipai.com" />
+	<link rel="dns-prefetch" href="http://express.paipai.com" />
+	<link rel="dns-prefetch" href="http://img7.paipaiimg.com" /> 
+	<link rel="dns-prefetch" href="http://qlogo1.store.qq.com" />
+	<link rel="dns-prefetch" href="http://chong.qq.com" /> 
+	<link rel="stylesheet" type="text/css" href="http://static.paipaiimg.com/fd/paipai/base/css/gb_new.css">
+	<link rel="stylesheet" type="text/css" href="http://static.paipaiimg.com/fd/paipai/index/v2/css/index.css?v=20150417">
+	<title>拍拍网-拍拍，拍出惊喜！</title>
+</head>
+<body class="pp_index_page">
+	
+
+
+
+
+
+
+<script>window["PP.head.error.time"]=[new Date()]</script>
+<script id="legos:11171" ver="11171:20120514:20130422144852" name="PP.head.error" charset="gbk">
+window['PP.head.error.time'] && window['PP.head.error.time'].push(new Date());
+(function(){function $initBadjs(){var errorStr="";var getStack=function(){if(arguments.callee.caller.caller){var curr=arguments.callee.caller.caller,c,o=[];while(curr){c=curr;o.push('['+$transJson2str(curr.arguments)+']'+c.toString().replace(/[\t\n\r]/g,"").substring(0,100));curr=curr.caller;}
+return o.join(":");}else{return"";}}
+window.onerror=function(msg,url,l){var stack=getStack(),ts=String(msg).replace(/\n/g," ")+"|"+encodeURIComponent(url+":"+stack)+"|"+l;window._last_err_msg={msg:msg,url:url,l:l,stack:stack};if(errorStr.indexOf(ts)==-1||window._badjs_allow_resend){errorStr+=ts+",";$sendBadjs(msg,url,l+":"+stack);}
+return false}};function $sendBadjs(msg,src,d){var ua=navigator.userAgent.toLowerCase(),bom=window.ActiveXObject?"IE"+ua.match(/msie ([\d.]+)/)[1]:(ua.indexOf("firefox")!=-1)?"Firefox"+ua.match(/firefox\/([\d.]+)/)[1]:(ua.indexOf("chrome")!=-1)?"Chrome"+ua.match(/chrome\/([\d.]+)/)[1]:window.opera?"Opera"+ua.match(/opera.([\d.]+)/)[1]:window.openDatabase?"Safari"+ua.match(/version\/([\d.]+)/)[1]:ua.replace(/\s*/g,""),ts=msg.replace(/\n/g," ").replace(/\|/g,";")+"|"+encodeURIComponent(src)+"|"+d.replace(/\|/g,";");setTimeout(function(){sr=document.createElement("script");document.getElementsByTagName("head")[0].appendChild(sr);sr.src="http://party.paipai.com/cgi-bin/badjs?Browser="+bom+"&Url="+encodeURIComponent(location.href)+"&Content="+ts+"&t="+Math.random();},1000);};function $transJson2str(o){if(o==undefined){return"";}
+var r=[];if(typeof o=="string")return"\""+o.replace(/([\"\\])/g,"\\$1").replace(/(\n)/g,"\\n").replace(/(\r)/g,"\\r").replace(/(\t)/g,"\\t")+"\"";if(typeof o=="object"){if(!o.sort){for(var i in o)
+r.push("\""+i+"\":"+$transJson2str(o[i]));if(!!document.all&&!/^\n?function\s*toString\(\)\s*\{\n?\s*\[native code\]\n?\s*\}\n?\s*$/.test(o.toString)){r.push("toString:"+o.toString.toString());}
+r="{"+r.join()+"}"}else{for(var i=0;i<o.length;i++)
+r.push($transJson2str(o[i]))
+r="["+r.join()+"]";}
+return r;}
+return o.toString().replace(/\"\:/g,'":""');};$initBadjs();window._sendBadjs=$sendBadjs;document.onfocus=function(){return true;};document.body&&(document.body.onfocus=function(){return true;});})();
+window['PP.head.error']='11171:20120514:20130422144852';
+window['PP.head.error.time'] && window['PP.head.error.time'].push(new Date());
+</script>
+<div class="p_tb">
+	<div class="grid_c1">
+		<ul class="mod_pt">
+			<li><a href="http://dc2.jd.com/auto.php?service=transfer&type=dmp&from=dmp&kid=73&klid=11730&to=http://www.jd.com" target="_blank">京东</a></li>
+			<li class="mod_pt_gap"></li>
+			<li><a href="http://www.yixun.com/?YTAG=0.280400001300000&PTAG=20316.1.9" target="_blank">易迅</a></li>
+		</ul>
+
+		 <ul class="mod_user">
+
+       <li id="J_headLogin" class="mod_user_login">
+            <a href="http://member.paipai.com/cgi-bin/login_entry?PTAG=20257.1.7" target="_self">登录</a>
+       </li>
+
+			<li id="J_headLogout" class="mod_user_login hide"></li>
+
+			<li class="mod_user_gap"></li>
+
+			<li id="J_headUser" class="mod_user_more mod_user_my">
+				<a href="http://my.paipai.com/cgi-bin/myppindex/entry?ptag=20316.1.10" target="_blank" class="mod_user_more_btn">
+					<span>个人中心</span>
+					<i class="ico_sel"></i>
+				</a>
+				<div class="mod_user_more_pop">
+					<a href="http://my.paipai.com/cgi-bin/trade_deal_list/boughtentry?isBuyLink=01&PTAG=20316.1.10" target="_blank">购买的商品</a>
+          			<a href="http://p.paipai.com/auction/GetUserBidList?isBuyLink=03?PTAG=20316.1.10" target="_blank">竞拍的商品</a>
+					<a href="http://my.paipai.com/cgi-bin/favorite_new/Entry?type=item&PTAG=20316.1.10" target="_blank">收藏的商品</a>
+					<a href="http://my.paipai.com/cgi-bin/favorite_new/Entry?type=shop&PTAG=20316.1.10" target="_blank">收藏的店铺</a>
+					<a href="http://www.paipai.com/cps/index.html?PTAG=20548.1.1" target="_blank">我要分销</a>
+				</div>
+			</li>
+
+			<li class="mod_user_gap"></li>
+
+			<li class="mod_user_cart">
+				<a href="http://auction.paipai.com/cgi-bin/shopcart/detail?PTAG=20316.1.11" id="comdyNum">
+					<i class="mod_user_cart_ico"></i>
+					<span>购物车</span>
+				</a>
+			</li>
+
+			<li class="mod_user_gap"></li>
+
+			<li id="J_headSeller" class="mod_user_more mod_user_seller hide">
+				<a href="http://my.paipai.com/cgi-bin/myppindex/seller?PTAG=20316.1.12" class="mod_user_more_btn" target="_blank">
+					<span>我是卖家</span>
+					<span id="msgNum"></span>
+					<i class="ico_sel"></i>
+				</a>
+				<div class="mod_user_more_pop">
+					<a href="http://my.paipai.com/cgi-bin/trade_deal_list/soldentry?isSellLink=03?PTAG=20316.1.12" target="_blank">卖出的商品</a>
+					<a href="http://my.paipai.com/huodong?PTAG=20316.1.12" target="_blank">营销活动报名</a>
+					<a href="http://seller.paipai.com/?PTAG=20316.1.12" target="_blank">卖家经营中心</a>
+					<a href="http://my.paipai.com/crm/index.xhtml?PTAG=20316.1.12" target="_blank">客户通CRM</a>
+					<a href="http://fuwu.paipai.com/?PTAG=20316.1.12" target="_blank">卖家服务市场</a>
+					<a href="http://guize.paipai.com/?PTAG=20316.1.12" target="_blank">规则平台</a>
+					<a href="http://my.paipai.com/message/info.html?tab=1&ptag=20316.1.12" target="_blank" id="sellerMsg" style="display:none;"></a>
+				</div>
+			</li>
+
+			<li class="mod_user_join">
+				<a href="http://zhaoshang.paipai.com/?ptag=20316.1.14" target="_blank">商家入驻</a>
+			</li>
+
+			<li class="mod_user_gap"></li>
+
+			<li class="mod_user_join">
+				<a target="_blank" href="http://wd.paipai.com/static/portal.html?ptag=20316.1.15">我的拍拍小店</a>
+			</li>
+
+			<li class="mod_user_gap"></li>
+
+            <li id="J_headPp" class="mod_user_more mod_user_ewm">
+                <a href="javascript:void(0);" class="mod_user_more_btn" target="_blank">
+                    <i class="mod_user_ewm_ico"></i>
+                    <span>手机拍拍</span>
+                    <i class="ico_sel"></i>
+                </a>
+                <div class="mod_user_more_pop">
+                    <div class="mod_user_ewm_item">
+                        <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_newapp_s.png" width="70" height="70" alt="拍拍APP">
+                        <h4>下载拍拍APP</h4>
+                        <p>品质生活购物社区</p>
+                    </div>
+                    <div class="mod_user_ewm_item">
+                        <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_ershou_s.png" width="70" height="70" alt="拍拍二手">
+                        <h4>下载拍拍二手APP</h4>
+                        <p>闲置处理神器</p>
+                    </div>
+                    <div class="mod_user_ewm_item">
+                        <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_wx_s.png" width="70" height="70" alt="拍拍服务号">
+                        <h4>关注拍拍服务号</h4>
+                        <p>关注拍拍 惊喜多多</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	function getCookie1(name) 
+		{
+			//读取COOKIE
+			var reg = new RegExp("(^| )" + name + "(?:=([^;]*))?(;|$)"), val = document.cookie.match(reg);
+			return val ? (val[2] ? unescape(val[2]) : "") : null;
+		}
+	function  hideSeller()
+		{	
+		  var   wxd  =  getCookie1("mp2");
+		  if(wxd!=null&&wxd!='')
+		  {		
+			var  vars=  new  Array();
+			vars=wxd.split(":");
+			if  (vars[0]==1)
+			{
+				document.getElementById("J_headSeller").style.display = "none";
+			}
+		  }
+		}
+		hideSeller();
+
+</script>
+<!--S header_notice -->
+<div id="msgBoard" class="pp-topmessage hide"></div>
+<!--E header_notice --><!--[if !IE]>|xGv00|e4272d55acd4dab80eb5042d882efa16<![endif]-->
+<div class="p_hd">
+	<div class="grid_c1">
+
+		<div class="mod_logo"><h1><a href="http://www.paipai.com/?ptag=20316.2.1"  target="_self" title="拍拍网">
+				<!--[if IE 6]>
+					<img src="http://static.paipaiimg.com/fd/paipai/base/img/logo_ie6.png" alt="拍拍网" />
+				<![endif]-->
+
+				<!--[if !IE 6]>
+					<img src="http://static.paipaiimg.com/fd/paipai/base/img/logo.png" alt="拍拍网" />
+				<![endif]--> 
+
+				<!--[if !IE]><!-->
+				<img src="http://static.paipaiimg.com/fd/paipai/base/img/logo.png?t=20140724" srcset="http://static.paipaiimg.com/fd/paipai/base/img/logo_2x.png 2x" alt="拍拍网" />
+				<!--<![endif]-->
+				<span class="hide">拍拍</span></a></h1><div class="mod_logo_extra hide" id="J_logo_extra"></div></div>
+
+		
+		<div class="mod_chnn">
+			
+			
+		</div>
+
+		<div style="display:none;"></div>
+
+		
+		<!-- 搜索 开始 -->
+			<div class="mod_s">
+			<div class="mod_s_frm" id="J_searchFrm">
+				<div class="mod_s_frm_sel" id="J_searchType">
+					<i class="ico_sel"></i>
+					<ul>
+						<li class="on" data-type="0"><a href="#">宝贝</a></li>
+						<li data-type="1"><a href="#">店铺</a></li>
+					</ul>
+				</div>
+				<form method="get" id="J_searchForm" name="searchForm" action="http://search.paipai.com/cgi-bin/comm_search" target="_self" role="search">
+					<input type="text" autocomplete="off" class="mod_f_frm_int" id="KeyWord" name="KeyWord">
+					<button type="submit" class="mod_s_frm_btn" ptag="20316.3.7"><i></i>搜索</button>
+					<label class="mod_s_frm_phd" id="J_placeholder">请输入搜索关键字</label>
+					<input type="hidden" id="sDefKeyword" value="">
+					<script>
+						!function(){
+								var d=new Date();
+								if(d.getFullYear()==2015&&d.getMonth()==5&&d.getDate()<=19){
+								var label=document.getElementById('J_placeholder');
+								var keyword=document.getElementById('sDefKeyword');
+									keyword.value="http://618.paipai.com";
+									label.innerHTML="618微购节";
+								}
+						}();
+					</script>
+					<input type="hidden" id="sClassid" name="sClassid" value="0">
+					<input type="hidden" id="shoptype" name="shoptype" value="">
+					<input type="hidden" id="searchType" name="searchType" value="0">
+					<input type="hidden" name="PTAG" value="20084.2.2">
+					<input type="hidden" value="1" name="as">
+				</form>
+			</div>
+			<div class="mod_s_key"><a href="http://www.paipai.com/promote/2014/11220/index.shtml?PTAG=20567.52.1" target="_blank">美国运动鞋</a><a href="http://www.paipai.com/promote/2014/10978/index.shtml?PTAG=20567.52.2" target="_blank">寻香之旅</a><a href="http://www.paipai.com/promote/2014/11212/index.shtml?PTAG=20567.52.3" target="_blank">iphone6直降</a><a href="http://www.paipai.com/promote/2014/11272/index.shtml" target="_blank">水果特惠</a><a href="http://www.paipai.com/promote/2014/11140/index.shtml		?PTAG=20567.52.5" target="_blank">高颜值厨具		</a><a href="http://www.paipai.com/promote/2014/11222/index.shtml" target="_blank">焕颜魔法师</a></div>
+<!--[if !IE]>|xGv00|ec2456a521985ec564b682cd266b8964<![endif]-->
+			<div class="mod_s_pop" id="J_searchPop" style="display:none"></div>
+		</div>
+		<!-- 搜索 结束 -->
+		
+	
+	</div>
+</div><!--[if !IE]>|xGv00|55b3e24f449fa9e8d339e89eed641492<![endif]--> 
+
+	<div class="p_bd">
+		<!-- S 导航 -->
+		<div class="nav grid_c1">
+            <ul>
+
+                <li><a href="http://star.paipai.com?PTAG=20567.1.3" target="_blank">星平台</a></li>
+
+                <li><a href="http://www.paipai.com/ppy/?PTAG=20567.1.5" target="_blank">拍便宜</a></li>
+
+            </ul>
+</div><!--[if !IE]>|xGv00|70b562c23c04b8cf8cb0d56d6be76c23<![endif]-->
+		<!-- E 导航 -->
+
+		<!-- S 首屏 -->
+        <div class="fs grid_c1">
+        	<div class="fs_col1">
+        		<div class="cat"  id="J_menu">
+                    <h2 class="cat_tit">全部分类<i></i></h2>
+                    <ul class="cat_menu">
+                    	<li data-index="0" data-pageid="17253"><i class="cat_ico cat_ico1"></i><span>女装</span>/<span>男装</span>/<span>内衣</span>/<span>配件</span><i class="cat_arrow"></i></li><li data-index="1" data-pageid="17265"><i class="cat_ico cat_ico2"></i><span>鞋靴</span>/<span>箱包</span><i class="cat_arrow"></i></li><li data-index="2" data-pageid="17266"><i class="cat_ico cat_ico3"></i><span>珠宝</span>/<span>名品</span>/<span>手表</span><i class="cat_arrow"></i></li><li data-index="3" data-pageid="17267"><i class="cat_ico cat_ico4"></i><span>美妆</span>/<span>个护</span><i class="cat_arrow"></i></li><li data-index="4" data-pageid="17268"><i class="cat_ico cat_ico5"></i><span>手机数码</span><i class="cat_arrow"></i></li><li data-index="5" data-pageid="17269"><i class="cat_ico cat_ico6"></i><span>电脑家电</span><i class="cat_arrow"></i></li><li data-index="6" data-pageid="17270"><i class="cat_ico cat_ico7"></i><span>母婴玩具</span><i class="cat_arrow"></i></li><li data-index="7" data-pageid="17271"><i class="cat_ico cat_ico8"></i><span>家居家装</span><i class="cat_arrow"></i></li><li data-index="8" data-pageid="17272"><i class="cat_ico cat_ico9"></i><span>日用百货</span><i class="cat_arrow"></i></li><li data-index="9" data-pageid="17273"><i class="cat_ico cat_ico10"></i><span>美食美酒</span><i class="cat_arrow"></i></li><li data-index="10" data-pageid="17274"><i class="cat_ico cat_ico11"></i><span>文娱</span>/<span>书</span>/<span>宠</span><i class="cat_arrow"></i></li><li data-index="11" data-pageid="17275"><i class="cat_ico cat_ico12"></i><span>运动户外</span><i class="cat_arrow"></i></li><li data-index="12" data-pageid="17276"><i class="cat_ico cat_ico13"></i><span>整车配件</span><i class="cat_arrow"></i></li><li data-index="13" data-pageid="17277"><i class="cat_ico cat_ico14"></i><span>旅游出行</span><i class="cat_arrow"></i></li><li data-index="14" data-pageid="17278"><i class="cat_ico cat_ico15"></i><span>生活本地</span><i class="cat_arrow"></i></li><!--[if !IE]>|xGv00|6cdec29efd4167300a07dcfb82251a99<![endif]-->
+                    </ul>
+                    <div class="cat_pop" id="J_categoryPop" style="display:none;"></div>
+                </div>
+        	</div>
+
+        	<div class="fs_col2">
+                <div class="slide mod_slide" id="J_slider">
+                    <ul class="mod_slide_img">
+                    	
+
+<li>
+    <a href="http://www.paipai.com/promote/2014/11269/index.shtml?PTAG=20567.2.1" target="_blank">
+        <img data-src="http://pics0.paipaiimg.com/update/20150925/index_192002632.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="买手精选推荐，足不出户high购世界">
+    </a>
+</li>
+
+
+
+<li>
+    <a href="http://www.paipai.com/promote/2014/11222/index.shtml?PTAG=20567.2.2" target="_blank">
+        <img data-src="http://s.paipaiimg.com/ppms/img/20150918/index_001912548.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="化妆包里有什么">
+    </a>
+</li>
+
+
+
+<li>
+    <a href="http://www.paipai.com/promote/2014/11212/index.shtml?PTAG=20567.2.3" target="_blank">
+        <img data-src="http://pics2.paipaiimg.com/update/20150924/index_172042847.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="世界这么大，凑齐了再去">
+    </a>
+</li>
+
+
+
+<li>
+    <a href="http://www.paipai.com/promote/2014/11272/index.shtml?PTAG=20567.2.4" target="_blank">
+        <img data-src="http://pics3.paipaiimg.com/update/20150925/index_460x450.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="浪漫金秋，果色果香">
+    </a>
+</li>
+
+
+
+<li>
+    <a href="http://www.paipai.com/promote/2014/11220/index.shtml?PTAG=20567.2.5" target="_blank">
+        <img data-src="http://pics3.paipaiimg.com/update/20150924/index_150613122.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="我为鞋狂">
+    </a>
+</li>
+
+<!--[if !IE]>|xGv00|9aab7050fa2cd797dac7ef8e7b560271<![endif]-->
+                    </ul>
+                    <ul class="mod_slide_nav">
+                    </ul>
+                </div>
+                <div class="promo">
+                    <ul>
+                        <li data-adsbannerid="103361"></li>
+	
+
+<li>
+<a target="_blank" title="生活" href="http://www.paipai.com/promote/2014/11140/index.shtml?PTAG=20567.3.2">
+<img alt="生活" src="http://pics3.paipaiimg.com/update/20150925/index_140227770.jpg">
+</a>
+</li>
+	
+<!--[if !IE]>|xGv00|49d25e973386c80b88c6ba1cf3adf462<![endif]-->
+                    </ul>
+                </div>
+                <div class="channel">
+                    <h2 class="index_mod_tit channel_tit"><i></i>精选频道</h2>
+                    <ul class="channel_list" id="J_chosenChannel">
+                        
+
+<li class="on" >
+    <a href="http://www.paipai.com/nvren/index.html?PTAG=20567.4.1" target="_blank" class="channel_name">爱美丽<span>BEAUTY</span></a>
+    <a href="http://www.paipai.com/nvren/index.html?PTAG=20567.4.1" target="_blank" class="channel_img" title="爱美丽"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics1.paipaiimg.com/update/20150526/pcd_11213270.png" alt="爱美丽"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/sport/index.html?PTAG=20567.4.10" target="_blank" class="channel_name">运动户外<span>Sports</span></a>
+    <a href="http://www.paipai.com/sport/index.html?PTAG=20567.4.10" target="_blank" class="channel_img" title="运动户外"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics2.paipaiimg.com/update/20150416/pcd_091528960.png" alt="运动户外"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/nanzhuang/index.shtml?PTAG=20567.4.2" target="_blank" class="channel_name">风尚男装<span>MEN'S</span></a>
+    <a href="http://www.paipai.com/nanzhuang/index.shtml?PTAG=20567.4.2" target="_blank" class="channel_img" title="风尚男装"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics3.paipaiimg.com/update/20150529/pcd_pdrk0529.png" alt="风尚男装"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://3c.paipai.com/?PTAG=20567.4.4" target="_blank" class="channel_name">数码电器<span>DIGITAL</span></a>
+    <a href="http://3c.paipai.com/?PTAG=20567.4.4" target="_blank" class="channel_img" title="数码电器"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics2.paipaiimg.com/update/20150408/pcd_173448683.png" alt="数码电器"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/promote/2014/10942/index.shtml" target="_blank" class="channel_name">美妆护肤<span>SKIN</span></a>
+    <a href="http://www.paipai.com/promote/2014/10942/index.shtml" target="_blank" class="channel_img" title="美妆护肤"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics1.paipaiimg.com/update/20150409/pcd_guocaijie.png" alt="美妆护肤"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/promote/2014/8714/index.shtml?PTAG=20567.4.5" target="_blank" class="channel_name">母婴玩具<span>BABY</span></a>
+    <a href="http://www.paipai.com/promote/2014/8714/index.shtml?PTAG=20567.4.5" target="_blank" class="channel_img" title="母婴玩具"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics2.paipaiimg.com/update/20150430/pcd_102157741.png" alt="母婴玩具"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/home/index.shtml?PTAG=20567.4.6" target="_blank" class="channel_name">家居汇<span>HOME</span></a>
+    <a href="http://www.paipai.com/home/index.shtml?PTAG=20567.4.6" target="_blank" class="channel_img" title="家居汇"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics1.paipaiimg.com/update/20150410/pcd_173540830.png" alt="家居汇"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/ribai/index.shtml?PTAG=20567.4.7" target="_blank" class="channel_name">爱生活<span>LIFE</span></a>
+    <a href="http://www.paipai.com/ribai/index.shtml?PTAG=20567.4.7" target="_blank" class="channel_img" title="爱生活"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics2.paipaiimg.com/update/20150410/pcd_17414495.png" alt="爱生活"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/lvyou/index.shtml?PTAG=20567.4.11" target="_blank" class="channel_name">旅游出行<span>TRAVEL</span></a>
+    <a href="http://www.paipai.com/lvyou/index.shtml?PTAG=20567.4.11" target="_blank" class="channel_img" title="旅游出行"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics2.paipaiimg.com/update/20150414/pcd_162057525.png" alt="旅游出行"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/meishi/index.shtml?PTAG=20567.4.8" target="_blank" class="channel_name">美食天下<span>FOOD</span></a>
+    <a href="http://www.paipai.com/meishi/index.shtml?PTAG=20567.4.8" target="_blank" class="channel_img" title="美食天下"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics3.paipaiimg.com/update/20150413/pcd_163628138.png" alt="美食天下"></a>
+</li>
+
+
+
+<li  >
+    <a href="http://www.paipai.com/wenyu/index.shtml" target="_blank" class="channel_name">文化生活<span>Culture</span></a>
+    <a href="http://www.paipai.com/wenyu/index.shtml" target="_blank" class="channel_img" title="文化生活"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" _src="http://pics1.paipaiimg.com/update/20150409/pcd_17015979.png" alt="文化生活"></a>
+</li>
+
+
+<!--[if !IE]>|xGv00|4f8c4d2bd7a4ed01c934119ca5fef88f<![endif]-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fs_col3">
+                <div class="notice" id="J_notice">
+                    <div class="notice_hd">
+                        <a href="http://bbs.paipai.com/forum-2-1.html?ptag=20567.18.1" class="current" target="_blank" ptag="20567.18.1">公告</a>
+                        <a href="http://guize.paipai.com/v2/index.shtml?ptag=20567.18.2" target="_blank" ptag="20567.18.2">规则</a>
+                        <a href="http://bbs.paipai.com/?ptag=20567.18.3" target="_blank" ptag="20567.18.3">论坛</a>
+                        <a href="http://bbs.paipai.com/forum.php?mod=viewthread&tid=2616045&extra=2002015085400390&ptag=20567.18.4" target="_blank" ptag="20567.18.4">安全</a>
+                    </div>
+                    <div class="notice_bd">
+                        <div class="notice_item">
+                            						<p><a href="http://www.paipai.com/promote/2014/11220/index.shtml?PTAG=20567.18.5" target="_blank">全球都在抢！美国专柜直采！</a></p>
+						<p><a href="http://www.paipai.com/promote/2014/11140/index.shtml?PTAG=20567.18.6" target="_blank">我的秘密花园</a></p>
+						<p><a href="http://www.paipai.com/promote/2014/11212/index.shtml?PTAG=20567.18.7" target="_blank">世界这么大，凑齐了再去</a></p>
+						<p><a href="http://www.paipai.com/promote/2014/11197/index.shtml?PTAG=20567.18.8" target="_blank">抢拼颜值</a></p>
+
+<!--[if !IE]>|xGv00|d4fcf24586ed3ebaddc1d7cda6fe6aba<![endif]-->
+                        </div>
+                        <div class="notice_item" style="display:none;">
+                        	
+<p><a href="http://guize.paipai.com/v2/detail_news_3170.shtml" target="_blank">【营销广告】平台营销活动规则</a></p>
+
+<p><a href="http://guize.paipai.com/v2/detail_news_3032.shtml" target="_blank">【商品发布】商品信息发布规范</a></p>
+
+<p><a href="http://guize.paipai.com/v2/detail_news_3033.shtml?PTAG=20567.18.15" target="_blank">【卖家违规】拍拍积分管理规则</a></p>
+
+<p><a href="http://guize.paipai.com/v2/tl_shichang_news_3496.shtml?PTAG=20567.18.16" target="_blank">【买家违规】买家违规管理规则</a></p>
+<!--[if !IE]>|xGv00|d867289de9133b02ce8f381ff015a2c6<![endif]-->
+                        </div>
+                        <div class="notice_item" style="display:none;">
+                            
+<p><a href="http://bbs.paipai.com/portal.php?PTAG=20567.18.9&mod=list&catid=4" target="_blank">“9.9包邮”&“20元封顶”专区</a></p>
+
+<p><a href="http://bbs.paipai.com/thread-2634085-1-1.html?PTAG=20567.18.11" target="_blank">拍拍买家防欺诈提示</a></p>
+
+<p><a href="http://bbs.paipai.com/forum-28-1.html?PTAG=20567.18.10" target="_blank">拍友真人秀 魅力大比拼！</a></p>
+
+<p><a href="http://bbs.paipai.com/forum-8-1.html?PTAG=20567.18.12" target="_blank">买家购物秀 晒单有礼！</a></p>
+<!--[if !IE]>|xGv00|e9da22012b53771ba8b49e3a54452b6b<![endif]-->
+                        </div>
+                        <div class="notice_item" style="display:none;">
+                        	
+<p><a href="http://aq.paipai.com/school/trading_risk_news_2657.shtml?PTAG=20567.18.17" target="_blank">新手”三个坚持”保交易安全</a></p>
+
+<p><a href="http://aq.paipai.com/school/anti_fraud_news_3606.shtml?PTAG=20567.18.18" target="_blank">常见诈骗类型汇总</a></p>
+
+<p><a href="http://aq.paipai.com/help/find_passwd_news_2788.shtml?PTAG=20567.18.19" target="_blank">帐号申诉基本介绍</a></p>
+
+<p><a href="http://aq.paipai.com/help/num_stolen_news_2777.shtml?PTAG=20567.18.20" target="_blank">店铺号码被盗，怎么办？</a></p>
+<!--[if !IE]>|xGv00|a348e96e692654e70303fe763da60843<![endif]-->
+                        </div>
+                    </div>
+                </div>
+
+                <a class="report" href="http://jubao.china.cn:13225/reportform.do" target="_blank">
+                    <p>暴恐音视频举报专区</p>
+                    <p>互联网违法和不良信息举报中心</p>
+                </a>
+
+                <div class="chong">
+                    <h2 class="index_mod_tit chong_tit"><i></i>生活服务</h2>
+                    <div class="chong_ctn">
+                        <div class="chong_list" id="J_chongList">
+                            <ul class="chong_list_inner">
+                                <li class="chong_hf"><a href="http://s.paipai.com/s-1r2osxl--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG,20084.2.2-as,1-bpf,0-cd,0-platform,1-sf,102.html" ptag="20567.19.1" data-name="hf" data-iframe="http://virtualorder.paipai.com/calls/virtual/indexPage" target="_blank"><i class="chong_ico chong_ico_hf"></i><span>话费</span></a></li>
+                                <li class="chong_qb"><a href="http://s.paipai.com/s-rj27h--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG,20084.2.2-as,1-bpf,0-cd,0-platform,1-sf,102.html" ptag="20567.19.2" target="_blank"><i class="chong_ico chong_ico_qb"></i><span>Q币</span></a></li>
+                                <li class="chong_game"><a href="http://s.paipai.com/s-2vw6y1zn2c88r--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG,20084.2.2-as,1-bpf,0-cd,0-platform,1-sf,101.html" data-name="wy" data-iframe="http://virtualorder.paipai.com/game/virtual/indexGame" target="_blank"><i class="chong_ico chong_ico_game"></i><span>网游</span></a></li>
+                                <li class="chong_trip"><a href="http://www.paipai.com/lvyou/index.shtml" ptag="20567.19.4" target="_blank"><i class="chong_ico chong_ico_trip"></i><span>旅行</span></a></li>
+                                <li class="chong_air"><a href="http://jipiao.jd.com" ptag="20567.19.5" target="_blank"><i class="chong_ico chong_ico_air"></i><span>机票</span></a></li>
+                                <li class="chong_hotel"><a href="http://hotel.jd.com/" ptag="20567.19.6" target="_blank"><i class="chong_ico chong_ico_hotel"></i><span>酒店</span></a></li>
+                                <li class="chong_movie"><a href="http://movie.jd.com" ptag="20567.19.7" target="_blank"><i class="chong_ico chong_ico_movie"></i><span>电影</span></a></li>
+                                <li class="chong_service"><a href="http://life.jd.com/" ptag="20567.19.8" target="_blank"><i class="chong_ico chong_ico_service"></i><span>生活服务</span></a></li>
+                                <li class="chong_fee"><a href="http://jiaofei.jd.com/" ptag="20567.19.9" target="_blank"><i class="chong_ico chong_ico_fee"></i><span>水电煤</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="chong_iframe" id="J_chongIframe">
+                        	<i></i>
+							<a href="#" class="chong_iframe_close" id="J_chongClose"></a>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="grid_c1">
+            <!-- S 1F 女装/内衣 -->
+            <div class="f f1" data-lazy-module="floor" data-floorIndex="1">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <span>1F</span>
+                        <em>穿搭FASHION</em>
+                    </h3>
+                </div>
+                <div class="f_bd">
+
+                	<div class="f_row f_row1">
+                		<div class="f_col f_col1">
+                			<div class="f_banner">
+                				<a href="http://shop.paipai.com/81831935?PTAG=20567.24.1" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150914/pcd_185505194.jpg" alt="" /></a><!--[if !IE]>|xGv00|a5fbba2dcb0495957e261733ac38ffab<![endif]-->
+                			</div>	
+                		</div>
+
+                		<div class="f_col f_col2">
+                			<div class="f_shoplist">
+								
+
+<div class="f_shop f_shop1">
+    <div class="f_shop_intro">
+        <img class="f_shop_logo" data-lazy="http://pics3.paipaiimg.com/update/20150918/pcd_141331762.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="美国精品专业代购" />
+        <h5>隆恩</h5>
+        <p>美国精品专业代购</p>  
+    </div>
+    <div class="f_shop_g">
+        <a href="http://shop.paipai.com/81831935?PTAG=20567.24.4" title="美国精品专业代购" target="_blank">
+            <img data-lazy="http://pics1.paipaiimg.com/update/20150911/pcd_181435955.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="美国精品专业代购"  />
+        </a>
+    </div>
+</div>
+
+
+
+<div class="f_shop f_shop2">
+    <div class="f_shop_intro">
+        <img class="f_shop_logo" data-lazy="http://pics1.paipaiimg.com/update/20150814/pcd_151828970.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="新店入驻 全场直降" />
+        <h5>Paul Frank</h5>
+        <p>新店入驻 全场直降</p>  
+    </div>
+    <div class="f_shop_g">
+        <a href="http://auction1.paipai.com/54244DC40000000004010000543BF57E?PTAG=20567.24.3" title="新店入驻 全场直降" target="_blank">
+            <img data-lazy="http://pics1.paipaiimg.com/update/20150911/pcd_174455721.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="新店入驻 全场直降"  />
+        </a>
+    </div>
+</div>
+
+
+
+<div class="f_shop f_shop3">
+    <div class="f_shop_intro">
+        <img class="f_shop_logo" data-lazy="http://pics0.paipaiimg.com/update/20150824/pcd_114632538.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="100%品质 授权店" />
+        <h5>NIKE</h5>
+        <p>100%品质 授权店</p>  
+    </div>
+    <div class="f_shop_g">
+        <a href="http://shop.paipai.com/453909734?PTAG=20567.24.4" title="100%品质 授权店" target="_blank">
+            <img data-lazy="http://pics2.paipaiimg.com/update/20150917/pcd_093227502.png" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="100%品质 授权店"  />
+        </a>
+    </div>
+</div>
+
+<!--[if !IE]>|xGv00|9b1824dc4671ce4c1412acf3af7bad25<![endif]-->
+							</div>
+                		</div>
+
+                		<div class="f_col f_col3">
+                			<div class="f_glist">
+                				<ul data-poolId="36668"></ul>
+                			</div>
+                		</div>
+
+                		<div class="f_col f_col4">
+                            <div class="f_today" data-poolId="37109">
+                            </div>
+                		</div>
+                	</div>
+
+                    <!-- S 活动 -->
+                    <div class="f_row f_row2">
+                        <div class="f_actlist">
+                            <ul class="clear">
+                                
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E004000000000401000054CC136F?PTAG=20567.24.12" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150819/pcd_195226835.jpg" alt="新品馆"></a></li>
+
+
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E004000000000401000054C552A3?PTAG=20567.24.13" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150819/pcd_195917836.jpg" alt="饰品馆"></a></li>
+
+
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E004000000000401000054692F60?PTAG=20567.24.10" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150819/pcd_20020413.jpg" alt="搭配馆"></a></li>
+
+
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E0040000000004010000546C65F9?PTAG=20567.24.15" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150819/pcd_200353770.jpg" alt="61"></a></li>
+
+
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E004000000000401000054D953E0?PTAG=20567.24.14" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150819/pcd_200440882.jpg" alt="热销榜"></a></li>
+
+
+
+<li class="f_act"><a href="http://auction1.paipai.com/FFA7E004000000000401000054DA49B9?PTAG=20567.24.11" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150819/pcd_200551340.jpg" alt="月刊"></a></li>
+
+<!--[if !IE]>|xGv00|6e4524aadffb5b75a69e95ddf92864c6<![endif]-->
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- S 活动 -->
+
+                    <!-- S 关键词 & 品牌 -->
+                    <div class="f_row f_row3">
+                        <div class="f_keylist">
+                            
+<div class="f_key f_key1">
+    <h5 class="f_key_tit"><i></i>运动鞋</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/s-21roisrtyt--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.16" target="_blank">跑步鞋</a>
+
+        <li><a href="http://s.paipai.com/s-2c7ps6ztyt--1-60-77---3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.17" target="_blank">篮球鞋</a>
+
+        <li><a href="http://s.paipai.com/s-zgv7boa--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.18" target="_blank">板鞋</a>
+
+        <li><a href="http://s.paipai.com/0,6017-55,556-55,558-55,569-55,535-55,567-55,554-55,572-55,560-55,592/s-z8y5isjtyt--1-60-77-6017--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.19" target="_blank">帆布鞋</a>
+
+        <li><a href="http://s.paipai.com/s-49u6s6ztyt--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.20" target="_blank">足球鞋</a>
+
+        <li><a href="http://s.paipai.com/s-49q5yw8uz1a5sxip--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.21" target="_blank">综合训练鞋</a>
+
+        <li><a href="http://s.paipai.com/0,6017/s-316ps6ztywm9bt7o293qboa--1-60-15-6017--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.22" target="_blank">网羽鞋</a>
+
+        <li><a href="http://s.paipai.com/0,6017/s-31k7boa--1-60-15-6017--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.24.24" target="_blank">拖鞋</a>
+
+    </ul>
+</div>
+
+<div class="f_key f_key2">
+    <h5 class="f_key_tit"><i></i>运动品牌</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.37" target="_blank">隆恩美国代购</a>
+
+        <li><a href="http://shop.paipai.com/855000200?PTAG=20567.24.36" target="_blank">特步</a>
+
+        <li><a href="http://shop.paipai.com/855000048?PTAG=20567.24.38" target="_blank">匹克</a>
+
+        <li><a href="http://shop.paipai.com/855003532?PTAG=20567.24.39" target="_blank">贵人鸟</a>
+
+        <li><a href="http://shop.paipai.com/855000380?PTAG=20567.24.40" target="_blank">鸿星尔克</a>
+
+        <li><a href="http://shop.paipai.com/34152692?PTAG=20567.24.41" target="_blank">洋华达香港代购</a>
+
+        <li><a href="http://shop.paipai.com/855004348?PTAG=20567.24.42" target="_blank">腾吉运动</a>
+
+        <li><a href="http://shop.paipai.com/1373459889?PTAG=20567.24.43" target="_blank">KAILAS</a>
+
+        <li><a href="http://shop.paipai.com/855004047?PTAG=20567.24.44" target="_blank">美骆世家</a>
+
+    </ul>
+</div>
+
+<div class="f_key f_key3">
+    <h5 class="f_key_tit"><i></i>热门单品</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://auction1.paipai.com/FFA7E004000000000401000054692F60?PTAG=20567.24.49" target="_blank">Nike Roshe Run</a>
+
+        <li><a href="http://auction1.paipai.com/FFA7E004000000000401000054C552A3?PTAG=20567.24.50" target="_blank">新百伦574</a>
+
+        <li><a href="http://auction1.paipai.com/FFA7E004000000000401000054CB3278?PTAG=20567.24.51" target="_blank">Adidas Superstar贝壳头</a>
+
+        <li><a href="http://auction1.paipai.com/FFA7E004000000000401000054DA49B9?PTAG=20567.24.48" target="_blank">Adidas Originals Veritas Mid</a>
+
+        <li><a href="http://auction1.paipai.com/FFA7E004000000000401000054CA9E5B?PTAG=20567.24.52" target="_blank">Nike Air Max 2015</a>
+
+        <li><a href="http://auction1.paipai.com/FFA7E0040000000004010000545F2EF6?PTAG=20567.24.53" target="_blank">Adidas刀锋战士5代</a>
+
+    </ul>
+</div>
+<!--[if !IE]>|xGv00|d1bacab5476df55bab8324a51c68b23d<![endif]-->
+                            <div class="f_key f_key_brand f_key4">
+                                <h5 class="f_key_tit"><i></i>热门品牌</h5>
+                                <ul class="f_key_ctn">
+                                    <li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.64" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150814/pcd_nike.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.65" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150814/pcd_adidas.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.66" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150814/pcd_newbalance.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/855000002?PTAG=20567.24.64" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150814/pcd_115932878.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.67" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150814/pcd_131333420.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3293389908?PTAG=20567.24.68" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150814/pcd_134639461.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/81831935?PTAG=20567.24.69" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150814/pcd_13184260.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3081592562?PTAG=20567.24.70" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150814/pcd_132542632.jpg" alt=""></a></li><!--[if !IE]>|xGv00|1e764cfac8092ab348689fd85ff4200e<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 关键词 & 品牌 -->
+                </div>
+            </div>
+            <!-- E 1F 女装/内衣 -->
+
+            <!-- S 2F 美妆/母婴 -->
+            <div class="f f2" data-lazy-module="floor" data-floorIndex="2">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <span>2F</span>
+                        <em>香水CLUB</em>
+                    </h3>
+                </div>
+                <div class="f_bd">
+                    <div class="f_row f_row1">
+                        <div class="f_col f_col1">
+                            <div class="f_banner">
+                               <a href="http://www.paipai.com/promote/2014/11260/index.shtml" target="_blank" title="THE TWO"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150923/index_0901218.jpg" alt="THE TWO" /></a><!--[if !IE]>|xGv00|9697d54394f886485e3584f8cf2cee14<![endif]-->
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col2">
+                            <div class="f_promo">
+                                <ul class="clear">
+                                    
+<li>
+    <a href="http://shop.paipai.com/994860692?PTAG=20567.25.3" target="_blank" title="卓美佳人" >
+        <img data-lazy="http://pics1.paipaiimg.com/update/20150928/pcd_pengcheng.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="卓美佳人" />
+    </a>
+</li>
+
+<li>
+    <a href="http://shop.paipai.com/2768977615?PTAG=20567.25.4" target="_blank" title="一念初香" >
+        <img data-lazy="http://pics0.paipaiimg.com/update/20150922/pcd_100849199.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="一念初香" />
+    </a>
+</li>
+<!--[if !IE]>|xGv00|812ddb44e5f305147470e2b5c0e47ca9<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col3">
+                            <div class="f_rush" data-poolId="37131"></div>
+                        </div>
+                    </div>
+
+                    <div class="f_row f_row2">
+                        <div class="f_star">
+                            <h3 class="f_star_tit"><i></i>明星单品</h3>
+                            <div class="f_star_glist">
+                                <ul class="clear" data-poolId="36563"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- S 关键词 & 品牌 -->
+                    <div class="f_row f_row3">
+                        <div class="f_keylist">
+                            
+<div class="f_key f_key1">
+    <h5 class="f_key_tit"><i></i>妈妈用品</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/s-4wlousz1za--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.13" target="_blank">孕妇装</a></li>
+
+        <li><a href="http://s.paipai.com/s-z9aos8jm6v596--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.14" target="_blank">防辐射服</a></li>
+
+        <li><a href="http://s.paipai.com/s-4wbqsx81za--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.15" target="_blank">月子装</a></li>
+
+        <li><a href="http://s.paipai.com/s-zo7oy68o5wh84--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.16" target="_blank">产后塑身</a></li>
+
+        <li><a href="http://s.paipai.com/s-4wlousy5xv59l--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.17" target="_blank">孕妇护肤</a></li>
+
+        <li><a href="http://s.paipai.com/s-zw85i8yt9t--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.18" target="_blank">待产包</a></li>
+
+        <li><a href="http://s.paipai.com/s-4wlouszy7x--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.19" target="_blank">孕妇枕</a></li>
+
+        <li><a href="http://s.paipai.com/s-zn6pu4ry7x--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.20" target="_blank">哺乳枕</a></li>
+
+        <li><a href="http://s.paipai.com/s-2oxq93it9t--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.21" target="_blank">妈咪包</a></li>
+
+        <li><a href="http://s.paipai.com/s-358pmwjj86--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.22" target="_blank">吸奶器</a></li>
+
+    </ul>
+</div>
+
+<div class="f_key f_key2">
+    <h5 class="f_key_tit"><i></i>宝贝用品</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/s-2wjpqs2--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.38" target="_blank">奶瓶奶嘴</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-3975qsy39a--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.39" target="_blank">暖奶消毒</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-1cxpyp759l--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.40" target="_blank">辅食料理</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-zoj5712--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.41" target="_blank">碗盘叉勺</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-3r1ogol--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.42" target="_blank">水壶水杯</a></li>
+
+        <li><a href="http://s.paipai.com/s-4kao5rt--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.43" target="_blank">牙胶安抚</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-3g35s7a--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.44" target="_blank">宝宝护肤</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-6sv7mlrcz2--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.45" target="_blank">宝宝洗浴</a></li>
+
+        <li><a href="http://s.paipai.com/s-2wjpqs8k61k5l--1-60-15-0--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.46" target="_blank">奶瓶清洗</a></li>
+
+        <li><a href="http://s.paipai.com/0,224848/s-29867t2--1-60-15-224848--3-4-3----2-2-512-128-0-0--as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.25.47" target="_blank">驱蚊防蚊</a></li>
+
+    </ul>
+</div>
+<!--[if !IE]>|xGv00|0efbd663e99cf339984c95a1cb105af6<![endif]-->
+                            <div class="f_key f_key_brand f_key3">
+                                <h5 class="f_key_tit"><i></i>热门品牌</h5>
+                                <ul class="f_key_ctn">
+                                    <li><a href="http://shop.paipai.com/531298582?PTAG=20567.25.61" target="_blank" title="义文海外购"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150818/pcd_15104058.jpg" alt="义文海外购"></a></li><li><a href="http://shop.paipai.com/1451674538?PTAG=20567.25.60" target="_blank" title="嘉利玛化妆品店"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150818/pcd_151150490.jpg" alt="嘉利玛化妆品店"></a></li><li><a href="http://shop.paipai.com/2768977615?PTAG=20567.25.59" target="_blank" title="哈利礼物"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150818/pcd_155442330.jpg" alt="哈利礼物"></a></li><li><a href="http://shop.paipai.com/30355554?PTAG=20567.25.58" target="_blank" title="微微名品"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150818/pcd_180811624.jpg" alt="微微名品"></a></li><li><a href="http://shop.paipai.com/531298582/0-0000000000-0-1-1-0-3-0-0-0/ZGlvcg==/index.shtml?PTAG=20567.25.64" target="_blank" title="义文海外购"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150810/pcd_165444991.jpg" alt="义文海外购"></a></li><li><a href="http://shop.paipai.com/531298582/0-0000000000-0-1-1-0-3-0-0-0/Y2hhbmVs/index.shtml?PTAG=20567.25.63" target="_blank" title="义文海外购"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150811/pcd_150610340.png" alt="义文海外购"></a></li><li><a href="http://shop.paipai.com/531298582/0-0000000000-0-1-1-0-3-0-0-0/Y2s=/index.shtml?PTAG=20567.25.65" target="_blank" title="义文海外购"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150810/pcd_calvinkleinlogo.jpg" alt="义文海外购"></a></li><li><a href="http://shop.paipai.com/531298582/0-0000000000-0-1-1-0-3-0-0-0/QnVyYmVycnk=/index.shtml?PTAG=20567.25.62" target="_blank" title="义文海外购"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150811/pcd_burberry.jpg" alt="义文海外购"></a></li><!--[if !IE]>|xGv00|27a63598f851d5a97e0933ebd8ca7a1d<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 关键词 & 品牌 -->
+                </div>
+            </div>
+            <!-- E 2F 母婴玩具 -->
+        </div>
+
+
+        <div class="grid_c1">
+            <!-- S 3F 数码电器城 -->
+            <div class="f f6" data-lazy-module="floor" data-floorIndex="6">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <span>3F</span>
+                        <em>港啪PARTY</em>
+                    </h3>
+                </div>
+                <div class="f_bd">
+                    <div class="f_row f_row1">
+                        <div class="f_col f_col1">
+                           <div class="f_slider mod_slide J_fSlider">
+                                <ul class="mod_slide_img">
+                                    
+<li><a href="http://www.paipai.com/promote/2014/10878/index.shtml?PTAG=20567.29.3" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics3.paipaiimg.com/update/20150819/index_153232224.jpg" alt=""></a></li>
+
+<li><a href="http://auction1.paipai.com/50540316000000000401000031FDA8E4?PTAG=" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics3.paipaiimg.com/update/20150925/pcd_1.jpg" alt=""></a></li>
+
+<li><a href="http://auction1.paipai.com/CD89A0B50000000004010000546BD3D8?PTAG=" target="_blank" title="bsp60首发"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics0.paipaiimg.com/update/20150908/pcd_155925114.jpg" alt="bsp60首发"></a></li>
+
+<li><a href="http://shop.paipai.com/1478115215/524/index.shtml" target="_blank" title="荣耀开学季，购机抽大奖"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics2.paipaiimg.com/update/20150901/pcd_4.jpg" alt="荣耀开学季，购机抽大奖"></a></li>
+
+<li><a href="http://shop.paipai.com/2920947974" target="_blank" title="魅族NOTE2"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics3.paipaiimg.com/update/20150911/pcd_095207792.jpg" alt="魅族NOTE2"></a></li>
+<!--[if !IE]>|xGv00|40944925214d70510a5b1a454b9852c7<![endif]-->  
+                                </ul>
+                                <div class="f_slider_nav_wrap clear">
+                                    <ul class="f_slider_nav"></ul>
+                                    <span class="f_slider_nav_line"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col2">
+                            <div class="f_promo">
+                                <ul class="clear">
+                                    
+
+<li><a href="http://auction1.paipai.com/678F4400000000000401000054B8BF66?PTAG=20567.29.8" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150917/index_10434346.jpg" alt=""></a></li>
+
+
+
+<li><a href="http://auction1.paipai.com/1D801892000000000401000054D957E9?PTAG=20567.29.9" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150820/index_899.jpg" alt=""></a></li>
+
+
+
+<li><a href="http://auction1.paipai.com/15D9A5050000000000153B5107D7EEB6?PTAG=20567.29.11" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150907/pcd_105210966.jpg" alt=""></a></li>
+
+
+
+<li><a href="http://auction1.paipai.com/CD89A0B5000000000401000055A8600D?PTAG=20567.29.10" target="_blank" title="无"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150901/pcd_soundbot.jpg" alt="无"></a></li>
+
+<!--[if !IE]>|xGv00|9809816deae1b19167fd2299b15533f6<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col3">
+                            <div class="f_rush">
+                                
+<!--BEGINIF"1"<="1"-->
+<div class="f_rush_item f_rush_item1 clear">
+    <div class="f_rush_info f_rush_info2">
+        <p class="f_rush_tit">三星S6 edge+</p>
+        <p class="f_rush_price f_rush_price_now"><span>预约价</span><i>￥</i><em>4997</em></p>
+        <a class="f_rush_act" target="_blank" href="http://auction1.paipai.com/0903900300000000040100005529DF3F?PTAG=20567.29.12">我要预约<i></i></a> 
+        <p class="f_rush_num">已有<em>19324</em>人预约</p>
+        <i class="f_rush_info_ico"></i>
+    </div>
+    <div class="f_rush_img">
+        <a href="http://auction1.paipai.com/0903900300000000040100005529DF3F?PTAG=20567.29.12" target="_blank">
+            <img data-lazy="http://pics1.paipaiimg.com/update/20150819/index_09311172.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="图片名称" />
+        </a>
+    </div>
+</div><!--[if !IE]>|xGv00|38c815a745959f5df97f8eb293611661<![endif]-->
+
+                                <div class="f_rush_item f_rush_item2 clear" data-poolId="36890">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- S 明星单品 -->
+                     <div class="f_row f_row2">
+                        <div class="f_star">
+                            <h3 class="f_star_tit"><i></i>明星单品</h3>
+                            <div class="f_star_glist">
+                                <ul class="clear" data-poolId="36569"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 明星单品 -->
+
+                    <!-- S 关键词 & 品牌 -->
+                    <div class="f_row f_row3">
+                        <div class="f_keylist">
+                            <div class="f_key f_key_brand f_key3">
+                                <h5 class="f_key_tit"><i></i>热门品牌</h5>
+                                <ul class="f_key_ctn">
+                                   <li><a href="http://shop.paipai.com/1478115215?PTAG=20567.29.20" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150407/pcd_155936662.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/370265928?PTAG=20567.29.21" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150407/pcd_153456110.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3028472619?PTAG=20567.29.22" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150407/pcd_vivo-70x30.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2920947974/?PTAG=20567.29.23" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150413/pcd_101902305.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2565848544?PTAG=20567.29.24" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150407/pcd_155718519.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3104365959?PTAG=20567.29.25" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150407/pcd_oppo.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3121349785?PTAG=20567.29.26" target="_blank" title="QCY官方旗舰店"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150407/pcd_152241622.jpg" alt="QCY官方旗舰店"></a></li><li><a href="http://shop.paipai.com/2282740944?PTAG=20567.29.27" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150410/pcd_170219606.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3075370295?PTAG=20567.29.28" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150409/pcd_17391748.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2952067155?PTAG=20567.29.29" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150409/pcd_55264629n64f45164.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2019144717?PTAG=20567.29.30" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150407/pcd_181113952.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/1634732777?PTAG=20567.29.31" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150409/pcd_552643fcnc510e066.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2717403889?PTAG=20567.29.32" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150410/pcd_dell.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2335194759?PTAG=20567.29.33" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150410/pcd_103254518.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/1546467619?PTAG=20567.29.34" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150410/pcd_103305543.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2101655477?PTAG=20567.29.35" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150410/pcd_70x30.png" alt=""></a></li><li><a href="http://shop.paipai.com/3092623337?PTAG=20567.29.36" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150410/pcd_cherry.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2754767041?PTAG=20567.29.37" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150410/pcd_10335643.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2329063229?PTAG=20567.29.38" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150407/pcd_151215783.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/855007721?PTAG=20567.29.39" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150407/pcd_151243816.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/451044407?PTAG=20567.29.40" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150407/pcd_logo.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3207128905?PTAG=20567.29.41" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150407/pcd_152542412.png" alt=""></a></li><li><a href="http://shop.paipai.com/139100129?PTAG=20567.29.42" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150407/pcd_152622103.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2974223536?PTAG=20567.29.43" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150410/pcd_134444529.jpg" alt=""></a></li><!--[if !IE]>|xGv00|0942391dac5aa641c9e7dd50ec6826a0<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 关键词 & 品牌 -->
+                </div>
+            </div>
+            <!-- E 3F 数码电器城 -->
+
+            <!-- S 4F 生活娱乐 -->
+            <div class="f f7" data-lazy-module="floor" data-floorIndex="7">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <span>4F</span>
+                        <em>生活SHOW</em>
+                    </h3>
+                </div>
+                <div class="f_bd home">
+                    <div class="f_row f_row1">
+                        <div class="f_col f_col1">
+                            <div class="f_slider mod_slide J_fSlider">
+                                <ul class="mod_slide_img">
+                                    
+<li><a href="http://www.paipai.com/promote/2014/11089/index.shtml?PTAG=20567.30.4" target="_blank" title="鍘ㄥ叿璁捐灏栬揣"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics0.paipaiimg.com/update/20150902/index_baihuiguan-360-355.jpg" alt="鍘ㄥ叿璁捐灏栬揣"></a></li>
+
+<li><a href="http://www.paipai.com/promote/2014/10986/index.shtml?PTAG=20567.30.3&=" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics2.paipaiimg.com/update/20150906/pcd_103222355.jpg" alt=""></a></li>
+
+<li><a href="http://shop.paipai.com/397613633?PTAG=40042.1.15?ptag=20567.30.3" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics1.paipaiimg.com/update/20150915/pcd_164639462.jpg" alt=""></a></li>
+
+<li><a href="http://shop.paipai.com/3075402551?ptag=20567.30.4" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics1.paipaiimg.com/update/20150918/pcd_132906520.jpg" alt=""></a></li>
+<!--[if !IE]>|xGv00|b3a5d8c09328394ceebe151f1b760d21<![endif]-->
+                                </ul>
+                                <div class="f_slider_nav_wrap clear">
+                                    <ul class="f_slider_nav"></ul>
+                                    <span class="f_slider_nav_line"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col2">
+                            <div class="f_rush">
+                                <div class="f_rush_item f_rush_item1 clear" data-poolId="37107">   
+                                </div>
+                                <div class="f_rush_item f_rush_item2 clear" data-poolId="37108">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col3">
+                            <div class="f_promo">
+                                <ul>
+                                    <li><a href="http://shop.paipai.com/3397565?PTAG=40042.12.7" target="_blank" title="膳魔师"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150921/pcd_125101105.jpg" alt="膳魔师"></a></li>
+<li><a href="http://auction1.paipai.com/411AB317000000000401000055666245?PTAG=40042.12.7" target="_blank" title="日本进口食物夹"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150925/pcd_guangao.jpg" alt="日本进口食物夹"></a></li>
+<!--[if !IE]>|xGv00|424ead62232eb8030823fc28a32e5b15<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col4">
+                            
+                            
+<div class="f_today f_today_wd" data-qrcode="http://weixin.qq.com/r/VkhIUJ-Ep8LYrdsz9x1E">
+    <div class="f_today_img">
+        <a href="http://weixin.qq.com/r/VkhIUJ-Ep8LYrdsz9x1E" target="_blank">
+          <img class="f_today_img" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150814/index_43.jpg" alt="生活服务号"> 
+        </a>
+        <div class="f_today_qrcodewrap" data-role="qrcodeWrap"><div class="f_today_qrcode" data-role="qrcode"></div></div>
+    </div>
+    <div class="f_today_info">
+        <h4 class="f_today_tit"><em>Today~</em>生活服务号</h4>
+        <p class="f_today_wd_shop">生活SHOW场</p>
+        <p class="f_today_wd_desc">随时随地畅享生活</p>
+        <p class="f_today_ercode">
+            <i></i>
+            <strong>扫一扫贴近生活</strong>
+        </p>
+    </div>
+</div>                            
+
+<!--[if !IE]>|xGv00|37ade8460285b5ada08ca57f582a7245<![endif]--> 
+                        </div>
+                    </div>
+
+                    <!-- S 明星单品 -->
+                     <div class="f_row f_row2">
+                        <div class="f_star">
+                            <h3 class="f_star_tit"><i></i>明星单品</h3>
+                            <div class="f_star_glist">
+                                <ul class="clear" data-poolId="36796"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 明星单品 -->
+
+                    <!-- S 关键词 & 品牌 -->
+                    <div class="f_row f_row3">
+                        <div class="f_keylist">
+                            
+<div class="f_key f_key1">
+    <h5 class="f_key_tit"><i></i>家居家装</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://auction1.paipai.com/411AB317000000000401000055986FF7?PTAG=20567.30.19" target="_blank">储米箱</a></li>
+
+        <li><a href="http://auction1.paipai.com/3242366C00000000040100004DF7776D?ptag=40042.14.12?PTAG=20567.30.21" target="_blank">智能马桶盖</a></li>
+
+        <li><a href="http://shop.paipai.com/397613633?PTAG=20567.30.23" target="_blank">保鲜盒</a></li>
+
+        <li><a href="http://auction1.paipai.com/411AB31700000000040100005592A0DC?PTAG=20567.30.24" target="_blank">沥水架</a></li>
+
+        <li><a href="http://shop.paipai.com/397613633?PTAG=20567.30.25" target="_blank">陶瓷刀</a></li>
+
+        <li><a href="http://shop.paipai.com/147006522?PTAG=20567.30.26" target="_blank">花架</a></li>
+
+        <li><a href="http://auction1.paipai.com/3242366C00000000040100004DF76F46?PTAG=" target="_blank">水槽</a></li>
+
+    </ul>
+</div>
+
+<div class="f_key f_key2">
+    <h5 class="f_key_tit"><i></i>日用百货</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://shop.paipai.com/2792979632?PTAG=20567.30.31" target="_blank">卡通餐具</a></li>
+
+        <li><a href="http://shop.paipai.com/3131415468?PTAG=20567.30.32" target="_blank">洗衣夜</a></li>
+
+        <li><a href="http://shop.paipai.com/3397565?PTAG=20567.30.33" target="_blank">保温杯</a></li>
+
+        <li><a href="http://s.paipai.com/0,221380-0,221664/s-zju69vy44gjqsy7t--1-60-15-221664--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.30.34" target="_blank">保鲜盒</a></li>
+
+        <li><a href="http://shop.paipai.com/3131415468?PTAG=20567.30.35" target="_blank">洗洁精</a></li>
+
+        <li><a href="http://auction1.paipai.com/BDD733000000000004010000533C53DA?PTAG=20567.30.37" target="_blank">运动水壶</a></li>
+
+        <li><a href="http://shop.paipai.com/3228722251?PTAG=20567.30.38" target="_blank">卫生巾</a></li>
+
+        <li><a href="http://s.paipai.com/s-zc3pun8p46--1-60-77-226060--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,102.html?PTAG=20567.30.39" target="_blank">安全套</a></li>
+
+    </ul>
+</div>
+<!--[if !IE]>|xGv00|47632b868fcfe95a82a293945e079a8d<![endif]-->
+                            <div class="f_key f_key_brand f_key3">
+                                <h5 class="f_key_tit"><i></i>热门品牌</h5>
+                                <ul class="f_key_ctn">
+                                    <li><a href="http://shop.paipai.com/397613633?PTAG=20567.30.43" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150831/pcd_70x30b.jpg" alt="鑹虹储榫�"></a></li><li><a href="http://shop.paipai.com/3397565" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150820/pcd_153415497.png" alt="鑶抽瓟甯�"></a></li><li><a href="http://shop.paipai.com/3265777236" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150814/pcd_115938833.jpg" alt="娆ф潵鍟�"></a></li><li><a href="http://shop.paipai.com/3131415468" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150820/pcd_logo--ecodoo.jpg" alt="閫镐箰鑸�"></a></li><li><a href="http://shop.paipai.com/3131415468" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150820/pcd_logo--ipro2.jpg" alt="鐖辨櫘缃楅泤涓�"></a></li><li><a href="http://shop.paipai.com/2090381182?PTAG=20567.30.52" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150409/pcd_210630521.jpg" alt="鍗佸叓瀛愪綔"></a></li><li><a href="http://shop.paipai.com/568282821?PTAG=20567.30.48" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150812/pcd_brita-logo.png" alt="鍏ㄥ眿鍑�鍖�"></a></li><li><a href="http://auction1.paipai.com/3242366C00000000040100004DF580AB?PTAG=20567.30.49" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150818/pcd_152131772.png" alt="浣冲痉"></a></li><li><a href="http://shop.paipai.com/3021854768" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150822/pcd_logo.jpg" alt="鍙豢绾充箰"></a></li><li><a href="http://auction1.paipai.com/3242366C00000000040100004DF7776D?PTAG=20567.30.50" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150818/pcd_lg.png" alt="缇庡浗绉戝嫆"></a></li><li><a href="http://shop.paipai.com/914303254?PTAG=20567.30.51" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150409/pcd_210900452.jpg" alt="鑻忔硦灏�"></a></li><li><a href="http://shop.paipai.com/3131415468 " target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150820/pcd_110652474.jpg" alt="鏌旇垝鐒�"></a></li><li><a href="http://shop.paipai.com/2914830788?PTAG=20567.30.54" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150409/pcd_210708227.jpg" alt="鐢查Θ"></a></li><li><a href="http://shop.paipai.com/855006912?PTAG=20567.30.55" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150409/pcd_210728409.jpg" alt="娓呭僵"></a></li><li><a href="http://shop.paipai.com/855005702?PTAG=20567.30.57" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150409/pcd_210801764.jpg" alt="鎮犲鑹搧"></a></li><li><a href="http://shop.paipai.com/147006522?PTAG=20567.30.58" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150831/pcd_70x30c.jpg" alt="蹇嗛毦蹇�"></a></li><!--[if !IE]>|xGv00|1be380a1f49eaf845b33b3b9ee8bd8c9<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 关键词 & 品牌 -->
+                </div>
+            </div>
+            <!-- E 4F 家居家装/日用百货 -->
+
+            <!-- S 5F 美食汇 -->
+            <div class="f f8" data-lazy-module="floor" data-floorIndex="8">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <span>5F</span>
+                        <em>鲜果STREET</em>
+                    </h3>
+                </div>
+                <div class="f_bd">
+                    <div class="f_row f_row1">
+                        <div class="f_col f_col1">
+                            <!-- S 轮播 -->
+                            <div class="f_slider mod_slide J_fSlider">
+                                <ul class="mod_slide_img">
+                                    
+<li><a href="http://shop.paipai.com/3186724020?PTAG=20567.31.2" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics1.paipaiimg.com/update/20150824/pcd_111447385.jpg" alt=""></a></li>
+
+<li><a href="http://shop.paipai.com/1150997757?PTAG=20567.31.3" target="_blank" title=""><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-src="http://pics1.paipaiimg.com/update/20150818/pcd_162347132.jpg" alt=""></a></li>
+<!--[if !IE]>|xGv00|0e87e8bd9e5859121cd307f4410ee422<![endif]-->
+                                </ul>
+                                <div class="f_slider_nav_wrap clear">
+                                    <ul class="f_slider_nav"></ul>
+                                    <span class="f_slider_nav_line"></span>
+                                </div>
+                                <a href="#" class="f_slider_btn f_slider_btn_pre"><i></i></a>
+                                <a href="#" class="f_slider_btn f_slider_btn_next"><i></i></a>
+                            </div>
+                            <!-- E 轮播 -->
+                        </div>
+
+                        <div class="f_col f_col2">
+                            <!-- S 抢购 -->
+                            <div class="f_rush">
+                                
+
+<div class="f_rush_item f_rush_item1 clear">
+    <div class="f_rush_info">
+        <p class="f_rush_tit"><a  href="http://auction1.paipai.com/186DB07600000000040100004CFF25AD?PTAG=40042.14.12" target="_blank">进口佳沛奇异果6个</a></p>
+        <p class="f_rush_price f_rush_price_old">
+            <span>售价</span>
+            <del><i>￥</i><em>38.9</em></del>
+        </p>
+        <p class="f_rush_price f_rush_price_now"><i>￥</i><em>19.9</em></p>
+        <a class="f_rush_act" href="http://auction1.paipai.com/186DB07600000000040100004CFF25AD?PTAG=40042.14.12" target="_blank">立即抢<i></i></a>
+        <i class="f_rush_info_ico"></i>
+    </div>
+    <div class="f_rush_img">
+        <a href="http://auction1.paipai.com/186DB07600000000040100004CFF25AD?PTAG=40042.14.12" target="_blank">
+            <img data-lazy="http://pics1.paipaiimg.com/update/20150827/index_102216971.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="进口佳沛奇异果6个" />    
+        </a>
+    </div>
+</div>
+
+
+
+<div class="f_rush_item f_rush_item2 clear">
+    <div class="f_rush_info">
+        <p class="f_rush_tit"><a  href="http://auction1.paipai.com/F22DDD3F00000000040100005593D60E?PTAG=" target="_blank">红啤梨红梨2斤装</a></p>
+        <p class="f_rush_price f_rush_price_old">
+            <span>售价</span>
+            <del><i>￥</i><em>39</em></del>
+        </p>
+        <p class="f_rush_price f_rush_price_now"><i>￥</i><em>14.9</em></p>
+        <a class="f_rush_act" href="http://auction1.paipai.com/F22DDD3F00000000040100005593D60E?PTAG=" target="_blank">立即抢<i></i></a>
+        <i class="f_rush_info_ico"></i>
+    </div>
+    <div class="f_rush_img">
+        <a href="http://auction1.paipai.com/F22DDD3F00000000040100005593D60E?PTAG=" target="_blank">
+            <img data-lazy="http://pics2.paipaiimg.com/update/20150827/index_102622717.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="红啤梨红梨2斤装" />    
+        </a>
+    </div>
+</div>
+
+<!--[if !IE]>|xGv00|932382549e3778dbe9df4c96fe813b01<![endif]-->
+                            </div>
+                            <!-- E 抢购 -->
+                        </div>
+
+                        <div class="f_col f_col3">
+                            <div class="f_promo">
+                                <ul>
+                                    
+<li>
+<p class="f_promo_tit">南非进口西柚6个装</p>
+<p>特价 48元包邮</p>
+<a href="http://auction1.paipai.com/B48CF1BD000000000401000054AEE2E1?PTAG=20567.31.10" target="_blank" title="特价 48元包邮"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150819/pcd_pcd_yeqing.jpg" alt="特价 48元包邮"></a></li>
+
+<li>
+<p class="f_promo_tit">香酥太婆梨2斤装</p>
+<p>产地直供</p>
+<a href="http://auction1.paipai.com/DA85E41200000000040100005594DD93?PTAG=20567.31.11" target="_blank" title="产地直供"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150831/pcd_160x.jpg" alt="产地直供"></a></li>
+<!--[if !IE]>|xGv00|cc247830deaf6caabd3d6dc293d5d66a<![endif]-->    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="f_col f_col4">
+                             
+                          
+<div class="f_today" data-qrcode="http://auction1.paipai.com/F107E65F00000000040100003044B346?PTAG=20567.31.12">
+    <div class="f_today_img">
+        <a href="http://auction1.paipai.com/F107E65F00000000040100003044B346?PTAG=20567.31.12" target="_blank">
+          <img class="f_today_img" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150805/pcd_a.jpg" alt="攀枝花凯特大青芒5斤装"> 
+        </a>
+        <div class="f_today_qrcodewrap" data-role="qrcodeWrap"><div class="f_today_qrcode" data-role="qrcode"></div></div>
+    </div>
+    <div class="f_today_info">
+        <h4 class="f_today_tit"><em>Today~</em>当季热卖</h4>
+        <p class="f_today_desc"><a href="http://auction1.paipai.com/F107E65F00000000040100003044B346?PTAG=20567.31.12" target="_blank">绿光味影旗舰店</a></p>
+        <p class="f_today_price">
+            <span class="f_today_price_now mod_price"><i>￥</i><em>29.9</em></span>
+            <del class="f_today_price_old mod_price"><i>￥</i><em>39.9</em></del>
+        </p>
+        <p class="f_today_ercode">
+            <i></i>
+            <strong>扫一扫享受特惠价</strong>
+         </p>
+    </div>
+</div>
+
+<!--[if !IE]>|xGv00|91130dfb1fb489c1ecd830ed1dc62370<![endif]-->  
+                        </div>
+                    </div>
+
+                    <!-- S 关键词 & 品牌 -->
+                    <div class="f_row f_row2">
+                        <div class="f_keylist">
+                            
+<div class="f_key f_key1">
+    <h5 class="f_key_tit"><i></i>当季推荐</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://shop.paipai.com/855004652?PTAG=20567.31.13" target="_blank">秋季滋补</a></li>
+
+        <li><a href="http://auction1.paipai.com/F9733435000000000401000039747D76?PTAG=20567.31.14" target="_blank">蜂蜜柚子茶</a></li>
+
+        <li><a href="http://shop.paipai.com/3056803216?PTAG=40042.1.15" target="_blank">大闸蟹</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,710456-0,710486/s---1-60-15-710486--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-qrw,1-sf,101.html?PTAG=20567.31.16" target="_blank">海鲜</a></li>
+
+        <li><a href="http://s.paipai.com/s-2zu6oul--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.17-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">牛排</a></li>
+
+        <li><a href="http://s.paipai.com/s-zw36ky2--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.18-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">大米</a></li>
+
+        <li><a href="http://s.paipai.com/s-3n37kt8w3x--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.19-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">食用油</a></li>
+
+        <li><a href="http://s.paipai.com/s-1gh517l--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.20-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">干货</a></li>
+
+        <li><a href="http://s.paipai.com/s-z1567qzjz6--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.21-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">调味品</a></li>
+
+    </ul>
+</div>
+
+<div class="f_key f_key2">
+    <h5 class="f_key_tit"><i></i>零食特产</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/s-1wt5w87wzv79n--1-60-15-0--3-4-3----2-2-512-128-0-0-%20as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.31.25" target="_blank">坚果炒货</a></li>
+
+        <li><a href="http://s.paipai.com/s-1guoo27u9z6pv--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.26-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">饼干糕点</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200643/s---1-60-15-200643--3-4-3----2-2-512-128-1-0-as,0-bpf,0-cd,0-platform,1.html?PTAG=20567.31.27" target="_blank">蜜饯果干</a></li>
+
+        <li><a href="http://s.paipai.com/s-3guouvrl6ogp2--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.31.28" target="_blank">肉干肉脯</a></li>
+
+        <li><a href="http://s.paipai.com/s-3wg5w8739r5oj--1-60-15-0--3-4-3----2-2-512-128-0-0- as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.31.29" target="_blank">糖果果冻</a></li>
+
+        <li><a href="http://s.paipai.com/s-29h59v8bx2--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.30-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">巧克力</a></li>
+
+        <li><a href="http://s.paipai.com/s-1nu67qy6zwioj--1-60-15-0--3-4-3----2-2-512-128-0-0- as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.31.31" target="_blank">海味零食</a></li>
+
+        <li><a href="http://s.paipai.com/s-213o1o8nzsgor--1-60-15-0--3-4-3----2-2-512-128-0-0-as,0-bpf,0-cd,0-platform,1-sf,101.html?PTAG=20567.31.32&=" target="_blank">膨化食品</a></li>
+
+        <li><a href="http://s.paipai.com/s-116o9zzb6sioj--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.33-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">进口零食</a></li>
+
+    </ul>
+</div>
+
+<div class="f_key f_key3">
+    <h5 class="f_key_tit"><i></i>茶饮冲调</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/s-3w7owz8v8t--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.37-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">铁观音</a></li>
+
+        <li><a href="http://s.paipai.com/s-2k7o7ot--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.38-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">龙井</a></li>
+
+        <li><a href="http://s.paipai.com/s-1rxoi1qv7a--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.39-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">花草茶</a></li>
+
+        <li><a href="http://s.paipai.com/s-1ozoi4a--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.40-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">红茶</a></li>
+
+        <li><a href="http://s.paipai.com/s-35qpg8yv7a--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.41-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">乌龙茶</a></li>
+
+        <li><a href="http://s.paipai.com/s-25n5q9qv7a--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.42-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">普洱茶</a></li>
+
+        <li><a href="http://s.paipai.com/s-zw35y5ji5p--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.43-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">大红袍</a></li>
+
+        <li><a href="http://s.paipai.com/s-zgo5i4a--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.44-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">白茶</a></li>
+
+        <li><a href="http://s.paipai.com/s-18w5sva--1-60-15-0--3-4-3----2-2-512-128-0-0-PTAG=20567.31.45-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">咖啡</a></li>
+
+    </ul>
+</div>
+
+<div class="f_key f_key4">
+    <h5 class="f_key_tit"><i></i>酒水饮料</h5>
+    <ul class="f_key_ctn">
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-zgo57ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.59-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">白酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-1ozo7ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.60-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">红酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-4k357ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.61-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">洋酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-24t57ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.62-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">啤酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-252po1q822--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.63-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">起泡酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-39u8wua--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.64-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">香槟</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-zk657ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.65-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">冰酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-1sgo7ut--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.66-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">黄酒</a></li>
+
+        <li><a href="http://s.paipai.com/0,200540-0,200620/s-1vwp7py822--1-60-15-200620--3-4-3----2-2-512-128-0-0-PTAG=20567.31.67-as,0-bpf,0-cd,0-platform,1-sf,101.html" target="_blank">鸡尾酒</a></li>
+
+    </ul>
+</div>
+<!--[if !IE]>|xGv00|042bf52f6970227e31b40a592db703d1<![endif]-->
+                            <div class="f_key f_key_brand f_key5">
+                                <h5 class="f_key_tit"><i></i>热卖品牌</h5>
+                                <ul class="f_key_ctn">
+                                    <li><a href="http://shop.paipai.com/3169916878?PTAG=20567.31.49" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150805/pcd_132821549.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2076743393?PTAG=20567.31.50" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics2.paipaiimg.com/update/20150407/pcd_70x30.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/1691660509?PTAG=20567.31.51" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150408/pcd_172437109.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/855006830?PTAG=20567.31.52" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150408/pcd_172501874.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/2653044172?PTAG=20567.31.53" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics1.paipaiimg.com/update/20150408/pcd_172531435.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/1983808351?PTAG=20567.31.54" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150408/pcd_172611970.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/855004139?PTAG=20567.31.55" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics0.paipaiimg.com/update/20150812/pcd_154953493.jpg" alt=""></a></li><li><a href="http://shop.paipai.com/3122152601?PTAG=20567.31.56" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150408/pcd_172643748.jpg" alt=""></a></li><!--[if !IE]>|xGv00|92a0e8c3b2ad23c368b287a0a0733c9f<![endif]-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 关键词 & 品牌 -->
+                </div>
+            </div>
+            <!-- E 5F 美食美酒 -->
+        </div>
+
+        <div class="grid_c1">
+            <!-- S 猜你喜欢 -->
+            <div class="f f12" data-lazy-module="guessLike">
+                <div class="f_hd">
+                    <h3 class="f_tit">
+                        <em>猜你喜欢</em>
+                    </h3>
+                    <ul class="f_channel">
+                        <li>
+                            <a href="http://www.paipai.com/mypp/index.shtml?PTAG=20567.35.1" target="_blank">
+                                <em>我的拍拍</em>
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_bd related">
+                    <div class="f_box clear">
+                        <div class="related_col label">
+                            <!-- S 我的标签 -->
+                            <h4 class="related_tit index_mod_tit"><i></i>我的标签</h4>
+                            <div class="label_list clear" id="J_myLabels"></div>
+                            <!-- E 我的标签 -->
+                            <div class="label_extra">
+                                <a href="http://www.paipai.com/act/color_test_character/index.shtml?PTAG=20567.35.3" target="_blank">
+                                    史上最准的性格测试，揭开你真实的Style
+                                    <i></i>
+                                    <span><s></s></span>
+                                </a>
+                                <a href="http://www.paipai.com/act/20140730_carousel/index.html?PTAG=20567.35.4"  target="_blank">
+                                    星座测试，让色彩带给你幸运的一天
+                                    <i></i>
+                                    <span><s></s></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="related_col like">
+                            <!-- S 发现喜欢的商品 -->
+                            <h4 class="related_tit index_mod_tit"><i></i>发现喜欢的商品</h4>
+                            <ul class="like_list" id="J_likeGoods"></ul>
+                            <!-- E 发现喜欢的商品 -->
+                        </div>
+                        <div class="related_col store">
+                            <!-- S 推荐给你的店铺 -->
+                            <h4 class="related_tit index_mod_tit"><i></i>推荐给你的店铺</h4>
+                            <div class="store_list" id="J_recommendedShops">	
+                            </div>
+                            <!-- E 推荐给你的店铺 -->
+                        </div>
+                        <div class="related_col activity">
+                            <h4 class="related_tit index_mod_tit"><i></i>可能感兴趣的活动</h4>
+                            <ul class="activity_list">
+                                <li data-adsbannerid="103362"></li>
+
+                            
+<li><a href="http://www.paipai.com/promote/2014/10790/index.shtml?PTAG=20567.35.22" target="_blank"><img src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" data-lazy="http://pics3.paipaiimg.com/update/20150821/pcd_092405755.jpg" alt="时尚精品-服装"></a></li>
+
+
+
+ <!--[if !IE]>|xGv00|c12223f5c6534eaebc13123155fd5655<![endif]-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- S 活动 -->
+                    <div class="f_row">
+                        <div class="f_actlist">
+                            <ul class="clear">
+                                <li class="f_act f_act1" data-adsbannerid="103363" >
+<li class="f_act f_act2" data-adsbannerid="103364" >
+
+
+<li class="f_act f_act3">
+<a href="http://auction1.paipai.com/3DC297020000000004010000562F471D?PTAG=20567.35.26" target="_blank" title="常规店铺-鞋">
+    <img data-lazy="http://pics0.paipaiimg.com/update/20150907/index_390x130.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="常规店铺-鞋" />
+</a>
+</li>
+
+
+
+<li class="f_act f_act4">
+<a href="http://www.paipai.com/promote/2014/import/3513/index.shtml?PTAG=20567.35.27" target="_blank" title="99元2双靴子">
+    <img data-lazy="http://pics3.paipaiimg.com/update/20150723/index_114347140.jpg" src="http://static.paipaiimg.com/fd/paipai/base/img/b.gif" alt="99元2双靴子" />
+</a>
+</li>
+
+
+
+
+
+
+<!--[if !IE]>|xGv00|98ee14012c199dd0c5f1e3b61faa638a<![endif]-->
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- S 活动 -->
+                </div>
+            </div>
+            <!-- E 猜你喜欢 -->
+        </div>
+	</div>
+
+    <!-- S 楼层电梯 -->
+    <div class="fixednav" id="J_fixedNav">
+        <ul>
+            <li class="fixednav_item" data-target=".f1" ptag="20567.53.1">
+                <a href="javascript:;">
+                    <span>1F</span>
+                    <strong>穿搭</strong>
+                </a>
+            </li>
+            <li class="fixednav_item" data-target=".f2" ptag="20567.53.2">
+                <a href="javascript:;">
+                    <span>2F</span>
+                    <strong>香水</strong>
+                </a>
+            </li>
+            <li class="fixednav_item" data-target=".f6" ptag="20567.53.6">
+                 <a href="javascript:;">
+                    <span>3F</span>
+                    <strong>港啪</strong>
+                </a>  
+            </li>
+            <li class="fixednav_item" data-target=".f7" ptag="20567.53.7">
+                <a href="javascript:;">
+                    <span>4F</span>
+                    <strong>生活</strong>
+                </a>
+            </li>
+            <li class="fixednav_item"  data-target=".f8" ptag="20567.53.8">
+                <a href="javascript:;">
+                    <span>5F</span>
+                    <strong>鲜果</strong>
+                </a>
+            </li>
+            <li class="fixednav_item fixednav_backtop" data-target="body"  ptag="20567.53.12">
+                <a href="javascript:;">返回顶部<i></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- E 楼层电梯 -->
+
+    <a href="http://exp.qq.com/ur/?urid=20685" ptag="20567.54.1" target="_blank" class="surveys">首页调研</a>
+	<div class="p_ft" id="foot">
+	<div class="p_ft_main">
+   	<div class="grid_c1">
+			<div class="mod_site">
+					
+<div class="mod_site_new">
+			<h4><i></i>新手指南</h4>
+			<ul>
+
+				<li><a href="http://www.paipai.com/fresher/?PTAG=20316.38.1" target="_blank">新人购物指南</a></li>
+
+				<li><a href="http://fuwu.paipai.com/?PTAG=20316.38.1" target="_blank">商户服务平台</a></li>
+
+				<li><a href="http://guize.paipai.com/v2/index.shtml?PTAG=20316.38.1" target="_blank">拍拍规则平台</a></li>
+
+				<li><a href="http://aq.paipai.com/?PTAG=20316.38.1" target="_blank">拍拍安全中心</a></li>
+
+			</ul>
+		</div>
+
+
+<div class="mod_site_plan">
+			<h4><i></i>诚信保证计划</h4>
+			<ul>
+
+				<li><a href="http://www.paipai.com/trust/chengbao.shtml?tab=1&PTAG=20316.38.1" target="_blank">先行赔付</a></li>
+
+
+				<li><a href="http://www.paipai.com/trust/chengbao.shtml?tab=2&PTAG=20316.38.1" target="_blank">7天包退</a></li>
+
+				<li><a href="http://www.paipai.com/trust/chengbao.shtml?tab=3&PTAG=20316.38.1" target="_blank">诚保代充</a></li>
+
+				<li><a href="http://www.paipai.com/trust/plan/?tab=8&PTAG=20316.38.1" target="_blank">快速发货</a></li>
+
+			</ul>
+		</div>
+
+<div class="mod_site_pay">
+			<h4><i></i>支付方式</h4>
+			<ul>
+
+				<li><a href="http://help.paipai.com/pay/index.html#5-1-1-1?PTAG=20316.38.1" target="_blank">一点通支付</a></li>
+
+				<li><a href="http://help.paipai.com/pay/index.html#4-1-1-1?PTAG=20316.38.1" target="_blank">信用卡支付</a></li>
+
+				<li><a href="http://help.paipai.com/pay/index.html#3-1-1-1?PTAG=20084.27.3" target="_blank">借记卡支付</a></li>
+
+				<li><a href="http://help.paipai.com/pay/index.html#2-1-1-1?PTAG=20316.38.1" target="_blank">财付通余额支付</a></li>
+
+			</ul>
+		</div>
+
+<!--[if !IE]>|xGv00|ce2be38ed35158dcb73f9d98723d0520<![endif]-->
+					<div class="mod_site_ser">
+						<h4><i></i>售后服务</h4>
+						<ul>
+							<li><a target="_blank" href="http://help.paipai.com/index.shtml?PTAG=20316.38.1&g_tk=1299848771&g_ty=ls">联系客服</a></li>
+							<li><a target="_blank" href="http://my.paipai.com/cgi-bin/rightdefence_list?flag=0&PTAG=20316.38.1">消费者维权中心</a></li>
+						</ul>
+					</div>
+			</div>
+
+			<div class="mod_ewm">
+           <div class="mod_ewm_item">
+                <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_newapp.png" width="115" height="115" alt="拍拍APP">
+                <h4>下载拍拍APP</h4>
+                <p>品质生活购物社区</p>
+            </div>
+
+             <div class="mod_ewm_item">
+                <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_ershou.png" width="115" height="115" alt="拍拍二手">
+                <h4>下载拍拍二手APP</h4>
+                <p>闲置处理神器</p>
+            </div>
+
+            <div class="mod_ewm_item">
+                <img src="http://static.paipaiimg.com/fd/paipai/base/img/ewm_wx.png" width="115" height="115" alt="拍拍服务号">
+                <h4>关注拍拍服务号</h4>
+                <p>关注拍拍 惊喜多多</p>
+            </div>
+      </div> 
+    </div>
+  </div>
+
+	<div class="mod_copy">
+		<p><a href="http://s.paipai.com/topic/" target="_blank">精品专区</a><a href="http://www.paipai.com/sitemap.shtml?ptag=20316.38.1" target="_blank">网站地图</a><a href="http://help.paipai.com/user_agreement.shtml?ptag=20316.38.1" target="_blank">用户协议</a><a href="http://help.paipai.com/privacy_statement.shtml?ptag=20316.38.1" target="_blank">隐私声明</a></p>
+		<p>Copyright &copy; 1998-2015 拍拍公司 paipai.com 版权所有 <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备13011462号-2</a></p>
+		<p>广东省通管局 增值电信业务经营许可证B2-20130209</p>
+		<p>
+			<a href="http://www.sznet110.gov.cn/netalarm/index.jsp?ptag=20316.38.1" target="_blank" class="mod_copy_lk1"></a>
+			<a href="https://ss.knet.cn/verifyseal.dll?sn=2010070800100001454&ct=df&a=1&pa=500267?ptag=20316.38.1" target="_blank" class="mod_copy_lk2"></a>
+			<a href="https://cert.ebs.gov.cn/56015b37-824c-4ec6-8c8a-9c9a1982fb84?ptag=20316.38.1" target="_blank" class="mod_copy_lk3"></a>
+		</p>
+	</div>
+</div>
+<script type="text/javascript" src="http://static.paipaiimg.com/js/jquery.1.8.js?t=1.8.3"></script>
+<script src="http://static.paipaiimg.com/fd/paipai/base/js/v2/pui.js" charset="utf-8" ></script><!--[if !IE]>|xGv00|0c374e95b66b1d61368dee55b602acc8<![endif]-->
+<script>window["PP.head.toolbar2014.time"]=[new Date()]</script>
+<script id="legos:22110" ver="22110:20140509:20141104140019" name="PP.head.toolbar2014" src="http://static.paipaiimg.com/js/version/2014/05/pp.head.toolbar2014.20140509.js?t=20141104140019" charset="gbk"></script><!--[if !IE]>|xGv00|4a5767fa34589c18f289e58a8ff8f64e<![endif]-->
+<script src="http://static.gtimg.com/js/version/2013/12/ecc.cloud.report.20131225.js?t=201407101804"></script>
+<script>window["PP.foot.time"]=[new Date()]</script>
+<script id="legos:1023" ver="1023:20150713:20150714145825" name="PP.foot" src="http://static.paipaiimg.com/js/version/2015/07/pp.foot.20150713.js?t=20150714145825" charset="gbk"></script><!--[if !IE]>|xGv00|a16bc892f109522eb445f68f22517846<![endif]-->
+<script type="text/javascript">
+	var jap = {
+		siteId : 'JA2015_121198',
+		topic: 'traffic-pp',
+		account : '',
+		skuid: '',
+		shopid: '',
+		orderid: '',
+		adsCookieName: ''
+	}; 
+	(function() { var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+			 ja.src=('https:'==document.location.protocol?'https://miscssl':'http://misc')+ '.360buyimg.com/jdf/1.0.0/unit/ja/1.0.0/ja.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ja,s);
+	})();
+</script>
+<!--[if !IE]>|xGv00|8e0db425229afbf3234c115035962f6a<![endif]-->
+	<script type="text/javascript" src="http://static.paipaiimg.com/fd/paipai/index/v2/js/index.js?v=20150609" charset="utf-8"></script>
+    
+	
+</body>
+</html> <!--[if !IE]>|xGv00|03fabf66d31ad8d9a0caff0ac0a943be<![endif]-->

@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="购物助手,网购,比价" />
+    <meta name="description" content="惠惠购物助手，一站购物，多站比价。你的网购秘密武器。自动显示网上各大商城报价。轻松找到最低价。网易有道出品。" />
+    <title>惠惠购物助手 | 聪明网购不吃亏</title>
+    <link type="image/x-icon" href="/images/front/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ohjkicjidmohhfcjjlahfppkdblibkkb">
+    <script type="text/javascript" src="http://shared.ydstatic.com/js/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/script/front/global.js"></script>
+    <script type="text/javascript" src="/script/front/share.js"></script>
+    <script type="text/javascript" src="/script/front/360-detector.js"></script>
+
+    <link rel="stylesheet" href="/css/colorbox.css">
+    <script type="text/javascript" src="/script/front/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="/script/front/flowplayer-3.2.6.min.js"></script>
+
+</head>
+<body>
+<script  type="text/javascript">
+    var browser = "ie";
+    var url360v6 = 'http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5.crx';
+    function sendlog(action) {
+        if (action) {
+            params = "action=" + action +
+            "&type=EXTENSION_ENTRY_ACTION" +
+            "&browser=" + browser +
+            "&vendor=default" +
+            "&keyfrom=empty" +
+            "&pwd=" + (+new Date);
+        } else {
+            params = "pwd=" + (+new Date);
+        }
+        (new Image()).src= '/log?'+params;
+        return true;
+    }
+
+    function install (aEvent) {
+        if (browser == 'firefox') {
+            var params = {
+                "有道购物助手": { URL: aEvent.target.href,
+                    IconURL: "/images/front/icon_firefox.png",
+                    Hash: "md5:09f4af5bcb3570a2e38721685a45b751",
+                    toString: function () { return this.URL; }
+                }
+            };
+            InstallTrigger.install(params);
+            return false;
+        } else if (browser == 'chrome' &&
+                (aEvent.srcElement.id === "immediateDownload" ||
+                aEvent.srcElement.className === "icon-chrome")) {
+            if (checkBrowser() === 'chrome') {
+                $("#immediateDownload").attr("href", url360v6);
+                return true;
+            }
+            /* chrome 21之后需要inline install */
+            var v = /chrome\/(\d+)/i.exec(navigator.userAgent);
+            if (v && v[1] && parseInt(v[1]) > 20) {
+                if (location.hash == "#download") {
+                    return false;
+                }
+                chrome.webstore.install("https://chrome.google.com/webstore/detail/ohjkicjidmohhfcjjlahfppkdblibkkb",
+                        function() {
+                            if (aEvent.srcElement.className === "icon-chrome") {
+                                sendlog("CHROME_BROWSER_SUCCESS");
+                            } else {
+                                sendlog("CHROME_INSTALL_SUCCESS");
+                            }
+                        }, function(msg) {
+                            console.log(msg);
+                            if (aEvent.srcElement.className === "icon-chrome") {
+                                sendlog("CHROME_BROWSER_FAILED");
+                            } else {
+                                sendlog("CHROME_INSTALL_FAILED");
+                            }
+                        }
+                );
+                $("#wtext").text("如果您点击下载后，长时间没有响应，有可能这个链接地址暂时无法正常访问。");
+                $("#wbutton").attr("href", "/help?redirect=http%3A%2F%2Ffaq.zhushou.youdao.com%2Fdoc%2Finstall%2Fchrome%2F");
+                setTimeout(function () {
+                    $("#warning").show();
+                }, 3000);
+                return false;
+            } else if (v && v[1] && parseInt(v[1]) <= 17) {
+                $("#wtext").text("您正在使用的浏览器Chrome内核版本过低，无法正常使用有道购物助手，请升级您的浏览器。");
+                $("#wbutton").attr("href", "/help#/doc/install/chrome/")
+                $("#warning").show();
+                return false;
+            }
+        } else if (browser == 'maxthon') {
+            window.external.mxCall('InstallApp', "http://shared.ydstatic.com/gouwuex/ie/4.4/youdaogouwu-4.4.exe");
+            return false;
+        }
+        return true;
+    }
+</script>
+<div id='warning'>
+    <div id='wtitle'>
+        <span style="padding-left: 10px;">温馨提示</span>
+        <img id="wclose" src="/images/front/help/close.gif"></img>
+    </div>
+    <div id='wtext'></div>
+    <a id='wbutton' href="/help#q10">查看解决方法</a>
+</div>
+
+<div id="topbar">
+    <div class="boxwrap">
+        <ul class="topnav clearfix">
+            <li><a href="http://www.huihui.cn" title="惠惠首页">惠惠首页</a></li>
+            <li><a href="http://www.huihui.cn/ihome" title="个人主页">个人主页</a></li>
+            <li><a href="http://www.huihui.cn/guide/series" title="购物锦囊">购物锦囊</a></li>
+            <li><a href="http://www.huihui.cn/mall" title="购物返现">购物返现</a></li>
+            <li><a href="http://zhushou.huihui.cn" title="购物助手">购物助手</a></li>
+        </ul>
+    </div>
+</div>
+<div id="header">
+    <div class="boxwrap clearfix">
+        <h1 class="logo"><a href="http://zhushou.huihui.cn">惠惠购物助手</a></h1>
+        <ul class="nav">
+            <li class="current"><a href="javascript:void(0)" title="首页"><em class="nav-index">首页</em></a></li>
+            <!---->
+            <li><a href="#download" title="下载"><em class="nav-phone"><span class="ico-down"></span>下载</em></a></li>
+            <li><a href="/help" title="常见问题"><em class="nav-help">常见问题</em></a></li>
+            <li><a href="/suggest" title="意见反馈"><em class="nav-faq">意见反馈</em></a></li>
+        </ul>
+    </div>
+</div>
+<div id="index-banner">
+    <ul class="slide-wrap">
+        <li style="display:block">
+            <div class="slide-item" style="background:#46D662 url(/images/front/banner1.jpg) 50% 0 no-repeat;"></div>
+        </li>
+        <li>
+            <div class="slide-item" style="background:#41ABF3 url(/images/front/banner2.jpg) 50% 0 no-repeat;"></div>
+        </li>
+        <li>
+            <div class="slide-item" style="background-color:#FF9556;">
+                <a href="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf?topicid=1000&vid=VAL69824D&sid=V8H1BIE6U&coverpic=http://vimg1.ws.126.net/image/snapshot/2015/4/4/E/VAL69824E.jpg&autoplay=true" class="play-video" style="background:url(/images/front/banner3.jpg) 50% -62px no-repeat">
+                    <span class="hover" style="background:url(/images/front/banner3_hover.png) 50% -62px no-repeat"></span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="slide-item" style="background:#C0C9D4 url(/images/front/banner4.jpg) 50% 0 no-repeat;"></div>
+        </li>
+    </ul>
+    <div class="slide-btn">
+        <a class="ctrl-slide btn-prev" href="javascript:" title="上一页"></a>
+        <a class="ctrl-slide btn-next" href="javascript:" title="下一页"></a>
+    </div>
+    <div class="slide-pages">
+        <a class="current" href="javascript:void(0);">全网比价</a>
+        <a href="javascript:void(0);">价格走势</a>
+        <a href="javascript:void(0);">一键海淘</a>
+        <a href="javascript:void(0);">购物资讯</a>
+    </div>
+</div>
+
+<div class="content clearfix">
+    <div class="home-download" id="download">
+                <ul class="home-download-ctn clearfix">
+            <li class="down1">
+                <a rel="nofollow" onclick="sendlog('CLICK_INSTALL_BUTTON'); return install(event)" href="http://shared.ydstatic.com/gouwuex/ie/4.4/youdaogouwu-4.4.exe" class="btn-download" id="immediateDownload" title="PC版下载">
+                    <span class="browser-ico browser-ie-w"></span>
+                </a>
+            </li>
+            <li class="down2">
+                <a href="http://itunes.apple.com/cn/app/hui-hui-zhe-kou-ri-bao/id698013642?ls=1&mt=8" data-log="iphone" title="IOS版下载"><span class="browser-ico ios-w"></span></a>
+            </li>
+            <li class="down3">
+                <a href="http://codown.youdao.com/huihui/daily_app/latest/huihui_deals_latest_youdao.apk" data-log="android" title="Android版下载"><span class="browser-ico android-w"></span></a>
+            </li>
+            <li class="down4">
+                扫一扫下载
+            </li>
+        </ul>
+    </div>
+    <div id="pc-download">
+        <h2 class="hd">PC其他版本下载</h2>
+        <div class="bd clearfix">
+            <!--
+                                -->
+
+            <a class="icon-chrome" href="http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5.crx"
+               onclick="return install(event)" title="Chrome">
+                <span class="pc-icon icon-chrome"></span>
+                <em>Chrome浏览器</em>
+            </a>
+            <a href="http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5.crx"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="360">
+                <span class="pc-icon icon-360"></span>
+                <em>360浏览器</em>
+            </a>
+            <a class="icon-360chrome" href="http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5.crx"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="360极速">
+                <span class="pc-icon icon-360chrome"></span>
+                <em>360极速浏览器</em>
+            </a>
+            <a class="icon-safari" href="http://shared.ydstatic.com/gouwuex/safari/1.0/youdaogouwu-1.safariextz" 
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="Safari">
+                <span class="pc-icon icon-safari"></span>
+                <em>Safari浏览器</em>
+            </a>
+            <a href="http://shared.ydstatic.com/gouwuex/ie/4.4/youdaogouwu-4.4.exe"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="IE">
+                <span class="pc-icon icon-ie"></span>
+                <em>IE浏览器</em>
+            </a>
+            <a class="icon-sogou" href="http://ie.sogou.com/app/s/YXBwXzQwMDA=" target="_blank"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="Sogou">
+                <span class="pc-icon icon-sogou"></span>
+                <em>搜狗浏览器</em>
+            </a>
+            <a class="icon-liebao" href="http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5-liebao.crx"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="猎豹">
+                <span class="pc-icon icon-liebao"></span>
+                <em>猎豹浏览器</em>
+            </a>
+            <a class="icon-firefox" title="Firefox" href="http://shared.ydstatic.com/gouwuex/firefox/4.2.5/youdaogouwu-4.2.5.xpi"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)">
+                <span class="pc-icon icon-firefox"></span>
+                <em>火狐浏览器</em>
+            </a>
+            <a class="icon-maxthon" href="http://shared.ydstatic.com/gouwuex/maxthon/4.2.5/youdaogouwu-4.2.5.mxaddon"
+               onclick="sendlog('CLICK_BROWSER_BUTTON'); return install(event)" title="Maxthon">
+                <span class="pc-icon icon-maxthon"></span>
+                <em>遨游浏览器</em>
+            </a>
+            <a href="http://shared.ydstatic.com/gouwuex/chrome/4.2.5/youdaogouwu-4.2.5-opera.crx" class="icon-opera" title="opera">
+                <span class="pc-icon icon-opera"></span>
+                <em>Opera浏览器</em>
+            </a>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <p>
+        <a href="http://www.huihui.cn/intro/about" target="_blank">关于我们</a>
+        <span class="sp">|</span>
+        <a href="http://fanxian163.blog.163.com" target="_blank">官方博客</a>
+        <span class="sp">|</span>
+        <a href="http://www.huihui.cn/intro/cooperation" target="_blank">商务合作</a>
+        <span class="sp">|</span>
+        <a href="http://www.huihui.cn/intro/links" target="_blank">友情链接</a>
+        <span class="sp">|</span>
+        <a href="/help" target="_blank">帮助</a>
+    </p>
+    <p class="copyr">&copy; 2012 网易公司 京ICP证080268号 京ICP备12032105号-1</p>
+</div>
+
+<script type="text/javascript">
+    function fire(element, sEvent) {
+        var name = sEvent;
+        if (element.fireEvent){
+            return element[name]();
+            //return element.fireEvent('on' + name);
+        } else {
+            var evt = null,
+                    doc = element.ownerDocument || element;
+            if (/mouse|click/i.test(sEvent)) {
+                evt = doc.createEvent('MouseEvents');
+                evt.initMouseEvent(name, true, true, doc.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+            } else {
+                evt = doc.createEvent('Events');
+                evt.initEvent(name, true, true, doc.defaultView);
+            }
+            return element.dispatchEvent(evt);
+        }
+    };
+    function createEvent (eventTarget,eventName){
+        try{
+            if(eventTarget.dispatchEvent){
+                var evt = document.createEvent("MouseEvents");
+                evt.initEvent(eventName,false,true);
+                eventTarget.dispatchEvent(evt);
+            }else if(eventTarget.fireEvent){
+                eventTarget[eventName]();
+                //eventTarget.fireEvent('on'+eventName);
+            }else{
+                eventTarget[eventName]();
+            }
+        }catch(e){
+        }
+    }
+
+    $(document).ready(function() {
+        //        // var versionPattern=/youdaogouwu-(\d\.\d+)/;
+        // var filename="http://shared.ydstatic.com/gouwuex/ie/4.4/youdaogouwu-4.4.exe";
+        // if (versionPattern.test(filename)) {
+        //     document.getElementById("version").innerHTML = versionPattern.exec(filename)[1];
+        // }
+        // if (browser == "se360") {
+        //     document.getElementById("version").innerHTML = "2.0";
+        // }
+
+        // install tip for chrome 21 or above
+        $("#wclose").click(function(){$("#warning").hide();});
+        var d = document.getElementById('immediateDownload');
+        if (d && window.location.hash === '#download' && /firefox/i.test(navigator.userAgent)) {
+            setTimeout(function(){createEvent(d, 'click')}, 1);
+        }
+
+    });
+
+</script>
+
+<script type="text/javascript" src="/script/front/slide.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $('#index-banner').zsSlide({autoPlay: true});
+    $(function(){
+        $("a[class*='play-video']").colorbox({ iframe: true, transition:"fade",scrolling:false, innerWidth:840, innerHeight:512});
+        if (/msie/i.test(navigator.userAgent)) {
+            $("a[class*='play-video']").click(function() {
+                try{
+                    window.flowObj = flowplayer("player", "/images/flowplayer-3.2.7.swf");
+                }catch(e){}
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+    var youdao_conv_id = 271382;
+</script>
+<script type="text/javascript" src="http://conv.youdao.com/pub/conv.js"></script>
+<script type="text/javascript" src="http://shared.ydstatic.com/gouwuex/script/front/gomeIfame.js"></script>
+</body>
+</html>

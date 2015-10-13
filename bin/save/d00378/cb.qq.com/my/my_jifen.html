@@ -1,0 +1,611 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Language" content="zh-cn" />
+	<meta name="author" content="Tencent-ISUX-Vip" />
+	<meta name="Copyright" content="Tencent" />
+	<meta name="Description" content="QQ彩贝积分是您在商户购物、生活缴费、旅游出行等方方面面消费所获得的积分，并能用于支付和兑换各类商品和腾讯业务"/>
+	<meta name="Keywords" content="QQ彩贝积分 兑换实物 虚拟兑换 优惠券 Q币 充话费 返利 赚积分 用积分 拾味生活 贝添色彩"/>
+	<title>我的彩贝中心—个人中心—QQ彩贝积分</title>
+	<link rel="stylesheet" href="http://imgcache.qq.com/vipstyle/caibei/v4/portal/css/global.css?20131226" media="screen" />
+	<link rel="stylesheet" href="http://imgcache.qq.com/vipstyle/caibei/v4/portal/css/i/index.css?20120607" media="screen" />
+</head>
+<body>
+    <div class="script">
+        <script type="text/javascript" class="temScript">
+        var _jsBegin = '<script type="text/javascript" src="', _jsEnd = '"><\/script>';
+        document.write(
+        [_jsBegin,'http://imgcache.qq.com/club/cbjifen/v2/js/header.js',_jsEnd,
+         _jsBegin,'http://imgcache.qq.com/club/cbjifen/v2/js/my/jQmy_common.js',_jsEnd
+        ].join(''));
+        </script>
+    </div>
+	<div class="wrap">
+    
+		<!--S-顶部导航-->
+		<div class="sec_topact" style="display:none;"> <!-- 产品后台可设置此div的background-color -->
+			<div class="sec_topact_bd grid_c1">
+				<a href="#" target="_blank" id="main_act_link"><img id="main_act_img" width="980"></a>
+				<a href="javascript:void(0);" class="ico_gb_b ico_close" title="关闭">关闭</a>
+			</div>
+		</div>
+		<!--S-顶部导航-->
+		<script type="text/javascript">
+        <!--
+        JIFEN.INFO.writeTop();
+        JIFEN.INFO.writeNav('I');
+        //-->
+        </script>
+
+		<div class="i_mod_guide" style="display:none;" id="openCftGuide">
+
+			<div class="i_mod_guide_hd f_tx1">
+				尊敬的<span id="guideNickName"></span>：您的彩贝账户中有<span id="guideJifen" class="c_em1"></span>彩贝积分
+				<span class="hidden">立即激活财付通，积分次日就可使用！</span>
+			</div>
+			<div class="i_mod_guide_bd">
+				<a href="http://cb.qq.com/jump_to_CFT.php?to_url=https://www.tenpay.com/v2/register/index.shtml?ADTAG=REG.TENPAY.ZHUCE.SHOUYE&ADTAG=TENPAY_V2.NAV.TOP_RIGHT.REG" class="i_mod_guide_btn" target="_blank">立即激活财付通</a>
+				<span class="hidden">彩贝积分存储于您的财付通账户中。由于您未激活财付通，积分无法充入您的账户，无法使用。</span>
+			</div>
+
+			<div class="i_mod_guide_ext">
+				<a class="i_mod_guide_close" href="#">关闭</a>
+			</div>
+
+		</div>
+
+		<!--S-主体-->
+		<div class="sec_main">
+            <script>
+			JIFEN.INFO.writeBread('个人中心');
+			</script>
+			<div class="grid_c3 grid_c3a sec_mainA">			
+				<div class="mainbar">
+					<div class="mainbar_wrap">
+						<!--余额-->
+						<div class="i_mod_boxB mbox_1">
+							<div class="i_mod_boxB_bd">
+								<div class="clearfix">
+									<div class="col_l col_A">
+										<h3>彩贝余额</h3>
+									</div>
+									<div class="col_l col_B">
+										<div class="r_n_em r1">
+											<span id="v:jifenBalance" class="f_tx1 c_em1 n_em">加载中</span>彩贝
+                                            <div class="mod_tips mod_tips_l" style="z-index:1;margin-left:10px;display: none;">
+												<span class="mod_tips_hd">
+													<span class="mod_tips_arrA">◆</span>
+													<span class="mod_tips_arrB">◆</span>
+												</span>
+												<div class="mod_tips_bd">
+													<!--首次开通快捷支付，<a href="#" target="_blank">立即领取500彩贝»</a>-->
+												</div>
+											</div>
+										</div>
+                                        <div class="r4" id = 'jifenExchange'></div>
+										<div class="r2" id="v:jifenperiod" style="display:none">  
+											积分过期日期 <span class="lbl_date" id="v:datedeadline"></span>
+										</div>
+										<div class="r3">
+											<p id="v:cancel_cft" style="display:none"><span class="ico_gb ico_alert0"></span>&nbsp; 请不要注销您的财付通帐号，否则将导致彩贝积分被清零。</p>
+                                            <p id="v:open_cft" style="display:none"><span class="ico_gb ico_alert0"></span>&nbsp; 您需要开通财付通才可获得彩贝积分累计。<a href="/jump_to_CFT.php?type=4" target="_blank">开通财付通&gt;&gt;</a></p>
+										</div>
+									</div>								
+								</div>
+								<div class="mbox_1_sec2 clearfix">
+									<div class="col_l col_A">
+										<h3>待返积分</h3>
+									</div>
+									<div class="col_l col_B">
+										<div class="r_n_em r1">
+											<span id="v:jifen_return" class="f_tx1 c_em1 n_em">加载中</span>彩贝
+										</div>
+										<div class="r2">
+											处于待返积分状态的订单，确认交易成功且无退货后可得积分返还。
+										</div>
+									</div>
+								</div>									
+							</div><!--/i_mod_boxB_bd-->
+							<div class="i_mod_boxB_ft clearfix">
+								<a href="/my/my_jifen_source.html" class="lnk_usecb">
+									<span>查看详情</span>
+									<span class="mod_iconarr mod_iconarr_r">
+										<span class="mod_iconarr_bk"></span>
+									</span>
+								</a>								
+							</div>
+							
+							<!-- 快返tips -->
+							<div class="kf_tip" id="kuaifanTips" style="display:none;">
+								
+							</div><!-- /快返tips -->
+
+						</div><!--/mbox_1-->
+
+						<!--赚取积分-->
+						<div class="i_mod_boxB mbox_2">
+							<div class="i_mod_boxB_hd">
+								<h2>赚取积分</h2>
+							</div>
+							<div class="i_mod_boxB_bd clearfix">
+								<div class="col_l col_A">
+									
+									<ul class="mod_hlist service_list">
+										<li>
+											<span class="i_ico i_ico_shopping"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/shop/?attach=000.0000.00.109.11" target="_blank">网上购物</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_plane"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/trip/?attach=000.0000.00.109.11" target="_blank">机票火车票</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_hotel"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/trip/?attach=000.0000.00.109.11" target="_blank">酒店度假</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_lottery"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/life/?attach=000.0000.00.109.11" target="_blank">彩票游戏</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_show"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/life/?attach=000.0000.00.109.11" target="_blank">演唱会电影票</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_dotask"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/task/?attach=000.0000.00.109.11" target="_blank">做任务</a></span>
+										</li>
+									</ul>
+                                    <div class="col_A_ft">
+										<a href="/get_jifen.html" target="_blank" class="lnk_shopping">
+											<span>在合作商家购物</span>
+											<span class="mod_iconarr mod_iconarr_r">
+												<span class="mod_iconarr_bk"></span>
+											</span>
+										</a>
+									</div>	
+								</div>
+								<div class="col_l col_B">
+									<div id="v:getjifen" class="i_mod_picslide">
+										<div class="i_mod_picslide_bd">
+											<ul id="v:getlist" class="mod_hlist pic_list">
+
+											</ul>	
+										</div>
+										<div class="i_mod_picslide_ft">
+											<!--注：这里的a标签前后之间不能有空隙-->
+											<div id="v:gettab" class="slide_dots">
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!--/mbox_2-->
+						<!--/赚取积分-->
+
+						<!--使用积分-->
+						<div class="i_mod_boxB mbox_2 mbox_2B">
+							<div class="i_mod_boxB_hd">
+								<h2>使用积分</h2>
+							</div>
+							<div class="i_mod_boxB_bd clearfix">
+								<div class="col_l col_A">									
+									<ul class="mod_hlist service_list">
+										<li>
+											<span class="i_ico i_ico_gift"></span>
+											<span class="lbl_ico"><a id = "iCanExchange" >我能兑换</a></span>
+										</li>
+                                        <li>
+											<span class="i_ico i_ico_tcgift"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/jifen/lottery.html?attach=200.2215.00.000.00" target="_blank">1积分抽大奖</a></span>
+										</li>
+										<li>
+											<span class="i_ico i_ico_game1"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/jifen/category.html?attach=200.2215.00.000.00#3:11" target="_blank">游戏兑换</a></span>
+										</li>	
+										<li>
+											<span class="i_ico i_ico_vgift"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/jifen/category.html#3:10" target="_blank">Q币Q点充值</a></span>
+										</li>	
+										<li>
+											<span class="i_ico i_ico_youhui"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/jifen/category.html#3" target="_blank">话费充值</a></span>
+										</li>			
+										<li>
+											<span class="i_ico i_ico_shopping"></span>
+											<span class="lbl_ico"><a href="http://cb.qq.com/jifen/category.html#2:6" target="_blank">积分+现金</a></span>
+										</li>                                        
+									</ul>
+
+									<div class="col_A_ft">
+										<a href="http://cb.qq.com/jifen/exchange.html?attach=200.2215.00.000.00" target="_blank" class="lnk_shopping">
+											<span>积分商城</span>
+											<span class="mod_iconarr mod_iconarr_r">
+												<span class="mod_iconarr_bk"></span>
+											</span>
+										</a>
+									</div>
+
+								</div>
+								<div class="col_l col_B">
+
+									<div id="v:usejifen" class="i_mod_picslide">
+										<div class="i_mod_picslide_bd">
+											<ul id="v:uselist" class="pic_list">
+
+											</ul>	
+										</div>
+										<div class="i_mod_picslide_ft">
+											<!--注：这里的a标签前后之间不能有空隙-->
+											<div id="v:usetab" class="slide_dots">
+											
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div><!--/mbox_2-->
+						<!--/使用积分-->						
+
+					</div>
+					<!--/mainbar_wrap-->
+				</div>
+				<!--/mainbar-->
+				
+				<div class="sidebar">
+					<script type="text/javascript">
+                        JIFEN.INFO.MY.writeNav('MY_JIFEN');
+                    </script>				
+				</div>
+				<!--/sidebar-->
+
+				<div class="extrabar">
+
+					<!--商旅频道-->
+					<div class="i_mod_boxA rbox_2" style="margin-bottom:10px;display:none; ">
+						<div class="i_mod_boxA_hd">
+							<!-- 查询导航-->
+							<ul class="travel_sd_nav">
+								<li id="v:tab_huafei" class="current">
+									<a href="javascript://">话费</a>
+									<span class="mod_iconarr mod_iconarr_u">
+                                      <span class="mod_iconarr_yl"></span>
+                                    </span>
+								</li>
+								<li id="v:tab_air">
+									<a href="javascript:;">机票</a>
+									<span class="mod_iconarr mod_iconarr_u">
+                                      <span class="mod_iconarr_yl"></span>
+                                    </span>
+								</li>
+								<li id="v:tab_hotel">
+									<a href="javascript:;">酒店</a>
+									<span class="mod_iconarr mod_iconarr_u">
+                                      <span class="mod_iconarr_yl"></span>
+                                    </span>
+								</li>
+								<li id="v:tab_train">
+									<a href="javascript:;">火车票</a>
+									<span class="mod_iconarr mod_iconarr_u">
+                                      <span class="mod_iconarr_yl"></span>
+                                    </span>
+								</li>
+							</ul>
+							<!--/ 查询导航 -->
+						</div>
+						<div class="i_mod_boxA_bd">
+							<!-- 查询表单-->
+							<div class="travel_form">
+								<!-- 话费充值 -->
+								<div class="i_mod_tabct_bd mobile_charge" id="v:div_huafei">
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											手机号：
+										</div>
+										<div class="col_l col_ipt">
+											<input type="text" class="bd0 ipt_mobile" value="请输入手机号"/>
+											<p class="c_sub1 mobile_addr">支持移动、联通、电信</p>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											面值：
+										</div>
+										<div class="col_l col_ipt">
+											<select class="bd0" name="selAmount">
+												<option value="10">10元</option>
+												<option value="20">20元</option>
+												<option value="30">30元</option>
+												<option value="50" selected="selected">50元</option>
+												<option value="100">100元</option>
+												<option value="300">300元</option>
+												<option value="500">500元</option>
+											</select>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											优惠价：
+										</div>
+										<div class="col_l col_ipt">
+											<span class="f_tx1 mobile_price">49.13-50元</span><br /><span class="f_tx1 c_sub1">最高返<strong class="c_em1">0.1%</strong>彩贝</span>
+										</div>
+									</div>
+									<div class="mod_formrow mod_formrow_act clearfix">
+										<div class="col_l col_lbl">&nbsp;</div>
+										<div class="col_l col_ipt">
+											<a href="#" class="mod_btn mod_btn_gr2 btn_search"><span class="f_tx1 mod_btn_bd">点击充值</span></a>
+										</div>
+									</div>
+								</div>
+								<!--/ 话费充值 -->
+								<!-- 机票查询 -->
+								<div class="i_mod_tabct_bd" id="v:div_air" style="display:none">
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span>航程类型：
+										</div>
+										<div class="col_l col_ipt">
+											<label class="mod_lblrbx"><input id="oneWayId" type="radio" name="travel_type"/>单程</label>
+											<label class="mod_lblrbx"><input id="roundId" type="radio" name="travel_type"/>往返</label>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="fromCityId">出发城市：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="fromCityId" type="text" class="bd0 sy_mod_icoipt ipt_city" value=""/>
+											<a id="fromCityButtonId" href="javascript:void(0);" class="ico_gb ico_addr"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="toCityId">到达城市：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="toCityId" type="text" class="bd0 sy_mod_icoipt ipt_city" value=""/>
+											<a id="toCityButtonId" href="javascript:void(0);" class="ico_gb ico_addr"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="depDateId">出发日期：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="depDateId" type="text" class="bd0 sy_mod_icoipt ipt_sdate" readonly/>
+											<a id="depDateButtonId" href="javascript:void(0);" class="ico_gb ico_cal"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="returnDateId">返航日期：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<!-- 标签启用状态class: sy_mod_icoipt,禁用状态class: sy_mod_icoipt0 -->
+											<input id="returnDateId" type="text" class="bd0 sy_mod_icoipt0 ipt_edate" readonly/>
+											<a id="returnDateButtonId" href="javascript:void(0);" class="ico_gb ico_cal"></a>
+										</div>
+									</div>
+									<div class="mod_formrow mod_formrow_act clearfix">
+										<div class="col_l col_lbl">
+											<div class="col_l col_lbl">
+												<a href="http://cb.qq.com/trip.html" target="_blank">
+													<span>商旅频道</span>
+													<span class="mod_iconarr mod_iconarr_r">
+													<span class="mod_iconarr_bk"></span>
+													</span>
+												</a>
+											</div>
+										</div>
+										<div class="col_l col_ipt">
+											<a id="queryId" href="javascript:void(0);" class="mod_btn mod_btn_gr2 btn_search"><span class="f_tx1 mod_btn_bd">查&nbsp;询</span></a>
+										</div>
+									</div>
+								</div>
+								<!--/ 机票查询 -->
+
+								<!-- 酒店查询 -->
+								<div class="i_mod_tabct_bd" id="v:div_hotel" style="display:none">
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="txtCity">入住城市：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="txtCity" type="text" class="bd0 sy_mod_icoipt ipt_city" value="中文 | 拼音 | 首字母"/>
+													<a id="btnCity" href="javascript:void(0);" class="ico_gb ico_addr"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="txtCheckin">入住日期：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="txtCheckin" type="text" class="bd0 sy_mod_icoipt ipt_sdate" value="" readonly/>
+													<a id="btnCheckin" href="javascript:void(0);" class="ico_gb ico_cal"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="txtCheckout">离店日期：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="txtCheckout" type="text" class="bd0 sy_mod_icoipt ipt_edate" value="" readonly/>
+													<a id="btnCheckout" href="javascript:void(0);" class="ico_gb ico_cal"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="txtHotel">关 键 字：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<input id="txtHotel" type="text" maxlength="10" class="bd0 sy_mod_icoipt ipt_kwd" value="输入酒店名称"/>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<label for="price_select">价格范围：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<select id="price_select"  class="bd0">
+												<option value="0" selected="selected">不限</option>
+												<option value="0-200">200元以下</option>
+												<option value="200-500">200-500元</option>
+												<option value="500-9900">500元以上</option>
+											</select>
+										</div>
+									</div>
+									<div class="mod_formrow mod_formrow_act clearfix">
+										<div class="col_l col_lbl">
+											<div class="col_l col_lbl">
+												<a href="http://cb.qq.com/trip.html" target="_blank">
+													<span>商旅频道</span>
+													<span class="mod_iconarr mod_iconarr_r">
+													<span class="mod_iconarr_bk"></span>
+													</span>
+												</a>
+											</div>
+										</div>
+										<div class="col_l col_ipt">
+											<a href="javascript:void(0);" id="queryHotel" class="mod_btn mod_btn_gr2 btn_search"><span class="f_tx1 mod_btn_bd">查&nbsp;询</span></a>
+										</div>
+									</div>
+								</div>
+								<!--/ 酒店查询 -->
+								
+								<!-- 火车票查询 -->
+								<div class="i_mod_tabct_bd" id="v:div_train"  style="display:none">
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span>查询类型：
+										</div>
+										<div class="col_l col_ipt">
+											<label class="mod_lblrbx"><input type="radio" name="trainrad" id="zzrad" checked/>站站查询</label>
+											<label class="mod_lblrbx"><input type="radio" name="trainrad" id="ccrad" />车次查询</label>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix query_num" style="display:none">							
+										<div class="col_l col_lbl">
+											<span class="st">*</span>出发车次：
+										</div>
+										<div class="col_l col_ipt col_trainnum">
+											<input type="text" class="bd0 sy_mod_icoipt" id="train_checi" value="请输入车次"/>
+											<div class="train_numlist" style="display:none">
+													
+											</div>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix query_stop">							
+										<div class="col_l col_lbl">
+											<span class="st">*</span>出发城市：
+										</div>
+										<div class="col_l col_ipt">
+											<input type="text" class="bd0 sy_mod_icoipt ipt_city" value="重庆" id="train_from"/>
+											<a href="javascript:;" class="ico_gb_b ico_addr" id="train_from_btn"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix query_stop">
+										<div class="col_l col_lbl">
+											<span class="st">*</span>到达城市：
+										</div>
+										<div class="col_l col_ipt">
+											<input type="text" class="bd0 sy_mod_icoipt ipt_city" value="重庆" id="train_to"/>
+											<a href="javascript:;" class="ico_gb_b ico_addr" id="train_to_btn"></a>
+										</div>
+									</div>
+									<div class="mod_formrow clearfix">
+										<div class="col_l col_lbl">
+											<span class="st">*</span>出行日期：
+										</div>
+										<div class="col_l col_ipt">
+											<input type="text" class="bd0 sy_mod_icoipt ipt_sdate" value="2011-12-02" id="leave_date"/>
+											<a href="javascript:;" class="ico_gb_b ico_cal" id="leave_date_btn"></a>
+										</div>
+									</div>
+
+									<div class="mod_formrow clearfix" style="display:none">
+										<div class="col_l col_lbl">
+											<span class="st">*</span><label for="train_mall">服务商家：</label>
+										</div>
+										<div class="col_l col_ipt">
+											<select class="bd0" id="train_mall">
+												<option value="tieyou_cb">铁友旅行网</option>
+											</select>
+											<p><span id="trainRatioHintId" class="c_em1_1">最高返360彩贝</span></p>
+										</div>
+									</div>
+									<div class="mod_formrow mod_formrow_act clearfix">
+										<div class="col_l col_lbl">
+											<a href="javascript:;" target="_blank">
+												<span>商旅频道</span>
+												<span class="mod_iconarr mod_iconarr_r">
+													<span class="mod_iconarr_bk"></span>
+												</span>
+											</a>
+										</div>
+										<div class="col_l col_ipt">
+											<a href="javascript:;" class="mod_btn mod_btn_gr2 btn_search" id="train_query"><span class="f_tx1 mod_btn_bd">查&nbsp;询</span></a>
+										</div>
+									</div>
+								</div>
+								<!--/ 酒店查询 -->
+							</div>
+							<!--/ 查询表单-->
+						</div>
+						
+					</div>
+					<!--/商旅频道-->
+					
+					<!--最近浏览商家-->
+					<div class="i_mod_boxA rbox_1">
+						<div class="i_mod_boxA_hd">
+							<h3>最近浏览商家</h3>
+						</div>
+						<div class="i_mod_boxA_bd">
+							<ul id="v:lataistmall" class="client_list">							
+							</ul>
+						</div>
+					</div>
+					<!--/最近浏览商家-->
+
+					
+
+				</div>
+				<!--/extrabar-->
+
+			</div>
+			<!--/sec_mainA-->
+
+			<!--sec_mainZ-->
+			
+			<!--/sec_mainZ-->
+		</div>
+		<!--E-主体-->
+
+		<!--S-底部-->
+		<script type="text/javascript">
+        <!--
+            JIFEN.INFO.writeIntro();
+            JIFEN.INFO.writeCopyRight();
+        //-->
+        </script>
+		<!--E-底部-->
+
+	</div>
+<script type="text/javascript" src='http://imgcache.qq.com/club/cbjifen/v2/js/sea.js'></script>
+<script type="text/javascript" class="temScript">
+var _jsBegin = '<script type="text/javascript" src="', _jsEnd = '"><\/script>';
+document.write(
+[_jsBegin,'http://imgcache.qq.com/ac/club/caibei/cblib-1.0.min.js',_jsEnd,
+ _jsBegin,'http://imgcache.qq.com/club/cbjifen/v2/js/jifenlib_2.0.js',_jsEnd,
+ _jsBegin,'http://cb.qq.com/merchant/mall_online_info.php',_jsEnd,
+ _jsBegin,'http://imgcache.qq.com/club/cbjifen/v2/js/trip/trip_search.js?201200824',_jsEnd,
+ _jsBegin,'http://imgcache.qq.com/club/cbjifen/v2/js/my/my_jifen.js?20141107',_jsEnd
+].join(''));
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|7c9a1c82fd2e76700e3002d396314b54<![endif]-->

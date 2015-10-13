@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! "/>
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/"/>
+    <title>京东白条</title>
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/consumer/baitiao/index/2.0.1/css/btIndex.css?20150305"/>
+
+    <script>
+        window.jrBase = {
+            navId: 'nav-baitiao',
+            headerFix: true,
+            // 是否启用侧边工具栏 包含 返回顶部 和 问卷反馈
+            sidebar: true,
+            // 问卷反馈url id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=104',
+            //问卷调查
+            surveyUrl: 'http://diaoyan.jd.com/survey/invitation.htm?eSurveyId=VPV3E7LN4Z25A',
+            //在线客服
+            serviceUrl: 'http://chat.jd.com/jd/chat?entry=jd_jr'
+        };
+    </script>
+
+</head>
+
+
+
+<body>
+<!--header-->
+    <!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end-->    <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->    <div class="sub-nav">        <div class="grid-1200 sub-nav-wrap">            <a id="nav-baitiao" class="sub-nav-item" href="http://baitiao.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdbt">京东白条</a><a id="nav-gangbeng" class="sub-nav-item" href="http://bk.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|btlmk">白条联名卡</a>             <a id="nav-gangbeng" class="sub-nav-item" href="http://gb.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|gb">京东钢镚</a>            <a id="nav-travelBaitiao" class="sub-nav-item" href="http://go.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|lybt">旅游白条+</a>            <a id="nav-houseBaitiao" class="sub-nav-item" href="http://fang.jd.com" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|ajbt">安居白条+</a>  <a id="nav-studentFenQi" class="sub-nav-item" href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|xybt">校园白条</a><a id="nav-qiche" class="sub-nav-item" href="http://chedai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|qcjr">汽车金融</a>            <a id="nav-jincai" class="sub-nav-item" href="http://jincai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdjc">京东金采</a>        </div>    </div>    <!--sub-nav-end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+<!--header end-->
+<!--container-->
+<!--顶部banner-->
+<div class="header-con">
+        <div class="new-plus" style="background-image: url(http://img30.360buyimg.com/jr_image/jfs/t2293/105/207745353/104703/a027624/55f63a45N83f2eec2.jpg);">
+        <a href="http://bk.jd.com/" class="newp-a" target="_blank"  clstag="jr|keycount|newbt|yjhfc"></a>
+        <span class="newp-span"></span>
+    </div>
+        <!--已激活-->
+    <div class="logged" >
+        <div class="login-box">
+            <div class="head-user">
+                <img id="pic-user" src="http://static.360buyimg.com/finance/assets/common/1.3.0/css/i/user-logo.jpg"/>
+            </div>
+            <div class="acon">
+                <a class="act-btn act-btnleft" href="http://sale.jd.com/act/qbdiPJ1cYHkX0vR.html" target="_blank" clstag="jr|keycount|btzcgl|discount">直降100元</a>
+                <a class="act-btn act-btnw" href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank" clstag="jr|keycount|btzcgl|bthelp" >新手帮助</a>
+            </div>
+            <div class="head-data">
+
+            </div>
+        </div>
+    </div>
+    <!--已激活 end-->
+    <!--未激活-->
+    <div id="homeBanner" class="noActivate">
+        <div class="acon">
+            <a class="act-btn act-btnleft" href="http://sale.jd.com/act/qbdiPJ1cYHkX0vR.html" target="_blank" clstag="jr|keycount|btzcgl|discount">直降100元</a>
+            <a class="act-btn act-btnw" href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank" clstag="jr|keycount|btzcgl|bthelp">新手帮助</a>
+        </div>
+        <div class="date">
+            <ul class="list pic-layer" id="page-ul">
+                                <li class="bg-new" style="background-image: url(http://img30.360buyimg.com/jr_image/jfs/t2029/97/191356828/125314/9d3d0574/55f63a44N73601d19.jpg);">
+                    <a href="http://bk.jd.com/" target="_blank" class="bt-hd" clstag="jr|keycount|newbt|baitiaoyear"></a>
+                        <span class="li-con">
+                            <p class="num-font" ></p>
+                        </span>
+                    <a href="/creditUser/activate" target="_blank" title="激活白条" class="jh-btnnew" clstag="jr|keycount|newbt|btjh"
+                       style="background: url(http://img30.360buyimg.com/jr_image/jfs/t1480/181/1062395244/1847/166b8947/55b9ebe3Ne658a62d.png) no-repeat top right;">激活白条</a>
+                    <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http://baitiao.jd.com/" title="激活白条" class="jh-btnnew2" clstag="jr|keycount|newbt|btnove" ><p>我有白条 , 直接登录</p>  </a>
+                </li>
+                                <li>
+                    <span class="li-con">
+                        <h3 class="h3-box">
+                            <p class="h3-boxp">白条，慧生活</p>
+                            <p class="h3-boxp2">让消费变得简单快乐</p>
+                        </h3>
+                         <a href="/creditUser/activate" target="_blank" title="激活白条"class="jh-btn" clstag="jr|keycount|newbt|jhbt"
+                            style="background: url(http://img30.360buyimg.com/jr_image/jfs/t1480/181/1062395244/1847/166b8947/55b9ebe3Ne658a62d.png) no-repeat top right;">激活白条</a>
+                         <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=http://baitiao.jd.com/" title="激活白条" class="jh-btn2" clstag="jr|keycount|newbt|btnove"><p>我有白条 , 直接登录</p> <em></em></a>
+
+                        <div class="mac-box">
+                            <img src="http://img30.360buyimg.com/jr_image/jfs/t676/14/1266411982/146038/66477d02/54fe834fNc65f4f85.gif"  class="opic"/>
+                        </div>
+                        <p class="num-font"></p>
+                    </span>
+                </li>
+                <li class="bg2">
+                                <span class="li-con">
+                                    <h3 class="h3-box">
+                                        <p class="h3-boxp">白条，慧生活</p>
+                                        <p class="h3-boxp2">&nbsp;掌上白条  便捷轻松</p>
+                                    </h3>
+                                    <div class="two-code">
+                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t886/89/26283928/19346/cebec8d3/54e15922N784943f7.png" />
+                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1183/285/16586146/17327/c69e8c1f/54e15922N76df6a29.png" />
+                                        <div class="clearfix"></div>
+                                        <p>京东金融APP  <br />随时享精彩</p>
+                                        <p>白条微信号   <br />移动慧生活</p>
+                                    </div>
+                                    <div class="phone-i"></div>
+                                    <p class="num-font"></p>
+                                </span>
+                </li>
+            </ul>
+            <div class="center-box">
+                <a class="btn prev"  id="pre"><i></i></a>
+                <a class="btn next"  id="nex"><i></i></a>
+            </div>
+
+            <!--HTML结构开始-->
+        </div>
+    </div>
+    <!--未激活 end-->
+</div>
+<!--顶部banner end-->
+<!--今日免息-->
+<div class="today-bg">
+    <div class="today" id="homeBanner5">
+    <h2 class="main-tittle">小白推荐</h2>
+    <span class="center-icon"></span>
+    <div class="recommend-con pic-layer5">
+                    <div class="recommend current">
+                    <a href="http://item.jd.com/1867034.html" target="_blank" class="img-buy" title="【电信赠费版】Apple iPhone 6s 16G 金色 移动联通电信4G手机" clstag="jr|keycount|newbt|xbtj1"><img src="http://img14.360buyimg.com/n1/jfs/t2113/203/128429424/95656/be32c7d2/55f0e7b5Nf1ed773f.jpg"/></a>
+            <span class="buy-pros">
+                <a href="http://item.jd.com/1867034.html" target="_blank" class="pros-a" clstag="jr|keycount|newbt|xbtj1">【电信赠费版】Apple iPhone 6s 16G 金色 移动联通电信4G手机</a>
+                <h3>
+                   <span class="blank-red">倾情推荐</span>
+                   <span class="blank-red blank-black">值得买</span>
+                </h3>
+                <p class="describe">办电信合约，轻松拥有iPhone 6s，打白条12期分期免息喲~</p>
+                <a href="http://item.jd.com/1867034.html" id="fenqiPrice1867034" target="_blank" class="btn btn-meduim btn-nesto-o" clstag="jr|keycount|newbt|xbtj1"></a>
+            </span>
+            <input type="hidden" id="sku1" value="1867034">
+        </div>
+                    <div class="recommend">
+                    <a href="http://item.jd.com/1298907.html" target="_blank" class="img-buy" title="美的（Midea）KFR-35GW/WPAA3 1.5匹 京东英雄 壁挂式冷暖变..." clstag="jr|keycount|newbt|xbtj2"><img src="http://img14.360buyimg.com/n1/jfs/t1903/141/372766706/61087/cc0b1e61/5603dcdcNe8f0d0b5.jpg"/></a>
+            <span class="buy-pros">
+                <a href="http://item.jd.com/1298907.html" target="_blank" class="pros-a" clstag="jr|keycount|newbt|xbtj2">美的（Midea）KFR-35GW/WPAA3 1.5匹 京东英雄 壁挂式冷暖变...</a>
+                <h3>
+                   <span class="blank-red">倾情推荐</span>
+                   <span class="blank-red blank-black">值得买</span>
+                </h3>
+                <p class="describe">美的壁挂式冷暖变频空调，白条12期分期，分分钟拿回家~</p>
+                <a href="http://item.jd.com/1298907.html" id="fenqiPrice1298907" target="_blank" class="btn btn-meduim btn-nesto-o" clstag="jr|keycount|newbt|xbtj2"></a>
+            </span>
+            <input type="hidden" id="sku2" value="1298907">
+        </div>
+                    <div class="recommend">
+                    <a href="http://item.jd.com/1778183.html" target="_blank" class="img-buy" title="OPPO R7 Plus 金色 全网通4G手机 双卡双待" clstag="jr|keycount|newbt|xbtj3"><img src="http://img14.360buyimg.com/n1/jfs/t1573/283/1211080658/97367/e938c337/55c05c38Nb8d73b9d.jpg"/></a>
+            <span class="buy-pros">
+                <a href="http://item.jd.com/1778183.html" target="_blank" class="pros-a" clstag="jr|keycount|newbt|xbtj3">OPPO R7 Plus 金色 全网通4G手机 双卡双待</a>
+                <h3>
+                   <span class="blank-red">倾情推荐</span>
+                   <span class="blank-red blank-black">值得买</span>
+                </h3>
+                <p class="describe">打白条购OPPO旗舰手机，双卡双待，4G妥妥快，最高享12期免息喲~</p>
+                <a href="http://item.jd.com/1778183.html" id="fenqiPrice1778183" target="_blank" class="btn btn-meduim btn-nesto-o" clstag="jr|keycount|newbt|xbtj3"></a>
+            </span>
+            <input type="hidden" id="sku3" value="1778183">
+        </div>
+                    <div class="recommend">
+                    <a href="http://item.jd.com/1707419.html" target="_blank" class="img-buy" title="小米（MI）L55M2-AA（套装版）55英寸平板电视4K智能电视 套装含Sou..." clstag="jr|keycount|newbt|xbtj4"><img src="http://img14.360buyimg.com/n1/jfs/t1768/361/950416490/120017/34e9fe09/55de628eNc2f7e9a4.jpg"/></a>
+            <span class="buy-pros">
+                <a href="http://item.jd.com/1707419.html" target="_blank" class="pros-a" clstag="jr|keycount|newbt|xbtj4">小米（MI）L55M2-AA（套装版）55英寸平板电视4K智能电视 套装含Sou...</a>
+                <h3>
+                   <span class="blank-red">倾情推荐</span>
+                   <span class="blank-red blank-black">值得买</span>
+                </h3>
+                <p class="describe">小米55英寸旗舰4K影院版，直降200元，再享白条12期分期免息！</p>
+                <a href="http://item.jd.com/1707419.html" id="fenqiPrice1707419" target="_blank" class="btn btn-meduim btn-nesto-o" clstag="jr|keycount|newbt|xbtj4"></a>
+            </span>
+            <input type="hidden" id="sku4" value="1707419">
+        </div>
+        </div>
+    <ul class="circle-box5">
+        <li class="indexBtn5 current"></li>
+        <li class="indexBtn5"></li>
+        <li class="indexBtn5"></li>
+        <li class="indexBtn5"></li>
+    </ul>
+    </div>
+</div>
+<!--今日免息 end-->
+
+<!--今日免息 end-->
+<!--美好生活-->
+<div class="goodlife" id="homeBanner4">
+    <h2 class="main-tittle">美好生活 一触即达</h2>
+    <span class="center-icon"></span>
+    <div class="pro-con pic-layer4">
+        <ul class="goodlife-ul current">
+            <li>
+                <a href="http://sale.jd.com/act/SWZ80IsJY5.html" target="_blank" clstag="jr|keycount|newbt|mhfirst">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t1951/287/424590339/47903/80a63a81/560a2788Nb90ce30e.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="http://baitiao.jd.com/stu/home" target="_blank" clstag="jr|keycount|newbt|mhsecond">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t2296/345/249685780/31595/f8bf4497/55f92228Nd187fc5e.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="http://sale.jd.com/act/X5xhgSs2jcdQ.html" target="_blank" clstag="jr|keycount|newbt|mhthird">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t2503/360/366833160/39683/66c9955b/5604cdb6Ncc3855f3.jpg" />
+                </a>
+            </li>
+        </ul>
+        <ul class="goodlife-ul">
+            <li>
+                <a href="http://gb.jd.com/" target="_blank" clstag="jr|keycount|newbt|mhforth">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t1504/342/1100568874/49865/36c46871/55bae17dN55dbacb5.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="http://shouji.jd.com/" target="_blank" clstag="jr|keycount|newbt|mhfifth">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t1993/286/415545287/43225/92400acb/560a0f77N03abad0b.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="http://sale.jd.com/act/yjn6dAqZ0LFPk.html" target="_blank" clstag="jr|keycount|newbt|mhsixth">
+                    <img src="http://img30.360buyimg.com/jr_image/jfs/t1381/357/1097647435/32470/36198dae/55bae345Nf337783e.jpg" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul class="circle-box4">
+        <li class="indexBtn4 current"></li>
+        <li class="indexBtn4"></li>
+    </ul>
+</div>
+<!--美好生活end-->
+<div id="articles">
+    <!--过去一分钟-->
+    <div id="article1" class="article section1 time-past">
+        <h3 class="time-font">正在用白条抢购的商品</h3>
+        <div class="time-box" id="homeBanner2">
+            <div class="pic-layer2" id="on-order">
+                <ul class="q-box current">
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li class="linoright">
+
+                    </li>
+                </ul>
+                <ul class="q-box">
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li class="linoright">
+
+                    </li>
+                </ul>
+                <ul class="q-box">
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li class="linoright">
+
+                    </li>
+                </ul>
+            </div>
+            <ul class="circle-box2">
+                <li class="indexBtn2 current"></li>
+                <li class="indexBtn2"></li>
+                <li class="indexBtn2"></li>
+            </ul>
+        </div>
+    </div>
+    <!--过去一分钟 end-->
+    <div id="article1" class="article section2">
+        <!--随时管理你的白条-->
+        <div class="anytime">
+            <div  class="any-font">
+                <h2 class="main-tittle">随时管理你的白条</h2>
+                <p class="s-font">推荐安装京东金融APP / 关注京东白条微信服务号</p>
+                <span class="center-icon"></span>
+                <a href="javascript:;" class="btn btn-meduim btn-nesto-o default">京东白条微信服务号<i class="wechat"></i></a>
+                <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" class="btn btn-meduim btn-nesto-o" target="_blank">下载京东金融APP<i class="phone"></i></a>
+                <a href="http://weibo.com/jdbt" class="btn btn-meduim btn-nesto-o" target="_blank">京东白条官方微博<i class="sina"></i></a>
+            </div>
+            <div class="wechat-code">
+                <span title="京东白条微信服务号" class="we-1"></span>
+            </div>
+            <div class="wechat-code wechat-code2">
+                <span title="下载京东金融APP" class="we-2"></span>
+            </div>
+            <div class="wechat-code wechat-code3">
+                <span title="下载京东金融APP" class="we-3"></span>
+            </div>
+        </div>
+        <!--随时管理你的白条 end-->
+		  <!--你可能还感兴趣-->
+        <div class="interesting">
+            <h2 class="main-tittle">你可能还感兴趣</h2>
+            <p class="sea">不给未来打白条...</p>
+            <span class="center-icon"></span>
+            <ul>
+                <li>
+                    <a href="http://sale.jd.com/act/rKhJit1fWVDR.html" target="_blank" clstag="jr|keycount|newbt|tuigw1">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1333/135/1394959654/51746/8d224c5c/55c4797cNb1e88086.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://sale.jd.com/act/QiyJ12zfeMILx.html" target="_blank" clstag="jr|keycount|newbt|luxury">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1549/289/131184613/13882/fe592be5/555d929bNcc821653.jpg" />
+                    </a>
+                </li>
+                <li class="li-noright">
+                    <a href="http://shuma.jd.com/" target="_blank" clstag="jr|keycount|newbt|itsm">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1540/233/171845904/14986/cc00fc17/555ef1b2Na5b02125.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://help.jr.jd.com/show/helpcenter/508.html" target="_blank" clstag="jr|keycount|newbt|shoesbag">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1750/266/1398289856/15756/e41d82e1/55e59224N4cf2cc9a.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://sale.jd.com/act/GaJw0yUrMv.html" target="_blank" clstag="jr|keycount|newbt|watch">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1669/312/699831301/45298/dbf8d456/55dac31aN21a08678.jpg" />
+                    </a>
+                </li>
+                <li class="li-noright">
+                    <a href="http://sale.jd.com/act/X5xhgSs2jcdQ.html" target="_blank" clstag="jr|keycount|newbt|tuigw2">
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t2425/294/367323363/50200/71ee86bc/5604cdb5Nf7db0a2e.jpg" />
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+
+        </div>
+        <!--他们如何使用白条？-->
+        <div class="howto-use">
+            <h2 class="main-tittle">他们如何使用白条？</h2>
+            <p class="sea">茫茫人海中的他们，有使用白条的小窍门</p>
+            <span class="center-icon"></span>
+            <div class="dot dot-on">
+                <p>爱网购，不剁手。爱名牌，随心买。你只看到我的拉风，没有看到我有可以先消费后付款的白条。</p>
+                <p>别怪我天天耍大牌，打白条，喜欢就买，停不下来！</p>
+            </div>
+            <div class="dot">
+                <p>他们叫我理财圣手，他们不知道，我有白条在手。0元购，30天免息，省下钱正好买理财，就连分期费率也比银行低。</p>
+                <p>更有只需几秒钟的快捷支付，省力更省时。</p>
+            </div>
+            <div class="dot">
+                <p>灵魂和身体，必须一起在路上；说走就走的旅行，旅游白条可以帮我忙。</p>
+                <p>0元GO，分期还，心动马上就行动，不再给梦想打白条。</p>
+            </div>
+            <div class="dot">
+                <p>正因为年轻，所以拒绝等待，正因为有梦，不想让它慢慢到来。想到，就要做到，给自己一个完美的交待。</p>
+                <p>校园白条可以证明，这是我们的时代！</p>
+            </div>
+            <div class="human-pic">
+                <ul class="oul">
+                    <li>
+                        <a href="javascript:;"  title="">
+                            <img src="http://img30.360buyimg.com/jr_image/jfs/t712/90/756366540/95211/d6e003dd/54dc1b92Nc75690ef.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"  title="">
+                            <img src="http://img30.360buyimg.com/jr_image/jfs/t730/116/760009924/89171/83ae4bb9/54dc1b92Nd6115e34.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"  title="">
+                            <img src="http://img30.360buyimg.com/jr_image/jfs/t1156/170/9790921/88210/f0f0b39f/54dc1b92N156e221d.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"  title="">
+                            <img src="http://img30.360buyimg.com/jr_image/jfs/t667/299/1433603600/100461/76ea2595/54dc1b91N629a0e06.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="circle">
+                <div class="circle-box">
+                    <a class="btn btn-meduim btn-nesto-o circle-a">
+                        <i class="b1"></i>
+                    </a>
+                    <h3>闪电支付</h3>
+                    <p>最快仅需2.6秒</p>
+                </div>
+                <div class="circle-box">
+                    <a class="btn btn-meduim btn-nesto-o circle-a">
+                        <i class="b2"></i>
+                    </a>
+                    <h3>30天免息</h3>
+                    <p>延后付款就是赚</p>
+                </div>
+                <div class="circle-box">
+                    <a class="btn btn-meduim btn-nesto-o circle-a">
+                        <i class="b3"></i>
+                    </a>
+                    <h3>随心分期</h3>
+                    <p>月底资金不再紧</p>
+                </div>
+            </div>
+        </div>
+        <!--他们如何使用白条？end-->
+    </div>
+</div>
+
+<!--侧滑-->
+<div class="side-banner" style="position:fixed;top:220px;left:50%;margin-left:-670px;z-index:99999;width:110px;overflow:hidden" >
+    <a href="http://gb.jd.com/" target="_blank" style="display:block" clstag="jr|keycount|baitiaozhuye|cehua">
+        <!--<img src="http://img30.360buyimg.com/jr_image/jfs/t1471/38/624243896/28482/5f53b58e/559e4275N84844b60.png" />-->
+          <img src="/img/jrbt/gangbeng.png"/>
+    </a>
+
+    <!--<a href="http://fang.jd.com/" target="_blank" style="display:block" clstag="jr|keycount|baitiaozhuye|chbjy">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t1120/357/1400920197/17426/4ba19adc/559e4275N34c79a23.png" />
+    <img src="/img/jrbt/baijuyi.png"/>
+</a>-->
+
+    <a href="http://bk.jd.com " target="_blank" style="display:block" clstag="jr|keycount|baitiaozhuye|chbjy">
+    <img src="/img/jrbt/btlmk.png"/>
+    </a>
+</div>
+<!--侧滑end-->
+<!--container end-->
+
+<!--footer-->
+    <!--footer--><div class="f-copyright">    <div class="grid-1200 footerHolder">        <div class="footer-nav">            <p>                <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于京东钱包</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>                <span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>            </p>            <p>                Copyright &copy; 2004-2015 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎            </p>        </div>        <div class="footer-contact">            <div class="f-contact-time">联系我们<span>（9:00-22:00）</span></div>            <div class="f-contact-way">                <span class="f-contact-tel">400 098 8511</span>                <span class="f-contact-type">(个人业务)</span>                <a class="f-contact-ol online" href="http://chat.jd.com/jd/chat?entry=jd_jr" target="_blank" clstag="jr|keycount|jr_shouye|footerkf">在线客服</a>                <a class="f-contact-ol f-contact-mail" target="_blank" href="http://jr.jd.com/mail/index.html" clstag="jr|keycount|jr_shouye|footerkfmail">客服邮箱</a>            </div>            <div class="f-contact-way">                <span class="f-contact-tel">400 088 8816</span>                <span class="f-contact-type">(企业业务)</span>            </div>        </div>    </div></div><!--footer end-->
+<!--footer end-->
+<!--问题弹窗end-->
+<script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.8.3/jquery.js,base/1.1.0/js/base.js"></script>
+<script src="http://static.360buyimg.com/finance/consumer/baitiao/index/2.0.1/js/baitiao.js"></script>
+<script type="text/javascript" src="/activity/js/login.js"></script>
+
+</body>
+
+<script>
+        pageUl();
+        function pageUl(){
+            var oPage=$('#page-ul li');
+            oPage.eq(0).addClass('current');
+            var pageCount=oPage.length;
+            for(var i=0;i<oPage.length;i++){
+                var pageCon=i+1+ ' / '+ pageCount;
+                $('.num-font').eq(i).html(pageCon);
+            }
+        }
+
+    var baitiao_tj_serverDomains = baitiao_ref_gethttphead_tj() + "://jrrem.jd.com/baitiao-ref";
+    var url = null;
+//    jQuery.each(baitiaoInfoList, function(i,item){
+//        alert("sdd");
+//      alert(item.id+","+item.skuId);
+//   });
+    var skuIds = [];
+    for(var j=1;j<=4;j++) {
+        var skuId = jQuery("#sku" + j).val();
+        skuIds.push(skuId);
+    }
+    if(baitiao_ref_gethttphead_tj() =="http"){
+        url = 'http://p.3.cn/prices/mgets?skuIds=J_' + skuIds.join(',J_') + '&type=1';
+    }
+    else{
+        url = baitiao_tj_serverDomains+'/prices/mgets?skuIds=J_' + skuIds.join(',J_') + '&type=1';
+    }
+    jQuery.ajax({
+        url: url,
+        dataType: 'jsonp',
+        success: function (r) {
+            if (!r && !r.length) {
+                return false;
+            }
+            for (var i = 0; i < r.length; i++) {
+                var sku = r[i].id.replace('J_', '');
+                var price = parseFloat(r[i].p, 10);
+
+                if (price > 0) {
+                    var price = r[i].p;
+                    price =((price/12)*1.06).toFixed(2);
+                    $("#fenqiPrice" + sku).html('<em class="em-1">￥</em>' + price + '&nbsp;<em class="em-2">X</em>&nbsp;12<em class="em-2">期</em>');
+
+                } else {
+                    $("#fenqiPrice" + sku).html('暂无报价');
+                }
+            }
+        }
+    });
+
+
+
+    function baitiao_ref_gethttphead_tj(){
+        var url = window.location.href,
+                protocol = window.location.protocol;
+
+        if (protocol.indexOf('https') < 0 ) {
+            return 'http';
+        }
+        else {
+            return 'https';
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+    var google_tag_params = {
+
+        dynx_itemid:['BT123456'],
+
+        dynx_prodtype:['baitiao'],
+
+        dynx_pagetype:['home']
+
+    };
+
+    var conversion_value =null;
+
+</script>
+
+<script type="text/javascript">
+
+    dataLayer = [{
+
+        'google_tag_params': window.google_tag_params,
+
+    'conversion_value': window.conversion_value
+
+    }];
+
+</script>
+
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9HSZR"
+
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-W9HSZR');
+</script>
+
+<!-- End Google Tag Manager -->
+
+<!-- 点击流代码 -->
+<script type="text/javascript">
+    var _jraq = _jraq || [];
+    _jraq.push(['account','UA-J2011-12']);
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = 'https:' == document.location.protocol ? 'https://static.wangyin.com/member/assets/click.js' : 'http://click.jr.jd.com/wl.dev.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+    })();
+</script>
+
+<script type="text/javascript">
+    var jaq = jaq || [];
+    jaq.push(['account','UA-J2011-12']);
+    jaq.push(['domain','jr.jd.com']);
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ja, s);
+    })();
+</script>
+
+<script >
+    var _jaq = _jaq || [];
+    _jaq.push(['_setAccount', 'UA-JR-BT']);
+    _jaq.push("home");
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src ="http://rdp.jd.com/resource/ja.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ja, s);
+    })();
+
+</script>
+
+</html><script src="https://api.miwifi.com/rr/t?d=lrPsL9MC9ouduY4xJYf2XIU35CVlXzWGZbcHFXFbCQPtwMokkYEntW083yRu1WHKDFxnp%2fxOKcV5p5PObRoxPN1wqoIhM%2b7Dtf9B44v496ORTzD3U22ifR5pH1q2Y1P3iRy%2fPznfCZ19Jf%2fV90lDiDjcBjN70hhMeRw1MNycwigoDZKo%2fcse%2fgaxHD4OJzDFlUx0SN7cLYpSEgjTF5os75ulo1hf51HkBIT65HG1QheVdehR%2bGeP%2f%2blQXiu5dHn3yf0ZbdPd0ipe5XdunV0uiV0UiH%2bT3u48pIUBnd6JyihhtvvEHxswo2axOprctvxQgKiwuO4KDoEHzFYn%2fgbWnDa119sXnfxZNI6gjYZMuPtwqb2u4hh42nFoCWz9X6tWxjok%2b11JbaNF7rLAnFdnHHB3CKlF6jF1Y%2b3cvOoKE1b%2b1hhWaRLfoI6RebsX7ISU3vZ9g%2bXpcBQLB45ciDvWjvOivG5aAHd5elOTG%2f4ugaTG4%2f%2fH%2btHqrwgHHkny7yWkEAGHpLfcgGN6XT9%2ftxtSs7M344cwEp7f6m9lFMHpTE8X6uy9D8z1V4WnrZIrJ0RO4KIbFTge5P%2fxhBIlzLN2KF2ia%2bXvx2QpzJJEB10P900%2bhwtMpFiz1ztZojiKVZ7M"></script></body></html>

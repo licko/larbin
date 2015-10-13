@@ -1,0 +1,1391 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>浏览历史</title>
+    <meta name="keywords" content="旅游，旅游网，自由行，跟团游，公司旅游" />
+    <meta name="description" content="悠哉旅游网（Uzai.com）－中国非常专业、全面的旅游线路和自助游预订网站，一站式个性化旅游服务提供商；跟团游+自助游+公司旅游专家；出境游、周边游、国内游、酒店、签证；出发地：上海、北京、杭州、深圳、成都、南京。" />
+    
+<link type="text/css" rel="stylesheet" href="http://r.uzaicdn.com/static/base/global/global.css?version=2013090401" />
+<script src="http://r01.uzaicdn.com/static/base/jquery/jquery1.8.js?version=2013090401" type="text/javascript"></script>
+<script src="http://r01.uzaicdn.com/static/base/global/global.js?version=2013090401" type="text/javascript"></script>
+<script src="http://r01.uzaicdn.com/static/base/js/common.js?version=2013090401" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="http://r.uzaicdn.com/static/base/html5/html5shiv.js"></script>
+<![endif]-->
+    <link type="text/css" rel="stylesheet" href="http://r.uzaicdn.com/static/channels/css/history.css?version=2013090401" />
+    <script type="text/javascript">
+        function clearAllScan() {
+            if (confirm("确定要清空全部浏览记录？")) {
+                if (uzaiGlobalConfig.userID) {
+                    if (location.href.indexOf("sh.uzai.com") > -1 || location.href.indexOf("www.uzai.com") > -1 || location.href.indexOf("bj.uzai.com") > -1) {
+                        $.get("/ScanRecord/Delete/?rand=" + Math.random(), { id: -2, uid: uzaiGlobalConfig.userID }, function (data) {
+                            $("#rs-browseMsg").remove();
+                            $("#rs-browseBot").remove();
+                            $("#rs-browseTop").after(data);
+                            window.location.reload();
+                        });
+
+                    }
+                } else {
+                    clearscan("", true);
+                    window.location.reload();
+                }
+
+            }
+        }
+        function cutCopPage(ele, obj) {
+            var o = $(ele);
+            var op = o.parent('div');
+            var os = o.siblings('a');
+            os.removeClass('current');
+            o.addClass('current');
+            $('#historyproduct .itemlist').empty();
+            if (location.href.indexOf("sh.uzai.com") > -1 || location.href.indexOf("www.uzai.com") > -1 || location.href.indexOf("bj.uzai.com") > -1) {
+                $.ajax({ url: "/HistoryScan/GetHistoryProduct/?rand=" + Math.random(),
+                    type: "GET",
+                    dataType: "json",
+                    data: { pageIndex: obj, uid: uzaiGlobalConfig.userID },
+                    success: function (result) {
+                        $('#historyproduct').empty();
+                        var s = result;
+                        var sub = "";
+                        if (s.HistoryScanProduct != null) {
+                            var index = 0;
+                            for (var i in s.HistoryScanProduct) {
+
+                                var fg = i;
+
+                                var ilist = "<div class='itemlist'>";
+                                var item = "";
+
+                                var flag = "";
+
+                                if (fg == "0")
+                                    flag = "today";
+                                else if (fg == '1')
+                                    flag = "yestoday";
+                                else
+                                    flag = "more";
+
+                                for (var m = 0; m < s.HistoryScanProduct[i].length; m++) {
+                                    if (m == 0)
+                                        flag = "<i class='date-" + flag + "' ></i>";
+                                    else
+                                        flag = "<i class='date-no'></i>";
+
+                                    var j = s.HistoryScanProduct[i][m];
+                                    item += "<div class='item cfix'><div class='ldate'>" + flag + "<i class='date-time'><span>" + j.Date + "</span></i></div><div class='riteminfo fn-left'><div class='fn-left img'><a href='" + j.ProductURL + "' target='_blank'><img width='120'height='75'src='" + j.ProductPicURL + "'alt=''></a></div><dl class='dl fn-left'><dt class='t'><a href='" + j.ProductURL + "'  target='_blank'>" + j.ProductName + "</a></dt><dd class='desc'>" + j.ProdcutNameExtension + "</dd></dl><div class='item-price fn-left'><p><span class='unit'>￥</span><span class='num'>" + j.ProductPrice + "</span><span>起</span></p><p><a href='" + j.ProductURL + "'  target='_blank' class='fn-btn fn-yelbtn3'><span>查看详情</span></a></p></div></div></div>";
+                                }
+
+                                sub += (ilist + item + "</div>");
+                                index += 1;
+
+                            }
+
+
+                            $('#historyproduct').append(sub);
+
+                        }
+                    }
+
+
+                });
+            }
+
+
+        }
+    </script>
+    <style>
+        /*面包屑*/
+        .breadhead
+        {
+            height: 35px;
+            line-height: 35px;
+            border-top: 1px dashed #C4CFD6;
+            padding-left: 11px;
+        }
+        .breadhead .colorblue
+        {
+            color: #36c;
+        }
+        .breadhead .colorblue:hover
+        {
+            color: #f60;
+        }
+        .breadhead h2
+        {
+            display: inline;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        /*左侧导航*/
+        .channel-side, .channel-main
+        {
+            line-height: 1.5;
+        }
+        .channel-side
+        {
+            width: 270px;
+        }
+        .channel-side .title
+        {
+            padding-left: 10px;
+            font: bold 16px/37px "Microsoft Yahei";
+        }
+        /*左侧热门目的地*/
+        .side-hot
+        {
+            border: 1px solid #BBDFAA;
+        }
+        .side-hot .title
+        {
+            background: #F8FFF4;
+            border-bottom: 1px solid #BBDFAA;
+            color: #339900;
+            font-family: "Microsoft Yahei";
+            font-size: 16px;
+            font-weight: bold;
+            height: 32px;
+            line-height: 32px;
+            padding-left: 10px;
+        }
+        .side-hot .line-list
+        {
+            padding-bottom: 10px;
+        }
+        .side-hot .line-list .t
+        {
+            padding: 6px 10px;
+        }
+        .side-hot .line-list .t a
+        {
+            color: #339900;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .side-hot .line-list .dd
+        {
+            display: inline;
+            float: left;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            width: 75px;
+        }
+        .side-hot .line-list .dd a
+        {
+            color: #333;
+        }
+        .side-hot .line-list .dd a.cur
+        {
+            font-weight: bold;
+        }
+        .side-hot .line-list .dd a:hover
+        {
+            color: #f60;
+        }
+        .side-hot .line-list .h4
+        {
+            text-align: center;
+            font-weight: normal;
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllleft.jpg) no-repeat center bottom;
+            padding: 10px 0 10px;
+            line-height: 26px;
+            color: #999;
+            font-size: 12px;
+        }
+        
+        /*右侧开始*/
+        .channel-main
+        {
+            width: 700px;
+        }
+        
+        /*右侧标题*/
+        .main-header
+        {
+            border-bottom: 2px solid #329900;
+            position: relative;
+            height: 34px;
+        }
+        .main-header .title
+        {
+            color: #339900;
+            font: bold 20px/34px 'Microsoft Yahei';
+            padding-left: 36px;
+        }
+        .main-header .title i
+        {
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) no-repeat 0 0;
+            position: absolute;
+            left: 5px;
+            top: 6px;
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+        .main-header .del-all
+        {
+            color: #3366CC;
+            text-decoration: underline;
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) 0 -236px no-repeat;
+            line-height: 18px;
+            margin-top: 12px;
+            padding: 0 5px 0 15px;
+        }
+        .main-header .del-all:hover
+        {
+            color: #f60;
+        }
+        
+        .main-con
+        {
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) repeat-y -78px 0;
+        }
+        .main-con .item
+        {
+            padding: 20px 0 0 0;
+        }
+        .main-con .item .ldate
+        {
+            width: 85px;
+            float: left;
+            display: inline;
+            text-align: right;
+        }
+        .main-con .item .riteminfo
+        {
+            width: 600px;
+            float: right;
+            display: inline;
+        }
+        .main-con .item .date-today
+        {
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) 0 -45px;
+            float: left;
+            margin-left: 25px;
+            width: 38px;
+            height: 38px;
+        }
+        .main-con .item .date-yestoday
+        {
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) 0 -101px;
+            float: left;
+            margin-left: 25px;
+            width: 38px;
+            height: 38px;
+        }
+        .main-con .item .date-more
+        {
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllsprite.jpg) 0 -156px;
+            float: left;
+            margin-left: 25px;
+            width: 38px;
+            height: 38px;
+        }
+        
+        .main-con .itemlist
+        {
+            border-bottom: 1px solid #ccc;
+        }
+        .main-con .item .date-no
+        {
+            float: left;
+            height: 25px;
+            width: 38px;
+        }
+        .main-con .item .date-time
+        {
+            padding-right: 25px;
+            margin-top: 4px;
+            float: right;
+            line-height: 18px;
+            color: #999;
+            font-style: normal;
+            font-weight: normal;
+            background: url(http://r.uzaicdn.com/static/channels/images/zjllyuan.jpg) no-repeat right 2px;
+        }
+        .main-con .item .date-time span
+        {
+            display: inline-block;
+        }
+        .main-con .item .riteminfo
+        {
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 20px;
+        }
+        .main-con .item .noborder
+        {
+            border-bottom: 0;
+        }
+        
+        .item .riteminfo .dl
+        {
+            margin-left: 20px;
+            width: 350px;
+        }
+        .item .riteminfo .t a
+        {
+            color: #3366CC;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+        .item .riteminfo .t a:hover
+        {
+            color: #f60;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .item .riteminfo .desc
+        {
+            color: #666;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        
+        .item .riteminfo .item-price
+        {
+            float: left;
+            width: 105px;
+            text-align: right;
+            line-height: 20px;
+            color: #666;
+        }
+        .item .riteminfo .item-price p
+        {
+            padding: 2px 0;
+        }
+        .item .riteminfo .item-price .unit
+        {
+            color: #ff6600;
+            font-family: Microsoft Yahei;
+            font-size: 12px;
+        }
+        .item .riteminfo .item-price .num
+        {
+            color: #ff6600;
+            font-family: Arial;
+            font-size: 20px;
+        }
+        
+        .fn-btn
+        {
+            background: url(http://r.uzaicdn.com/static/base/global/images/fn-btnbg.png) left 0 no-repeat;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .fn-btn span
+        {
+            background: url(http://r.uzaicdn.com/static/base/global/images/fn-btnbg.png) right 0 no-repeat;
+            font-family: Microsoft Yahei;
+            display: inline-block;
+            color: #fff;
+        }
+        .fn-yelbtn3
+        {
+            background-position: 0 -307px;
+            padding-left: 8px;
+        }
+        .fn-yelbtn3 span
+        {
+            height: 24px;
+            font-size: 12px;
+            font-family: 宋体;
+            line-height: 22px;
+            background-position: right -307px;
+            padding-right: 8px;
+        }
+        .fn-yelbtn3:hover
+        {
+            background-position: 0 -344px;
+        }
+        .fn-yelbtn3:hover span
+        {
+            background-position: right -344px;
+        }
+        
+        .pagebox
+        {
+            padding: 5px 0;
+        }
+        .fn-page
+        {
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+        }
+        .fn-page a
+        {
+            color: #666;
+            text-decoration: none;
+        }
+        .fn-page a:hover
+        {
+            color: #f60;
+        }
+        .fn-page .total
+        {
+            float: left;
+            display: inline;
+        }
+        .fn-page .total .totalnum
+        {
+            padding: 0 4px 0;
+        }
+        .fn-page .curr
+        {
+            float: left;
+            display: inline;
+            margin: 0 15px;
+        }
+        .fn-page .pre
+        {
+            float: left;
+            display: inline;
+            text-align: center;
+            line-height: 23px;
+            margin-right: 5px;
+            width: 53px;
+            border: 1px solid #CECECE;
+            background: #f8f8f8;
+        }
+        .fn-page .next
+        {
+            float: left;
+            display: inline;
+            text-align: center;
+            line-height: 23px;
+            width: 53px;
+            border: 1px solid #CECECE;
+            background: #f8f8f8;
+        }
+        .fn-page .dian
+        {
+            float: left;
+            display: inline;
+            margin-right: 5px;
+        }
+        .fn-page .num
+        {
+            float: left;
+            display: inline;
+            margin-right: 5px;
+            border: 1px solid #CECECE;
+            display: inline-block;
+            line-height: 23px;
+            height: 23px;
+            padding: 0 8px;
+        }
+        .fn-page .current
+        {
+            border: none;
+            font-weight: bold;
+            line-height: 25px;
+            color: #f60;
+        }
+        .fn-page .no-page
+        {
+            color: #999;
+        }
+        .fn-page .no-page:hover
+        {
+            color: #999;
+        }
+        
+        
+        /*猜你喜欢*/
+        .res-love
+        {
+            border: 1px solid #bbdfaa;
+            margin: 10px 0 30px;
+        }
+        .res-love .res-love-top
+        {
+            height: 32px;
+            background: #f8fff4;
+            border-bottom: 1px solid #bbdfaa;
+        }
+        .res-love .res-love-top h3
+        {
+            height: 32px;
+            line-height: 32px;
+            text-indent: 10px;
+            color: #339900;
+        }
+        .res-love .res-love-con
+        {
+            padding: 5px 0;
+        }
+        .res-love .res-love-item
+        {
+            margin: 10px 27px;
+            height: 135px;
+            float: left;
+            display: inline;
+        }
+        .res-love .res-love-item .title
+        {
+            width: 120px;
+            height: 115px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+        .res-love .res-love-item a
+        {
+            color: #3366cc;
+        }
+        .res-love .res-love-item a:hover
+        {
+            text-decoration: underline;
+        }
+        .res-love .res-love-item .res-love-img
+        {
+            width: 120px;
+            height: 75px;
+        }
+        .res-love .res-love-item .item-pri
+        {
+            text-align: left;
+        }
+        .res-love .res-love-item .unit
+        {
+            color: #ff6600;
+        }
+        .res-love .res-love-item .pri
+        {
+            color: #ff6600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+<script type="text/javascript">
+    var uzaiGlobalConfig = {
+        nowCityID:"165",nowCityEname:"cd",userID:GetCookie("user", "userid"),userName:decodeURIComponent(GetCookie("user", "userName"))
+    }
+</script>
+
+<!--头部-->
+<section class="newHeader" data-chunk="global-top">
+    <header class="newWarp">
+        <!--出发地-->
+        <div class="newCity">
+            <div class="newCity-phone fn-left"><a class="icon-common-top" title="下载手机客户端" href="http://www.uzai.com/app/">下载手机客户端</a></div>
+            <div id="J_startCityWrap" class="start-city-wrap fl ml5">
+                <span class="now-city-bar f666">
+                    <span class="bar-inner">
+                        <i class="icon-location icon-common-top png">&nbsp;</i>
+                        <em class="start-city-name b" data-id="165">成都</em>
+                        <a href="javascript:void(0);" class="change-city">[ 更换 ]</a>
+                    </span>
+                </span>
+                <div class="start-city-box">
+                    <dl class="city-items pr10 pl10">
+                        <dt class="first">热门出发城市</dt>
+                        <dd class="hot-city-list">
+                            <a href="http://sh.uzai.com" data-id="2">上海</a> <a href="http://bj.uzai.com" data-id="1">北京</a> <a href="http://cd.uzai.com" data-id="165">成都</a> <a href="http://nj.uzai.com" data-id="57">南京</a> <a href="http://gz.uzai.com" data-id="144">广州</a> <a href="http://hz.uzai.com" data-id="19">杭州</a>
+                        </dd>
+                        <dd>
+                            <ul class="items-list">
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        华北
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://bj.uzai.com" data-id="1">北京</a> <a href="http://tj.uzai.com" data-id="3">天津</a> <a href="http://sjz.uzai.com" data-id="8">石家庄</a> <a href="http://ty.uzai.com" data-id="94">太原</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        东北
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://sy.uzai.com" data-id="29">沈阳</a> <a href="http://dl.uzai.com" data-id="31">大连</a> <a href="http://jl.uzai.com" data-id="258">吉林</a> <a href="http://cc.uzai.com" data-id="257">长春</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        华东
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://sh.uzai.com" data-id="2">上海</a> <a href="http://nj.uzai.com" data-id="57">南京</a> <a href="http://hz.uzai.com" data-id="19">杭州</a> <a href="http://jn.uzai.com" data-id="115">济南</a> <a href="http://weh.uzai.com" data-id="309">威海</a> <a href="http://nb.uzai.com" data-id="22">宁波</a> <a href="http://wx.uzai.com" data-id="58">无锡</a> <a href="http://nc.uzai.com" data-id="83">南昌</a> <a href="http://nt.uzai.com" data-id="61">南通</a> <a href="http://hf.uzai.com" data-id="238">合肥</a> <a href="http://jh.uzai.com" data-id="27">金华</a> <a href="http://cz.uzai.com" data-id="68">常州</a> <a href="http://fz.uzai.com" data-id="134">福州</a> <a href="http://qz.uzai.com" data-id="138">泉州</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        华中
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://zz.uzai.com" data-id="204">郑州</a> <a href="http://cs.uzai.com" data-id="190">长沙</a> <a href="http://wh.uzai.com" data-id="43">武汉</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        华南
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://gz.uzai.com" data-id="144">广州</a> <a href="http://xm.uzai.com" data-id="135">厦门</a> <a href="http://sz.uzai.com" data-id="149">深圳</a> <a href="http://nn.uzai.com" data-id="268">南宁</a> <a href="http://hk.uzai.com" data-id="304">海口</a> <a href="http://jm.uzai.com" data-id="310">江门</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        西南
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://cd.uzai.com" data-id="165">成都</a> <a href="http://cq.uzai.com" data-id="4">重庆</a> <a href="http://yic.uzai.com" data-id="51">宜昌</a> <a href="http://gy.uzai.com" data-id="277">贵阳</a> <a href="http://km.uzai.com" data-id="221">昆明</a>
+                                    </div>
+                                </li>
+                                <li class="cfix">
+                                    <div class="city-items-hd fn-left">
+                                        西北
+                                    </div>
+                                    <div class="city-items-bd">
+                                        <a href="http://yc.uzai.com" data-id="253">银川</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--/出发地-->
+        <!--登录-->
+        <ul class="newMenu">
+            <li class="newMenu-weixin J-newMenu-weixin">
+                <a href="javascript:;" rel="nofollow">+悠哉微信</a>
+                <div class="newMenu-weixinTip J-newMenu-weixinTip">
+                    <em></em>
+                    <div class="fn-left newMenu-weixinTip-left">
+                        <p class="newMenu-weixinTip-leftYH">
+                            扫描二维码成为<br />
+                            悠哉旅游网微信好友！
+                        </p>
+                        <div class="cfix">
+                            <img src="http://r.uzaicdn.com/static/index/images/wx2.jpg" alt="" class="fn-left" />
+                            <div class="fn-left newMenu-weixinTip-leftMsg">
+                                <p>悠哉旅游网微信号：</p>
+                                <p class="uzaiweixin">uzai_travel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fn-right">
+                        <img src="http://r.uzaicdn.com/static/index/images/wx1.jpg" alt="" />
+                    </div>
+                </div>
+            </li>
+            <li class="newMenu-order">
+                <a href="http://www.uzai.com/myhistory" target="_blank" class="" title="最近浏览产品" rel="nofollow">最近浏览产品</a>
+            </li>
+            <li class="verline_gray"></li>
+            <li class="newMenu-order">
+                <a href="http://u.uzai.com/manage/Index" class="" title="我的订单" rel="nofollow">我的订单</a>
+            </li>
+            <li class="verline_gray"></li>
+            <li class="newMenu-quickreg J-login1">
+                <div class="newQuickreg cfix">
+                    <a href="http://u.uzai.com/register" title="注册" rel="nofollow">注册</a>
+                    <a href="http://u.uzai.com/register" class="newMenu-song200 J-quickreg" rel="nofollow">送100U币</a>
+                </div>
+                <div class="newMenu-popUb J-popUb">
+                    <p><b>注册送100U币！</b></p>
+                    <p>U币实际上是悠哉旅游网的抵用券，1个U币相当于1元抵用券。在度假产品订单中，您可以用U币来抵用度假产品限定的金额。比如您有60个U币且预订线路允许抵用30元/人，则每个出行人可以抵用30元现金。</p>
+                </div>
+            </li>
+            <li class="newMenu-manage J-newManage J-login">
+                <a href="http://u.uzai.com/manage/Index" class="newMenu-manage-a J-newManage-a cfix" rel="nofollow"><i class="i1">我的悠哉</i><i class="i2"></i></a>
+                <ul class="newMenu-mytab J-newTab">
+                    <li><a title="我的订单" href="http://u.uzai.com/manage/order" rel="nofollow">我的订单</a></li>
+                    <li><a title="出游点评" href="http://u.uzai.com/manage/tour-record" rel="nofollow">出游点评</a></li>
+                    <li><a title="我的咨询" href="http://u.uzai.com/manage/zixun" rel="nofollow">我的咨询</a></li>
+                    <li><a title="我的收藏" href="http://u.uzai.com/manage/UserCollectionList" class="fn-borBo" rel="nofollow">我的收藏</a></li>
+                    <li><a title="我的资料" href="http://u.uzai.com/manage/personal-info" rel="nofollow">我的资料</a></li>
+                    <li><a title="会员特权" href="http://u.uzai.com/manage/MembershipPrivileges" rel="nofollow">我的专享</a></li>
+                </ul>
+            </li>
+            <li class="verline_gray"></li>
+            <li class="newMenu-login J-login1">
+                <a href="http://u.uzai.com/reguser" rel="nofollow">登录</a>
+            </li>
+            <li class="newMenu-weclome J-login">
+                <a href="" class="J-userName" rel="nofollow">cmy</a><span class="userGrade"><a title="会员" href="http://u.uzai.com/reg/UserGradeMember" target="_blank" rel="nofollow"><img src="http://resource.uzai.com/Content/1/images/icon_vip30.gif" alt="会员"></a></span> &nbsp;[<a href="http://u.uzai.com/loginout" rel="nofollow">退出</a>]&nbsp;
+                    <div class="userOrderPart2">
+                        <a class="closetip" href="javascript:;" rel="nofollow"></a>
+                        <div class="tip">
+                            <em>◆</em>
+                            <span>◆</span>
+                        </div>
+                    </div>
+            </li>
+            <li class="verline_gray verline_grayIe6 J-verline"></li>
+        </ul>
+        <!--/登录-->
+    </header>
+</section>
+<!--/头部-->
+<!--导航和搜索-->
+<section class="newWarp">
+    <!--搜索-->
+    <section class="newTop cfix">
+        <span data-chunk="global-logo" style="margin-top: 19px; float: left;">
+            <a href="http://www.uzai.com">
+                <img title="悠哉旅游网" alt="悠哉旅游网" src="http://r01.uzaicdn.com/content/v1/images/common/logo.png" class="png" />
+            </a>
+        </span>
+        <div class="newTop-search">
+            <form action="http://search.uzai.com/cd/search/" method="post" name="indexsearchform" class="cfix" id="indexsearchform">
+                <span class="newTop-search-s1 fn-left J-search-s1"></span>
+                <div class="newTop-srhBox fn-left J-srhBox">
+                    <input type="hidden" value="0" name="travelClassHeader" id="srhInput">
+                    <a class="newTop-srhBoxVal J-srhBoxVal" href="javascript:void(0)">全 部</a>
+                    <div class="newTop-srhSe J-srhSe">
+                        <a class="current" val="0" href="javascript:void(0)">全 部</a>
+                        <a val="1" href="javascript:void(0)">跟团游</a>
+                        <a val="3" href="javascript:void(0)">自由行</a>
+                        <a val="5" href="javascript:void(0)">团队游</a>
+                        <a val="6" href="javascript:void(0)">邮 轮</a>
+                        <a val="7" href="javascript:void(0)">签 证</a>
+                    </div>
+                </div>
+                <input type="text" autocomplete="off" maxlength="18" id="newSearchkey" value="目的地/关键字" class="newTop-srh-input fn-left" name="searchkey">
+                <input type="button" onclick="checksearchkey();" class="newTop-srh-btn fn-left" value="搜索" name="">
+            </form>
+
+            <p class="newTop-hotSearchNew" data-chunk="global-search"><span>热门搜索：</span></p>
+
+            <ul class="J-autocomp newTop-autocomp"></ul>
+        </div>
+        
+        <div title="免长途费，马上拨打电话预订吧！" class="newTop-tel">
+            <i class="icon-common-top png"></i>
+            <span class="newTop-teltime">24小时预订热线</span>
+            <span class="newTop-telnumber">028-66102010</span>
+        </div>
+        
+    </section>
+    <!--/搜索-->
+
+</section>
+<!--/导航和搜索-->
+
+<section class="gnav" data-chunk="global-daohang">
+    <section class="newWarp cfix">
+        <ul class="navmain fn-left">
+            
+            <li ><a href="http://cd.uzai.com/">首页</a>
+                
+            </li>
+            
+            <li class="divide"></li>
+            
+            <li ><a href="http://cd.uzai.com/outbound/">出境游</a>
+                <i class='newNav-hot'></i>
+                
+            </li>
+            
+            <li class="divide"></li>
+            
+            <li ><a href="http://cd.uzai.com/neartravel/">周边游</a>
+                <i class='newNav-cu'></i>
+                
+            </li>
+            
+            <li class="divide"></li>
+            
+            <li ><a href="http://cd.uzai.com/lvyoucn/">国内游</a>
+                
+            </li>
+            
+            <li class="divide"></li>
+            
+            <li ><a href="http://ghotel.uzai.com/">酒店</a>
+                <i class='newNav-new'></i>
+                
+            </li>
+            
+            <li class="divide"></li>
+            
+            <li ><a href="http://www.uzai.com/youlun">邮轮</a>
+                <i class='newNav-new'></i>
+                
+            </li>
+            
+        </ul>
+
+    </section>
+
+</section>
+<section class="newWarp">
+    <div data-chunk="global-subdaohang">
+        
+<div class="umenubot global-subnav w" data-chunk="global-subnav">
+    
+    <span class="pl10">
+        出境游热推:
+        <a href="http://cd.uzai.com/outbound/thailand-c-11652.html" title="成都到泰国旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">泰国</a><a href="http://cd.uzai.com/outbound/phuket-o-11725.html" title="成都到普吉岛旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">普吉岛</a><a href="http://cd.uzai.com/outbound/rihan/" title="成都到日韩旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">日韩</a><a href="http://cd.uzai.com/outbound/europe/" title="成都到欧洲旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">欧洲</a><a href="http://cd.uzai.com/outbound/southkorea-c-11042.html" title="成都到韩国旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">韩国</a><a href="http://cd.uzai.com/outbound/thailand-c-11652.html" title="成都到泰国旅游" target="_blank" rel="nofollow">泰国</a>
+        
+    </span>
+    
+    <span class="pl10">
+        国内游热推:
+        <a href="http://cd.uzai.com/lvyoucn/hainan-r-2259.html" title="成都到海南旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">海南</a><a href="http://cd.uzai.com/lvyoucn/yunnan-r-6894.html" title="成都到云南旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">云南</a><a href="http://cd.uzai.com/lvyoucn/xizang-r-6406.html" title="成都到西藏旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">西藏</a><a href="http://cd.uzai.com/lvyoucn/xiamen-l-415.html" title="成都到厦门旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">厦门</a><a href="http://cd.uzai.com/lvyoucn/yunnan-r-6894.html" title="成都到云南旅游" target="_blank" rel="nofollow">云南</a>
+        
+    </span>
+    
+    <span class="pl10">
+        周边游热推:
+        <a href="http://cd.uzai.com/neartravel/spot-jiuzhaigou-6068.html" title="成都到九寨沟旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">九寨沟</a><a href="http://cd.uzai.com/neartravel/spot-emeishan-6117.html" title="成都到峨眉山旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">峨眉山</a><a href="http://cd.uzai.com/tour-75499.html?599138979" title="海螺沟旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">海螺沟</a><a href="http://cd.uzai.com/tour-75519.html?1907972116" title="青城山旅游" target="_blank" class="border_right_1 cororg2" rel="nofollow">青城山</a><a href="http://cd.uzai.com/neartravel/1d/" title="成都一日游" target="_blank" class="border_right_1 cororg2" rel="nofollow">一日游</a><a href="http://cd.uzai.com/neartravel/2d/" title="成都二日游" target="_blank" class="border_right_1 cororg2" rel="nofollow">二日游</a><a href="http://cd.uzai.com/cd/3d/" title="成都三日游" target="_blank" class="border_right_1 cororg2" rel="nofollow">三日游</a><a href="http://cd.uzai.com/cd/4d/" title="成都四日游" target="_blank" rel="nofollow">四日游</a>
+        
+    </span>
+    
+</div>
+
+    </div>
+</section>
+
+
+    <!--首页内容-->
+    <div id="page" class="cfix">
+        <div class="breadhead">
+            <a class="colorblue" href="http://www.uzai.com/">首页</a> <span class="padding_left_5">
+                -&gt;</span><h1 class="font12 padding_left_5">
+                    最近浏览记录</h1>
+        </div>
+        <section class="channel-side fn-left">
+            <aside style="border: 1px solid #BBDFAA; padding: 4px; margin-bottom: 7px;">
+                <a href="http://www.uzai.com/chengnuo/" title="悠哉管到底，旅游不操心！" target="_blank">
+                    <img src="http://r.uzaicdn.com/chengnuo/chengnuo-banner1.jpg" alt="悠哉管到底，旅游不操心！"></a>
+            </aside>
+
+            <aside class="side-hot">
+            <h3 class="title">热门目的地推荐</h3>
+            <article class="line-list">
+              <h4 class="h4">跟团游</h4>
+                  
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://cd.uzai.com/lvyoucn/yunnan-r-6894.html" target="_blank">国内游</a>
+                         </dt> 
+                        
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/yunnan-r-6894.html" target="_blank" title="云南">云南</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/sanya-l-2284.html" target="_blank" title="三亚">三亚</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/guilin-l-1829.html" target="_blank" title="桂林">桂林</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/xinjiang-r-6612.html" target="_blank" title="新疆">新疆</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/xizang-r-6406.html" target="_blank" title="西藏">西藏</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/beijing-l-8415.html" target="_blank" title="北京">北京</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/anhui-r-3.html" target="_blank" title="安徽">安徽</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/xian-l-5736.html" target="_blank" title="西安">西安</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/ningxia-r-4850.html" target="_blank" title="宁夏">宁夏</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/zhangjiajie-l-3378.html" target="_blank" title="张家界">张家界</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/xiamen-l-415.html" target="_blank" title="厦门">厦门</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/neimenggu-r-4679.html" target="_blank" title="内蒙古">内蒙古</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/guizhou-r-2114.html" target="_blank" title="贵州">贵州</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/qinghai-r-4989.html" target="_blank" title="青海">青海</a></dd>
+                                
+                          </dl>
+                       
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://cd.uzai.com/neartravel/spot-jiuzhaigou-6068.html" target="_blank">周边游</a>
+                         </dt> 
+                        
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/1d/" target="_blank" title="一日游">一日游</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/2d/" target="_blank" title="二日游">二日游</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/3d/" target="_blank" title="三日游">三日游</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/go/sight-6032.html" target="_blank" title="都江堰">都江堰</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/spot-emeishan-6117.html" target="_blank" title="峨眉山">峨眉山</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/spot-jiuzhaigou-6068.html" target="_blank" title="九寨沟">九寨沟</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/spot-hh-15572.html" target="_blank" title="若尔盖">若尔盖</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/spot-daocheng-6248.html" target="_blank" title="稻城">稻城</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/go/sight-13886.html" target="_blank" title="木格措">木格措</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/go/sight-6219.html" target="_blank" title="海螺沟">海螺沟</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/luguhu-l-7046.html" target="_blank" title="泸沽湖">泸沽湖</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/neartravel/spot-hl-6069.html" target="_blank" title="黄龙">黄龙</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/lvyoucn/zh-l-19331.html" target="_blank" title="竹海">竹海</a></dd>
+                                
+                               <dd class="dd">  <a href="http://www.uzai.com/go/sight-6041.html" target="_blank" title="锦里">锦里</a></dd>
+                                
+                               <dd class="dd">  <a href="http://www.uzai.com/go/sight-6033.html" target="_blank" title="青城山">青城山</a></dd>
+                                
+                          </dl>
+                       
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://cd.uzai.com/outbound" target="_blank">出境游</a>
+                         </dt> 
+                        
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/japan-c-11414.html" target="_blank" title="日本">日本</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/hongkong-o-9024.html" target="_blank" title="香港">香港</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/southkorea-c-11042.html" target="_blank" title="韩国">韩国</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/united_states-c-10595.html" target="_blank" title="美国">美国</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/thailand-c-11652.html" target="_blank" title="泰国">泰国</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/singapore-c-11803.html" target="_blank" title="新加坡">新加坡</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/great_britain-c-10232.html" target="_blank" title="英国">英国</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/australia-c-10762.html" target="_blank" title="澳大利亚">澳大利亚</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/italy-c-10131.html" target="_blank" title="意大利">意大利</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/phuket-o-11725.html" target="_blank" title="普吉岛">普吉岛</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/bali-o-12000.html" target="_blank" title="巴厘岛">巴厘岛</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/cambodia-c-11146.html" target="_blank" title="柬埔寨">柬埔寨</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/europe/" target="_blank" title="欧洲">欧洲</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/france-c-9423.html" target="_blank" title="法国">法国</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/outbound/germany-c-9312.html" target="_blank" title="德国">德国</a></dd>
+                                
+                          </dl>
+                       
+                <h4 class="h4">自由行</h4>
+                          
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://cd.uzai.com/tour-77660.html?1875546382" target="_blank">夕阳红</a>
+                         </dt> 
+                        
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77660.html?1875546382" target="_blank" title="华东">华东</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-76442.html?1186863718" target="_blank" title="张家界">张家界</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-76465.html?1186863718" target="_blank" title="桂林">桂林</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77653.html?1875546382" target="_blank" title="三峡">三峡</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77334.html?1875546382" target="_blank" title="东北">东北</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-76425.html?1289710349" target="_blank" title="北京">北京</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77474.html?1875546382" target="_blank" title="福建">福建</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77479.html?891303384" target="_blank" title="云南">云南</a></dd>
+                                
+                               <dd class="dd">  <a href="http://cd.uzai.com/tour-77792.html?1433257504" target="_blank" title="青岛">青岛</a></dd>
+                                
+                          </dl>
+                       
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://sh.uzai.com/selftrip/chujing/" target="_blank">出境自由行</a>
+                         </dt> 
+                        
+                          </dl>
+                       
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://sh.uzai.com/selftrip/zijia/" target="_blank">周边自由行</a>
+                         </dt> 
+                        
+                          </dl>
+                       
+                         <dl class="cfix">
+                            <dt class="t">
+                        <a href="http://sh.uzai.com/selftrip/guonei/" target="_blank">国内自由行</a>
+                         </dt> 
+                        
+                          </dl>
+                       
+                
+            </article>
+        </aside>
+
+        </section>
+        <section class="channel-main fn-right">
+        
+            <header class="main-header cfix">
+                <h2 id="h2" class="title fn-left"><i class="fn-left"></i>最近浏览产品</h2>
+                <a href="#" title="清空全部浏览记录" class="del-all fn-right" onclick="clearAllScan()">清空全部浏览记录</a>
+            </header>
+                  
+        <section class="main-nores cfix">
+                <p class="p1">尊敬的客户，您还未在悠哉留下脚印哦，现在就开启您的悠哉之旅吧~</p>
+                <p class="p2">在您的浏览过程中，您可以随时通过这里查看您之前的浏览记录，以便快捷返回您曾经感兴趣的产品线路。</p>
+                <p class="p3"><a href="http://www.uzai.com/">去悠哉首页>> </a></p>
+
+            </section>
+        
+        <div class="pagebox cfix">
+            <div class="fn-right fn-page">
+                
+             
+                         <input id="pageIndex" type="hidden" value="0" />           
+            </div>
+        </div>
+        <div class="res-love cfix">
+            <div class="res-love-top">
+                <h3>
+                    猜你喜欢</h3>
+            </div>
+            <div id="divlove" class="res-love-con fn-clear">
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-18393.html" target="_blank" title="西塘古镇“水墨江南”深度纯玩1日游<水乡古镇，无购物>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/7409/m/w120/h75/t1" heigth="75px" alt="">西塘古镇“水墨江南”深度纯玩1日游<水乡古镇，无购物></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">89</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-21393.html" target="_blank" title="上海崇明生态纯玩1日游<全网特价回馈，仅售95元>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/12911/m/w120/h75/t1" heigth="75px" alt="">上海崇明生态纯玩1日游<全网特价回馈，仅售95元></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">95</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-78883.html" target="_blank" title="【国庆】连云港云台山、日照、花果山3日<2晚开元曼居+云台山+88元/人海鲜餐>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/3852/m/w120/h75/t1" heigth="75px" alt="">【国庆】连云港云台山、日照、花果山3日<2晚开元曼居+云台山+88元/人海鲜餐></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">468</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-81371.html" target="_blank" title="锦溪自助1日游<含车位及门票>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/4130/m/w120/h75/t1" heigth="75px" alt="">锦溪自助1日游<含车位及门票></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">85</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-100388.html" target="_blank" title="【国庆爆款】天目湖-南山竹海、船游山水园2日<皇冠假日酒店或辉煌温泉、赠鱼头汤>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/15752/m/w120/h75/t1" heigth="75px" alt="">【国庆爆款】天目湖-南山竹海、船游山水园2日<皇冠假日酒店或辉煌温泉、赠鱼头汤></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">378</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-100503.html" target="_blank" title="【国庆甩单】无锡鼋头渚全景、梅园冰雕节、灵山纯玩2日<宿协信维嘉、门票全含>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/18409/m/w120/h75/t1" heigth="75px" alt="">【国庆甩单】无锡鼋头渚全景、梅园冰雕节、灵山纯玩2日<宿协信维嘉、门票全含></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">408</span>起</dd></dl>
+                
+                <dl class="res-love-item">
+                    <dt class="title"><a href="http://sh.uzai.com/tour-104334.html" target="_blank" title="【十一】扬州瘦西湖、东关街、南山纯玩2日游<赠送大明寺景区，金秋王牌线>">
+                        <img width="120px" class="res-love-img" src="http://r.uzaicdn.com/pic/13028/m/w120/h75/t1" heigth="75px" alt="">【十一】扬州瘦西湖、东关街、南山纯玩2日游<赠送大明寺景区，金秋王牌线></a></dt><dd
+                            class="item-pri"><span class="unit">￥</span><span class="pri">376</span>起</dd></dl>
+                
+            </div>
+        </div>
+        </section>
+    </div>
+    
+<!--最近浏览和订阅-->
+<div class="fn-browse">
+    <ul class="fn-browseTitle">
+        <li class="li1" id="J_wechat">
+            <i class="shouli icons-right-side">收礼</i>
+            <em class="arrow-left">&nbsp;</em>
+            <div class="item-hd">关注微信</div>
+            <div class="focus-wechat pop-box">
+                <i class="code-wechat-a icons-right-side"></i>
+                <p><a href="http://www.uzai.com/subject/weixin" target="_blank">扫一扫，关注悠哉微信</a></p>
+            </div>
+        </li>
+        <li class="li2" id="J_app_download">
+            <em class="arrow-left">&nbsp;</em>
+            <div class="item-hd">APP下载</div>
+            <div class="app-client pop-box">
+                <i class="code-wechat-b icons-right-side"></i>
+                <p><a href="http://www.uzai.com/app/?ly=fkcode" target="_blank">手机专享优惠，价更低！</a></p>
+            </div>
+        </li>
+        <li class="li3" id="J_advise">
+            <div class="item-hd"><a href="#">意见反馈</a></div>
+        </li>
+        <li class="li4 uzkfOnline">
+            <div class="item-hd"><a rel="nofollow" target="_blank" href="http://bizapp.qq.com/webc.htm?new=0&sid=938066871&o=www.uzai.com&q=7">在线客服</a></div>
+        </li>
+        <li class="li5 J_ScrollTop">
+            <div class="item-hd">
+                <span class="arrow-top"><em>◆</em><i>◆</i></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript"> DisplayScanRecord();</script>
+<!--/最近浏览和订阅-->
+
+
+
+
+<div class="ufooter">
+    <div class="footer01">
+        <div class="w">
+            <div class="newWarp">
+                <div class="foot_faq clearfix">
+                    <div class="faq_container01">
+                        <span class="faq_class"><strong>如何付款和发票</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#311" title="支付宝网银支付"
+                                target="_blank">支付宝网银支付</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#312" title="信用卡电话支付"
+                                target="_blank">信用卡电话支付</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#313" title="门店支付或银行汇款"
+                                target="_blank">门店支付或银行汇款</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-3.html#33" title="旅游发票"
+                                target="_blank">旅游发票</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container02">
+                        <span class="faq_class"><strong>出境游和港澳游常识</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-1.html" title="如何办理护照"
+                                target="_blank">如何办理护照</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-2.html" title="如何办理旅游签证"
+                                target="_blank">如何办理旅游签证</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-3.html" title="如何办理港澳通行证"
+                                target="_blank">如何办理港澳通行证</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-6-4.html" title="如何办理台湾旅游签证"
+                                target="_blank">如何办理台湾旅游签证</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container03">
+                        <span class="faq_class"><strong>预订旅游产品的问题</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-1.html" title="旅游产品名词解释"
+                                target="_blank">旅游产品名词解释</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-1.html#110" title="如何看懂旅游产品价格"
+                                target="_blank">如何看懂旅游产品价格</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-4.html#43" title="出险如何进行理赔"
+                                target="_blank">出险如何进行理赔</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container04">
+                        <span class="faq_class"><strong>如何签订旅游合同</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-2.html" title="传真/邮件签署合同"
+                                target="_blank">传真/邮件签署合同</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container05">
+                        <span class="faq_class"><strong>悠哉会员、U币、会刊</strong></span>
+                        <ul>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#71" title="如何成为悠哉会员"
+                                target="_blank">如何成为悠哉会员</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#732" title="如何使用U币"
+                                target="_blank">如何使用U币</a></li>
+                            <li><a rel="nofollow" href="http://www.uzai.com/qa/helplist-7.html#Dl2" title="如何使用积分"
+                                target="_blank">如何使用积分</a></li>
+                            <li><a rel="nofollow" href="http://pay.uzai.com/djk" title="悠哉旅游卡"
+                                target="_blank">悠哉旅游卡</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq_container06">
+                        <span class="faq_class"><strong>扫描微信二维码</strong></span>
+                        <div>
+							<i class="icon-code icon-common-bulky" title="扫描微信二维码"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w">
+        
+<!--一键关注区域开始-->
+<div class="sns-footer-share">
+    <div class="w">
+        <ul class="yahei clearfix">
+            <li class="li1">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">悠哉微信公众号</span>
+                    <span class="code-wrap">
+                        <a class="blue" href="javascript:void(0);" rel="nofollow">扫码</a>
+                        <span class="code icon-code icon-common-bulky">
+                            <span class="arrow">
+                                <i class="i1">◆</i>
+                                <i class="i2">◆</i>
+                            </span>
+                        </span>
+                    </span>
+                </p>
+            </li>
+            <li class="li2">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">悠哉新浪微博</span>
+                    <a class="add blue" href="http://weibo.com/p/1006061900676481/home" rel="nofollow" target="_blank">+加关注</a>
+                </p>
+            </li>
+            <li class="li3 last">
+                <p>
+                    <i class="icon">&nbsp;</i>
+                    <span class="f18">投诉建议邮箱</span>
+                    <a class="qa f14" rel="nofollow" href="mailto:qa@uzai.com">qa@uzai.com</a>
+                </p>
+                <p class="f14 p-last">电话：400-000-8888转9</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--一键关注区域结束-->
+
+    </div>
+    <div class="newWarp">
+        <div class="w">
+            
+<div class="foot-webtrust">
+    <a href="http://www.shtour.org/tourlist_onlineid3.html"  rel="nofollow" target="_blank"  title="上海市旅游行业协会 在线旅游分会" class="trust1"></a>
+    <a href="http://www.uzai.com/about/certification/"  rel="nofollow" target="_blank"  title="可信网站验证服务证书" class="trust2"></a>
+    <a href="http://www.bcpcn.com/product/rz/bq/BCP5708348725.html" target="_blank" rel="nofollow" title="信用网站认证" class="trust3"></a>
+    <a href="http://r.uzaicdn.com/content/common/zglxshyz.jpg" target="_blank" rel="nofollow"  title="中国旅行社协会会员证书" class="trust5"></a>
+    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120410111333254" target="_blank" rel="nofollow" title="上海工商" class="trust4"></a>
+	<a href="http://www.uzai.com/about/pictureShow.html" target="_blank" rel="nofollow" title="证照展示" class="trust6"></a>
+    <a href="http://www.zx110.org/" target="_blank" rel="nofollow" title="征信网" class="trust7"></a>
+</div>
+            <div class="foot-copyright">
+                <span>Copyright 2005-2015 Uzai.com</span> <span>许可证编号:L-SH-00647</span> <span>沪ICP备06021606号</span>
+                <span>悠哉呼叫中心来电显示号码为：<font class="red">021-33977886 或 010-56704486</font></span>
+            </div>
+            <div class="foot-aboutlink">
+               <span class="border_right_1"><a class="colored" href="http://www.uzai.com/">悠哉旅游网</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/history/" rel="nofollow" >悠哉历程</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/about/privacy/" rel="nofollow" >隐私保护</a></span>
+<span class="border_right_1"><a target="_blank" class="orange" href="http://www.uzai.com/about/job" rel="nofollow" >诚聘英才</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/about/" rel="nofollow" >关于我们</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/sitemap/">网站地图</a></span>
+<span class="border_right_1"><a target="_blank" href="http://www.uzai.com/sitelinks/">友情链接</a></span>
+<span ><a target="_blank" href="http://www.uzai.com/qa/helplist-9.html">商务合作</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- index foot-link-nav start -->
+<div class="foot-link-nav">
+    <div class="link-nav-items f999 w"  id="j_linkNavItems">
+        
+
+        <!--友情链接-->
+        
+        <!--End友情链接-->
+
+        <!--精选-->
+        
+        <!---->
+
+        
+    </div>
+     
+</div>
+<!-- index foot-link-nav end -->
+
+<div class="footerjs">
+
+
+<!--ve营销-->
+
+
+<!--DSP广告-->
+<script type='text/javascript'>
+var _agt=_agt||[];
+_agt.push(['_atscu','AG_161870_DFCP']);
+_agt.push(['_atsdomain','uzai.com']);/*请将$网站主域$替换为您嵌入代码的真实主域，例如：agrantsem.com*/
+(function(){
+var ag=document.createElement('script'); 
+ ag.type='text/javascript'; 
+ ag.async = true;
+ag.src=(document.location.protocol=='https:'?'https':'http')+'://'+'t.agrantsem.com/js/ag.js';
+var s=document.getElementsByTagName('script')[0]; 
+ s.parentNode.insertBefore(ag,s);})();
+</script>
+
+<!--Google js-->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27817301-1', 'uzai.com');
+    var full_url = window.location.pathname + window.location.search + window.location.hash;
+
+    ga('send', 'pageview', full_url);
+</script>
+
+<script type="text/javascript">
+window["_BFD"] = window["_BFD"] || {};
+_BFD.client_id = "Ctest_youzai";
+_BFD.script = document.createElement("script");
+_BFD.script.type = "text/javascript";
+_BFD.script.async = true;
+_BFD.script.charset = "utf-8";
+_BFD.script.src = (('https:' == document.location.protocol?'https://ssl-static1':'http://static1')+'.bfdcdn.com/service/uzai/uzai.js');
+document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+
+<!--baidu js-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c6ca6ea4f6a82938e24232a7a3da3949";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!--zongxin baidu js-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?40b326259e577b18a52f2e2ac55d9bfa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</div>
+
+    <!--最近浏览和订阅-->
+    <style>
+        .fn-browseWeixin .wclose
+        {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, 'Microsoft Yahei';
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            background: #5b5b5b;
+            color: #fff;
+            position: absolute;
+            left: 114px;
+            top: 74px;
+        }
+    </style>
+    <!--/最近浏览和订阅-->
+</body>
+</html>

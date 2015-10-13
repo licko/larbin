@@ -1,0 +1,346 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>商品保障 - 特卖惠</title>
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/tb/tmh_news/tmh_stylev2.2.css" type="text/css"/>
+<script type="text/javascript" src="http://static.egou.com/f=js/open.js,js/fit-image.js,js/jquery.js,js/cpa-cookie.js?v"></script>
+<script type="text/javascript">
+function initTbTop(){
+	
+	//获取要定位元素距离浏览器顶部的距离
+	var itemCatsH = $("#scroll_top").offset().top;
+	//滚动条事件
+	$(window).scroll(function(){
+	//获取滚动条的滑动距离
+		var scroH = $(this).scrollTop();
+		//滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+		if(scroH > itemCatsH){
+			$("#scroll_top").attr("class","scroll_top fixed_top");
+			$("#two_nav").attr("class","two_nav_bg two_nav_bg1");
+			
+		}else{
+			$(".scroll_top").attr("class","scroll_top");
+			$("#two_nav").attr("class","two_nav_bg");
+			
+		} 
+	}); 
+};
+</script>
+</head>
+
+<body class="zj_main_bg">
+
+<meta http-equiv="Cache-Control" content="max-age=10080" /> 
+<script type="text/javascript" src="http://static.egou.com/b=header/js&f=header.js?2014"></script>
+
+<script type="text/javascript">
+var EgouCookie = {username: '', userid: '' };
+jQuery.ajax({
+	url:'http://www.egou.com/headers/header_out2.jsp',
+	data:{'w':1000,'no_search_bar':true},
+	dataType: "jsonp",
+	success: function(html) {
+	var ad =document.createElement('script');
+	ad.type='text/javascript';
+	ad.async=true;
+	ad.src='http://ad.egou.com/ads.jsp?name=TOP_ADS&callback=cb_ad_other&site=5&term=1&page=TEMAI_HEADER';		
+	var s=document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ad,s);
+	jQuery("#egou_header").append(html);
+	on_egou_header_loaded();
+	initTbTop();
+	},
+	error: function(e, t) {}
+});
+
+jQuery.cookie = function(name, value, options) {
+    if (typeof value != 'undefined') {
+        options = options || {};
+        if (value === null) {
+            value = '';
+            options.expires = -1;
+        }
+        var expires = '';
+        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+            var date;
+            if (typeof options.expires == 'number') {
+                date = new Date();
+                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+            } else {
+                date = options.expires;
+            }
+            expires = '; expires=' + date.toUTCString(); 
+        }
+        var path = options.path ? '; path=' + (options.path) : '';
+        var domain = options.domain ? '; domain=' + (options.domain) : '';
+        var secure = options.secure ? '; secure' : '';
+        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+    } else {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+};
+jQuery.cookie("_egtmh","tmh",{expires:30,domain:'egou.com',path:'/'});
+
+function openNewUrl(url,buttonID,blank){
+	/* url ='http://fanxian.egou.com/productredirect.do?sid=0&buttonID='+buttonID+'&link='+encodeURIComponent(url); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url);
+	egou.open(url,blank);
+}
+function processUrlWithButtonID(url,buttonID){
+	/* url ='http://fanxian.egou.com/productredirect.do?sid=-1&buttonID='+buttonID+'&feedback=2&link='+encodeURIComponent(url+'&unid=150i2060eTBKGW%user%'); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url+'&unid=%user%');
+	egou.open(url,'_blank');
+}
+function processUrl(url,buttonID,fxtag){
+	/* url='http://fanxian.egou.com/productredirect.do?sid=-1&buttonID='+bid+'&feedback=2&fxtag='+fxtag+'&link='+encodeURIComponent(url+'&unid=150i2060eTBKGW%user%'); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url+'&unid=%user%');
+	egou.open(url,'_blank');	
+}
+var keyword = '';
+var searchKey = !keyword ? "休闲裤" : keyword.replace(new RegExp("&#x27;","gm"),"'"); 
+jQuery(document).ready(function() {
+	jQuery('#gotop').click(function(){
+		$(document).scrollTop(0);
+		}
+	);
+	jQuery('#topSubmitKeyword').click(function(){
+		var evk = jQuery('#topSearch input[name=keyword]').val();
+		var keyword = jQuery.trim(evk);
+		keyword = keyword.replace(new RegExp("'","gm"),"");
+		//文本框没有填写内容
+		if(keyword.length == 0){
+			return false;
+		}else{
+			var url = _TemaiUrl + "/search.htm?keyword=" + encodeURIComponent(keyword);
+			openNewUrl(url,'TemaiSearchTop');
+		}
+	});
+	jQuery('#topSearch input[name=keyword]').focus(function(){
+		var evk = jQuery('#topSearch input[name=keyword]');
+		var keyword = jQuery.trim(evk.val());
+		if (keyword == searchKey) {
+			evk.val("");
+		} 
+		evk.attr("class", "search_text");
+	});
+	jQuery('#topSearch input[name=keyword]').blur(function(){
+		var evk = jQuery('#topSearch input[name=keyword]');
+		var keyword = jQuery.trim(evk.val());
+		if (keyword == "") {
+			evk.val(searchKey);
+			evk.attr("class", "search_text color_99");
+		}
+	});
+});
+
+</script>
+<div id="egou_header"></div>
+<div class="clear"></div>
+
+<!--  头部部分  -->
+<!-- <div class="tmh_top_bg" >
+	<div class="tmh_top width1000">
+    	<div class="tmh_logo">
+        	<div class="logo_left"><a href="http://www.egou.com/" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/tm_logo.png" /></a></div>
+        	<div class="logo_right">
+    		  <a href="http://temai.egou.com/"></a>
+           	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="120" height="60" id="FlashID" title="logo">
+            	  <param name="movie" value="http://egouimg1.qutu.com/tb/tmh_news/tmh_logo.swf">
+            	  <param name="quality" value="high">
+            	  <param name="wmode" value="opaque">
+            	  <param name="swfversion" value="15.0.0.0">
+            	  此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。
+            	  <param name="expressinstall" value="Scripts/expressInstall.swf">
+            	  下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。
+            	  [if !IE]>
+            	  <object type="application/x-shockwave-flash" data="http://egouimg1.qutu.com/tb/tmh_news/tmh_logo.swf" width="120" height="60">
+            	    <![endif]
+            	    <param name="quality" value="high">
+            	    <param name="wmode" value="opaque">
+            	    <param name="swfversion" value="15.0.0.0">
+            	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+            	    浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。
+            	    <div>
+            	      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+            	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          	      </div>
+            	    [if !IE]>
+          	    </object>
+            	  <![endif]
+          	  </object>
+            </div>
+        </div>
+    	<div class="tmh_logo_right"><img src="http://egouimg1.qutu.com/tb/tmh_news/tm_logo_right.png" /></div>
+    	<div class="clear"></div>
+    </div>
+</div> -->
+<div class="tmh_top_bg" >
+	<div class="tmh_top width1000">
+    	<div class="tmh_logo">
+        	<div class="logo_left"><a href="http://www.egou.com/" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tmh_logo.png" /></a></div>
+        	<div class="logo_left"><a href="http://temai.egou.com/"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tmh_logo0.png" /></a></div>
+        	
+      </div>
+    	<div class="tmh_logo_right"><a href="http://temai.egou.com/item_promise.htm" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tm_logo_rightv2.1.png" /></a></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+function changeSearchkey(keyid1,keyid2){
+$("#"+keyid2).val($("#"+keyid1).val());
+}
+</script>
+
+<!-- 分类导航 -->
+
+
+<!--  二级分类 -->
+
+
+<div id="scroll_top" class="scroll_top">
+    <!-- 分类导航 -->
+    <div class="tmh_nav_bg" id="tmh_nav_bg">
+        <div class="tmh_nav width1000">
+            <ul class="nav_li">         
+               <!--  <li><a href="#" class="selected">首页</a></li>
+                <li><a href="#"><em class="icon icon1"></em>9块9包邮</a></li>
+                <li><a href="#"><em class="icon icon2"></em>29块9秒杀</a></li>
+                <li><a href="#">品牌折扣</a></li>
+                <li><a href="#">明日预告</a></li>
+                <li><a href="#"><em class="icon icon4"></em>闪见红包</a></li> -->
+                
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatindex&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2F" >
+				首页</a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatbaoyou&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fbaoyou%2F" >
+				<em class="icon icon1"></em>9.9包邮</a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatmiaosha&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fmiaosha%2F" >
+				<em class="icon icon2"></em>29.9封顶</a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcathot&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fhot%2F" >
+				爆款疯抢</a>
+				<span class="tmh_hot"></span>
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatyugao&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fyugao%2F" >
+				明日预告</a>
+				
+				</li>
+				
+				<li><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"><em class="icon icon4"></em>闪见红包</a></li>
+            </ul>
+            <form id="topSearch" action="/search.htm">
+            <div class="nav_search">
+                <input name="keyword" type="text" class="search_text color_99" value="" id="keyword1">
+                <input type="button" class="search_btn" id="topSubmitKeyword">
+            </div>
+            </form>
+            <script type="text/javascript">
+			jQuery('#topSearch input[name=keyword]').val(searchKey);
+			</script>
+        </div>
+    </div>
+    
+</div>
+<script type="text/javascript">initTbTop();</script>
+
+
+<div class="zj_banner"></div>
+<div class="zj_main"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/zj_main.jpg"></div>
+<div class="zj_btn"><a href="http://temai.egou.com/">立即去抢购></a></div>
+
+<link href="http://static.egou.com/p/tb/tmh_news/temai_foot.css" type="text/css" rel="stylesheet" />
+<div class="copyright">
+<iframe src="http://www.egou.com/thirdparter.html?a=b" frameborder="0" height="50" width="100%" scrolling="no" topmargin="0" leftmargin="0"></iframe>
+<span>Copyright &copy; 2004-2014 by www.egou.com all rights reserved</span><br />
+<a href="http://www.emar.com.cn" target="_blank" class="color_copyright">北京亿玛联盟传媒广告有限公司</a> 旗下网站 <a href="http://www.miibeian.gov.cn/" target="_blank" class="color_copyright">京公网安备110105000795 京ICP备10005197号-5</a><br /><br>
+</div>
+
+<!-- baidu -->
+<!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?316c01d27f14730a51beaa124c911eb8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+<!-- baidu -->
+<script src="http://static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+<!-- cnzz stats -->
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3120101'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D3120101' type='text/javascript'%3E%3C/script%3E"));</script>
+</div> 
+<!-- cnzz stats end-->
+<!-- Google 再营销代码 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 967063078;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967063078/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript> 
+<!-- Google 再营销代码 end -->
+<!-- Google 再营销代码 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 965174164;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/965174164/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Google 再营销代码 end -->
+<!-- 广电通回头客 -->
+<script type="text/javascript" src="http://tajs.qq.com/gdt.php?sId=19091634" charset="UTF-8"></script>
+<!-- 广电通回头客end -->
+<script type="text/javascript">
+var _egtk = _egtk || {"site": 5};
+(function() {
+ var eg = document.createElement('script'); eg.type = 'text/javascript'; eg.async = true;
+ eg.src = 'http://static.egou.com/js/egoutracker.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(eg, s);
+})();
+</script>
+
+
+<!-- 易博广点通账户回头客投放 -->
+<script type="text/javascript" src="http://tajs.qq.com/gdt.php?sId=38239342" charset="UTF-8"></script> 
+<!-- 易博广点通账户回头客投放 end-->
+</body>
+</html>

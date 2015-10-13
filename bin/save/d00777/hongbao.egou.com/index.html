@@ -1,0 +1,3724 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script type="text/javascript" src="http://static.egou.com/p/club/js/util.js"></script>
+<script type="text/javascript" src="http://static.egou.com/f=js/open.js,js/jquery.js,js/fit-image.js,js/cpa-cookie.js,js/popup.js"></script>                                                                                                                                          
+<script type="text/javascript" src="/js/common.js?t=20150428"></script>
+
+
+
+<meta charset="utf-8">
+<title>易购网【红包】淘宝红包，京东商城红包，顺丰优选红包， 每天二场超级红包等你来抢</title>
+<link rel="stylesheet" href="http://static.egou.com/p/hongbao/css/hongbaov5.1.css" type="text/css"/>
+<script type="text/javascript" src="http://static.egou.com/p/hongbao/jsv5.0/banner.js"></script>
+<script type="text/javascript" src="js/example.js"></script>
+<script type="text/javascript" src="http://ad.egou.com/js/api.js"></script>
+<script type="text/javascript" src="/js/index.js?t=20150624"></script>
+<script type="text/javascript" src="/js/hongbao.js?t=20150624"></script>
+<script src="http://fanxian.egou.com/common/js/Calendar.js" type="text/javascript" charset="GBK"></script>
+</head>
+<body>
+
+<script type="text/javascript" src="http://static.egou.com/b=header/js&f=header.js,search.js?a"></script>
+
+<style type="text/css">
+.header_pic{width:100%;height:70px;overflow:hidden;background-position:center top;background-repeat: no-repeat;}
+.header_pic a{height:70px;display:block;}
+</style>
+<div id="egou_header"></div>
+<div class="hb_logo width1200">
+	<a href="http://www.egou.com/" class="logo"><img src="http://egouimg1.qutu.com/hongbao/images_v5.0/logo.png"></a><a href="/index.htm" class="logo logo1"><img src="http://egouimg1.qutu.com/hongbao/images_v5.0/hb_logo.png"></a>
+    <span class="logo_right"><img src="http://egouimg1.qutu.com/hongbao/images_v5.0/logo_right.png"></span>
+    <a href="/help.jsp" class="hb_miji"></a>
+</div>
+<script type="text/javascript">
+var loginUser = {id:"",name:""};
+jQuery.ajax({
+	url:'http://www.egou.com/headers/header_out2.jsp',
+	data:{'w':'1200','wwwIndex':"",'keyword':"",'no_search_bar':true,'source':'hongbao'},
+	dataType: 'jsonp',
+	success: function(html) {
+		jQuery("#egou_header").append(html);
+		on_egou_header_loaded();
+		var ad =document.createElement('script');
+		ad.type='text/javascript';
+		ad.async=true;
+		ad.src='http://ad.egou.com/ads.jsp?name=TOP_ADS&callback=cb_ad_other&site=7&term=1&page=index';		
+		var s=document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ad,s);
+	},
+	error: function(e, t) {}
+});
+</script>
+<div style="display:none">
+<ul>
+<li class="web_list last"><p><a href="http://www.egou.com/bq/">热门搜索</a><a href="http://www.egou.com/brand/">品牌大全</a></p></li>
+<li class="web_list last"><p><a href="http://www.egou.com/coupon/taglist1.htm">热搜优惠券</a></p></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+ try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} 
+</script>
+   
+<script type="text/javascript">
+	$(function(){
+		//查询红包的提示信息
+		$.get('/notice.htm',function(data) {
+			if(data.type>0) {
+				if(data.type == 1 || data.type == 2){
+					//$('#my_notice').html(data.msg);
+					$('#myhongbao_type').val(data.type);
+					//$('.hb_tishi').show();
+				}
+				if(data.unuse){
+					$('#unused_span').html(data.unuse);
+				}
+				if(data.used){
+					$('#used_span').html(data.used);
+				}
+			}
+		},'json');
+	});
+	function closeTips(obj){
+		delnotice();
+		$(obj).hide();
+	}
+	//删除提示信息
+	function delnotice(){
+		var type = $('#myhongbao_type').val();
+		if(type && (type ==1 || type==2)) {
+			$.get('/notice_del.htm',{'type':type},function(data) {
+			}); 
+		}		
+	}
+</script>
+
+<!--导航  -->
+<input type="hidden" id="myhongbao_type" />
+<div class="hb_nav_bg">
+	<div class="hb_nav">
+        <div class="nav-wrap">
+            <ul id="example-one" class="group">
+                <li><a href="/index.htm">超级红包</a></li>
+                <li><a href="/shop/all.htm">所有商家</a></li>
+                <li><a href="http://play.egou.com/hongbaoplay/index.htm">红包变变变</a></li>
+                <li><a href="/help.jsp">红包秘籍</a></li>
+                <li><a href="http://jifen.egou.com/hd/2014/app/hbindex.jsp" target="_blank">手机红包</a></li>
+                <li><a href="/searchOrderNo.htm" target="_blank">订单查询</a></li>
+           </ul> 
+        </div>
+        <script type="text/javascript">
+	        var url=window.location.pathname;
+			 var index=0;
+			 if(url.startsWith('/index.htm')){
+				 if(window.location.hash=='#qiang'){
+					 index=1;
+				 }else if(window.location.hash=='#business'){
+					 index=2;
+				 }
+			 }else if(url=='/help.jsp'){
+				 index = 3;
+			 }else if(url.startsWith('/shop/all')){
+				 index=1;
+			 }else if(url.startsWith('/searchOrderNo.htm')){
+				 index=5;
+			 }
+			 $('#example-one li:eq('+index+')').addClass('current_page_item');
+			 $('#example-one li').bind('click',function(){
+				$('#example-one li').removeClass('current_page_item');
+				$(this).addClass('current_page_item');
+				$("#magic-line").css("left", $(".current_page_item a").position().left).data("origLeft", $(".current_page_item a").position().left);
+			}); 
+        </script>
+        
+        <div class="hb_nav_right">
+        	<ul>
+            	<li><a href="http://fanxian.egou.com/kefu.htm" target="_blank"><em class="kf"></em>在线客服</a></li>
+            	<!-- <li onMouseOver="document.getElementById('dd_list').style.display='block';" onMouseOut="document.getElementById('dd_list').style.display='none';"><a href="http://fanxian.egou.com/myegoutraceorder.do"  target="_blank"><em class="dd"></em>订单跟踪</a>
+                	<div class="hb_list dd_list" id="dd_list">
+                    	<div class="icon"></div>
+                                                                     红包迟迟未绑定订单？<br>由此查看订单跟踪情况
+                    </div>
+                </li> -->
+            	<li onMouseOver="$('#hb_list').show();" onMouseOut="$('#hb_list').hide()">
+            	    <a href="http://hongbao.egou.com/myhongbao.htm"  target="_blank" id="myhongbao"><em class="hb"></em>我的红包</a>
+                	<div class="hb_list" id="hb_list">
+                    	<div class="icon"></div>
+                        <div class="use"><a href="#">未使用红包<span class="num" id="unused_span">0</span></a></div>
+                        <div class="use"><a href="#">已使用红包<span class="num" id="used_span">0</span></a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+       
+<!--  结束  导航  -->
+
+<!--  内容部分 -->
+<input type="hidden" id="sysTime" value="1443791918997"/>
+<input type="hidden" id="hongbaoId" />
+<div class="i_main_bg">
+	<div class="main"><!-- 流程 -->
+    	
+<div class="i_liucheng" id="main_liucheng">
+    <img src="http://egouimg1.qutu.com/hongbao/images_v5.0/i_lc.png">
+    <a href="#" class="close" onclick='$("#main_liucheng").hide();'></a>
+</div>
+        <div class="i_advert" id="notice_div"></div> <!-- 公告 -->
+        <!-- 大牌大红包 -->
+        
+        <div class="hb_banner_bg">
+        	<div class="hb_banner" id="hb_banner_div">
+                <ul class="51buypic">
+                  
+                    <li><a href="javascript:void(0)" onclick="bigBrandUrl('http://hongbao.egou.com/')"><img src="http://img0.egou.com/hd/201507/28/abad6bdc49effc4fd0cc4ba9df5910c6.jpg" /></a></li>
+                  
+                    <li><a href="javascript:void(0)" onclick="bigBrandUrl('http://hongbao.egou.com/shop/detail_5790974_all.htm')"><img src="http://img0.egou.com/hd/201509/24/f773aa6602f817a59b8c3c1dc3e7e59e.jpg" /></a></li>
+                  
+                    <li><a href="javascript:void(0)" onclick="bigBrandUrl('http://hongbao.egou.com/shop/detail_5198984_all.htm')"><img src="http://img0.egou.com/hd/201509/25/20d00d2f8ad8b534ae4f842ad44cdf65.jpg" /></a></li>
+                  
+                    <li><a href="javascript:void(0)" onclick="bigBrandUrl('http://hongbao.egou.com/shop/detail_7744444_all.htm')"><img src="http://img0.egou.com/hd/201509/24/065774c2e9a35f92024a96d3d24f0863.jpg" /></a></li>
+                  
+                    <li><a href="javascript:void(0)" onclick="bigBrandUrl('http://hongbao.egou.com/shop/detail_7057487_all.htm')"><img src="http://img0.egou.com/hd/201509/25/20927d268ca2fb924286f57e4bb4dcd7.jpg" /></a></li>
+                  
+                </ul>
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+                <div class="num">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 整点抢  -->
+        <div class="hb_i_name"><span>整点抢</span><em>每天二场 限时限量</em></div>
+        <div class="hb_i_time">
+        	<ul>
+            	<li id="01"><a href="#"><span class="default num">10:00</span><span class="word">场</span><span class="online"></span><span class="word1">距结束</span><span class="number">0</span><span class="number">0</span><span class="symbol"></span><span class="number">0</span><span class="number">0</span><span class="symbol"></span><span class="number">0</span><span class="number">0</span></a></li>
+            	<li id="02"><a href="#"><span class="default num">15:00</span><span class="word">场</span><span class="online"></span><span class="word1">距结束</span><span class="number">0</span><span class="number">0</span><span class="symbol"></span><span class="number">0</span><span class="number">0</span><span class="symbol"></span><span class="number">0</span><span class="number">0</span></a></li>
+            	<li id="1"><a href="#"><span class="today default">明日预告</span></a></li>
+            </ul>
+        </div>
+        <div class="hb_big_list" id="hbIndexList">
+        	<ul>
+        	    <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8316.htm?day=0')"><img src="http://img0.egou.com/hd/201507/29/cea2c176fa750e81644fd1acee43ade8.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8316.htm?day=0')"><div class="xiaobian" id="xiaobian_8316"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8316.htm?day=0')" >
+			                        OPI官网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满300元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>146</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 240</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8316,false,1,this,'OPI官网','4',7554915,'OPI官网全场通用满300返240红包',300.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8312').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8312').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省25%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8312.htm?day=0')"><img src="http://img0.egou.com/hd/201506/11/325279522a22e463f1499f1611e3648a.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8312.htm?day=0')"><div class="xiaobian" id="xiaobian_8312">提交的订单号需为聚美优品的交易单号。</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8312.htm?day=0')" >
+			                        聚美优品全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满400元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>13</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 100</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8312,false,1,this,'聚美优品','4',973153,'聚美优品全场通用满400返100红包',400.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省25%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8260.htm?day=0')"><img src="http://img0.egou.com/hd/201509/02/678c6fe427562441bedbea7724737cb3.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8260.htm?day=0')"><div class="xiaobian" id="xiaobian_8260"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8260.htm?day=0')" >
+			                        浅绿/净色/休闲裤
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">259</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>29</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 64</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8260,false,1,this,'玛萨玛索','4',709259,'浅绿/净色/休闲裤',259.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8243').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8243').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省40%</span>
+                              
+                                <span class="bq3">新用户<br>专享</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8243.htm?day=0')"><img src="http://img0.egou.com/hd/201509/11/4879ac1dbed65d1e4dd6649b8643a6ab.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8243.htm?day=0')"><div class="xiaobian" id="xiaobian_8243">请及时在订单查询处查单，确保跟单后付款，否则后果自负，概不接受申诉；</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8243.htm?day=0')" >
+			                        丽芙家居全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满100元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>149</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 40</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8243,false,1,this,'丽芙家居','4',7057487,'丽芙家居全场通用满100返40红包',100.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8399').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8399').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8399.htm?day=0')"><img src="http://img0.egou.com/hd/201509/29/cc508cfff5ce028c7315489432f3b557.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8399.htm?day=0')"><div class="xiaobian" id="xiaobian_8399">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8399.htm?day=0')" >
+			                        {满1000减100}香港4晚5日自由行
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">999</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>103</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 199</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8399,false,1,this,'同程网','4',5790974,'{满1000减100}香港4晚5日自由行',999.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8385').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8385').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8385.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/72fb10eff9fe120d1daee10ca2c8021c.png"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8385.htm?day=0')"><div class="xiaobian" id="xiaobian_8385">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8385.htm?day=0')" >
+			                        日本冲绳4晚5日自由行
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">2699</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>15</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 539</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8385,false,1,this,'同程网','4',5790974,'日本冲绳4晚5日自由行',2699.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8374.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/c700f2de82ad0eb5df1e0a296847bbcd.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8374.htm?day=0')"><div class="xiaobian" id="xiaobian_8374"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8374.htm?day=0')" >
+			                        43°茅台迎宾酒 500ml（6瓶装）
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">299</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>211</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 59</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8374,false,1,this,'中酒网','4',6555983,'43°茅台迎宾酒 500ml（6瓶装）',299.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8368.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/06316424574495b3c0ba3a08aecfadf8.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8368.htm?day=0')"><div class="xiaobian" id="xiaobian_8368"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8368.htm?day=0')" >
+			                        卡米诺城堡歌海娜干红葡萄酒
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">128</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>26</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 102</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8368,false,1,this,'买买酒','4',7744444,'卡米诺城堡歌海娜干红葡萄酒',128.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8355.htm?day=0')"><img src="http://img0.egou.com/hd/201509/02/616c7cc424e09b99cb5c0dac039ce9ab.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8355.htm?day=0')"><div class="xiaobian" id="xiaobian_8355"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8355.htm?day=0')" >
+			                        途家全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满300元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>96</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 150</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8355,false,1,this,'途家','4',5198984,'途家全场通用满300返150红包',300.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8350.htm?day=0')"><img src="http://img0.egou.com/hd/201509/21/c6f38fb40616fff80940e8f44d46ae1e.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8350.htm?day=0')"><div class="xiaobian" id="xiaobian_8350"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8350.htm?day=0')" >
+			                        途家全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>152</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 250</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8350,false,1,this,'途家','4',5198984,'途家全场通用满500返250红包',500.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省40%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8347.htm?day=0')"><img src="http://img0.egou.com/hd/201509/01/18ccb9c6fa91c242296e240d602be9b5.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8347.htm?day=0')"><div class="xiaobian" id="xiaobian_8347"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8347.htm?day=0')" >
+			                        尚妆网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满300元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>44</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 120</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8347,false,1,this,'尚妆网','4',7017105,'尚妆网全场通用满300返120红包',300.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8331').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8331').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                                <span class="bq3">新用户<br>专享</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8331.htm?day=0')"><img src="http://img0.egou.com/hd/201509/10/7c161a2aeb5757787af88fbaf4e3f246.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8331.htm?day=0')"><div class="xiaobian" id="xiaobian_8331">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8331.htm?day=0')" >
+			                        时尚起义官网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满300元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>106</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 150</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8331,false,1,this,'时尚起义官网','4',7783388,'时尚起义官网全场通用满300返150红包',300.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8326').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8326').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省30%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8326.htm?day=0')"><img src="http://img0.egou.com/hd/201508/20/57e55b292aa92e6348dbd6d04a457410.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8326.htm?day=0')"><div class="xiaobian" id="xiaobian_8326">商家提供150减30的优惠劵哦！！相当于180-75呢！单个订单购买同一商品数量不超过8件</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8326.htm?day=0')" >
+			                        美丽湾全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满150元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>34</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 45</span>
+		                    	    <span class="hb_num"><em>红包 | 限量33</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8326,false,1,this,'美丽湾','4',7765711,'美丽湾全场通用满150返45红包',150.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8246').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8246').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省40%</span>
+                              
+                                <span class="bq3">新用户<br>专享</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8246.htm?day=0')"><img src="http://img0.egou.com/hd/201509/11/c57f9262305321dcd2e8f9bda2077253.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8246.htm?day=0')"><div class="xiaobian" id="xiaobian_8246">请及时在订单查询处查单，确保跟单后付款，否则后果自负，概不接受申诉；</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8246.htm?day=0')" >
+			                        丽芙家居全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>107</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 200</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8246,false,1,this,'丽芙家居','4',7057487,'丽芙家居全场通用满500返200红包',500.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8366.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/9fc1c2fdd102077c6682cf83544e2a5a.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8366.htm?day=0')"><div class="xiaobian" id="xiaobian_8366"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8366.htm?day=0')" >
+			                        泰瑞布朗男爵干白葡萄酒
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">169</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>162</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 135</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8366,false,1,this,'买买酒','4',7744444,'泰瑞布朗男爵干白葡萄酒',169.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8352.htm?day=0')"><img src="http://img0.egou.com/hd/201509/02/bfc5ee32883ab368960faab66970f1df.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8352.htm?day=0')"><div class="xiaobian" id="xiaobian_8352"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8352.htm?day=0')" >
+			                        途家全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满1000元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>43</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 500</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8352,false,1,this,'途家','4',5198984,'途家全场通用满1000返500红包',1000.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省40%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8346.htm?day=0')"><img src="http://img0.egou.com/hd/201509/01/74c843ecb6e4754e2673f5922cc87f25.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8346.htm?day=0')"><div class="xiaobian" id="xiaobian_8346"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8346.htm?day=0')" >
+			                        尚妆网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>59</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 200</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8346,false,1,this,'尚妆网','4',7017105,'尚妆网全场通用满500返200红包',500.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8341').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8341').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8341.htm?day=0')"><img src="http://img0.egou.com/hd/201508/08/00b0dd82f30c2093961bba86d3b7710f.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8341.htm?day=0')"><div class="xiaobian" id="xiaobian_8341">商家有部分商品不参与全场通用红包活动。不参与全场红包的商品会在商家商品详情页中标注</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8341.htm?day=0')" >
+			                        买买酒全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满1000元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>21</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 800</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8341,false,1,this,'买买酒','4',7744444,'买买酒全场通用满1000返800红包',1000.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8332').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8332').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                                <span class="bq3">新用户<br>专享</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8332.htm?day=0')"><img src="http://img0.egou.com/hd/201508/07/d77d500e9f4186380c0ddb7a33f595fe.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8332.htm?day=0')"><div class="xiaobian" id="xiaobian_8332">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8332.htm?day=0')" >
+			                        时尚起义官网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满200元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>53</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 100</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8332,false,1,this,'时尚起义官网','4',7783388,'时尚起义官网全场通用满200返100红包',200.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8330').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8330').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                                <span class="bq3">新用户<br>专享</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8330.htm?day=0')"><img src="http://img0.egou.com/hd/201509/10/e6d5de6aaee59d33e50a47c863aa0242.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8330.htm?day=0')"><div class="xiaobian" id="xiaobian_8330">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8330.htm?day=0')" >
+			                        时尚起义官网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>124</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 250</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8330,false,1,this,'时尚起义官网','4',7783388,'时尚起义官网全场通用满500返250红包',500.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8325').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8325').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省30%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8325.htm?day=0')"><img src="http://img0.egou.com/hd/201508/04/b65f7c3080a468582f9949d67a077bcc.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8325.htm?day=0')"><div class="xiaobian" id="xiaobian_8325">单个订单购买同一商品数量不超过8件。</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8325.htm?day=0')" >
+			                        美丽湾全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满200元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>39</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 60</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8325,false,1,this,'美丽湾','4',7765711,'美丽湾全场通用满200返60红包',200.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省76%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8318.htm?day=0')"><img src="http://img0.egou.com/hd/201507/29/a0b6e302fbb3940348bc01bcdb0dbaff.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8318.htm?day=0')"><div class="xiaobian" id="xiaobian_8318"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8318.htm?day=0')" >
+			                        OPI官网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满170元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>191</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 130</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8318,false,1,this,'OPI官网','4',7554915,'OPI官网全场通用满170返130红包',170.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8311').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8311').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省25%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8311.htm?day=0')"><img src="http://img0.egou.com/hd/201507/15/a4aaf463f7b1d774ae82c12f23248f99.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8311.htm?day=0')"><div class="xiaobian" id="xiaobian_8311">提交的订单号需为聚美优品的交易单号。</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8311.htm?day=0')" >
+			                        聚美优品全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满450元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>9</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 112</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8311,false,1,this,'聚美优品','4',973153,'聚美优品全场通用满450返112红包',450.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省25%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8271.htm?day=0')"><img src="http://img0.egou.com/hd/201509/02/8db13225b2b121bf7475554d5f38ba92.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8271.htm?day=0')"><div class="xiaobian" id="xiaobian_8271"></div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8271.htm?day=0')" >
+			                        天然柔软舒适莫代尔/圆领/长袖T恤
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">159</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>2</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 39</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8271,false,1,this,'玛萨玛索','4',709259,'天然柔软舒适莫代尔/圆领/长袖T恤',159.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8430').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8430').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8430.htm?day=0')"><img src="http://img0.egou.com/hd/201508/17/d11cb81f10ba14325ddca724be21871b.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8430.htm?day=0')"><div class="xiaobian" id="xiaobian_8430">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8430.htm?day=0')" >
+			                        中酒网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>112</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 100</span>
+		                    	    <span class="hb_num"><em>红包 | 限量20</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8430,false,1,this,'中酒网','4',6555983,'中酒网全场通用满500返100红包',500.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8457').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8457').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8457.htm?day=0')"><img src="http://img0.egou.com/hd/201509/25/d07c0cb28bc2c4a80f9f0a92ca6dcce2.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8457.htm?day=0')"><div class="xiaobian" id="xiaobian_8457">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额.</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8457.htm?day=0')" >
+			                        劲霸官方旗舰店全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满200元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>172</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 100</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8457,true,1,this,'劲霸官方旗舰店','4',7126392,'劲霸官方旗舰店全场通用满200返100红包',200.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8455').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8455').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8455.htm?day=0')"><img src="http://img0.egou.com/hd/201509/25/7a691813cd3d676c0b98786a9a6059bc.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8455.htm?day=0')"><div class="xiaobian" id="xiaobian_8455">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8455.htm?day=0')" >
+			                        劲霸官方旗舰店全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满700元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>117</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 350</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8455,true,1,this,'劲霸官方旗舰店','4',7126392,'劲霸官方旗舰店全场通用满700返350红包',700.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8454').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8454').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省50%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8454.htm?day=0')"><img src="http://img0.egou.com/hd/201509/25/ab8eea641bd709e91daef826f2b3d83c.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8454.htm?day=0')"><div class="xiaobian" id="xiaobian_8454">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额</div> </a>  
+		                    	
+	                    	    
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8454.htm?day=0')" >
+			                        劲霸官方旗舰店全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满900元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>62</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 450</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="javascript:void(0)" onclick="fetchHbao(8454,true,1,this,'劲霸官方旗舰店','4',7126392,'劲霸官方旗舰店全场通用满900返450红包',900.0,'index')">抢红包</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8429').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8429').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8429.htm?day=0')"><img src="http://img0.egou.com/hd/201508/17/67d7d3bc6b5d23128625eca0b9cd9a95.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8429.htm?day=0')"><div class="xiaobian" id="xiaobian_8429">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8429.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8429.htm?day=0')" >
+			                        中酒网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满1000元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>145</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 200</span>
+		                    	    <span class="hb_num"><em>红包 | 限量20</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8429.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8364.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/f7c9d401114a21b2399c052b7756688a.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8364.htm?day=0')"><div class="xiaobian" id="xiaobian_8364"></div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8364.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8364.htm?day=0')" >
+			                        卡米诺城堡桃红葡萄酒
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">128</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>288</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 102</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8364.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省40%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8348.htm?day=0')"><img src="http://img0.egou.com/hd/201509/01/64fb529b559834dcf677f3f7e1a4262b.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8348.htm?day=0')"><div class="xiaobian" id="xiaobian_8348"></div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8348.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8348.htm?day=0')" >
+			                        尚妆网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满200元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>103</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 80</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8348.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8340').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8340').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_01" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省80%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8340.htm?day=0')"><img src="http://img0.egou.com/hd/201508/08/6d2496a60393339cc1debab5a2b9492c.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8340.htm?day=0')"><div class="xiaobian" id="xiaobian_8340">商家有部分商品不参与全场通用红包活动。不参与全场红包的商品会在商家商品详情页中标注。</div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8340.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8340.htm?day=0')" >
+			                        买买酒全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满500元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>254</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 400</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8340.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8428').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8428').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8428.htm?day=0')"><img src="http://img0.egou.com/hd/201508/17/fca69b7f46e633abddbb339d2ec83ea9.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8428.htm?day=0')"><div class="xiaobian" id="xiaobian_8428">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8428.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8428.htm?day=0')" >
+			                        中酒网全场通用红包
+			                        	
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        	 	 <span class="word">订单满2000元</span>
+			                        	
+		                       
+		                       <span class="intert"><em>167</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 400</span>
+		                    	    <span class="hb_num"><em>红包 | 限量20</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8428.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8408').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8408').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8408.htm?day=0')"><img src="http://img0.egou.com/hd/201509/23/1b4d8205e8b23d163b5f823f72cae0a0.png"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8408.htm?day=0')"><div class="xiaobian" id="xiaobian_8408">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045。</div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8408.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8408.htm?day=0')" >
+			                        {满1000减100}上海—香港3晚4天自由行
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">1880</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>64</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 376</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8408.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	      onMouseOver="document.getElementById('xiaobian_8406').className='xiaobian xiaobian1';" 
+		            	      onMouseOut="document.getElementById('xiaobian_8406').className='xiaobian xiaobian2';"
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省20%</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8406.htm?day=0')"><img src="http://img0.egou.com/hd/201509/29/059e845433a5b7217967933038b494a7.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8406.htm?day=0')"><div class="xiaobian" id="xiaobian_8406">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8406.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8406.htm?day=0')" >
+			                        清迈4晚6日自由行
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">2799</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>147</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 559</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8406.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                 <!-- 展示PC端的红包 -->
+	        	
+		            	<li 
+		            	    
+		            	    id="li_02" 
+		            	    
+		            	    >
+		            	    
+		            	    <div class="biaoqian_bg">
+                              <span class="bq1">省70%</span>
+                              
+                                 <span class="bq2">超值</span>
+                              
+                                 <span class="bq4">抢手</span>
+                              
+                            </div>
+		            	    
+		                	<div class="pic">
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8305.htm?day=0')"><img src="http://img0.egou.com/hd/201507/23/4a71cd94022b55062b5d8cfc7aa17337.jpg"></a>
+		                    	<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8305.htm?day=0')"><div class="xiaobian" id="xiaobian_8305"></div> </a>  
+		                    	
+	                    	    
+		                        		<a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8305.htm?day=0')"><div class="qiang_bg"><span class="qiang1"></span></div></a>
+		                        	
+		                    </div>
+		                    <div class="title">
+			                    <a href="javascript:void(0)" onclick="bulidBusinessURL('title','/item_detail_8305.htm?day=0')" >
+			                        葆艾柔金装婴儿纸尿裤（NB）58片【0-3KG】
+			                    </a>
+		                    </div>
+		                    <div class="money_bg">
+		                    
+		                            
+			                        		 <span class="symbol">￥</span><span class="num">99</span><span class="num font26">.0</span>
+			                        	
+		                       
+		                       <span class="intert"><em>210</em>人感兴趣</span>
+		                    </div>
+		                    <div class="hb_money">
+		                    	<span class="word">返</span>
+		                    	    <span class="num"> 69</span>
+		                    	    <span class="hb_num"><em>红包 | 限量30</em>
+			                  	                         
+								                        	 	<em class="tishi"> 购买后返现金</em>
+								                        	
+		                    	    </span>
+		                    	    
+			                        		<span class="botton"><a href="/item_detail_8305.htm?day=0">抢别人的</a><em class="jt_icon"></em></span>
+			                        	
+		                    </div>
+		                </li>
+	                
+	                
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+            <div class="clear"></div>
+</div>
+<!-- 红包汇    -->
+<div class="hb_hui_bg">
+	<div class="main">
+		<div class="hb_i_name"><span>红包汇</span><em>精选商家 超级红包天天有</em><a href="/shop/all.htm" class="more" target="_blank">所有商家></a></div>
+        
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201411/06/61e2729715c6af026da2236913a10753.jpg"></div>
+	                <div class="info"><p class="font16">劲霸官方旗舰店</p>
+	                                 <p class="color_99">劲霸男装专注夹克34年，它用独特设计终结了夹克的单调</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7126392_all.htm','7126392')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7126392','http://s.click.taobao.com/t?e=m%3D2%26s%3D6U8vorJHGBscQipKwQzePDAVflQIoZepK7Vc7tFgwiFRAdhuF14FMRqG9H%2FNOfaUlovu%2FCElQOtpuXWPja6iRwY8KJQR2ouQSUI5WzAoPRfdJGnRMXfvAyIaAYxMmAcwIYULNg46oBA%3D','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8456.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/25/306ca822d5e8125f25926cd8fb8329d8.jpg">
+	                        	 
+		                            <div class="xiaobian">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                劲霸官方旗舰店全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">250</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8457.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/25/d07c0cb28bc2c4a80f9f0a92ca6dcce2.jpg">
+	                        	 
+		                            <div class="xiaobian">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额.</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                劲霸官方旗舰店全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8455.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/25/7a691813cd3d676c0b98786a9a6059bc.jpg">
+	                        	 
+		                            <div class="xiaobian">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                劲霸官方旗舰店全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满700元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">350</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8454.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/25/ab8eea641bd709e91daef826f2b3d83c.jpg">
+	                        	 
+		                            <div class="xiaobian">聚划算期间实付金额为扣除优惠券金额、运费以及商家返还的金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                劲霸官方旗舰店全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满900元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">450</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201508/24/89d89669ffb792e32e550d9aaba37cae.gif"></div>
+	                <div class="info"><p class="font16">途家</p>
+	                                 <p class="color_99">早知有途家 何必住酒店</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_5198984_all.htm','5198984')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','5198984','http://www.tujia.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8355.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/616c7cc424e09b99cb5c0dac039ce9ab.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                途家全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">150</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8353.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/23/50ae9138b27cd8ef7e3c6a7535443729.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                途家全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8350.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/21/c6f38fb40616fff80940e8f44d46ae1e.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                途家全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">250</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8352.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/bfc5ee32883ab368960faab66970f1df.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                途家全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满1000元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">500</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201409/01/9d97e3ea7b1e6429805421fe914ffe52.gif"></div>
+	                <div class="info"><p class="font16">尚妆网</p>
+	                                 <p class="color_99">化妆品先试后买B2C平台，100%正品保障！</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7017105_all.htm','7017105')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7017105','http://www.showjoy.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8348.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/01/64fb529b559834dcf677f3f7e1a4262b.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                尚妆网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">80</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8347.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/01/18ccb9c6fa91c242296e240d602be9b5.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                尚妆网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">120</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8346.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/01/74c843ecb6e4754e2673f5922cc87f25.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                尚妆网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">200</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8349.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/01/444ae9496b8f25894c0119d075c64648.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                尚妆网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">40</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201406/25/b505fcfc32debe1a8eb7d94ae2a9f10b.gif"></div>
+	                <div class="info"><p class="font16">同程网</p>
+	                                 <p class="color_99">中国领先的休闲旅游在线服务商</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_5790974_all.htm','5790974')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','5790974','http://www.ly.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8415.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/29/059e845433a5b7217967933038b494a7.jpg">
+	                        	 
+		                            <div class="xiaobian">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                {满1000减100}清迈4晚6日自由行
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">2699</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">539</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8408.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/23/1b4d8205e8b23d163b5f823f72cae0a0.png">
+	                        	 
+		                            <div class="xiaobian">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                {满1000减100}上海—香港3晚4天自由行
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">1880</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">376</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8419.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/29/07c135f52903315523518e8be1daa7db.jpg">
+	                        	 
+		                            <div class="xiaobian">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                {满1000减100}香港3晚4日自由行
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">1399</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">279</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8409.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/23/8fb20d9790764bda5e4f148d29ddbed0.png">
+	                        	 
+		                            <div class="xiaobian">此红包也可根据您选择的路线，按照实际支付金额比例配置红包，详情请加qq群320287045</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                {满1000减100}上海—普吉岛4晚6天自由行
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">2499</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">499</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201401/07/7f83c4b171d593045f211a0a5132ef7b.gif"></div>
+	                <div class="info"><p class="font16">中酒网</p>
+	                                 <p class="color_99">中酒网是中酒集团耗巨资打造O2O模式的酒水营销平台，采用“线下连锁+移动电商+开放平台+团购分销”四位一体的立体经营模式。中酒网主营中高档白酒、葡萄酒、进口洋酒、黄酒、保健酒等，是国内唯一的酒类全品类、全渠道、全天候供应商。</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_6555983_all.htm','6555983')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','6555983','http://www.zhongjiu.cn/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8429.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/17/67d7d3bc6b5d23128625eca0b9cd9a95.jpg">
+	                        	 
+		                            <div class="xiaobian">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                中酒网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满1000元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">200</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8428.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/17/fca69b7f46e633abddbb339d2ec83ea9.jpg">
+	                        	 
+		                            <div class="xiaobian">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                中酒网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满2000元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">400</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8374.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/23/c700f2de82ad0eb5df1e0a296847bbcd.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                43°茅台迎宾酒 500ml（6瓶装）
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">299</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">59</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8430.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/17/d11cb81f10ba14325ddca724be21871b.jpg">
+	                        	 
+		                            <div class="xiaobian">订单金额为不包含购买茅台飞天及52度五粮液水晶盒且不包含运费、礼金卡、优惠劵等的实付金额</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                中酒网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201507/31/eaec225dc72d8618bba3d3977d55618d.png"></div>
+	                <div class="info"><p class="font16">买买酒</p>
+	                                 <p class="color_99">汇聚世界名酒，打造酒庄与您的零距离！</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7744444_all.htm','7744444')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7744444','http://www.maim9.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8340.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/08/6d2496a60393339cc1debab5a2b9492c.jpg">
+	                        	 
+		                            <div class="xiaobian">商家有部分商品不参与全场通用红包活动。不参与全场红包的商品会在商家商品详情页中标注。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                买买酒全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">400</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8365.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/23/4c770b757c0d82e712b66f904485d304.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                露琪亚桃红起泡葡萄酒
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">368</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">294</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8364.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/23/f7c9d401114a21b2399c052b7756688a.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                卡米诺城堡桃红葡萄酒
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">128</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">102</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8339.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/08/05078a5277e459a4ef55420344a4f241.jpg">
+	                        	 
+		                            <div class="xiaobian">商家有部分商品不参与全场通用红包活动。不参与全场红包的商品会在商家商品详情页中标注</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                买买酒全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">80</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201508/06/8dcaf372857369371ad572be94874ec4.png"></div>
+	                <div class="info"><p class="font16">时尚起义官网</p>
+	                                 <p class="color_99">您的专业时尚顾问</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7783388_all.htm','7783388')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7783388','http://www.shishangqiyi.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8332.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/07/d77d500e9f4186380c0ddb7a33f595fe.jpg">
+	                        	 
+		                            <div class="xiaobian">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                时尚起义官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8333.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/07/14b6be802d9d85e23b9f2a327e5b91ef.jpg">
+	                        	 
+		                            <div class="xiaobian">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                时尚起义官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">50</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8331.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/10/7c161a2aeb5757787af88fbaf4e3f246.jpg">
+	                        	 
+		                            <div class="xiaobian">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                时尚起义官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">150</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8330.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/10/e6d5de6aaee59d33e50a47c863aa0242.jpg">
+	                        	 
+		                            <div class="xiaobian">超级红包新上线订单查询功能，请及时查单，确保跟单后再付款，否则后果自负，概不接受申诉</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                时尚起义官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">250</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201508/04/c2c39ae293c48deb3c1e982d68036200.png"></div>
+	                <div class="info"><p class="font16">美丽湾</p>
+	                                 <p class="color_99">100%正品 源头采购</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7765711_all.htm','7765711')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7765711','http://www.meiliwan.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8325.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/04/b65f7c3080a468582f9949d67a077bcc.jpg">
+	                        	 
+		                            <div class="xiaobian">单个订单购买同一商品数量不超过8件。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                美丽湾全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">60</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8329.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/06/06764e5e6dfd04afe14e3fdb1d02e997.jpg">
+	                        	 
+		                            <div class="xiaobian">单个订单购买同一商品数量不超过8件。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                美丽湾全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">30</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8327.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/07/91de267e86d930771d99d41118c862c2.jpg">
+	                        	 
+		                            <div class="xiaobian">单个订单购买同一商品数量不超过8件。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                美丽湾全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">150</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8328.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201508/20/d576bd533a402a6a8cbb5d79aa047183.jpg">
+	                        	 
+		                            <div class="xiaobian">单个订单购买同一商品数量不超过8件。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                美丽湾全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">90</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201506/25/22b3c81fb6b8754d6df186ef37e877f6.jpg"></div>
+	                <div class="info"><p class="font16">OPI官网</p>
+	                                 <p class="color_99">全球第一沙龙美甲品牌 指尖美学缔造者</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7554915_all.htm','7554915')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7554915','http://www.opi.cn','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8319.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/29/aa39393a736d43d3b23a73179cd2ac31.png">
+	                        	 
+		                            <div class="xiaobian">全场2件包邮</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                OPI官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满130元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8318.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/29/a0b6e302fbb3940348bc01bcdb0dbaff.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                OPI官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满170元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">130</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8317.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/29/97df2307e7151765a77726d6d8e4a241.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                OPI官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满210元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">165</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8316.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/29/cea2c176fa750e81644fd1acee43ade8.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                OPI官网全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">240</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201312/02/e1cdc24ed7bbc264638d159a121c1588.gif"></div>
+	                <div class="info"><p class="font16">聚美优品</p>
+	                                 <p class="color_99">最大美妆电商 支持官网验真</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_973153_all.htm','973153')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','973153','http://www.jumei.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8311.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/15/a4aaf463f7b1d774ae82c12f23248f99.jpg">
+	                        	 
+		                            <div class="xiaobian">提交的订单号需为聚美优品的交易单号。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                聚美优品全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满450元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">112</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8313.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201506/11/8c7f78ccd101480799cb912800f95083.jpg">
+	                        	 
+		                            <div class="xiaobian">提交的订单号需为聚美优品的交易单号。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                聚美优品全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">25</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8314.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/28/b84bdbe8e86b787d7a1a12f6ac765a93.png">
+	                        	 
+		                            <div class="xiaobian">提交的订单号需为聚美优品的交易单号。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                聚美优品全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">50</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8312.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201506/11/325279522a22e463f1499f1611e3648a.jpg">
+	                        	 
+		                            <div class="xiaobian">提交的订单号需为聚美优品的交易单号。</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                聚美优品全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满400元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">100</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201312/02/e012939b91cacee5d8bb7e2f823cfb16.gif"></div>
+	                <div class="info"><p class="font16">玛萨玛索</p>
+	                                 <p class="color_99">Masa Maso更懂男人</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_709259_all.htm','709259')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','709259','http://www.masamaso.com/;http://www.vivian.cn/;http://www.linkmasa.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8259.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/c33546893887ab1d8341c3350774682a.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                舒适弹力休闲系列白色/印花/薄便装
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">299</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">74</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8260.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/678c6fe427562441bedbea7724737cb3.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                浅绿/净色/休闲裤
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">259</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">64</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8266.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/9de43a497bc3404b205689182aaecb95.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                纯棉/深蓝/休闲衬衫
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">199</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">49</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8261.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/02/a96995938e760517d106c23347ed3a5b.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                经典商务风格浅灰/提花/毛背心
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">299</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">74</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201409/15/a30056cc282c981439fec961b7c08541.gif"></div>
+	                <div class="info"><p class="font16">丽芙家居</p>
+	                                 <p class="color_99">LifeVC丽芙家居是中国最大的线上家居品牌，也被称为“网络版宜家”，源自欧洲灵感，始终坚持品质和人本精神。很多人都会将它的产品，和欧洲健康、清新、简单的生活方式联系在一起。LifeVC丽芙家居销售的产品包括了家纺、家具、家居家饰、厨房用品、婴童等系列用品，涵盖家的每个角落。在中国，LifeVC丽芙家居已经累计服务了几百万名会员。</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7057487_all.htm','7057487')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7057487','http://www.lifevc.com/','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8245.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/11/f4b31f891f1f874deb7f46881797e449.jpg">
+	                        	 
+		                            <div class="xiaobian">请及时在订单查询处查单，确保跟单后付款，否则后果自负，概不接受申诉；</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                丽芙家居全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满300元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">120</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8243.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/11/4879ac1dbed65d1e4dd6649b8643a6ab.jpg">
+	                        	 
+		                            <div class="xiaobian">请及时在订单查询处查单，确保跟单后付款，否则后果自负，概不接受申诉；</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                丽芙家居全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满100元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">40</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8246.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/11/c57f9262305321dcd2e8f9bda2077253.jpg">
+	                        	 
+		                            <div class="xiaobian">请及时在订单查询处查单，确保跟单后付款，否则后果自负，概不接受申诉；</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                丽芙家居全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满500元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">200</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8244.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201509/11/282533af0a1ca5f9d5429892a11a4d41.jpg">
+	                        	 
+		                            <div class="xiaobian">请及时在订单查询处查单，确保跟单后再付款，否则无红包奖励</div>  
+		                         
+	                        </div>
+	                        <div class="title">
+	                                丽芙家居全场通用红包
+			                        	
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        	 	 <span class="symbol fontbold">订单满200元</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">80</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	        <div class="hb_list_bg">
+	        	<div class="hb_hui_left" onmouseover="showBusiInfo(this)" onmouseout="hideBusiInfo(this)">
+	            	<div class="logo"><img src="http://img0.egou.com/shop/201506/16/30f775495da2c144ab18f2bfb0048aac.jpg"></div>
+	                <div class="info"><p class="font16">合生元天猫店</p>
+	                                 <p class="color_99">全球200万妈妈推荐的高端洗护品牌</p>
+	                </div>
+	                <div class="filter_bg">
+	                	<div class="botton"><a href="javascript:void(0)" onclick="bulidBusinessURL('button','/shop/detail_7554244_all.htm','7554244')"><em></em>查看更多红包</a></div>
+	                    <div class="word"><a href="javascript:void(0)" onclick="goBuyLink('','7554244','http://baoai.tmall.com','', '','');" >直达商家></a></div>
+	                </div>
+	            </div>
+	            <div class="hb_hui_list">
+	                <ul>
+	                  
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8305.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/23/4a71cd94022b55062b5d8cfc7aa17337.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                葆艾柔金装婴儿纸尿裤（NB）58片【0-3KG】
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">99</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">69</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8306.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201507/17/03d514d8d69541ae3eb5a66dfb62712c.png">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                葆艾BM care柔婴儿纸尿裤小号S50片
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">99</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">69</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8304.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201506/30/f517240eec3830f6b034e38fa7d3c00b.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                葆艾（BM care） 葆艾婴儿舒缓护臀膏
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">78</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">50</em>红包</span>
+	                        </div>
+                        </li>
+                       
+	                    <li onmouseover="showHbaoDesn(this)"  onmouseout="hideHbaoDesn(this)"
+	                     
+	                    	
+                                class="last"
+                            
+	                    >
+	                        <a href="javascript:void(0)" onclick="bulidBusinessURL('pic','/item_detail_8302.htm')"></a>
+	                    	<div class="pic">
+	                        	<img src="http://img0.egou.com/hd/201506/29/2d821585a6a49c34011488db6f41fa8a.jpg">
+	                        	 
+	                        </div>
+	                        <div class="title">
+	                                葆艾（BM care）葆艾婴儿水嫩洗发沐浴二合一
+	                        </div>
+	                        <div class="money_bg">
+	                               
+			                        		 <span class="symbol">￥</span><span class="num">58</span><span class="num font16">.0</span>
+			                        	
+	                             <span class="f_num">返<em class="font24 englist">40</em>红包</span>
+	                        </div>
+                        </li>
+                       
+                       <!-- 不足四个,默认红包 -->
+                        
+	                </ul>
+	                <div class="clear"></div>
+	            </div>
+	        </div>
+       
+	</div>
+</div>
+<!-- 回到顶部  -->
+<div class="scroll_right" id="scroll" style="display:none">
+    <div class="scroll_kefu"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></div>
+    <div class="scroll_gianzhu" onMouseOver="$('#code').show()" onMouseOut="$('#code').hide()" >
+    	<a href="javascript:void(0)"></a>
+        <div class="code" id="code"></div>
+    </div>
+	<div class="scroll_bshare" onMouseOver="$('#bshare_bg').show();" onMouseOut="$('#bshare_bg').hide();" >
+    	<a href="javascript:void(0)" class="bshare" id="bshare_hover"></a>
+    	<div class="scroll_bshare_bg" id="bshare_bg">
+       	 <a href="javascript:doShare('cqq','超级红包每天二场，限时限量抢！今日超级大红包:<买买酒>800元红包等你抢','http://hongbao.egou.com/index.htm','')"  class="qq"></a>
+       	 <a href="javascript:doShare('qzone','超级红包每天二场，限时限量抢！今日超级大红包<买买酒>800元红包等你抢','http://hongbao.egou.com/index.htm','')" class="qzone"></a>
+       	 <a href="javascript:doShare('tsina','超级红包每天二场，限时限量抢！今日超级大红包<买买酒>800元红包等你抢','http://hongbao.egou.com/index.htm','')" class="weibo"></a>
+       	 <a href="javascript:doShare('tqq','超级红包每天二场，限时限量抢！今日超级大红包<买买酒>800元红包等你抢','http://hongbao.egou.com/index.htm','')" class="pyq"></a>
+         <span class="tran"></span>
+        </div>
+    </div>
+    <div class="scroll_hezuo"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=406761540&amp;site=qq&amp;menu=yes"></a></div>
+    <div class="scroll_top"></div>
+</div>
+
+<!-- 求红包弹层 -->
+<div class="layer_q_bg" id="applyForHongbao" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_q_hb">
+        <a href="javascript:void(0)" class="close" onclick="closePopLayer('applyForHongbao')"></a>
+        <div class="layer_q_name"><p class="font26">手机一响，红包就来！</p><p>我们将回收未被使用的红包，并重新释放，给更需要的你</p></div>
+        <div class="layer_q_nr">
+        	<ul>
+            	<li><input id="phone" type="text" class="text color_99" value="请输入手机号" onfocus="inputStyle(this)" maxlength="11" onkeyup="checkMobile()"><a href="#" class="yzm" onclick="sendIdentifyCode(this)" id="get_checkcode">获取验证码</a><span class="word" id="phone_error"></span></li>
+            	<li><input id="checkcode" type="text" class="text color_99" onfocus="inputStyle(this)" value="输入验证码" maxlength="10"><span class="word" id="checkcode_error">验证码有误</span></li>
+            	<li class="last"><a href="#" class="botton" id="apply_hongbao" onclick="applyfor()">求红包</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="layer_q_filter"></div>
+</div>
+
+<!-- 求红包成功 -->
+<div class="layer_q_bg" id="applyForHongbao_success" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_q_hb">
+        <a href="#" class="close" onclick="closePopLayer('applyForHongbao_success')"></a>
+        <div class="layer_q_name"><p class="font26"><em class="icon"></em>发送成功</p><p>我们将在有红包时，直接发送到您的 红包账户，并短信通知您</p></div>
+        <div class="layer_q_code"></div>
+    </div>
+	<div class="layer_q_filter"></div>
+</div>
+<!-- 抢红包弹层(自动跟单) -->
+<div class="layer_main" id="fetchHongbao_auto" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_name">温馨提示<a href="#" class="close" onclick="closePopLayer('fetchHongbao_auto');location.reload();"></a></div>
+    <div class="layer_nr">
+        <p class="font26 text_align"><span class="layer_icon1"></span><span class="hb_red">成功领取</span><span id="fetch_busiName">本来生活</span><span class="hb_red">红包！</span></p>
+        <p class="line_height24 text_align font14" id="hbao_effect_auto">红包有效期为4小时，请尽快下单！</p>
+        <div class="layer_botton margin_top30 padding_left45">
+           <a href="/myhongbao.htm" class="btn" onclick="closePopLayer('fetchHongbao_auto');location.reload();" target="_blank">查看我的红包</a>
+           <a href="#" class="btn1" id="goto_busi_auto" onclick="buy()" target="_blank">去商家下单<br><span class="font12">由此出跳转才有效哦</span></a>
+        </div>
+        <div class="line_height24 text_align margin_top20" id="sucess_showinfo"></div>
+    </div>
+</div>
+<!-- 抢红包弹层(手工跟单) -->
+<div class="layer_main bg" id="fetchHongbao_manual" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_name">温馨提示<a href="#" class="close" onclick="closePopLayer('fetchHongbao_manual');location.reload();"></a></div>
+    <div class="layer_nr">
+        <p class="font14 text_align"><span class="layer_icon2"></span>下单后请回易购提交订单号以确保红包被激活！</p>
+        <div class="layer_botton margin_top30 padding_left45"><a href="#" class="btn" id="goto_busi_manual" onclick="closePopLayer('fetchHongbao_manual');location.reload();" target="_blank">去商家下单</a><a href="javascript:void(0);" class="btn" id="submit_order" onclick="closePopLayer('fetchHongbao_manual');submitOrder();">提交订单</a></div>
+    </div>
+</div>
+
+<!-- 抢红包 失败 -->
+<div id="fetchHongbao_fail" class="layer_main" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_name">温馨提示<a class="close" href="javascript:void(0);" onclick="closePopLayer('fetchHongbao_fail');location.reload();"></a></div>
+    <div class="layer_nr">
+        <p class="font16 text_align"><span class="layer_icon2"></span>
+        	<span id="text_layer_tip"></span>
+        </p>
+        
+        <div class="layer_botton margin_top30">
+          <a href="javascript:void(0)" onclick="closePopLayer('fetchHongbao_fail');location.reload();" class="btn float_none">我知道了</a>
+        </div>
+    </div>
+</div>
+<!--  提交订单 -->
+<div class="layer_main bg1" id="submitOrder_div" style="display:none;position:absolute;z-index:101;">
+    <div class="layer_name">提交订单<a class="close" href="javascript:void(0);" onclick="closePopLayer('submitOrder_div');location.reload();"></a></div>
+    <ul class="layer_table">
+        <li><span class="name">红包名称：</span><span class="info" id="hbao_name"></span></li>
+        <li><span class="name">订单号：</span><span class="info">  <input id="order_no"   type="text" class="layer_text" ></span></li>
+        <li><span class="name">订单金额：</span><span class="info"><input id="order_money" type="text" class="layer_text" ></span></li>
+        <li><span class="name">下单日期：</span><span class="info"><input id="order_date"  type="text" class="layer_text" onfocus="HS_setDate(this)"></span></li>
+        <li><span class="name">备注：</span><span class="info"><textarea id="remark" maxlength="500" class="layer_textarea color_99" onfocus="switchInputStyle(this)">拆单或其它情况，请备注说明</textarea></span></li>
+    </ul>
+    <div class="layer_botton "><a href="javascript:void(0);" onclick="saveOrderInfo()" class="btn float_none">确 认</a></div>
+</div>
+
+
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/egoufooter/footer_all.css" type="text/css"/>
+<div class="footer_top">
+	<div class="footer_main">
+        <ul class="footer_about_list">
+            <li>
+                <em class="icon_1"></em>
+                中国最早的<br>购物返利网
+            </li>
+            <li>
+                <em class="icon_2"></em>
+                500多家电<br>商合作伙伴
+            </li>
+            <li>
+                <em class="icon_3"></em>
+                3万精选淘<br>宝店铺合作
+            </li>
+            <li>
+                <em class="icon_4"></em>
+                累计服务超<br>5000万用户
+            </li>
+            <li>
+                <em class="icon_5"></em>
+                全网超值低<br>价商品保障
+            </li>
+            <li>
+                <em class="icon_6"></em>
+                7X14小时<br>客服服务
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <div class="footer_server_list">
+        	<dl>
+            	<dt>购物指南</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/memberRegister.do" target="_blank">免费注册</a>
+               	 <a href="http://fanxian.egou.com/help/shang_yi.html" target="_blank">返利指导</a>
+               	 <a  href="http://fanxian.egou.com/help/nafanxian.html#fx22" target="_blank">提现指导</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>常用服务</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/myegoutraceorder.do" target="_blank">跟单查询</a>
+               	 <a href="http://fanxian.egou.com/help/" target="_blank">网站帮助</a>
+               	 <a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>商家服务</dt>
+                <dd>
+               	 <a href="http://zhaoshang.egou.com/temai/" target="_blank">商家入驻</a>
+               	 <a href="http://fanxian.egou.com/help/advertisement.html" target="_blank">广告合作</a>
+               	 <a href="http://fanxian.egou.com/help/links.html" target="_blank">友情链接</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>关于易购</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/help/aboutegou.html" target="_blank">了解易购</a>
+               	 <a href="http://fanxian.egou.com/help/zhaopin.html" target="_blank">加入易购</a>
+               	 <a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们</a>
+                </dd>
+            </dl>
+        	<dl class="two">
+            	<dt>关注我们</dt>
+                <dd>
+               	 <a href="http://weibo.com/wwwegoucom/home" target="_blank">新浪微博</a>
+               	 <a href="http://user.qzone.qq.com/1494014167/2" target="_blank">QQ空间</a>
+               	 <a href="javascript:alert('请扫描下方的二维码，谢谢！');">官方微信</a>
+                </dd>
+            </dl>
+            <dl class="last">
+            	<dd><p class="font16">400-0060-666</p><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
+            </dl>
+        </div>
+        <ul class="footer_app_list">
+        	<li>
+            	<div class="app_pic egou_app"></div>
+                <dl class="app_right">
+                	<dt>易购网</dt>
+                    <dd class="sub_title">易购返利 随时随地</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=egou&plat=1" class="btn_app btn_android" target="_blank"></a><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=892332027" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li>
+            	<div class="app_pic tmh_app"></div>
+                <dl class="app_right">
+                	<dt>特卖惠</dt>
+                    <dd class="sub_title">特价包邮 如影随行</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=egtm&plat=1" target="_blank" class="btn_app btn_android"></a><a href="https://itunes.apple.com/us/app/yi-gou-te-mai-hui/id903311028" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li class="last">
+            	<div class="app_pic egou_weixin"></div>
+                <dl class="app_right">
+                	<dt>超级红包官微</dt>
+                    <dd class="sub_name font12">易购网-超级红包</dd>
+                    <dd class="sub_title">扫描二维码,即刻关注<br>随时随地抢红包</dd>
+                </dl>
+            </li>
+    		<div class="clear"></div>
+        </ul>
+        <div class="footer_links">
+        	<span class="name">友情链接：</span>
+            <div class="links_list" id="demo" onmouseover="stopscroll();" onmouseout="doscroll()">
+            	<div id="demo1"><!-- <a href="#">苹果园论坛</a><a href="#">购物帮</a><a href="#">华为商城</a><a href="#">优购物</a><a href="#">818网上药店</a><a href="#">钻戒</a><a href="#">唯品会</a><a href="#">中国建材网</a><a href="#">儿歌童谣网</a><a href="#">网上购物</a><a href="#">中国供应商</a><a href="#">淘鞋网</a><a href="#">金属价格网</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a> -->
+            		<a target="_blank" href="http://www.itoumi.com/">投米网</a><a target="_blank" href="http://www.gouwubang.com/">购物帮</a><a target="_blank" href="http://www.vmall.com/">华为商城</a><a target="_blank" href="http://www.818.com/">818网上药店</a><a target="_blank" href="http://www.kela.cn/">珂兰钻石</a><a target="_blank" href="http://brand.vip.com/">唯品会</a><a target="_blank" href="http://www.taoxie.com">淘鞋网</a><a target="_blank" href="http://www.zol.com">中关村商城</a><a target="_blank" href="http://www.s.cn">名鞋库</a>
+            	</div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div class="footer_bottom_bg">
+	<div class="footer_main">
+    	<ul class="footer_nav">
+        	<a href="http://fanxian.egou.com/help/mediumreported.html" target="_blank">媒体报道<em></em></a>
+        	<a href="http://www.egou.com/map/" target="_blank">分类大全<em></em></a>
+        	<a href="http://fanxian.egou.com/shop_index.html" target="_blank">网商大全<em></em></a>
+        	<a href="http://fanxian.egou.com/help/sitemap.html" target="_blank">网站地图<em></em></a>
+        	<a href="http://www.egou.com/brand/" target="_blank">品牌大全</a>
+    		<div class="clear"></div>
+        </ul>
+    	<div class="clear"></div>
+        <ul class="footer_logos">
+        	<li><a href="https://search.szfw.org/cert/l/CX20130128002166002282" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_1.png"></a></li>
+        	<li><a href="http://about.58.com/fqz/index.html" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_2.png"></a></li>
+        	<li><a href="http://www.cnr.cn/gundong/201106/t20110620_508119107.shtml" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_3.png"></a></li>
+        	<li><a href="http://pub.alimama.com/" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_4.png"></a></li>
+        	<li><a href="http://www.so.com/s?ie=utf-8&src=360sou_home&q=site%3Awww.egou.com" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_5.png"></a></li>
+        </ul>
+        <div class="footer_word"><p class="englist_one">Copyright © 2004-2014 by www.egou.com all rights reserved</p><p>北京亿玛联盟传媒广告有限公司 旗下网站 京公网安备110105000795 京ICP备10005197号-5</p></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript">
+	var t=demo.scrollWidth
+	demo1.innerHTML+=demo1.innerHTML
+	function doMarquee()
+	{
+	demo.scrollLeft=demo.scrollLeft<demo.scrollWidth-demo.offsetWidth?demo.scrollLeft+1:t-demo.offsetWidth
+	}
+	function doscroll()
+	{
+	   sc=setInterval(doMarquee,30)
+	}
+	function stopscroll()
+	{
+	   clearInterval(sc)
+	}
+	doscroll()
+</script>
+<script src="http://static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+<script type="text/javascript">
+var _egtk = _egtk || {"site": 7};
+(function() {
+ var eg = document.createElement('script'); eg.type = 'text/javascript'; eg.async = true;
+ eg.src = 'http://static.egou.com/js/egoutracker.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(eg, s);
+})();
+</script>
+</body>
+</html>

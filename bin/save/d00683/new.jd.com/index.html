@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="JD+首发，首发，京东JD+首发，京东首发，智能硬件，智能首发，京东智能，智能，京东JD+，酷玩潮品，智能新品，新品上市，新品首发，JD+新品，京东智能新品，京东智能首发，智能新品首发，智能硬件首发，N多新奇，新奇潮品，智能新奇，ＪＤ＋新奇">
+	<meta name="description" content="京东JD+首发，N多新奇！这里汇聚新鲜好玩儿的智能硬件，这里让你发现炫酷时尚的智能爆品，这里让你第一时间体验未来生活的舒适便捷，这里更可享京东配送，现货速达的优质服务！这一切，都尽在“京东JD+首发“。">
+	<meta name="author" content="lqf">
+    <title>京东JD+首发  N多新奇</title>
+    <link href="http://static.360buyimg.com/nsng/jingzhi/1.0/imgs/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="/first/static/skin/resetStyle.css"/>
+    <link rel="stylesheet" href="/first/static/skin/commonStyle.css"/>
+    <link rel="stylesheet" href="/first/static/skin/first.css"/>
+    <script type="text/javascript" src="/first/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/first/static/js/juicer-min.js"></script>
+    <script type="text/javascript" src="/first/static/js/common.js"></script>
+	<script type="text/javascript" src="/first/static/js/first.js?v=1.0"></script>
+	
+	<link type="text/css" rel="stylesheet"  href="http://misc.360buyimg.com/jdf/1.0.0/unit/??ui-base/1.0.0/ui-base.css,shortcut/2.0.0/shortcut.css,global-header/1.0.0/global-header.css,myjd/2.0.0/myjd.css,nav/2.0.0/nav.css,shoppingcart/2.0.0/shoppingcart.css,global-footer/1.0.0/global-footer.css,service/1.0.0/service.css,basePatch/1.0.0/basePatch.css"/>
+	<link type="text/css" rel="stylesheet"  href="http://static.360buyimg.com/nsng/smart/2.0/skin/common.css"/>
+	<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body class="root61">
+    <!--header begin-->
+    <div id="shortcut-2014" tag="10">
+    <div class="w">
+        <ul class="fl">
+            <li class="return-jd"><a href="http://www.jd.com/">京东首页</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="fore1" id="ttbar-login">
+                <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore2">
+                <div class="dt">
+                    <a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore3 dorpdown" id="ttbar-myjd">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://home.jd.com/">我的京东</a>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore4">
+                <div class="dt">
+                    <a target="_blank" href="http://vip.jd.com/">京东会员</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore5">
+                <div class="dt">
+                    <a target="_blank" href="http://b.jd.com/">企业采购</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore6 dorpdown" id="ttbar-apps">
+                <div class="dt cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://app.jd.com/">手机京东</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore7 dorpdown" id="ttbar-atte">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>关注京东
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore8 dorpdown" id="ttbar-serv">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>客户服务
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore9 dorpdown" id="ttbar-navs">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>网站导航
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+    <div class="header-wrap">
+    <div class="w smart-header">
+        <div id="logo-2014" tag="1">
+            <a href="http://smart.jd.com/" class="logo">京东智能</a>
+        </div>
+        <div id="search-2014" tag="2">
+            <ul id="shelper" class="hide"></ul>
+            <div class="form">
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
+                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+            </div>
+        </div>
+        <div id="settleup-2014" tag="3">
+            <div class="cw-icon">
+                <i class="ci-left"></i>
+                <i class="ci-right">&gt;</i>
+                <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+            </div>
+        </div>
+        <div id="hotwords-2014"></div>
+        <div class="links">
+            <ul>
+                <li tag="4"><a target="_blank" href="http://smart.jd.com/">首页</a></li>
+                <li tag="5"><a target="_blank" href="http://jingzhi.jd.com/">社区</a></li>
+                <li tag="6"><a target="_blank" href="http://smarthome.jd.com/">微联</a></li>
+                <li tag="7"><a target="_blank" href="http://try.smart.jd.com/">试用</a></li>
+                <li tag="8"><a target="_blank" href="http://sale.jd.com/act/hXAiw4m1WF.html">众筹</a></li>
+                <li tag="9" class="curr"><a href="http://new.jd.com/">首发</a></li>
+            </ul>
+        </div>
+
+        <span class="clr"></span>
+    </div>
+</div>
+    <!--header end-->
+    
+    <!--focus begin-->
+	<div class="fir_i_focusMain">
+		<div class="focusImg">
+            <ul class="focusImgList">
+                                    <li><a href="http://new.jd.com/p/100000050/" target="_blank"><img src="http://img30.360buyimg.com/smart/jfs/t2224/232/374761703/125371/8b355e12/5603500dN8386dc54.jpg" alt=""></a></li>
+                                    <li><a href="http://new.jd.com/p/100000022/" target="_blank"><img src="http://img30.360buyimg.com/smart/jfs/t2431/224/332495009/427693/ce932641/56020695N96e237bc.jpg" alt=""></a></li>
+                                    <li><a href="http://jingzhi.jd.com/open/bsite/topic/26048.html" target="_blank"><img src="http://img30.360buyimg.com/smart/jfs/t1837/51/359977736/1031635/f2a0b701/560375d7N157e68ad.jpg" alt=""></a></li>
+                                    <li><a href="http://sale.jd.com/act/XvOL5o4bRZCUlS.html" target="_blank"><img src="http://img30.360buyimg.com/smart/jfs/t2380/151/332560123/178191/67db7776/5600b03cNf585b8a5.jpg" alt=""></a></li>
+                                    <li><a href="http://item.jd.com/1846667.html" target="_blank"><img src="http://img30.360buyimg.com/smart/jfs/t2320/83/186540935/248289/a6a5e581/55f62b94N08489b1b.jpg" alt=""></a></li>
+                            </ul>     
+        </div>
+        <p class="btn_PaN btn_prev"><span class="bg"></span><i></i></p>
+        <p class="btn_PaN btn_next"><span class="bg"></span><i></i></p>
+        <p class="focusTab"><!--<span class="on">1</span><span>2</span><span>3</span><span>4</span>--></p>
+	</div>
+    <!--focus end-->
+    <!--container begin-->
+    <div class="jds_wrap">
+        <!--首发新品 begin-->
+        <div class="fir_i_pm01">
+            <h2 class="fir_i_pmTit01"><span class="tit">首发新品</span></h2>
+            <div class="fir_i_newProduct_box">
+                <ul class="fir_i_newProduct_list">
+                	                	 <li class="item">
+                	 	                	 	<span class="label">爆款</span>
+                	 	                        <div class="p_img">
+                            <a href="http://item.jd.com/1868150.html" target="_blank">
+                                <img src="http://img14.360buyimg.com/smart/jfs/t1978/65/384161313/30700/19c49b2e/5604bba8N45ef82b7.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="http://item.jd.com/1868150.html" target="_blank">
+                            <h4 class="p_name">九阳 智能电饭煲</h4>
+                            <p class="p_txt">APP智能操控、电饭煲联网随时随地随心操控</p>
+                        </a>
+                        <div class="p_info">
+                            <span class="price" data-sku="1868150">
+                                首发价：
+                                <em class="num"></em>
+                            </span>
+                            <a class="btn_buy" href="javascript:void(0);" onclick="go_item(1868150)" target="_blank">抢鲜购</a>
+                        </div>
+                    </li>
+                	                	 <li class="item">
+                	 	                	 	<span class="label">热卖</span>
+                	 	                        <div class="p_img">
+                            <a href="http://item.jd.com/1807976.html" target="_blank">
+                                <img src="http://img13.360buyimg.com/smart/jfs/t1792/164/1705364269/10816/ae6c21ee/5604bb94N3dab4ed4.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="http://item.jd.com/1807976.html" target="_blank">
+                            <h4 class="p_name">优酷路由宝</h4>
+                            <p class="p_txt">能赚钱的路由器</p>
+                        </a>
+                        <div class="p_info">
+                            <span class="price" data-sku="1807976">
+                                首发价：
+                                <em class="num"></em>
+                            </span>
+                            <a class="btn_buy" href="javascript:void(0);" onclick="go_item(1807976)" target="_blank">抢鲜购</a>
+                        </div>
+                    </li>
+                	                	 <li class="item">
+                	 	                        <div class="p_img">
+                            <a href="http://item.jd.com/1844686.html" target="_blank">
+                                <img src="http://img13.360buyimg.com/smart/jfs/t2380/89/385181116/8544/5bb5f733/5604bb59Ne33d204b.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="http://item.jd.com/1844686.html" target="_blank">
+                            <h4 class="p_name">海尔 冰箱盒子2</h4>
+                            <p class="p_txt">首款智能冰箱盒子 无需耗材</p>
+                        </a>
+                        <div class="p_info">
+                            <span class="price" data-sku="1844686">
+                                首发价：
+                                <em class="num"></em>
+                            </span>
+                            <a class="btn_buy" href="javascript:void(0);" onclick="go_item(1844686)" target="_blank">抢鲜购</a>
+                        </div>
+                    </li>
+                	                </ul>
+            </div>
+        </div>
+        <!--首发新品 end-->
+        <!--首发热卖 begin-->
+        <div class="fir_i_pm01">
+            <h2 class="fir_i_pmTit01"><span class="tit">首发热卖</span></h2>
+            <ul class="fir_i_hotProduct_list">
+            	            	<li class="item">
+                                	 	<span class="label">爆款</span>
+            	 	                    <div class="p_img">
+                        <a href="http://item.jd.com/1756703.html" target="_blank">
+                            <img src="http://img20.360buyimg.com/smart/jfs/t2488/34/372266890/12898/5beff7c/5603b426N93c0359d.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1756703.html" target="_blank">
+                        <h4 class="p_name">极米Z4X超级无屏电视</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1756703">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                	 	<span class="label">新奇</span>
+            	 	                    <div class="p_img">
+                        <a href="http://item.jd.com/1824752.html" target="_blank">
+                            <img src="http://img10.360buyimg.com/smart/jfs/t2482/46/352425172/60106/bbb84546/5603b57bN87ae8422.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1824752.html" target="_blank">
+                        <h4 class="p_name">握奇 地铁公交手环 </h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1824752">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                        <div class="p_img">
+                        <a href="http://item.jd.com/1625851.html" target="_blank">
+                            <img src="http://img10.360buyimg.com/smart/jfs/t1687/320/1032455759/11204/ab5d6619/55dda8e6N6152fc5a.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1625851.html" target="_blank">
+                        <h4 class="p_name">极路客智能行车记录仪</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1625851">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                        <div class="p_img">
+                        <a href="http://item.jd.com/1773554.html" target="_blank">
+                            <img src="http://img10.360buyimg.com/smart/jfs/t1978/345/107448819/48675/de7cc01c/55ef9f54N6741d4cd.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1773554.html" target="_blank">
+                        <h4 class="p_name">曼塔智能 朱雀 航拍无人机</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1773554">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                        <div class="p_img">
+                        <a href="http://item.jd.com/1670595.html" target="_blank">
+                            <img src="http://img12.360buyimg.com/smart/jfs/t1741/158/1522180400/31144/22d24475/55efa27aNa90fc0b7.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1670595.html" target="_blank">
+                        <h4 class="p_name">捷波朗 Coach蓝牙运动耳机</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1670595">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                        <div class="p_img">
+                        <a href="http://item.jd.com/1674919.html" target="_blank">
+                            <img src="http://img11.360buyimg.com/smart/jfs/t1732/61/1481259462/37409/3486e59b/55efa17eN40d58bd0.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1674919.html" target="_blank">
+                        <h4 class="p_name">Jawbone UP3智能手环</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1674919">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                	 	<span class="label">JD+</span>
+            	 	                    <div class="p_img">
+                        <a href="http://item.jd.com/1756935.html" target="_blank">
+                            <img src="http://img12.360buyimg.com/smart/jfs/t2323/146/112403286/18788/ab757fc4/55ef9ffdN0e0068cd.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1756935.html" target="_blank">
+                        <h4 class="p_name">DingDong智能音箱</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1756935">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            	<li class="item">
+                                        <div class="p_img">
+                        <a href="http://item.jd.com/1666539.html" target="_blank">
+                            <img src="http://img12.360buyimg.com/smart/jfs/t1300/208/666556944/25607/8b778091/55deb5c3Nc20b4bc1.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="http://item.jd.com/1666539.html" target="_blank">
+                        <h4 class="p_name">流云 可充电的移动智能存储</h4>
+                    </a>
+                    <div class="p_info">
+                        <span class="price" data-sku="1666539">
+                        	<em class="num"></em>
+                        </span>
+                    </div>
+                </li>
+            	            </ul>
+        </div>
+        <!--首发热卖 end-->
+        <!--首发预告 begin-->
+        <div class="fir_i_pm01">
+            <h2 class="fir_i_pmTit01"><span class="tit">首发预告</span></h2>
+            <div class="fir_i_trailer_box">
+                <ul class="img_list">
+                	<!-- 填充首发预告 -->
+                </ul>
+                <ul class="tab_list clearfix">
+                	<!-- 填充首发预告 -->
+                </ul>
+            </div>
+        </div>
+        <!--首发预告 end-->
+        <!--经典爆款 begin-->
+        <div class="fir_i_pm01">
+            <h2 class="fir_i_pmTit01"><span class="tit">经典爆款</span></h2>
+            <div class="fir_i_starProduct_box">
+                <ul class="fir_i_starProduct_list">
+                    <!-- 填充经典爆款 -->
+                </ul>
+            </div>
+        </div>
+        <!--经典爆款 end-->
+        <!--其他服务 begin-->
+        <div class="jds_service_main">
+            <ul class="jds_service_list">
+                <li class="interfirst">
+                    <p class="img"><i class="icon"></i></p>
+                    <h4 class="tit">新品速递</h4>
+                </li>
+                <li class="newp">
+                    <p class="img"><i class="icon"></i></p>
+                    <h4 class="tit">酷玩潮品</h4>
+                </li>
+                <li class="jdps">
+                    <p class="img"><i class="icon"></i></p>
+                    <h4 class="tit">京东配送</h4>
+                </li>
+                <li class="jdservice">
+                    <p class="img"><i class="icon"></i></p>
+                    <h4 class="tit">京东售后</h4>
+                </li>
+            </ul>
+        </div>
+        <!--其他服务 end-->
+    </div>
+    <!--container end-->
+	
+    <!--footer begin-->
+    <div style="width:100%;background-color:#333;font-family: 'Microsoft Yahei';">
+<div style="width:1200px;margin:0 auto;color:#999;font-size:14px;padding-top:20px;">京东JD+首发为智能硬件在京东的首次现货销售营销平台，您可在本平台找到正在首发和以往在本平台进行过首发活动的产品。</div>
+</div>
+<div id="footer" tag="70">
+    <div class="w">
+        <div class="footer-group">
+            <h3><a href="http://smart.jd.com/">京东智能</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#1">关于京东智能</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#2">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://jingzhi.jd.com/">智能社区</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://try.smart.jd.com/">JD<sup>+</sup>试用</a></li>
+                <li><a target="_blank" href="http://jingzhi.jd.com/open/bsite/square">小站广场</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://smarthome.jd.com/">京东微联</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smartcloud.jd.com/app">微联APP</a></li>
+                <li><a target="_blank" href="http://devsmart.jd.com/dev/index">开发者中心</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://new.jd.com/">JD<sup>+</sup>首发</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#1">关于JD<sup>+</sup>首发</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#2">商家报名</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2004-2015 京东JD.com 版权所有
+        </div>
+    </div>
+</div>    <!--footer end-->
+    <!--返回顶部侧边导航 begin-->
+    <div class="side_fix_box">
+        <a class="back" href="javacsript:;"><i></i></a>
+        <a class="ewm" href="javascript:;">
+            <i></i>
+            <div class="show_ewm">
+                <p class="tit">关注京东智能</p>
+                <img src="http://static.360buyimg.com/nsng/smart/imgs/ewmImg.png" alt="" />
+            </div>
+        </a>
+    </div>
+    <!--返回顶部侧边导航 end-->
+<script>
+// 搜索框内容
+seajs.use(['http://misc.360buyimg.com/jdf/1.0.0/unit/globalInit/2.0.0/globalInit.js'],function(globalInit){
+    globalInit();
+    (function(){
+        var A="";
+        var B=["智能热水壶"];
+        B=pageConfig.FN_GetRandomData(B);
+        $("#hotwords-2014").html(A);
+        $("#key").val(B).css("color","#ccc").bind("focus",function(){if (this.value==B){this.value="";this.style.color="#333"}}).bind("blur",function(){if (!this.value){this.value=B;this.style.color="#999"}});
+    })();
+});
+</script>
+</body>
+</html>

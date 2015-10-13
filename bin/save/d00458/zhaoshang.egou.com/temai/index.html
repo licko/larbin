@@ -1,0 +1,552 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>卖家中心</title>
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/egou_fuzhu/tmh_sell/tmh_sellv2.0.css?1" type="text/css"/>
+
+<!doctype html>
+<html>
+<head>
+
+<script type="text/javascript">
+window._BaseUrl = 'http://zhaoshang.egou.com/temai/';
+window._UcUrl = 'http://fanxian.egou.com';
+window._BaseMUrl = 'http://zhaoshang.egou.com/temai/m/';
+window._phoneReg ="/^0?1[3|4|5|7|8][0-9]\d{8}$/";
+window._emailReg ="/^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/";
+</script>
+
+<meta charset="utf-8">
+<title>卖家中心</title>
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/egou_fuzhu/tmh_sell/tmh_sellv2.0.css?v=20150129" type="text/css"/>
+<script type="text/javascript" src="http://static.egou.com/f=js/jquery.js"></SCRIPT>
+<script type="text/javascript" src="js/popup.js?v=20150129"></SCRIPT>
+<script type="text/javascript" src="/temai/js/jquery.cookie.js"></SCRIPT>
+<script type="text/javascript">
+//弹出隐藏层
+function openlogin(){
+	$(document).keydown(function(event){ 
+		if(event.keyCode==13){ 
+			login();
+		}
+		});
+	egou.popup.open("#login",0);
+};
+//关闭弹出层
+function closelogin()
+{    
+	 $("#username").attr("value","");
+     $("#loginpassword").attr("value","");
+	$("#errmsg").html("");
+	egou.popup.close("#login",true); 
+};
+//verify
+function openverify(){
+	$("#login").html($("#verify").html());
+};
+function closeverify(){
+	egou.popup.close("#verify",true); 
+};
+//提示找客服更换认证手机号
+function openActivePhone(){
+	egou.popup.open("#update_active_phone",0);
+};
+function closeActivePhone(){
+	egou.popup.close("#update_active_phone",true); 
+};
+function logout(callback){
+	jQuery.getScript(_UcUrl+"/ajaxLogout.do?reqType=logout&_t="+new Date(), function(){
+		if(1 == UserLogoutResult.backcode){
+			/* $.cookie("show_name","",{expires:0,path:".egou.com"}); */
+			window.location.href="index.htm";
+		} else {
+			alert("退出失败，请稍后重试！");
+		}
+	});
+}
+
+function loginback(ret){
+	//loginback({"source":"http://www.egou.com","code":"success"})
+	if(ret.code=="success"){
+		window.location="index.htm";
+
+		}else{
+			 
+			 $("#errmsg").html("<div class=\"error margin_top5 padding_left60\"><em></em>"+ret.msg+"</div>");	
+			}
+}
+function login(){
+	var username  = $("#username").val();
+	var password =  $("#loginpassword").val();
+	if(username== null||username=="" ){
+		$("#errmsg").html("<div class=\"error margin_top5 padding_left60\"><em></em>请输入账户名！</div>");
+		return ;
+	}
+	
+	if(password== null||password=="" ){
+		$("#errmsg").html("<div class=\"error margin_top5 padding_left60\"><em></em>请输入密码！</div>");
+		return ;
+	}
+	
+	$("#errmsg").html("<div class=\"error margin_top5 padding_left60\">正在登录中，请稍后...</div>");
+	
+	/* $.cookie("show_name",username,{expires:30,path:".egou.com"}); */
+	var params = [];
+	params.push("username=" + encodeURIComponent(username));
+	params.push("password=" + encodeURIComponent(password));
+	params.push("callback=loginback");
+	params.push("charset=UTF-8");
+	params.push("t="+Math.random());
+	jQuery.getScript(_UcUrl+"/ajaxBusinessLogin.do?"+params.join('&'));
+	
+}
+function refreshCode(){
+	var img = document.getElementById("img");
+	if(img){
+		var nowDate = new Date();
+		img.src = _UcUrl+"/validataImage.do?d="+nowDate.getTime();
+	}
+	}
+
+</script>
+
+</head>
+
+<body>
+
+<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="login"  >
+<div class="layer_main_bg">
+	<div class="layer_main">
+    	<div class="layer_name">特卖惠卖家登录<a href="javascript:closelogin();" class="layer_close"></a></div>
+    	<div class="layer_info">
+        	<div class="div_list">
+            	<span class="name">账户名：</span>
+				<span class="input_right"><input name="username" id="username" type="text" class="login_text1 color_99" placeholder="用户名/邮箱/手机号">
+<!-- 				<div class="error margin_top5"><em></em>该链接有误重新输入！</div> -->
+				</span>
+            </div>
+        	<div class="div_list">
+            	<span class="name">密码：</span>
+				<span class="input_right"><input name="password" id="loginpassword" type="password" class="login_text1 color_99" placeholder="6-20位字符，可用字母、数字组合">
+<!-- 				<div class="true margin_top5"><em></em>符合要求！</div> -->
+				</span>
+            </div>
+        	<div class=" margin_bottom10">
+<!--             	<span class="name">验证码：</span> -->
+<!-- 				<span class="input_right"><input name="code" id="code" type="text" class="login_text1 float_left width_104 color_99" placeholder="请填写验证码"> -->
+
+<!--                 <div class="clear"></div> -->
+                <div id="errmsg" ></div>
+            </div>
+        	<div class="div_list padding_left60"><a href="javascript:login();" class="botton width_278">登 录</a></div>
+            <p class="padding_left60"><a href="/temai/findpassword.htm">忘记密码>>&nbsp;&nbsp;<a href="/temai/regist.htm">新商家注册>></a></p>
+        </div>
+    </div>
+</div>
+</div>
+<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="verify">
+<div class="layer_main_bg">
+	<div class="layer_main">
+    	<div class="layer_name">安全提醒<a href="javascript:closeverify();" class="layer_close"></a></div>
+    	<div class="layer_word">
+        	<p class="font14 fontbold"><em class="layer_icon"></em>您还没有验证手机号！无法 </p>
+        	<p class="font14 fontbold"><em></em>  进行此操作，请验证后再试！</p>
+           	<p class="padding_top25 padding_left25"> <a href="active_phone.htm" class="botton width_140">马上去验证</a></p>
+        </div>
+    </div>
+</div>
+</div>
+<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="update_active_phone">
+<div class="layer_main_bg">
+	<div class="layer_main">
+    		<div class="layer_name">提示<a href="javascript:closeActivePhone();" class="layer_close"></a></div>
+    	<div class="layer_info text_align">
+        	<p class="font14">修改绑定手机，请点击QQ联系客服人员解决！ </p>
+        		<br>
+        	<p class="font14">QQ：<script charset="utf-8" type="text/javascript" 
+        	src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA5ODAwNV8yNDQzOTNfODAwMDk4MDA1Xw"></script></p>
+           	<p class="padding_top25 padding_left25"> </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+
+<div class="sell_top_bg">
+	<div class="sell_top">
+    	<div class="logo"><a href="http://www.egou.com"><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/sell_logo.png"></a><a href="index.htm"><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/sell.png"></a></div>
+        <div class="top_right">
+        
+        	<!-- 登录状态 -->
+        	<div class="top_login"><span class="color_orange">亲，
+        	<a href="javascript:openlogin();">请登录</a>
+        	</span><span class="padding_left30"></span>
+        	<a href="regist.htm" class="color_66">我要注册</a></div>
+        	
+       
+            <div class="sell_nav">
+            	<ul>
+                	<li class="last" onmouseover="document.getElementById('last_hover').className='last_hover';document.getElementById('small_nav').style.display='block';" onmouseout="document.getElementById('last_hover').className='';document.getElementById('small_nav').style.display='none';">
+                    	<a href="javascript:void(0)" id="last_hover"  >报名指南<em></em></a>
+                    	<div class="small_nav" id="small_nav">
+                        	<p><a href="huodong.jsp">活动要求</a></p>
+                        	<p><a href="hezuo.jsp" >合作说明</a></p>
+                        	<p><a href="shenhe.jsp" >审核说明</a></p>
+                        	<p><a href="xieyi.jsp" >协议相关</a></p>
+                        	<p><a href="merchants.jsp">招商公告</a></p>
+                        </div>
+                    </li>
+                	<li><a href="/temai/myAccount.htm" >我的账户</a></li>
+                	<li><a href="/temai/auctionItemsList.htm" >钻展竞拍</a></li>
+                	<li><a href="/temai/itemList.htm" >宝贝管理</a></li>     
+                	<li><a href="/temai/index.htm" class="delect">活动报名</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(e) {
+var showMsg=$(show_msg).val();
+if('1'==showMsg){
+opentishimsg();
+}
+});
+</script>
+</head>
+
+<body>
+<input type="hidden" id="show_msg" value="" />
+<!--  头部  -->
+
+<!-- 手机验证 -->
+	<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="shouji">
+	    <div class="layer_main_bg">
+			<div class="layer_main">
+		    	<div class="layer_name">安全提醒<a href="javascript:void(0)" class="layer_close" onclick="closeshouji()"></a></div>
+		    	<div class="layer_word">
+		        	<p class="font14 fontbold"><em class="layer_icon"></em>您还没有验证手机号！ </p>
+					<p class="padding_left25">验证手机号有以下好处！</p>
+					<p class="padding_left25">1、可以直接使用手机号登录</p>
+					<p class="padding_left25">2、账户更加安全</p>
+		           	<p class="padding_top25 padding_left25"> <a href="javascript:void(0)" class="botton width_140" id="shoujiyanzheng">马上去验证</a></p>
+		        </div>
+		    </div>
+		</div>
+	</div>
+<!-- 商家验证 -->
+	<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="shangjia">
+	    <div class="layer_main_bg">
+			<div class="layer_main">
+		    	<div class="layer_name">提示<a href="#" class="layer_close" onclick="closesshangjia()"></a></div>
+		    	<div class="layer_word">
+		        	<p class="font14 fontbold"><em class="layer_icon"></em>您还没有进行商家验证！ </p>
+		        	<p class="font14 fontbold">请完成商家认证后继续完成活动报名。 </p>
+				
+		           	<p class="padding_top25 padding_left25"> <a href="javascript:void(0)" class="botton width_140" id="shangjiayanzheng">马上去认证商家</a></p>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+<!--  banner  -->
+<div class="index_banner" style="background:url(http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/index_banner.jpg) no-repeat center top;">
+	<div class="index_banner_main">
+    	<div class="new_list">
+        	<div class="new_name"><span class="font18">最新公告</span><!-- <a href="#" class="color_99 padding_left10">更多></a> --></div>
+        	<ul>
+        		<li>▪ <a href="gwbkw.jsp">[特卖惠]购物帮坑位推广公告</a><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/new.jpg" style="padding-left:10px;"></li>
+        		<li>▪ <a href="auctionNotic.htm?id=10">[特卖惠]隆重推出 竞价钻石展位</a></li>
+            	<li>▪ <a href="xieyi.jsp" target="_blank">[特卖惠]商家保证金协议书</a></li>
+            	<li>▪ <a href="xieyi1.jsp" target="_blank">[特卖惠]报名服务协议</a></li>
+            	<li>▪ <a href="xieyi2.jsp" class="color_orange" target="_blank">[特卖惠]商家违规/违约处罚条例</a></li>
+            	<!-- <li>▪ <a href="yunying.jsp" target="_blank">[特卖惠]上线商品运营说明</a></li> -->
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--  main -->
+<div class="index_main">
+	<div class="index_lc"><span><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/i_lc.jpg"></span><a href="shenhe.jsp" class="color_orange" target="_blank">详细流程》</a></div>
+    <div class="index_list">
+        <ul>
+           
+           <!--  <li>
+                <a href="applyNotice.htm?id=9.9">
+                    <span class="pic"><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/9.9.png"></span>
+                    <span class="title">9块9包邮</span>
+                    <span class="desc">不接受非天猫/皇冠店铺美妆美食、配饰墙贴、线团和普通茶叶（除花草茶之外）等商品报名。市值在25元以上，信誉1钻以上。</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('9.9')"></a></div>
+            </li>
+            <li>
+                <a href="applyNotice.htm?id=29.9">
+                    <span class="pic"><img src="http://egouimg1.qutu.com/egou_fuzhu/tmh_tell/imagesv1.0/9.9.png"></span>
+                    <span class="title">29块9包邮</span>
+                    <span class="desc">不接受非天猫/皇冠店铺美妆美食、配饰墙贴、线团和普通茶叶（除花草茶之外）等商品报名。市值在25元以上，信誉1钻以上。</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('29.9')"></a></div>
+            </li> -->
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('18')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201509/18/f854757e6ed9f5f20f6672450018bbf7.jpg"></span>
+                    <span class="title">双11购物狂欢节</span>
+                    <span class="desc">2015年双11购物狂欢节，分为A、B、C、D四个套餐，招商将采用资格预售的方法，先售卖商品入场券。获得入场券......</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('18')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('10')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201506/30/7f9f6cbfba09a97384efcf74f06acaed.png"></span>
+                    <span class="title">付费推广</span>
+                    <span class="desc">针对全品类商品的钻石展位。要求高性价比商品，有较好店铺信誉的卖家，提供绝佳展示机会。</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('10')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('8')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201506/30/20272cc5e8c1322d2d0e45840fda0e47.png"></span>
+                    <span class="title">坑位推广</span>
+                    <span class="desc">针对全品类商品的付费推广。要求高性价比商品，店铺信誉1钻以上，无较差评论</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('8')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('14')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201508/03/a458f6edd30ca5756ac5a786ffe5ea48.jpg"></span>
+                    <span class="title">购物帮坑位推广缴费入口</span>
+                    <span class="desc">购物帮推广平台(gouwubang.com)坑位推广专用缴费入口，每期1200元坑位费，每期商品最少推广3天。......</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('14')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('1')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201501/28/fd15095fc7d8182895cb2d78745e5d78.jpg"></span>
+                    <span class="title">9.9包邮</span>
+                    <span class="desc">活动价格9.9元以下并包邮，商品价值25元以上，店铺信誉1钻以上、需邮样、给力商品优先排期</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('1')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('2')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201503/23/ac70466a855f9ee4b9b32673cfd3e345.jpg"></span>
+                    <span class="title">29.9秒杀</span>
+                    <span class="desc">活动价格10-29.9元并包邮，商品价值45元以上，店铺信誉2钻以上，20条以上真实好评、无较差评论、需邮样</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('2')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('4')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201502/03/07530c1883107f098d69119329c0f71c.jpg"></span>
+                    <span class="title">潮流女人专场</span>
+                    <span class="desc">针对女装类商品的独家折扣活动。要求商品市场价值在25元以上，店铺信誉2钻以上、20条真实好评，无较差评论</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('4')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('5')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201502/03/eb54b5538111dd0bd071fe9af326c13b.jpg"></span>
+                    <span class="title">精品男人专场</span>
+                    <span class="desc">针对男装类商品的独家折扣活动。要求商品市场价值在25元以上，店铺信誉2钻以上、20条真实好评，无较差评论</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('5')"></a></div>
+            </li>
+            
+               <li>
+                <a href="javascript:void(0)"  onclick="toapplyNotice('6')">
+                    <span class="pic"><img src="http://img0.egou.com/taobao/201502/03/ca607758e3e8c00bc89c212956e4863b.jpg"></span>
+                    <span class="title">生活家居专场</span>
+                    <span class="desc">针对居家百货、数码家电、美食特产、母婴玩具、美妆洗护商品的独家折扣活动。要求商品市场价值在25元以上，店铺信誉......</span>
+                </a>
+                <div class="botton"><a href="javascript:void(0)" onclick="toapplyNotice('6')"></a></div>
+            </li>
+            
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div style="display:none;_position:absolute;position:fixed;z-index:9999;" id="tishi_msg">
+	<div class="layer_main_bg">
+	<div class="layer_main">
+    	<div class="layer_name">提示<a href="javascript:void(0);" class="layer_close" onclick="closetishimsg();"></a></div>
+    	<div class="layer_nr font14">
+			<p>尊敬的特卖惠合作商家，<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6月4日起，卖家中心保证金政策改变：1.付费报名商家免收保证金;2.非付费商家由1个商品1000元调整为1个账号3000元（不限商品数）。请您尽快充值，以保证合作商品的正常推广！<br/>如有疑问，请联系QQ2936749504</p>
+           	<div class="layer_botton_bg"> <a href="xieyi.jsp" class="botton width_100 float_left" target="_blank" onclick="closetishimsg();">了解详情</a> <a href="javascript:void(0);" class="botton width_100 float_left botton_grey margin_left20" onclick="closetishimsg();">关闭</a></div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    var ContextPath = "/temai";
+    function toapplyNotice(id){
+    	var userid = '';
+    	if(userid==null || userid==''){
+    		openlogin();
+    		return false;
+    	}
+    	jQuery.ajax({
+    		type : "POST",
+    		url : "/temai/verifyBusUser.htm",
+    		data:{"id":id},
+    		cache:false, 
+    		dataType:"json",
+    		success : function(result) {
+    			if(result==null){
+    				openlogin();
+    				return false;
+    			}
+    			if(result.certification!=null && result.certification==1){
+    				if(result.phoneActive!=null && result.phoneActive ==1){
+    					if(id==8){
+    						window.location = window.ContextPath + "/promotionState.htm?id="+id;
+    						return true;
+    					}else if(id==10){
+    						window.location = window.ContextPath + "/auctionNotic.htm?id="+id;
+    						return true;
+    					}else if(id==14){
+    						window.location = window.ContextPath + "/promotion.htm?id="+id;
+    						return true;
+    					}else if(id==18){
+    						window.location = window.ContextPath + "/1111Notic.htm?id="+id;
+    						return true;
+    					}
+    					
+    					window.location = window.ContextPath + "/applyNotice.htm?id="+id;
+    				}
+    				else{
+    					openshouji();    						    					
+    				}
+				}
+				else{
+						openshangjia();
+				}
+    		},
+    		complete : function(){
+    			
+    		}
+    	});
+ 
+    }
+    
+    function openshouji(){
+    	egou.popup.open("#shouji",0);
+    };
+    //关闭弹出层
+    function closeshouji()
+    {
+    	egou.popup.close("#shouji",false); 
+    };
+    function openshangjia(){
+    	egou.popup.open("#shangjia",0);
+    };
+    //关闭弹出层
+    function closesshangjia(){
+    	egou.popup.close("#shangjia",false); 
+    };
+    function closetishimsg(){
+    	egou.popup.close("#tishi_msg",true); 
+    };
+    function opentishimsg(){
+    	egou.popup.open("#tishi_msg",0);
+    };
+    $(function () {
+        $('#shoujiyanzheng').click(function () {
+        	window.location = window.ContextPath + "/active_phone.htm";
+        })
+    });
+    
+    $(function () {
+        $('#shangjiayanzheng').click(function () {
+        	window.location = window.ContextPath + "/renzheng.htm";
+        })
+    });
+    
+</script>
+
+<div class="sell_bottom">
+	<ul id="foot_qq">
+	<li><span>报名咨询：</span><span class="qq"><script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA5ODAwNV8zMDQzNzBfODAwMDk4MDA1Xw"></script></span></li><li><span>服装鞋包类目报名：</span><span class="qq"><script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA5ODAwNV8zMDQzNjdfODAwMDk4MDA1Xw"></script></span></li><li><span>提现咨询：</span><span class="qq"><script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA5ODAwNV8zMDQzNjlfODAwMDk4MDA1Xw"></script></span></li><li><span>生活家居类目报名：</span><span class="qq"><script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA5ODAwNV8zMDQzNjhfODAwMDk4MDA1Xw"></script></span></li>
+	</ul>
+    <div class="clear"></div>
+</div>
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/egoufooter/footer_all.css" type="text/css"/>
+<div class="footer_top">
+	<div class="footer_main">
+        <ul class="footer_about_list">
+            <li>
+                <em class="icon_1"></em>
+                中国最早的<br>购物返利网
+            </li>
+            <li>
+                <em class="icon_2"></em>
+                500多家电<br>商合作伙伴
+            </li>
+            <li>
+                <em class="icon_3"></em>
+                3万精选淘<br>宝店铺合作
+            </li>
+            <li>
+                <em class="icon_4"></em>
+                累计服务超<br>5000万用户
+            </li>
+            <li>
+                <em class="icon_5"></em>
+                全网超值低<br>价商品保障
+            </li>
+            <li>
+                <em class="icon_6"></em>
+                7X14小时<br>客服服务
+            </li>
+            <div class="clear"></div>
+        </ul>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div class="footer_bottom_bg">
+	<div class="footer_main">
+    	<!-- <ul class="footer_nav">
+        	<a target="_blank" rel="nofollow" href="http://fanxian.egou.com/help/aboutegou.html">关于易购<em></em></a>
+        	<a href="http://fanxian.egou.com/help/mediumreported.html" target="_blank">媒体报道<em></em></a>
+        	<a href="http://www.egou.com/map/" target="_blank">分类大全<em></em></a>
+        	<a href="http://fanxian.egou.com/help/advertisement.html" target="_blank">广告合作<em></em></a>
+        	<a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问<em></em></a>
+        	<a href="http://fanxian.egou.com/help/" target="_blank">网站帮助<em></em></a>
+        	<a href="http://fanxian.egou.com/shop_index.html" target="_blank">网商大全<em></em></a>
+        	<a href="http://fanxian.egou.com/help/sitemap.html" target="_blank">网站地图<em></em></a>
+        	<a href="http://fanxian.egou.com/help/links.html"  target="_blank">友情链接<em></em></a>
+        	<a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们<em></em></a>
+        	<a href="http://www.egou.com/brand/" target="_blank">品牌大全</a>
+    		<div class="clear"></div>
+        </ul> -->
+    	<div class="clear"></div>
+        <ul class="footer_logos">
+        	<li><a href="https://search.szfw.org/cert/l/CX20130128002166002282" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_1.png"></a></li>
+        	<li><a href="http://about.58.com/fqz/index.html" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_2.png"></a></li>
+        	<li><a href="http://www.cnr.cn/gundong/201106/t20110620_508119107.shtml" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_3.png"></a></li>
+        	<li><a href="http://pub.alimama.com/" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_4.png"></a></li>
+        	<li><a href="http://www.so.com/s?ie=utf-8&src=360sou_home&q=site%3Awww.egou.com" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_5.png"></a></li>
+        </ul>
+        <div class="footer_word"><p class="englist_one">Copyright © 2004-2014 by www.egou.com all rights reserved</p><p>北京亿玛联盟传媒广告有限公司 旗下网站 京公网安备110105000795 京ICP备10005197号-5</p></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<script src="http://static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+</html>

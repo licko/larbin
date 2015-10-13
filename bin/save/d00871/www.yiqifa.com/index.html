@@ -1,0 +1,1535 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta property="wb:webmaster" content="0b79e4fb83408e97" />
+<title>亿起发_中国电子商务效果营销的第一广告联盟_站长联盟平台</title>
+<meta name="keywords" content="广告联盟,网络营销,CPS联盟,网站联盟,站长联盟,网上赚钱,效果营销" />
+<meta name="description" content="亿起发汇集了国内约500家电子商务网站，占有70%的CPS联盟市场，为全国30多万网站主提供最受欢迎的网站赚钱和网上赚钱的方式，是站长联盟首选的网络媒体和联盟平台。" />
+<meta name="Copyright" content="亿起发广告联盟"/>
+<meta name="author" content="亿起发_中国电子商务效果营销的第一广告联盟_站长联盟平台 | www.yiqifa.com" />
+
+<link href="/styles/common1.css" rel="stylesheet" type="text/css" />
+<link href="/styles/layout.css" rel="stylesheet" type="text/css" />
+<link href="/styles/slider.css" rel="stylesheet" type="text/css" />
+<script src="/js/yu.js" type="text/javascript"></script>
+<script src="/js/tb.js" type="text/javascript"></script>
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".fold").hover(function() {
+		$(this).css("display","none");
+		$(".open").css("display","block").mouseover(function(){
+					$(this).css("display","block");
+					$(".fold").css("display","none");
+		});
+		$(".open").css("display","block").mouseout(function(){
+			$(this).css("display","none");
+			$(".fold").css("display","block");
+		});		
+	});
+	
+	$("#yqfRss").click(function() {
+		document.body.style.height="100%";
+		$(".rss").css("position","absolute");
+		$(".rss").css("zIndex",200);
+		var w=400;
+		var h=172;
+		var x=document.documentElement?document.documentElement.clientWidth:document.body.clientWidth;
+		x=x==0?document.body.clientWidth:x;
+		var y=document.documentElement?document.documentElement.clientHeight:document.body.clientHeight;
+		y=y==0?document.body.clientHeight:y;
+		var l=document.documentElement?document.documentElement.scrollLeft:document.body.scrollLeft;
+		l=l==0?document.body.scrollLeft:l;
+		var t=document.documentElement?document.documentElement.scrollTop:document.body.scrollTop;
+		t=t==0?document.body.scrollTop:t;
+		$(".rss").css("left",((x-w)/2+l)+"px");
+		$(".rss").css("top",((y-h)/2+t)+"px");
+		$("#rssAddress").val("http://www.yiqifa.com/yqf_news.xml");
+		$("#xianguoRss").attr("href","http://www.xianguo.com/subscribe.php?url=http://www.yiqifa.com/yqf_news.xml");
+		$("#googleRss").attr("href","http://www.google.com/ig/add?feedurl=http://www.yiqifa.com/yqf_news.xml");
+		$(".rss").css("display","block");
+	});
+	
+	$("#ggzRss").click(function() {
+		document.body.style.height="100%";
+		$(".rss").css("position","absolute");
+		$(".rss").css("zIndex",200);
+		var w=400;
+		var h=172;
+		var x=document.documentElement?document.documentElement.clientWidth:document.body.clientWidth;
+		x=x==0?document.body.clientWidth:x;
+		var y=document.documentElement?document.documentElement.clientHeight:document.body.clientHeight;
+		y=y==0?document.body.clientHeight:y;
+		var l=document.documentElement?document.documentElement.scrollLeft:document.body.scrollLeft;
+		l=l==0?document.body.scrollLeft:l;
+		var t=document.documentElement?document.documentElement.scrollTop:document.body.scrollTop;
+		t=t==0?document.body.scrollTop:t;
+		$(".rss").css("left",((x-w)/2+l)+"px");
+		$(".rss").css("top",((y-h)/2+t)+"px");
+		$("#rssAddress").val("http://www.yiqifa.com/ggz_news.xml");
+		$("#xianguoRss").attr("href","http://www.xianguo.com/subscribe.php?url=http://www.yiqifa.com/ggz_news.xml");
+		$("#googleRss").attr("href","http://www.google.com/ig/add?feedurl=http://www.yiqifa.com/ggz_news.xml");
+		$(".rss").css("display","block");
+	});
+	
+	$("#rssClose").click(function() {
+		$(".rss").css("display","none");
+	});
+});
+
+function copyToClipboard() {
+	var txt = document.getElementById("rssAddress").value;
+	if (window.clipboardData) {
+	  window.clipboardData.clearData();
+	  window.clipboardData.setData("Text", txt);
+	  alert("复制成功！");
+	} else if(navigator.userAgent.indexOf("Opera") != -1) {
+		window.location = txt;
+	} else if (window.netscape) {
+		try {
+			netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+		} catch (e) {
+			alert("您的firefox安全限制限制您进行剪贴板操作，请打开'about:config'将signed.applets.codebase_principal_support'设置为true'之后重试");
+			return false;
+		}
+		var clip = Components.classes["@mozilla.org/widget/clipboard;1"].createInstance(Components.interfaces.nsIClipboard);
+		if (!clip)
+			return;
+		var trans = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
+		if (!trans)
+			return;
+		trans.addDataFlavor('text/unicode');
+		var str = new Object();
+		var len = new Object();
+		var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+		var copytext = txt;
+		str.data = copytext;
+		trans.setTransferData("text/unicode",str,copytext.length*2);
+		var clipid = Components.interfaces.nsIClipboard;
+		if (!clip)
+			return false;
+		clip.setData(trans,null,clipid.kGlobalClipboard);
+	}
+}
+
+function getCoupon(){
+	if(userInfo){
+			if(userInfo.regType&&userInfo.regType=="earner")
+				{
+					window.location.href="/earner/getCoupon.do";
+				}
+			else if(userInfo.regType&&userInfo.regType=="advertiser")
+				{
+					//showInfo();
+				}
+			else
+				{
+					window.location.href="/userLogin.do?yhq=yhq";
+				}
+		}
+	else{
+			window.location.href="/userLogin.do?yhq=yhq";
+		}
+}
+$(document).ready(function(){
+	if(userInfo&&userInfo.regType&&userInfo.regType=="advertiser")
+		{
+			$("#more_coupon").css("display","none");		
+		}
+});
+function showInfo(){
+	alert("您是广告主，优惠券仅允许网站主领取。");
+}
+function count_char(str) {
+	var len = 0;
+	for(i = 0; i < str.length; i++) {
+		var ech = escape(str.charAt(i));
+		if ( ech.length > 4 ){
+			len = len + 1;
+		}
+		len ++;
+	}
+	return len;
+}
+
+function lengthCheck(text, min, max) {
+	var len = count_char(text);
+	if ( len > max || len < min) {
+        return true;
+	}
+	return false;
+}
+
+function refreshCode(){
+	var img = document.getElementById("img");
+	if(img){
+		nowDate = new Date();
+		img.src = "/validateimage.do?d="+nowDate.getTime();
+	}
+}
+//注册
+function reg(){
+	window.location='/userRegEdit.do';
+}
+//用户名的校验
+function checkUserName(){
+	var result = true;
+	var name = document.getElementById("userName");
+	var loginError = document.getElementById("loginError");
+	if(!isSingleEmail(name.value)||lengthCheck(name.value, 5, 255)){
+		loginError.innerHTML = "格式不正确×";
+		loginError.className = "yanzheng_2";
+		result = false;
+	}else{
+		loginError.innerHTML = "";
+		loginError.className = "undefined";
+	}
+	return result;
+}
+//密码的校验
+function checkPassword(){
+	var result = true;
+	var password = document.getElementById("password");
+	var loginError = document.getElementById("loginError");
+	//第一步，password应满足"只能为数字和英文字母"
+	if(password.value.search(/[^a-zA-Z_0-9\s]/g) != -1){
+		loginError.innerHTML = "格式不正确×";
+		loginError.className = "yanzheng_2";
+		result = false;
+	}else{
+		//第二步，password应满足"长度在6至32位之间"
+    	if(password.value.length < 6 || password.value.length > 16){
+    		loginError.innerHTML = "格式不正确×";
+    		loginError.className = "yanzheng_2";
+    		result = false;
+    	}else{
+    		loginError.innerHTML = "";
+    		loginError.className = "undefined";
+    	}
+    }
+	return result;
+}
+//email的校验
+function isSingleEmail(s){
+	var flag=true;
+	var emailRegS=/^([a-zA-Z0-9_\-\.\+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+	if (!emailRegS.exec(s))
+		flag=false ;
+	return flag ;
+}
+function keyDown(event){
+	var saveRegUserBtn = document.getElementById("saveRegUserBtn");
+	if (event.keyCode == 13){
+		saveRegUserBtn.click();//使用表单提交
+	}
+}
+
+function checkAll(){
+	var result = true;
+	if(!checkUserName())
+		result = false;
+	if(!checkPassword())
+		result = false;
+	return result;
+}
+//登录
+function login(){
+	var form = document.getElementById("loginForm");
+	//if(checkAll()){
+		form.action='/userLogin.do';
+		form.submit();
+	//}
+}
+function changeCampaign(i){
+    var images=new Array();       
+    var camImage="";  
+	
+	images[0] = new Array();
+	images[0][0]= 'http://yiqifa.com/searchCampaignView.do?campaignId=18158'
+	images[0][1]= '/images/index/24/28/60/1434450076477.jpg'
+	
+	images[1] = new Array();
+	images[1][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=6896'
+	images[1][1]= '/images/index/24/60/4/1434506470352.jpg'
+	
+	images[2] = new Array();
+	images[2][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=6963'
+	images[2][1]= '/images/index/24/58/58/1418030347469.jpg'
+	
+	images[3] = new Array();
+	images[3][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17426'
+	images[3][1]= '/contentmanage/23/9/41/1400218275097.gif'
+	
+	images[4] = new Array();
+	images[4][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17298'
+	images[4][1]= '/images/index/24/0/0/1438846943697.jpg'
+	
+	images[5] = new Array();
+	images[5][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17425'
+	images[5][1]= '/images/index/24/28/4/1413790665956.jpg'
+	
+	images[6] = new Array();
+	images[6][0]= 'http://yiqifa.com/searchCampaignView.do?campaignId=17778'
+	images[6][1]= '/contentmanage/24/56/8/1433301623930.jpg'
+	
+	images[7] = new Array();
+	images[7][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17327'
+	images[7][1]= '/images/index/24/15/15/1376981119546.jpg'
+	
+	images[8] = new Array();
+	images[8][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17267'
+	images[8][1]= '/images/index/24/32/0/1375865545863.jpg'
+	
+	images[9] = new Array();
+	images[9][0]= 'http://www.yiqifa.com/searchCampaignView.do?campaignId=17440'
+	images[9][1]= '/images/index/23/15/17/1397634087631.gif'
+	
+	var x = parseInt(document.getElementById("imageIndex").value) + parseInt(i);
+	document.getElementById("imageIndex").value=x;
+	if(x<0){
+	   x = images.length-3;
+	   document.getElementById("imageIndex").value = images.length-3;
+	}else if(x > images.length-3){
+	  // x = images.length-3;
+	   //document.getElementById("imageIndex").value = images.length-3;
+	   x = 0;
+	  document.getElementById("imageIndex").value = 0;
+	}
+	x = parseInt(x)*1;//一次跳几个
+	for(var i=0;i<=2;i=i+1){
+	  if(images.length > parseInt(x)+i){
+		  camImage = camImage + "<div class='img100708'><a href="+ images[parseInt(x)+i][0] + " target='_blank'><img src=" + 'http://image.yiqifa.com/ad_images'  + images[parseInt(x)+i][1] + " width='218' height='60' /></a></div>";
+	  }
+	}
+	document.getElementById("buy_camp_ul").innerHTML= camImage;
+}
+
+$(document).ready(function() {
+$(".pic").hover(function() {
+		$(this).addClass("pichover");
+	}, function() {
+		$(this).removeClass("pichover");
+	});
+});
+</script>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 预设显示第一个 Tab
+		var _showTab = 0;
+		$('ul.tabs li').eq(_showTab).addClass('active');
+		$('.tab_content').hide().eq(_showTab).show();
+		
+		// 当li页签被点击时.
+		$('ul.tabs li').mouseover(function() {
+			var $this = $(this),
+				_index = $this.index();
+			$this.addClass('active').siblings('.active').removeClass('active');
+			$('.tab_content').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		// 预设显示第一个 Tab
+		var _showTabs = 0;
+		$('ul.specialtabs li').eq(_showTabs).addClass('active');
+		$('.tab_contents').hide().eq(_showTabs).show();
+		
+		// 当li页签被点击时.
+		$('ul.specialtabs li').mouseover(function() {
+			var $this = $(this),
+				_index = $this.index();
+			$this.addClass('active').siblings('.active').removeClass('active');
+			$('.tab_contents').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+<script type="text/javascript">
+//头部文字滚动 右下部图片滚动JS 
+function $1(element){
+if(arguments.length>1){//如果有多个目标对象，则循环将所有目标对象都存于elements数组当中
+for(var i=0,length=arguments.length,elements=[];i<length;i++){
+elements.push($(arguments[i]));
+}
+return elements;
+}
+if(typeof element=="string"){//如果是一个目标ID，则取对应的dom对象
+return document.getElementById(element);
+}else{//如果是一个dom对象，直接返回
+return element;
+}
+}
+var Class={
+create:function(){
+return function(){
+this.initialize.apply(this,arguments);
+}
+}
+}
+Function.prototype.bind=function(object){
+var method=this;
+return function(){
+method.apply(object,arguments);
+}
+}
+var Scroll=Class.create();
+Scroll.prototype={
+initialize:function(element,height){
+this.element=$1(element);
+this.element.innerHTML+=this.element.innerHTML;
+this.height=height;
+this.maxHeight=this.element.scrollHeight/2;
+this.counter=0;
+this.scroll();
+this.timer="";
+this.element.onmouseover=this.stop.bind(this);
+this.element.onmouseout=function(){
+this.timer=setTimeout(this.scroll.bind(this),1000);
+}.bind(this);
+},
+scroll:function(){
+if(this.element.scrollTop<this.maxHeight){
+this.element.scrollTop++;
+this.counter++;
+}else{
+this.element.scrollTop=0;
+this.counter=0;
+}
+if(this.counter<this.height){
+this.timer=setTimeout(this.scroll.bind(this),2);
+}else{
+this.counter=0;
+this.timer=setTimeout(this.scroll.bind(this),3000);
+}
+},
+stop:function(){
+clearTimeout(this.timer);
+}
+}
+</script>
+
+</head>
+
+<body>
+<!--亿起发头文件-->
+<div class="header">
+	<!--logo-->
+	<div class="logo">
+    	<a href="/index.html"><img src="/image/logo.jpg" alt="亿起发logo" /></a><span>亿玛旗下联盟平台</span>
+    </div>
+	<!--快速入口-->
+    <div class="quick-entrance">
+    	<a href="/html/help.html" class="entrance01">新手上路</a>
+        <a href="/html/publishers_bangzhu.html" class="entrance02">网站主帮助</a>
+        <a href="/html/bangzhu.html" class="entrance03">广告主帮助</a>
+        <div class="micro-blog"><span style="margin-right:10px; color:#333; *width:180px;">客服电话：<span style="font-size:16px; color:#333;">400-0060-666</span></span><span>关注亿起发：</span><a href="http://weibo.com/yiqifacom" target="_blank"><img src="/image/sina.jpg" alt="sina微博" /></a><a href="http://t.qq.com/gouwukedaren" target="_blank"><img src="/image/qq.jpg" alt="腾讯微博" /></a></div>
+  </div>
+	<!--滚动新闻-->
+    <div class="rolling-news" id="marqueebox1">
+    <ul>
+    	
+    </ul>
+    <script type="text/javascript">
+	function startmarquee(lh,speed,delay,index){
+		var t;
+		var p=false; 
+		var o=document.getElementById("marqueebox"+index);
+		o.innerHTML+=o.innerHTML; 
+		o.onmouseover=function(){p=true;}
+		o.onmouseout=function(){p=false;}
+		o.scrollTop = 0;
+		function start(){
+			t=setInterval(scrolling,speed);
+			if(!p){ o.scrollTop += 1;} 
+		} 
+		function scrolling(){ 
+			if(o.scrollTop%lh!=0){
+				o.scrollTop += 1; 
+				if(o.scrollTop>=o.scrollHeight/2) o.scrollTop = 0;
+			}else{ 
+				clearInterval(t);
+				setTimeout(start,delay); 
+			}
+		}
+		setTimeout(start,delay);
+	}
+	startmarquee(25,50,0,1);
+	</script>
+    </div>
+    <div class="clearBoth"></div>
+    
+ 	 
+ 	<!-- 泰山压顶  html start-->
+	  <div class="dou_banner" id="db1">
+	  	<script type='text/javascript' charset='gb2312' src='http://js.adm.cnzz.net/s.php?sid=311198'></script>
+	  </div>
+	  <div class="dou_banner" id="db2" >
+	      <div class="dbclose" id="dbclose" title="关闭"></div>
+	  </div>
+    <!-- 泰山压顶html end-->
+      
+    
+	<!--上导航-->
+	<div class="nav">
+    	<a href="/index.jsp" class="current">首页</a><span></span>
+        <a href="/html/join.html">广告主</a><span></span>
+        <a href="/html/publishers_jiameng.html">网站主</a><span></span>
+     
+        <a href="/html/goldchain.html">掘金链</a><span></span>
+        <a href="/searchCampaignBeginList.do">广告活动</a><span></span>
+        <a href="/html/jifenjihua.html">积分计划</a><span></span>
+        <a href="http://open.yiqifa.com">开放平台</a><span></span>    </div>
+  <div class="clearBoth"></div> 
+  
+</div>
+
+<!--亿起发主内容区-->
+<div class="main">
+	<div class="main-left">
+	
+<form id="loginForm" name="form1" method="post" action="../login.do">
+	<div class="login">
+		<div class="title"></div>
+		<div id="loginContent" class="content"></div>
+		<div class="footer"></div>
+	</div>
+</form>
+<script type="text/template" id="other">
+	 <div class="content logup"> 
+                <p class="user-name">用户名：{username}</p>
+                <p>用户状态：{userstatus}</p>
+                <p>服务经理：{executeNickName}</p>
+                <p><a href="/userLogout.do">【退出】</a></p>
+                <p class="line"></p>
+                <p class="enter-btn"><a href="/advertiser/advertiserBegin.do"><img src="/image/enter-btn.jpg" alt="进入按钮" /></a></p>
+                <p class="quick"><a href="/advertiser/adLinkBeginList.do">素材管理</a><a href="/advertiser/mgrBulletinBeginList.do">动态管理</a></p>
+                <p class="quick"><a href="/advertiser/advertiserEffectConfirmBeginList.do">查看报表</a><a href="/advertiser/advertiserBulletinBeginList.do">信息中心</a></p>
+            </div> 
+</script>
+<script type="text/template" id="nologin">
+	<p class="user-name"><label>用户名：（Email）</label>
+					<input type="text" id="userName" name="userName"  class="input01"/>
+	 					     <div class="yanzheng_2" style="width:119px;margin-top:3px;display:none">
+ 			                 {errormessage}
+	 			       </div>
+            	</p>
+                <p><label>密码：</label>
+					<input type="password" id="password" name="password" class="input01" onKeyDown="if (event.keyCode==13)login();"/>
+					   <div class="yanzheng_2" style="width:119px;margin-top:3px;display:none">
+		               </div>
+              </p>
+              <p><label>验证码：</label>
+				 <input type="text" id="checkCode" name="checkCode"  class="input02" onKeyDown="if (event.keyCode==13)login()" />
+			<img src="../validateimage.do" width="69px" height="30px" onclick="refreshCode()" title="看不清，点击换一张"  alt="看不清，点击换一张" id="img"/></p>
+				<p><input type="checkbox" name="loginFlag" id="loginFlag" value="1" />一周内自动登录</p>
+                <p class="btnarea"><label>&nbsp;</label><a href="javascript:login()"><img src="../image/login-btn.jpg" alt="登录按钮" /></a><a href="../sendPassword.do" target="_blank" >忘记密码？</a></p>
+                <div class="clearBoth"></div>
+                <p class="line"></p>
+                <p class="words">还没有亿起发账号吗？</p>
+                <p class="registe-btn"><a href="../userRegEdit.do?regType=earner"><img src="../image/registe-btn.jpg" alt="注册按钮" /></a></p>
+</script>
+<script type="text/template" id="earner">
+	 <div class="content logup"> 
+                <p class="user-name">用户名：{username}</p>
+                <p>用户状态：{userstatus}</p>
+                <p>媒介经理：{saleNickName}</p>
+                <p><a href="/userLogout.do">【退出】</a></p>
+                <p class="line"></p>
+                <p class="enter-btn"><a href="/earner/earnerBegin.do"><img src="/image/enter-btn.jpg" alt="进入按钮" /></a></p>
+                <p class="quick"><a href="/earner/earnerEffectConfirmBeginList.do">业绩报表</a><a href="/earner/getCoupon.do">优惠券</a></p>
+                <p class="quick"><a href="https://earner.yiqifa.com/earner/gwk.do">购物客</a><a href="/earner/jjlWebsiteFilter.do">掘金链</a></p>
+      </div> 
+</script>
+<script type="text/template" id="earner1">
+	 <div class="content logup"> 
+                <p class="user-name">用户名：{username}</p>
+                <p>用户状态：{userstatus}</p>
+                <p>媒介经理：{saleNickName}</p>
+                <p><a href="/userLogout.do">【退出】</a></p>
+                <p class="line"></p>
+                <p class="enter-btn"><a href="/earner/earnerBegin.do"><img src="/image/enter-btn.jpg" alt="进入按钮" /></a></p>
+                <p class="quick"><a href="/earner/earnerEffectConfirmBeginList.do">业绩报表</a><a href="/earner/getCoupon.do">优惠券</a></p>
+                <p class="quick"><a href="/earner/jjlWebsiteFilter.do">掘金链</a></p>
+      </div> 
+</script>
+
+<script type="text/javascript">
+	var tp = function(template, data) {  
+	    return template.replace(/\{([\w\.]*)\}/g, function (str, key) {  
+	      var keys = key.split("."), value = data[keys.shift()];  
+	      $.each(keys, function () { value = value[this]; });  
+	      return (value === null || value === undefined) ? "" : value;  
+	    });  
+	};
+	var html=$("#nologin").html();
+	var cookieNames=new Array();
+	var islogin=false;
+	var userInfo={};
+	var ui="";
+	if(document.cookie.length>0){
+		var cookirStr=document.cookie;
+		//var regx=/([a-zA-Z]*)\=/g;
+		//var t=cookirStr.match(regx);
+		if(cookirStr!=""&&cookirStr!=null)
+		{
+			if(cookirStr.indexOf("eqifaUser")>=0)
+			{
+				islogin=true;
+				ui=cookirStr.substring(cookirStr.indexOf("eqifaUser=")+10,cookirStr.length);
+				if(ui.indexOf(";")>=0)
+					{
+						ui=ui.substring(0,ui.indexOf(";"));
+					}
+			}
+		}
+	}
+	if(!islogin)
+	{
+		$(html).appendTo($("#loginContent"));
+	}
+	else 
+	{
+		if(ui.length>0)
+		{
+			$.ajax({
+				url:"/ajax_util.do",
+				data:{"opera":"decodeBase64","str":encodeURIComponent(ui)},
+				type:"get",
+				contentType:"application/x-www-form-urlencoded:charset=GBK",
+				success:function(data){
+						var infoArray=data.split("//");
+						if(infoArray.length>0)
+							{
+								userInfo.username=infoArray[0];
+								userInfo.userstatus=infoArray[16];
+								userInfo.regType=infoArray[3];
+								userInfo.saleNickName=infoArray[6];
+								userInfo.executeNickName=infoArray[12];
+								userInfo.gwkActivation=infoArray[18];
+							}
+						if(userInfo.regType=="earner")
+							{
+							    if(userInfo.gwkActivation=="1"){
+							    	var html=$("#earner").html();
+									html=tp(html,userInfo);
+									$(html).appendTo($("#loginContent"));
+							    }else{
+							    	var html=$("#earner1").html();
+									html=tp(html,userInfo);
+									$(html).appendTo($("#loginContent"));
+							    }								
+							}
+						else
+							{
+								var html=$("#other").html();
+								html=tp(html,userInfo);
+								$(html).appendTo($("#loginContent"));
+								var imgarray=$(".coupon_img");
+								for(var zi in imgarray)
+									{
+										var img=imgarray[zi];
+										if(!$(img).is("function"))
+											{
+											 	$(img).css("display","none");
+											}
+									}
+								
+							}
+					},
+				error:function(){
+					$(html).appendTo($("#loginContent"));
+				}});
+		}
+	}
+</script>
+
+
+
+		<!--亿起发优势-->
+        <div class="advantage">
+        	<div class="border-top"><h3>亿起发优势</h3></div>
+            <div class="border-middle">
+            	<a href="/html/youshi1.html" class="earner">网站主优势</a>
+                <a href="/html/youshi2.html" class="plat">平台优势</a>
+                <a href="/html/youshi3.html" class="advertiser">广告主优势</a>
+            </div>
+        </div>
+		<!--星级网站主-->
+        <div class="earner-star">
+        	<div class="border-top"><h3>星级网站主</h3></div>
+            <div class="border-middle">
+            	<ul>
+            	
+		    	<li>
+
+				    	一淘
+		    	</li>
+	    		
+		    	<li>
+
+				    	QQ彩贝
+		    	</li>
+	    		
+		    	<li>
+
+				    	豆瓣
+		    	</li>
+	    		
+		    	<li>
+
+				    	360
+		    	</li>
+	    		
+		    	<li>
+
+				    	网易
+		    	</li>
+	    		
+		    	<li>
+
+				    	易购网
+		    	</li>
+	    		
+				</ul>
+            </div>
+        </div>
+		<!--媒体报道-->
+        <div class="media-reports">
+        	<div class="border-top"><h3>媒体报道</h3></div>
+            <div class="border-middle">
+            	<ul>
+            		<li><a href="http://tech.ifeng.com/internet/detail_2012_08/18/16910348_0.shtml" target="_blank">亿起发将开放核心数据</a></li>
+            		<li><a href="http://www.sootoo.com/content/265788.shtml" target="_blank">秦令今：移动营销是大势所趋</a></li>
+            		<li><a href="http://tech.qq.com/a/20120407/000154.htm" target="_blank">如业务发展顺利或筹备IPO</a></li>
+					<li><a href="http://tech.hexun.com/2011-12-14/136291385.html" target="_blank">第三届效果整合营销高峰论坛</a></li>
+            		<li><a href="http://v.ku6.com/show/acM8cLy1ZOEDmaVF.html" target="_blank">靠低价竞争的电商将走向死亡</a></li>
+                	<li><a href="http://www.emar.com.cn/news/2011/0823/131.html" target="_blank">2011派代电子商务年会</a></li>
+                    <li><a href="http://tech.qq.com/a/20110822/000414.htm" target="_blank">未来传统电商大有可为</a></li>
+                    <li><a href="http://www.donews.com/original/201107/538423.shtm" target="_blank">亿玛公司获得第三轮融资</a></li>
+                </ul>
+            </div>
+        </div>
+		<!--合作感言-->
+        <div class="Speech">
+        	<div class="border-top"><h3>合作感言</h3></div>
+            <div class="border-middle">
+            	<div class="words">
+					<p><span>王颖-搜狗导航负责人</span>搜狗购物导航与亿起发的合作，提供了主流电商的商品信息，丰富了搜狗购物导航的内容和展现形式，更好的满足了用户需求。</p>
+              </div>
+                <div class="words">
+					<p><span>杨雷-贝壳网CEO</span>B2C开放平台必然是网购的大势所趋，移动电商开放将是全新的增长点，历史性的机遇，亿起发走在前面！</p>
+              </div>
+                <div class="words">
+					<p><span>孙彬彬-51比cto</span>亿起发做为效果营销行业的领袖，给予了我们网站发展很多的支持！亿起发是我们创业路上的最忠实伙伴！</p>
+                </div>
+            </div>
+        </div>
+		<!--联系我们-->
+    	<div class="service">
+        	<div class="border-top"><h3>联系我们</h3></div>
+            <div class="border-middle">
+            	<!-- <script src="/js/Contact-yiqifa.js" type="text/javascript"></script>
+            		<script src="../js/Contact-yiqifa.js" type="text/javascript"></script> -->
+            	<p>整合电商广告主:<br/>010-50863318-8752</p>
+            	<p>传统企业广告主:<br/>010-50863318-8754</p>
+            	<p>网站主合作:<br/>010-50863318-8640</p>
+            	<p>移动媒体合作:<br/>010-50863318-8630</p>
+            	<p>电子邮箱:<a href="mailto:kefu@emar.com.cn">客服邮箱</a><a href="mailto:kexixing@emar.com.cn">投诉邮箱</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="main-right">
+		<!--右侧第一行内容-->
+    	<div class="first">
+			<!--焦点图-->
+        	<div class="focus-map">
+            	<div id="MainPromotionBanner">
+                    <div id="SlidePlayer">
+                        <ul class="Slides">
+                        
+						 <li><a target="_blank" href="http://yiqifa.com/searchCampaignView.do?campaignId=4018"><img src='http://image.yiqifa.com/ad_images/images/index/24/60/60/1443518746940.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=6489"><img src='http://image.yiqifa.com/ad_images/images/index/24/21/53/1443584907158.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=5579"><img src='http://image.yiqifa.com/ad_images/images/index/24/51/13/1443510341096.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=4156"><img src='http://image.yiqifa.com/ad_images/images/index/24/6/58/1443425802348.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/bulletinView.do?id=66338&amp;pageNumber=1&amp;pageSize=20"><img src='http://image.yiqifa.com/ad_images/images/index/24/38/6/1443582439502.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/bulletinView.do?id=66320&amp;pageNumber=1&amp;pageSize=20"><img src='http://image.yiqifa.com/ad_images/images/index/24/28/60/1443582972142.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=5725"><img src='http://image.yiqifa.com/ad_images/images/index/24/12/52/1443581557722.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=4982"><img src='http://image.yiqifa.com/ad_images/images/index/24/62/62/1443583589901.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=18343"><img src='http://image.yiqifa.com/ad_images/images/index/24/39/7/1443520859620.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=17324"><img src='http://image.yiqifa.com/ad_images/images/index/24/14/14/1443584552476.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://yiqifa.com/searchCampaignView.do?campaignId=5566"><img src='http://image.yiqifa.com/ad_images/images/index/24/23/55/1443406920426.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/bulletinView.do?id=66294&amp;pageNumber=1&amp;pageSize=20"><img src='http://image.yiqifa.com/ad_images/images/index/24/53/11/1443582519328.jpg' /></a></li>
+						
+						 <li><a target="_blank" href="http://www.yiqifa.com/searchCampaignView.do?campaignId=4330"><img src='http://image.yiqifa.com/ad_images/images/index/24/62/2/1443419259404.jpg' /></a></li>
+						
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                    TB.widget.SimpleSlide.decoration('SlidePlayer', {eventType:'mouse', effect:'scroll'});
+                    </script>
+				</div>
+            </div>
+			<!--积分奖励-->
+            <div class="integral">
+            	<div class="border-top"><h3>积分奖励</h3><a href="/html/jifenjihua.html">积分是什么？</a></div>
+                <div class="border-middle">
+                	<ul class="pic">
+
+
+
+                		<li><img src="/image/chongzhi.jpg"   border="0" alt="奖品图" /></li>
+                		<li><img src="/image/ka.jpg"   border="0" alt="奖品图" /></li>
+                		<li><img src="/image/xiangji.jpg"   border="0" alt="奖品图" /></li>
+                		<li><img src="/image/pic05.jpg"   border="0" alt="奖品图" /></li>
+
+                    </ul>
+                    <p class="title">兑换动态</p>
+                    <ul class="list">
+                    
+                 	<li>会员<span class="font_red">sh********</span>
+                 	成功兑换<span class="font_blue_1">京东礼品卡100元</span></li>
+                 
+                 	<li>会员<span class="font_red">sh********</span>
+                 	成功兑换<span class="font_blue_1">京东礼品卡100元</span></li>
+                 
+                 	<li>会员<span class="font_red">sh********</span>
+                 	成功兑换<span class="font_blue_1">京东礼品卡100元</span></li>
+                 
+                    </ul>
+                </div>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+		<!--右侧第二行内容-->
+    	<div class="second">
+			<!--亿起发公告-->
+        	<div class="yiqifa-announcement hiddenStyle">
+            	<div class="border01-top"><h3>亿起发公告</h3><a href="/bulletinList.do"><img src="/image/btn02.jpg" alt="更多" /></a><a id="yqfRss" href="#"><img src="/image/btn01.jpg" alt="订阅" /></a></div>
+
+                <ul>
+			  	
+			     
+				  <li><a href="/bulletinView.do?id=60185" target="_parent">【亿起发】网站主登陆增加手机验证功能</a></li>
+				  
+				  <li><a href="/bulletinView.do?id=57377" target="_parent">【亿起发】安全系统升级，亿起发账户需重新激活 </a></li>
+				  
+				  <li><a href="/bulletinView.do?id=66363" target="_parent">【爱康国宾】10月站长奖励来袭</a></li>
+				  
+				  <li><a href="/bulletinView.do?id=66353" target="_parent">【华为商城】推广规则通知修正</a></li>
+				  
+				  <li><a href="/bulletinView.do?id=66352" target="_parent">【Carter&#039;s】佣金提升通知</a></li>
+				  
+				  <li><a href="/bulletinView.do?id=66349" target="_parent">【上线通知】佳沃市集CPS即日起登陆亿起发，佣金最高达5.6.</a></li>
+				  	
+	             
+             	
+			</ul>
+            </div>
+			<!--广告主公告-->
+            <div class="advertiser-announcement">
+            	<div class="border01-top"><h3>广告主动态</h3><a href="/advertiserTrendsList.do"><img src="/image/btn02.jpg" alt="更多" /></a><a href="#" id="ggzRss"><img src="/image/btn01.jpg" alt="订阅" /></a></div>
+
+                <ul>
+                	
+		     
+			  <li><a href="/bulletinView.do?id=66321" target="_parent">【银泰网】5周年店庆大活动开始啦！</a></li>
+			  
+			  <li><a href="/bulletinView.do?id=66360" target="_parent">【和茶网】精选金骏眉直降30元 实惠2盒装仅售￥128</a></li>
+			  
+			  <li><a href="/bulletinView.do?id=66355" target="_parent">【海豚村·澳洲精品】国庆大放价，澳洲精品全场满减大促！</a></li>
+			  
+			  <li><a href="/bulletinView.do?id=66351" target="_parent">【斯波帝卡】潮男休闲长裤，魅力上新</a></li>
+			  
+			  <li><a href="/bulletinView.do?id=66350" target="_parent">【SKG商城】国庆活动</a></li>
+			  
+			  <li><a href="/bulletinView.do?id=66348" target="_parent">【丝芙兰官网】精选单品 超值套装 轻装出行</a></li>
+			  	
+             
+             
+                </ul>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+		<!--右侧第三行内容（页签切换各种活动）-->
+    	<div class="all-active">
+        	<ul class="tabs">
+            	<li><a href="#">推荐活动</a></li>
+                <li><a href="#">最新活动</a></li>
+                <li><a href="#">独家活动</a></li>
+            </ul>
+            <div>
+                <div class="tab_content" id="tab1">
+                    
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=6569' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/25/7/1418782761163.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=139' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/17/15/1400640203391.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=5227' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/34/62/1438355854271.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=4018' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/12/52/1413171343578.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=7002' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/12/52/1425289364853.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17177' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/15/49/1438594032569.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=247' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/42/54/1422339387558.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=297' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/52/52/1402021328065.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=6226' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/24/56/1415786606516.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+			  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=5579' target="_blank">
+			  
+			  <img src="http://image.yiqifa.com/ad_images/images/index/24/6/6/1421726458888.jpg" width="130" height="109" class="index_img0818">
+			  
+			  </a>
+			  
+                    <div class="clearBoth"></div>
+                </div>
+                <div class="tab_content" id="tab2">
+                    
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18108' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/59/5/1443517962803.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18050' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/8/8/1442566324845.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18333' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/35/3/1442547163145.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18385' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/14/50/1442978889055.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18343' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/40/8/1442371965152.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18371' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/49/49/1441955461043.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18361' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/39/7/1440744624704.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18367' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/3/3/1441770521531.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18335' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/17/15/1440409635515.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=18345' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/32/0/1440383194676.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+                    <div class="clearBoth"></div>
+                </div>
+                <div class="tab_content" id="tab3">
+                    
+					  <a href='http://yiqifa.com/searchCampaignView.do?campaignId=18158' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/28/60/1434450076477.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=6896' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/60/4/1434506470352.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=6963' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/58/58/1418030347469.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17426' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/23/9/41/1400218275097.gif" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17298' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/0/0/1438846943697.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17425' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/28/4/1413790665956.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://yiqifa.com/searchCampaignView.do?campaignId=17778' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/contentmanage/24/56/8/1433301623930.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17327' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/15/15/1376981119546.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17267' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/24/32/0/1375865545863.jpg" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+					  <a href='http://www.yiqifa.com/searchCampaignView.do?campaignId=17440' target="_blank">
+					  
+					  <img src="http://image.yiqifa.com/ad_images/images/index/23/15/17/1397634087631.gif" width="130" height="109" class="index_img0818">
+					  
+					  </a>
+					  
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div class="clearBoth"></div> 
+        </div>
+		<!--右侧第四行内容（一起发特色功能）-->
+    	<div class="special">
+        	<ul class="specialtabs">
+            	<!-- <li><a href="/html/gwk_about.html">购物客</a></li> -->
+                <li><a href="/html/goldchain.html">掘金链</a></li>
+                <li>自定义链接</li>
+                <li>移动联盟</li>
+            </ul>
+            <div>
+                
+                <div class="tab_contents" id="specialtab2"><img src="/image/pic17.jpg" /></div>
+                <div class="tab_contents" id="specialtab3"><img src="/image/pic16.jpg" /></div>
+                <div class="tab_contents" id="specialtab4"><img src="/image/pic15.jpg" /></div>
+            </div>
+        	<div class="clearBoth"></div> 
+		</div>
+		<!--右侧第五行内容（网站主收益flash）-->
+        <div class="profit">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="745" height="90">
+            <param name="movie" value="/image/745-90.swf" />
+            <param name='wmode' value='transparent'>
+            <param name="quality" value="high" />
+            <embed src="/image/745-90.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="745" height="90"></embed>
+          </object>
+       </div>
+    <!--右侧第六行内容（优惠券）-->
+       <div class="coupon">
+        	<div class="border-top">
+        	    <h3>优惠券</h3>
+        	    <a id="more_coupon" href="/earner/getCoupon.do" style="margin-top:5px;"><img src="/image/btn02.jpg" alt="更多" /></a>
+        	</div>
+            <div class="border-middle" id="myscroll" style="height:292px; overflow:hidden;">
+            	<ul>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>50元优惠券</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/18/50/1414397252136.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>全场满199-12元</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/10/54/1355899689599.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>300-60</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/5/5/1440400105170.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    <li class="last">
+                    
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>100</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/31/63/1438067017596.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>300</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/5/59/1438588822598.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>60</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/5/59/1438588822598.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>满199减20</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/46/14/1358228452855.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    <li class="last">
+                    
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>满299减30</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/46/14/1358228452855.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>满399减40</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/46/14/1358228452855.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    
+                    
+                    <li>
+                    
+                    	<div class="pic">
+                    	<div class="left">
+	                    	<p>200</p>
+	                        <img src="http://image.yiqifa.com/ad_images/reguser/24/31/63/1438067017596.jpg" width="80" height="40" border="0" />
+                        </div>
+                        <div class="right">
+	                         <p>免费</p>
+							 <p>
+							 	<a href="javascript:void(0)" onclick="getCoupon()">
+							 		<img class="coupon_img" src="/image/btn03.jpg" alt="去领取" />
+							 	</a>
+							 </p>
+							
+                        </div>
+                            <div class="clearBoth"></div>
+                            </div>
+                            <br />
+
+                    	</li>
+                    
+                    <div class="clearBoth"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+    <!--浮动框联系我们定义-->
+    <div class="contact">
+        <div class="fold"></div>
+        <div class="open">
+            <div class="title"></div>
+            <div class="content">
+                <ul>
+                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=1939337306&site=qq&menu=yes"><span><img src="/image/qqimg.jpg"  /></span>导购返点</a></li>
+                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=1048922014&site=qq&menu=yes"><span><img src="/image/qqimg.jpg" /></span>网址导航</a></li>
+                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=962748339&site=qq&menu=yes"><span><img src="/image/qqimg.jpg" /></span>垂直媒体</a></li>
+                </ul>
+            </div>
+            <div class="online"><a href="http://www.yiqifa.com/html/kefu.htm?arg=emar&style=4&charset=gbk&lytype=0&referer=http%3A%2F%2Fwww.eqifa.com%2F&keyword=&tpl=crystal_blue" target="_blank"><img src="/image/online.jpg" /></a></div>
+        </div>
+    </div>
+</div>
+<!--亿起发尾文件-->
+
+<div class="footer">
+	<!--下导航-->
+	<div class="nav-bottom">
+    	<a href="/html/aboutus.html">关于我们</a>|<a href="/html/Contactus.html">联系我们</a>|<a href="/html/job.html">诚聘英才</a>|<a href="/html/tiaokuan.html">服务条款</a>|<a href="/html/fws_link.html">合作伙伴</a>|<a href="/html/map.html">网站地图</a>
+    </div>
+    <p class="words">Copyright&copy;2004-2013 亿起发效果联盟营销平台 [京ICP备10001024号] 网络运营：亿玛创新网络(天津)有限公司</p>
+	<!--备案信息-->
+    <p class="beian"><a class="beian1" target="_blank" href="http://www.baic.gov.cn/"></a><a class="beian2" target="_blank" href="http://www.baic.gov.cn/"></a><a class="beian3" target="_blank" href="http://www.baic.gov.cn/"></a><a class="beian4" target="_blank" href="http://www.baic.gov.cn/"></a></p>
+</div>
+<script type="text/javascript"><!-- (function (d) {window.bd_cpro_rtid="PWbkPHR";var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);})(document);//--></script>
+<!--RSS订阅-->
+<div class="rss" style="display: none">
+    <div class="float-top"><span class="ftop-l"></span><span class="ftop-r"></span>
+      <div class="ftop-m">
+        <h3><a class="win-close" href="#" id="rssClose"></a><a target="_blank" href="http://baike.baidu.com/view/1644.htm" class="more">什么是RSS？</a>RSS订阅</h3>
+      </div>
+    </div>
+    <div class="float-mid">
+    	<p class="rss-title">在线阅读器直接订阅：</p>
+        <p class="rss-list"><a id="xianguoRss" target="_blank" href="" class="rss-xianguo"></a><a href="" target="_blank" id="googleRss" class="rss-google"></a></p>
+        <p class="rss-adr">
+        	<label>订阅地址：</label><span><input type="text" id="rssAddress" value="" />
+        	<input type="button" value="复制" onclick="copyToClipboard()" /></span>
+        	<em>如果还没有RSS阅读器，请<a target="_blank" href="http://down.tech.sina.com.cn/content/3034.html">立即下载</a></em>
+        </p>
+    </div>
+    <div class="float-bottom"><span class="fbot-l"></span><span class="fbot-r"></span><div class="fbot-m"><p></p></div>	</div>
+</div>
+<div style="display: none">
+<script type="text/javascript">
+
+  
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36159914-1']);
+  _gaq.push(['_setDomainName', 'yiqifa.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7b29d1b550eef9d074536cb2d722c5bf' type='text/javascript'%3E%3C/script%3E"));
+</script></div>
+
+
+
+
+<!-- 泰山压顶 控制js  start-->
+ <script type="text/javascript">
+            (function(S){
+
+                var node = S.Node;
+                var doubleBanner = {
+                     banner1:null,
+                     banner2:null,
+                     dbclose:null,
+                     isclick:false,
+                     init:function(){
+
+                       doubleBanner.banner1=node.all("#db1"); 
+                       doubleBanner.banner2=node.all("#db2");
+                       doubleBanner.dbclose=node.all("#dbclose");
+                       doubleBanner.addEvent();
+
+                     },
+                     addEvent:function(){
+                        setTimeout(function(){
+                            if(doubleBanner.isclick == false){
+
+                                doubleBanner.startMove();
+                            
+                            }
+                        
+                        },5000);
+                        doubleBanner.banner1.on("click", function(event){
+                        	window.open("http://www.yiqifa.com/searchCampaignView.do?campaignId=5740");
+                        	
+                           /*  doubleBanner.moveBack(); */
+                            
+                        }); 
+                        doubleBanner.banner2.on("click", function(event){
+                        	if(!doubleBanner.isclick)
+                        	window.open("http://www.yiqifa.com/searchCampaignView.do?campaignId=5740");
+                        	
+                           /*  doubleBanner.moveBack(); */
+                            
+                        }); 
+                        doubleBanner.dbclose.on("click", function(event){
+                            
+                            doubleBanner.startMove();
+                            doubleBanner.isclick = true;
+
+                        });
+
+                     },
+                     startMove:function(){
+                        doubleBanner.banner2.slideUp(1,function(){
+                            
+                           doubleBanner.banner1.slideDown(1);
+                        
+                        },'easeIn');
+
+                     },
+                     moveBack:function(){
+
+                        doubleBanner.banner1.slideUp(1,function(){
+                            
+                           doubleBanner.banner2.slideDown(1);
+                        
+                        },'easeIn');
+
+                     }
+                };
+
+                S.ready(function(S) {
+                   doubleBanner.init();
+                });
+
+            })(KISSY);
+        </script>
+<!-- 泰山压顶 控制js  end-->
+ 
+ 
+<script>
+    //调用函数进行文字滚动效果
+    new Scroll("myscroll",102);
+</script>
+
+
+<script type="text/javascript"><!-- (function (d) {window.bd_cpro_rtid="PWbkPHR";var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);})(document);//--></script><script type="text/javascript"><!-- (function (d) {window.bd_cpro_rtid="PWbkPHR";var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);})(document);//--></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?8d19433c91b6c77ae1824b75eabbdda1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

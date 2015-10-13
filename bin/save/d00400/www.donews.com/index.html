@@ -1,0 +1,653 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>DoNews-IT门户-移动互联网新闻-电子商务新闻-游戏新闻-风险投资新闻-IT社交网络社区</title>
+<meta name="author" content="DoNews" />
+<meta name="keywords" content="DoNews IT门户 移动互联网新闻 电子商务新闻 游戏新闻 风险投资新闻 IT社交网络社区" />
+<meta name="description" content="中国最早的web2.0网站，中国互联网行业的风向标。提供互联网行业资讯、数据分析报告、社区互动、线下交流等服务。是中国互联网从业人士交流最权威的平台，是了解中国互联网行业最重要的窗口。" />
+<script type="text/javascript" src="http://ui.donews.com/donews2013/js/donewsjquery.js" ></script>
+<script type="text/javascript" src="http://ui.donews.com/donews2013/js/main.js"></script>
+<script type="text/javascript" src="http://ui.donews.com/donews2013/js/select.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="http://ui.donews.com/donews2013/js/ie_png.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.icotype ,.dtvarea .twc span,.gdarea h3 a,.layout .hd h2');
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://ui.donews.com/donews2013/css/base.css">
+<link rel="stylesheet" type="text/css" href="http://ui.donews.com/donews2013/css/index.css">
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<script type="text/javascript">
+BAIDU_CLB_preloadSlots("847664","847682","847685","847688","847689","951593","1011045","1011046");
+</script>
+<!-- 手机浏览器页面跳转-->
+<script type="text/javascript">
+function curdomain() {
+    return window.location.host; 
+}
+if(window.location.href.indexOf("?mobile")<0){
+try {
+    var host = curdomain();
+ 
+    var urlhash = window.location.hash;
+    if (!urlhash.match("fromapp"))
+    {
+        if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
+        {
+            if(host!='3g.donews.com') {
+                //document.write('mobile browser!!<br/>');
+                window.location="http://3g.donews.com/";
+            }
+        }else{
+            //document.write('桌面浏览器')
+        }
+    }
+}
+catch(err)
+{
+}
+}
+</script>
+</head>
+<body>
+<div class="bodybg">
+<div class="banner layout"><!-- 广告位：index-top-banner-1 --><script type="text/javascript">BAIDU_CLB_fillSlot("951593");</script>
+</div>
+<!-- Sections Create at 2015-05-26 10:59:01.015315 --><script type="text/javascript" language="javascript">
+  function addCookie() {　 // 加入收藏夹
+　　　　　　　　　　　 if (document.all) {
+　　　　　　　　　　　　　　　 window.external.addFavorite('http://www.donews.com/', 'DoNews');
+　　　　　　　　　　　 }
+　　　　　　　　　　　 else if (window.sidebar) {
+　　　　　　　　　　　 window.sidebar.addPanel('DoNews', 'http://www.donews.com/', "");
+　　　　　　　　　　　 }
+　　　　　　　 }
+</script>
+<div class="channel_nav layout">
+	<div class="logo"><a href="http://www.donews.com/"><img src="http://ui.donews.com/donews2013/img/donews_logo.gif" width="148" height="36" alt="donews"></a></div>
+    <div class="search">
+        <form action="http://search.donews.com" method="get" target="_blank" class="searchform">
+            <input type="submit" id="button" value="" class="submit">
+            <input name="kw" type="text" class="txtarea" id="kw" value="请输入您要搜索的内容" onfocus="if (value =='请输入您要搜索的内容'){value =''}" onblur="if (value ==''){value='请输入您要搜索的内容'}">
+        </form>
+    </div>
+        <a href="#" target="_blank" class="newsreport" style="display:none"><img src="http://ui.donews.com/donews2013/img/bg_newsreport.gif" width="102" height="36" alt="求报道"></a>
+    <div class="gzbox">
+    	<a onclick="addCookie()" href="javascript:void(0)" class="gz_home" target="_blank"><em>加入收藏</em></a>
+        <a href="mailto:tougao@donews.com" class="gz_qq" target="_blank"><em>投稿</em></a>
+        <a href="http://www.donews.com/dtv/" target="_blank" class="gz_dtv"><em>DTV</em></a>
+        <a href="http://www.donews.com/idonews/" class="gz_xx" target="_blank"><em>iDoNews</em></a>
+ 		<a class="gz_wx" target="_blank">
+            <em>微信关注<img src="http://ui.donews.com/donews2013/img/wexin_fx.png" width="150" height="150" alt="微信关注"> </em>
+        </a>
+        <a href="http://e.weibo.com/donewsoffice?ref=http%3A%2F%2Fwidget.weibo.com%2Frelationship%2Ffollowbutton.php%3Fbtn%3Dred%26style%3D2%26uid%3D1654203637%26width%3D136%26height%3D24%26language%3Dzh_cn" class="gz_sina" target="_blank"><em>新浪关注</em></a>
+    </div>
+</div>
+<div class="nav">
+	<ul>
+<li class="on"><a href="http://www.donews.com/" target="_blank">首页</a></li>
+<li><a href="http://www.donews.com/dtv" target="_blank">DTV</a></li>
+<li><a href="http://www.donews.com/original" target="_blank">原创</a></li>
+<li><a href="http://www.donews.com/idonews" target="_blank">iDoNews</a></li>
+<li><a href="http://www.smarthey.com/" target="_blank">智嗨</a></li>
+<li><a href="http://www.donews.com/net" target="_blank">互联网</a></li>
+<li><a href="http://m.donews.com" target="_blank">移动互联网</a></li>
+<li><a href="http://game.donews.com" target="_blank">游戏</a></li>
+<li><a href="http://ec.donews.com" target="_blank">电商</a></li>
+<li><a href="http://x.donews.com/" target="_blank">创业</a></li>
+<li><a href="http://www.donews.com/special/" target="_blank">专题</a></li>
+<li><a href="http://www.donews.com/scroll/" target="_blank">滚动</a></li>
+
+<!--li class="a-registration"><a href="http://2014.donews.com/" target="_blank">2014颁奖盛典</a></li-->
+    </ul>
+
+</div>
+
+<div class="banner layout"><!-- 广告位：index-top-banner-1 --><script type="text/javascript">BAIDU_CLB_fillSlot("847664");</script>
+</div>
+<div id="wrap">
+    <!-- container -->
+    <div id="container">
+        <!-- content -->
+        <div id="content">
+            <div class="layout mt19">
+            	<div class="layoutleft">
+               <div class="box focus">
+                        <div id="slider" class="focusarea fl">
+                            <div id="slider_name">
+                             <ul class="silder_con"> <!-- Sections Create at 2015-10-02 21:18:02.158617 -->
+     <li class="silder_panel">
+         <div class="silder_intro">
+             <a href="http://game.donews.com/201510/2904985.shtm" target="_blank" class="pic"><img src="http://img2.donews.com/2015/1002/76343181.jpg" width="378" height="258" alt="动画公司玄机做新秦时明月手游发行 靠谱么？"></a>
+  <h5><span></span><a href="http://game.donews.com/201510/2904985.shtm" target="_blank">动画公司玄机做新秦时明月手游发行 靠谱么？</a></h5>
+             <div class="info">手游市场的盘子越做越大，除了很多端游页游公司转型来做，一些非游戏公司也在入局，多以发行切入，但隔行如隔山，效果似乎不怎么理想。因此动画公司玄机科技宣布要做旗下动画改编手游《新秦时明月》发行的  <a href="http://game.donews.com/201510/2904985.shtm" target="_blank">[详细]</a></div>
+  
+                 
+<p> <a href="http://game.donews.com/201408/2823623.shtm" target="_blank">秦时明月手游推出大电影版本 植入电影元素</a></p>
+                 
+<p> <a href="http://game.donews.com/201508/2899091.shtm" target="_blank">玄机科技与畅梦游戏联合发行动漫改编手游《新秦时明月》</a></p>
+                 
+<p> <a href="http://game.donews.com/201509/2903923.shtm" target="_blank">玄机启动秦时明月品牌拓展战略 将推真人影视剧</a></p>
+                 
+<p> <a href="http://game.donews.com/201408/2830549.shtm" target="_blank">数据控：畅游页游秦时明月首日流水近100万</a></p>
+                 
+              
+   </div>
+         </li>
+
+</ul> 
+                           </div>
+                            <div class="silderBox"></div>
+                        </div>
+                        <div class="hotarea fr"> <!-- Sections Create at 2015-10-02 21:18:02.187067 --><div class="twc">
+<h5><a href="http://www.donews.com/net/201509/2904873.shtm" target="_blank">iDoNews专栏：流量单月不清零，虚晃一枪是为了什么？</a></h5>
+<div class="info"><p><a href="http://www.donews.com/net/201509/2904873.shtm" target="_blank"><img src="http://img2.donews.com/2015/0930/12798442.jpg" alt="iDoNews专栏：流量单月不清零，虚晃一枪是为了什么？" width="108" height="60" class="fr"></a>无论你每个月的流量够用或者不够用，“流量不清零”依然是摆设。</p></div>
+                   </div>
+<div class="twc">
+<h5 class="line"><a href="http://www.donews.com/net/201509/2904883.shtm" target="_blank" class="bluefont">业内人说：华为帮谷歌造安卓机，能打破谷歌Nexus魔咒吗？</a></h5>
+<div class="info"><p><a href="http://www.donews.com/net/201509/2904883.shtm" target="_blank"><img src="http://img2.donews.com/2015/0930/36355508.jpg" alt="业内人说：华为帮谷歌造安卓机，能打破谷歌Nexus魔咒吗？" width="108" height="60" class="fr"></a>谷歌Nexus手机的标杆作用已今非昔比，华为能否帮其打破符咒？</p></div>
+                   </div>
+  
+                         <!-- Sections Create at 2015-10-02 21:18:06.307064 --><div class="hotarealist">
+<ul class="line">
+
+<li><a class="liv_tit" title="新专利申请曝光：苹果或正研发智能戒指" href="http://www.donews.com/it/201510/2904976.shtm" target="_blank">新专利申请曝光：苹果或正研发智能戒指</a></li>
+
+
+<li><a class="liv_tit" title="谷歌Moonshot运营亏损或达40亿美元" href="http://www.donews.com/net/201510/2904962.shtm" target="_blank">谷歌Moonshot运营亏损或达40亿美元</a></li>
+
+
+<li><a class="liv_tit" title="传三星Galaxy S7将采用高通820处理器" href="http://www.donews.com/it/201510/2904969.shtm" target="_blank">传三星Galaxy S7将采用高通820处理器</a></li>
+
+</ul> <ul>
+
+
+<li><a class="liv_tit" title="苹果公司股价下跌6%：空头变现离场" href="http://www.donews.com/it/201510/2904972.shtm" target="_blank">苹果公司股价下跌6%：空头变现离场</a></li>
+
+
+<li><a class="liv_tit" title="新漏洞：一首歌可攻陷所有Android设备" href="http://www.donews.com/it/201510/2904961.shtm" target="_blank">新漏洞：一首歌可攻陷所有Android设备</a></li>
+
+
+<li><a class="liv_tit" title="Win 10开放下载两月：市场份额6.63%" href="http://www.donews.com/net/201510/2904958.shtm" target="_blank">Win 10开放下载两月：市场份额6.63%</a></li>
+
+
+</ul>
+</div>
+                      </div>
+                    </div>
+                    <div class="box picarea  mt11"><!--object type="application/x-shockwave-flash" data="http://ui.donews.com/donews2013/img/695.swf" width="695" height="98" id="dreamdu">
+<param name="movie" value="http://ui.donews.com/donews2013/img/695.swf" />
+</object--><script type="text/javascript">BAIDU_CLB_fillSlot("847682");</script><!--div class="imgbox mr9"><script type="text/javascript">BAIDU_CLB_fillSlot("713064");</script></div><img src="http://ui.donews.com/donews2013/img/tonglan1.jpg" width="695" height="98"  alt="DoNews"/>
+					<div class="imgbox"><script type="text/javascript">BAIDU_CLB_fillSlot("713065");</script></div--></div>
+                    <div class="box mt11">
+                    	<div class="ycarea fl">
+                        	<div class="hd">
+                        	  <h2 class="fl"><a href="http://www.donews.com/original/">原创新闻</a><span>ORIGINAL NEWS</span></h2><span class="icotype icotypebd" style="display:none"><a href="#">求报导</a></span></div>
+                   	  		<div class="bd">
+ <!-- Sections Create at 2015-10-02 21:18:02.320663 -->
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201510/2904942.shtm" title="滴滴柳青自爆患乳腺癌：已接受治疗 不影响工作" target="_blank" alt="滴滴柳青自爆患乳腺癌：已接受治疗 不影响工作">滴滴柳青自爆患乳腺癌：已接受治疗 不影响工作</a></h5>
+<a title="滴滴柳青自爆患乳腺癌：已接受治疗 不影响工作" href="http://www.donews.com/net/201510/2904942.shtm" target="_blank"><img alt="滴滴柳青自爆患乳腺癌：已接受治疗 不影响工作" src="http://img2.donews.com/2015/1001/74825488.jpg.138.jpg" width="138" height="78" class="fr"></a>
+滴滴总裁柳青昨日晚间向全体员工发出内部信，透露自己患上乳腺癌，前几天刚刚在医院做了一个肿瘤摘除的小手术，目前已经回家继续接受治疗。滴滴快的官方也确认了这一消息。
+</div>
+
+
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201509/2904901.shtm" title="特斯拉正式发布Model X 百公里加速仅3.2秒" target="_blank" alt="特斯拉正式发布Model X 百公里加速仅3.2秒">特斯拉正式发布Model X 百公里加速仅3.2秒</a></h5>
+<a title="特斯拉正式发布Model X 百公里加速仅3.2秒" href="http://www.donews.com/net/201509/2904901.shtm" target="_blank"><img alt="特斯拉正式发布Model X 百公里加速仅3.2秒" src="http://img2.donews.com/2015/0930/25766995.jpg.138.jpg" width="138" height="78" class="fr"></a>
+北京时间9月30日，特斯拉发布首款电动SUV车型Model X，新车包含P90D和90D两个版本，采用两段式欧翼车门，三排的七座布局，最高续航里程约为257英里
+</div>
+
+
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201509/2904890.shtm" title="iTunes Store入华 苹果完善影音图书娱乐生态" target="_blank" alt="iTunes Store入华 苹果完善影音图书娱乐生态">iTunes Store入华 苹果完善影音图书娱乐生态</a></h5>
+<a title="iTunes Store入华 苹果完善影音图书娱乐生态" href="http://www.donews.com/net/201509/2904890.shtm" target="_blank"><img alt="iTunes Store入华 苹果完善影音图书娱乐生态" src="http://img2.donews.com/2015/0930/68525844.jpg.138.jpg" width="138" height="78" class="fr"></a>
+苹果公司今日正式在中国大陆地区推出iTunes Store、Apple Music及iBooks服务，这是苹果入华以来首次在国内推出其娱乐生态内容服务。
+</div>
+
+
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201509/2904881.shtm" title="微信公众平台整顿色情内容 违者将封号清空" target="_blank" alt="微信公众平台整顿色情内容 违者将封号清空">微信公众平台整顿色情内容 违者将封号清空</a></h5>
+<a title="微信公众平台整顿色情内容 违者将封号清空" href="http://www.donews.com/net/201509/2904881.shtm" target="_blank"><img alt="微信公众平台整顿色情内容 违者将封号清空" src="http://img2.donews.com/2015/0930/89461878.jpg.138.jpg" width="138" height="78" class="fr"></a>
+近日，微信公众平台发布公告称，微信公众平台将对淫秽、色情遗迹低俗类等信息进行整顿，以及传播非法性药品、性保健品、性用品和性病治疗营销信息等相关内容的账号进行打击。
+</div>
+
+
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201509/2904836.shtm" title="iPhone 6s首周销售1300万台？分析师：实际没增长" target="_blank" alt="iPhone 6s首周销售1300万台？分析师：实际没增长">iPhone 6s首周销售1300万台？分析师：实际没增长</a></h5>
+<a title="iPhone 6s首周销售1300万台？分析师：实际没增长" href="http://www.donews.com/net/201509/2904836.shtm" target="_blank"><img alt="iPhone 6s首周销售1300万台？分析师：实际没增长" src="http://img2.donews.com/2015/0929/30234521.jpg.138.jpg" width="138" height="78" class="fr"></a>
+苹果公司昨日宣布，iPhone 6s及6s Plus首周销量已达1300万部，创历史新高，但有分析师指出，iPhone 6s的销量增加得益于该产品在中国地区首发，因此和此前系那个比，iPho
+</div>
+
+
+
+<div class="info">
+<h5><a href="http://www.donews.com/net/201509/2904838.shtm" title="酷6与精英集团合作 共同推出模特互动社区" target="_blank" alt="酷6与精英集团合作 共同推出模特互动社区">酷6与精英集团合作 共同推出模特互动社区</a></h5>
+<a title="酷6与精英集团合作 共同推出模特互动社区" href="http://www.donews.com/net/201509/2904838.shtm" target="_blank"><img alt="酷6与精英集团合作 共同推出模特互动社区" src="http://img2.donews.com/2015/0929/85703358.jpg.138.jpg" width="138" height="78" class="fr"></a>
+魔度网的主营业务为魔度社区，是一款以模特为核心，以电商为特色，专为模特与粉丝量身打造的垂直视频互动社区。为打造魔度社区，双方将发挥各自的资源优势。酷6将为魔度提供技术支持、推广平台和用户资源
+</div>
+
+
+
+<div class="textbox">
+<h5><a href="http://game.donews.com/201510/2904906.shtm" target="_blank">电竞女队猛增至50余支 女子电竞商业价值有多高</a></h5>
+
+<p><a href="http://game.donews.com/201504/2888554.shtm" target="_blank">手游电竞化，真的靠谱吗？</a></p>
+
+<p><a href="http://game.donews.com/201509/2904492.shtm" target="_blank">体育总局推出首届高校电竞赛事CUEL 11月开赛</a></p>
+
+<p><a href="http://game.donews.com/201508/2900688.shtm" target="_blank">风口上的移动电竞：雷声大雨点小 前路漫漫缺少标杆</a></p>
+
+<p><a href="http://game.donews.com/201509/2901862.shtm" target="_blank">深喉爆料：从合作到反目 斗鱼龙珠战旗奥飞动漫的恩怨情仇</a></p>
+
+</div>
+
+
+ <!-- Sections Create at 2015-10-02 21:18:02.554326 --><ul class="ul_two">
+
+<li><a class="liv_tit" title="掌游天下公布《曙光之战》IP计划 同名漫画与手游先上线" href="http://game.donews.com/201509/2904885.shtm" target="_blank">掌游天下公布《曙光之战》IP计划 同名漫画与手游先上线</a></li>
+
+
+
+<li><a class="liv_tit" title="更美APP刘迪：整形O2O之后，如何构建消费医疗平台？" href="http://www.donews.com/media/201509/2904879.shtm" target="_blank">更美APP刘迪：整形O2O之后，如何构建消费医疗平台？</a></li>
+
+
+
+<li><a class="liv_tit" title="360周鸿祎谈网络安全：“看见”是安全最重要的能力" href="http://www.donews.com/net/201509/2904884.shtm" target="_blank">360周鸿祎谈网络安全：“看见”是安全最重要的能力</a></li>
+
+<li class="line"></li>
+
+
+
+<li><a class="liv_tit" title="盖娅网络更名盖娅互娱 宣布收购《自由之战》研发方" href="http://game.donews.com/201509/2904841.shtm" target="_blank">盖娅网络更名盖娅互娱 宣布收购《自由之战》研发方</a></li>
+
+
+
+<li><a class="liv_tit" title="周鸿祎谈与酷派纠纷：和解后获酷派300人团队" href="http://www.donews.com/net/201509/2904839.shtm" target="_blank">周鸿祎谈与酷派纠纷：和解后获酷派300人团队</a></li>
+
+
+
+<li><a class="liv_tit" title="Q房网与租了么启动租房分期合作：租金0息月付" href="http://www.donews.com/net/201509/2904828.shtm" target="_blank">Q房网与租了么启动租房分期合作：租金0息月付</a></li>
+
+
+<li class="line"></li>
+
+
+<li><a class="liv_tit" title="家居设计品牌造作获A轮1500万美元融资 贝塔斯曼领投" href="http://www.donews.com/net/201509/2904827.shtm" target="_blank">家居设计品牌造作获A轮1500万美元融资 贝塔斯曼领投</a></li>
+
+
+
+<li><a class="liv_tit" title="德力股份拟25亿收购广州创思全部股权 市盈率14倍" href="http://game.donews.com/201509/2904811.shtm" target="_blank">德力股份拟25亿收购广州创思全部股权 市盈率14倍</a></li>
+
+
+
+<li><a class="liv_tit" title="蓝港十万个冷笑话台湾地区上线 公司加快全球化布局脚步" href="http://game.donews.com/201509/2904810.shtm" target="_blank">蓝港十万个冷笑话台湾地区上线 公司加快全球化布局脚步</a></li>
+
+
+
+<li><a class="liv_tit" title="星际争霸2虚空之遗通过广电总局审批 有望全球同步上线" href="http://game.donews.com/201509/2904809.shtm" target="_blank">星际争霸2虚空之遗通过广电总局审批 有望全球同步上线</a></li>
+
+
+
+<li><a class="liv_tit" title="挖财李治国：从记账工具转向金融服务公司" href="http://www.donews.com/net/201509/2904803.shtm" target="_blank">挖财李治国：从记账工具转向金融服务公司</a></li>
+
+
+
+</ul>
+</div>
+                        </div>
+                    	<div class="gdarea fr">
+                        	<div class="hd"><h2><a href=" http://www.donews.com/tags/@title%E4%B8%9A%E5%86%85%E4%BA%BA%E8%AF%B4.shtm" target="_blank" class="bluefont">观点</a><span>VIEWPOINT</span></h2></div>
+                            <div class="bd">
+                             <div class="info infomore"><span class="todayicon"></span><a title="阿里投资印度支付平台，是为提振股市？" href="http://www.donews.com/idonews/article/7117.shtm" target="_blank"><img alt="阿里投资印度支付平台，是为提振股市？" src="http://www.donews.com/idonews/./Upload/thumbs/AI-KV7FLBaCy8.jpg" width="267" height="151"></a><h5><a href="http://www.donews.com/idonews/article/7117.shtm" target="_blank">阿里投资印度支付平台，是为提振股市？</a></h5>阿里需要更好的表现，因为，可能没有比印度更好的地方了。 &nbsp;<a title="阿里投资印度支付平台，是为提振股市？" href="http://www.donews.com/idonews/article/7117.shtm" target="_blank" class="redfont">更多></a></div>
+
+                             <h3><a href="http://www.donews.com/tags/@title%E6%8A%A5%E4%B8%8D%E9%81%93.shtm" target="_blank" class="bbdarea">报不道</a></h3>
+                             <h5><a href="http://www.donews.com/idonews/article/7116.shtm" target="_blank">为谷歌代工Nexus 6P，为什么是华为？</a></h5>
+<div class="info" style="height: 115px;"><a title="为谷歌代工Nexus 6P，为什么是华为？" href="http://www.donews.com/idonews/article/7116.shtm" target="_blank"><img alt="为谷歌代工Nexus 6P，为什么是华为？" src="http://www.donews.com/idonews/./Upload/thumbs/AI-32rJevrb8Q.jpg" width="138" height="78" class="fr"></a>历史上给Nexus做过代工的厂商后来都不太如意，希望华为能打破这个魔咒。</div>
+
+                             <h3><a href="http://www.donews.com/tags/@title%E5%8F%AA%E8%AF%B4%E4%BA%A7%E5%93%81.shtm" target="_blank" class="cparea">只说产品</a></h3>
+                             <h5><a href="http://www.donews.com/idonews/article/7109.shtm" target="_blank">狡猾的LG：放开OLED面板专利，等猪养肥了再杀？</a></h5>
+<div class="info" style="height: 115px;"><a title="狡猾的LG：放开OLED面板专利，等猪养肥了再杀？" href="http://www.donews.com/idonews/article/7109.shtm" target="_blank"><img alt="狡猾的LG：放开OLED面板专利，等猪养肥了再杀？" src="http://www.donews.com/idonews/./Upload/thumbs/AI-8Snxas6JTF.jpg" width="138" height="78" class="fr"></a>“等猪养肥了再杀”是跨国巨头在知识产权领域的一贯策略。</div>
+ </div>
+                             <div class="picbox"><a href="http://www.donews.com/idonews/" target="_blank"><img src="http://img2.donews.com/2014/0221/63741615.jpg" alt="iDoNews"></a><!--script type="text/javascript">BAIDU_CLB_fillSlot("713002");</script><a href="http://www.donews.com/special/bjdlsp2013/" target="_blank"><img src="http://ui.donews.com/donews2013/img/2013_4x.jpg" id="ji"  onmouseover="document.images['ji'].src='http://ui.donews.com/donews2013/img/2013_4d.jpg'" onmouseout="document.images['ji'].src='http://ui.donews.com/donews2013/img/2013_4x.jpg'" alt="DTV"></a--></div>
+                               <div class="bd">
+                                <h3><a href="http://www.donews.com/idonews/" target="_blank" class="djarea">独家专栏</a></h3>
+                            <h5><a href="http://www.donews.com/idonews/article/7115.shtm" target="_blank">刷单泛滥成灾，里面有多少门道</a></h5>
+<div class="info" style="height:84px"><a title="刷单泛滥成灾，里面有多少门道" href="http://www.donews.com/idonews/article/7115.shtm" target="_blank"><img alt="刷单泛滥成灾，里面有多少门道" src="http://www.donews.com/idonews/./Upload/thumbs/AI-CcH3xmpdeE.jpg" width="138" height="78" class="fr"></a>存在即合理，“刷单”不应该是禁忌的话题。</div>
+
+                            </div>
+                            	<div class="gdareadl">
+<dl>
+     <dt ><span></span><img src="http://www.donews.com/idonews/./Upload/thumbs/AI-J2HgDTRCZI.jpg" width="37" height="37" alt="格力营收下降，董明珠错了吗?"></dt>
+     <dd ><p><a href="http://www.donews.com/idonews/article/7100.shtm" target="_blank">格力营收下降，董明珠错了吗?</a> <br/><i></i>尽管营收下降，但董明珠的大方向没错，只是
+	 </p>
+         <!--span><a href="http://www.donews.com/idonews/article/7100.shtm" target="_blank">评论</a></span-->
+     </dd>
+</dl><dl>
+     <dt ><span></span><img src="http://www.donews.com/idonews/./Upload/thumbs/AI-9NJTH6yC35.jpg" width="37" height="37" alt="库克为何看不惯电影《乔布斯》"></dt>
+     <dd ><p><a href="http://www.donews.com/idonews/article/7099.shtm" target="_blank">库克为何看不惯电影《乔布斯》</a> <br/><i></i>起码也要先把电影看一遍再予以置评。
+	 </p>
+         <!--span><a href="http://www.donews.com/idonews/article/7099.shtm" target="_blank">评论</a></span-->
+     </dd>
+</dl><dl>
+     <dt ><span></span><img src="http://www.donews.com/idonews/./Upload/thumbs/AI-VuMHmJRr3v.jpg" width="37" height="37" alt="华为裁员？提升员工性价比才是真相"></dt>
+     <dd ><p><a href="http://www.donews.com/idonews/article/7098.shtm" target="_blank">华为裁员？提升员工性价比才是真相</a> <br/><i></i>目地是在大形势变化下降低人力成本，提升效
+	 </p>
+         <!--span><a href="http://www.donews.com/idonews/article/7098.shtm" target="_blank">评论</a></span-->
+     </dd>
+</dl>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="layoutright">
+                <div class="dtvarea" style="height:390px;">
+                    	<div class="hd"><h2><a href="http://www.donews.com/dtv" target="_blank" class="bluefont">DTV</a><span>视频</span></h2></div>
+                        <div class="bd">
+                        	<ul>
+                        <!-- Sections Create at 2015-10-02 21:18:06.805518 -->
+<li>
+<div class="time timeon">DTV</div>
+<a title="【酷玩】VIW：告别自拍杆!脸大星人的摄像辅助神器" href="http://www.donews.com/dtv/201510/2904963.shtm"  target="_blank" class="twc"><span></span><img src="http://img2.donews.com/2015/1002/19752226.jpg" width="228" height="128" alt="【酷玩】VIW：告别自拍杆!脸大星人的摄像辅助神器"></a>
+<div class="dis">
+<p class="tit"><!--span class="icotype icotypesp"></span--><a title="【酷玩】VIW：告别自拍杆!脸大星人的摄像辅助神器" href="http://www.donews.com/dtv/201510/2904963.shtm" target="_blank">【酷玩】VIW：告别自拍杆!脸大星人的摄像辅助神器</a></p>
+                                      	<p class="data">精彩科技报道,尽在DoNewsTV</p>
+                                       <p class="btn"><a title="【酷玩】VIW：告别自拍杆!脸大星人的摄像辅助神器" href="http://www.donews.com/dtv/201510/2904963.shtm" target="_blank"><img src="http://ui.donews.com/donews2013/img/bg_dtvarea_btn.png" width="56" height="24" alt="播放"></a></p>
+                                    </div>
+ </li>
+
+<li>
+<div class="time">DTV</div>
+<a title="【酷玩】Butterfleye:想知道你不在的时候发生了什么吗" href="http://www.donews.com/dtv/201510/2904943.shtm"  target="_blank" class="twc"><span></span><img src="http://img2.donews.com/2015/1001/41379153.jpg" width="228" height="128" alt="【酷玩】Butterfleye:想知道你不在的时候发生了什么吗"></a>
+<div class="dis">
+<p class="tit"><!--span class="icotype icotypesp"></span--><a title="【酷玩】Butterfleye:想知道你不在的时候发生了什么吗" href="http://www.donews.com/dtv/201510/2904943.shtm" target="_blank">【酷玩】Butterfleye:想知道你不在的时候发生了什么吗</a></p>
+                                      	<p class="data">精彩科技报道,尽在DoNewsTV</p>
+                                       <p class="btn"><a title="【酷玩】Butterfleye:想知道你不在的时候发生了什么吗" href="http://www.donews.com/dtv/201510/2904943.shtm" target="_blank"><img src="http://ui.donews.com/donews2013/img/bg_dtvarea_btn.png" width="56" height="24" alt="播放"></a></p>
+                                    </div>
+ </li>
+
+                            </ul>
+                        </div>
+                     </div>
+					<div class="rdztarea mt11">
+                    	<div class="hd"><h2><span>热点</span>专题</h2></div>
+                        <div class="bd">
+                            <!-- Sections Create at 2015-09-16 17:38:10.595710 --><div id="js" class="js">
+                            	<em id="jsNav" class="jsNav">
+                                <a id="prev" class="prevBtn" href="javascript:void(0)"></a>
+                                <a class="trigger imgSelected" href="javascript:void(0)">1</a>
+                                <a class="trigger" href="javascript:void(0)">2</a>
+                                <a class="trigger" href="javascript:void(0)">3</a>
+                    <a id="next" class="nextBtn" href="javascript:void(0)"></a>
+                                </em>
+<div class="ztcontent">
+                       <a href="http://www.donews.com/special/talkingdatat11/" target="_blank"><img src="http://img2.donews.com/2015/0916/76096758.jpg" alt="TalkingData T11 全球移动大数据峰会" width="228" height="128"></a>
+<h5><a href="http://www.donews.com/special/talkingdatat11/" target="_blank">TalkingData T11 全球移动大数据峰会</a></h5>
+ <p>由中国最大的独立第三方移动数据服务平台TalkingData主办的《T11全球移动大数据峰会》...<a href="http://www.donews.com/special/360osiuni/" target="_blank" class="redfont">更多></a></p>
+  </div>
+  <div class="ztcontent" style="display:none;">
+                         <a href="http://www.donews.com/special/xjkz/" target="_blank"><img src="http://img2.donews.com/2015/0827/49298509.png" alt="DoNews策划专题：仙剑客栈-仙剑20周年全新巨制" width="228" height="128"></a>
+  <h5><a href="http://www.donews.com/special/xjkz/" target="_blank">仙剑客栈-仙剑20周年全新巨制</a></h5>
+   <p>仙剑20年王牌手游巨制《仙剑客栈》已于6月30日开启首次测试，人气火爆<a href="http://www.donews.com/special/xjkz/" target="_blank" class="redfont">更多></a></p>
+    </div>
+<div class="ztcontent"  style="display:none;">
+                       <a href="http://www.donews.com/special/tdf2015/" target="_blank"><img src="http://img2.donews.com/2015/0812/23421395.jpg" alt="DoNews策划专题：2015土豆映像季" width="228" height="128"></a>
+                                <h5><a href="http://www.donews.com/special/tdf2015/" target="_blank">DoNews策划专题：2015土豆映像季</a></h5>
+                                <p>土豆和Ta的朋友们——2015土豆映像季发布会...<a href="http://www.donews.com/special/tdf2015/" target="_blank" class="redfont">更多></a></p>
+  </div>
+
+
+
+   </div>
+                        </div>
+                    </div>
+                     <div class="mt11 pic1area" style="height:455px;"><script type="text/javascript">BAIDU_CLB_fillSlot("847688");</script>   
+                     </div>
+                     <div class="mediaarea mt11">
+                    	<div class="hd"><h2><span>自媒体</span>平台</h2></div>
+                        <div class="bd">
+                        	<ul>
+                            	<!-- Sections Create at 2015-10-02 21:18:04.150190 --> 
+
+<li class="bg"><span class="mt_qq"></span><a href="http://www.donews.com/idonews/article/7101.shtm" target="_blank">超越硅谷可不是一件容易的事</a></li>
+
+
+
+
+
+
+ 
+
+ 
+
+
+<li><span class="mt_sina"></span><a href="http://www.donews.com/idonews/article/7104.shtm" target="_blank">农村电商有哪些困境</a></li>
+
+
+
+
+
+ 
+
+ 
+
+
+
+<li class="bg"><span class="mt_baidu"></span><a href="http://www.donews.com/idonews/article/7105.shtm" target="_blank">网络寒冬你害怕么</a></li>
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+<li><span class="mt_soso"></span><a href="http://www.donews.com/idonews/article/7097.shtm" target="_blank">虚拟运营商小米为的是什么</a></li>
+
+
+
+ 
+
+ 
+
+
+
+
+
+<li class="bg"><span class="mt_163"></span><a href="http://www.donews.com/idonews/article/7098.shtm" target="_blank">华为裁员为的是什么？</a></li>
+
+
+ 
+
+ 
+
+
+
+
+
+
+<li><span class="mt_sina"></span><a href="http://www.donews.com/idonews/article/7099.shtm" target="_blank">库克怎么不喜欢《乔布斯》</a></li>
+
+ 
+
+
+                            </ul>
+                        </div>
+                     </div>
+                    <div class="mt11 pic1area"><script type="text/javascript">BAIDU_CLB_fillSlot("847689");</script>   
+                     </div>
+                     <div class="votearea mt11">
+                    	<div class="hd"><h2><span>网站</span>调查</h2></div>
+                        <!-- Sections Create at 2013-07-12 17:19:46.098755 --><script type="text/javascript" src="http://vote.donews.com/apis/vote/vote.js"></script>
+<script type="text/javascript">
+$(function(){
+    setVoteOptions(7,14,'option_7_14');
+    setVoteOptions(7,15,'option_7_15');
+    setVoteOptionsNum(7,14);
+    setVoteOptionsNum(7,15);
+    setVoteTitle(7,'votetitle');
+    setVoteContent(7,'votecontent');
+})
+</script>
+<div class="bd">
+                        	<form action="" method="get" class="voteform">
+                        	<h5 id="votetitle"></h5>
+                        	<p id="votecontent"></p>
+                            <div class="but_top button fl"><span class="xz11" id="option_7_14"></span> <span id="num_7_14"></span></div>
+                            <div class="but_down button fl"><span class="xz11" id="option_7_15"></span><span id="num_7_15"></span></div>
+                        	</form>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="layout mt11"><script type="text/javascript">BAIDU_CLB_fillSlot("847685");</script></div>
+            <div class="layout mt11">
+            	<ul class="flarea">
+                	  <li class="hlwarea">
+                    	<div class="hd"><h2><a href="http://www.donews.com/net/" target="_blank" class="bluefont">互联网</a><span>INTERNET</span></h2></div>
+                      	<div class="bd">
+                       <!-- Sections Create at 2015-10-02 21:18:03.961243 -->
+<h5><a href="http://www.donews.com/net/201510/2904959.shtm" target="_blank">谷歌不小心把Google.com域名给卖了</a></h5>
+ <div class="info"><a title="谷歌不小心把Google.com域名给卖了" href="http://www.donews.com/net/201510/2904959.shtm" target="_blank"><img alt="谷歌不小心把Google.com域名给卖了" src="http://img2.donews.com/2015/1002/45537437.jpg.138.jpg" width="138" height="78"  class="fr"></a>韦德对Business Insider称，他通过谷歌域名购买服务GoogleDomains搜索可用域名时，所有的谷歌域名都已经被注册，唯一还留着保持着绿色“可用”状态的是“Google.com”。</div>
+ <!-- Sections Create at 2015-10-02 21:18:04.093417 -->
+<p><a title="亚马逊封杀谷歌Chromecast和苹果电视" href="http://www.donews.com/net/201510/2904977.shtm" target="_blank">亚马逊封杀谷歌Chromecast和苹果电视</a></p>
+
+<p><a title="一家明星P2P平台，是如何走向没落的" href="http://www.donews.com/net/201510/2904973.shtm" target="_blank">一家明星P2P平台，是如何走向没落的</a></p>
+
+<p><a title="欧盟反垄断专员：我们并没有针对美国公司" href="http://www.donews.com/net/201510/2904970.shtm" target="_blank">欧盟反垄断专员：我们并没有针对美国公司</a></p>
+
+                      </div>
+                    </li>
+                    <li class="dsarea">
+                    	<div class="hd"><h2><a href="http://ec.donews.com/" target="_blank" class="bluefont">电商</a><span>B2B</span></h2></div>
+                      	<div class="bd">
+                         <!-- Sections Create at 2015-10-02 21:18:03.143762 -->
+<h5><a href="http://ec.donews.com/201510/2904980.shtm" target="_blank">我国电商规模破7万亿 与“柠檬市场”说再见</a></h5>
+ <div class="info"><a title="我国电商规模破7万亿 与“柠檬市场”说再见" href="http://ec.donews.com/201510/2904980.shtm" target="_blank"><img alt="我国电商规模破7万亿 与“柠檬市场”说再见" src="http://img2.donews.com/2015/1002/17364932.png.138.jpg" width="138" height="78"  class="fr"></a>当下，中国电子商务市场呈现两大新趋向，一个是农村电子商务，拥有6-7亿人口的农村市场大有可为。电商巨头阿里巴巴、京东、苏宁不约而同瞄准农村这块“大肥肉”：阿里巴巴提出“千县万村计划”，在三至五年内投资100亿元，建立1000个县级运营中心和10万个村级服务站；京东提出3F战略，即工业品进农村、发展农村金融、生鲜电商战略。</div>
+<!-- Sections Create at 2015-10-02 21:18:03.297783 -->
+<p><a title="朋友圈卖自制食品将要纳入管理范围" href="http://ec.donews.com/201510/2904979.shtm" target="_blank">朋友圈卖自制食品将要纳入管理范围</a></p>
+
+<p><a title="从校园网上便利店看O2O成败的三个核心问题" href="http://ec.donews.com/201510/2904978.shtm" target="_blank">从校园网上便利店看O2O成败的三个核心问题</a></p>
+
+<p><a title="国家质检总局抽查：近三成网购产品不合格" href="http://ec.donews.com/201510/2904974.shtm" target="_blank">国家质检总局抽查：近三成网购产品不合格</a></p>
+  </div>
+                    </li>
+                    <li class="yxarea">
+                    	<div class="hd"><h2><a href="http://game.donews.com/" target="_blank" class="bluefont">游戏</a><span>GAMES</span></h2></div>
+                      	<div class="bd">
+                           <!-- Sections Create at 2015-10-02 21:18:02.874757 -->
+<h5><a href="http://game.donews.com/201510/2904951.shtm" target="_blank">5 年10亿次下载 《水果忍者》这款游戏抓准了时机</a></h5>
+ <div class="info"><a title="5 年10亿次下载 《水果忍者》这款游戏抓准了时机" href="http://game.donews.com/201510/2904951.shtm" target="_blank"><img alt="5 年10亿次下载 《水果忍者》这款游戏抓准了时机" src="http://img2.donews.com/2015/1002/93451569.png.138.jpg" width="138" height="78" class="fr"></a>《水果忍者》的发布已经有5年时间。这款简单的游戏取得了巨大的成功，下载量超过10亿次。对于游戏开发商Halfbrick Studios来说，这无疑是件值得庆祝的事情。</div>
+
+                          <!-- Sections Create at 2015-10-02 21:18:03.061942 -->
+<p><a title="除了手游 任天堂还想用表情贴图来吸引手机前的你" href="http://game.donews.com/201510/2904954.shtm" target="_blank">除了手游 任天堂还想用表情贴图来吸引手机前的你</a></p>
+
+<p><a title="任天堂旗下《超级马里奥制造》三周销量破百万" href="http://game.donews.com/201510/2904948.shtm" target="_blank">任天堂旗下《超级马里奥制造》三周销量破百万</a></p>
+
+<p><a title="微软《我的世界》将在2016年春支持OculusRift" href="http://game.donews.com/201510/2904944.shtm" target="_blank">微软《我的世界》将在2016年春支持OculusRift</a></p>
+
+                      </div>
+                    </li>
+         
+                  <li class="ydarea">
+                    	<div class="hd"><h2><a href="http://m.donews.com/" target="_blank" class="bluefont">移动互联</a><span>MOBILE</span></h2></div>
+                      	<div class="bd">
+                        <!-- Sections Create at 2015-10-02 21:18:03.548277 -->
+<h5><a href="http://m.donews.com/201510/2904968.shtm" target="_blank">苹果下架两款报告美国无人机袭击致死人数的App</a></h5>
+ <div class="info"><a title="苹果下架两款报告美国无人机袭击致死人数的App" href="http://m.donews.com/201510/2904968.shtm" target="_blank"><img alt="苹果下架两款报告美国无人机袭击致死人数的App" src="http://img2.donews.com/2015/1002/61285219.jpg.138.jpg" width="138" height="78" class="fr"></a>苹果公司(以下简称“苹果”)近日从App Store应用商店中删除了两款用来报告美国无人机袭击导致死亡人数的应用。苹果给出的理由是这两款应用提供“过度粗暴或令人反感的内容”。</div>
+<!-- Sections Create at 2015-10-02 21:18:03.678805 -->
+<p><a title="Synaptics拒绝中国财团40亿美元收购要约" href="http://m.donews.com/201510/2904975.shtm" target="_blank">Synaptics拒绝中国财团40亿美元收购要约</a></p>
+
+<p><a title="美运营商Sprint宣布将裁员 节约25亿美元成本" href="http://m.donews.com/201510/2904971.shtm" target="_blank">美运营商Sprint宣布将裁员 节约25亿美元成本</a></p>
+
+<p><a title="谷歌高管：机器人植入大脑将让我们成神" href="http://m.donews.com/201510/2904966.shtm" target="_blank">谷歌高管：机器人植入大脑将让我们成神</a></p>
+
+                      </div>
+                    </li>
+                    <li class="itarea">
+                    	<div class="hd"><h2><a href="http://www.donews.com/it/" target="_blank" class="bluefont">IT数码</a><span>IT DIGIT</span></h2></div>
+                      	<div class="bd">
+                           <!-- Sections Create at 2015-10-02 21:18:03.749531 -->
+<h5><a href="http://www.donews.com/it/201510/2904964.shtm" target="_blank">AMD宣布全球裁员500人 约占员工总数5%</a></h5>
+ <div class="info"><a title="AMD宣布全球裁员500人 约占员工总数5%" href="http://www.donews.com/it/201510/2904964.shtm" target="_blank"><img alt="AMD宣布全球裁员500人 约占员工总数5%" src="http://img2.donews.com/2015/1002/75447061.jpg.138.jpg" width="138" height="78" class="fr"></a>据外电报道，在PC处理器市场与英特尔苦苦缠斗的AMD周四宣布，公司将裁员约500人，占全球员工总数的5%。AMD此次裁员的主要目的是简化业务流程，并削减冗余支出。</div>
+
+                       <!-- Sections Create at 2015-10-02 21:18:03.889102 -->
+<p><a title="波音公司前CFO贝尔加盟苹果董事会" href="http://www.donews.com/it/201510/2904967.shtm" target="_blank">波音公司前CFO贝尔加盟苹果董事会</a></p>
+
+<p><a title="盖茨连续22年成美国首富 净资产760亿美元" href="http://www.donews.com/it/201510/2904965.shtm" target="_blank">盖茨连续22年成美国首富 净资产760亿美元</a></p>
+
+<p><a title="3家公司有望打败苹果 市值率先突破1万亿美元" href="http://www.donews.com/it/201510/2904960.shtm" target="_blank">3家公司有望打败苹果 市值率先突破1万亿美元</a></p>
+
+                      </div>
+                    </li>
+                               <li class="xjjarea">
+                    	<div class="hd"><h2><a href="http://www.donews.com/media/" target="_blank" class="bluefont">新经济&bull;传媒</a><span>MEDIA</span></h2></div>
+                      	<div class="bd">
+                            <!-- Sections Create at 2015-10-02 21:18:03.361498 -->
+<h5><a href="http://www.donews.com/media/201510/2904984.shtm" target="_blank">李晨鹿晗深圳地铁录&quot;跑男&quot;引众人围观(图)</a></h5>
+ <div class="info"><a title="李晨鹿晗深圳地铁录&quot;跑男&quot;引众人围观(图)" href="http://www.donews.com/media/201510/2904984.shtm" target="_blank"><img alt="李晨鹿晗深圳地铁录&quot;跑男&quot;引众人围观(图)" src="http://img2.donews.com/2015/1002/43509062.png.138.jpg" width="138" height="78" class="fr"></a>9月30日，最新一期&quot;跑男&quot;在深圳录制，李晨鹿晗现身深圳地铁站，一现身便遭到众人围观，而本期参与录制的嘉宾则是谢娜。</div>
+
+                            <!-- Sections Create at 2015-10-02 21:18:03.478124 -->
+<p><a title="浙江一高速发生车祸 应急通道被堵伤者死亡" href="http://www.donews.com/media/201510/2904983.shtm" target="_blank">浙江一高速发生车祸 应急通道被堵伤者死亡</a></p>
+
+<p><a title="股市暴跌和人民币贬值 上金所黄金提取量创纪录" href="http://www.donews.com/media/201510/2904982.shtm" target="_blank">股市暴跌和人民币贬值 上金所黄金提取量创纪录</a></p>
+
+<p><a title="国庆首日7万人看升旗 垃圾留存不超5分钟" href="http://www.donews.com/media/201510/2904981.shtm" target="_blank">国庆首日7万人看升旗 垃圾留存不超5分钟</a></p>
+
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //container -->
+
+  <!-- Sections Create at 2015-09-18 09:49:40.727865 -->  <!-- footer -->
+   <div id="footer" class="mt11">
+        <div class="footbox">
+        	<div class="fnav"><a href="http://www.donews.com/about/index.html" target="_blank">关于我们</a> |  <a href="http://www.donews.com/about/agreement.html" target="_blank">电子协议</a> |  <a href="http://www.donews.com/about/contact.html" target="_blank">合作联系</a>  |    <a href="http://www.donews.com/about/link.html" target="_blank">友情链接</a></div>
+            <div class="tcopyright">Copyright 2000-2015 DoNews.COM ( IT 社区 &amp; 媒体平台 )<br>All Rights Reserved 京ICP备09113591号    京公网安备110105006193号</div>
+      	</div>
+<div style="display:none">
+<!-- Donews -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//123.57.227.67/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//123.57.227.67/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Donews Code -->
+</div>    
+    </div>
+    <!-- //footer -->
+    
+
+<!-- count -->
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=21314935" charset="UTF-8"></script>
+<!-- //count -->
+</div>
+<script type="text/javascript">BAIDU_CLB_fillSlot("1011045");</script>
+<script type="text/javascript">BAIDU_CLB_fillSlot("1011046");</script>
+</div>
+</body>
+</html>

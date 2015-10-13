@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! "/>
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/"/>
+    <title>安居白条+</title>
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com//finance/base/1.1.0/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="http://static.360buyimg.com/finance/consumer/buyHouseBaitiao/index/1.0.0/css/index.css">
+    <script>
+        window.jrBase = {
+            navId: 'nav-baitiao',
+            navSubId: 'nav-houseBaitiao',
+            footerFix: true,
+            headerFix: true,
+            // 侧边工具栏
+            sidebar: true,
+            // 问卷反馈url id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=100'
+        };
+    </script>
+</head>
+<body>
+<!--头部页面片内容-->
+<!--header-->
+<!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end-->    <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->    <div class="sub-nav">        <div class="grid-1200 sub-nav-wrap">            <a id="nav-baitiao" class="sub-nav-item" href="http://baitiao.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdbt">京东白条</a><a id="nav-gangbeng" class="sub-nav-item" href="http://bk.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|btlmk">白条联名卡</a>             <a id="nav-gangbeng" class="sub-nav-item" href="http://gb.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|gb">京东钢镚</a>            <a id="nav-travelBaitiao" class="sub-nav-item" href="http://go.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|lybt">旅游白条+</a>            <a id="nav-houseBaitiao" class="sub-nav-item" href="http://fang.jd.com" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|ajbt">安居白条+</a>  <a id="nav-studentFenQi" class="sub-nav-item" href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|xybt">校园白条</a><a id="nav-qiche" class="sub-nav-item" href="http://chedai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|qcjr">汽车金融</a>            <a id="nav-jincai" class="sub-nav-item" href="http://jincai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdjc">京东金采</a>        </div>    </div>    <!--sub-nav-end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+<!--header end-->
+
+<div id="banner" class="ui-banner">
+    <div class="ui-banner-loading" node-type="loading"></div>
+    <ul node-type="list">
+        <li pic="http://static.360buyimg.com/finance/consumer/buyHouseBaitiao/index/1.0.0/css/i/banner-1.jpg">
+            <div class="w">
+                                    <a class="a-zhu" href="/apply/applyInit?businessType=1&token=5b35af1591ad69403bd88ab9c97b9aa520523ce11f3bb13c24467825c91dbf02" clstag="jr|keycount|jr_201503231|81"><strong>申请贷款资格</strong></a>
+                    <a class="a-login" href="/apply/applyInit?businessType=1&token=5b35af1591ad69403bd88ab9c97b9aa520523ce11f3bb13c24467825c91dbf02">我已申请，登录查看贷款进度 <span>&gt;</span></a>
+                                <div class="ui-banner-topbar">
+                    <!--<a href="javascript:void(0);"><div class="bg"></div><span>白条优惠活动</span></a>-->
+                    <a href="http://go.jd.com/query/queryLoanTop" target="_blank" ><div class="bg"></div><span>立即还款</span></a>
+                    <a href="http://help.jr.jd.com/show/helpcenter/449.html" target="_blank" ><div class="bg"></div><span>新手引导</span></a>
+                </div>
+            </div>
+        </li>
+       <!-- <li pic="http://static.360buyimg.com/finance/consumer/buyHouseBaitiao/index/1.0.0/css/i/banner-1.jpg"><a class="a-zhu" href="/apply/applyInit?businessType=1&token=5b35af1591ad69403bd88ab9c97b9aa520523ce11f3bb13c24467825c91dbf02"  clstag="jr|keycount|jr_201503231|81"><strong>申请贷款资格</strong></a></li>-->
+    </ul>
+    <div class="ui-banner-bar hide" node-type="bar">
+        <a href="javascript:void(0);" class="active"></a>
+    </div>
+</div>
+
+<div class="w module-2">
+    <img src="http://static.360buyimg.com/finance/consumer/buyHouseBaitiao/index/1.0.0/css/i/module-2.png" alt="">
+</div>
+<div class="module-3"></div>
+<div class="w module-4">
+    <h2>常见问题</h2>
+    <ul>
+        <li>
+            <h3><i>1</i>什么是白·居·易？</h3>
+            <p>白居易是京东金融白条业务旗下推出的购房首付分期服务，用于支付客户购买合作开发商房产的部分首付款。 </p>
+        </li>
+        <li>
+            <h3><i>2</i>能贷多少金额？</h3>
+            <p>最高可贷总房价的15%或80万（孰低），贷款金额以京东金融最终审批结果为准。</p>
+        </li>
+    </ul>
+    <p class="link"><a href="http://help.jr.jd.com/show/helpcenter/449.html" target="_blank" >更多白·居·易相关问题 ></a></p>
+</div>
+
+<!-- 遮罩层 -->
+<div id="maskLayer" class="mask-layer">
+    <div class="layer-close" node-type="close"></div>
+    <div class="layer-left fl">
+        <div class="lyl-pic"></div>
+        <h3>白·居·易</h3>
+        <div class="layer-line"></div>
+        <p>白条 让居住更容易</p>
+        <a id="buyHouse" class="notjoin" href="javascript:void(0);" node-type="close" clstag="jr|keycount|jr_201503231|79">我要买房</a>
+    </div>
+    <div class="layer-left layer-right fr">
+        <div class="lyl-pic"></div>
+        <h3>租房白条</h3>
+        <div class="layer-line"></div>
+        <p>分期无利息 年住按月付</p>
+        <a id="rentHouse" class="join" href="http://sale.jd.com/act/f3QXlFDUNqM.html" clstag="jr|keycount|jr_201503231|80">我要租房</a>
+    </div>
+</div>
+
+<!--提交申请资料-->
+<div id="test" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>提交申请资料</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="success"></i>
+            <strong>尊敬的白·居·易用户，您已完成贷款资格申请。<br>请您前往开发商处提交所需审核资料。</strong>
+        </h3>
+
+        <dl>
+            <dt><span>审核所需资料</span></dt>
+            <dd>
+                <p><span>1.身份资料：</span><span class="c">申请人身份证正反面复印件、户口本复印件（应包含首页、户主页、本人页、变更页、姓名、身份证号码应该一致）结婚证复印件、离婚证或离婚协议或法院判决书。</span></p>
+                <p><span>2.房产资料：</span><span class="c">申请人房产认购协议（包括城市、项目、房号、面积、成交总价、交房日期等关键信息）</span></p>
+                <p><span>3.收入证明资料：</span><span class="c">（a.b任选其一，c作为辅助证明）</span></p>
+                <ul>
+                    <li>a.申请人工作证明（收入证明至少要体现申请人姓名，单位名称，岗位，工作年限，工资金额并盖章（单位公章或人力资源部门公章）</li>
+                    <li>b.申请人名下的近半年的银行流水：打印时间为近一个月内，开户时间在6个月以上</li>
+                    <li>c.申请人社保或公积金信息材料，由权威的第三方资信渠道提供，需体现：姓名，单位，缴费年月，基数，标志</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <p class="btn-box"><a class="ui-bttn disabled" href="javascript:void(0);" clstag="jr|keycount|jr_201503231|84">前往开发商处提交审核资料</a></p>
+
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="active"><span>提交申请资料</span></li>
+                    <li><span>等待人工审核</span></li>
+                    <li><span>签订电子合同</span></li>
+                    <li><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--下面的弹层可复用一个-->
+<!--等待人工审核-->
+<div id="test2" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>等待人工审核</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="waiting"></i>
+            <strong>尊敬的白·居·易用户，您已完成申请资料提交。<br>人工审核需要3-10个工作日，请您耐心等待短信通知结果。</strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn disabled" href="javascript:void(0);" clstag="jr|keycount|jr_201503231|85">等待人工审核结果通知</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="active"><span>等待人工审核</span></li>
+                    <li><span>签订电子合同</span></li>
+                    <li><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--交付剩余首付款-->
+<div id="test3" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>交付剩余首付款</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="waiting"></i>
+            <strong>尊敬的白·居·易用户，您已完成电子合同签订。<br>请您前往开发商处交付剩余首付款。 </strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn disabled" href="javascript:void(0);" clstag="jr|keycount|jr_201503231|86">前往开发商处交付剩余首付款</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="complete"><span>等待人工审核</span></li>
+                    <li class="complete"><span>签订电子合同</span></li>
+                    <li class="active"><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--等待通知贷款结果-->
+<div id="test4" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>等待通知贷款结果</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="success"></i>
+            <strong>尊敬的白·居·易用户，您已补齐剩余首付款。<br>请您耐心等待贷款结果通知。 </strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn disabled" href="javascript:void(0);" clstag="jr|keycount|jr_201503231|87">等待贷款结果通知</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="complete"><span>等待人工审核</span></li>
+                    <li class="complete"><span>签订电子合同</span></li>
+                    <li class="complete"><span>交付剩余首付款</span></li>
+                    <li class="active"><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--等待通知贷款结果-->
+<div id="test4_1" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>贷款结果</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="success"></i>
+            <strong>尊敬的白·居·易用户，恭喜您已经贷款成功。 </strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn" href="javascript:void(0);" node-type="close" clstag="jr|keycount|jr_201503231|88">返回首页</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="complete"><span>等待人工审核</span></li>
+                    <li class="complete"><span>签订电子合同</span></li>
+                    <li class="complete"><span>交付剩余首付款</span></li>
+                    <li class="complete"><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--申请失败-->
+<div id="test5" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>申请失败</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="error"></i>
+            <strong>尊敬的白·居·易用户，抱歉您未能成功申请贷款资格。</strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn" href="javascript:void(0);" clstag="jr|keycount|jr_201503231|89">返回首页</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first error"><span>申请贷款资格</span></li>
+                    <li><span>提交申请资料</span></li>
+                    <li><span>等待人工审核</span></li>
+                    <li><span>签订电子合同</span></li>
+                    <li><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--审核失败-->
+<div id="test6" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>审核失败</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="error"></i>
+            <strong>尊敬的白·居·易用户，抱歉您未能成功申请贷款资格。</strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn" href="javascript:void(0);" node-type="close" clstag="jr|keycount|jr_201503231|90">返回首页</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="error"><span>等待人工审核</span></li>
+                    <li><span>签订电子合同</span></li>
+                    <li><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test7" class="panel-wrap">
+    <div class="panel-title" node-type="panel-title">
+        <h2>审核驳回</h2>
+        <a href="javascript:void(0);" class="panel-close" node-type="close">close</a>
+    </div>
+    <div class="panel-cont">
+        <h3>
+            <i class="error"></i>
+            <strong>尊敬的白·居·易用户，抱歉您的审核被驳回，请联系开发商，重新提交资料。</strong>
+        </h3>
+        <p class="btn-box"><a class="ui-bttn" href="javascript:void(0);" node-type="close" clstag="jr|keycount|jr_201503231|91">返回首页</a></p>
+        <div class="step-box">
+            <div class="step-wrap">
+                <ul>
+                    <li class="first complete"><span>申请贷款资格</span></li>
+                    <li class="complete"><span>提交申请资料</span></li>
+                    <li class="error"><span>等待人工审核</span></li>
+                    <li><span>签订电子合同</span></li>
+                    <li><span>交付剩余首付款</span></li>
+                    <li><span>贷款成功</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form>
+    <input type="hiddern" id="currentApplyStatus" name="currentApplyStatus" value="" />
+</form>
+
+<!--统一引用底部页面片&公共JS base和JQ引用-->
+<!--footer-->
+<!--footer--><div class="f-copyright">    <div class="grid-1200 footerHolder">        <div class="footer-nav">            <p>                <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于京东钱包</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>                <span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>            </p>            <p>                Copyright &copy; 2004-2015 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎            </p>        </div>        <div class="footer-contact">            <div class="f-contact-time">联系我们<span>（9:00-22:00）</span></div>            <div class="f-contact-way">                <span class="f-contact-tel">400 098 8511</span>                <span class="f-contact-type">(个人业务)</span>                <a class="f-contact-ol online" href="http://chat.jd.com/jd/chat?entry=jd_jr" target="_blank" clstag="jr|keycount|jr_shouye|footerkf">在线客服</a>                <a class="f-contact-ol f-contact-mail" target="_blank" href="http://jr.jd.com/mail/index.html" clstag="jr|keycount|jr_shouye|footerkfmail">客服邮箱</a>            </div>            <div class="f-contact-way">                <span class="f-contact-tel">400 088 8816</span>                <span class="f-contact-type">(企业业务)</span>            </div>        </div>    </div></div><!--footer end-->
+<!--footer end-->
+<script src="http://static.360buyimg.com/finance/common/lib/jquery/1.8.3/jquery.js"></script>
+<script src="http://static.360buyimg.com/finance/base/1.1.0/js/base.js"></script>
+<script src="http://static.360buyimg.com/finance/consumer/buyHouseBaitiao/index/1.0.0/js/main.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

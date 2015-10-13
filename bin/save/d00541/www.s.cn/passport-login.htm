@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <title>用户登录</title> <meta name="keywords" content=""> <meta name="description" content=""> <script type="text/javascript" src="statics/script/formplus.js"></script> <link rel="stylesheet" href="statics/style.css" type="text/css" /> <link href="http://images.s.cn/themes/scn2012/images/style_b.css" rel="stylesheet" type="text/css" /> <link href="http://images.s.cn/themes/scn2012/images/skin/style.css" rel="stylesheet" type="text/css"/> <script type="text/javascript" src="http://images.s.cn/statics/script/tools.js"></script> </head> <body> <div class="head"> <div class="warp clfix"> <span class="logo"><a title="返回名鞋库首页" href="http://www.s.cn/"><img alt="欢迎来到名鞋库网上鞋城!" src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/css/newlogo.png"></a></span> </div> </div> <div class="AllWrapInside"> <style> .foot{border:0;width:980px;margin:30px auto 0} .head{padding:20px 0} .login-descript{padding:12px 0 0;border:0;margin:0} .RegisterWrap .form table th{ text-align:right;color:#666;width:60px;padding:0} .head .logo{height:auto} </style> <form method="post" onsubmit="return checkLogin(this);" action='http://www.s.cn/passport-verify.html' class='loginform' id='loginform'> <div class="RegisterWrap" style="margin:0"> <div class="form" style="padding:0;border:0"> <input name="forward" type="hidden" value=""> <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td align="center" width="40%"><a href="http://www.s.cn" target="_blank"> 
+<img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/2012/1024/s150623dl.jpg"></a></td> <td width="60%" style="vertical-align:top"> <div style="margin:0 auto;width:450px"> <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td><div style="height:28px"><img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/css/loginpic21.png"/></div></td> </tr> <tr> <td> <div style="width:85%;background:#fafafa;border:1px solid #eee;box-shadow:3px 3px #F5F5F5"> <table width="80%" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto"> <tr> <th></th> <td colspan="2" style="height:35px;line-height:25px"> <span class="valierror" id="valierror" style="margin:0;display:none"></span> </td> </tr> <tr> <th>用户名：</th> <td><input name="login" class="x-input newinputstyle" id="in_login" tabindex="1" value="邮箱/手机/用户名" onfocus="rmDefault(this)" style="width:220px;color:#aaa;border:1px solid #ccc;padding:3px 5px"><a style="margin-left:6px;display:none;color:#aaa" href="http://www.s.cn/passport-signup.html">立即注册</a></td> </tr> <tr> <th style="padding-top:15px">密　码：</th> <td style="padding-top:15px"><input autocomplete="off" class="x-input newinputstyle" name="passwd" class="newinputstyle" type="password" id="in_passwd" tabindex="2" style="width:220px;border:1px solid #ccc;padding:3px 5px" /></td> </tr> <tr id="verifyTr"style="display:none"> <th style="padding-top:15px">验证码：</th> <td style="padding-top:15px"><input autocomplete="off" class="x-input " style="width:65px;border:1px solid #ccc;padding:3px 5px" size="8" class="" type="text" name="loginverifycode" id="iptlogin" tabindex="3" vtype="digits" /> <span class='verifyCode' style='display:none;'><img src="http://images.s.cn/statics/transparent.gif" init_src="http://www.s.cn/passport-l-verifyCode.html" codesrc='http://www.s.cn/passport-l-verifyCode.html' border="1" style="vertical-align:middle;padding:5px 0;background:#eee"/>&nbsp;<a href="javascript:void(0)" style="color:#666">换个图片</a> </span> </td> </tr> <tr> <th></th> <td style="padding-top:20px"><input class="actbtn cart-btn-next05" type="submit" value="登录" tabindex="4" id="fast_login" style="display:inline"/><a style="margin-left:10px;vertical-align:bottom" href="http://www.s.cn/passport-lost.html" id="fast_login_fogot" class="c777">忘记密码？</a> <input type="hidden" name="forward" value=""> </td> </tr> <tr> <th></th> <td style="color:#999;padding:35px 0 25px">还不是名鞋库会员？　<a href='/passport-signup.htm' onclick="location.href='/passport-signup.htm'" class="lnk cf60" id="fast_login_reg">马上注册为会员</a></td> </tr> </table> </div>  <div class="login_content"> <div style="width:85%"><div class="login-descript">使用合作网站账号登录名鞋库：</div><div class="box5"></div><div class="fl clfix" style="width:235px"><script>
+function openWind(url){
+ var top=(document.body.clientHeight-420)/2;
+ var left=(document.body.clientWidth-520)/2;
+ window.open(url,'kaixinwindow', 'height=420, width=520, toolbar =no, menubar=no, scrollbars=yes, resizable=no,top='+top+',left='+left+', location=no, status=no');
+} 
+</script>
+<div class="login-IconList"><a href="javascript:void(0);" onclick="openWind('https://api.weibo.com/oauth2/authorize?client_id=4183477618&redirect_uri=http%3A%2F%2Fwww.s.cn%2Findex.php%3Faction_sina-response.html&response_type=code');return false;" id="union_login_sina"><img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/scn2012/sina_login_btn.png"/></a></div>
+
+
+
+
+
+
+<style>
+/* 彩贝商家接入规范 */
+.mod_cb_jr_pop { font-size:12px; width:220px; padding:6px 10px 10px; position:absolute; left:0; top:24px;background:#fffce6; border:1px solid #f5d682;visibility:hidden;}
+.mod_cb_jr_pop .pop_title { font-size:16px; font-family:"Microsoft Yahei"; line-height:30px; padding-left:28px; background:url(http://imgcache.qq.com/vipstyle/act/caibei_110826_tips/img/bg.png) no-repeat left -34px;}
+.mod_cb_jr_pop .pop_tips { line-height:20px; }
+.mod_cb_jr_pop .pop_flag { position:absolute; width:15px; height:7px; left:30px; top:-6px;background:url(http://imgcache.qq.com/vipstyle/act/caibei_110826_tips/img/bg.png) left -21px no-repeat; }
+</style>
+<script type="text/javascript">
+function toQzoneLogin()
+{
+    window.open("http://www.s.cn/index.php?action_openid_qq-qq_login.html","TencentLogin","width=450,height=450,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+} 
+</script>
+<div class="login-IconList">
+<div style="position:relative;width:70px;height:16px;" onMouseover="$('loginQq').style.visibility='visible';" onMouseout="$('loginQq').style.visibility='hidden';">
+<a href="javascript:void(0);"  onclick='toQzoneLogin()' id="union_login_qq"><img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/scn2012/qq_login_btn.png"/></a>
+			<div class="mod_cb_jr_pop" id="loginQq">
+				<div class="pop_title">QQ彩贝联盟商户</div>
+				<div class="pop_tips">使用QQ无需注册，购物还可额外获得彩贝积分返还。</div>
+				<div class="pop_flag"></div>
+			</div>
+			</div>
+</div><div  class="login-IconList"><a href="http://graph.renren.com/oauth/authorize?client_id=171706&response_type=code&scope=publish_feed&redirect_uri=http://www.s.cn/index.php?action_openid_rr-response.html&x_renew=true" id="union_login_rr"><img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/scn2012/rr_login.png"/></a></div>
+
+
+
+
+
+
+</div><div class="login-IconList"><a href="javascript:$('alipay').submit();"><img src="http://images.s.cn/statics/transparent.gif" init_src="http://images.s.cn/images/scn2012/taobao_login_btn.png"></a></div></div> </div>  </td> </tr> </table> </div> </td> </tr> </table>  </div> </div> <input type='hidden' name='ref_url' value='http://www.s.cn/member.html'/> </form> <form method="post" id="alipay" action="http://www.s.cn/passport-alipay_login.html"> <input type="hidden" name="alipay_login" value="alipay_login" /> <input type="hidden" name="backurl" value="http://www.s.cn/"/> </form> <script>
+   void function(formclz){
+         var vcodeBox = $E('.'+formclz+' .verifyCode');
+         var vcodeImg  =vcodeBox.getElement('img');
+         var refreshVcodeBtn  = vcodeBox.getElement('a').addEvent('click',function(e){
+              e.stop();
+              vcodeImg.src = vcodeImg.get('codesrc')+'?'+$time();
+         });
+         $$('.'+formclz+' input').addEvent('focus',function(){
+             if (this.form.retrieve('showvcode',false))return;
+             vcodeBox.show();
+             refreshVcodeBtn.fireEvent('click',{stop:$empty});
+             this.form.store('showvcode',true);
+         });
+   
+   }('loginform');
+try{
+_mvsite.$logAction("40_login");
+}catch(err){}
+
+//验证表单
+function checkLogin(obj){
+	    if($(obj).getElementById("in_login").value.trim()==''){
+	        $(obj).getElementById("valierror").setHTML('请输入您的用户名!').setStyle('display','');
+	        return false;
+	    }
+	    if($(obj).getElementById("in_passwd").value.trim()==''){
+	        $(obj).getElementById("valierror").setHTML('请输入您的密码!').setStyle('display','');
+	 	    return false;
+	    }
+	    return true;
+}
+
+function rmDefault(input){
+    input.style.color="rgb(0, 0, 0)";
+    if(input.value=="邮箱/手机/用户名"){
+        input.value='';
+        
+    }
+}
+</script> <script>
+    // GA 监控
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-6779927-2', 'auto');
+    ga('create', 'UA-55145319-1', 'auto', {'name': 'scnTracker'});  // New tracker.
+    if(Cookie.get('S[SEND_GA]')){
+        ga('set', '&uid', Cookie.get('S[SEND_GA]'));
+        ga('scnTracker.set', '&uid', Cookie.get('S[SEND_GA]'));
+        //setCookie('S[SEND_GA]',0,1,"/");
+    }
+    ga('require', 'linkid');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    ga('scnTracker.send', 'pageview');
+
+</script>  </div> <div class="foot" style="border-top:2px solid #CE3C3B;background:none"> <div class="row02 c777"> <span> <a target="_blank" href="http://www.s.cn/page-aboutus.html">关于名鞋库</a>&nbsp;|&nbsp;<a target="_blank" href="/page-aboutcontact.html">联系名鞋库</a>&nbsp;|&nbsp;<a target="_blank" href="/page-scnjob.html">人才招聘</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Disclaimer.html">免责条款</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Copyright.html">法律声明</a>&nbsp;|&nbsp;<a target="_blank" href="/message.html">客户留言</a>&nbsp;|&nbsp;<a target="_blank" href="/suggest.html">意见反馈</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Sitemap.html">全部分类</a>&nbsp;|&nbsp;<a target="_blank" href="/link-showList.html">友情链接</a>&nbsp;|&nbsp;<a target="_blank" href="/page-chimahedui.html">鞋子尺码对照表</a>&nbsp;|&nbsp;<a target="_blank" href="http://faq.s.cn">问答</a><a target="_blank" href="http://www.s.cn/qalist.html">咨询</a><a target="_blank" href="http://www.s.cn/review.html">评论</a><a target="_blank" href="http://www.s.cn/topic/">主题</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.s.cn/page-brandhall.html">鞋子品牌大全</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.s.cn/pa.html">商品大全</a> </span> <div class="cl"> </div> Copyright&nbsp;&copy;&nbsp;2008-2014 <s>s.cn </s> All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">闽ICP备08106896号 </a> &nbsp;&nbsp;&nbsp;&nbsp;经营许可证闽B2-20110061 </div> </div> </div> <script>
+window.addEvent('domready',function(){
+
+        var forInit = $$('img[init_src]');
+        var win = this;
+        
+        (function(){
+            if(!forInit.length)return false;
+            var loop = arguments.callee;
+            var loop = function(){
+                forInit.each(function(item,index){
+                    if(!item)return;
+                    if(item.getPosition(win).y>0 &&((item.getPosition(win).y-win.getScrollTop())<win.getSize().y)){
+                        if(item.get('init_src')){
+                            item.set('src',item.get('init_src')).removeProperty('init_src')
+                        }
+                        // forInit.erase(item);
+                    }
+                    
+                    if(index == (forInit.length-1)){loop.delay(200);}
+                   
+                });
+            }
+            loop.delay(200);
+        })();
+
+});
+</script></body> </html>

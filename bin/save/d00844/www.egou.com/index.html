@@ -1,0 +1,502 @@
+
+<!doctype html>
+<html>
+<head>
+<title>易购网【返利】淘宝网,淘宝商城(天猫)等精选百家商城购物精准比价网,高额淘宝返利,优惠券只选易购网</title>
+<meta name="description" content="去淘宝商城(天猫),淘宝网购物,易购网600万用户独享最高50%返利,精准比价苏宁易购、当当网等近千家知名网上购物商城购物就获高额返利。易购网全新比价系统为您精准定位商品的最低价格，每日新发数百家最给力优惠券，去购物论坛和淘宝网返利频道同百万购物达人分享晒单真人秀。"/>
+<meta name="keywords" content="易购网,淘宝网,淘宝商城,比价网,返利网,购物网站,返利,返利" />
+</head>
+<body>
+
+<script type="text/javascript">
+var ContextPath = "";
+</script>
+
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/egou_index/index_stylev1.2.css" type="text/css"/>
+<script type="text/javascript" src="//static.egou.com/f=js/open.js,js/fit-image.js,js/jquery.js,js/cpa-cookie.js"></script>
+<script type="text/javascript" src="//static.egou.com/b=header/js&f=header.js?t=201508051115"></script>
+
+ <script type="text/javascript">
+var loginUser = {id:"",name:""};
+var w=1040;
+if(window.screen.width>1440){w=1200;}
+jQuery.ajax({
+	type: "POST",
+	url: "/headers/header_ajax2.jsp",
+	data: {'keyword': "",'wwwIndex':"wwwIndex",'c':'','w':w},
+	cache: false,
+	dataType: "html",
+	success: function(html) {
+		if(window.location.href.indexOf("chn=hao123") == -1 && window.location.href.indexOf("chn=hao360") == -1 && window.location.href.indexOf("chn=360page") == -1) {
+			var ad =document.createElement('script');
+			ad.type='text/javascript';
+			ad.async=true;
+			ad.src='http://ad.egou.com/ads.jsp?name=TOP_ADS&site=1&term=1&page=header&callback=cb_ad_other';		
+			var s=document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ad,s);
+		}
+		jQuery("#egou_header").append(html);
+		on_egou_header_loaded();
+		
+	},
+	error: function(e, t) {}
+});
+</script> 
+
+<div id="egou_header"></div>
+<!--    导航  -->
+<div class="nav_bg">
+	<div id="nav_main_width">
+		<script type="text/javascript">
+		  if(window.screen.width<=1440){
+			  $("#nav_main_width").addClass("nav_main width1040");
+		  }else{
+			  $("#nav_main_width").addClass("nav_main width1200");
+		  }
+		</script>
+    	<ul class="i_nav">      
+        	<li><a  href="http://www.egou.com/" class="active">首页</a></li>
+        	<li><a href="http://brand.egou.com/">超级返</a><em class="nav_new"></em></li>
+        	<li><a href="http://temai.egou.com/">特卖惠</a></li>
+        	<li><a href="http://baobei.egou.com/">淘宝返利</a></li>
+        	<li><a href="http://fanxian.egou.com/">商城返利</a></li>
+        	<li><a href="http://hongbao.egou.com/">超级红包</a><em class="nav_hot"></em></li>
+        	<li><a href="http://www.egou.com/club/">签到赚钱</a></li>
+        </ul>
+        <div class="nav_right" onmouseover="document.getElementById('i_code').style.display='block'" onmouseout="document.getElementById('i_code').style.display='none'">
+        	<a href="javascript:void();" class="egou_name"><span class="icon"></span>手机易购</a>
+            <div class="icode_bg" id="i_code">
+            	<span class="jt"></span>
+            	<div class="egou_code">
+                	<span class="code_pic"></span>
+                    <span class="code_word">易购客户端</span>
+                </div>
+                <div class="code_btn">
+                	<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=892332027&mt=8" target="_blank" class="iphone"></a>
+                	<a href="http://mapi.egou.com/app.jsp?app=com.emar.egou&plat=1" target="_blank" class="android"></a>
+                </div>
+            	<div class="egou_code">
+                	<span class="code_pic1"></span>
+                    <span class="code_word">易购官方微信</span>
+                </div>
+                <div class="code_tishi">关注易购官方微信<br>返利到账早知道</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  结束  导航  -->
+<script type="text/javascript">
+ try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} 
+</script>
+
+<script type="text/javascript" src="//static.egou.com//f=js/popup.js,p/egou_index/js/indexv1.0.js,p/egou_index/js/index_scroll.js?t=20150401"></script>
+
+<div id="i_main">
+<script type="text/javascript">
+  if(window.screen.width<=1440){
+	  $("#i_main").addClass("i_main width1040");
+  }else{
+	  $("#i_main").addClass("i_main width1200");
+  }
+</script>
+ <div class="index_fx_list">
+    	<ul id="shops"></ul>
+    	 <script type="text/javascript">
+            	var count=6;
+            	if(window.screen.width>1440){count=7;}
+				jQuery.ajax({
+					type: "POST",
+					url: "/shopsAjax.htm",
+					data: {'size':count},
+					cache: false,
+					dataType: "html",
+					success: function(html) {
+						jQuery("#shops").append(html);
+					}
+				});
+			</script>  
+    </div>
+    <div class="i_fx_pic" id=adsbusine style="display: none;">
+        <div class="i_banner">
+            <ul class="51buypic" id="busineRight" ></ul>
+            <div class="num" id="ad_num" style="display: none;">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+function adsbusine(data) {
+	var busine = "";
+	jQuery.each(
+		data,
+		function(i, n) {
+			busine+='<li ><a target="_blank" href="' + n.link + '">'
+			+'<img alt="'+n.content+'" src="'+n.image+'" title="'+n.content+'" />'
+			+'</a></li>';		
+		});
+	jQuery("#busineRight").html(busine);
+	if(busine!=""){
+		jQuery("#adsbusine").show();
+		if(data.length>1){
+         $(".i_banner").slide({ titCell:".num ul" , mainCell:".51buypic" , effect:"left", autoPlay:true, delayTime:700 , autoPage:true });
+         jQuery("#ad_num").show();
+		}
+	}
+}
+</script>
+    <script type="text/javascript" src="http://ad.egou.com/ads.jsp?name=INDEX_BUSINE_RIGHT&dt=json&site=1&term=1&page=index&callback=adsbusine"></script>
+    <div class="clear"></div>
+</div> 
+
+<div class="" id="i_brand_name">
+<div id="index_brand">
+<script type="text/javascript">
+  if(window.screen.width<=1440){
+	  $("#index_brand").addClass("i_brand_name width1040");
+  }else{
+	  $("#index_brand").addClass("i_brand_name width1200");
+  }
+</script>
+	<ul>
+    	<li><a href="/index.htm?type=brand" class="active" id="brandtag"  ><span class="name">超级返</span><span class="word"><em>•</em>每天10点上新</span><b></b></a></li>
+    	<li class="name"><a href="/index.htm?type=tmh" id="tmhtag"><span class="name">特卖惠</span><b></b></a></li>
+    </ul>
+     <div class="i_tishi" id="i_tishi" style="display: none;"><span>超级返的商品，<br>点击直接购买就能拿到返利哦</span><a href="javascript:void(0);" onclick="jQuery('#i_tishi').hide();_saveTcCookie('30','brand1');" class="yes">知道了</a></div> 
+</div>
+</div>
+<div class="i_brand_bg">
+	<div id="i_main_brand">
+	<script type="text/javascript">
+	  if(window.screen.width<=1440){
+		  $("#i_main_brand").addClass("i_main width1040");
+	  }else{
+		  $("#i_main_brand").addClass("i_main width1200");
+	  }
+	</script>
+    	
+    		<div class="" id="fixed_top_mlnav">
+            <div class="i_brand_mlnav">
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_0&url='+encodeURIComponent('http://brand.egou.com/category.htm'),true)" class="active">全部</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=19'),true)" >食品酒水</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=15'),true)" >内衣</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=18'),true)" >数码电器</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=16'),true)" >家居家纺</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=17'),true)" >美妆个护</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=14'),true)" >女装</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=22'),true)" >男装</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=20'),true)" >鞋包配饰</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=21'),true)" >母婴</a>
+            
+            <a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=cat_19&url='+encodeURIComponent('http://brand.egou.com/category.htm?category_id=23'),true)" >运动户外</a>
+            
+            </div>
+            </div>
+            <!-- 超级返广告位 -->
+            <div class="i_brand_advert" id="i_brand_advert" style="display: none;">
+                <ul class="advert_list" id="adsbrand" > </ul>
+<script type="text/javascript">
+function adsbrand(data) {
+	var brand = "";
+	jQuery.each(data, function(i, n) {
+		brand+='<li ><div class="i_border_top"></div><div class="i_border_right"></div><div class="i_border_bootom"></div> <div class="i_border_left"></div>'
+		+'<a target="_blank" href="' + n.link + '">'
+		+'<img alt="'+n.content+'" src="'+n.image+'" title="'+n.content+'" />'
+		+'</a></li>';
+	});
+	jQuery("#adsbrand").html(brand);
+	if(brand!=""){
+		jQuery("#i_brand_advert").show();
+	}
+}
+</script>
+<script type="text/javascript" src="http://ad.egou.com/ads.jsp?name=INDEX_BRAND&site=1&term=1&page=index&dt=json&callback=adsbrand"></script>
+                <ul class="i_brand_logo" id="brandlogo" style="display: none;"></ul>
+<script type="text/javascript">
+function adsbrandlogo(data) {
+	var brandlogo = "";
+	jQuery.each(data, function(i, n) {
+		brandlogo+='<li ><a target="_blank" href="' + n.link + '">'
+		+'<img alt="'+n.content+'" src="'+n.image+'" title="'+n.content+'" />'
+		+'</a></li>';		
+	});
+	jQuery("#brandlogo").html(brandlogo);
+	if(brandlogo!=""){
+		jQuery("#brandlogo").show();
+	}
+}
+</script>
+			<script type="text/javascript" src="http://ad.egou.com/ads.jsp?name=INDEX_BRAND_LOGO&dt=json&site=1&term=1&page=index&callback=adsbrandlogo"></script>
+            </div>
+            <!-- 超级返商品 -->
+            <div class="index_brand_name"><span>今日必抢</span><span class="word">每日10点上新 限量抢购 先到先得哦！</span></div>
+            <div class="i_brand_list">
+                <ul id="brand_list_type1"></ul>
+       			<div class="clear"></div>
+            </div>
+            <div class="index_brand_name"><span>精选商品</span><span class="word">每日严选品牌商品 限时超高返利</span></div>
+            <div class="i_brand_tab">
+                <ul id="brand_list_type2"></ul>
+       			<div class="clear"></div>
+            </div>
+            <div class="i_loading" id="Brandloading" style="display: none;"></div> 
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="i_right_navbg" id="i_right_nav">
+    <div class="i_right_nav" >
+        <ul class="i_right_one">
+            <li id="li_1" onMouseMove="oShow('li_1');" onMouseOut="oHide()"><a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myaccount&url='+encodeURIComponent('http://fanxian.egou.com/myaccount.do'),true)" class="icon1" ></a><span class="word" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myaccount&url='+encodeURIComponent('http://fanxian.egou.com/myaccount.do'),true)">我的账号</span><em class="online"></em></li>
+            <li id="li_2" onMouseMove="oShow('li_2');" onMouseOut="oHide()" ><a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegouorder&url='+encodeURIComponent('http://fanxian.egou.com/myegouorder.do'),true)" class="icon2"></a><span class="word" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegouorder&url='+encodeURIComponent('http://fanxian.egou.com/myegouorder.do'),true)">我的订单</span></li>
+            <li id="li_3" onMouseMove="oShow('li_3');" onMouseOut="oHide()" ><a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegouwealth&url='+encodeURIComponent('http://fanxian.egou.com/myegouwealth.do'),true)" class="icon3"></a><span class="word" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegouwealth&url='+encodeURIComponent('http://fanxian.egou.com/myegouwealth.do'),true)">我的返利</span></li>
+            <li id="li_4" onMouseMove="oShow('li_4');"  onMouseOut="oHide()"><a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegoucoin&url='+encodeURIComponent('http://fanxian.egou.com/myegoucoin.do'),true)" class="icon4"></a><span class="word" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myegoucoin&url='+encodeURIComponent('http://fanxian.egou.com/myegoucoin.do'),true)">我的易币</span></li>
+            <li id="li_5" onMouseMove="oShow('li_5');"  onMouseOut="oHide()"><a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myhongbao&url='+encodeURIComponent('http://hongbao.egou.com/myhongbao.htm'),true)" class="icon5"></a><span class="word" onclick="egou.open('http://union.egou.com/to?site=1&term=1&page=www_index&pos=right_nav_myhongbao&url='+encodeURIComponent('http://hongbao.egou.com/myhongbao.htm'),true)">我的红包</span></li>
+        </ul>	
+        <ul class="i_right_bot">
+            <li id="li_code" onMouseMove="oCodeShow();" onMouseOut="oHide()"><a href="javascript:void(0);" class="icon1"></a><span class="right_code"></span></li>
+            <li id="li_7" onMouseMove="oShow('li_7');" onMouseOut="oHide()"><a href="http://fanxian.egou.com/kefu.htm" target="_blank" class="icon2"></a><span class="word" onclick="egou.open('http://fanxian.egou.com/kefu.htm',true);">在线客服</span></li>
+            <li id="li_8" onMouseMove="oShow('li_8');" onMouseOut="oHide()" ><div class="scroll_top" id="scroll"><a href="#" class="icon3"></a><span class="word">返回顶部</span></div></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 弹层 -->
+	<div id="sale_over_layer" style="display: none; position: absolute; z-index: 101;" class="layer_main">
+		<div class="layer_name">
+			温馨提示<a href="javascript:void(0);"
+				onclick="egou.popup.close('#sale_over_layer',true);" class="close"></a>
+		</div>
+		<div class="layer_nr">
+			<p class="font18 text_align">
+				<span class="layer_icon2"></span>亲，该商品已售罄<br>&nbsp;&nbsp;&nbsp;&nbsp;看看其他商品吧~
+			</p>
+			<div class="layer_botton margin_top30">
+				<a href="javascript:void(0);"
+					onclick="egou.popup.close('#sale_over_layer',true);">我知道了</a>
+			</div>
+		</div>
+	</div>
+	<div id="not_begin_layer" style="display: none; position: absolute; z-index: 101;" class="layer_main">
+		<div class="layer_name">
+			温馨提示<a href="javascript:void(0);"
+				onclick="egou.popup.close('#not_begin_layer',true);" class="close"></a>
+		</div>
+		<div class="layer_nr">
+			<p class="font18 text_align">
+				<span class="layer_icon2"></span>亲，该商品的抢购时间是<span id="timeStr" style="color:red;">6月18日 00:00:00</span>！<br>现在去购买是普通返利哦~
+			</p>
+			<div class="layer_botton margin_top30">
+				<a id="not_begin_layer_href" href="javascript:void(0);"
+					onclick="egou.popup.close('#not_begin_layer',true);" target="_blank">我知道了</a>
+			</div>
+		</div>
+	</div>
+		<!-- 手机App专享弹层  -->
+	<div class="layer_main layer_main1" id="app_only_div" style="display: none; position: absolute; z-index: 101;">
+	    <div class="layer_name">温馨提示<a href="javascript:void(0);" onclick="egou.popup.close('#app_only_div',true);" class="close"></a>
+        </div>
+	    <div class="layer_nr1 font14">
+	        <p class="brand_red">下载易购网app，购超级返客户端专享商品！</p>
+	        <p>1、首先你要有一个手机<br>
+	           2、用微信、手机QQ等的扫码功能，将摄像头对准商品二维码进行扫描即可下载<br>
+	           3、打开客户端 → 点击专享商品 → 完成下单
+	        </p>
+	        <p><img src="http://egouimg1.qutu.com/brand/imagesv3.0/code_pic.png"></p>
+	    </div>
+	</div>
+	<script type="text/javascript">
+	/**
+	 * 显示 "客户端专享" 弹层 
+	 * 
+	 **/
+	function showCodeDiv(obj){
+		$(obj).find('.code_bg').show();
+		if($(obj).find('.code_bg').size() > 0){
+			$(obj).find('.act_end').hide();//隐藏"售罄"灰色层
+			$(obj).find('.pic_word').hide();//隐藏"即将开始"灰色层
+		}
+	}
+	/**
+	 * 隐藏 "客户端专享" 弹层 
+	 * 
+	 **/
+	function hideCodeDiv(obj){
+		$(obj).find('.code_bg').hide();
+		$(obj).find('.act_end').show();//若有,展示"售罄"灰色层
+		$(obj).find('.pic_word').show();//若有,展示"即将开始"灰色层
+	}
+	</script>
+<script type="text/javascript" src="//static.egou.com/p/egou_index/js/falls.js?a" charset="UTF-8"></script>
+
+<link rel="stylesheet" rev="stylesheet" href="//static.egou.com/egoufooter/footer_all.css" type="text/css"/>
+<div class="footer_top">
+	<div class="footer_main">
+        <ul class="footer_about_list">
+            <li>
+                <em class="icon_1"></em>
+                中国最早的<br>购物返利网
+            </li>
+            <li>
+                <em class="icon_2"></em>
+                500多家电<br>商合作伙伴
+            </li>
+            <li>
+                <em class="icon_3"></em>
+                3万精选淘<br>宝店铺合作
+            </li>
+            <li>
+                <em class="icon_4"></em>
+                累计服务超<br>5000万用户
+            </li>
+            <li>
+                <em class="icon_5"></em>
+                全网超值低<br>价商品保障
+            </li>
+            <li>
+                <em class="icon_6"></em>
+                7X14小时<br>客服服务
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <div class="footer_server_list">
+        	<dl>
+            	<dt>购物指南</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/memberRegister.do" target="_blank">免费注册</a>
+               	 <a href="http://fanxian.egou.com/help/shang_yi.html" target="_blank">返利指导</a>
+               	 <a  href="http://fanxian.egou.com/help/nafanxian.html#fx22" target="_blank">提现指导</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>常用服务</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/myegoutraceorder.do" target="_blank">跟单查询</a>
+               	 <a href="http://fanxian.egou.com/help/" target="_blank">网站帮助</a>
+               	 <a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>商家服务</dt>
+                <dd>
+               	 <a href="http://zhaoshang.egou.com/temai/" target="_blank">商家入驻</a>
+               	 <a href="http://fanxian.egou.com/help/advertisement.html" target="_blank">广告合作</a>
+               	 <a href="http://fanxian.egou.com/help/links.html" target="_blank">友情链接</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>关于易购</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/help/aboutegou.html" target="_blank">了解易购</a>
+               	 <a href="http://fanxian.egou.com/help/zhaopin.html" target="_blank">加入易购</a>
+               	 <a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们</a>
+                </dd>
+            </dl>
+        	<dl class="two">
+            	<dt>关注我们</dt>
+                <dd>
+               	 <a href="http://weibo.com/wwwegoucom/home" target="_blank">新浪微博</a>
+               	 <a href="http://user.qzone.qq.com/1494014167/2" target="_blank">QQ空间</a>
+               	 <a href="javascript:alert('请扫描下方的二维码，谢谢！');">官方微信</a>
+                </dd>
+            </dl>
+            <dl class="last">
+            	<dd><p class="font16">400-0060-666</p><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
+            </dl>
+        </div>
+        <ul class="footer_app_list">
+        	<li>
+            	<div class="app_pic egou_app"></div>
+                <dl class="app_right">
+                	<dt>易购网</dt>
+                    <dd class="sub_title">易购返利 随时随地</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=com.emar.egou&plat=1" class="btn_app btn_android" target="_blank"></a><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=892332027" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li>
+            	<div class="app_pic tmh_app"></div>
+                <dl class="app_right">
+                	<dt>特卖惠</dt>
+                    <dd class="sub_title">特价包邮 如影随行</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=com.emar.egtm&plat=1" target="_blank" class="btn_app btn_android"></a><a href="https://itunes.apple.com/us/app/yi-gou-te-mai-hui/id903311028" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li class="last">
+            	<div class="app_pic egou_weixin"></div>
+                <dl class="app_right">
+                	<dt>超级红包官微</dt>
+                    <dd class="sub_name font12">易购网-超级红包</dd>
+                    <dd class="sub_title">扫描二维码,即刻关注<br>随时随地抢红包</dd>
+                </dl>
+            </li>
+    		<div class="clear"></div>
+        </ul>
+        <div class="footer_links">
+        	<span class="name">友情链接：</span>
+            <div class="links_list" id="demo" onmouseover="stopscroll();" onmouseout="doscroll()">
+            	<div id="demo1"><!-- <a href="#">苹果园论坛</a><a href="#">购物帮</a><a href="#">华为商城</a><a href="#">优购物</a><a href="#">818网上药店</a><a href="#">钻戒</a><a href="#">唯品会</a><a href="#">中国建材网</a><a href="#">儿歌童谣网</a><a href="#">网上购物</a><a href="#">中国供应商</a><a href="#">淘鞋网</a><a href="#">金属价格网</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a><a href="#">食品商务网 </a><a href="#">中关村商</a> -->
+            		<a target="_blank" href="http://www.itoumi.com/">投米网</a><a target="_blank" href="http://www.gouwubang.com/">购物帮</a><a target="_blank" href="http://www.vmall.com/">华为商城</a><a target="_blank" href="http://www.818.com/">818网上药店</a><a target="_blank" href="http://www.kela.cn/">珂兰钻石</a><a target="_blank" href="http://brand.vip.com/">唯品会</a><a target="_blank" href="http://www.taoxie.com">淘鞋网</a><a target="_blank" href="http://www.zol.com">中关村商城</a><a target="_blank" href="http://www.s.cn">名鞋库</a>
+            	</div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div class="footer_bottom_bg">
+	<div class="footer_main">
+    	<ul class="footer_nav">
+        	<a href="http://fanxian.egou.com/help/mediumreported.html" target="_blank">媒体报道<em></em></a>
+        	<a href="http://www.egou.com/map/" target="_blank">分类大全<em></em></a>
+        	<a href="http://fanxian.egou.com/shop_index.html" target="_blank">网商大全<em></em></a>
+        	<a href="http://fanxian.egou.com/help/sitemap.html" target="_blank">网站地图<em></em></a>
+        	<a href="http://www.egou.com/brand/" target="_blank">品牌大全</a>
+    		<div class="clear"></div>
+        </ul>
+    	<div class="clear"></div>
+        <ul class="footer_logos">
+        	<li><a href="https://search.szfw.org/cert/l/CX20130128002166002282" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_1.png"></a></li>
+        	<li><a href="http://about.58.com/fqz/index.html" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_2.png"></a></li>
+        	<li><a href="http://www.cnr.cn/gundong/201106/t20110620_508119107.shtml" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_3.png"></a></li>
+        	<li><a href="http://pub.alimama.com/" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_4.png"></a></li>
+        	<li><a href="http://www.so.com/s?ie=utf-8&src=360sou_home&q=site%3Awww.egou.com" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_5.png"></a></li>
+        </ul>
+        <div class="footer_word"><p class="englist_one">Copyright © 2004-2014 by www.egou.com all rights reserved</p><p>北京亿玛联盟传媒广告有限公司 旗下网站 京公网安备110105000795 京ICP备10005197号-5</p></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript">
+	var t=demo.scrollWidth
+	demo1.innerHTML+=demo1.innerHTML
+	function doMarquee()
+	{
+	demo.scrollLeft=demo.scrollLeft<demo.scrollWidth-demo.offsetWidth?demo.scrollLeft+1:t-demo.offsetWidth
+	}
+	function doscroll()
+	{
+	   sc=setInterval(doMarquee,30)
+	}
+	function stopscroll()
+	{
+	   clearInterval(sc)
+	}
+	doscroll()
+</script>
+<script src="//static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+<script type="text/javascript">
+var _egtk = _egtk || {"site": 1};
+(function() {
+ var eg = document.createElement('script'); eg.type = 'text/javascript'; eg.async = true;
+ eg.src = '//static.egou.com/js/egoutracker.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(eg, s);
+})();
+</script>
+<script type="text/javascript" src="http://fanxian.egou.com/js/getmoney.jsp"  charset="gbk"></script>
+</body>
+</html>

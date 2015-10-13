@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>唯一传媒-效果营销 唯一选择 新手上路</title>
+    <meta content="唯一传媒,唯一联盟,唯一伟业,CPS,CPA,CPL,网络营销,联盟营销,营销联盟,联盟会员,广告营销,网络广告,联盟广告,营销广告,营销联盟,广告主,网站主,网站联盟,广告联盟,免费广告"
+        name="keywords">
+    <meta content="唯一伟业传媒科技有限公司，是一家专业从事网络联盟营销全程解决方案的互联网业务服务商（Affiliate Marketing Provider）。公司为客户提供值得信赖的第三方的用户访问跟踪、资质审核、定向和效果检测、实时报告系统、作弊检查、佣金结算、营销广告创意等方面的服务，并按客户的需求提供个性化的联盟营销高级服务，如咨询、高级策划、立体整合、定向服务、一站式服务等。唯一伟业传媒科技有限公司致力于中国联盟网络营销体系的建立，同时期望能够成为先进思想的导入者，成为联系网站和广告主的桥梁，成为联盟网络营销的领导者。唯一将提供强大可靠的《唯一联盟营销平台系统》和联盟营销全套解决方案。因此加入唯一联盟，成为会员站长或者广告主，将无时无刻不感受到联盟营销为您带来的效益。"
+        name="description">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <script src="/Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+
+        function AddFavorite(title, url) {
+            try {
+                window.external.addFavorite(url, title);
+            }
+            catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");
+                }
+                catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="top">
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.jpg" /></a>
+            </div>
+            <div class="top_nav">
+                <div>
+                    <a href="javascript:void(0);" onclick="AddFavorite('唯一传媒-效果营销 唯一选择',location.href)">收藏本站</a></div>
+                <div>
+                    <a href="javascript:void(0);" onclick="SetHome(this,'http://www.weiyi.com');">设为首页</a></div>
+                <div>
+                    <a href="/Home/Novice">新手上路</a></div>
+            </div>
+        </div>
+        <div class="top_banner">
+            <a href="/Member/Register">
+                <img src="/images/top_banner.jpg" /></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/Home/ServiceInfo">业务介绍</a></li>
+                <li><a href="/Home/Merchant">广告主</a></li>
+                <li><a href="/Home/Member">会员站长</a></li>
+                <li><a href="/Home/Qutaotao">去淘淘</a></li>
+                <li><a href="/Home/Polymerization">聚合推广</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+<link href="/css/column.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+    .menutitle { cursor: pointer; background-color: #fff; width: 100%; float: left; font-size: 14px; height: 35px; line-height: 2.3em; padding: 0 0 0 10px; }
+    .hyzxsy_right_wt { overflow: hidden; }
+    .submenu { width: 95%; border-bottom: 1px solid #b8e7fb; padding: 0px 20px 20px 20px; margin-top: 20px; display: inline; float: left; color: #333; font-size: 14px; line-height: 1.7em; }
+    .submenu img { border: 1px solid #999; }
+    .menutitle { display: block; width: 100%; height: 35px; float: left; background: #fff; color: #000; border-bottom: 1px dashed #ddf3fc;}
+    .menutitle:link { display: block; width: 100%; height: 35px; float: left; background: #fff; color: #000; }
+    .menutitle:hover { display: block; width: 100%; height: 35px; float: left; background: #ddf3fc; color: #ff6600; text-decoration: none; }
+</style>
+<style type="text/css">
+    
+    .list_right2 .last_text{ width:740px; margin:10px 5px 10px 5px;}
+    .list_left .list_new_img{ widht:216px; height:auto; text-align:center;}
+    .list_left .list_new_img img{ width:216px; height:auto;}
+</style>
+<script type="text/javascript">
+    window.onload = function () {
+
+        var oUl = document.getElementById('ul1');
+        var oDiv = document.getElementById('classify_right');
+        var aLi = oUl.getElementsByTagName('li');
+        var aSpan = oDiv.getElementsByTagName('span');
+
+        for (var i = 0; i < aLi.length; i++) {
+
+            aLi[i].index = i;
+            aLi[i].onclick = function () {
+                for (var i = 0; i < aLi.length; i++) {
+                    aLi[i].className = '';
+                    aSpan[i].style.display = 'none';
+                }
+                this.className = 'current';
+                aSpan[this.index].style.display = 'block';
+            }
+
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        var url = location.href;
+        if (url.indexOf("#") != -1) {
+            var paraString = url.substring(url.indexOf("#") + 1, url.length);
+            SwitchMenu("sub" + paraString, paraString);
+        }
+    })
+    if (document.getElementById) {
+        document.write('<style type="text/css">\n')
+        document.write('.submenu{display: none;}\n')
+        document.write('</style>\n')
+    }
+
+    function SwitchMenu(obj, title_id) {
+        if (document.getElementById) {
+            var el = document.getElementById(obj);
+            var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+            if (el.style.display != "block") {
+                for (var i = 0; i < ar.length; i++) {
+                    if (ar[i].className == "submenu") //DynamicDrive.com change
+                        ar[i].style.display = "none";
+                }
+                el.style.display = "block";
+                var ar2 = document.getElementById("masterdiv").getElementsByTagName("a");
+                for (var j = 0; j < ar2.length; j++) {
+                    ar2[j].style.background = "#fff";
+                }
+                $("#" + title_id).css("background", "#ddf3fc");
+            } else {
+                el.style.display = "none";
+            }
+        }
+    }
+    function test(obj) {
+        var over = document.getElementById(obj);
+        over.style.backgroundColor = "#ddf3fc";
+        over.style.Color = "#fff";
+    }
+    function fu(obj) {
+        var over = document.getElementById(obj);
+        over.style.backgroundColor = "#ddf3fc";
+        over.style.Color = "#000";
+    }
+</script>
+<!--list_left-->
+<div class="list_left">
+    <div class="list_new_img">
+        <img alt="" src="/images/20150826145434.png" />
+    </div>
+    <div class="list_column">
+        <div class="title">
+            <div>
+                新手上路</div>
+        </div>
+        <ul id="ul1">
+            <li class="current">
+                <div>
+                    <img alt="" src="/images/list_biao.gif" /></div>
+                <span>常见问题</span> </li>
+        </ul>
+    </div>
+    <div class="list_column">
+        <div class="title">
+            <div>
+                联系客服</div>
+        </div>
+        <div class="list_service">
+            <div class="service_title">
+                网站主咨询
+            </div>
+            <div class="service_qq">
+                <div>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=89907069&site=qq&menu=yes">
+                        <img src="http://www.sunkf.net/codes/one/images/q_1.gif" border="0" alt="点击咨询" title="点击咨询"></a>
+                </div>
+                <div>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=89907064&site=qq&menu=yes">
+                        <img src="http://www.sunkf.net/codes/one/images/q_1.gif" border="0" alt="点击咨询" title="点击咨询"></a>
+                </div>
+            </div>
+            <div class="service_tel">
+                Email：helen@weiyi.com<br />
+                电话：010-85800369/8810
+            </div>
+            <div class="service_title">
+                广告主合作
+            </div>
+            <div class="service_qq">
+                <div>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=89906016&site=qq&menu=yes">
+                        <img src="http://www.sunkf.net/codes/one/images/q_1.gif" border="0" alt="点击咨询" title="点击咨询"></a>
+                </div>
+                <div>
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=89906051&site=qq&menu=yes">
+                        <img src="http://www.sunkf.net/codes/one/images/q_1.gif" border="0" alt="点击咨询" title="点击咨询"></a>
+                </div>
+            </div>
+            <div class="service_tel">
+                Email：sadie@weiyi.com<br />
+                电话：010-85800369/8860
+            </div>
+        </div>
+    </div>
+</div>
+<!--list_left-->
+<!--list_right-->
+<div>
+    <span style="display: block;" class="list_right2">
+        <div class="last_text">
+            <div class="text2">
+                <div class="hyzxsy_right_wt">
+                    <div id="masterdiv">
+                        <a id="1" onclick="SwitchMenu('sub1',1)" class="menutitle" href="javascript:;">怎样成为唯一的会员站长？</a>
+                        <span id="sub1" class="submenu">答：进入唯一联盟官网（www.weiyi.com）选择站长注册，按要求填写您真实的信息，注册成功后您就是唯一联盟的会员站长。
+                        </span><a id="2" onclick="SwitchMenu('sub2',2)" class="menutitle" href="javascript:;">
+                            怎样才能看到我想投放的广告主信息呢？</a><br>
+                        <span id="sub2" class="submenu">答：当您成功注册成为唯一联盟的会员站长之后，用您新注册的会员账号登录到唯一联盟的"会员中心"，点击导航栏中的"广告主活动"&mdash;&mdash;
+                            "广告主查询"，就可以查询唯一联盟目前在线的所有广告主信息,<strong>如图1.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_1.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图1.</strong></span><br>
+                            <br>
+                            如果您需要了解某个广告主的详细推广信息，点击该广告主对应的LOGO和文字名称，就可以到达该广告主的详细信息页面，详细信息里面包括了您想了解的投放类型、佣金标准、使用优惠券是否返点、推广规范等等信息。<strong>如图2.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_2.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图2.</strong></span>
+                        </span><a id="25" onclick="SwitchMenu('sub25',25)" class="menutitle" href="javascript:;">
+                            什么是banner？</a><br>
+                        <span id="sub25" class="submenu">答：Banner 中文意思是横幅广告，也就是广告主提供的广告素材图片。 </span><a id="3"
+                            onclick="SwitchMenu('sub3',3)" class="menutitle" href="javascript:;">怎样才能将广告主的banner挂在我自己的网站上进行推广呢？</a><br>
+                        <span id="sub3" class="submenu">答：首先登录"唯一联盟会员中心"，点击"广告主活动"中的"广告主查询"页面，展示的内容是唯一联盟所有在线广告主的信息，<strong>如图3.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_3.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图3.</strong></span><br>
+                            <br>
+                            选择您想投放的广告主，点击对应的LOGO或者文字名称（如聚美优品）进入到"广告主详细信息"页面。 绝大部分的广告主是自动审核的，如果是需要人工审核的，请您联系我们在线客服，这里不做描述。在"获取代码"处一般有两个选项供您选择，1：获取代码，2：制作自定义链接。两种选项都是获取代码的途径，区别在于："获取代码"是直接利用广告主已经制作好的广告素材及指定目标页面制作推广链接，有一定局限性；"制作自定义链接"能创建指向广告主网站任意页面的推广链接供会员网站使用。<strong>如图4.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_4.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图4.</strong></span><br>
+                            <br>
+                            如您选择第一种方式，点击"获取代码"，进入"广告形式列表"，在这您可以选择适合您网站的banner尺寸，然后点击banner后边的"获取代码",<strong>如图5.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_5.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图5.</strong></span><br>
+                            <br>
+                            点击"获取代码"将进入到"获取代码页面"，选择您需要的推广选项和您要投放的网站，然后单击"生成标签"和"复制代码"，这样您就获取了您想投放的广告主的跟踪代码，<strong>如图6.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_6.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图6.</strong></span><br>
+                            <br>
+                            将代码嵌入您的网站进行推广，当网友在您的网站上点击您投放的广告banner，就可以进入到相应的广告主网站进行购物了，实现购买后，您就获得相应的佣金喽。 如您选择"制作自定义链接"，点击之后将进入"制作自定义广告链接代码"页面，<strong>如图7.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_7.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图7.</strong></span><br>
+                            <br>
+                            "链接类型"有"图片"、"文字"、"纯URL"三种形式，您可以自行选择。如：您选择了"文字"，那么在"素材内容"中请填写您所要推广的文字，在"目标地址"中填写所要投放的广告主网站中的任意一个目标网页地址；"选择投放网站"中置入了您账户内已经通过审核的所有网站的网站ID，您可根据实际情况来选择；点击"生成标签"，即在下方广告代码中成功生成了跟踪代码。点击"复制代码"按钮可将此跟踪代码自动复制。将代码粘贴到您的网站后台，成功投放后，网友在您的网站上点击了您投放的广告banner、文字超链接进入到相应的广告主网站进行购物，您就获得相应的佣金。
+                        </span><a id="4" onclick="SwitchMenu('sub4',4)" class="menutitle" href="javascript:;">
+                            怎样查看返给我的佣金呢？</a><br>
+                        <span id="sub4" class="submenu">答：登录"唯一联盟会员中心"，点击"业绩报表"&mdash;&mdash; "业绩报表"您就可以查看您的有效业绩了（注意调整交易日期，以及其他查询条件哦）。<strong>如图8.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_8.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图8.</strong></span><br>
+                            <br>
+                        </span><a id="5" onclick="SwitchMenu('sub5',5)" class="menutitle" href="javascript:;">
+                            为什么我刚刚注册还没买东西我的账号里面有20元呢？可以现在申请支付吗？</a><br>
+                        <span id="sub5" class="submenu">答：唯一联盟会员注册成功就送20元佣金哦。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一联盟最低支付金额为100元起（含100元），支付佣金以100元为单位，取100元整付款，不足100元部分将自动转入下月。如，会员站长佣金账户可提取佣金额为188元，那么申请佣金支付最多为100元,其余金额则保留在帐户内自动转入下月。
+                        </span><a id="6" onclick="SwitchMenu('sub6',6)" class="menutitle" href="javascript:;">
+                            唯一联盟扣除手续费和税款吗？</a><br>
+                        <span id="sub6" class="submenu">答：不会的哦，唯一联盟是唯一一家不收取个人所得税和手续费的联盟。 </span><a id="7"
+                            onclick="SwitchMenu('sub7',7)" class="menutitle" href="javascript:;">什么时候可以申请支付佣金？</a><br>
+                        <span id="sub7" class="submenu">答：每周六至周一。 </span><a id="8" onclick="SwitchMenu('sub8',8)"
+                            class="menutitle" href="javascript:;">怎么获取我的佣金呢？</a><br>
+                        <span id="sub8" class="submenu">答：每周六至周一可以登录"唯一联盟会员中心"，在"佣金结算"&mdash;&mdash;"申请佣金"页面提交佣金支付请求（提交佣金支付请求之前，请确认已经添加银行账号并已通过审核）。当您提交了佣金支付申请后，我们每周四、五会发放申请的佣金。
+                        </span><a id="9" onclick="SwitchMenu('sub9',9)" class="menutitle" href="javascript:;">
+                            怎样填写我的银行账号信息？</a><br>
+                        <span id="sub9" class="submenu">答：登录"唯一联盟会员中心"，点击"佣金结算"&mdash;&mdash;"银行账号信息"，<strong>如图9.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_9.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图9.</strong></span><br>
+                            <br>
+                            进入"银行账号信息"页面，选择"填写银行帐号"后进入"新增收款账户"页面，<strong>如图10.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_10.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图10.</strong></span><br>
+                            <br>
+                            如实填写然后提交保存，我们会在第一时间为您审核。审核通过之后，您以后提交佣金支付请求时就可以选择此通过审核的银行账户，我们会将佣金通过银行转账到您所填写的银行账户里。
+                        </span><a id="10" onclick="SwitchMenu('sub10',10)" class="menutitle" href="javascript:;">
+                            唯一联盟支持哪些银行账户转账呢？为什么银行账号信息的"选择开户行"项只有七种银行和其他呢？</a><br>
+                        <span id="sub10" class="submenu">答：唯一联盟支持所有的银行转账，如您没有后台描述的七种银行的卡，您可以选择"其他"，然后在支行名称项填写您完整的银行信息。
+                        </span><a id="11" onclick="SwitchMenu('sub11',11)" class="menutitle" href="javascript:;">
+                            去淘淘是干什么的，怎么可以有自己的去淘淘？</a><br>
+                        <span id="sub11" class="submenu">答：去淘淘是唯一联盟赠送给没有网站的会员一个购物导航网站，去淘淘上面集合了几乎我们所有的广告主，您通过去淘淘下单可以拿到相应的佣金，您也可以将您的去淘淘网站介绍给朋友，他们通过您的去淘淘购物您也是可以拿到佣金的哦。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;怎样获得属于自己的去淘淘呢？用您所注册的用户名和密码登陆到"联盟会员中心"点击"去淘淘"的子目录的"二级域名管理"在打开的界面中修改下您想要使用的域名
+                            比如 :"adiaos"等带有您个人色彩的或是您认为好记的字母，然后保存，最后点击"点击预览"您便进入到您的去淘淘网站喽。 <strong>如图11.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_11.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图11.</strong></span><br>
+                            <br>
+                        </span><a id="12" onclick="SwitchMenu('sub12',12)" class="menutitle" href="javascript:;">
+                            如何通过我的去淘淘购物及查看佣金？</a><br>
+                        <span id="sub12" class="submenu">答：第一步：清空浏览器cookies，并确保您欲购物的商城购物车为空。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二步：进入您的去淘淘页面(两种方式：1、直接输入您的去淘淘二级域名，如：http://adiaos.qutaotao.com;
+                            2、登录到您的"联盟会员中心"点击"去淘淘"按钮，然后点击您的二级域名地址进入)，进入之后您可以看到去淘淘丰富的商品促销信息。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三步：点击频道导航下面的购物网站或是促销活动的文字链接、图片等进入相应的网站购买商品，下单成功即可查看佣金，
+                            <strong>如图12.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_12.jpg"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图12.</strong></span><br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第四步：下单5~10分钟后请到会员中心的"业绩报表"里查您所下的订单，如果查询到，说明订单被成功跟踪到；如果没有查询到，请到购物网站取消所下订单，然后按照上述步骤重新下单，直到查询到为止；（注：只有订单跟踪到了才会有佣金哦）；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五步：我们会在30-70天内审核所有订单，审核完毕后，唯一联盟会把您账户下符合有效条件的订单由原有的"未核对"状态更改为"已确认"状态，只有"已确认"订单才有返佣。已确认状态的订单佣金累计达到100元后，可以进入"唯一俩梦会员中心"的"佣金结算"&mdash;&mdash;"申请佣金"页面提交佣金申请请求。
+                        </span><a id="13" onclick="SwitchMenu('sub13',13)" class="menutitle" href="javascript:;">
+                            为什么同一个月的同一个广告主的订单，会员中心有的状态为"已确认"有的却是"未核对"呢？</a><br>
+                        <span id="sub13" class="submenu">答：因为有些订单会出现退换货，或是月末下单的情况，这些订单在广告主和联盟结算数据的时候，还没有过退换货的周期，不能确认是否为有效订单，所以暂时将这些订单的状态判定为"未核对"，等下次结算的时候会一并对这些订单重新审核。当我们拿到数据后会在第一时间将这些"未核对"的订单做审核处理。
+                            <strong>如图13.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_13.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图13.</strong></span><br>
+                            <br>
+                        </span><a id="14" onclick="SwitchMenu('sub14',14)" class="menutitle" href="javascript:;">
+                            为什么我的订单是有效的，会员中心的状态却是"核对无效"呢？</a><br>
+                        <span id="sub14" class="submenu">答：出现这种情况的原因很复杂。如您可以确保您的订单没有问题，您可以将您的订单以丢单申诉的形式在会员中心提交。
+                            <strong>如图14.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_14.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图14.</strong></span><br>
+                            <br>
+                        </span><a id="15" onclick="SwitchMenu('sub15',15)" class="menutitle" href="javascript:;">
+                            怎么提交丢单？</a><br>
+                        <span id="sub15" class="submenu">答：登录"唯一联盟会员中心"，在"业绩报表"&mdash;&mdash;"丢单申诉及处理"页面，点击"新增丢单记录"，按要求填写您要查询的订单详情，最后记得提交保存。
+                            <strong>如图15.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_15.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图15.</strong></span><br>
+                            <br>
+                        </span><a id="16" onclick="SwitchMenu('sub16',16)" class="menutitle" href="javascript:;">
+                            什么是cookies？</a><br>
+                        <span id="sub16" class="submenu">答：英文直接翻译过来的意思呢就是小甜品 Cookies英文意指饼干，不过在电脑术语中它可不像饼干那么简单。简单的说，Cookies就是服务器暂时存放在你计算机上的一些资料，好让服务器用来辨认你的计算机。当你在浏览网站的时候，Web服务器会先送一些资料放在你的计算机上，Cookie
+                            s会帮你在网站上所打的文字或是一些选择，都记录下来。当下次你再光临同一个网站，Web服务器会先看看有没有它上次留下的Cookies资料，有的话，就会依据Cookies里的内容来判断使用者，送出特定的网页内容给你。
+                        </span><a id="17" onclick="SwitchMenu('sub17',17)" class="menutitle" href="javascript:;">
+                            为什么要清除cookies？</a><br>
+                        <span id="sub17" class="submenu">答：只有在清除浏览器Cookies的情况下，再通过唯一的链接或去淘淘的链接进入到合作网站购买东西时，我们的系统才可以记录到您的订单信息以便核算返佣。为确保跟踪到订单拿到佣金，购物前清空cookies并保证您欲购物的网站购物车为空，也请保持这个清空cookies的习惯。
+                        </span><a id="18" onclick="SwitchMenu('sub18',18)" class="menutitle" href="javascript:;">
+                            怎样清除cookies？</a><br>
+                        <span id="sub18" class="submenu">答：现以IE8浏览器为例：<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;步骤一：点击IE浏览器"工具"-"Internet选项" <strong>如图16.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_16.gif"></span><br>
+                            <br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图16.</strong></span><br>
+                            <br>
+                            步骤二：点击"删除"，然后把"删除浏览的历史记录"窗口中的Cookies勾选上，然后点击"删除"，最后点击确定即可。 <strong>如图17.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_16_2.gif"></span><br>
+                            <br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图17.</strong></span><br>
+                            <br>
+                        </span><a id="19" onclick="SwitchMenu('sub19',19)" class="menutitle" href="javascript:;">
+                            清空cookies对电脑有影响吗？</a><br>
+                        <span id="sub19" class="submenu">答：只是清除一下纪录，没有影响。<br>
+                            友情提醒：删除Cookie不会给您的电脑带来危害，实际上经常清除Cookie和临时文件也是对自己电脑的一个日常维护。 </span><a id="20" onclick="SwitchMenu('sub20',20)"
+                                class="menutitle" href="javascript:;">如何保证订单能被跟踪记录？</a><br>
+                        <span id="sub20" class="submenu">答：保证订单能被跟踪记录最有效的办法是按照如下步骤购物：<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.清空cookies；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.点击唯一链接 ；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.进入对应网站，并在一个小时内完成购物；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.下下一个订单的时候，重复以上步骤。 </span><a id="21"
+                                onclick="SwitchMenu('sub21',21)" class="menutitle" href="javascript:;">什么是CPS，CPA，CPC？</a><br>
+                        <span id="sub21" class="submenu">答：a．CPS （cost per sales） ：佣金的计费方式为销售类型，即按照到达广告主指定的营销效果监测点的总有效业绩进行计费。费用设定为固定金额每笔，也可以是按照产品销售额的百分比提成,比如：您通过指定的链接进入到视客网上购买了一个隐形眼镜，花费49.8元，他们给我们的佣金比例是3%，那么您就可以获得1.49元的佣金，这种计费方式就是cps。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b．CPA （cost per action）佣金的计费方式为按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。比如：您通过指定的链接进入到"乐智小天地"官方网站，注册成为他们的会员；"乐智小天地"客服根据您的注册信息对您进行回访，信息符合要求、真实有效的话您就算一个成功的注册用户；乐智小天地给我们的每有效注册用户佣金为5元，那么您就可以得到5元的佣金，这种计费方式就是CPA。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c．CPC （cost per click）：佣金的计费方式为点击类型，即按照广告主指定的营销效果监测点计算广告的点击次数。费用设定为固定金额每1000次独立IP，比如：您通过指定的链接进入到某个商城，用不同的IP地址点击1000次，您可以获得固定金额的佣金。
+                        </span><a id="22" onclick="SwitchMenu('sub22',22)" class="menutitle" href="javascript:;">
+                            RD是什么？</a><br>
+                        <span id="sub22" class="submenu">答：RD指广告主认可用户有效行为的期限，即用户通过会员站长的网站广告到达广告主网站浏览， 在效果认定期内（比如
+                            RD=20 天） 20 天内即使未通过会员站长站点而直接浏览广告主网站并产生了购买，这种行为也被认为是该会员站长的有效业绩行为。 </span><a id="23"
+                                onclick="SwitchMenu('sub23',23)" class="menutitle" href="javascript:;">最近有哪些商城的优惠券？</a><br>
+                        <span id="sub23" class="submenu">答：最新优惠券信息会在唯一联盟会员中心及时更新，想要查询和领取可登录"唯一联盟会员中心"，在"广告主活动"&mdash;&mdash;"优惠券"页面查询和申领。
+                        </span><a id="24" onclick="SwitchMenu('sub24',24)" class="menutitle" href="javascript:;">
+                            怎样获取优惠券？</a><br>
+                        <span id="sub24" class="submenu">答：登录的"唯一联盟会员中心"，在"广告主活动"&mdash;&mdash;"优惠券"页面，可查询到所有最新的优惠券信息，如广告主名称、发布时间、优惠券金额、使用说明和周期等等，新版会员中心的优惠券频道还加载了"优惠券性质"、"优惠券类别"等查询条件，让您查询优惠券更加便利。您可以依据各种筛选条件进行筛选。
+                            <strong>如图18.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_17.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图18.</strong></span><br>
+                            <br>
+                            在每条优惠券信息后面都有"申请"按钮，点击即进入对应的某条优惠券的申请页面。如您想申请"justyle"的优惠券，点击"justyle"优惠券信息列后面的"申请"按钮，即进入这个优惠券的申请页面。
+                            <strong>如图19.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_18.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图19.</strong></span><br>
+                            <br>
+                            在这个页面中您可以看到关于该优惠券的一些说明信息以及申请优惠券的条件和规范，在"申请数量"后面的文本框中填写您所要申请的优惠券数量，点击"申请领取"，这就完成了对这个优惠券的申请程序。
+                            <strong>如图20.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_19.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图20.</strong></span><br>
+                            <br>
+                            提交申请之后，页面即跳转至 "我的优惠券"管理页面，在这里您可以看到您所申请的优惠券信息和发放状态，"申请中"状态表示您所申请的优惠券处于联盟审核中。我们会在第一时间为您审核您所申请的优惠券，经我们审核通过后，优惠券发放状态会更改为"已发放"。
+                            <strong>如图21.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_20.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图21.</strong></span><br>
+                            <br>
+                            状态为"已发放"的优惠券，点击"查看券号"可以查看此优惠券的券号明细，点击"导出"按钮，可下载优惠券券号。 <strong>如图22.</strong><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;">
+                                <img src="/images/wt_img_21.gif"></span><br>
+                            <br>
+                            <span style="width: 100%; float: left; text-align: center;"><strong>图22.</strong></span><br>
+                            <br>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </span>
+</div>
+<!--list_right-->
+
+    </div>
+    <div class="foot">
+        <ul>
+            <li><a href="/Home/CompanyInfo/1">公司简介</a></li>
+            <li><a href="/Home/CompanyInfo/2">服务条款</a></li>
+            <li><a href="/Home/CompanyInfo/3">诚聘英才</a></li>
+            <li><a href="/Home/CompanyInfo/4">个人隐私保护</a></li>
+            <li><a href="/Home/CompanyInfo/5">联系我们</a></li>
+        </ul>
+        <div>
+            公司地址：北京市朝阳区建国路88号soho现代城B座1708室 邮编：100022 电子邮件：service@weiyi.com<br />
+            北京唯一伟业传媒科技有限公司 版权所有 京ICP证080288号 京公网安备110108002715号</div>
+    </div>
+</body>
+</html>

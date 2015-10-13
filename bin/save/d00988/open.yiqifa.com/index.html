@@ -1,0 +1,447 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+		<title>亿起发--开放平台</title>
+		
+	    <link type="text/css" rel="stylesheet" href="/css/new/common.css" />
+        <link type="text/css" rel="stylesheet" href="/css/new/new.css" />
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="/js/login.js"></script>
+
+		<script type="text/javascript">
+		var flag = '';
+		</script>
+		
+	</head>
+
+	<body>
+		
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+    
+	<div class="miniInner">
+    	<div class="logo"><a href="/index"></a></div>
+    	
+    
+       <div class="welcome"><span>欢迎您！请</span><a href="#" onclick="showLogin()" class="out">[登录]</a></div>
+      
+        <div class="nav"><span></span><a href="/index" id="index">平台首页</a><span></span><a href="/new/webCooperation" id="webCooperation" class="normal">网站合作</a><span></span><a href="/new/merchantCooperation" id="new" class="normal">商家合作</a><span></span><a href="/doc/api2/introduce" id="introduce" class="normal">开发文档</a><span></span><a href="/app/get/managerCenter" id="app">管理中心</a><span></span><a href="/bbs/gotobbs" id="bbs">论坛</a><span></span></div>
+    </div>
+</div>
+ 
+<script type="text/javascript">
+  var path = '';
+  var basepath = '';
+  
+ var d_url=document.location.href;
+ var d_url2=d_url.split(path+"/")[2];
+ var d_url3=d_url.split(path+"/")[3];
+ var d_url4=d_url.split(path+"/")[4];
+ try{
+	 if(d_url2.length<=5){
+	    document.getElementById(d_url2).className="current";
+	 }else if(d_url4=="webCooperation"){
+	    document.getElementById('webCooperation').className="current";
+	 }else if(d_url3=="report"||d_url3=="userinfo"){
+	    document.getElementById('app').className="current";
+	 }else {
+	    document.getElementById(d_url3).className="current";
+	 }
+ }catch(exception){
+  
+ }
+  
+</script>
+
+		<!--banner定义开始-->
+<div id="banner">
+	<div class="outer">
+    	<div id="left"><a href="#"></a></div>
+    	<div id="inner">
+            <div><a href="http://open.yiqifa.com/doc/api2/api/chaojifanapi" target="blank"><img src="/images/new/banner.jpg" width="980" height="450" /></a></div>
+            <div><a href="/active"><img src="/images/new/banner-2.jpg" width="980" height="450" /></a></div>
+            <div><a href="/new/merchantCooperation"><img src="/images/new/banner-3.jpg" width="980" height="450" /></a></div>
+            <div><a href="http://www.yiqifa.com/userRegEdit.do?regType=earner" target="blank"><img src="/images/new/banner-4.jpg" width="980" height="450" /></a></div>
+        </div>
+        <div id="right"><a href="#"></a></div>
+  </div>
+</div>
+<!--banner定义结束-->
+<!--主内容定义开始-->
+<div id="container">
+	<div class="innerLeft">
+    	<div class="benefits">
+        	<h3>您将得到哪些好处？</h3>
+            <div class="merchant">成为亿起发开放平台认证的合作商家，无需再为传统CPS图片广告推广方式的单调和低成交转化率发愁，让您的每一份期待成为疯狂的收入！</div>
+            <div class="developer">随心所欲的调用200+优质B2C商家的商品，打造出完全依照自己所想的购物导航网站，将自身网站的流量转化为源源不断的收入。</div>
+            <div class="clearBoth"></div>
+        </div>
+        <div class="advantage">
+        	<h3>我们具备哪些优势？</h3>
+            <div><a href="javascript:void(0);" class="a1"></a><a href="javascript:void(0);" class="a2"></a><a href="javascript:void(0);" class="a3"></a></div>
+        </div>
+    </div>
+    <div class="innerRight">
+    	<div class="newsList">
+        	<h3><span>平台动态</span></h3>
+            <ul>
+                <li><a href="http://bbs.open.yiqifa.com/forum.php?mod=viewthread&tid=36&extra=page%3D1">商品链接的CPS计费模式可以转化为ROI了 </a><span>2012-10-31</span></li>
+                <li><a href="http://bbs.open.yiqifa.com/forum.php?mod=viewthread&tid=35&extra=page%3D1">2012年11月需求进度表</a><span>2012-10-31</span></li>
+                <li><a href="http://bbs.open.yiqifa.com/forum.php?mod=viewthread&tid=7&extra=page%3D1">开放平台正式版：正式上线了！</a><span>2012-8-16</span></li>
+                <li><a href="http://bbs.open.yiqifa.com/forum.php?mod=viewthread&tid=3&extra=page%3D1">8月18日开放平台产品见面会</a><span>2012-8-15</span></li>
+                <li><a href="http://bbs.open.yiqifa.com/forum.php?mod=viewthread&tid=8&extra=page%3D1">如何更好使用开放平台</a><span>2012-8-15</span></li>
+            </ul>            
+        </div>
+      <div class="advList">
+       	<h3><span>合作案例</span></h3>
+          <ul>
+           	  <li><img src="/images/new/sougou.jpg" width="80" height="80" /><span>搜狗导航</span></li>
+              <li><img src="/images/new/beike.jpg" width="80" height="80" /><span>贝壳网</span></li>
+              <li><img src="/images/new/congmingdian.jpg" width="80" height="80" /><span>聪明点</span></li>
+              <li><img src="/images/new/guangjie.jpg" width="80" height="80" /><span>逛网</span></li>
+              <li><img src="/images/new/wuyao.jpg" width="80" height="80" /><span>舞妖返利</span></li>
+              <li><img src="/images/new/at.jpg" width="80" height="80" /><span>AT秒返利</span></li>
+          </ul>
+          <div class="clearBoth"></div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</div>
+<!--主内容区定义结束-->
+
+	    
+
+	<div id="login" class="loginw" style="display: none">
+			<div class="login-win">
+				<div class="float-top">
+					<span class="ftop-l"></span><span class="ftop-r"></span>
+					<div class="ftop-m">
+						<h3>
+							<a class="win-close" href="#" onclick="closeLogin()"></a>用户登录
+						</h3>
+					</div>
+				</div>
+				<div class="float-mid">
+					<div class="login">
+						<form id="yiqifaUserDTO" name="login" action="/index" method="post">
+							<div>
+								<label>
+									用户名：
+								</label>
+								<input id="userName" name="userName" onclick="if(this.value==&#39;请输入email地址&#39;){this.value=&#39;&#39;;this.className=&#39;input05 fontblack&#39;}" class="input05" onblur="if(this.value==&#39;&#39;) {this.value=&#39;请输入email地址&#39;;this.className=&#39;input05&#39;}" type="text" value="请输入email地址"/>
+								<p align="center">
+									
+								</p>
+							</div>
+							<div>
+								<label>
+									密码：
+								</label>
+								<input id="password" name="password" class="input05" type="password" value=""/>
+								<a href="http://www.yiqifa.com/sendPassword.do" target="blank">忘记密码？</a>
+								<p align="center">
+									
+								</p>
+							</div>
+							<div>
+								<label>
+									验证码：
+								</label>
+								<input id="checkCode" name="checkCode" onkeydown="enterSubmit(event);" class="input06" type="text" value=""/>
+								<span><img src="/checkcode/login/1" alt="验证码图片"
+										id="checkcode" /> </span>
+								<a href="javascript:refreshCheckCode()">换一张</a>
+							</div>
+							<p align="center">
+								
+							</p>
+							<div>
+								<label>
+									&nbsp;
+								</label>
+								<img src="/images/btn-06.jpg" alt="登录"
+									onclick="submit()" />
+							</div>
+						</form>
+					</div>
+					<div class="register">
+						<br />
+						已有亿起发网站主账号，请直接登录；
+						<br />
+						<br />
+						还不是亿起发网站主，请先
+						<a href="http://www.yiqifa.com/userRegEdit.do?regType=earner" target="blank">注册</a>
+						<p>
+							<br />
+						</p>
+						<br />
+					</div>
+					<div class="clearBoth"></div>
+				</div>
+				<div class="float-bottom">
+					<span class="fbot-l"></span><span class="fbot-r"></span>
+					<div class="fbot-m">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<div id="footer">
+	<div class="nav-bottom"><a href="/doc/api2/introduce">关于我们</a><a href="http://www.yiqifa.com/html/aboutus.html">关于亿起发</a><a href="http://www.yiqifa.com/searchCampaignBeginList.do">广告活动</a><a href="http://www.yiqifa.com/html/goldchain.html">掘金链</a><a href="http://www.gouwuke.com">购物客</a></div>
+ 	<p>Copyright&copy;2011-2013 亿起发联盟效果营销平台 [京ICP备10001024号]</p>
+</div>
+		<script>
+var oInner=document.getElementById('inner');
+function getCss(ele,attr){
+	if(ele&&ele.nodeType&&ele.nodeType===1&&attr&&typeof attr=='string'){
+	return ele.currentStyle?ele.currentStyle[attr]:getComputedStyle(ele,false)[attr];
+	}else{
+	  alert('参数错误！！');
+	  throw new Error('参数错误！！');	
+	}
+};
+var firstDiv=document.getElementById('inner').children[0];
+var fuben=firstDiv.cloneNode(true);
+oInner.appendChild(fuben);
+oInner.style.width=parseInt(getCss(oInner,'width'))+fuben.offsetWidth+'px';
+function core(ele,attr,target,num){
+	var nSpeed=(target-parseInt(getCss(ele,attr)))/num;
+	nSpeed=nSpeed>0?Math.ceil(nSpeed):Math.floor(nSpeed);
+	ele.style[attr]=parseInt(getCss(ele,attr))+nSpeed+'px';
+	if(nSpeed==0){
+		return 'stop';
+	}
+}
+function move(ele,attr,target,num){
+	window.clearTimeout(ele.timer);
+	if(core(ele,attr,target,num)=='stop'){
+		
+	}else{
+		ele.timer=window.setTimeout(function(){move(ele,attr,target,num)},30);
+	}
+}
+var step=0;
+var autoTimer=null;
+function autoLeft(){
+	step++;
+	if(step==5){
+		oInner.style.left=0;
+		step=1;
+	}
+	move(oInner,'left',-980*step,15);
+	autoTimer=window.setTimeout(autoLeft,5000);
+}
+function autoRight(){
+	step--;
+	if(step==-1){
+		oInner.style.left=-3920+'px';
+		step=3;
+	}
+	move(oInner,'left',-980*step,15);
+	autoTimer=window.setTimeout(autoRight,5000);
+};
+var oBtnDiv1=document.getElementById('left');
+var oBtnDiv2=document.getElementById('right');
+var clickTimer=null;
+oBtnDiv1.onclick=function(){
+	clearTimeout(clickTimer);
+	clearTimeout(autoTimer);
+	move(oInner,'left',-980*step,15);
+	clickTimer=setTimeout(autoLeft,0);
+};
+
+oBtnDiv2.onclick=function(){
+	clearTimeout(clickTimer);
+	clearTimeout(autoTimer);
+	move(oInner,'left',-980*step,15);
+	clickTimer=setTimeout(autoRight,0);
+};
+autoLeft();
+</script>
+		
+<!--右下角-->
+<style>
+.float_layer { width: 280px; border: 1px solid #aaaaaa; display:none; background: #fff; }
+.float_layer h2 { height: 25px; line-height: 25px; padding:0; margin:0; padding-left: 10px; font-size: 14px; color: #333; background: url(/css/doc/images/title_bg.gif) repeat-x; border-bottom: 1px solid #aaaaaa; position: relative; }
+.float_layer .min { width: 21px; height: 20px; background: url(/css/doc/images/min.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 25px; }
+.float_layer .min:hover { background: url(/css/doc/images/min.gif) no-repeat 0 0; }
+.float_layer .max { width: 21px; height: 20px; background: url(/css/doc/images/max.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 25px; }
+.float_layer .max:hover { background: url(/css/doc/images/max.gif) no-repeat 0 0; }
+.float_layer .close { width: 21px; height: 20px; background: url(/css/doc/images/close.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 3px; }
+.float_layer .close:hover { background: url(/css/doc/images/close.gif) no-repeat 0 0; }
+.float_layer .content { height:140px; overflow:hidden; color:#555; line-height:24px; }
+.float_layer .content p{ margin:10px 10px 0px; text-indent:2em;}
+</style>
+<script type="text/javascript">
+function miaovAddEvent(oEle, sEventName, fnHandler)
+{
+	if(oEle.attachEvent)
+	{
+		oEle.attachEvent('on'+sEventName, fnHandler);
+	}
+	else
+	{
+		oEle.addEventListener(sEventName, fnHandler, false);
+	}
+}
+window.onload = function()
+{
+	var oDiv=document.getElementById('miaov_float_layer');
+	var oBtnMin=document.getElementById('btn_min');
+	var oBtnClose=document.getElementById('btn_close');
+	var oDivContent=oDiv.getElementsByTagName('div')[0];
+	
+	var iMaxHeight=0;
+	
+	var isIE6=window.navigator.userAgent.match(/MSIE 6/ig) && !window.navigator.userAgent.match(/MSIE 7|8/ig);
+	
+	oDiv.style.display='block';
+	iMaxHeight=oDivContent.offsetHeight;
+	
+	if(isIE6)
+	{
+		oDiv.style.position='absolute';
+		repositionAbsolute();
+		miaovAddEvent(window, 'scroll', repositionAbsolute);
+		miaovAddEvent(window, 'resize', repositionAbsolute);
+	}
+	else
+	{
+		oDiv.style.position='fixed';
+		repositionFixed();
+		miaovAddEvent(window, 'resize', repositionFixed);
+	}
+	
+	oBtnMin.timer=null;
+	oBtnMin.isMax=true;
+	oBtnMin.onclick=function ()
+	{
+		startMove
+		(
+			oDivContent, (this.isMax=!this.isMax)?iMaxHeight:0,
+			function ()
+			{
+				oBtnMin.className=oBtnMin.className=='min'?'max':'min';
+			}
+		);
+	};
+	
+	oBtnClose.onclick=function ()
+	{
+		oDiv.style.display='none';
+		  document.getElementById('flashcontent').removeChild(document.getElementById('mymovie'));
+	};
+};
+
+function startMove(obj, iTarget, fnCallBackEnd)
+{
+	if(obj.timer)
+	{
+		clearInterval(obj.timer);
+	}
+	obj.timer=setInterval
+	(
+		function ()
+		{
+			doMove(obj, iTarget, fnCallBackEnd);
+		},30
+	);
+}
+
+function doMove(obj, iTarget, fnCallBackEnd)
+{
+	var iSpeed=(iTarget-obj.offsetHeight)/8;
+	
+	if(obj.offsetHeight==iTarget)
+	{
+		clearInterval(obj.timer);
+		obj.timer=null;
+		if(fnCallBackEnd)
+		{
+			fnCallBackEnd();
+		}
+	}
+	else
+	{
+		iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+		obj.style.height=obj.offsetHeight+iSpeed+'px';
+		
+		((window.navigator.userAgent.match(/MSIE 6/ig) && window.navigator.userAgent.match(/MSIE 6/ig).length==2)?repositionAbsolute:repositionFixed)()
+	}
+}
+
+function repositionAbsolute()
+{
+	var oDiv=document.getElementById('miaov_float_layer');
+	var left=document.body.scrollLeft||document.documentElement.scrollLeft;
+	var top=document.body.scrollTop||document.documentElement.scrollTop;
+	var width=document.documentElement.clientWidth;
+	var height=document.documentElement.clientHeight;
+	
+	oDiv.style.left=left+width-oDiv.offsetWidth-10+'px';
+	oDiv.style.top=top+height-oDiv.offsetHeight+'px';
+}
+
+function repositionFixed()
+{
+	var oDiv=document.getElementById('miaov_float_layer');
+	var width=document.documentElement.clientWidth;
+	var height=document.documentElement.clientHeight;
+	
+	oDiv.style.left=width-oDiv.offsetWidth-10+'px';
+	oDiv.style.top=height-oDiv.offsetHeight+'px';
+}
+</script>
+<div class="float_layer" id="miaov_float_layer">
+    <h2>
+        <strong>温馨通知</strong>
+        <a id="btn_min" href="javascript:;" class="min"></a>
+        <a id="btn_close" href="javascript:;" class="close"></a>
+    </h2>
+    <div class="content" id="flashcontent" style="text-align:left;">
+     <p>
+    开放平台超级返/高佣金商品接口上线；接口提供品牌商品，佣金比例最高可达100%；请各位站长大力支持！<br />
+      <div style="text-align:right; margin-right:10px;">2014年11月5日</div></p>
+    </div>
+   </div>
+		
+		
+	</body>
+</html>

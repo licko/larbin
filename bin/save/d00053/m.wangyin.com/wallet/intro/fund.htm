@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>京东钱包</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="icon" href="//static.jdpay.com/m-wallet/v0.1.9//img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="//static.jdpay.com/m-wallet/v0.1.9//img/app-icon.png">
+    <link rel="stylesheet" href="//static.jdpay.com/m-wallet/v0.1.9//css/global.css"/>
+    <link rel="stylesheet" href="//static.jdpay.com/m-wallet/v0.1.9//css/download-bar.css"/>
+    <style type="text/css">
+        body {
+            background: #fff;
+            padding-bottom: 60px;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header class="g-header" id="J_header">
+    <div class="nav-bar">
+        <div class="nav-back J_navBack">
+            <a href="#">返回</a>
+        </div>
+
+        <div class="nav-title-wrap">
+            <h1 class="nav-title">
+                京东钱包 - 基金超市
+            </h1>
+
+            <div class="account-info J_accInfo"></div>
+        </div>
+    </div>
+</header>
+
+    
+<div class="main">
+    <img src="//static.jdpay.com/m-wallet/v0.1.9//img/fund-intro.png" alt="基金超市" style="width:100%;">
+</div>
+
+
+
+<script src="//static.jdpay.com/m-wallet/v0.1.9//js/lib/require.js" data-main="//static.jdpay.com/m-wallet/v0.1.9//js/pages/intro"></script>
+    
+
+<script>
+    //埋点
+    window.WyStat = window.WyStat || {
+        site:'m-wallet',
+        pageName:''
+    };
+
+    (function(){
+        var ja = document.createElement('script');
+        ja.type = 'text/javascript';
+        ja.async = true;
+        ja.src = 'https://tongjissl.jdpay.com/wystat.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ja, s);
+    })();
+</script></body>
+</html>

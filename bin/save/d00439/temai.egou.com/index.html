@@ -1,0 +1,1949 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>【易购特卖惠】每天9点上新，全网超值低价，精选商品9块9包邮，29块9秒杀，更有品牌折扣商品等你抢！</title>
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/tb/tmh_news/tmh_stylev2.2.css" type="text/css"/>
+<script type="text/javascript" src="http://static.egou.com/f=js/open.js,js/fit-image.js,js/jquery.js,js/cpa-cookie.js?v"></script>
+<script src="http://static.egou.com/p/tb/tmh_js/jquery.js" type="text/javascript"></script>
+<script src="http://static.egou.com/p/tb/tmh_js/jquery.lazyload.js?2" type="text/javascript"></script>
+<script type="text/javascript">
+	var htmlStyle = '';
+	if(htmlStyle == 'mobile'){
+		window.location.href = "http://t.m.egou.com";//手机
+	}else if(htmlStyle == 'pc'){
+		
+	}else{
+		var system = {
+			    win: false,
+			    mac: false,
+			    xll: false
+			};
+			var p = navigator.platform;
+			system.win = p.indexOf("Win") == 0;
+			system.mac = p.indexOf("Mac") == 0;
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if (!system.win && !system.mac && !system.xll) {
+			   	window.location.href = "http://t.m.egou.com";//手机
+			}
+	}
+</script>
+
+<script type="text/javascript">
+window._TemaiUrl = 'http://temai.egou.com';
+window._BaobeiUrl = 'http://temai.egou.com';
+</script>
+
+<script type="text/javascript">
+function openNewUrl(url,buttonID){
+	
+	/* url ='http://fanxian.egou.com/productredirect.do?sid=0&buttonID='+buttonID+'&link='+encodeURIComponent(url); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq&url=' + encodeURIComponent(url) + '&ext=2';
+	egou.open(url);
+} 
+
+/* function initTbTop(){
+	var isTwoCat = false;
+	if(catLv1 == 'woman' || catLv1 == 'shenghuojiaju'){
+		$("#left_menu").css("top", "215px");
+		isTwoCat = true;
+	} 
+	//获取要定位元素距离浏览器顶部的距离
+	var itemCatsH = $("#scroll_top").offset().top;
+	//滚动条事件
+	$(window).scroll(function(){
+	//获取滚动条的滑动距离
+		var scroH = $(this).scrollTop();
+		//滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+		if(scroH > itemCatsH){
+			$("#left_menu").attr("class","left_menu tjp_left_fixed");
+			$("#scroll_top").attr("class","tjp_list_bg mlnav_background tmh_fixed");
+			$("#tmh_mlnav_bg").attr("class","tmh_mlnav_bg");
+			if(isTwoCat){
+				$("#left_menu").css("top", "");
+			}
+		}else{
+			$("#left_menu").attr("class","left_menu");
+			$("#scroll_top").attr("class","tjp_list_bg"); 
+			$("#tmh_mlnav_bg").attr("class","tmh_mlnav_bg mlnav_background");
+			if(isTwoCat){
+				$("#left_menu").css("top", "215px");
+			}
+		} 
+	}); 
+}; */
+function initTbTop(){
+	
+	//获取要定位元素距离浏览器顶部的距离
+	var itemCatsH = $("#scroll_top").offset().top;
+	//滚动条事件
+	$(window).scroll(function(){
+	//获取滚动条的滑动距离
+		var scroH = $(this).scrollTop();
+		//滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
+		if(scroH > itemCatsH){
+			var obj = document.getElementById("three_nav");
+			if (obj){
+				$("#tmh_nav_bg").attr("class","tmh_nav_bg display_none");
+				$("#two_nav").attr("class","two_nav_bg two_nav_bg2");
+				$("#three_nav").attr("class","three_nav_bg three_nav_bg1");
+			}else{
+				$("#tmh_nav_bg").attr("class","tmh_nav_bg");
+				$("#two_nav").attr("class","two_nav_bg two_nav_bg1");
+			}
+			$("#scroll_top").attr("class","scroll_top fixed_top");
+			var nav_search = document.getElementById("nav_search");
+			if (nav_search){
+			$("#nav_search").attr("class","nav_search");
+			changeSearchkey('keyword1','keyword2');
+			}
+		}else{
+			$("#scroll_top").attr("class","scroll_top");
+			$("#tmh_nav_bg").attr("class","tmh_nav_bg");
+			$("#two_nav").attr("class","two_nav_bg");
+			var obj = document.getElementById("three_nav");
+			if (obj){
+			$("#three_nav").attr("class","three_nav_bg");
+			}
+			var nav_search = document.getElementById("nav_search");
+			if (nav_search){
+			$("#nav_search").attr("class","nav_search display_none");
+			changeSearchkey('keyword2','keyword1');
+			}
+		} 
+	}); 
+};
+
+	var ContextPath = "";
+	var moreData = '1';
+	var no_more_data = false;
+	if ('0' == moreData) {
+		no_more_data = true;
+	} else {
+		no_more_data = false;
+	}
+	var fnumIid = '';
+	var cat = '';
+	var sort = '';
+	var postfee = '';
+	var pt = '';
+	var pageNo = '1'; //当前第几页
+	var totalRowCount = '1673';
+	var adpmax = '';
+	var cuid = '';
+	var catLv1 = 'index';
+	function processUrlDouble11(url,bid,fxtag){
+		/* url='http://fanxian.egou.com/productredirect.do?sid=-1&buttonID='+bid+'&feedback=2&fxtag='+fxtag+'&link='+encodeURIComponent(url); */
+		url = 'http://union.egou.com/to?site=5&&page=&pos='+bid+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url);
+		egou.open(url,'_blank');	
+	}
+</script>
+<script type="text/javascript">
+jQuery().ready(function() {
+	var a = jQuery(".time_bg");
+	 jQuery.each(a, function(i, item){     
+		   var a = jQuery(this).attr("time");
+		   if(a != null){
+			   times.push(this);
+		   }
+	 });  
+	 window.getRTimeInteral = setInterval(getRTime, 100);
+});
+
+	var nowTime = new Date('2015/10/02 21:17:31');
+	var times = [];
+	function getRTime() {
+		nowTime = new Date(nowTime.getTime() + 100);
+		if(times.length > 0){
+			jQuery.each(times, function(i, item){     
+				   var a = jQuery(this).attr("time");
+				   if(a != null){
+					   var endTime = new Date(a);
+					   var leftTime = endTime.getTime() - nowTime.getTime();
+					   var endTimeMsg = parseInt(leftTime / 1000);// 精确到秒
+					   if (leftTime > 0) {
+			 				var h = Math.floor(endTimeMsg / 60 / 60 % 24);
+			 				var m = Math.floor(endTimeMsg / 60 % 60);
+			 				var s = Math.floor(endTimeMsg % 60);
+			 				var msg = '<em></em>' + getStyleNum(h) + "时"+getStyleNum(m) + "分"+getStyleNum(s) + "秒后下架";
+			 				jQuery(this).html(msg);
+			 			} else {
+			 				var msg = '<em></em>' + getStyleNum(h) + "时"+getStyleNum(m) + "分"+getStyleNum(s) + "秒后下架";
+			 				jQuery(this).html(msg);
+			 			}
+				   }
+			 }); 
+		}
+	}
+	
+	function getStyleNum(o){
+		var first = parseInt(o/10);
+		var second = o%10;
+		return first + '' + second;
+	}
+	
+</script>
+</head>
+<body>
+	
+<meta http-equiv="Cache-Control" content="max-age=10080" /> 
+<script type="text/javascript" src="http://static.egou.com/b=header/js&f=header.js?2014"></script>
+
+<script type="text/javascript">
+var EgouCookie = {username: '', userid: '' };
+jQuery.ajax({
+	url:'http://www.egou.com/headers/header_out2.jsp',
+	data:{'w':1000,'no_search_bar':true},
+	dataType: "jsonp",
+	success: function(html) {
+	var ad =document.createElement('script');
+	ad.type='text/javascript';
+	ad.async=true;
+	ad.src='http://ad.egou.com/ads.jsp?name=TOP_ADS&callback=cb_ad_other&site=5&term=1&page=TEMAI_HEADER';		
+	var s=document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ad,s);
+	jQuery("#egou_header").append(html);
+	on_egou_header_loaded();
+	initTbTop();
+	},
+	error: function(e, t) {}
+});
+
+jQuery.cookie = function(name, value, options) {
+    if (typeof value != 'undefined') {
+        options = options || {};
+        if (value === null) {
+            value = '';
+            options.expires = -1;
+        }
+        var expires = '';
+        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+            var date;
+            if (typeof options.expires == 'number') {
+                date = new Date();
+                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+            } else {
+                date = options.expires;
+            }
+            expires = '; expires=' + date.toUTCString(); 
+        }
+        var path = options.path ? '; path=' + (options.path) : '';
+        var domain = options.domain ? '; domain=' + (options.domain) : '';
+        var secure = options.secure ? '; secure' : '';
+        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+    } else {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+};
+jQuery.cookie("_egtmh","tmh",{expires:30,domain:'egou.com',path:'/'});
+
+function openNewUrl(url,buttonID,blank){
+	/* url ='http://fanxian.egou.com/productredirect.do?sid=0&buttonID='+buttonID+'&link='+encodeURIComponent(url); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url);
+	egou.open(url,blank);
+}
+function processUrlWithButtonID(url,buttonID){
+	/* url ='http://fanxian.egou.com/productredirect.do?sid=-1&buttonID='+buttonID+'&feedback=2&link='+encodeURIComponent(url+'&unid=150i2060eTBKGW%user%'); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url+'&unid=%user%');
+	egou.open(url,'_blank');
+}
+function processUrl(url,buttonID,fxtag){
+	/* url='http://fanxian.egou.com/productredirect.do?sid=-1&buttonID='+bid+'&feedback=2&fxtag='+fxtag+'&link='+encodeURIComponent(url+'&unid=150i2060eTBKGW%user%'); */
+	url = 'http://union.egou.com/to?site=5&&page=&pos='+buttonID+'&uniq=&fuid=100000&ext=2&url=' + encodeURIComponent(url+'&unid=%user%');
+	egou.open(url,'_blank');	
+}
+var keyword = '';
+var searchKey = !keyword ? "休闲裤" : keyword.replace(new RegExp("&#x27;","gm"),"'"); 
+jQuery(document).ready(function() {
+	jQuery('#gotop').click(function(){
+		$(document).scrollTop(0);
+		}
+	);
+	jQuery('#topSubmitKeyword').click(function(){
+		var evk = jQuery('#topSearch input[name=keyword]').val();
+		var keyword = jQuery.trim(evk);
+		keyword = keyword.replace(new RegExp("'","gm"),"");
+		//文本框没有填写内容
+		if(keyword.length == 0){
+			return false;
+		}else{
+			var url = _TemaiUrl + "/search.htm?keyword=" + encodeURIComponent(keyword);
+			openNewUrl(url,'TemaiSearchTop');
+		}
+	});
+	jQuery('#topSearch input[name=keyword]').focus(function(){
+		var evk = jQuery('#topSearch input[name=keyword]');
+		var keyword = jQuery.trim(evk.val());
+		if (keyword == searchKey) {
+			evk.val("");
+		} 
+		evk.attr("class", "search_text");
+	});
+	jQuery('#topSearch input[name=keyword]').blur(function(){
+		var evk = jQuery('#topSearch input[name=keyword]');
+		var keyword = jQuery.trim(evk.val());
+		if (keyword == "") {
+			evk.val(searchKey);
+			evk.attr("class", "search_text color_99");
+		}
+	});
+});
+
+</script>
+<div id="egou_header"></div>
+<div class="clear"></div>
+
+<!--  头部部分  -->
+<!-- <div class="tmh_top_bg" >
+	<div class="tmh_top width1000">
+    	<div class="tmh_logo">
+        	<div class="logo_left"><a href="http://www.egou.com/" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/tm_logo.png" /></a></div>
+        	<div class="logo_right">
+    		  <a href="http://temai.egou.com/"></a>
+           	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="120" height="60" id="FlashID" title="logo">
+            	  <param name="movie" value="http://egouimg1.qutu.com/tb/tmh_news/tmh_logo.swf">
+            	  <param name="quality" value="high">
+            	  <param name="wmode" value="opaque">
+            	  <param name="swfversion" value="15.0.0.0">
+            	  此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。
+            	  <param name="expressinstall" value="Scripts/expressInstall.swf">
+            	  下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。
+            	  [if !IE]>
+            	  <object type="application/x-shockwave-flash" data="http://egouimg1.qutu.com/tb/tmh_news/tmh_logo.swf" width="120" height="60">
+            	    <![endif]
+            	    <param name="quality" value="high">
+            	    <param name="wmode" value="opaque">
+            	    <param name="swfversion" value="15.0.0.0">
+            	    <param name="expressinstall" value="Scripts/expressInstall.swf">
+            	    浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。
+            	    <div>
+            	      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+            	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          	      </div>
+            	    [if !IE]>
+          	    </object>
+            	  <![endif]
+          	  </object>
+            </div>
+        </div>
+    	<div class="tmh_logo_right"><img src="http://egouimg1.qutu.com/tb/tmh_news/tm_logo_right.png" /></div>
+    	<div class="clear"></div>
+    </div>
+</div> -->
+<div class="tmh_top_bg" >
+	<div class="tmh_top width1000">
+    	<div class="tmh_logo">
+        	<div class="logo_left"><a href="http://www.egou.com/" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tmh_logo.png" /></a></div>
+        	<div class="logo_left"><a href="http://temai.egou.com/"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tmh_logo0.png" /></a></div>
+        	
+      </div>
+    	<div class="tmh_logo_right"><a href="http://temai.egou.com/item_promise.htm" target="_blank"><img src="http://egouimg1.qutu.com/tb/tmh_news/imagesv2.0/tm_logo_rightv2.1.png" /></a></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+function changeSearchkey(keyid1,keyid2){
+$("#"+keyid2).val($("#"+keyid1).val());
+}
+</script>
+
+<!-- 分类导航 -->
+
+
+<!--  二级分类 -->
+
+
+<div id="scroll_top" class="scroll_top">
+    <!-- 分类导航 -->
+    <div class="tmh_nav_bg" id="tmh_nav_bg">
+        <div class="tmh_nav width1000">
+            <ul class="nav_li">         
+               <!--  <li><a href="#" class="selected">首页</a></li>
+                <li><a href="#"><em class="icon icon1"></em>9块9包邮</a></li>
+                <li><a href="#"><em class="icon icon2"></em>29块9秒杀</a></li>
+                <li><a href="#">品牌折扣</a></li>
+                <li><a href="#">明日预告</a></li>
+                <li><a href="#"><em class="icon icon4"></em>闪见红包</a></li> -->
+                
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatindex&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2F" class="selected">
+				首页<span class="jt"></span></a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatbaoyou&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fbaoyou%2F" >
+				<em class="icon icon1"></em>9.9包邮</a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatmiaosha&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fmiaosha%2F" >
+				<em class="icon icon2"></em>29.9封顶</a>
+				
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcathot&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fhot%2F" >
+				爆款疯抢</a>
+				<span class="tmh_hot"></span>
+				</li>
+				
+                <li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatyugao&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fyugao%2F" >
+				明日预告</a>
+				
+				</li>
+				
+				<li><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"><em class="icon icon4"></em>闪见红包</a></li>
+            </ul>
+            <form id="topSearch" action="http://temai.egou.com/search.htm">
+            <div class="nav_search">
+                <input name="keyword" type="text" class="search_text color_99" value="" id="keyword1">
+                <input type="button" class="search_btn" id="topSubmitKeyword">
+            </div>
+            </form>
+            <script type="text/javascript">
+			jQuery('#topSearch input[name=keyword]').val(searchKey);
+			</script>
+        </div>
+    </div>
+    
+    <!--  二级分类 -->
+    <div class="two_nav_bg" id="two_nav">
+        <div class="two_nav">
+            
+			    	<ul>
+			        	<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatindex&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2F" class="selected">全部商品</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatnvren&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fnvren%2F" >
+							时尚女装</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatnanren&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fnanren%2F" >
+							潮流男装</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatjiaju&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fjiaju%2F" >
+							生活家居</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatshuma&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fshuma%2F" >
+							数码家电</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatshipin&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fshipin%2F" >
+							美食特产</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatmuying&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fmuying%2F" >
+							母婴玩具</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatmeizhuangnv&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fmeizhuangnv%2F" >
+							美妆个护</a><em></em></li>
+						
+							<li><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexDhcatxiebao&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fxiebao%2F" >
+							鞋包配饰</a><em></em></li>
+						
+			        </ul>
+			        
+			        <div class="mlnav_pages">
+                
+					<!--  没有上一页 -->
+					<span class="pg-prev"><i class="trigger"></i></span>
+				
+					 <!--  有下一页 -->
+	                 <a href="http://temai.egou.com/p2.html" class="pg-next">
+	                 	<span class="text">下一页</span>
+	                 	<i class="trigger"></i>
+	                 </a><span class="sum" onclick="javascript:egou.open('http://temai.egou.com/p2.html');"><em>1</em>/12</span>
+				
+            </div>
+			        
+        </div>
+    </div>
+    
+</div>
+<script type="text/javascript">initTbTop();</script>
+
+
+	
+	<!--  内容部分  -->
+	<div class="tmh_main width1000">
+		
+		<div class="today_name font14">今日新品<span class="font16 color_red1">21</span>款<span class="color_66 font12"> 每天9点上新</span></div>
+	    
+	    <!--  列表部分  -->
+	    <div class="tjp_list">
+	    	<ul id="tjp_list">
+	    	    
+	    	            <li>
+			                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+			                    <div class="pic">
+			                    	<div class="pic_img"><a href="http://union.egou.com/to?site=5&&page=&pos=&uniq=19&url=http%3A%2F%2Ftemai.egou.com%2Fhuodong%2F19.htm&ext=2" target="_blank"><img src="http://img0.egou.com/taobao/201509/21/779f06671d46c7e86e01d65f971ff6a4.jpg" /></a></div>
+			                    </div>
+			                    <div class="title"><a href="http://union.egou.com/to?site=5&&page=&pos=&uniq=19&url=http%3A%2F%2Ftemai.egou.com%2Fhuodong%2F19.htm&ext=2" target="_blank">中秋遇国庆，易购大放价！</a></div>
+			                    <div class="money_bg">
+			                        <div class="big_name">中秋国庆专场</div>
+			                        <div class="botton" style="display:block;"><a href="http://union.egou.com/to?site=5&&page=&pos=&uniq=19&url=http%3A%2F%2Ftemai.egou.com%2Fhuodong%2F19.htm&ext=2" target="_blank">去看看</a><em></em></div> 
+			                    </div>
+			                </div> 
+			            </li>
+	    	        
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157736&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/3c2b602504fde937aeb8390584bcf9f6.jpg" data-original="http://img0.egou.com/taobao/201509/30/3c2b602504fde937aeb8390584bcf9f6.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157736&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">全棉防臭四季运动袜 五双</a>
+								<span class="buy_word">577人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥32</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省22.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157736&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157736" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 抗臭吸汗，抗菌保暖，纯棉材质，舒适透气~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157376&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/27/76ec1023ef731ecbc0e0266acb353d8f.jpg" data-original="http://img0.egou.com/taobao/201509/27/76ec1023ef731ecbc0e0266acb353d8f.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157376&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">超薄移动电源可充手机8次</a>
+								<span class="buy_word">6913人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥100</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省80.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157376&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157376" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 手机通用20000mah充电宝特价</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157684&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/2a9a4d784c1a63b8dfb3401928826ab7.jpg" data-original="http://img0.egou.com/taobao/201509/29/2a9a4d784c1a63b8dfb3401928826ab7.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157684&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">自动扣牛皮商务皮带 11款</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥190</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省180.1</em></span>
+		                        </div>
+		                        <div class="tb_icon tmall"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157684&page=tmindex/http://temai.egou.com/&pageno=1&wl=1*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去天猫抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157684" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 真皮皮带，限时促销 ！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157367&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/26/ca75d3e016527e7b6b60c43129311ecb.jpg" data-original="http://img0.egou.com/taobao/201509/26/ca75d3e016527e7b6b60c43129311ecb.jpg"/></a>
+									<div class="time_bg" time="2015/10/03 09:00"><em></em>00时00分00秒后下架</div>
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157367&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">舒适透气春秋款休闲鞋</a>
+								<span class="buy_word">794人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥139</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省119.2</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157367&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157367" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 英伦磨砂皮鞋单鞋运动板鞋鞋子男</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157446&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201510/02/8f93cc7f269bb3568c2f57b2e09dd09e.png" data-original="http://img0.egou.com/taobao/201510/02/8f93cc7f269bb3568c2f57b2e09dd09e.png"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157446&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">【多色可选】纯色长款棉麻围巾</a>
+								<span class="buy_word">6443人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									5.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥39</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省33.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157446&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157446" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 超大尺寸，日韩棉麻风，清新文艺范，潮流百搭！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+										<span class="new"></span>
+									
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157677&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/f3648a8326a8c343ed53c63c1eba6dfb.jpg" data-original="http://img0.egou.com/taobao/201509/29/f3648a8326a8c343ed53c63c1eba6dfb.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157677&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">micro SD/TF卡32g</a>
+								<span class="buy_word">316人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥98</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省88.2</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157677&page=tmindex/http://temai.egou.com/&pageno=1&wl=2*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157677" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 高速储存，适应于多种手机~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157408&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201508/29/3c22f754b1dfd578c2ba9fcedaa70130.jpg" data-original="http://img0.egou.com/taobao/201508/29/3c22f754b1dfd578c2ba9fcedaa70130.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157408&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">英国正品第七代VK男士磁疗内裤</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									29
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥198</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省169</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157408&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157408" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 莫代尔透气平角裤</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157673&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/b16e00263a0af8f03387e21defd47974.jpg" data-original="http://img0.egou.com/taobao/201509/29/b16e00263a0af8f03387e21defd47974.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157673&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">夏季商务系带牛皮皮鞋</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									29
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥199</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省170</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157673&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157673" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 这款鞋子超级百搭，皮质和鞋底都很软，搭配休闲裤、牛仔裤、西裤都很好看。</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+										<span class="new"></span>
+									
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157743&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="https://img.alicdn.com/imgextra/i2/2581356802/TB2.OkdfFXXXXaFXpXXXXXXXXXX_!!2581356802.png" data-original="https://img.alicdn.com/imgextra/i2/2581356802/TB2.OkdfFXXXXaFXpXXXXXXXXXX_!!2581356802.png"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157743&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">鄂尔多斯长袖保暖羊毛衫</a>
+								<span class="buy_word">112人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥599</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省579.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157743&page=tmindex/http://temai.egou.com/&pageno=1&wl=3*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157743" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 秋冬季新款中年男士毛衣圆领爸爸装羊毛衫加厚中老年男装针织衫男</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+										<span class="new"></span>
+									
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157676&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/7bbedc66d0770be77f713d54636c21f0.jpg" data-original="http://img0.egou.com/taobao/201509/29/7bbedc66d0770be77f713d54636c21f0.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157676&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">手机POS机3费率可刷信用卡</a>
+								<span class="buy_word">187人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥298</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省288.1</em></span>
+		                        </div>
+		                        <div class="tb_icon tmall"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157676&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去天猫抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157676" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 钱刷宝，3费率一清机，支持实时到账~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+										<span class="new"></span>
+									
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157742&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201505/21/38f6113e521f63450d7eda30e771e9de.jpg" data-original="http://img0.egou.com/taobao/201505/21/38f6113e521f63450d7eda30e771e9de.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157742&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">韩式家纺纯棉四件套</a>
+								<span class="buy_word">11033人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									20
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥40</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省20</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157742&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157742" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 磨毛床上用品全棉四件套夏床单被套三件套1.5/1.8m</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157523&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/28/bb8065068496fdfbd91a9b20ed9ab96e.jpg" data-original="http://img0.egou.com/taobao/201509/28/bb8065068496fdfbd91a9b20ed9ab96e.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157523&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">菲律宾风味芒果干120g</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥26</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省16.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157523&page=tmindex/http://temai.egou.com/&pageno=1&wl=4*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157523" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 极致软滑香甜，果肉厚实，极致美味~~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157660&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/0d91579731460d90bf430cfe8ae00abd.jpg" data-original="http://img0.egou.com/taobao/201509/29/0d91579731460d90bf430cfe8ae00abd.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157660&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">加厚保暖手套</a>
+								<span class="buy_word">139人关注
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									9.8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥29</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省19.2</em><em class="label bg_orange">拍下减</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157660&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157660" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 骑车手套，实用性价比高，厚实裹严实！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157704&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201508/21/e92629d29b61c1f9eeec4d2e2f94a797.jpg" data-original="http://img0.egou.com/taobao/201508/21/e92629d29b61c1f9eeec4d2e2f94a797.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157704&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">秘鲁黑玛卡精片90片装</a>
+								<span class="buy_word">12369人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥398</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省378.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157704&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157704" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 男性玛咖精片MACA正品，买5发6，隐私发货！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157533&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/28/00b70795a580b493904896a31efaccb2.jpg" data-original="http://img0.egou.com/taobao/201509/28/00b70795a580b493904896a31efaccb2.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157533&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">蚕丝蛋白绒中粗宝宝毛线</a>
+								<span class="buy_word">1635人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									2.2
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥6</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省3.8</em></span>
+		                        </div>
+		                        <div class="tb_icon tmall"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157533&page=tmindex/http://temai.egou.com/&pageno=1&wl=5*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去天猫抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157533" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 6股中粗，宝宝毛线，舒适柔软~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157685&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/991657a91717b3bf5f4addbdf7b45cea.jpg" data-original="http://img0.egou.com/taobao/201509/30/991657a91717b3bf5f4addbdf7b45cea.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157685&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">九阳多功能料理机 送厨房四件套</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									89
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥289</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省200</em></span>
+		                        </div>
+		                        <div class="tb_icon tmall"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157685&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去天猫抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157685" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 两杯两刀，含原装过滤网，易清洗低噪音，功能强大！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157716&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/b1d0128e4d50c2112ed77c1e6763946b.jpg" data-original="http://img0.egou.com/taobao/201509/30/b1d0128e4d50c2112ed77c1e6763946b.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157716&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">国庆特惠枣夹核桃仁250g</a>
+								<span class="buy_word">4502人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									15.5
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥15.5</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省0</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157716&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157716" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 超特大5厘米枣王夹核桃仁，单果重达20克左右，为枣中的上上极品~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+										<span class="new"></span>
+									
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157741&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201510/01/fef7ac42c1a1c046a865095bd66974c2.jpg" data-original="http://img0.egou.com/taobao/201510/01/fef7ac42c1a1c046a865095bd66974c2.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157741&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">加绒加厚女童七彩棉打底裤</a>
+								<span class="buy_word">499人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									13.8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥99</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省85.2</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157741&page=tmindex/http://temai.egou.com/&pageno=1&wl=6*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157741" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 儿童外穿弹力裤袜七彩棉裤</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157727&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/cb6d7a0b4e7c830f9bb1983b68bc72c3.jpg" data-original="http://img0.egou.com/taobao/201509/30/cb6d7a0b4e7c830f9bb1983b68bc72c3.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157727&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">七匹狼加绒保暖长袖衬衫</a>
+								<span class="buy_word">328人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥368</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省348.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157727&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157727" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 中年男士商务休闲纯棉格子爸爸装</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157661&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201510/01/974ee87b9abb1ea3a7188ac79a2be682.jpg" data-original="http://img0.egou.com/taobao/201510/01/974ee87b9abb1ea3a7188ac79a2be682.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157661&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">安岳新鲜柠檬1000克买二送一</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥40</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省21</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157661&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157661" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 百分百安岳直销黄柠檬，全部都是优质的一级好果，不打腊，无污染绿色水果~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157563&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/43b14e755d8673172a14d43ee63513c0.jpg" data-original="http://img0.egou.com/taobao/201509/29/43b14e755d8673172a14d43ee63513c0.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157563&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">128g创意个性金属高速优盘</a>
+								<span class="buy_word">529人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									14
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥100</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省86</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157563&page=tmindex/http://temai.egou.com/&pageno=1&wl=7*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157563" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 超薄金属防水高速优盘 正品包邮</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157531&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/28/1de74f39d6c0501cfd43ed9d55cb7adb.jpg" data-original="http://img0.egou.com/taobao/201509/28/1de74f39d6c0501cfd43ed9d55cb7adb.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157531&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">儿童长袖纯棉家居服套装</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									16.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥89</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省72.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157531&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157531" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 精梳98%纯棉+2%氨纶，让宝宝穿着舒适健康！</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157377&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/d058b61de528e97f26a354c277ac3387.jpg" data-original="http://img0.egou.com/taobao/201509/29/d058b61de528e97f26a354c277ac3387.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157377&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">金属防水U盘  128G</a>
+								<span class="buy_word">1655人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									14
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥100</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省86</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157377&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157377" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 超薄金属防水高速优盘 正品包邮</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157662&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/29/2f5678e48e606ea1024276db8e887418.jpg" data-original="http://img0.egou.com/taobao/201509/29/2f5678e48e606ea1024276db8e887418.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157662&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">韩版公主学生全棉四件套</a>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                            <div class="sj_hb"><a href="http://www.egou.com/tmhhb/index.htm" target="_blank"></a></div>
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									38
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥87</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省49</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157662&page=tmindex/http://temai.egou.com/&pageno=1&wl=8*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157662" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 纯棉舒适透气，多花色可选，青春靓丽~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157560&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/28/cfb0d7a0442d0591a608a39513c93a3a.jpg" data-original="http://img0.egou.com/taobao/201509/28/cfb0d7a0442d0591a608a39513c93a3a.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157560&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">金士顿特价U盘128G</a>
+								<span class="buy_word">336人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									15
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥15</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省0</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157560&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157560" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编:  U盘旋转金属创意闪存盘</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157726&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201504/17/3f0c6e26217e34f165bbf84e6cc51b31.jpg" data-original="http://img0.egou.com/taobao/201504/17/3f0c6e26217e34f165bbf84e6cc51b31.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157726&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">男士真皮腰带商务休闲皮带</a>
+								<span class="buy_word">191人关注
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									8.8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥288</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省279.2</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157726&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157726" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: h扣皮带男字母平滑扣青年纯牛皮裤带韩版潮</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157737&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*3&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/a0975cbf12abaf4623bef29555602cfc.jpg" data-original="http://img0.egou.com/taobao/201509/30/a0975cbf12abaf4623bef29555602cfc.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157737&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*3&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">进口散装巧克力糖果</a>
+								<span class="buy_word">2033人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									8
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥26</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省18</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157737&page=tmindex/http://temai.egou.com/&pageno=1&wl=9*3&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157737" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 俄罗斯进口零食，巧克力超好吃~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157725&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*1&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/11/297a5961f5cddf56e28905d8940b6aca.jpg" data-original="http://img0.egou.com/taobao/201509/11/297a5961f5cddf56e28905d8940b6aca.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157725&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*1&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">韩版纯色高腰呢子半身裙</a>
+								<span class="buy_word">7674人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									12.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥56</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省43.1</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157725&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*1&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157725" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 经典款型太阳裙</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+					<li>
+		                <div class="li_list" onmouseover="this.className='li_hover'" onmouseout="this.className='li_list'">
+		                    <div class="pic">
+		                    	
+		                    	<div class="icon">
+		                    		
+		                        </div>
+		                 		<div class="pic_img">
+									<a href="/toitem.htm?id=157735&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*2&fxtag=T&buttonId=TemaiIndexItemPic"  onclick="task();" target="_blank"><img src="http://img0.egou.com/taobao/201509/30/aad4e6798d6a4a1e7ac68e24dba3c33c.jpg" data-original="http://img0.egou.com/taobao/201509/30/aad4e6798d6a4a1e7ac68e24dba3c33c.jpg"/></a>
+									
+								</div>
+		                    </div>
+		                   	<div class="title">
+								<a href="/toitem.htm?id=157735&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*2&fxtag=T&buttonId=TemaiIndexItemTitle" onclick="task();" target="_blank">韩式家纺全棉磨毛四件套</a>
+								<span class="buy_word">2685人购买
+								</span>
+							</div>
+		                    <div class="money_bg">
+		                        
+		                        <div class="float_left"><em class="money_symbol">￥</em><em class="money_num">
+									19.9
+									</em>
+		                        </div> 
+		                        <div class="float_leftone">
+		                        	<span class="zhekou_info"><del class="color_99">￥79.6</del></span>
+			                        <span class="zhekou_info"><em class="label bg_green">省59.7</em></span>
+		                        </div>
+		                        <div class="tb_icon taobao"></div>
+		                        <div class="botton"><a href="/toitem.htm?id=157735&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*2&fxtag=T&buttonId=TemaiIndexItemMain" target="_blank" onclick="task();">
+		                        			去淘宝抢购</a><em></em></div> 
+		                    </div>
+		     		         <div class="tjp_bottom_bg">
+		                        <div class="tjp_bottom">
+		                        	<div class="baozheng">
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon1"></span></a>
+		                        	<a href="http://temai.egou.com/item_promise.htm" target="_blank"><span class="biaoqian bq_icon3"></span></a>
+		                        	<span class="biaoqian bq_icon4"></span>
+		                        	<a class="jubao"  href="http://temai.egou.com/toInform.htm?id=157735" target="_blank">举报</a></div>
+		                        	<div class="word">质检小编: 磨毛款柔软舒适，不褪色不缩水不起球~</div>
+		                        </div>
+		                    </div>
+		                </div> 
+		            </li>
+				
+				<div class="clear"></div>
+			</ul>
+	    </div>
+	    <div class="clear"></div>
+	    <div class="tb_loading" ></div>
+		
+<!--   分页  -->
+<div class="pages">
+<div class="pagination">
+<a href="http://temai.egou.com/" class="hover">1</a><a href="http://temai.egou.com/p2.html">2</a><a href="http://temai.egou.com/p3.html">3</a><a href="http://temai.egou.com/p4.html">4</a><a class="boder_sl">...</a><a href="http://temai.egou.com/p12.html">12</a><a href="http://temai.egou.com/p2.html" class="pages_down">下一页<em></em></a>
+</div> 
+</div>
+		<div class="tmh_bottom_advert" id="tmh_bottom_advert" style="display:none"></div>
+	    <div class="clear"></div>
+	    <script type="text/javascript">
+			function tmh_bottom_advert(data) {
+				var content = "";
+				jQuery.each(data,function(i, n) {
+					content += "<a target='_blank' href='"+n.link+"' title='"+n.content+"'>";
+					content += "<img  alt='"+n.content+"' src='"+n.image+"'/>";
+					content += "</a>";
+				});
+				if(content){
+					jQuery("#tmh_bottom_advert").html(content);
+					jQuery("#tmh_bottom_advert").css("display","block");
+				}
+			}
+		</script>
+		<script type="text/javascript" src="http://ad.egou.com/ads.jsp?name=TEMAI_BOTTOM_ADS&dt=json&callback=tmh_bottom_advert&site=5&term=1&page=TEMAI_INDEX"></script>
+	</div>
+	
+	<script type="text/javascript">
+	
+	window.is_qiandao = '';
+	window._qiandaoIndex = '';
+	window._signUrl='';
+	function club_qiandao(){
+		if(window.QD_CLICK){
+			egou.open(_signUrl,'_blank');
+		} else {
+			alert("请点击任意商品之后，再回来点击签到按钮吧！");
+		}
+	}
+	</script>
+	<!-- <script src="http://static.egou.com/p/tb/tmh_js/dealsModel.js?20141218" type="text/javascript"></script> -->
+	<script src="http://temai.egou.com/js/dealsModel.js?20150620" type="text/javascript"></script>
+	<script type="text/javascript">
+	var fxtag = 'T';
+	var deals = [{"id":157724,"index":29,"numIid":521326460712,"picUrl":"http://img0.egou.com/taobao/201509/15/106638ac4e13c25675b8de10e2608ef5.jpg","title":"春季款秋季高腰小脚皮裤","reservePrice":5600,"discountPrice":899,"discountRate":1605,"category":1,"categoryName":"皮裤","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"时尚百搭，性感小蒲库","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":11601,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=157724&page=tmindex/http://temai.egou.com/&pageno=1&wl=10*3"},{"id":157562,"index":30,"numIid":522054785503,"picUrl":"http://img0.egou.com/taobao/201509/28/38809a8a2666872000de3d91a680baf4.jpg","title":"薰衣草深层洁净洗衣液3公斤","reservePrice":4200,"discountPrice":2358,"discountRate":5614,"category":7,"categoryName":"洗护","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"买一桶赠一袋，深层洁净~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":203,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157562&page=tmindex/http://temai.egou.com/&pageno=1&wl=11*1"},{"id":157565,"index":31,"numIid":522117572059,"picUrl":"http://img0.egou.com/taobao/201509/29/804e73538c4f8b8c1b9a6aef66bc7c85.jpg","title":"加厚保暖白鹅绒被子","reservePrice":19900,"discountPrice":1990,"discountRate":1000,"category":7,"categoryName":"家纺","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"保暖舒适，多尺寸可选~~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":2282,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157565&page=tmindex/http://temai.egou.com/&pageno=1&wl=11*2"},{"id":157682,"index":32,"numIid":522559409576,"picUrl":"http://img0.egou.com/taobao/201509/29/615848ea8b680c33cd35033b84b9cf64.jpg","title":"韩版透气休闲帆布鞋 2色","reservePrice":13600,"discountPrice":4900,"discountRate":3602,"category":9,"categoryName":"帆布鞋","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"春秋新款，时尚潮流~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":37,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157682&page=tmindex/http://temai.egou.com/&pageno=1&wl=11*3"},{"id":157580,"index":33,"numIid":44678629220,"picUrl":"http://img0.egou.com/taobao/201509/30/8a21b7cbb4dbf5d4b4b55d56b26da2a1.jpg","title":"韩版低帮平底帆布鞋 4色","reservePrice":8900,"discountPrice":1890,"discountRate":2123,"category":9,"categoryName":"帆布鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"纯色休闲一脚蹬懒人鞋，清新百搭，学院范儿~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":387,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157580&page=tmindex/http://temai.egou.com/&pageno=1&wl=12*1"},{"id":157718,"index":34,"numIid":521882594530,"picUrl":"http://img0.egou.com/taobao/201509/30/bb057d4bf11eaa84d8c2ccaaf3cccbbe.jpg","title":"蕾丝防走光内衣+内裤套装","reservePrice":5980,"discountPrice":3400,"discountRate":5685,"category":1,"categoryName":"内衣","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"新款性感美眉低领透视装时不时会走光造成尴尬！","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":12,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=157718&page=tmindex/http://temai.egou.com/&pageno=1&wl=12*2"},{"id":157664,"index":35,"numIid":522636378975,"picUrl":"http://img0.egou.com/taobao/201509/29/490bc97caed03e90c9b4fa61b9ad2f02.jpg","title":" 2015最新秋款后开叉中长裙","reservePrice":15000,"discountPrice":12000,"discountRate":8000,"category":1,"categoryName":"裙装","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"时尚显瘦！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":0,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=157664&page=tmindex/http://temai.egou.com/&pageno=1&wl=12*3"},{"id":157625,"index":36,"numIid":36996704899,"picUrl":"http://img0.egou.com/taobao/201509/29/0f6d47d2ca9b29b8d409ab3350b7c62d.jpg","title":"纯棉柔软吸水情侣毛巾 2条装","reservePrice":2890,"discountPrice":990,"discountRate":3425,"category":7,"categoryName":"家纺","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"经典的条纹，经典的配色，是一款永远流行的毛巾，是一款不落伍的配色，象征商业人生的稳重，典雅。","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":133,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157625&page=tmindex/http://temai.egou.com/&pageno=1&wl=13*1"},{"id":157668,"index":37,"numIid":522020782200,"picUrl":"http://img0.egou.com/taobao/201509/29/70457830f3a056bdc8451ae7e8062e9c.jpg","title":"哈蒂芭蒂 儿童碎花长袖连衣裙","reservePrice":12900,"discountPrice":2490,"discountRate":1930,"category":6,"categoryName":"童装童鞋","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"亲肤舒适，时尚大方~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":437,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157668&page=tmindex/http://temai.egou.com/&pageno=1&wl=13*2"},{"id":156570,"index":38,"numIid":520398407574,"picUrl":"http://img0.egou.com/taobao/201509/21/dcc3e01fe79973a5e7caf0ed41f2a716.jpg","title":"2015新爆款时尚女装","reservePrice":48800,"discountPrice":5800,"discountRate":1188,"category":1,"categoryName":"棉衣棉服","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"2015新爆款时尚女装棉衣外套韩版大码加厚羽绒服中长款修身潮包邮","tbStatus":1,"showBeginTimeStr":"09月21日 09:00","volume":529,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/28 09:00:00","toUrl":"toitem.htm?id=156570&page=tmindex/http://temai.egou.com/&pageno=1&wl=13*3"},{"id":157582,"index":39,"numIid":521053947495,"picUrl":"http://img0.egou.com/taobao/201509/29/6d159ac4edbe18e01d79e3a334bbba41.jpg","title":"春秋商务软面真皮男士皮鞋","reservePrice":29900,"discountPrice":5900,"discountRate":1973,"category":9,"categoryName":"皮鞋","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"潮流现代感，软皮舒适透气，意式手工制作，结实耐穿~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":956,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157582&page=tmindex/http://temai.egou.com/&pageno=1&wl=14*1"},{"id":157683,"index":40,"numIid":520935573683,"picUrl":"http://img0.egou.com/taobao/201509/29/d87572236b4e1c13fcdbd4d161e7d7bb.jpg","title":"儿童电动三轮摩托车","reservePrice":13600,"discountPrice":9520,"discountRate":7000,"category":6,"categoryName":"儿童玩具","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"带充电器，音乐，彩灯，三挡开关，前进，后退，停止！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":35,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157683&page=tmindex/http://temai.egou.com/&pageno=1&wl=14*2"},{"id":157389,"index":41,"numIid":45248390996,"picUrl":"http://img0.egou.com/taobao/201509/28/f98a20a8c61f04da194e59096bca4e5c.jpg","title":"欧美五分袖打底蕾丝连衣裙","reservePrice":39800,"discountPrice":3500,"discountRate":879,"category":1,"categoryName":"蕾丝连衣裙","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"做打底裙，搭配小西装OL职业风格！高端大气立显！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":38,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=157389&page=tmindex/http://temai.egou.com/&pageno=1&wl=14*3"},{"id":157744,"index":42,"numIid":522051577256,"picUrl":"https://img.alicdn.com/imgextra/i4/287950302/TB2qk_4fFXXXXXFXXXXXXXXXXXX-287950302.jpg","title":"卡通U盘128g二十多种任选","reservePrice":8500,"discountPrice":1500,"discountRate":1764,"category":8,"categoryName":"生活家电","isPost":null,"isNew":1,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"小黄人可爱公仔高速优盘","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":2222,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/05 09:00:00","toUrl":"toitem.htm?id=157744&page=tmindex/http://temai.egou.com/&pageno=1&wl=15*1"},{"id":157379,"index":43,"numIid":521335886805,"picUrl":"http://img0.egou.com/taobao/201509/27/b79775fe42bcd8771c167aa4916a887b.png","title":"强效懒人瘦身贴","reservePrice":19800,"discountPrice":2500,"discountRate":1262,"category":3,"categoryName":"其他","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"升级版肚脐贴 无副作用，无刺激，无依赖性，不反弹，安全高效，瘦身必备！","tbStatus":1,"showBeginTimeStr":"09月28日 09:00","volume":3981,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157379&page=tmindex/http://temai.egou.com/&pageno=1&wl=15*2"},{"id":157717,"index":44,"numIid":522181953166,"picUrl":"http://img0.egou.com/taobao/201509/30/d9050477cdaed252c53d5623fc1102c8.jpg","title":"老凤祥同款黄金石榴石手链","reservePrice":99900,"discountPrice":8600,"discountRate":860,"category":9,"categoryName":"手链","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"纯天然石榴石手里，典雅大方~","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":42,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157717&page=tmindex/http://temai.egou.com/&pageno=1&wl=15*3"},{"id":157611,"index":45,"numIid":45021584937,"picUrl":"http://img0.egou.com/taobao/201509/29/fc296e0c125c7d749c1f3141fcf26956.jpg","title":"英伦风男士休闲皮鞋 多色","reservePrice":56800,"discountPrice":5900,"discountRate":1038,"category":9,"categoryName":"皮鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"英伦风豆豆鞋，舒适轻便，时尚大方~","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":64,"isHb":1,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=157611&page=tmindex/http://temai.egou.com/&pageno=1&wl=16*1"},{"id":157715,"index":46,"numIid":522661939968,"picUrl":"http://img0.egou.com/taobao/201509/30/7082314a3e984cf51144f187b6e5d216.jpg","title":"沙宣洗发水750毫升 ","reservePrice":8800,"discountPrice":990,"discountRate":1125,"category":7,"categoryName":"洗护","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"去屑止痒控油，修护水养~","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":440,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=157715&page=tmindex/http://temai.egou.com/&pageno=1&wl=16*2"},{"id":157545,"index":47,"numIid":522552022961,"picUrl":"http://img0.egou.com/taobao/201509/28/839bb29e85ae48ed4ec3e537470ac903.jpg","title":"【全网最低价】千足银手镯配证书","reservePrice":5000,"discountPrice":500,"discountRate":1000,"category":9,"categoryName":"手镯","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":" 特价银手环送妈妈礼物","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":865,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=157545&page=tmindex/http://temai.egou.com/&pageno=1&wl=16*3"},{"id":157170,"index":48,"numIid":520814058277,"picUrl":"http://img0.egou.com/taobao/201509/09/a69d85caca7a53fa6078ed5839560763.jpg","title":"微聚拢无钢圈运动文胸","reservePrice":9900,"discountPrice":850,"discountRate":858,"category":1,"categoryName":"文胸","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"重磅出击厂家优惠直接出厂价回馈大众","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":18486,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=157170&page=tmindex/http://temai.egou.com/&pageno=1&wl=17*1"},{"id":157675,"index":49,"numIid":520998225355,"picUrl":"http://img0.egou.com/taobao/201509/29/7383fee61e64dbf3ebf7bd8ce1bb5377.jpg","title":"排毒祛湿助眠养颜足贴","reservePrice":2000,"discountPrice":1900,"discountRate":9500,"category":3,"categoryName":"个人护理","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"买3送1，买5送2，买10送5！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":2272,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157675&page=tmindex/http://temai.egou.com/&pageno=1&wl=17*2"},{"id":156854,"index":50,"numIid":521840589439,"picUrl":"http://img0.egou.com/taobao/201509/22/d0d34afe7806dc9908e3c60c8521868e.jpg","title":"专柜正品芦荟胶 买2送1 ","reservePrice":1290,"discountPrice":1290,"discountRate":10000,"category":3,"categoryName":"个人护理","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"四季必备，仅此一天，买2送1，错过一次，悔恨一生","tbStatus":1,"showBeginTimeStr":"09月23日 09:00","volume":2704,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/27 09:00:00","toUrl":"toitem.htm?id=156854&page=tmindex/http://temai.egou.com/&pageno=1&wl=17*3"},{"id":157449,"index":51,"numIid":520745364772,"picUrl":"http://img0.egou.com/taobao/201509/29/3af25bff3414297b37ea463802cd1be6.jpg","title":"高清夜视汽车行车记录仪","reservePrice":88800,"discountPrice":25000,"discountRate":2815,"category":7,"categoryName":"其他","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"1200万像素，170度广角，五寸屏幕，停车监控！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":1421,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=157449&page=tmindex/http://temai.egou.com/&pageno=1&wl=18*1"},{"id":157370,"index":52,"numIid":521364260623,"picUrl":"http://img0.egou.com/taobao/201509/27/e616b2091daed45e20d7a0a8e599e8ea.jpg","title":"中药强效懒人瘦身贴 买5送8","reservePrice":9800,"discountPrice":1880,"discountRate":1918,"category":3,"categoryName":"个人护理","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"中药肚脐贴无副作用，无刺激，无依赖性，不反弹，安全高效，瘦身必备！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":408,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157370&page=tmindex/http://temai.egou.com/&pageno=1&wl=18*2"},{"id":157369,"index":53,"numIid":17168776856,"picUrl":"http://img0.egou.com/taobao/201509/27/2757b3fba7cc5d054f13b3226007886f.jpg","title":"丽江玛卡干果70克","reservePrice":990,"discountPrice":990,"discountRate":10000,"category":5,"categoryName":"其他","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"玛咖有抗疲劳，补充体力，改善睡眠，抗更年期，活跃生育，增强记忆等功效。","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":120,"isHb":1,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=157369&page=tmindex/http://temai.egou.com/&pageno=1&wl=18*3"},{"id":156206,"index":54,"numIid":42046929905,"picUrl":"http://img0.egou.com/taobao/201509/17/f7c2adcbe1fd51613b3ea2397a339304.jpg","title":"雪尼尔 吸水地垫门垫 ","reservePrice":1630,"discountPrice":650,"discountRate":3987,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"超柔软面料,超强吸水防滑.","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":13176,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156206&page=tmindex/http://temai.egou.com/&pageno=1&wl=19*1"},{"id":156146,"index":55,"numIid":521982742524,"picUrl":"http://img0.egou.com/taobao/201509/17/f781d2b211cac783beb61c98e4d9c964.jpg","title":"睡得香电热毯","reservePrice":5800,"discountPrice":590,"discountRate":1017,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"插头电源线经3C认证，线长1.8米。国标正品 ，值得您拥有！","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":1876,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156146&page=tmindex/http://temai.egou.com/&pageno=1&wl=19*2"},{"id":156154,"index":56,"numIid":521293172315,"picUrl":"http://img0.egou.com/taobao/201509/17/a92ac55118cf42bc973c429c4b4adfb1.jpg","title":"尤尔康冬季居家情侣棉拖鞋","reservePrice":8800,"discountPrice":980,"discountRate":1113,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"笑脸冬季居家情侣棉拖鞋，保暖舒适","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":24154,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156154&page=tmindex/http://temai.egou.com/&pageno=1&wl=19*3"},{"id":154130,"index":57,"numIid":520979605516,"picUrl":"http://img0.egou.com/taobao/201509/02/ca9e27a53eceb8b3ad289510f1026326.jpg","title":"得力12支中性笔+12支笔芯","reservePrice":2000,"discountPrice":860,"discountRate":4300,"category":7,"categoryName":"文体","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"书写顺滑不断墨~","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":8144,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154130&page=tmindex/http://temai.egou.com/&pageno=1&wl=20*1"},{"id":156132,"index":58,"numIid":43261173829,"picUrl":"http://img0.egou.com/taobao/201509/17/f752c34cec5f3e310ca833b1d690ab60.jpg","title":"你若盛开，清风自来","reservePrice":1800,"discountPrice":880,"discountRate":4888,"category":7,"categoryName":"文体","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"你若盛开清风自来，励志书籍，很适合压力大的人","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":5346,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156132&page=tmindex/http://temai.egou.com/&pageno=1&wl=20*2"},{"id":156091,"index":59,"numIid":41087646672,"picUrl":"http://img0.egou.com/taobao/201509/17/a2afefe8e74f3f113f5e1d9863430ea8.jpg","title":"冬季电动车挡风被","reservePrice":3800,"discountPrice":680,"discountRate":1789,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"超厚保暖 现在不买 旺季被宰","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":11520,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156091&page=tmindex/http://temai.egou.com/&pageno=1&wl=20*3"},{"id":157749,"index":60,"numIid":45455955211,"picUrl":"http://img0.egou.com/taobao/201510/01/0d65e8eca67db177b54b78c67e58180c.jpg","title":"伊沁家纺欧式贡缎丝棉提花四件套","reservePrice":118600,"discountPrice":10900,"discountRate":919,"category":7,"categoryName":"家纺","isPost":null,"isNew":1,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"典雅人生，品味经典，贡缎提花，保证奢华！","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":6121,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=157749&page=tmindex/http://temai.egou.com/&pageno=1&wl=21*1"},{"id":157747,"index":61,"numIid":43214251280,"picUrl":"http://img0.egou.com/taobao/201510/01/8b061f7370061480ade4a6b6754927ff.jpg","title":"斯格尔可爱不锈钢保温杯","reservePrice":9900,"discountPrice":1690,"discountRate":1707,"category":7,"categoryName":"百货","isPost":null,"isNew":1,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"专为女士定制，食品级材质，超性感的水杯！","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":4375,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=157747&page=tmindex/http://temai.egou.com/&pageno=1&wl=21*2"},{"id":157746,"index":62,"numIid":39999941403,"picUrl":"http://img0.egou.com/taobao/201510/01/aa741e6988c6176658b1f49b4424e5df.jpg","title":"澳洲坚果特产夏威夷果","reservePrice":2600,"discountPrice":770,"discountRate":2961,"category":5,"categoryName":"坚果蜜饯","isPost":null,"isNew":1,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"肉质饱满、细腻，奶香味十足！","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":3983,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=157746&page=tmindex/http://temai.egou.com/&pageno=1&wl=21*3"},{"id":157745,"index":63,"numIid":521261678552,"picUrl":"http://img0.egou.com/taobao/201510/01/823834901c35092f433e01744679a354.jpg","title":"莎曼萱男女情侣款棉拖鞋","reservePrice":12900,"discountPrice":1180,"discountRate":914,"category":7,"categoryName":"百货","isPost":null,"isNew":1,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"厚实保暖,可爱简约,居家保暖低包跟可爱防滑棉拖鞋!","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":86705,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=157745&page=tmindex/http://temai.egou.com/&pageno=1&wl=22*1"},{"id":157732,"index":64,"numIid":44922643618,"picUrl":"http://img0.egou.com/taobao/201509/30/ce4fe29cb94a0708bfbde702bc4638e9.jpg","title":"新疆特产和田大红枣 1000g","reservePrice":3146,"discountPrice":1490,"discountRate":4736,"category":5,"categoryName":"休闲零食","isPost":null,"isNew":1,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"限购2件 煮粥煲汤 泡茶专用！","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":15196,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=157732&page=tmindex/http://temai.egou.com/&pageno=1&wl=22*2"},{"id":156608,"index":65,"numIid":520981226803,"picUrl":"http://img0.egou.com/taobao/201509/21/fe79eff38c29fb7bacf6c6b444ebd839.jpg","title":"新款男士修身毛衣","reservePrice":15800,"discountPrice":3900,"discountRate":2468,"category":2,"categoryName":"毛衣","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"纯棉制造，时尚提花，不起球，不变形！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":1041,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156608&page=tmindex/http://temai.egou.com/&pageno=1&wl=22*3"},{"id":156945,"index":66,"numIid":16763399521,"picUrl":"http://img0.egou.com/taobao/201509/23/a638fd6599d914a9e279ada691bb1f47.jpg","title":"高腰中老年男女士羽绒裤","reservePrice":19800,"discountPrice":4600,"discountRate":2323,"category":2,"categoryName":"保暖裤","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"不跑毛，不变形，不缩水，不褪色，不起球！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":1327,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156945&page=tmindex/http://temai.egou.com/&pageno=1&wl=23*1"},{"id":156791,"index":67,"numIid":520473987233,"picUrl":"http://img0.egou.com/taobao/201509/22/183181938c48e3f006324db9e4b419fd.jpg","title":"秋季新款男士休闲裤","reservePrice":19900,"discountPrice":2900,"discountRate":1457,"category":2,"categoryName":"休闲裤","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"赠运费险，纯棉修身！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":666,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156791&page=tmindex/http://temai.egou.com/&pageno=1&wl=23*2"},{"id":154311,"index":68,"numIid":10842330692,"picUrl":"http://img0.egou.com/taobao/201509/04/08a9e1410e5c52e8545b5e25975dc279.jpg","title":"云潞云南速溶黑咖啡220g","reservePrice":8800,"discountPrice":1990,"discountRate":2261,"category":5,"categoryName":"茗茶冲饮","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"买2送杯 可冲120杯~","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":2428,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154311&page=tmindex/http://temai.egou.com/&pageno=1&wl=23*3"},{"id":157070,"index":69,"numIid":522046905097,"picUrl":"http://img0.egou.com/taobao/201509/24/9ae4823ef51c5c4187baceed25de6fd7.jpg","title":"秋冬新品男士T恤","reservePrice":16900,"discountPrice":2900,"discountRate":1715,"category":2,"categoryName":"T恤","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"舒适纯棉莱卡，贵族烫金，不起球不褪色！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":276,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=157070&page=tmindex/http://temai.egou.com/&pageno=1&wl=24*1"},{"id":156947,"index":70,"numIid":520792753170,"picUrl":"http://img0.egou.com/taobao/201509/23/2aec1ad80a2584cc763fa2ae1cdd5208.jpg","title":"秋季男士休闲运动卫衣套装","reservePrice":29900,"discountPrice":4900,"discountRate":1638,"category":2,"categoryName":"棒球服","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"多色可选，时尚百搭！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":3458,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156947&page=tmindex/http://temai.egou.com/&pageno=1&wl=24*2"},{"id":156809,"index":71,"numIid":22489348990,"picUrl":"http://img0.egou.com/taobao/201509/22/391fb37d2f2de477c7ff1e9d93bb774b.jpg","title":"新款男士防水户外登山鞋","reservePrice":45800,"discountPrice":6800,"discountRate":1484,"category":9,"categoryName":"登山鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"七天无理由退换货，24小时发货！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":804,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156809&page=tmindex/http://temai.egou.com/&pageno=1&wl=24*3"},{"id":156273,"index":72,"numIid":521908122841,"picUrl":"http://img0.egou.com/taobao/201509/18/bba1dca6b5dde1e6a5901889b3cbd785.jpg","title":"秋冬男士时尚印花卫衣","reservePrice":14800,"discountPrice":2990,"discountRate":2020,"category":2,"categoryName":"卫衣","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"修身版型，时尚百搭！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":1509,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156273&page=tmindex/http://temai.egou.com/&pageno=1&wl=25*1"},{"id":156110,"index":73,"numIid":42399454199,"picUrl":"http://img0.egou.com/taobao/201509/17/1d18b65205ec73a581f98d6ab1029ab4.jpg","title":"清怡森林活性炭竹炭包","reservePrice":4980,"discountPrice":1800,"discountRate":3614,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"厂家直销 竹炭吸附 双层SMS布 ","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":6692,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156110&page=tmindex/http://temai.egou.com/&pageno=1&wl=25*2"},{"id":156196,"index":74,"numIid":520676484202,"picUrl":"http://img0.egou.com/taobao/201509/17/2f5c2c8d18dc88763766f289244cdcc6.jpg","title":"简易收纳布衣橱柜区间价","reservePrice":26000,"discountPrice":2900,"discountRate":1115,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"29-49元，简易防尘组装，多层衣柜布衣架，多色可选","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":7396,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156196&page=tmindex/http://temai.egou.com/&pageno=1&wl=25*3"},{"id":154147,"index":75,"numIid":521097421872,"picUrl":"http://img0.egou.com/taobao/201509/02/215adbde57b7309f8b21d87c64fc6586.jpg","title":"陆盛家用伸缩胶棉拖把","reservePrice":9900,"discountPrice":990,"discountRate":1000,"category":7,"categoryName":"百货","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"爱她就送她神奇对折式拖把，免手洗~","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":37313,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=154147&page=tmindex/http://temai.egou.com/&pageno=1&wl=26*1"},{"id":156821,"index":76,"numIid":521689500253,"picUrl":"http://img0.egou.com/taobao/201509/22/3b6677be23ce0311736b7ec81f34d84b.jpg","title":"秋冬季男士直筒牛仔裤","reservePrice":18810,"discountPrice":2990,"discountRate":1589,"category":2,"categoryName":"牛仔裤","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"面料柔软，厚装保暖！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":3956,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156821&page=tmindex/http://temai.egou.com/&pageno=1&wl=26*2"},{"id":156127,"index":77,"numIid":520777906710,"picUrl":"http://img0.egou.com/taobao/201509/17/ec79487a66fca41ba950b14c9c0878c9.jpg","title":"美的 节能led灯泡","reservePrice":1380,"discountPrice":699,"discountRate":5065,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"美的正品 品质保证 高显色更节能 暖白即黄光","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":109408,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156127&page=tmindex/http://temai.egou.com/&pageno=1&wl=26*3"},{"id":156451,"index":78,"numIid":520154338618,"picUrl":"http://img0.egou.com/taobao/201509/19/b3006aee128e766ed38b03a019a99901.jpg","title":"红蜻蜓秋冬女袜","reservePrice":580,"discountPrice":190,"discountRate":3275,"category":1,"categoryName":"丝袜","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"红蜻蜓集团 秋冬上新 热卖4W双 销量领先","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":64327,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156451&page=tmindex/http://temai.egou.com/&pageno=1&wl=27*1"},{"id":156930,"index":79,"numIid":43361108067,"picUrl":"http://img0.egou.com/taobao/201509/23/87fa4643587269d6b7095e33a10ce8ab.jpg","title":"秋季新款男士V领套头T恤","reservePrice":19800,"discountPrice":2900,"discountRate":1464,"category":2,"categoryName":"T恤","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"简约大气，修身百搭，高端上档次！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":163,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156930&page=tmindex/http://temai.egou.com/&pageno=1&wl=27*2"},{"id":156615,"index":80,"numIid":43236747345,"picUrl":"http://img0.egou.com/taobao/201509/21/adccf76dab2e14475851a00b68bd202e.jpg","title":"女士低帮帆布鞋","reservePrice":8800,"discountPrice":1990,"discountRate":2261,"category":9,"categoryName":"帆布鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"多色可选，时尚百搭！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":210,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156615&page=tmindex/http://temai.egou.com/&pageno=1&wl=27*3"},{"id":156619,"index":81,"numIid":521426671179,"picUrl":"http://img0.egou.com/taobao/201509/21/7dc9e0fa733c4871fefde15342c1b576.jpg","title":"秋季女士内增高松糕鞋","reservePrice":19690,"discountPrice":1990,"discountRate":1010,"category":9,"categoryName":"松糕","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"底厚5cm+2.5cm隐形内增高！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":536,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156619&page=tmindex/http://temai.egou.com/&pageno=1&wl=28*1"},{"id":156182,"index":82,"numIid":521945902350,"picUrl":"http://img0.egou.com/taobao/201509/17/1666a96ecc2faa84931117ee8ee808bc.jpg","title":"卡通沙发抱枕","reservePrice":1980,"discountPrice":990,"discountRate":5000,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"居家必备,久用如新,不退色,不缩水!","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":10937,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156182&page=tmindex/http://temai.egou.com/&pageno=1&wl=28*2"},{"id":154312,"index":83,"numIid":521008467838,"picUrl":"http://img0.egou.com/taobao/201509/04/62391c8a675eab294ac55b46e6493ace.jpg","title":"韩国抗菌树脂纳米软毛牙刷8支装","reservePrice":1800,"discountPrice":990,"discountRate":5500,"category":7,"categoryName":"厨卫","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"好评返现2元，加厚树脂手柄 ，杜邦抗菌磨尖丝 ，每支都有单独包装， 进口材料更卫生更放心~","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":18732,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154312&page=tmindex/http://temai.egou.com/&pageno=1&wl=28*3"},{"id":154196,"index":84,"numIid":41650570574,"picUrl":"http://img0.egou.com/taobao/201509/02/7296f4c0c71491d278eaa52115fd71a7.jpg","title":"十万个为什么全彩注音版4本","reservePrice":4000,"discountPrice":880,"discountRate":2200,"category":7,"categoryName":"文体","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"真心好书  老板亏钱推广 每本220页 ","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":3017,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154196&page=tmindex/http://temai.egou.com/&pageno=1&wl=29*1"},{"id":157094,"index":85,"numIid":45614208062,"picUrl":"http://img0.egou.com/taobao/201509/24/821f48713611c8eaa21a5d78e7dd828b.jpg","title":"361度女士休闲鞋","reservePrice":19900,"discountPrice":5900,"discountRate":2964,"category":9,"categoryName":"休闲运动鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"多色可选，时尚百搭！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":235,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=157094&page=tmindex/http://temai.egou.com/&pageno=1&wl=29*2"},{"id":154234,"index":86,"numIid":44487288369,"picUrl":"http://img0.egou.com/taobao/201509/02/1d08598bac412c4b3e4f48c1dc3a8811.jpg","title":"精装版不锈钢美甲刀剪十件套","reservePrice":2350,"discountPrice":935,"discountRate":3978,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"携带方便 价格实惠~","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":657,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154234&page=tmindex/http://temai.egou.com/&pageno=1&wl=29*3"},{"id":156635,"index":87,"numIid":35640367073,"picUrl":"http://img0.egou.com/taobao/201509/21/d7bc442a1fcd0f2058bf7bf1bc235a79.jpg","title":"秋冬女士真皮短靴","reservePrice":16980,"discountPrice":1980,"discountRate":1166,"category":9,"categoryName":"短靴","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"多款可选，时尚百搭！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":240,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156635&page=tmindex/http://temai.egou.com/&pageno=1&wl=30*1"},{"id":156124,"index":88,"numIid":520402288495,"picUrl":"http://img0.egou.com/taobao/201509/17/833c405cb1c06872fa4ca5375e2b8d50.jpg","title":"海南特级柠檬2斤装","reservePrice":9800,"discountPrice":1990,"discountRate":2030,"category":5,"categoryName":"营养生鲜","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"中秋大促！9.9元秒杀仅限今天，秒完即止！","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":1226,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156124&page=tmindex/http://temai.egou.com/&pageno=1&wl=30*2"},{"id":156272,"index":89,"numIid":19777241150,"picUrl":"http://img0.egou.com/taobao/201509/18/df17fc1f6186438e7510792efa733c72.jpg","title":"春秋过膝长筒袜","reservePrice":1500,"discountPrice":750,"discountRate":5000,"category":1,"categoryName":"丝袜","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"甜美可爱日系 过膝袜 持续热卖中","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":7692,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156272&page=tmindex/http://temai.egou.com/&pageno=1&wl=30*3"},{"id":156779,"index":90,"numIid":42997031883,"picUrl":"http://img0.egou.com/taobao/201509/22/8601cd05f4b322b91b1b090f6e8c2313.jpg","title":"冬季户外骑车防风帽","reservePrice":3380,"discountPrice":880,"discountRate":2603,"category":9,"categoryName":"帽子","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"多色可选，时尚保暖！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":12435,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=156779&page=tmindex/http://temai.egou.com/&pageno=1&wl=31*1"},{"id":156407,"index":91,"numIid":521740815385,"picUrl":"http://img0.egou.com/taobao/201509/18/64219dc402ed6aab1bf8b87d14c44ef9.jpg","title":"品彩天鹅绒防勾丝打底裤","reservePrice":1390,"discountPrice":890,"discountRate":6402,"category":1,"categoryName":"打底裤","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"3件送1件 品质好防勾丝 超柔天鹅绒 梦娜出品","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":7098,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156407&page=tmindex/http://temai.egou.com/&pageno=1&wl=31*2"},{"id":156386,"index":92,"numIid":41314326473,"picUrl":"http://img0.egou.com/taobao/201509/18/c0f59599070c5680072f4109a0aae9a3.jpg","title":"兔毛仿皮草狐狸毛外套","reservePrice":29800,"discountPrice":9900,"discountRate":3322,"category":1,"categoryName":"外套","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"韩版风靡 系带无扣","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":1405,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156386&page=tmindex/http://temai.egou.com/&pageno=1&wl=31*3"},{"id":156089,"index":93,"numIid":40629962804,"picUrl":"http://img0.egou.com/taobao/201509/17/e1195683317fec676c966f4e984bf0a8.jpg","title":"2015秋冬拼接无袖毛呢连衣裙","reservePrice":14900,"discountPrice":2990,"discountRate":2006,"category":1,"categoryName":"打底连衣裙","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"修身显瘦 热销2万件 当日付款 送原装腰带","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":2252,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156089&page=tmindex/http://temai.egou.com/&pageno=1&wl=32*1"},{"id":154769,"index":94,"numIid":520637239934,"picUrl":"http://img0.egou.com/taobao/201509/07/bc9575a4227139644acae3fb5acdad7b.jpg","title":"2015秋冬修身棉服","reservePrice":36300,"discountPrice":5800,"discountRate":1597,"category":1,"categoryName":"羽绒服","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"收藏店铺赠送 礼物","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":4179,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=154769&page=tmindex/http://temai.egou.com/&pageno=1&wl=32*2"},{"id":152123,"index":95,"numIid":45758964996,"picUrl":"http://img0.egou.com/taobao/201508/21/0da1b0ad8859ec22a32f0c8042b83cca.jpg","title":"休闲百搭打底衫","reservePrice":3990,"discountPrice":1490,"discountRate":3734,"category":1,"categoryName":"T恤","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"质量保证 数量有限 售完为止","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":1495,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=152123&page=tmindex/http://temai.egou.com/&pageno=1&wl=32*3"},{"id":157061,"index":96,"numIid":21843055191,"picUrl":"http://img0.egou.com/taobao/201509/24/fedbed88cc66f999414eaaad21cd89dc.jpg","title":"秋季男士长袖衬衫","reservePrice":19600,"discountPrice":1990,"discountRate":1015,"category":2,"categoryName":"衬衫","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"好评返2元，多色可选！","tbStatus":1,"showBeginTimeStr":"10月01日 13:00","volume":1002,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=157061&page=tmindex/http://temai.egou.com/&pageno=1&wl=33*1"},{"id":156138,"index":97,"numIid":521611215545,"picUrl":"http://img0.egou.com/taobao/201509/17/2becf9b456a4c74e692a7f3b0128200d.jpg","title":"2015新款披肩中长款外套","reservePrice":19800,"discountPrice":2700,"discountRate":1363,"category":1,"categoryName":"外套","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"柔软贴身保暖贴肤感很好,修身、百搭，版型超赞！","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":1170,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156138&page=tmindex/http://temai.egou.com/&pageno=1&wl=33*2"},{"id":156163,"index":98,"numIid":520661000498,"picUrl":"http://img0.egou.com/taobao/201509/17/00dc759282964fe4d7c4b03b32471a9d.jpg","title":"2015秋装中长款纯棉t恤","reservePrice":13800,"discountPrice":3900,"discountRate":2826,"category":1,"categoryName":"打底衫","isPost":0,"isNew":1,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"优质舒适面料 修身版型","tbStatus":1,"showBeginTimeStr":"10月02日 09:00","volume":15138,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/16 09:00:00","toUrl":"toitem.htm?id=156163&page=tmindex/http://temai.egou.com/&pageno=1&wl=33*3"},{"id":154564,"index":99,"numIid":521410566188,"picUrl":"http://img0.egou.com/taobao/201509/18/c80887ec2544a8cbbd2a84313fb3e4d7.jpg","title":"五芳斋月饼礼盒","reservePrice":16900,"discountPrice":1989,"discountRate":1176,"category":5,"categoryName":"休闲零食","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"预售9月9日后发货 限量秒杀","tbStatus":1,"showBeginTimeStr":"10月01日 19:00","volume":38683,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154564&page=tmindex/http://temai.egou.com/&pageno=1&wl=34*1"},{"id":157093,"index":100,"numIid":43223564466,"picUrl":"http://img0.egou.com/taobao/201509/24/dcfc9db5408de63a273b848a35502853.jpg","title":"真皮牛皮英伦透气皮鞋","reservePrice":13800,"discountPrice":4900,"discountRate":3550,"category":9,"categoryName":"皮鞋","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"免费试穿 15天包退 60天保修","tbStatus":1,"showBeginTimeStr":"09月25日 09:00","volume":868,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157093&page=tmindex/http://temai.egou.com/&pageno=1&wl=34*2"},{"id":151611,"index":101,"numIid":45542456137,"picUrl":"http://img0.egou.com/taobao/201508/18/ae1896daa791e69c33eb57229d2a996d.jpg","title":"男士透气帆布鞋","reservePrice":12900,"discountPrice":2990,"discountRate":2317,"category":9,"categoryName":"帆布鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"柔软舒适，休闲百搭！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":12338,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=151611&page=tmindex/http://temai.egou.com/&pageno=1&wl=34*3"},{"id":156264,"index":102,"numIid":44270810201,"picUrl":"http://img0.egou.com/taobao/201509/18/11104b19fe2eef2a4aaae4a768d04685.jpg","title":"男士休闲裤秋冬修身弹力商务长裤","reservePrice":19800,"discountPrice":4490,"discountRate":2267,"category":2,"categoryName":"休闲裤","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"磨毛休闲裤 秋冬新款 时尚版型 质量保证 可退换","tbStatus":1,"showBeginTimeStr":"09月19日 09:00","volume":761,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=156264&page=tmindex/http://temai.egou.com/&pageno=1&wl=35*1"},{"id":157146,"index":103,"numIid":45837973832,"picUrl":"http://img0.egou.com/taobao/201509/24/2c6cce029b2e4366099b2c276545e858.jpg","title":"可韵 太空记忆护颈枕","reservePrice":19900,"discountPrice":1580,"discountRate":793,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"缓解颈椎压力，慢回弹记忆枕，助您深度睡眠! ","tbStatus":1,"showBeginTimeStr":"09月25日 09:00","volume":8526,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157146&page=tmindex/http://temai.egou.com/&pageno=1&wl=35*2"},{"id":157210,"index":104,"numIid":27153956377,"picUrl":"http://img0.egou.com/taobao/201509/25/9b2a0082370e085ed376bc316c1bcf1f.jpg","title":"少儿图书十万个为什么全套4册","reservePrice":4000,"discountPrice":1780,"discountRate":4450,"category":6,"categoryName":"儿童玩具","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"012345-6岁学前班幼儿园小朋友 儿童书籍注音版","tbStatus":1,"showBeginTimeStr":"09月26日 09:00","volume":2223,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=157210&page=tmindex/http://temai.egou.com/&pageno=1&wl=35*3"},{"id":156474,"index":105,"numIid":36934450380,"picUrl":"http://img0.egou.com/taobao/201509/19/bd0f5ac98cf2b817ea26634f522ba7c6.jpg","title":"博锐 男士剃须刀","reservePrice":6990,"discountPrice":2900,"discountRate":4148,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"博锐系列,双环极速,刀网剃须刀,内置插头.","tbStatus":1,"showBeginTimeStr":"09月20日 09:00","volume":4426,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=156474&page=tmindex/http://temai.egou.com/&pageno=1&wl=36*1"},{"id":156254,"index":106,"numIid":520932171142,"picUrl":"http://img0.egou.com/taobao/201509/18/331de66a291cab5819746624df13dcd6.jpg","title":"秋季男士透气运动休闲鞋阿甘板鞋","reservePrice":17900,"discountPrice":2700,"discountRate":1508,"category":9,"categoryName":"板鞋","isPost":null,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"经典爆款，全网最低价，休闲时尚百搭。","tbStatus":1,"showBeginTimeStr":"09月19日 09:00","volume":6726,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=156254&page=tmindex/http://temai.egou.com/&pageno=1&wl=36*2"},{"id":155978,"index":107,"numIid":520804471730,"picUrl":"http://img0.egou.com/taobao/201509/15/270cc88fd9790554824258a16605b8ea.jpg","title":"清仓聚拢调整型无钢圈文胸","reservePrice":26800,"discountPrice":4990,"discountRate":1861,"category":1,"categoryName":"文胸","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"无痕无钢圈 蕾丝美背","tbStatus":1,"showBeginTimeStr":"09月29日 16:00","volume":4571,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=155978&page=tmindex/http://temai.egou.com/&pageno=1&wl=36*3"},{"id":156750,"index":108,"numIid":40909097933,"picUrl":"http://img0.egou.com/taobao/201509/21/508b27dae01ad6574d44e9d2d08e7e0d.jpg","title":"冬季男士修身保暖衬衫加绒加厚","reservePrice":36800,"discountPrice":3900,"discountRate":1059,"category":2,"categoryName":"衬衫","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"加绒加厚韩版潮男装印花衬衣","tbStatus":1,"showBeginTimeStr":"09月24日 09:00","volume":14947,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=156750&page=tmindex/http://temai.egou.com/&pageno=1&wl=37*1"},{"id":156445,"index":109,"numIid":43469450310,"picUrl":"http://img0.egou.com/taobao/201509/19/1318e3b1636c43e64168a90085684f7d.jpg","title":"萌宝宝300片儿童益智玩具","reservePrice":12800,"discountPrice":1690,"discountRate":1320,"category":6,"categoryName":"儿童玩具","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"高人气益智 环保玩具 无味卡槽紧 12色雪花片","tbStatus":1,"showBeginTimeStr":"09月30日 13:00","volume":30668,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156445&page=tmindex/http://temai.egou.com/&pageno=1&wl=37*2"},{"id":157457,"index":110,"numIid":520646858222,"picUrl":"http://img0.egou.com/taobao/201509/28/8e7fa76ca160751c207f2149774ef749.jpg","title":"云南特产玫瑰鲜花饼240g","reservePrice":3100,"discountPrice":890,"discountRate":2870,"category":5,"categoryName":"休闲零食","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"特价限时抢购8枚装云南玫瑰鲜花饼，240g！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":29495,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=157457&page=tmindex/http://temai.egou.com/&pageno=1&wl=37*3"},{"id":156898,"index":111,"numIid":521335374862,"picUrl":"http://img0.egou.com/taobao/201509/22/6e0f52188f98fd53f33238e8d62d7224.jpg","title":"灯芯绒长袖秋冬加绒保暖男士衬衫","reservePrice":15000,"discountPrice":2990,"discountRate":1993,"category":2,"categoryName":"衬衫","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"韩版修身休闲纯色衬衣免烫","tbStatus":1,"showBeginTimeStr":"09月24日 09:00","volume":5922,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=156898&page=tmindex/http://temai.egou.com/&pageno=1&wl=38*1"},{"id":157483,"index":112,"numIid":40940280572,"picUrl":"http://img0.egou.com/taobao/201509/28/c562d9e49e2bd76e1e9da8609a060998.jpg","title":"男装秋冬款韩版修身加厚纯色毛衣","reservePrice":10800,"discountPrice":2900,"discountRate":2685,"category":2,"categoryName":"T恤","isPost":null,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"青年休闲修身高领针织衫潮男士打底衫","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":2172,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=157483&page=tmindex/http://temai.egou.com/&pageno=1&wl=38*2"},{"id":157398,"index":113,"numIid":521874066894,"picUrl":"http://img0.egou.com/taobao/201509/28/f9143b03f01b329e3defe763c4475b09.jpg","title":"新款女士手工编织钱包","reservePrice":9600,"discountPrice":2990,"discountRate":3114,"category":9,"categoryName":"女钱包","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"高品质，大牌风范，时尚百搭！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":413,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/06 09:00:00","toUrl":"toitem.htm?id=157398&page=tmindex/http://temai.egou.com/&pageno=1&wl=38*3"},{"id":157211,"index":114,"numIid":521604488136,"picUrl":"http://img0.egou.com/taobao/201509/25/58330295df0010006e9fc09ad05babbb.jpg","title":"2015新款毛衣针织衫","reservePrice":9900,"discountPrice":3900,"discountRate":3939,"category":1,"categoryName":"针织衫","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"天猫品质 质量保证 7天无理由 退换货","tbStatus":1,"showBeginTimeStr":"09月26日 09:00","volume":365,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=157211&page=tmindex/http://temai.egou.com/&pageno=1&wl=39*1"},{"id":157500,"index":115,"numIid":520345319452,"picUrl":"http://img0.egou.com/taobao/201509/28/7df19a332c852de3d63a982d1ac28b71.jpg","title":"除异味6个装汽车香膏","reservePrice":2800,"discountPrice":1500,"discountRate":5357,"category":7,"categoryName":"文体","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"6种香味，6个超值装！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":1859,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=157500&page=tmindex/http://temai.egou.com/&pageno=1&wl=39*2"},{"id":156729,"index":116,"numIid":43948922164,"picUrl":"http://img0.egou.com/taobao/201509/21/0ee1638b2421dd20645e3fa0ab16a53f.jpg","title":"纯天然红豆薏米粉","reservePrice":8600,"discountPrice":1380,"discountRate":1604,"category":5,"categoryName":"粮油干货","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"拍下13.8 买2袋减1元 买4袋减3元","tbStatus":1,"showBeginTimeStr":"09月22日 09:00","volume":4791,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/06 09:00:00","toUrl":"toitem.htm?id=156729&page=tmindex/http://temai.egou.com/&pageno=1&wl=39*3"},{"id":151955,"index":117,"numIid":521014733048,"picUrl":"http://img0.egou.com/taobao/201508/20/985d4696937f67e9465335b81d7ca71f.jpg","title":"中老年春秋毛呢外套","reservePrice":29800,"discountPrice":5900,"discountRate":1979,"category":1,"categoryName":"外套","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"比双十一感恩大促更给力","tbStatus":1,"showBeginTimeStr":"09月28日 18:00","volume":1735,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/12 09:00:00","toUrl":"toitem.htm?id=151955&page=tmindex/http://temai.egou.com/&pageno=1&wl=40*1"},{"id":156494,"index":118,"numIid":38544769368,"picUrl":"http://img0.egou.com/taobao/201509/19/a3ce8fd22aa9d4e579ccff294f629aef.jpg","title":"乐士正品羽毛球拍 2支装 ","reservePrice":9900,"discountPrice":1990,"discountRate":2010,"category":7,"categoryName":"文体","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"质量上乘，做工精良，价格亲民！","tbStatus":1,"showBeginTimeStr":"09月20日 09:00","volume":1265,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=156494&page=tmindex/http://temai.egou.com/&pageno=1&wl=40*2"},{"id":157365,"index":119,"numIid":521286561774,"picUrl":"http://img0.egou.com/taobao/201509/26/f05a880c4cdbc02ca62614470379f20d.jpg","title":"碳烤手撕鱿鱼丝500g","reservePrice":5900,"discountPrice":1789,"discountRate":3032,"category":5,"categoryName":"休闲零食","isPost":null,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"买2件，减5元，相当于16.5/斤，卖爆涨价！ ","tbStatus":1,"showBeginTimeStr":"09月27日 09:00","volume":20050,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/11 09:00:00","toUrl":"toitem.htm?id=157365&page=tmindex/http://temai.egou.com/&pageno=1&wl=40*3"},{"id":157028,"index":120,"numIid":45907125201,"picUrl":"http://img0.egou.com/taobao/201509/23/2a1d8a986dce34c97ab4bee2b7bd06a1.jpg","title":"男女5双装短袜船袜","reservePrice":6800,"discountPrice":980,"discountRate":1441,"category":2,"categoryName":"袜子","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"特价促销9.8元，全色可选，品种多价格低质量优！","tbStatus":1,"showBeginTimeStr":"09月25日 09:00","volume":6500,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157028&page=tmindex/http://temai.egou.com/&pageno=1&wl=41*1"},{"id":149045,"index":121,"numIid":42453113997,"picUrl":"http://img0.egou.com/taobao/201507/31/09e5164d79baffcfd1e9f0efbaf517d5.jpg","title":"男士商务休闲皮鞋","reservePrice":19900,"discountPrice":2900,"discountRate":1457,"category":9,"categoryName":"皮鞋","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"性价比超高的宝贝，亲们不容错过哦！","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":6877,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=149045&page=tmindex/http://temai.egou.com/&pageno=1&wl=41*2"},{"id":155079,"index":122,"numIid":44551412021,"picUrl":"http://img0.egou.com/taobao/201509/01/ae3f50b70f508e63368d7c035c374e96.jpg","title":"决明子护颈椎枕头","reservePrice":5000,"discountPrice":1990,"discountRate":3980,"category":7,"categoryName":"家纺","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"花草幽香，安神助睡眠！","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":4787,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=155079&page=tmindex/http://temai.egou.com/&pageno=1&wl=41*3"},{"id":156880,"index":123,"numIid":45400805437,"picUrl":"http://img0.egou.com/taobao/201509/22/df448aa3cfc0d7c5647c713776509302.jpg","title":"手撕风琴原味碳烤鱿鱼片500g","reservePrice":2390,"discountPrice":1988,"discountRate":8317,"category":5,"categoryName":"休闲零食","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"18.9元包邮500g碳烤鱿鱼，无腥味，味道鲜美！","tbStatus":1,"showBeginTimeStr":"09月23日 09:00","volume":9234,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/07 09:00:00","toUrl":"toitem.htm?id=156880&page=tmindex/http://temai.egou.com/&pageno=1&wl=42*1"},{"id":151662,"index":124,"numIid":521064281089,"picUrl":"http://img0.egou.com/taobao/201508/18/ed2ff81b5662195ea79037b64e4ebe60.jpg","title":"正品高档男士腰挂钥匙扣","reservePrice":1700,"discountPrice":700,"discountRate":4117,"category":2,"categoryName":"钥匙扣","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"完美工艺，电镀抛光！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":3184,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=151662&page=tmindex/http://temai.egou.com/&pageno=1&wl=42*2"},{"id":156670,"index":125,"numIid":41539465715,"picUrl":"http://img0.egou.com/taobao/201509/21/2a8b0c014a9c40b9fd1647bf5da588df.jpg","title":"收腹收腰带紧身塑身衣","reservePrice":18800,"discountPrice":3900,"discountRate":2074,"category":1,"categoryName":"抹胸","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"塑身美体 展妖娆曲线","tbStatus":1,"showBeginTimeStr":"09月30日 14:00","volume":2627,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156670&page=tmindex/http://temai.egou.com/&pageno=1&wl=42*3"},{"id":155278,"index":126,"numIid":520217180560,"picUrl":"http://img0.egou.com/taobao/201509/14/3d65c5c973bf58cd95a5d5c8696d9c5e.jpg","title":"枣花蜜纯天然自产无添加","reservePrice":5600,"discountPrice":890,"discountRate":1589,"category":5,"categoryName":"休闲零食","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"历史最低价，拍下8.9，每个ID限拍4件","tbStatus":1,"showBeginTimeStr":"09月24日 18:00","volume":4749,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/08 09:00:00","toUrl":"toitem.htm?id=155278&page=tmindex/http://temai.egou.com/&pageno=1&wl=43*1"},{"id":157265,"index":127,"numIid":520549735456,"picUrl":"http://img0.egou.com/taobao/201509/25/082658bac15434fc4466c38a687ba704.jpg","title":"加厚法兰绒床上四件套","reservePrice":25900,"discountPrice":5800,"discountRate":2239,"category":7,"categoryName":"家纺","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"防静电工艺 不掉色 不掉毛 ","tbStatus":1,"showBeginTimeStr":"09月26日 09:00","volume":24272,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=157265&page=tmindex/http://temai.egou.com/&pageno=1&wl=43*2"},{"id":156990,"index":128,"numIid":520372748858,"picUrl":"http://img0.egou.com/taobao/201509/23/6a94ef46636aeaa862e51eec82697823.jpg","title":"oko德国不锈钢炒锅","reservePrice":39900,"discountPrice":3990,"discountRate":1000,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"德国工艺 外观精美 可用铁铲 超强不粘 性价比高 ","tbStatus":1,"showBeginTimeStr":"09月24日 09:00","volume":448,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/07 09:00:00","toUrl":"toitem.htm?id=156990&page=tmindex/http://temai.egou.com/&pageno=1&wl=43*3"},{"id":157173,"index":129,"numIid":42665943646,"picUrl":"http://img0.egou.com/taobao/201509/24/3164aad9dd1826a143da7dc656f3923c.jpg","title":"新款女士复古磨砂皮斜挎包","reservePrice":26900,"discountPrice":2990,"discountRate":1111,"category":9,"categoryName":"斜挎包","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"三色可选，时尚百搭！","tbStatus":1,"showBeginTimeStr":"09月25日 09:00","volume":442,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/09 09:00:00","toUrl":"toitem.htm?id=157173&page=tmindex/http://temai.egou.com/&pageno=1&wl=44*1"},{"id":156824,"index":130,"numIid":520508417277,"picUrl":"http://img0.egou.com/taobao/201509/22/b8f125cc277cf3f7451d584b41facb68.jpg","title":"韩版珊瑚绒四件套","reservePrice":53800,"discountPrice":5990,"discountRate":1113,"category":7,"categoryName":"家纺","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"防静电工艺 不掉色 不掉毛 加大床单 晒图返5元 ","tbStatus":1,"showBeginTimeStr":"09月23日 09:00","volume":59514,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/07 09:00:00","toUrl":"toitem.htm?id=156824&page=tmindex/http://temai.egou.com/&pageno=1&wl=44*2"},{"id":155082,"index":131,"numIid":45514326157,"picUrl":"http://img0.egou.com/taobao/201509/01/1d596fa6212c280bc6d8f1542d89a01d.jpg","title":"秋季男士真皮休闲鞋","reservePrice":13800,"discountPrice":3500,"discountRate":2536,"category":9,"categoryName":"休闲鞋","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"三色可选，时尚休闲！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":3497,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=155082&page=tmindex/http://temai.egou.com/&pageno=1&wl=44*3"},{"id":152389,"index":132,"numIid":520252836829,"picUrl":"http://img0.egou.com/taobao/201508/24/c51aad2c225cd48a94461aac44bee046.jpg","title":"厨之友无油烟平底不粘锅","reservePrice":8000,"discountPrice":1989,"discountRate":2486,"category":7,"categoryName":"厨卫","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"一款可以做爆米花的不粘锅~","tbStatus":1,"showBeginTimeStr":"09月21日 09:00","volume":27292,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/05 09:00:00","toUrl":"toitem.htm?id=152389&page=tmindex/http://temai.egou.com/&pageno=1&wl=45*1"},{"id":157437,"index":133,"numIid":521922773814,"picUrl":"http://img0.egou.com/taobao/201509/28/33f514fba848fca5e24273c8e49a0443.jpg","title":"女士秋冬季触屏开车手套加绒保暖","reservePrice":5990,"discountPrice":990,"discountRate":1652,"category":9,"categoryName":"手套","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"9块9包邮 触屏 加绒 韩版 可爱","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":1685,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=157437&page=tmindex/http://temai.egou.com/&pageno=1&wl=45*2"},{"id":156997,"index":134,"numIid":521846693493,"picUrl":"http://img0.egou.com/taobao/201509/23/9a66e90e4cc3706ea8eaddc64c812a94.jpg","title":"秋季显瘦秋加绒皮裤","reservePrice":5700,"discountPrice":2900,"discountRate":5087,"category":1,"categoryName":"皮裤","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"品牌保证 不掉皮不开裂 弹力PU面料 显瘦修腿","tbStatus":1,"showBeginTimeStr":"09月30日 14:00","volume":2642,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156997&page=tmindex/http://temai.egou.com/&pageno=1&wl=45*3"},{"id":157456,"index":135,"numIid":45480778501,"picUrl":"http://img0.egou.com/taobao/201509/28/3bea6274341612d2ed4a8b32c10fad1b.jpg","title":"兰可欣超小颗粒天然补水海藻面膜","reservePrice":7200,"discountPrice":1900,"discountRate":2638,"category":3,"categoryName":"个人护理","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"提亮肤色 补水保湿 紧致肤色 滋养润泽 清洁舒适","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":2029,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/13 09:00:00","toUrl":"toitem.htm?id=157456&page=tmindex/http://temai.egou.com/&pageno=1&wl=46*1"},{"id":156053,"index":136,"numIid":520631814546,"picUrl":"http://img0.egou.com/taobao/201509/16/aea8ca63cf482855eadb98f56e6acb31.jpg","title":"北极绒男女保暖背心","reservePrice":19800,"discountPrice":1990,"discountRate":1005,"category":1,"categoryName":"保暖内衣","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"冬季我们需要一条这样的保暖内衣","tbStatus":1,"showBeginTimeStr":"09月30日 13:00","volume":2295,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156053&page=tmindex/http://temai.egou.com/&pageno=1&wl=46*2"},{"id":156055,"index":137,"numIid":44318288712,"picUrl":"http://img0.egou.com/taobao/201509/16/70f0b15acab768ab7cadb455ba0ce761.jpg","title":"家用迷你大功率挂烫机","reservePrice":37800,"discountPrice":7900,"discountRate":2089,"category":7,"categoryName":"百货","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"拍下减100 送超值礼包 倾情回馈 厚惠无期","tbStatus":1,"showBeginTimeStr":"09月30日 21:00","volume":3098,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156055&page=tmindex/http://temai.egou.com/&pageno=1&wl=46*3"},{"id":152852,"index":138,"numIid":520362148141,"picUrl":"http://img0.egou.com/taobao/201508/26/dd5eb8a1f7e5b3df5a92081bea5a0f59.jpg","title":"显瘦高腰小脚裤","reservePrice":29900,"discountPrice":1990,"discountRate":665,"category":1,"categoryName":"打底裤","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"满40减5元 抓紧时机！！ 即将涨价！","tbStatus":1,"showBeginTimeStr":"09月30日 14:00","volume":5227,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=152852&page=tmindex/http://temai.egou.com/&pageno=1&wl=47*1"},{"id":155834,"index":139,"numIid":521180788491,"picUrl":"http://img0.egou.com/taobao/201509/14/7e9d57fe7c6715593fe433e704c206af.jpg","title":"秋季新款男士长袖印花T恤","reservePrice":17800,"discountPrice":3900,"discountRate":2191,"category":2,"categoryName":"T恤","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"时尚舒适，品质保证！","tbStatus":1,"showBeginTimeStr":"09月29日 09:00","volume":3802,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/10 09:00:00","toUrl":"toitem.htm?id=155834&page=tmindex/http://temai.egou.com/&pageno=1&wl=47*2"},{"id":157657,"index":140,"numIid":520321871850,"picUrl":"http://img0.egou.com/taobao/201509/29/5b64701489d92c2db8196af35be3e723.jpg","title":"云南古法老土红糖块 250g","reservePrice":2900,"discountPrice":1280,"discountRate":4413,"category":5,"categoryName":"茗茶冲饮","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"买3送1，送同款！饮一口，蔗香馥郁，暖入心田！","tbStatus":1,"showBeginTimeStr":"09月30日 09:00","volume":33581,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=157657&page=tmindex/http://temai.egou.com/&pageno=1&wl=47*3"},{"id":156531,"index":141,"numIid":43475909743,"picUrl":"http://img0.egou.com/taobao/201509/19/083323643cf634efe9caa9354419ad0b.jpg","title":"秋冬全棉商务防臭袜子礼盒装包邮\r\n","reservePrice":1680,"discountPrice":1680,"discountRate":10000,"category":2,"categoryName":"棉袜","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"礼盒袜品质精装！1盒包邮！全店任意2件再减3元！\r\n","tbStatus":1,"showBeginTimeStr":"09月21日 09:00","volume":15042,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/04 09:00:00","toUrl":"toitem.htm?id=156531&page=tmindex/http://temai.egou.com/&pageno=1&wl=48*1"},{"id":153792,"index":142,"numIid":520995489806,"picUrl":"http://img0.egou.com/taobao/201508/31/3462c982e471d54444544f610d868989.jpg","title":"2015秋冬大码修身棉服","reservePrice":39900,"discountPrice":5900,"discountRate":1478,"category":1,"categoryName":"羽绒服","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"轻薄柔软 双面用料 保暖性强 做工精细 反季底价","tbStatus":1,"showBeginTimeStr":"09月27日 09:00","volume":1780,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/11 09:00:00","toUrl":"toitem.htm?id=153792&page=tmindex/http://temai.egou.com/&pageno=1&wl=48*2"},{"id":156268,"index":143,"numIid":521005123770,"picUrl":"http://img0.egou.com/taobao/201509/18/b7991bf0ae3d985d8be6071179f1e41c.jpg","title":"韩版修身带帽可拆多色情侣羽绒服\r\n","reservePrice":25800,"discountPrice":4900,"discountRate":1899,"category":2,"categoryName":"情侣装","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":0,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"所有颜色都带帽子 可拆卸！\r\n","tbStatus":1,"showBeginTimeStr":"09月19日 09:00","volume":1020,"isHb":null,"isLastDay":1,"showEndTime":"2015/10/03 09:00:00","toUrl":"toitem.htm?id=156268&page=tmindex/http://temai.egou.com/&pageno=1&wl=48*3"},{"id":154662,"index":144,"numIid":520192936117,"picUrl":"http://img0.egou.com/taobao/201509/07/18031d052a6102a4139417a39116623c.jpg","title":"男休闲印花长袖衬衫","reservePrice":19800,"discountPrice":3200,"discountRate":1616,"category":2,"categoryName":"衬衫","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"秋装新品 柔软面料 闪电发货 淘抢购价 仅亏一次","tbStatus":1,"showBeginTimeStr":"10月01日 09:00","volume":10967,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/15 09:00:00","toUrl":"toitem.htm?id=154662&page=tmindex/http://temai.egou.com/&pageno=1&wl=49*1"},{"id":156064,"index":145,"numIid":520888204070,"picUrl":"http://img0.egou.com/taobao/201509/16/19f95a07a55ba09e14da8b23950f6f05.jpg","title":"秋冬中长款修身毛衣裙","reservePrice":16900,"discountPrice":5900,"discountRate":3491,"category":1,"categoryName":"毛衣","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":1,"tag2":1,"tag3":1,"brand":0,"recommendation":"包臀弹力大 S型曲线 下身配丝袜 外搭大衣外套","tbStatus":1,"showBeginTimeStr":"09月30日 13:00","volume":3420,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/14 09:00:00","toUrl":"toitem.htm?id=156064&page=tmindex/http://temai.egou.com/&pageno=1&wl=49*2"},{"id":156822,"index":146,"numIid":520900049007,"picUrl":"http://img0.egou.com/taobao/201509/22/5644404a19ec1c90d447cb3be0b6d6c6.jpg","title":"家用负离子冷热风罩吹风机","reservePrice":6250,"discountPrice":2500,"discountRate":4000,"category":8,"categoryName":"护理电器","isPost":0,"isNew":0,"isHot":0,"isSave":0,"istmall":0,"pass":1,"tagActivity":"3","tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"德国进口电机 三插口2.2米线 家用不耗电！","tbStatus":1,"showBeginTimeStr":"09月23日 09:00","volume":544,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/07 09:00:00","toUrl":"toitem.htm?id=156822&page=tmindex/http://temai.egou.com/&pageno=1&wl=49*3"},{"id":156630,"index":147,"numIid":520014691789,"picUrl":"http://img0.egou.com/taobao/201509/22/2bcda8d820b77a8ccb42095013cd1568.jpg","title":"车载吸盘便携式手机支架","reservePrice":1180,"discountPrice":590,"discountRate":5000,"category":8,"categoryName":"手机周边","isPost":0,"isNew":0,"isHot":1,"isSave":0,"istmall":1,"pass":1,"tagActivity":"3","tag1":0,"tag2":1,"tag3":1,"brand":0,"recommendation":"360°旋转 吸盘式 行车安全 单手操作  ","tbStatus":1,"showBeginTimeStr":"09月22日 13:00","volume":160,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/06 09:00:00","toUrl":"toitem.htm?id=156630&page=tmindex/http://temai.egou.com/&pageno=1&wl=50*1"},{"id":157250,"index":148,"numIid":520759690059,"picUrl":"http://img0.egou.com/taobao/201509/25/5215b5e385b234bf02cf48576abdf3ac.jpg","title":"韩版大码宽松打底衫圆领女T恤","reservePrice":9800,"discountPrice":1990,"discountRate":2030,"category":1,"categoryName":"T恤","isPost":null,"isNew":0,"isHot":null,"isSave":0,"istmall":1,"pass":1,"tagActivity":null,"tag1":null,"tag2":1,"tag3":1,"brand":0,"recommendation":"亏本促销 ，现在拍下， 送精美手链 ，送完为止！","tbStatus":1,"showBeginTimeStr":"09月27日 09:00","volume":8377,"isHb":null,"isLastDay":0,"showEndTime":"2015/10/11 09:00:00","toUrl":"toitem.htm?id=157250&page=tmindex/http://temai.egou.com/&pageno=1&wl=50*2"}];
+	_TMH.setDeal({ deals: deals});
+	_TMH.scrollLoad();
+	</script>
+	<script src="http://static.egou.com/p/tb/tmh_js/7yearsopertask.js" type="text/javascript"></script>
+	
+<!--  右侧列表  -->
+
+<!--  右侧列表  -->
+<div class="right_nav_list">
+	<ul>
+    	<li ><a href="http://union.egou.com/to?site=5&&page=&pos=TemaiIndexRightcatindexbaoyou&uniq=&fuid=100000&ext=2&url=http%3A%2F%2Ftemai.egou.com%2Fbaoyou%2F" class="one0"><span class="word">9.9包邮</span></a></li>
+    	<li><a href="http://www.egou.com/tmhhb/index.htm" target="_blank" class="one1"><span class="word">闪见红包</span></a></li>
+    	<li><a href="http://zhaoshang.egou.com/temai/" target="_blank" class="one3"><span class="word">商家报名</span></a></li>
+    	<li><a href="http://jifen.egou.com/hd/2014/app/tmindex.jsp" target="_blank" class="one4"><span class="word">APP下载</span><span class="code"></span></a></li>
+    	<li><a href="#top" class="one5"><span class="word">返回顶部</span></a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<!-- footer Start -->
+
+<link href="http://static.egou.com/p/tb/tmh_news/temai_foot.css" type="text/css" rel="stylesheet" />
+<div class="copyright">
+<iframe src="http://www.egou.com/thirdparter.html?a=b" frameborder="0" height="50" width="100%" scrolling="no" topmargin="0" leftmargin="0"></iframe>
+<span>Copyright &copy; 2004-2014 by www.egou.com all rights reserved</span><br />
+<a href="http://www.emar.com.cn" target="_blank" class="color_copyright">北京亿玛联盟传媒广告有限公司</a> 旗下网站 <a href="http://www.miibeian.gov.cn/" target="_blank" class="color_copyright">京公网安备110105000795 京ICP备10005197号-5</a><br /><br>
+</div>
+
+<!-- baidu -->
+<!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?316c01d27f14730a51beaa124c911eb8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+<!-- baidu -->
+<script src="http://static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+<!-- cnzz stats -->
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3120101'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D3120101' type='text/javascript'%3E%3C/script%3E"));</script>
+</div> 
+<!-- cnzz stats end-->
+<!-- Google 再营销代码 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 967063078;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967063078/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript> 
+<!-- Google 再营销代码 end -->
+<!-- Google 再营销代码 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 965174164;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/965174164/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Google 再营销代码 end -->
+<!-- 广电通回头客 -->
+<script type="text/javascript" src="http://tajs.qq.com/gdt.php?sId=19091634" charset="UTF-8"></script>
+<!-- 广电通回头客end -->
+<script type="text/javascript">
+var _egtk = _egtk || {"site": 5};
+(function() {
+ var eg = document.createElement('script'); eg.type = 'text/javascript'; eg.async = true;
+ eg.src = 'http://static.egou.com/js/egoutracker.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(eg, s);
+})();
+</script>
+
+
+<!-- 易博广点通账户回头客投放 -->
+<script type="text/javascript" src="http://tajs.qq.com/gdt.php?sId=38239342" charset="UTF-8"></script> 
+<!-- 易博广点通账户回头客投放 end-->
+<!-- footer End -->
+
+<div id="hb_bshare" style="display: none;z-index: 99999;position: absolute;">
+	<div class="hb_bshare_bg">
+		<div class="hb_bshare_pic"></div>
+	    <div class="hb_bshare_close"><a href="javascript:closePopLayer('hb_bshare');"></a></div>
+	    <div class="hb_bshare_nr">登录后分享商品带来1个点击奖励1分钱，带来1个订单奖励0.1元钱，每单最高可赚0.6元，还不快来~</div>
+	    <div class="hb_bshare_bottonbg"><span class="hb_bshare_bottonone"><a href="javascript:popLayerToLogin();"></a></span><span class="hb_bshare_bottontwo"><a href="http://club.egou.com/sharetm/index.htm" target="_blank"></a></span></div>
+	</div>
+</div>
+<script type="text/javascript" src="http://static.egou.com/js/popup.js"></script>
+<script type="text/javascript">
+/*隐藏弹层*/
+function closePopLayer(popId){
+	egou.popup.close("#"+popId,true);
+	jQuery("#"+popId).hide();
+}
+/*隐藏弹层*/
+function openPopLayer(popId){
+	var cu_css = {"background": "black","z-index":"9999"};
+	egou.popup.open("#"+popId,cu_css);
+}
+</script>
+</body>
+</html>

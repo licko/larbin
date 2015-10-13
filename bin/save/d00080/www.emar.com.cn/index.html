@@ -1,0 +1,162 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/style2/style2.0.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js2/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js2/jquery.SuperSlide.2.1.1.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$(".nav").find("li").hover(
+			function(){$(this).addClass("on")},
+			function(){$(this).removeClass("on")}
+			)
+		
+		$(".ban_nav").mouseover(function(){$(".menu",this).show()})
+			.mouseout(function(){$(".menu",this).hide()})
+		
+		function showMenu(){
+			$(".bigdata").fadeIn(1000,function(){
+				$(".media").fadeIn(1000);
+				$(".advertisers").fadeIn(1000);
+				$(".precision").fadeIn(1000);
+			});
+		}
+		function showeye(){
+			
+			$(".animate_cube .eye").animate({opacity:"1"},1500,function(){
+				$(".animate_cube").animate({width:"400px",height:"400px",marginLeft:"-200px",marginTop:"-250px"},1000,showMenu());
+				$(".animate_cube ul").empty();
+				})
+			
+			}	
+		function showCube(){
+			var cubeLi=$('.animate_cube').find('li');
+			var animate_cubeH = $(".animate_cube").height();
+			var cubeW = animate_cubeH;
+			var imgW=cubeW/8;
+			var marginH=cubeW/2;
+			$(".animate_cube").css({width:cubeW,left:"50%",top:"50%",marginTop:-marginH,marginLeft:-marginH});
+			
+			cubeLi.filter(":even").css({top:"-479px"})
+			cubeLi.filter(":odd").css({top:"479px"})
+			cubeLi.css({opacity:"0",display:"block"})
+			$(".animate_cube .eye").css({opacity:"0"});
+
+			for(i=0;i<cubeLi.length;i++){
+				//alert(cubeW)
+				var oleft=imgW*i;
+				cubeLi.eq(i).css({left:oleft});
+				cubeLi.eq(i).animate({opacity:"1",top:"0"},1500)
+			}
+			setTimeout( function(){showeye()},1500)
+
+		}	
+		
+		showCube();
+	});
+		
+</script>
+﻿<title>
+		亿玛科技-中国大数据营销平台领导者		</title>
+</head>
+<body>
+
+
+
+<div class="header clearfix">
+	<div class="logo"><img src="/images2/logo.jpg" alt="" width=160/><br/>
+
+	<span>智慧您的商业未来</span></div>
+
+    <ul class="nav clearfix">
+
+    	<li class="menuLi">
+		<a href="/aboutus/gswh.html">关于亿玛</a>
+			<ul class="gyymul">
+			        	  <li><a href='/aboutus/gswh.html'>公司文化</a></li><li><a href='/aboutus/tzgx.html'>投资关系</a></li><li><a href='/aboutus/gltd.html'>管理团队</a></li><li><a href='/aboutus/ymry.html'>亿玛荣誉</a></li><li><a href='/aboutus/fzlc.html'>发展历程</a></li>				
+			</ul>
+		</li>
+	    <li class="menuLi"><a href="/news.php?id=9">新闻中心</a></li>
+    	<li class="menuLi">
+        	<a href="#">产品线</a>
+        	<ul  class="cpxul">
+
+			        	  <li><a href='/products/yqf/youshi.html'>亿起发</a></li><li><a href='/products/yb/yibojj.html'>易博</a></li><li><a href='/products/yigou/yigoujianjie.html'>易购</a></li><li><a href='/products/yjf/yjfys.html'>易积分</a></li>        	</ul>
+        </li>
+    	<li class="menuLi ymzhshow"><a href="/ymzh.php" >亿玛智汇</a></li>
+    </ul>
+    <script id="jsID" type="text/javascript">
+			jQuery(".nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".menuLi", //鼠标触发对象
+				targetCell:"ul", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				defaultPlay:false,
+				returnDefault:false //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+	</script>
+</div>
+<div class="banner">
+	
+    <div class="banner_menu">
+  		
+    	<div class="animate_cube">
+        	<div class="eye"><img src="/images2/eye.png" alt="" /></div>
+            <ul>
+				<li class="li1"><img src="/images2/li1.png" alt="" /></li>
+				<li class="li2"><img src="/images2/li2.png" alt="" /></li>
+				<li class="li3"><img src="/images2/li3.png" alt="" /></li>
+				<li class="li4"><img src="/images2/li4.png" alt="" /></li>
+				<li class="li5"><img src="/images2/li5.png" alt="" /></li>
+				<li class="li6"><img src="/images2/li6.png" alt="" /></li>
+				<li class="li7"><img src="/images2/li7.png" alt="" /></li>
+				<li class="li8"><img src="/images2/li8.png" alt="" /></li>
+			</ul>
+            
+        	
+    	</div>
+    	<div class="ban_nav bigdata clearfix">
+        	<h3><a href="/dashuju">大数据营销平台领导者</a></h3>
+           
+        </div>
+        <div class="ban_nav media clearfix">
+        	<h3><a href="/meti">媒体</a></h3>
+           
+        </div>
+        <div class="ban_nav advertisers clearfix">
+        	<h3><a href="/guanggaozhu/hezhuhuoban.html">广告主</a></h3>
+          
+        </div>
+        <div class="ban_nav precision">
+        	
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<ul class="botnav clearfix">
+	  
+	   <li><a href="/addus/jobs.html">加入亿玛</a></li>
+	  <li><a href="/ysbh">隐私保护</a></li>
+	  <li><a href="/contactus/beijing.html">联系我们</a></li>
+	  
+	</ul>
+    <p>
+	&nbsp;(c) 2003-2014 天津亿玛科技有限公司 版权所有 &nbsp;&nbsp;津ICP备13001820号-8 &nbsp;&nbsp;京公网安备110105000794																	</p>
+    <p class="fdLink" style="display:none"><span>友情链接：</span><a href="http://www.yiqifa.com/index.jsp">亿起发</a>，<a href="http://www.egou.com">易购</a>，<a href="http://www.emarbox.com">易博</a>，<a href="http://www.yigao.com">亿告</a>，<a href="http://www.yijifen.com">易积分</a> <a href="http://webscan.360.cn/index/checkwebsite/url/www.emar.com" name="e920898d06e65fa2c0b71ead3f92ae27" >360网站安全检测平台</a> <a style="display:none;" href="#" class="fdLink_more">更多>></a></p>
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('.animate_cube img,.ban_nav h3,.ban_nav .menu li');
+</script>
+<![endif]-->
+
+</body>
+</html>

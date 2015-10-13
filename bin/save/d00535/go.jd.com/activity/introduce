@@ -1,0 +1,1066 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! "/>
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/"/>
+    <title>旅游白条</title>
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/consumer/travel/index/1.0.1/css/travelIndex.css?2015032419"/>
+    <script>
+        window.jrBase = {
+            navId: 'nav-baitiao',
+            navSubId: 'nav-travelBaitiao',
+            footerFix: false,
+            headerFix: true,
+            // 侧边工具栏
+            sidebar: true,
+            // 问卷反馈url id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=116'
+        };
+    </script>
+</head>
+<body>
+<!--header-->
+<!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end-->    <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->    <div class="sub-nav">        <div class="grid-1200 sub-nav-wrap">            <a id="nav-baitiao" class="sub-nav-item" href="http://baitiao.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdbt">京东白条</a><a id="nav-gangbeng" class="sub-nav-item" href="http://bk.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|btlmk">白条联名卡</a>             <a id="nav-gangbeng" class="sub-nav-item" href="http://gb.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|gb">京东钢镚</a>            <a id="nav-travelBaitiao" class="sub-nav-item" href="http://go.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|lybt">旅游白条+</a>            <a id="nav-houseBaitiao" class="sub-nav-item" href="http://fang.jd.com" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|ajbt">安居白条+</a>  <a id="nav-studentFenQi" class="sub-nav-item" href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|xybt">校园白条</a><a id="nav-qiche" class="sub-nav-item" href="http://chedai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|qcjr">汽车金融</a>            <a id="nav-jincai" class="sub-nav-item" href="http://jincai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdjc">京东金采</a>        </div>    </div>    <!--sub-nav-end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+<!--header end-->
+<!--container-->
+<div class="con">
+<!--头部-->
+<div class="con-head">
+    <div id="homeBanner">
+                    <!--已生效-->
+            <a href="http://sale.jd.com/act/3y1nBgMlSJYANLf4.html" target="_blank" class="home-bt">白条优惠活动</a>
+        
+        <a href="http://go.jd.com/query/queryLoanTop" target="_blank" class="home-bt home-bt2" >立即还款</a>
+        <a href="http://help.jr.jd.com/show/helpcenter/274.html" target="_blank" class="home-bt home-bt3">新手引导</a>
+
+        <ul class="pic-layer">
+                            <li class="bg1 current active" clstag="jr|keycount|jr_201503231|1" style="background-image: url(http://img30.360buyimg.com/jr_image/jfs/t1957/328/310068995/161074/38f53db1/5600ba93Nb17a12cb.jpg);"></li>
+                        <li class="bg2" clstag="jr|keycount|jr_201503231|2"></li>
+            <li class="bg3" clstag="jr|keycount|jr_201503231|2"></li>
+        </ul>
+        <div class="con-btn con-btn-1">
+                            <a href="http://sale.jd.com/act/X5xhgSs2jcdQ.html" target="_blank" class="right-jh"></a>
+            
+        </div>
+        <div class="con-btn con-btn-2 hide">
+            <h3><i></i><p>旅游白条</p><i></i></h3>
+            <h2>旅游，一张白条就GO了</h2>
+            <a href="http://baitiao.jd.com/creditUser/activate" class="how-btn" target="_blank"  clstag="jr|keycount|jr_201503231|2"><p>立即激活</p></a>
+        </div>
+        <div class="banner-ctrl">
+            <ul class="circle-box2 indexBtn-bkg">
+                <li class="indexBtn current"></li>
+                <li class="indexBtn"></li>
+                <li class="noright indexBtn"></li>
+            </ul>
+        </div>
+        <!--搜索部分-->
+        <div class="black-shaow"></div>
+        <div class="serch-box">
+            <i class="dw"></i>
+            <form id="searchForm" action="/html/search.html" method="get" target="_blank">
+                <div class="w-iput">
+                    <input type="text" place="普吉岛" value="普吉岛" name="keyword"/>
+                    <i class="twocode"></i>
+                    <span class="two-pic"  style="background: url(http://img30.360buyimg.com/jr_image/jfs/t1636/331/288042080/16840/5b3a5026/5571122eN5539bac0.png) no-repeat;"></span>
+                </div>
+                <input type="submit" class="ser-btn" value="" node-type="submit"/>
+            </form>
+            <div class="clear"></div>
+            <ul class="search-ul">
+                <li>
+                    <a href="/html/search.html?keyword=普吉岛" target="_blank">普吉岛</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=巴厘岛" target="_blank">巴厘岛</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=新加坡" target="_blank">新加坡</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=清迈" target="_blank">清迈</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=首尔" target="_blank">首尔</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=济州岛" target="_blank">济州岛</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=香港" target="_blank">香港</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=台湾" target="_blank">台湾</a>
+                </li>
+                <li>
+                    <a href="/html/search.html?keyword=沙巴" target="_blank">沙巴</a>
+                </li>
+               <!-- <li>
+                    <a href="search.html" target="_blank">更多热门</a>
+                </li>
+                -->
+            </ul>
+        </div>
+        <!--搜索部分end-->
+    </div>
+</div>
+<!--白条优势-->
+<div class="white-con">
+    <div class="white-box">
+        <div class="wh-good">
+            <span class="wh-sp1"></span>
+            <h3 class="wh-h3">零钱出游</h3>
+            <p>仅需付百元<br/> 先旅行 后还款</p>
+        </div>
+        <div class="wh-good">
+            <span class="wh-sp1 wh-sp2"></span>
+            <h3 class="wh-h3">便捷省心</h3>
+            <p>线上实时授信<br/>点点鼠标就搞定</p>
+        </div>
+        <div class="wh-good">
+            <span class="wh-sp1 wh-sp3"></span>
+            <h3 class="wh-h3">惊喜不断</h3>
+            <p>优惠多多<br/>实用好礼送不停</p>
+        </div>
+    </div>
+</div>
+<!--十分之一-->
+<div class="ten">
+    <div class="ten-box">
+        <div class="ten-new"></div>
+        <div class="ten-con">
+            <span class="span2"></span>
+            <h2>十分之一</h2>
+            <h3>
+                <p>不拼人品，快来试试</p>
+            </h3>
+            <h4>1/10 的价格，100% 的出境游</h4>
+            <div class="ten-s">
+                <span class="ten-span"></span>
+                <span class="ten-span ten-span2"></span>
+                <span class="ten-span ten-span3"></span>
+            </div>
+                    <!--已生效-->
+            <a class="ten-more" href="http://sale.jd.com/act/0jt83Rl2gnuseHxd.html" target="_blank" clstag="jr|keycount|jr_201503231|3">了解更多</a>
+                </div>
+        <div class="ten-pro">
+                            <ul>
+                                            <li class="ten-li">
+                            <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=10503867p2&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|4" class="imgbox-a">
+                                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1690/267/1483700756/32219/45f00b70/55cb0313Na9a46f76.jpg" />
+                                <i class="red-b"></i>
+                                <span class="red-s"><em>250元</em>就出发</span>
+                                <div class="gobox">
+                                    <h3>
+                                                                                                                            曼谷芭提雅6日跟团游跟团游
+                                                                            </h3>
+                                    <p>月付：250元 x 10期</p>
+                                                                                                                <span class="red-fon">
+                                                                                            <em>超低价</em>
+                                                                                            <em>人人能用</em>
+                                                                                            <em>首付出发</em>
+                                                                                    </span>
+                                                                    </div>
+                                <h4 class="imgbox-h3">产品来源：
+                                    <em>芒果网</em>
+                                    <span class="right-go">立即前往</span>
+                                </h4>
+                                <span class="imgbox-sha" style="opacity: 0;"></span>
+                                <i class="bg-sha"></i>
+                            </a>
+                        </li>
+                                            <li class="ten-li">
+                            <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=213557p2&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|5" class="imgbox-a">
+                                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1291/44/667675655/30092/57a91889/559505efNc43c9ce0.jpg" />
+                                <i class="red-b"></i>
+                                <span class="red-s"><em>280元</em>就出发</span>
+                                <div class="gobox">
+                                    <h3>
+                                                                                                                            泰国阁兰岛6天跟团游自由行
+                                                                            </h3>
+                                    <p>月付：280元 x 10期</p>
+                                                                                                                <span class="red-fon">
+                                                                                            <em>超低价</em>
+                                                                                            <em>人人能用</em>
+                                                                                            <em>首付出发</em>
+                                                                                    </span>
+                                                                    </div>
+                                <h4 class="imgbox-h3">产品来源：
+                                    <em>芒果网</em>
+                                    <span class="right-go">立即前往</span>
+                                </h4>
+                                <span class="imgbox-sha" style="opacity: 0;"></span>
+                                <i class="bg-sha"></i>
+                            </a>
+                        </li>
+                                            <li class="ten-li">
+                            <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=247187p1&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|6" class="imgbox-a">
+                                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1801/62/1565154203/27160/c2b650e6/55fabaa1N5e727d15.jpg" />
+                                <i class="red-b"></i>
+                                <span class="red-s"><em>222元</em>就出发</span>
+                                <div class="gobox">
+                                    <h3>
+                                                                                                                            随性沙巴5天4晚自由行自由行
+                                                                            </h3>
+                                    <p>月付：222元 x 10期</p>
+                                                                                                                <span class="red-fon">
+                                                                                            <em>超低价</em>
+                                                                                            <em>人人能用</em>
+                                                                                            <em>首付出发</em>
+                                                                                    </span>
+                                                                    </div>
+                                <h4 class="imgbox-h3">产品来源：
+                                    <em>芒果网</em>
+                                    <span class="right-go">立即前往</span>
+                                </h4>
+                                <span class="imgbox-sha" style="opacity: 0;"></span>
+                                <i class="bg-sha"></i>
+                            </a>
+                        </li>
+                                    </ul>
+                    </div>
+    </div>
+</div>
+<!--十分之一end-->
+<!--限时特卖-->
+<div class="des" id="homeBanner3">
+    <h2 class="des-h">限时特卖</h2>
+    <h3 class="des-e">DESTINATIONs</h3>
+    <div class="pic-layer3">
+            <ul class="q-box current">
+                                                            <li class="ten-li ten-li2">
+                                    <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=247179p1&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|7"  class="imgbox-a">
+                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1930/119/292330502/25951/1f011c65/55fab6e6N1ff5c446.jpg"/>
+                        <i class="red-b"></i>
+                        <span class="red-s"><em>306</em>元起  x 10期</span>
+                       <span class="red-fon">
+                                                                                        <em>
+                                    自由行
+                                </em>
+                                                        <p>沙巴无忧5天4晚自由行</p>
+                       </span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>芒果网</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </a>
+                </li>
+                                                <li class="ten-li ten-li2">
+                                    <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=247117p1&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|8"  class="imgbox-a">
+                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t2227/58/268411799/34582/4e746300/55fab7fdN82fbd2b0.jpg"/>
+                        <i class="red-b"></i>
+                        <span class="red-s"><em>268</em>元起  x 10期</span>
+                       <span class="red-fon">
+                                                                                        <em>
+                                    自由行
+                                </em>
+                                                        <p>文艺清迈漫游5天4晚自由行</p>
+                       </span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>芒果网</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </a>
+                </li>
+                                                <li class="ten-li ten-li2">
+                                    <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=247178p1&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|9"  class="imgbox-a">
+                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1876/45/262629805/32131/269da1b4/55fab8cdN490f3960.jpg"/>
+                        <i class="red-b"></i>
+                        <span class="red-s"><em>449</em>元起  x 10期</span>
+                       <span class="red-fon">
+                                                                                        <em>
+                                    自由行
+                                </em>
+                                                        <p>燃情巴厘岛5天4晚自由行</p>
+                       </span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>芒果网</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </a>
+                </li>
+                                                <li class="ten-li ten-li2 noright">
+                                    <a href="http://www.mangocity.com/alliance/9953/600002/index.php?d=freeline&c=productinfo_controller&m=index&thirdpartid=247131p1&channelid=100" target="_blank" clstag="jr|keycount|jr_201503231|10"  class="imgbox-a">
+                                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1936/142/273511518/27415/eb6a13ce/55fab966Nc24044cb.jpg"/>
+                        <i class="red-b"></i>
+                        <span class="red-s"><em>377</em>元起  x 10期</span>
+                       <span class="red-fon">
+                                                                                        <em>
+                                    自由行
+                                </em>
+                                                        <p>欢乐普吉岛5天4晚自由行</p>
+                       </span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>芒果网</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </a>
+                </li>
+                    </ul>
+        </div>
+</div>
+<!--限时特卖end-->
+<!--热门线路-->
+<div class="hot-line">
+<h2 class="des-h">热门线路</h2>
+<h3 class="des-e">LANDSCAPES</h3>
+<!--港澳台-->
+<div class="hk">
+    <div class="hk-box">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t841/306/113985719/53221/3a4d3aa5/54ffad9dN5331a19c.jpg" class="hk-img"/>
+        <div class="hk-bor"></div>
+        <div class="shadow-w"></div>
+        <div class="w-bor"></div>
+        <h3>港澳台</h3>
+        <h4>小清新梦想之地</h4>
+                    <ul class="line-ul">
+                                    <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1255/330/122288712/104418/6d9a9868/55001f3dN695befcc.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/109984?refkey=lybt" target="_blank">香港5天往返含税机票</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>195.4</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/109984?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|12">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1132/37/117800449/98273/10cc911/55001f3dN6b78504c.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/107113?refkey=lybt&soe=2724" target="_blank">香港4天往返含税机票</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>185.4</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/107113?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|13">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t997/247/126266250/87085/b994df33/55001f3dN4dde905a.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/109983?refkey=lybt" target="_blank">澳门3天2晚自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>158.91</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/109983?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|14">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                            <div class="clear"></div>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1009/207/118386643/93081/b375b563/55001f3cN44eb5dcb.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/106269?refkey=lybt" target="_blank">台湾台北6天往返机票</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>105</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/106269?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|15">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t916/198/118251738/74491/900ae2d/55001f3cNece0b31b.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108547?refkey=lybt&soe=2724" target="_blank">hellokitty专机台湾8天往返自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>167.75</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108547?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|16">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1168/198/115469563/113673/ace7a7b/55001f3cNd78bf7ea.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108453" target="_blank">华航直飞台北往返8天机票</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>229.58</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108453" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|17">&nbsp;</a>
+                            <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                </ul>
+            </div>
+</div>
+<!--日韩游-->
+<div class="hk">
+    <div class="hk-box">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t796/335/111997229/47718/4c3bcc5b/54ffe65cN32346741.jpg" class="hk-img"/>
+        <div class="hk-bor"></div>
+        <div class="shadow-w"></div>
+        <div class="w-bor"></div>
+        <h3>日韩游</h3>
+        <h4>追星购物两不误</h4>
+                    <ul class="line-ul">
+                                    <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t982/34/117728179/98532/99addea0/550023ceN293cc41f.png"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108556?refkey=lybt&soe=2724" target="_blank">韩国首尔4晚5日跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>141</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108556?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|18">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1096/173/123077049/110073/131dbb1c/550023ceN026593f9.png"/>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/105098?refkey=lybt" target="_blank">上海出发济州4晚5天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>282.58</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/105098?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|19">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1270/187/443421917/13616/ff9425ca/5523cf77Nb312a710.jpg"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150309000005" target="_blank">冲绳5日跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>354</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150309000005" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|20">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                            <div class="clear"></div>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1105/110/111039536/74008/82a90d3e/550023cfN70ee397d.png"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108487?refkey=lybt" target="_blank">天津济州福冈5晚6日跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>485.75</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108487?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|21">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1051/216/310481579/23987/66f552b9/5523ba77Nec980938.jpg"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150420000103" target="_blank">首尔5日深度跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>139</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150420000103" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|22">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t940/250/425876330/89515/dc61e1f5/5523cf26Neec77c93.png"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150508000004" target="_blank">首尔+济州5天4晚跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>227.90</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150508000004" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|23">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                </ul>
+            </div>
+</div>
+<!--东南亚-->
+<div class="hk">
+    <div class="hk-box">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t1099/114/117824470/61070/6d260dee/54ffef83N71b9d247.jpg" class="hk-img"/>
+        <div class="hk-bor"></div>
+        <div class="shadow-w"></div>
+        <div class="w-bor"></div>
+        <h3>东南亚</h3>
+        <h4 class="sea-h4">体验别样文化与风情</h4>
+                    <ul class="line-ul">
+                                    <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t799/162/119124463/103704/6e2109b3/550027b8Nffebdf60.png"/>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/107069?refkey=lybt&soe=2724" target="_blank">印尼巴厘岛4晚6天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>283</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/107069?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|24 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t724/1/1167380613/16144/88b662b5/5523cfe1Nc5d836d2.jpg"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150317000004" target="_blank">天津到甲米普吉7天5晚跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>484.95</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150317000004" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|25 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t763/58/883603140/105210/c7fc5090/550027b9N7bb608d1.png"/>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108906?refkey=lybt" target="_blank">越南岘港3晚4天/4晚5天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>176</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108906?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|26 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                            <div class="clear"></div>
+                                                        <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t754/115/876173453/105906/9cb88aff/550027b9N4bca703a.png"/>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/106688?refkey=lybt&soe=2724" target="_blank">普吉岛4晚5日自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>248</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/106688?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|27 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t724/189/1191629297/19485/ee2c8f54/5523c5edNecb74ab5.jpg"/>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150325000002" target="_blank">泰国曼谷8天6晚跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>228</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150325000002" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|28 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li  class="ten-li ten-li3">
+                        <div class="imgbox-a">
+
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1621/279/107257755/17367/daa55996/555aea33N08aba5b5.jpg"/>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150505000004" target="_blank">兰卡威5天4晚自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>304.75</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150505000004" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|29 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                </ul>
+            </div>
+</div>
+<!--海岛游-->
+<div class="hk">
+    <div class="hk-box">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t745/311/855528778/59710/eb68122d/54fff342N57d2ab5e.jpg" class="hk-img"/>
+        <div class="hk-bor"></div>
+        <div class="shadow-w"></div>
+        <div class="w-bor"></div>
+        <h3>海岛游</h3>
+        <h4 class="sea-h42">在海边天堂晒个日光浴</h4>
+
+                    <ul class="line-ul">
+                                    <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1549/354/322079627/40450/9aa45c32/55754339N8455c7cb.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/109752?refkey=lybt" target="_blank">马尔代夫艾拉胡岛4晚6天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>927.41</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/109752?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|30">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1234/203/937946122/16026/6d8f3a78/555aeb8dN0001cba8.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150302000102" target="_blank">北京塞班7天6晚特价自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>510.57</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150302000102" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|31">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1051/196/319748674/16288/725229ea/5523c6ebN6ea106d0.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150209000016" target="_blank">天津直飞斐济4晚6天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>1234.9</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150209000016" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|32">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                            <div class="clear"></div>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t985/229/128128925/76386/6b2befe4/550028d1N7aff11f1.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108283?refkey=lybt" target="_blank">5月到9月长滩岛5/6天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>176</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108283?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|33">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1363/294/703694908/15241/137b17d7/55a6320aNe389b9a4.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150209000017" target="_blank">斐济7天5晚高品质自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>1182</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150209000017" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|34">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1336/120/802681225/12959/f7cb969a/55a6320aN30331ebd.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150317000002" target="_blank">天津到普吉岛7天5晚跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>369.23</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150317000002" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|35">&nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                        </div>
+                    </li>
+                                                </ul>
+            </div>
+</div>
+<!--欧美游-->
+<div class="hk">
+    <div class="hk-box">
+        <img src="http://img30.360buyimg.com/jr_image/jfs/t946/190/125180759/56824/9f2548f2/54fff69cN45dd4a72.jpg" class="hk-img"/>
+        <div class="hk-bor"></div>
+        <div class="shadow-w"></div>
+        <div class="w-bor"></div>
+        <h3>欧美游</h3>
+        <h4 class="sea-h43">穿越时光·感受历史沉淀</h4>
+                    <ul class="line-ul">
+                                    <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t778/130/869643540/122160/921006a5/55002a9aNb2d9a66e.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/108377?refkey=lybt" target="_blank">法瑞意+新天鹅堡8晚10天跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>1219</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/108377?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|36 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t760/324/1171576744/90099/67bbe139/5523d970N5a979759.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/106711?refkey=lybt&soe=2724" target="_blank">美国关岛2晚4/3晚5日自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>529.9</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/106711?refkey=lybt&soe=2724" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|37 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1048/294/136521307/112177/9d9d1fe9/55002a9bN646ecc35.png"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em>
+                                        自由行
+                                    </em>
+                                                                <p><a href="http://www.ilvxing.com/Item/index/pro_id/109685?refkey=lybt" target="_blank">塞班精选4晚5天/5晚6天自由行</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>230</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>爱旅行</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.ilvxing.com/Item/index/pro_id/109685?refkey=lybt" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|38 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                            <div class="clear"></div>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1261/135/919981084/15278/d904c03a/555af1e7N77ae50ec.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150513000001" target="_blank">北京土耳其8晚11天跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>953.91</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150513000001" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|39 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t838/191/422021516/11848/f53200d1/5523c9e8N7c130167.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150402000007" target="_blank">天津荷德比法四国7日跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>883.25</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150402000007" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|40 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                                        <li class="ten-li ten-li3">
+                        <div class="imgbox-a">
+                                                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1171/101/432505854/18349/fd9eed69/5523ca73N9af5283b.jpg"/>                </a>
+                            <span class="red-fon">
+                                                                                                    <em class="em-blue">
+                                        跟团游
+                                    </em>
+                                                                <p><a href="http://www.diqiu1.com/travel/20150316000004" target="_blank">德国+荷兰7日跟团游</a></p>
+                            </span>
+                        <i class="grey-bor"></i>
+                        <span class="red-s"><em>972</em>元起  x 10期</span>
+                        <h4 class="imgbox-h3">产品来源：
+                            <em>地球咦</em>
+                            <span class="right-go">立即前往</span>
+                        </h4>
+                        <a href="http://www.diqiu1.com/travel/20150316000004" target="_blank" class="new-goa" clstag="jr|keycount|jr_201503231|41 "> &nbsp;</a>
+                        <span class="imgbox-sha" style="opacity: 0;"></span>
+                    </div>
+                    </li>
+                                                </ul>
+            </div>
+</div>
+</div>
+<!--热门线路end-->
+<div class="questions" id="homeBanner2">
+    <h2 class="des-h">常见问题</h2>
+    <h3 class="des-e">QUESTIONS</h3>
+    <div class="pic-layer2">
+        <div class="q-box current" style="opacity:1">
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3left">为什么已开通“京东白条”，但是无法开通“旅游白条”？<i class="left-i"></i><span class="head-span head-spanleft"></span></h3>
+                </span>
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3plus">目前“旅游白条”属于内测阶段，暂时开放部分用户“旅游白条”资格，敬请期待。<i class="right-i"></i><span class="head-span head-span2"></span></h3>
+                </span>
+        </div>
+        <div class="q-box">
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3left">旅游白条是否支持京东钱包还款，或是京东余额等其他方式还款？<i class="left-i"></i><span class="head-span head-spanleft"></span></h3>
+                </span>
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3plus width-520">目前旅游白条仅支持用户绑定储蓄卡还款，不支持其它方式还款和信用卡还款。<i class="right-i"></i><span class="head-span head-span2"></span></h3>
+                </span>
+        </div>
+        <div class="q-box" >
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3left">旅游白条可以与京东商城优惠搭配使用吗？<i class="left-i"></i> <span class="head-span head-spanleft"></span></h3>
+                </span>
+                <span class="fi">
+                    <h3 class="foot-h3 foot-h3plus width-912">目前旅游白条暂不支持搭配京东商城的东券、京东E卡、京豆等优惠使用。<i class="right-i"></i><span class="head-span head-span2"></span></h3>
+                </span>
+        </div>
+        <ul class="circle-box">
+            <li class="indexBtn2 current"></li>
+            <li class="indexBtn2"></li>
+            <li class="indexBtn2"></li>
+        </ul>
+    </div>
+    <a href="http://help.jr.jd.com/show/helpcenter/274.html" target="_blank" class="more-lv">点击查看更多旅游白条问题</a>
+</div>
+</div>
+<!--container end-->
+<!--footer-->
+<!--footer--><div class="f-copyright">    <div class="grid-1200 footerHolder">        <div class="footer-nav">            <p>                <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于京东钱包</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>                <span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>            </p>            <p>                Copyright &copy; 2004-2015 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎            </p>        </div>        <div class="footer-contact">            <div class="f-contact-time">联系我们<span>（9:00-22:00）</span></div>            <div class="f-contact-way">                <span class="f-contact-tel">400 098 8511</span>                <span class="f-contact-type">(个人业务)</span>                <a class="f-contact-ol online" href="http://chat.jd.com/jd/chat?entry=jd_jr" target="_blank" clstag="jr|keycount|jr_shouye|footerkf">在线客服</a>                <a class="f-contact-ol f-contact-mail" target="_blank" href="http://jr.jd.com/mail/index.html" clstag="jr|keycount|jr_shouye|footerkfmail">客服邮箱</a>            </div>            <div class="f-contact-way">                <span class="f-contact-tel">400 088 8816</span>                <span class="f-contact-type">(企业业务)</span>            </div>        </div>    </div></div><!--footer end-->
+<!--footer end-->
+<!--问题弹窗end-->
+<script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.8.3/jquery.js,base/1.1.0/js/base.js"></script>
+<script src="http://static.360buyimg.com/finance/consumer/travel/index/1.0.1/js/travelIndex.js"></script>
+<!--问题弹窗end-->
+<script type="text/javascript">
+    var jaq = jaq || [];
+    jaq.push(['account','UA-J2011-12']);
+    jaq.push(['domain','jr.jd.com']);
+
+    var _jaq = _jaq || [];
+    _jaq.push(['_setAccount', 'UA-JR-CFTR']);
+    _jaq.push('index');
+
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'rdp.jd.com/resource/ja.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ja, s);
+
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = 'https:' == document.location.protocol ? 'https://static.wangyin.com/member/assets/click.js' : 'http://click.jr.jd.com/wl.dev.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+
+    })();
+</script>
+<script type="text/javascript">
+    var google_tag_params = {
+        dynx_itemid:[''],
+        dynx_prodtype: ["lvyoubaitiao"],
+        dynx_pagetype:["home"],
+        dynx_usertype:['']
+    };
+    var conversion_value =null;
+    dataLayer = [{
+        'google_tag_params': window.google_tag_params,
+        "conversion_value": window.conversion_value
+    }];
+</script>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9HSZR" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<script type="text/javascript">
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W9HSZR');
+</script>
+</body>
+</html>

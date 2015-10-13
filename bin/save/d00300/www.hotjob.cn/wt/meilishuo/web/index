@@ -1,0 +1,944 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+	
+	美丽说招聘官网
+	
+	
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" rel="stylesheet" href="http://tp.hotjob.cn/wt/styles/web/style210/index/common.css?vn=1443398400000" />
+<link type="text/css" rel="stylesheet" href="http://tp.hotjob.cn/wt/styles/web/style210/index/index.css?vn=1443398400000" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+  <link type="text/css" rel="stylesheet" href="http://tp.hotjob.cn/wt/styles/web/style210/theme/red_wine.css?vn=1443398400000"/>
+
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/javascript/jquery/jquery-1.8.2.min.js?vn=1443398400000" ></script>
+<script type="text/javascript">
+	$(function() {
+		
+			$("#topDiv").css("background", "");
+		
+		
+		
+			$("body").css("background", "");
+			$("#middleDiv").css("background", "");
+		
+		
+		
+			$("#bottomDiv").css("background", "");
+		
+		
+		
+			$(".pl_12").css("color", "");
+		
+	})
+</script>
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/javascript/web/templates/p_index.js?vn=1443398400000" ></script>
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/dwr/util.js?vn=1443398400000" ></script>
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/dwr/engine.js?vn=1443398400000" ></script>
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/dwr/interface/pageAjax.js?vn=1443398400000" ></script>
+<script type="text/javascript" src="http://tp.hotjob.cn/wt/dwr/interface/groupPageUserLoginAjax.js?vn=1443398400000" ></script>
+<script type="text/javascript">
+function SlideShow(c) {
+    var a = document.getElementById("slideContainer"),
+		f = document.getElementById("slidesImgs").getElementsByTagName("li"),
+		h = document.getElementById("slideBar"), 
+		n = h.getElementsByTagName("li"), 
+		d = f.length, c = c || 3000, e = lastI = 0, j, m;
+		
+    function b() {
+        m = setInterval(function () {
+            e = e + 1 >= d ? e + 1 - d : e + 1;
+            g();
+        }, c);
+    }
+    function k() {
+        clearInterval(m)
+    }
+    function g() {
+        f[lastI].style.display = "none";
+        n[lastI].className = "";
+        f[e].style.display = "block";
+        n[e].className = "on";
+        lastI = e ;
+    }
+    f[e].style.display = "block";
+    a.onmouseover = k;
+    a.onmouseout = b;
+    h.onmouseover = function (i) {
+        j = i ? i.target : window.event.srcElement;
+		if (j.nodeName === "IMG" ){
+			if( j.attributes["data_index"].nodeValue ){
+			    e = parseInt( j.attributes["data_index"].nodeValue, 10);
+                g();
+			}
+		}else if (j.nodeName === "LI") {
+            //e = parseInt(j.innerHTML, 10) - 1;
+			e = parseInt( j.attributes["data_index"].nodeValue, 10) ;
+            g();
+        }
+    };
+    b();
+};
+
+</script>
+
+</head>
+
+<body>
+<form id="pageform" method="post" action="" onsubmit="return false;">
+<input type="hidden" id="pc.currentPage" name="pc.currentPage" value=""/> 
+<input type="hidden" id="pc.rowSize" name="pc.rowSize" value=""/> 
+<input type="hidden" id="orgId" name="orgId" value=""/> 
+<input type="hidden" id="releaseTime" name="releaseTime" value=""/> 
+<input type="hidden" id="keyWord" name="keyWord" value=""/> 
+<input type="hidden" id="positionType" name="positionType" value=""/> 
+<input type="hidden" id="trademark" name="trademark" value=""/> 
+<input type="hidden" id="workPlace" name="workPlace" value=""/>
+<input type="hidden" id="useForm" name="useForm" value=""/> 
+<input type="hidden" id="positionName" name="positionName" value=""/> 
+<input type="hidden" id="specialRecruitmentId" name="specialRecruitmentId" value=""/> 
+<input type="hidden" id="brandCode" name="brandCode" value="1"/> 
+<input type="hidden" id="searchType" name="searchType" value=""/> 
+<input type="hidden" id="blockType" name="blockType" value=""/> 
+<input type="hidden" id="contentModuleType" name="contentModuleType" value=""/> <!-- css add it  -->
+<input type="hidden" id="tagType" name="tagType" value=""/> <!-- cyxiong add it  -->
+<input type="hidden" id="comType" name="comType" value=""/> <!-- cyxiong add it  -->
+<input type="hidden" id="comPart" name="comPart" value=""/> <!-- cyxiong add it  -->
+<input type="hidden" id="workPlaceNum" name="workPlaceNum" value="5"/>
+<input type="hidden" id="workTypeNum" name="workTypeNum" value="5"/>
+<input type="hidden" id="workCompanyNum" name="workCompanyNum" value="5"/>
+<div class="header clear" id="topDiv">
+	<div class="maxwidth">
+        
+        
+    		
+
+
+
+
+	<a style="height: 86px;" target="_blank" href="http://www.meilishuo.com/?frm=baidupz_shouye" class="logo left"><img height="86"  src="/wt/meilishuo/web/img!viewWebSiteLogo?brandCode=1&urlCorpEdition=null&operational=C10554B40A9913490E6688799F51EE306207AF15D7C0DD5404022F892304A3014C9D2BCC4C40DCCD16CD286CC43AA7F1D7AD682F6168410015BB6FD8E8502CBC7B90D82E67DE1EB1361C0D7477E8F545607CAF17E76F3098088A8089ADA9108D" /></a>
+
+
+<div class="right header_right">
+	  
+	  
+	      <a target="_blank" style="text-decoration:none;" href="http://www.meilishuo.com/?frm=baidupz_shouye" class="right pl_12">进入官网</a>
+	      <span class="right pl_12 light_bar">|</span>
+	  
+      
+      &nbsp;
+      
+      
+      <a style="text-decoration:none;" href="/wt/meilishuo/web/index/entrance210?entrance=login&brandCode=1" class="right pl_12">登录</a>
+      <span class="right pl_12 light_bar">|</span>
+      <a style="text-decoration:none;" href="/wt/meilishuo/web/index/entrance210?entrance=regist&brandCode=1" class="right pl_12">注册</a>
+      
+      &nbsp;
+      
+      
+    </div>
+
+<script type="text/javascript">
+function show(weinxin_div){
+	var bWidth=parseInt(document.documentElement.scrollWidth); //当前窗口的宽度
+	var bHeight=parseInt(document.documentElement.scrollHeight);
+	var black = document.getElementById("full_div");
+	black.style.width=bWidth+"px";
+	black.style.height=bHeight+"px";
+	document.getElementById(weinxin_div).style.display = "block";
+}
+
+function closed(weinxin_div){
+	document.getElementById(weinxin_div).style.display = "none";
+	var black = document.getElementById("full_div");
+	black.style.width="0px";
+	black.style.height="0px";
+}
+</script>
+<div id="full_div">
+</div>
+<div style="width:330px; margin:0 auto;">
+<div id="weinxin_div" style="display: none;position:fixed;">
+  <img width="188px" height="188px" src="/wt/meilishuo/web/index/showWebPic210!showDimensionalCodePic?uniqueKey=1&randomNumber=1163084697&urlCorpEdition=null&operational=C10554B40A9913490E6688799F51EE30239DE608A0272870165D5C78C0E4BF201DBFDED968577017BB7510349B09A214C1B22586B7773CC59B95E8E37A626730344557327A5D6EEB2AD975C55CF955DF1497AF47B30CA28F2EA6CF40BF4EEED061919CEADEF164A1D3E71495A60E2FA411177131131A487E5FFD72A1C334B0D84907D470FAE84AF7D1B96B231B3F06E5"/>
+  <a href="javascript:void(0);" onclick = "closed('weinxin_div')"></a>
+</div>
+</div>
+        
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+	
+	
+		.menus {
+			background:url('/wt/htmlPages/meilishuo/1/menuBgPic.jpg') repeat-x;
+		}
+	
+	
+	
+
+
+	
+	
+		.active_menu2 {
+			background:url('/wt/htmlPages/meilishuo/1/menuFlowPic.jpg') repeat-x;
+		}
+		
+		.menus .active_menu2, .menus ul li a:hover{   /*选中菜单的渐变色*/
+			background:url('/wt/htmlPages/meilishuo/1/menuFlowPic.jpg') repeat-x;
+		}
+	
+
+/*菜单文字颜色*/
+
+	.menus ul li a,menus .active_menu,.menus ul li a:hover{   
+		color:#ffffff;
+	}
+
+
+</style>
+<div class="menus clear">
+	<div class="maxwidth">
+		
+			<ul class="left"><li><a href="http://www.hotjob.cn/wt/meilishuo/web/index?brandCode=1 " class="active_menu2">首页</a></li><li class="ml_5"><a href="http://www.hotjob.cn/wt/meilishuo/web/index/social">社会招聘</a></li><li class="ml_5"><a href="http://www.hotjob.cn/wt/meilishuo/web/index/campus">校园招聘</a></li><li class="ml_5"><a href="http://www.hotjob.cn/wt/meilishuo/web/index/interns">实习生招聘</a></li><li class="ml_5"><a href="http://www.hotjob.cn/wt/meilishuo/web/index/aboutUs?columnId=1134652379">关于我们</a></li></ul>
+		
+		
+	</div>
+</div>
+<!--  banner  star   -->
+<div class="comiis_wrapad" id="slideContainer">
+        <div id="frameHlicAe" class="frame cl">
+            <div class="temp"></div>
+            <div class="block">
+                <div class="cl">
+                    <ul class="slideshow clear" id="slidesImgs">
+                        
+                            
+	                            <li style="display: block;">
+                        	
+                        	
+                                
+                                
+                                    <img src="http://tp.hotjob.cn/wt/htmlPages/meilishuo/picLink/BF59C6F6B6F6DAA636057570CAA104F1.jpg"  alt="" />
+                                
+                            </li>
+                        
+                            
+                        	
+                        		<li >
+                        	
+                                
+                                
+                                    <img src="http://tp.hotjob.cn/wt/htmlPages/meilishuo/picLink/B2A756E3829FCB68050BB50A6882C925.jpg"  alt="" />
+                                
+                            </li>
+                        
+                            
+                        	
+                        		<li >
+                        	
+                                
+                                
+                                    <img src="http://tp.hotjob.cn/wt/htmlPages/meilishuo/picLink/6641FABAF5AD15639F7FC2447A34EFA2.jpg"  alt="" />
+                                
+                            </li>
+                        
+                    </ul>
+                </div>  
+				<!--   焦点图  star  -->
+                <div class="focus"  >
+                    <ul class="slidebar clear" id="slideBar" >
+                        
+                            
+                                <li class="on" data_index="0"></li>
+                            
+                            
+                        
+                            
+                            
+                                <li class="not_on" style="margin-left:4px;" data_index="1"></li>
+                            
+                        
+                            
+                            
+                                <li class="not_on" style="margin-left:4px;" data_index="2"></li>
+                            
+                        
+                    </ul>
+                </div>
+				<!--  焦点图  end   -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        SlideShow(3000);
+    </script>
+<!--  banner  end   -->
+
+<!--   主体内容  star   -->	
+<div class="main clear" id="middleDiv" >
+	<div class="mainheight clear shadow round_corners" >  <!--  主题内容居中 阴影  圆角 -->
+		<!--  动态和mv模块 star -->
+		<!--  如果招聘动态配置为网站栏目且没有配置视频地址，就隐藏此div -->
+		
+		<div class="news_mv_right right clear">
+            <!--  componentNewsTag中若CorpColumnCode==0就返回null -->
+    			<div class="news  left">
+    				<div class="news_title">
+                        
+        					公司动态
+                        
+                        
+    					<a href="/wt/meilishuo/web/index/showNewsColumnInfo210!getNewsFromWeb;jsessionid=B1FDB121E6549EE3ED21DC12637766B6.qt02?newsType=1&amp;brandCode=1&amp;webColumnId=5" class="more right">更多>></a>
+    				</div>
+    			<ul class="news_area left ml_15">
+                    
+                        
+                    <li>
+                                <a href="/wt/meilishuo/web/index/showNewsColumnInfo210!getNewsById;jsessionid=B1FDB121E6549EE3ED21DC12637766B6.qt02?webColumnId=1134355337&amp;brandCode=1">
+                                  <font title="EXO-M代言美丽说广告片首发 App大玩魔力变身">EXO-M代言美丽说广告片首发...</font>
+                                </a>
+                            </li>
+                        
+                    
+                    
+    			</ul>
+    			</div>
+    		
+    		<!--  mv模块 star -->
+    		
+			
+		</div>
+		
+		<!--  动态和mv模块 end  -->
+		<!--  搜索模块 start  -->
+		<div class="search_position_left left">
+            
+
+
+
+
+
+
+<script type="text/javascript">
+function searchPost() {
+    var v_useForm = 0;//用工形式
+    var v_trademark = 0;//品牌
+    var v_kw = "";//关键字
+    var v_pn = "";//职位名称
+    var v_p = "";//地点
+    var v_pt = 0;//职位类型
+    var v_t = 0;//招聘时间
+    var v_recruitType = 0;//招聘类型
+    var lanType = 0;//lanuage
+    var brandCode = "1";//网站品牌
+    var v_cp = "";
+    var v_scp = "";
+    if (null != document.getElementById("useFormV")) {
+        v_useForm = document.getElementById("useFormV").value;//用工形式
+    }
+    if (null != document.getElementById("tradeMarkV")) {
+        v_trademark = document.getElementById("tradeMarkV").value;//品牌
+    }
+    if (null != document.getElementById("keyWordV")) {
+        if (document.getElementById("keyWordV").value != document.getElementById("keyWordV").title) {
+            v_kw = document.getElementById("keyWordV").value;//关键字
+        }
+    }
+    if (null != document.getElementById("positionNameV")) {
+        if (document.getElementById("positionNameV").value != document.getElementById("positionNameV").title) {
+            v_pn = document.getElementById("positionNameV").value;//职位名称
+        }
+    }
+    if (null != document.getElementById("workPlaceNameV")) {
+        if (document.getElementById("workPlaceNameV").value != document.getElementById("workPlaceNameV").title) {
+            v_p = document.getElementById("workPlaceNameV").value;//地点
+        }
+    }
+
+    if (null != document.getElementById("positionTypeV") ) {
+        v_pt = document.getElementById("positionTypeV").value;//职位类型
+    }
+    if (null != document.getElementById("comPartV")) {
+        v_cp = document.getElementById("comPartV").value;//公司部门
+    }
+    if (null != document.getElementById("sicCorpCodeV")) {
+    	v_scp = document.getElementById("sicCorpCodeV").value;//corpCode企业名
+    }
+    if (null != document.getElementById("dateV")) {
+        v_t = document.getElementById("dateV").value;//招聘时间
+    }
+    //v_recruitType = document.getElementById("recruitTypeV").value;//招聘类型
+    v_recruitType = document.getElementById("recruitType").value;//招聘类型
+    if (typeof (v_recruitType) == "undefined") {
+        v_recruitType = 0;
+    }
+    lanType = '';
+    v_pn = encodeURIComponent(v_pn);
+    v_p = encodeURIComponent(v_p);
+    v_kw = encodeURIComponent(v_kw);
+    window.location = "/wt/meilishuo/web/index/webPosition210!getPostListByConditionShowPic?urlCorpEdition=null&operational=C10554B40A9913490E6688799F51EE30239DE608A027287038D73B95AD105EE05373F7BDEDCE01205B349F5841F267893E7A08DBD95D9A57F92C9A85E864EA4536C12B39795BD9EFF6EA8125AA8C82821A9C6EB914A72F2FFBCB3F12F44F03ECBAD2FFD09C6B9E4328E0741CAD4B299B"
+            + "&positionType=" + v_pt
+            + "&comPart=" + v_cp
+            + "&sicCorpCode=" + v_scp
+            + "&brandCode=" + brandCode
+            + "&releaseTime=" + v_t
+            + "&trademark=" + v_trademark
+            + "&useForm=" + v_useForm
+            + "&recruitType=" + v_recruitType
+            + "&lanType=" + lanType
+            + "&positionName=" + encodeURIComponent(v_pn)
+            + "&workPlace=" + encodeURIComponent(v_p)
+            + "&keyWord=" + encodeURIComponent(v_kw)
+            + "&columnId=2";
+}
+
+function postNameOnFocus(obj){
+   obj.value = "";
+}
+
+function postNameOnBulr(obj){
+   if(obj.value==""){
+     obj.value="请输入职位名称";
+   }
+}
+
+function keyWordOnFocus(obj){
+   obj.value = "";
+}
+
+function keyWordOnBlur(obj){
+  if(obj.value==""){
+       obj.value="请输入关键字";
+     }
+}
+
+function chooseWorkPlaceAll(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	//jQuery("#workPlaceNameV").val(0);
+	jQuery("#workPlaceFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function chooseWorkPlace(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery("#workPlaceAll").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	jQuery("#workPlaceNameV").val(jQuery(obj).attr("data-value"));
+	jQuery("#workPlaceFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function choosePostTypeAll(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	//jQuery("#positionTypeV").val(0);
+	jQuery("#postTypeFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function choosePostType(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery("#postTypeAll").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	jQuery("#positionTypeV").val(jQuery(obj).attr("data-value"));
+	jQuery("#postTypeFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function chooseCompanyAll(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	//jQuery("#comPartV").val(0);
+	jQuery("#companyFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function chooseCompany(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery("#companyAll").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	jQuery("#comPartV").val(jQuery(obj).attr("data-value"));
+	jQuery("#companyFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+function chooseCorpCode(obj){
+	jQuery(obj).parent().parent().children("li").attr("class","ml_1");
+	jQuery("#companyAll").attr("class","ml_1");
+	jQuery(obj).parent().attr("class","all ml_1");
+	jQuery("#comPartV").val(0);
+	jQuery("#sicCorpCodeV").val(jQuery(obj).attr("data-value"));
+	jQuery("#companyFirstLI").attr("class","work_place_title");
+	searchPost();
+}
+
+</script>
+
+<script type="text/javascript">
+$(function(){
+	
+	var workPlaceNum=$("#workPlaceNum").val();
+	var workTypeNum=$("#workTypeNum").val();
+	var workCompanyNum=$("#workCompanyNum").val();
+	  var $category=$('ul.work_place_area li:gt('+workPlaceNum+'):not(:last)');
+	  $category.hide();
+	  var $toggleBtn=$("li.showmore > a");
+	  $toggleBtn.click(function(){
+		 if($category.is(":visible")){
+			 $category.hide();
+			 $('.showmore a span').text("更多...");
+		 } else{
+			 $category.show();
+			 $('.showmore a span').text("精简显示");
+			 
+		 }
+	  });
+	  var $categoryType=$('ul.work_type_area li:gt('+workTypeNum+'):not(:last)');
+	  $categoryType.hide();
+	  var $toggleBtnType=$("li.showmoreType > a");
+	  $toggleBtnType.click(function(){
+		 if($categoryType.is(":visible")){
+			 $categoryType.hide();
+			 $('.showmoreType a span').text("更多...");
+		 } else{
+			 $categoryType.show();
+			 $('.showmoreType a span').text("精简显示");
+			 
+		 }
+	  });
+	  
+	  var $categoryCompany=$('ul.work_company_area li:gt('+workCompanyNum+'):not(:last)');
+	  $categoryCompany.hide();
+	  var $toggleBtnCompany=$("li.showmoreCompany > a");
+	  $toggleBtnCompany.click(function(){
+		 if($categoryCompany.is(":visible")){
+			 $categoryCompany.hide();
+			 $('.showmoreCompany a span').text("更多...");
+		 } else{
+			 $categoryCompany.show();
+			 $('.showmoreCompany a span').text("精简显示");
+			 
+		 }
+	  });
+});
+</script>
+<div class="search">
+				<ul class="search_area" style="height:30px;">
+					
+                           <li><div  class="clear index_search">
+                              <div class="index_search_div">职位搜索</div>
+                              <input type="text" id="keyWordV" name="keyWordV" class="search_text left" />
+                              <input type="button" onclick="searchPost()" class="search_button left" />
+                         </div></li>
+	                
+                    <input type="hidden" id="recruitType" name="recruitType" value="2"/>
+				</ul>
+				<ul class="search_condition clear">
+                    
+                        <li class="work_place left">
+                		<ul class="work_place_area left">
+                    		<li id="workPlaceFirstLI" class="work_place_title">工作地点：</li>
+                    		<li id="workPlaceAll" class="all ml_1"><a onclick="chooseWorkPlaceAll(this)" style="text-decoration:none;">全部</a></li>
+                                    <input type="hidden" id="workPlaceNameV" name="workPlaceNameV" value=""/>
+        							
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="chooseWorkPlace(this)" data-value="0/4/7/9">
+                                              <script type="text/javascript">
+                                              var showName = "北京市";
+                                              if(showName.indexOf("市")>0){
+                                            	  showName = showName.replace("市","");
+                                              }
+                                              document.write(showName);
+                                              </script>
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="chooseWorkPlace(this)" data-value="0/4/10/11">
+                                              <script type="text/javascript">
+                                              var showName = "上海市";
+                                              if(showName.indexOf("市")>0){
+                                            	  showName = showName.replace("市","");
+                                              }
+                                              document.write(showName);
+                                              </script>
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="chooseWorkPlace(this)" data-value="0/4/204/207">
+                                              <script type="text/javascript">
+                                              var showName = "杭州市";
+                                              if(showName.indexOf("市")>0){
+                                            	  showName = showName.replace("市","");
+                                              }
+                                              document.write(showName);
+                                              </script>
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="chooseWorkPlace(this)" data-value="0/4/396/397">
+                                              <script type="text/javascript">
+                                              var showName = "广州市";
+                                              if(showName.indexOf("市")>0){
+                                            	  showName = showName.replace("市","");
+                                              }
+                                              document.write(showName);
+                                              </script>
+                                          </a>
+                                      </li>
+                                    
+        							<li class="showmore"><a href="javascript:viod(0)" ><span >更多...</span></a></li>
+                		</ul>
+                        </li>
+                    
+                    
+                    <li class="work_type left">
+                		<ul class="work_type_area left">
+                			<li id="postTypeFirstLI" class="work_type_title">职位类别：</li>
+                			<li id="postTypeAll" class="all ml_1"><a onclick="choosePostTypeAll(this)" style="text-decoration:none;">全部</a></li>
+                                    <input type="hidden" id="positionTypeV" name="positionTypeV"/>
+        							
+        							
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/10002">
+                                              技术类
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/37850530">
+                                              产品开发类
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/37850532">
+                                              市场/综合职能类
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/1154798649">
+                                              设计类
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/1154798599">
+                                              运营类
+                                          </a>
+                                      </li>
+                                    
+                                      <li class="ml_1" >
+                                          <a style="text-decoration:none;" onclick="choosePostType(this)" data-value="0/1227/1154798547">
+                                              供应链类
+                                          </a>
+                                      </li>
+                                    
+        							<li class="showmoreType"><a href="javascript:viod(0)" ><span >更多...</span></a></li>
+                		</ul>
+                    </li>
+                    
+                    
+				</ul>
+			</div>
+            
+
+			<!--  搜索模块 end  --> 
+            
+            <div style="margin-top:20px;margin-bottom: 10px;" class="clear">
+                <div class="clear">
+                    <ul class="contitle">
+                      <li><span class="titleline"></span></li>
+                      <li>
+                        <h3 title="热招职位">
+                            <script type="text/javascript">
+                            	var postTitle = "热招职位";
+                            	if(postTitle.length>4){
+                            		postTitle = postTitle.substring(0, 4);
+                            	}
+                            	document.write(postTitle);
+                            </script>
+                        </h3>
+                      </li>
+                    </ul>
+                    <div id="consubnav" class="consubnav">
+                      <ul>
+                        
+                            
+                              <li><a class="consubnav_on" href="javascript:void(0);" data-type="1" >职位类别</a></li>
+                            
+                        
+                            
+                              <li><a  href="javascript:void(0);" data-type="2" >技术类</a></li>
+                            
+                        
+                            
+                              <li><a  href="javascript:void(0);" data-type="3" >产品开发类</a></li>
+                            
+                        
+                            
+                              <li><a  href="javascript:void(0);" data-type="4" >市场/运营类</a></li>
+                            
+                        
+                            
+                              <li><a  href="javascript:void(0);" data-type="5" >设计类</a></li>
+                            
+                        
+                      </ul>
+                      <span class="morespace"><a class="more" href="/wt/meilishuo/web/index/webPosition210!getPositionListByCorpAndWebColumnShowPic?postIdEnc=&brandCode=1&recruitType=2&lanType=1&columnId=2">更多>></a></span>
+                    </div>
+                  </div>
+                  
+                    
+                      <ul id="consubtable_1" class="joblist clear"   >
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=C13D0D33B0495AC272EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="女装类目运营" >女装类目运营</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=CF41E5BFC5F68546F816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="电商平台招商经理" >电商平台招商经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=6DDE9D0E24307A87AC33796963D90F2D&brandCode=1&recruitType=2&lanType=1&columnId=2" title="时尚运营达人主管" >时尚运营达人主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=960FB5A45FC3EFD786A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="视觉设计师/电商设计师" >视觉设计师/电商设计师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=AE07F656915405210B861EE66D2667D5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="样衣工" >样衣工</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB616B5D9999F8E0EC&brandCode=1&recruitType=2&lanType=1&columnId=2" title="清结算专员" >清结算专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBFB29788F92A7F116&brandCode=1&recruitType=2&lanType=1&columnId=2" title="出纳" >出纳</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB6F75920C083DC3C5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="总账经理/高级经理" >总账经理/高级经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB5D1240EDAB5C6EA9&brandCode=1&recruitType=2&lanType=1&columnId=2" title="高级反作弊专员" >高级反作弊专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=34DE79EB32AC2185AC33796963D90F2D&brandCode=1&recruitType=2&lanType=1&columnId=2" title="客服经理（在线客服）" >客服经理（在线客服）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=1F41FFEFC3CA769886A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="法务主管" >法务主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B873A4A6E7BB126F079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="数据运营（商家）" >数据运营（商家）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B873A4A6E7BB126FCD9200FA4D0CA727&brandCode=1&recruitType=2&lanType=1&columnId=2" title="商业培训经理" >商业培训经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=42B3D94BDEED25C686A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="广告业务端产品经理" >广告业务端产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=5E5937992E0157FE72EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="电商商业产品架构师/高级经理" >电商商业产品架构师/高级经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=5E5937992E0157FEF816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="商业数据洞察产品经理" >商业数据洞察产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B41F6B56D89D4D59079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="流量策略产品经理" >流量策略产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B41F6B56D89D4D59CD9200FA4D0CA727&brandCode=1&recruitType=2&lanType=1&columnId=2" title="类目/店铺运营（广告咨询）" >类目/店铺运营（广告咨询）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B41F6B56D89D4D5986A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="资深APP设计师/资深UI设计师" >资深APP设计师/资深UI设计师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=243D68EFDBB2218F72EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="资深视觉设计师/资深平面设计师" >资深视觉设计师/资深平面设计师</a></li>
+                        
+                      </ul>
+                    
+                      <ul id="consubtable_2" class="joblist clear" style="display:none;"  >
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=3365F3B28ACA2367D81D0CD878BAC807&brandCode=1&recruitType=2&lanType=1&columnId=2" title="后端技术负责人" >后端技术负责人</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=426995940C02F4DD0050B1807BE54BFC&brandCode=1&recruitType=2&lanType=1&columnId=2" title="算法设计/数据挖掘工程师" >算法设计/数据挖掘工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=3094CA3DFD4EB715EC5871B9F5467002&brandCode=1&recruitType=2&lanType=1&columnId=2" title="架构高级工程师 " >架构高级工程师 </a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=04EC12C3551A985A0B861EE66D2667D5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="Web研发工程师" >Web研发工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=0B54D42A7BDFC06172EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="数据仓库工程师" >数据仓库工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=99C85BE1498B720DEC5871B9F5467002&brandCode=1&recruitType=2&lanType=1&columnId=2" title="java工程师" >java工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=D427407F9D6B1C8C079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="iOS高级开发工程师" >iOS高级开发工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=55AAC86926B9E9BCD81D0CD878BAC807&brandCode=1&recruitType=2&lanType=1&columnId=2" title="存储系统高级研发工程师" >存储系统高级研发工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=54F3C704EF39391E5A573C7754F66C1A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="PHP高级工程师（客户端）" >PHP高级工程师（客户端）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=647906AB5F97F6C4CD9200FA4D0CA727&brandCode=1&recruitType=2&lanType=1&columnId=2" title="运维高级工程师" >运维高级工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=DF6BD9709BE794CAF816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="数据分析工程师" >数据分析工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=146FAF94AA5D366E86A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="数据开发工程师" >数据开发工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=5631713A1EC6FE315A573C7754F66C1A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="PHP工程师" >PHP工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBD0AE7A9BA5A5CBDC&brandCode=1&recruitType=2&lanType=1&columnId=2" title="高级PHP工程师" >高级PHP工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=699C15FCA1F3616486A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="广告系统工程师" >广告系统工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=C61AAE8EC7FC4F86F816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="高级前端开发工程师" >高级前端开发工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=C61AAE8EC7FC4F86079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="测试工程师" >测试工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=C73EB8DA515AFDA0F816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="PHP工程师" >PHP工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=592707F0AEADAF82079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="web前端高级工程师" >web前端高级工程师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=338FB8AC78AC490572EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="java支付高级工程师" >java支付高级工程师</a></li>
+                        
+                      </ul>
+                    
+                      <ul id="consubtable_3" class="joblist clear" style="display:none;"  >
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=1F37FE98E8A53BB2CD9200FA4D0CA727&brandCode=1&recruitType=2&lanType=1&columnId=2" title="中/高级产品经理（for PC）" >中/高级产品经理（for PC）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=1B5B3B362ED6787786A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="资深产品经理 （for PC）" >资深产品经理 （for PC）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=186484FDE2110CB90B861EE66D2667D5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="用户研究员（中级/高级）" >用户研究员（中级/高级）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=C9C85CA9411F81D70B861EE66D2667D5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="产品副总监（社区向）" >产品副总监（社区向）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=9FEF7ECF3745E2B15A573C7754F66C1A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="产品副总监（供应链订制项目）" >产品副总监（供应链订制项目）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=985CEC8A198BBDCA86A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="产品副总监" >产品副总监</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=83598409D698B03586A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="后台产品经理" >后台产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=BB6BAE6C3C6C3BFCEC5871B9F5467002&brandCode=1&recruitType=2&lanType=1&columnId=2" title="在线交易产品经理" >在线交易产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=3E62443C1FA2A92B079AB693104863C8&brandCode=1&recruitType=2&lanType=1&columnId=2" title="支付高级产品经理" >支付高级产品经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=5857B638821A8DC4D81D0CD878BAC807&brandCode=1&recruitType=2&lanType=1&columnId=2" title="促销高级产品经理" >促销高级产品经理</a></li>
+                        
+                      </ul>
+                    
+                      <ul id="consubtable_4" class="joblist clear" style="display:none;"  >
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=6DDE9D0E24307A87AC33796963D90F2D&brandCode=1&recruitType=2&lanType=1&columnId=2" title="时尚运营达人主管" >时尚运营达人主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB616B5D9999F8E0EC&brandCode=1&recruitType=2&lanType=1&columnId=2" title="清结算专员" >清结算专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBFB29788F92A7F116&brandCode=1&recruitType=2&lanType=1&columnId=2" title="出纳" >出纳</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB6F75920C083DC3C5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="总账经理/高级经理" >总账经理/高级经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB5D1240EDAB5C6EA9&brandCode=1&recruitType=2&lanType=1&columnId=2" title="高级反作弊专员" >高级反作弊专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=34DE79EB32AC2185AC33796963D90F2D&brandCode=1&recruitType=2&lanType=1&columnId=2" title="客服经理（在线客服）" >客服经理（在线客服）</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=1F41FFEFC3CA769886A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="法务主管" >法务主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=2530B05E70471A5524353FC1DE011F34&brandCode=1&recruitType=2&lanType=1&columnId=2" title="高级活动运营专员" >高级活动运营专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=2530B05E70471A55EAAB923FF9862200&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动营销专员" >活动营销专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=2530B05E70471A55B8CC87410FBD83C3&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动策划经理" >活动策划经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=0FD853D1539DDCA8F816AAD3D0DF3E42&brandCode=1&recruitType=2&lanType=1&columnId=2" title="营销总监" >营销总监</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=4072908C6F5221F9EC5871B9F5467002&brandCode=1&recruitType=2&lanType=1&columnId=2" title="营销活动策划高级经理/副总监/总监" >营销活动策划高级经理/副总监/总监</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB9FF64BFBFD6D5989&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动营销主管" >活动营销主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBD5A399FB53270DBA&brandCode=1&recruitType=2&lanType=1&columnId=2" title="会员营销经理" >会员营销经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB71D13046C5EAAA20&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动策划" >活动策划</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBCC8214AC4DB611B5&brandCode=1&recruitType=2&lanType=1&columnId=2" title="商服专员" >商服专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EB26733E9089984878&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动运营主管" >活动运营主管</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=75F048C50EE563EBEDC123568C4A3AC7&brandCode=1&recruitType=2&lanType=1&columnId=2" title="活动运营专员" >活动运营专员</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=2530B05E70471A55616B5D9999F8E0EC&brandCode=1&recruitType=2&lanType=1&columnId=2" title="招商经理" >招商经理</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=2530B05E70471A55DDDB74B16D07F232&brandCode=1&recruitType=2&lanType=1&columnId=2" title="培训经理" >培训经理</a></li>
+                        
+                      </ul>
+                    
+                      <ul id="consubtable_5" class="joblist clear" style="display:none;"  >
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=960FB5A45FC3EFD786A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="视觉设计师/电商设计师" >视觉设计师/电商设计师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=B41F6B56D89D4D5986A9D114ABFBE654&brandCode=1&recruitType=2&lanType=1&columnId=2" title="资深APP设计师/资深UI设计师" >资深APP设计师/资深UI设计师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=243D68EFDBB2218F72EEA80B78D4F01A&brandCode=1&recruitType=2&lanType=1&columnId=2" title="资深视觉设计师/资深平面设计师" >资深视觉设计师/资深平面设计师</a></li>
+                        
+                          <li><a class="ellipsis" href="/wt/meilishuo/web/index/webPosition210!getOnePosition?postIdEnc=13B875334BFC711BCD9200FA4D0CA727&brandCode=1&recruitType=2&lanType=1&columnId=2" title="UI设计" >UI设计</a></li>
+                        
+                      </ul>
+                    
+                  
+                  
+              </div>
+		</div>
+	</div>
+</div>
+<!--  主体内容 end   -->
+<div id="bottomDiv">
+
+
+<!--子公司 logo  start -->
+
+
+	
+
+
+
+
+<link type="text/css" rel="stylesheet" href="http://tp.hotjob.cn/wt/styles/web/style210/footer.css?vn=1443398400000" />
+
+<div class="footer">
+  <span class="maxwidth"><p style="text-align:center"><span style="font-family:微软雅黑,sans-serif; font-size:8pt">版权所有 美丽说(北京)网络科技有限公司 powered by <a href="http://www.wintalent.com" target="_blank"><span style="color:blue">wintalent</span></a> </span></p></span>
+</div>
+
+</div>
+</form>
+</body>
+
+</html>

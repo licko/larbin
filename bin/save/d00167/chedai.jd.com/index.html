@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! " />
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/" />
+    <title>汽车金融 - 京东金融</title>
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css" />
+    <script>
+        window.jrBase = {
+            navId: 'nav-baitiao',
+            navSubId: 'nav-qiche',
+            // 侧边工具栏
+            sidebar: true,
+            // 问卷反馈url id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=100'
+        };
+    </script>
+    <script type="text/javascript">
+        var APIURL = 'http://api.chedai.bitauto.com/';
+        var RESURL = 'http://jd.bitautoimg.com/chedai/web/';
+        var JDLoanApplyUrl = "http://chedai.jd.com/apply/carLoanApply/init";
+    </script>
+    
+    <link rel="stylesheet" href="http://jd.bitautoimg.com/chedai/web/css/yicheSug.css?v=2015030315483" />
+    <link rel="stylesheet" href="http://jd.bitautoimg.com/chedai/web/css/index.css?v=2015030315483" />
+    <script type="text/javascript" src="http://jd.bitautoimg.com/chedai/web/scripts/jquery-1.8.2.min.js?v=2015030315483"></script>
+    <script type="text/javascript" src="http://jd.bitautoimg.com/chedai/web/scripts/knockout-3.2.0.js?v=2015030315483"></script>
+    <script type="text/javascript" src="http://jd.bitautoimg.com/chedai/web/scripts/yicheSug.js?v=2015030315483"></script>
+    <script type="text/javascript" src="http://jd.bitautoimg.com/chedai/web/scripts/index.js?v=2015030315483"></script>
+
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <!--topbar-->
+        <div class="topbar" id="topbar">
+            <div class="grid-1200 topbar-wrap clearfix">
+                <div class="topbar-left">
+                    <ul class="toplink">
+                        <li class="toplink-link">
+                            <i class="icon icon-home"></i>
+                            <a target="_blank" href="http://www.jd.com/">京东首页</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul class="topmenu fl">
+                        <li class="topmenu-item topmenu-userinfo">
+                            <span id="loginbar"></span>
+                        </li>
+                        <li class="topmenu-item">
+                            <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>
+                        </li>
+                        <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">
+                            <i class="drop-arrow"></i>
+                            <b class="topmenu-app-ico"></b>
+                            <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>
+                            <div class="dropbox clearfix">
+                                <div class="fl">
+                                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-04.jpg" alt="">
+                                </div>
+                                <div class="fr">
+                                    <span class="topmenu-app-tip">下载金融客户端</span>
+                                    <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>
+                                    <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">
+                            <i class="drop-arrow"></i>
+                            <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>
+                            <ul class="dropbox">
+                                <li>
+                                    <a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>
+                                </li>
+                                <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>
+                            </ul>
+                        </li>
+                        <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">
+                            <i class="drop-arrow"></i>
+                            <a href="javascript:;" class="topmenu-sitemap">网站导航</a>
+                            <ul class="dropbox">
+                                <li>
+                                    <a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>
+                                </li>
+                                <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>
+                                <li><a href="http://sq.jd.com/X3dvw1" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">京东钱包</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="toplink fl">
+                        <li class="toplink-item toplink-title">&nbsp;</li>
+                        <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">
+                            <i class="icon icon-weixin"></i>
+                            <ul class="dropbox dropbox-weixin">
+                                <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融" /><h6>京东金融</h6></li>
+                            </ul>
+                        </li>
+                        <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">
+                            <i class="icon icon-weibo"></i>
+                            <ul class="dropbox dropbox-weibo">
+                                <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博" /></li>
+                                <li>
+                                    <div class="pub-btn btn-style-0">
+                                        <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png" />京东金融</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--topbar end-->
+        <!--main-nav-->
+        <div class="main-nav">
+            <div class="grid-1200 nav-wrap pr clearfix">
+                <div class="main-nav-logo fl">
+                    <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">
+                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">
+                    </a>
+                </div>
+
+                <div class="nav fl">
+                    <ul class="nav-box fl clearfix" id="navBox">
+                        <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>
+                        <li id="nav-licai" class="nav-item">
+                            <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>
+                            <ul class="dropbox">
+                                <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>
+                                <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>
+                                <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>
+                                <li><a href="http://licai.bx.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>
+                                <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>
+                                <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-zhongchou" class="nav-item">
+                            <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>
+                            <ul class="dropbox">
+                                <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>
+                                <li><a href="http://ec.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">股权众筹</a></li>
+                                <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-baoxian" class="nav-item"><a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a></li>
+                        <li id="nav-baitiao" class="nav-item">
+                            <a class="nav-item-primary" href="http://baitiao.jd.com/activity/third" clstag="jr|keycount|jr_shouye|bt">白条</a>
+                            <ul class="dropbox">
+                                <li><a href="http://baitiao.jd.com/activity/third" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>
+                                <li><a href="http://baitiao.jd.com/activity/studentfenqi" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li>
+                                <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>
+                                <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">租房白条+</a></li>
+                                <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">钢镚</a></li>
+                                <li><a href="http://chedai.jd.com" clstag="jr|keycount|jr_shouye|qiche">汽车金融</a></li>
+                                <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                               
+                            </ul>
+                        </li>
+                        <li id="nav-loan" class="nav-item">
+                            <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>
+                            <ul class="dropbox">
+                                <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>
+                                <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>
+                                <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>
+                                <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-caimi" class="nav-item">
+                            <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-nav-userInfoWrap fr">
+                    <div id="userInfo" class="main-nav-userinfo">
+                        <div class="main-nav-userimg">
+                            <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>
+                            <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />
+                            <span></span>
+                        </div>
+                        <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>
+                        <ul>
+                            <li>
+                                <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">
+                                    <span class="fl">资产总览</span>
+                                    <span class="ajaxData fr" data-name="jRTotal"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://trade.jr.jd.com/centre/jrbincome.action"
+                                   clstag="jr|keycount|jr_shouye|myxjk">
+                                    <span class="fl">我的小金库</span>
+                                    <span class="ajaxData fr" data-name="jRBAccount"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://trade.jr.jd.com/centre/financing.action"
+                                   clstag="jr|keycount|jr_shouye|mylc">
+                                    <span class="fl">我的理财</span>
+                                    <span class="ajaxData fr" data-name="jJAccount"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">
+                                    <span class="fl">我的众筹</span>
+                                    <span class="fr"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://trade.jr.jd.com/trade/tradebuy.action">
+                                    <span class="fl">我的交易单</span>
+                                    <span class="fr"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main-nav end-->
+        <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->
+        <div class="grid-1200 sub-nav-wrap">            
+        <a id="nav-baitiao" class="sub-nav-item" href="http://baitiao.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdbt">京东白条</a>
+        <a id="nav-gangbeng" class="sub-nav-item" href="http://bk.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|btlmk">白条联名卡</a>             
+        <a id="nav-gangbeng" class="sub-nav-item" href="http://gb.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|gb">京东钢镚</a>            
+        <a id="nav-travelBaitiao" class="sub-nav-item" href="http://go.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|lybt">旅游白条+</a>            
+        <a id="nav-houseBaitiao" class="sub-nav-item" href="http://fang.jd.com" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|ajbt">安居白条+</a>  
+        <a id="nav-studentFenQi" class="sub-nav-item" href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|xybt">校园白条</a>
+        <a id="nav-qiche" class="sub-nav-item" href="http://chedai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|qcjr">汽车金融</a>            
+        <a id="nav-jincai" class="sub-nav-item" href="http://jincai.jd.com/" clstag="jr|keycount|jrbt_baitiaozhuyetoubudaohang|jdjc">京东金采</a>        
+        </div>
+        <!--sub-nav-end-->
+
+    </div>
+
+    <script type="text/javascript">
+    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();
+    </script>
+    <!--header end-->
+    <!--container 项目 主体内容 页面宽度标准为 1200px -->
+<div class="container">
+    
+
+
+
+
+
+<!-- home-banner -->
+<div class="home-banner pr">
+    <div class="scroll-alpha-layer" id="homeBanner">
+        <ul class="pic-layer">
+            <li class="current" style="display: list-item; opacity: 1; ">
+            </li>
+        </ul>
+    </div>
+
+    <div class="focus-layer">
+        <div class="focus-layer-bg"></div>
+        <div class="focus-layer-wrap">
+            <div class="focus-layer-l">
+                <p class="total-num">贷款总额 <span class="num-txt" >&yen; 9,900,018,076</span>元，<span class="num-txt" > 14,682</span> 人正在申请</p>
+                <div class="search_con">
+                    <a href="javascript:void(0);" class="search_area">请选择心仪车型</a>
+                    <a href="javascript:void(0);" class="search_btn">获取贷款</a>
+
+                    <input style="color: #fff; background: #fff; width: 0; height: 0; border: 0;" class="chexing_txt" value="" id="sug_txtkeyword" type="text" name="wd" autocomplete="off" />
+                    <div class="brand_bg" id="master-index" style="display: none;"></div>
+                    <div class="brand_bg  models_bg " id="serial-index" style="display: none;"></div>
+                    <div id="sug_container" style="display: none;"></div>
+                    <input type="hidden" name="t" value="qiche">
+                    <input type="hidden" id="sugcsurl" name="sugcsurl" value="">
+                    <input type="hidden" id="csid" name="sugcsurl" value="">
+                    <input type="hidden" id="MasterName" value="">
+                </div>
+            </div>
+            <div class="focus-layer-r"> 
+                <a href="/order/myorder" target="_blank">
+                    <img  src="http://jd.bitautoimg.com/chedai/web/images/avatar-order.png?v=2015030315483" alt="" /> 我的订单
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- home-banner end-->
+
+<div class="w">
+
+    <!-- 贷款流程 start -->
+    <div class="flow-loan">
+        <ul>
+            <li class="flow-loan-1">
+                <h4>挑选爱车</h4>
+                <p>一分钟审批</p>
+            </li>
+            <li class="flow-loan-2">
+                <h4>电话回访</h4>
+                <p>上门服务</p>
+            </li>
+            <li class="flow-loan-3">
+                <h4>贷款审批</h4>
+                <p>批复贷款</p>
+            </li>
+            <li class="flow-loan-4">
+                <h4>获取贷款</h4>
+                <p>线下提车</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 贷款流程 end -->
+    <!-- 热门车型 start -->
+    <div class="floor floor-type clearfix">
+        <div class="floor-side">
+            <div class="fs-tit">
+                <h2>热门车型</h2>
+                <p>贷款买车差额理财</p>
+            </div>
+            <div class="fs-tab">
+                <ul>
+                    <li class="cur"><a href="#bztj" target="_blank">本周推荐</a></li>
+                    <li><a href="#rmcx" target="_blank">热门畅销</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="floor-cont">
+            <div class="fc-bd">
+
+                <!--fs-tab-cont 1 start-->
+                <div class="fs-tab-cont" id="bztj">
+
+                    <ul class="fc-bd-recom">
+                                <li>
+                                    <a href="http://chedai.jd.com/Home/detail?productId=80426&amp;carId=112890&amp;carPrice=9.98&amp;c=&amp;s=&amp;&amp;from=jd2" target="_blank">
+                                        <div class="pr">
+                                            <h4>哈弗H6 <i class="tag">限时特惠</i></h4>
+                                            <p>通用金融</p>
+                                            <p class="highlight">
+                                                <span data-bind="">2482</span>元/月
+                                            </p>
+                                        </div>
+                                        <img src="http://img3.bitautoimg.com/autoalbum/files/20150608/029/0622000295_6.jpg"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://chedai.jd.com/Home/detail?productId=70736&amp;carId=116030&amp;carPrice=16.98&amp;c=&amp;s=&amp;&amp;from=jd2" target="_blank">
+                                        <div class="pr">
+                                            <h4>Yeti <i class="tag">超低月供</i></h4>
+                                            <p>平台自营</p>
+                                            <p class="highlight">
+                                                <span data-bind="">2500</span>元/月
+                                            </p>
+                                        </div>
+                                        <img src="http://img2.bitautoimg.com/autoalbum/files/20150810/617/0234196172_6.jpg"/>
+                                    </a>
+                                </li>
+                    
+                    </ul>
+
+                    <ul class="fc-bd-hot">
+                            <li>
+                                <a href="/home/list?SerialId=1991&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>凯美瑞</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">3906元</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img1.bitautoimg.com/autoalbum/files/20150113/262/0416152621_6.jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/home/list?SerialId=1660&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>本田CR-V</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">4012元</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img2.bitautoimg.com/autoalbum/files/20150707/741/0544597417_6.jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/home/list?SerialId=3877&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>名爵锐腾</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">2530元</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img2.bitautoimg.com/autoalbum/files/20141230/479/0441094796_6.jpg" />
+                                </a>
+                            </li>
+                    </ul>
+
+                </div>
+                <!--fs-tab-cont 1 end-->
+                
+                <!--fs-tab-cont 2 start-->
+                <div class="fs-tab-cont" id="rmcx">
+
+                    <ul class="fc-bd-recom">
+                                    <li>
+                                        <a href="http://chedai.jd.com/Home/detail?productId=70833&amp;carId=111532&amp;carPrice=29.1&amp;c=&amp;s=&amp;=&amp;&amp;from=jd2" target="_blank">
+                                            <div class="pr">
+                                                <h4>奥迪A4L <i class="tag">0首付</i></h4>
+                                                <p>平台自营</p>
+                                                <p class="highlight">
+                                                    <span data-bind="">8083</span>元/月
+                                                </p>
+                                            </div>
+                                            <img src="http://img4.bitautoimg.com/autoalbum/files/20120809/713/0406027131_6.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://chedai.jd.com/Home/detail?productId=73549&amp;carId=116026&amp;carPrice=12.98&amp;c=&amp;s=&amp;&amp;from=jd2" target="_blank">
+                                            <div class="pr">
+                                                <h4>Yeti <i class="tag">限时促销</i></h4>
+                                                <p>上汽财务低利率</p>
+                                                <p class="highlight">
+                                                    <span data-bind="">3069</span>元/月
+                                                </p>
+                                            </div>
+                                            <img src="http://img2.bitautoimg.com/autoalbum/files/20150810/617/0234196172_6.jpg" />
+                                        </a>
+                                    </li>
+
+  
+                    </ul>
+
+                    <ul class="fc-bd-hot">
+                            <li>
+                                <a href="/home/list?SerialId=3379&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>昂科威ENVISION</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">5282元</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img4.bitautoimg.com/autoalbum/files/20140829/188/1153061885_6.jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/home/list?SerialId=2412&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>宝马5系</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">1.06万</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img2.bitautoimg.com/autoalbum/files/20141029/894/0516158949_6.jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/home/list?SerialId=2370&from=jd3&c=&s=" target="_blank">
+                                    <div class="pr">
+                                        <h4>朗逸</h4>
+                                        <p>月供 <span class="highlight"><em data-bind="">2577元</em> 起</span></p>
+                                    </div>
+                                    <img src="http://img3.bitautoimg.com/autoalbum/files/20150727/515/1138085155_6.jpg" />
+                                </a>
+                            </li>
+                    </ul>
+
+                </div>
+                <!--fs-tab-cont 1 end-->
+            </div>
+        </div>
+    </div>
+    <!-- 热门车型 end -->
+    <!-- 推荐金融 start -->
+    <div class="floor floor-finance clearfix">
+        <div class="floor-side">
+            <div class="fs-tit">
+                <h2>推荐金融</h2>
+                <p>轻松购车0压力</p>
+            </div>
+            <div class="fs-tab">
+                <ul>
+                    <li class="cur"><a href="#rqdk" target="_blank">人气贷款</a></li>
+                    <li><a href="#0ll" target="_blank">零利率</a></li>
+                    <li><a href="#0sf" target="_blank">零首付</a></li>
+                    <li><a href="#0yg" target="_blank">零月供</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="floor-cont">
+            <div class="fc-bd">
+                    <div class="fs-tab-cont" id="rqdk">
+                        <ul class="fc-bd-jr">
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/a2ed7637-a687-42e1-9b3b-7b56fb18e0d0.png" /><h4>平台自营</h4>
+                                            <em data-bind="">大圣一证贷</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>标致308S</h3>
+                                            <p>已有 104200 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>3.74万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2936元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">1.84万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_24" title="低利率">低利率</span>
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_257" title="无手续费">无手续费</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=77302&amp;carId=113745&amp;carPrice=12.47&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/ddffb1f8-b35d-4e56-944c-83a35d499931.jpg" /><h4>通用金融</h4>
+                                            <em data-bind="">等额本息</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>英朗</h3>
+                                            <p>已有 2966 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>2.20万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2808元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">1.32万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_33" title="免担保">免担保</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=80361&amp;carId=114018&amp;carPrice=10.99&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/12de3cc3-bb2f-4040-bb4e-ea2aaa840900.jpg" /><h4>上汽财务</h4>
+                                            <em data-bind="">3年期低利率</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>名爵锐腾</h3>
+                                            <p>已有 2710 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>3.59万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2473元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.53万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_1" title="贴息">贴息</span>
+                                                        <span class="icon_24" title="低利率">低利率</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=73739&amp;carId=114401&amp;carPrice=11.97&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="fs-tab-cont" id="0ll">
+                        <ul class="fc-bd-jr">
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/12de3cc3-bb2f-4040-bb4e-ea2aaa840900.jpg" /><h4>上汽财务</h4>
+                                            <em data-bind="">2年期0利率</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>晶锐</h3>
+                                            <p>已有 3952 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>2.40万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2330元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_1" title="贴息">贴息</span>
+                                                        <span class="icon_23" title="零利率">零利率</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=73870&amp;carId=114807&amp;carPrice=7.99&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/ddffb1f8-b35d-4e56-944c-83a35d499931.jpg" /><h4>通用金融</h4>
+                                            <em data-bind="">SRX等额本息</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>凯迪拉克SRX(进口)</h3>
+                                            <p>已有 1088 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>15.99万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2.00万</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_1" title="贴息">贴息</span>
+                                                        <span class="icon_23" title="零利率">零利率</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=52058&amp;carId=113755&amp;carPrice=39.98&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/12de3cc3-bb2f-4040-bb4e-ea2aaa840900.jpg" /><h4>上汽财务</h4>
+                                            <em data-bind="">2年期0利率</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>荣威350</h3>
+                                            <p>已有 3952 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>2.99万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2908元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_1" title="贴息">贴息</span>
+                                                        <span class="icon_23" title="零利率">零利率</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=73870&amp;carId=115475&amp;carPrice=9.97&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="fs-tab-cont" id="0sf">
+                        <ul class="fc-bd-jr">
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/a2ed7637-a687-42e1-9b3b-7b56fb18e0d0.png" /><h4>平台自营</h4>
+                                            <em data-bind="">猴王平衡贷</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>天语SX4两厢</h3>
+                                            <p>已有 4583 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>0.00万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>2657元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">1.38万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=70968&amp;carId=115462&amp;carPrice=8.18&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/a2ed7637-a687-42e1-9b3b-7b56fb18e0d0.png" /><h4>平台自营</h4>
+                                            <em data-bind="">猴王0首付</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>马自达CX-5</h3>
+                                            <p>已有 55755 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>0.00万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>5106元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">2.37万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_24" title="低利率">低利率</span>
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=70833&amp;carId=115411&amp;carPrice=18.38&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/a2ed7637-a687-42e1-9b3b-7b56fb18e0d0.png" /><h4>平台自营</h4>
+                                            <em data-bind="">猴王低息贷</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>翼虎</h3>
+                                            <p>已有 21599 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>0.00万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>5383元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">2.11万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_24" title="低利率">低利率</span>
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=71042&amp;carId=113445&amp;carPrice=19.38&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="fs-tab-cont" id="0yg">
+                        <ul class="fc-bd-jr">
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/ddffb1f8-b35d-4e56-944c-83a35d499931.jpg" /><h4>通用金融</h4>
+                                            <em data-bind="">5050促销</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>科鲁兹三厢</h3>
+                                            <p>已有 1288 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>5.50万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>0元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_33" title="免担保">免担保</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=80365&amp;carId=115732&amp;carPrice=10.99&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/ddffb1f8-b35d-4e56-944c-83a35d499931.jpg" /><h4>通用金融</h4>
+                                            <em data-bind="">5050促销</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>赛欧3</h3>
+                                            <p>已有 1288 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>3.00万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>0元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_33" title="免担保">免担保</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=80365&amp;carId=113303&amp;carPrice=5.99&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="recom-jr">
+                                        <div class="rj-hd">
+                                            <img src="http://img1.bitautoimg.com/chedai/ddffb1f8-b35d-4e56-944c-83a35d499931.jpg" /><h4>通用金融</h4>
+                                            <em data-bind="">5050促销</em>
+                                        </div>
+                                        <div class="rj-bd">
+                                            <h3>昂科雷(进口)</h3>
+                                            <p>已有 1288 人申请</p>
+                                            <div class="rj-col-3 clearfix">
+                                                <p>
+                                                    <span>首付</span><b>25.45万</b>
+                                                </p>
+                                                <p>
+                                                    <span>月供</span><b>0元</b>
+                                                </p>
+                                                <p>
+                                                    <span>总成本</span><b class="f16">0.00万</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="rj-ft">
+                                            <div class="icons">
+                                                        <span class="icon_26" title="极速审批">极速审批</span>
+                                                        <span class="icon_27" title="资料简便">资料简便</span>
+                                                        <span class="icon_33" title="免担保">免担保</span>
+                                                        <span class="icon_34" title="免家访">免家访</span>
+                                            </div>
+
+                                            <div class="rj-ft-btn">
+                                                <span class="btn-red btn-red-grad btn-130-30">
+                                                    <a href="http://chedai.jd.com/Home/detail?productId=80365&amp;carId=110714&amp;carPrice=50.9&amp;c=&amp;s=&amp;&amp;from=jd4" target="_blank">查看详情</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- 推荐金融 end -->
+<!-- 最近申请 start -->
+
+    <div class="line-box">
+        <div class="title-box">
+            <h3>最近申请</h3>
+        </div>
+            <div class="recent-box">
+        <table>
+                    <tr>
+                        <td>
+                            <b>刘先生<span>185****3332</span></b>
+                            <p>信用良好 个体户 全款住房</p>
+                        </td>
+                        <td>斯柯达明锐Combi</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：9.96万</td>
+                        <td>预审批额度：<span class="highlight">3.76万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <b>秦先生<span>186****5907</span></b>
+                            <p>少数逾期 企业主 租房</p>
+                        </td>
+                        <td>奥迪A4L</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：29.10万</td>
+                        <td>预审批额度：<span class="highlight">19.15万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <b>张先生<span>186****1133</span></b>
+                            <p>信用良好 企业主 租房</p>
+                        </td>
+                        <td>日产逍客</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：13.34万</td>
+                        <td>预审批额度：<span class="highlight">13.34万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <b>张先生<span>158****6240</span></b>
+                            <p>信用良好 上班族 贷款住房</p>
+                        </td>
+                        <td>启辰R30</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：3.21万</td>
+                        <td>预审批额度：<span class="highlight">3.21万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <b>李先生<span>135****1441</span></b>
+                            <p>信用良好 上班族 贷款住房</p>
+                        </td>
+                        <td>大众朗逸</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：10.99万</td>
+                        <td>预审批额度：<span class="highlight">10.99万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <b>张先生<span>158****6240</span></b>
+                            <p>信用良好 上班族 贷款住房</p>
+                        </td>
+                        <td>本田飞度</td>
+                        <td>平台自营</td>
+                        <td>贷款申请：5.17万</td>
+                        <td>预审批额度：<span class="highlight">3.56万</span></td>
+                        <td class="tr">2015-10-02</td>
+                    </tr>   
+
+                         
+        </table>
+    </div>
+
+    </div>
+        <!-- 最近申请 end -->
+    </div>
+
+</div>
+    <!--container end-->
+    <!--footer-->
+    <div class="f-copyright">
+        <div class="grid-1200 footerHolder">
+            <div class="footer-nav">
+                <p>
+                    <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>
+                    <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>
+                    <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于京东钱包</a><span class="footer-nav-cut">|</span>
+                    <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>
+                    <span class="footer-nav-cut">|</span>
+                    <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>
+                    <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>
+                </p>
+                <p>
+                    Copyright © 2004-2015 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <div class="f-contact-time">联系我们<span>（周一至周五 9:00-17:30）</span></div>
+                <div class="f-contact-way">
+                    <span class="f-contact-type">4000-169-169</span>
+                    <span class="f-contact-type">(个人业务)</span>
+                    
+                </div>
+                <div class="f-contact-way">
+                    <span class="f-contact-type">4000-888-816</span>
+                    <span class="f-contact-type">(企业业务)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer end-->
+
+<script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.8.3/jquery.js,base/1.1.0/js/base.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?fd25ab5875e431ed4c2d2f9a117f2b62";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</body>
+</html>

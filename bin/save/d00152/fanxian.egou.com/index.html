@@ -1,0 +1,912 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf" />
+<title>返还网【可信】返利网,返钱网,购物返利金,购物返利返钱网-易购网购物返利频道</title> 
+<meta content="返还网,返利网,返利网,fanliwang,网上购物返利网,返利" name="Keywords" />
+<meta name="description" content="易购网返利频道是返利,返还,返利的最佳选择,400家知名商城(包括淘宝网,天猫,京东商城)返还返利返利服务,最高可以拿到50%的返利.更多优惠活动,各大商城返利返利.找返还网,返利网,返利网首选易购返利频道,比价返利优惠券百万会员齐分享.易购网您的购物返利第一站"/>
+<script type="text/javascript" src="http://static.egou.com/js/jquery.js"></script>
+ <script type="text/javascript" src="/static/js/index.js?t=201506"></script> 
+</head>
+<body>
+
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/p/fanxian/index/fx_stylev2.1.css?t=111123" type="text/css"/>
+<script type="text/javascript" src="http://static.egou.com/f=js/open.js,js/fit-image.js,js/jquery.js,js/cpa-cookie.js,p/coupon/js/header.js" charset="UTF-8"></script>
+<script type="text/javascript" src="http://static.egou.com/b=header/js&f=header.js,search.js?v" charset="UTF-8"></script>
+ 
+<script type="text/javascript">
+var loginUser = {id:"",name:""};
+var keyword="";
+jQuery.ajax({
+	url: "http://www.egou.com/headers/header_out2.jsp",
+	data: {'w':'1200','keyword': keyword,'no_search_bar':"true"},
+	cache: false,
+	dataType: "jsonp",
+	scriptCharset : "UTF-8",
+	success: function(html) {
+		jQuery("#egou_header").append(html);
+		on_egou_header_loaded();
+		var ad =document.createElement('script');
+		ad.type='text/javascript';
+		ad.async=true;
+		ad.src='http://ad.egou.com/ads.jsp?name=TOP_ADS&limit=3&site=2&term=1&callback=cb_ad_other';
+		ad.charset="UTF-8";
+		var s=document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ad,s);
+	},
+	error: function(e, t) {}
+});
+</script>
+<div id="egou_header"></div>
+<div class="clear"></div>
+<div style="display:none">
+<ul>
+<li class="web_list last"><p><a href="http://www.egou.com/bq/">热门搜索</a><a href="http://www.egou.com/brand/">品牌大全</a></p></li>
+<li class="web_list last"><p><a href="http://www.egou.com/coupon/taglist1.htm">热搜优惠券</a></p></li>
+</ul>
+</div>
+<!--  灰条部分结束 -->
+<div id="advert"></div>
+
+<div class="header_ls_bg">
+	<div class="header_ls_main width1200">
+    	<div class="header_logo"><a href="http://www.egou.com/"><img src="http://egouimg1.qutu.com/fanxian/images2.0/fx_logo.png"></a></div>
+        <div class="header_logo1"><img src="http://egouimg1.qutu.com/fanxian/images2.0/fx_logo1.png"></div>
+        <div class="hearder_search_pic"><img src="http://egouimg1.qutu.com/fanxian/images2.0/fx_logo_right.png"></div>
+    </div>
+</div>
+<div class="header_nav_bg">
+	<div class="header_nav_main width1200">
+        <div class="header_nav">
+            <ul>
+                <li><a href="http://www.egou.com/">首页</a></li>
+                <li><a href="http://temai.egou.com/">特卖惠</a></li>
+                <li><a href="http://brand.egou.com/">超级返</a></li>
+                <li><a href="http://baobei.egou.com/">淘宝返利</a></li>
+                <li><a class="hover" href="javascript:void(0);">电商返利</a></li>
+                <li><a href="http://hongbao.egou.com/">超级红包</a></li>
+                <li><a href="http://www.egou.com/club/">签到</a></li>
+            </ul>
+        </div>
+   </div>
+</div>
+<div class="fx_search_bg">
+	<div class="fx_search_main width1200">
+        <div class="fx_search" id="www_search_id">
+        <form name="wwwForm" target="_blank" action="http://s.egou.com/search.htm" onsubmit="return checkForm();">
+        	<div class="search_bg" id="header_serch_left"  onfocusout="if(jQuery('#allMerchants').html()==''){this.className='search_bg';};">
+            	<div class="search_text_bg">
+                	<span class="search_icon"></span>
+                	<input autocomplete="off" id="wwwSearchKeyword" name="kw" type="text" class="search_text color_99" value=""  onclick="if(jQuery('#allMerchants').html()!=''){if(jQuery('#wwwSearchKeyword').val()!=''){jQuery('#header_serch_down').show();}frag=false;};"  onfocus="if(jQuery('#tishi').is(':visible')){hidets();}"/>
+                    <span class="search_colsed" id="secharXX" style="display:none"><a href="javascript:void(0);" onclick="jQuery('#secharXX').hide();jQuery('#wwwSearchKeyword').val('输入任意商城名、商品/宝贝名称开始购物！');jQuery('#wwwSearchKeyword').css('color', '#CCCCCC');jQuery('#header_serch_down').hide();document.getElementById('header_serch_left').className='search_bg';"></a></span>
+                    <div class="header_serch_down1" style="display: none;" id="tishi">
+                    	<div class="tishi">亲，不支持淘宝宝贝的链接搜索功能；聚划算频道商品不返利！您可以"<span>粘贴宝贝名称</span>" 搜索，搜索到的宝贝都有返利。</div>
+                    </div>
+                    <div class="header_serch_down" id="header_serch_down" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'" style="display: none;">
+                        <ul id="allMerchants"></ul>
+                    </div>
+                </div>
+                <div class="search_botton"><input name="" type="submit" id="wwwSearchAll" class="botton" value="去购物 拿返利"></div>
+            </div>
+       </form>
+        <input type="hidden" id="merchUrl" value=""/>
+        </div>
+        <a href="http://fanxian.egou.com/help/flzd.html" target="_blank"><div class="fx_new_head"></div></a>
+    </div>
+</div>
+<!--  结束  logo 搜索  -->
+<script>
+	String.prototype.replaceAll = function(s1,s2) {
+	    return this.replace(new RegExp(s1,"gm"),s2);
+	}
+	var frag=false;
+	document.onclick=function(){
+		if(frag){
+		   jQuery('#header_serch_down').hide();
+		   document.getElementById('header_serch_left').className='search_bg';
+		   hoverSelect(0);
+			jQuery('#merchUrl').val(jQuery('#gotoSelect0').attr('href'));
+		}
+	}
+	function checkForm(){
+		if(jQuery.trim(jQuery('#wwwSearchKeyword').val())==''||jQuery.trim(jQuery('#wwwSearchKeyword').val())=='输入任意商城名、商品/宝贝名称开始购物！'){
+			return false;
+		}else{
+			var toUrl=jQuery('#merchUrl').val();
+			jQuery('#merchUrl').val('');
+			hoverSelect(0);
+			jQuery('#merchUrl').val(jQuery('#gotoSelect0').attr('href'));
+			jQuery('#header_serch_down').hide();
+			if(toUrl&&toUrl!=''){
+				egou.open(toUrl,'_blank');
+				return false;
+			}else{
+				var dLinkPatternStr =new RegExp("^http:\\/\\/[^.]+\\.(?:taobao|tmall)\\.[^?]+\\?(?:[^&]*&)*?(?:default_item_id|item_id|tradeID|id)=(\\d+)");
+				if(dLinkPatternStr.test(jQuery('#wwwSearchKeyword').val())){
+						jQuery("#tishi").show();
+						return false;
+				}
+				jQuery('#wwwSearchKeyword').val(jQuery('#wwwSearchKeyword').val().replaceAll("'",""));
+				return true;
+			}
+		}
+	}
+	document.onkeyup=autoComple;
+	saveCookie("isHumanHandleOpt","1");
+	
+	function autoComple(e) {
+		var currKey=0,e=e||event;
+		currKey=e.keyCode||e.which||e.charCode;
+		document.getElementById('header_serch_left').className='search_bg';
+		if(jQuery.trim(jQuery('#wwwSearchKeyword').val())!=''||jQuery.trim(jQuery('#wwwSearchKeyword').val())!='输入任意商城名、商品/宝贝名称开始购物！'){
+			jQuery('#secharXX').show();
+		} 
+		if(currKey==38){
+			currentSelect-=1;
+			if(currentSelect<0)currentSelect=selectCount;
+			hoverSelect(currentSelect);
+			jQuery('#merchUrl').val(jQuery('#gotoSelect'+currentSelect).attr('href'));
+		}else if(currKey==40){
+			currentSelect+=1;
+			if(currentSelect>selectCount)currentSelect=0;
+			hoverSelect(currentSelect);
+			jQuery('#merchUrl').val(jQuery('#gotoSelect'+currentSelect).attr('href'));
+		}else if(currKey!=40&&currKey!=38){
+			jQuery('#merchUrl').val('');
+			frag=false;
+			var txt=jQuery.trim(jQuery('#wwwSearchKeyword').val());
+			if(txt==''||txt=='输入任意商城名、商品/宝贝名称开始购物！'){
+				jQuery('#secharXX').hide();
+				document.getElementById('header_serch_left').className='search_bg';
+				jQuery('#header_serch_down').hide();
+				jQuery('#merchUrl').val('');
+				jQuery('#allMerchants').html('');
+				return;
+			}
+			if(txt.indexOf('http')==-1){
+				jQuery.getScript("http://fanxian.egou.com/searchshops.do?name="+encodeURIComponent(txt)+"&plat=pc&scriptCharset=GBK&charset=UTF-8&callback=showMerchants");
+			}else{
+				jQuery('#secharXX').hide();
+				document.getElementById('header_serch_left').className='search_bg';
+				jQuery('#allMerchants').html('');
+				jQuery('#merchUrl').val('');
+				jQuery('#header_serch_down').hide();
+				
+			}
+		}
+	}
+	var selectCount=0;
+	
+	function showMerchants(data){
+		var shopList=data.shops;
+		if(!shopList)return;
+		var inner="";
+		var keyword=""; 
+		var txt=jQuery('#wwwSearchKeyword').val().replaceAll("'","");
+		if(txt!=null){
+			keyword=encodeURIComponent(txt);
+		}
+		var sc=[0,1];
+		var lc=[0,1,2];
+		
+		var linksS=new Array(
+				'href="http://www.egou.com/jsp0/redirectToTaoBao.jsp?v=f{tKeyword} 淘宝宝贝',
+				'href="http://www.egou.com/jsp0/searchcoder.jsp?v=f{tKeyword}&t=http://www.egou.com/coupon/k{keyword}.htm 优惠券'
+						
+		);
+		var linksL=new Array(
+				'href="http://www.egou.com/jsp0/searchcoder.jsp?v=f{tKeyword}&t=http://fanxian.egou.com/shop/kw{keyword}.html 商城',
+				'href="http://www.egou.com/jsp0/redirectToTaoBao.jsp?v=f{tKeyword} 淘宝宝贝',
+				'href="http://www.egou.com/jsp0/searchcoder.jsp?v=f{tKeyword}&t=http://www.egou.com/coupon/k{keyword}.htm 优惠券'
+		);
+		selectCount=0;
+		if(shopList.length==0){
+			txt=txt.length>20?txt.substring(0,20)+'...':txt;
+			inner='';
+			for(var i=0;i<sc.length;i++){
+				var count=sc[i];
+				var fillIn=linksS[count].split(" ");
+				var link=fillIn[0].replace('f{tKeyword}',keyword);
+				link=link+'" target="_blank';
+				inner+='<li><a id="gotoSelect'+selectCount+'" onmouseover="hoverSelect('+selectCount+')" '+link+'">搜<strong>'+fillIn[1]+'</strong>里找“'+txt+'” >></a></li>';
+				selectCount++;
+			}
+		}else{
+			if(shopList.length>1)goal="shopList";
+			inner='';
+			for(var i=0;i<lc.length;i++){
+				var count=lc[i];
+				var fillIn=linksL[count].split(" ");
+				var link=fillIn[0].replace('f{tKeyword}',keyword);
+				if(i!=0)link=link+'" target="_blank';
+				inner+='<li><a id="gotoSelect'+selectCount+'" onmouseover="hoverSelect('+selectCount+')" '+link+'">搜<strong>“'+txt+'”</strong>'+fillIn[1]+' >></a></li>';
+				selectCount++;
+				if(count==0){
+					var sublist='';
+					for(var j=0;j<shopList.length;j++){
+						if(j==5)break;
+						var url='http://fanxian.egou.com/'+shopList[j].id+'/';
+						if(shopList[j].id==719111){
+							url='http://taobao.egou.com';
+						}
+						
+							if(shopList.length==1){
+								jQuery('#merchUrl').val(url);
+							}
+						
+						sublist+=' <li class="serch_list"><a id="gotoSelect'+selectCount+'" onmouseover="hoverSelect('+selectCount+')" target="_blank" href="'+url+'"><i><img src="'+shopList[j].icon+'" /></i><span>'+shopList[j].name+'</span><span class="serch_fanli">最高返利<em class="englist">'+shopList[j].feedback+'</em></span></a></li>';
+						selectCount++;
+					}
+					inner+=sublist;
+				}
+			}
+		}
+		selectCount--;
+		jQuery('#allMerchants').html(inner);
+		if(inner!=''){
+			jQuery('#header_serch_down').show();
+			hoverSelect(0);
+			if(jQuery('#merchUrl').val()!=''){
+				
+				jQuery('#gotoSelect0').attr('href',jQuery('#merchUrl').val());
+				
+			}else{
+				jQuery('#merchUrl').val(jQuery('#gotoSelect0').attr('href'));
+			}
+		}
+	}
+	
+	var currentSelect=0;
+	function hoverSelect(thisCount){
+		currentSelect=thisCount;
+		for(var i=0;i<=selectCount;i++){
+			if(i==thisCount){
+				jQuery('#gotoSelect'+i).addClass('li_hover');
+			}else{
+				jQuery('#gotoSelect'+i).removeClass('li_hover');
+			}
+		}
+	}
+	function hidets(){
+		jQuery("#tishi").hide();
+	}
+</script>
+<!--  结束  logo 搜索  -->
+
+ 
+<!--  内容部分开始  -->
+<div class="fx_main_bg">
+	<div class="fx_main width1200">
+    	
+        <!--  返现商家 -->
+        <div class="fx_name_bg">
+            <ul class="fx_name">
+                <li>
+                	<a id="s_hot" onclick="lazyer('/category/hot_1',1,'hot');" class="hover"  >
+                		<span class="icon icon1"></span>
+                	 <span class="word">推荐商城</span>
+                	<span class="arrow"></span>
+                	</a>
+                </li>
+            	 
+        			<li >
+        				<a onclick="lazyer('/category/1_1',1,'1');" id="1"  >
+        				<span class="icon icon2"></span>
+        				<span class="word">综合特卖</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/9_1',1,'9');" id="9"  >
+        				<span class="icon icon3"></span>
+        				<span class="word">精品服饰</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/5_1',1,'5');" id="5"  >
+        				<span class="icon icon4"></span>
+        				<span class="word">数码手机</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/7_1',1,'7');" id="7"  >
+        				<span class="icon icon5"></span>
+        				<span class="word">食品家居</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/2_1',1,'2');" id="2"  >
+        				<span class="icon icon6"></span>
+        				<span class="word">图书音像</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/6_1',1,'6');" id="6"  >
+        				<span class="icon icon7"></span>
+        				<span class="word">母婴健康</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/10_1',1,'10');" id="10"  >
+        				<span class="icon icon8"></span>
+        				<span class="word">团购返利</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/32_1',1,'32');" id="32"  >
+        				<span class="icon icon9"></span>
+        				<span class="word">鞋帽箱包</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/8_1',1,'8');" id="8"  >
+        				<span class="icon icon10"></span>
+        				<span class="word">美妆配饰</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/72_1',1,'72');" id="72"  >
+        				<span class="icon icon11"></span>
+        				<span class="word">旅游票务</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li >
+        				<a onclick="lazyer('/category/152_1',1,'152');" id="152"  >
+        				<span class="icon icon12"></span>
+        				<span class="word">保险彩票</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	 
+        			<li class="last">
+        				<a onclick="lazyer('/category/11_1',1,'11');" id="11"  >
+        				<span class="icon icon13"></span>
+        				<span class="word">其它商城</span>
+        				<span class="arrow"></span>
+        				</a>
+        			</li>
+               	
+            </ul>
+        </div>
+         <div class="fx_list_bg">
+         	<!--  右侧浮层  -->
+			<div class="fx_right">
+				<div class="right_div" onMouseOver="document.getElementById('div_find').style.display='block';document.getElementById('active_01').className='div_a bg_01 active'" onMouseOut="document.getElementById('div_find').style.display='none';document.getElementById('active_01').className='div_a bg_01'">
+			    	<a href="javascript:void(0);" id="active_01" class="div_a bg_01"></a>
+			    	<div class="div_find" id="div_find">
+			        	<em></em>
+			            <span>按拼音首字母查找</span>
+			             <a id="0-9" href="javascript:lazyer('/shop/num',1,'0-9');"  class="">0-9</a><a id="a"   href="javascript:lazyer('/shop/a',1,'a');" class="">A</a><a id="b"   href="javascript:lazyer('/shop/b',1,'b');" class="">B</a><a id="c"   href="javascript:lazyer('/shop/c',1,'c');" class="">C</a><a id="d"   href="javascript:lazyer('/shop/d',1,'d');" class="">D</a><a id="e"   href="javascript:lazyer('/shop/e',1,'e');" class="">E</a><a id="f"   href="javascript:lazyer('/shop/f',1,'f');" class="">F</a><a id="g"   href="javascript:lazyer('/shop/g',1,'g');" class="">G</a><a id="h"   href="javascript:lazyer('/shop/h',1,'h');" class="">H</a><a id="i"   href="javascript:lazyer('/shop/i',1,'i');" class="">I</a><a id="j"   href="javascript:lazyer('/shop/j',1,'j');" class="">J</a><a id="k"   href="javascript:lazyer('/shop/k',1,'k');" class="">K</a><a id="l"   href="javascript:lazyer('/shop/l',1,'l');" class="">L</a><a id="m"   href="javascript:lazyer('/shop/m',1,'m');" class="">M</a><a id="n"   href="javascript:lazyer('/shop/n',1,'n');" class="">N</a><a id="o"   href="javascript:lazyer('/shop/o',1,'o');" class="">O</a><a id="p"   href="javascript:lazyer('/shop/p',1,'p');" class="">P</a><a id="q"   href="javascript:lazyer('/shop/q',1,'q');" class="">Q</a><a id="r"   href="javascript:lazyer('/shop/r',1,'r');" class="">R</a><a id="s"   href="javascript:lazyer('/shop/s',1,'s');" class="">S</a><a id="t"   href="javascript:lazyer('/shop/t',1,'t');" class="">T</a><a id="u"   href="javascript:lazyer('/shop/u',1,'u');" class="">U</a><a id="v"   href="javascript:lazyer('/shop/v',1,'v');" class="">V</a><a id="w"   href="javascript:lazyer('/shop/w',1,'w');" class="">W</a><a id="x"   href="javascript:lazyer('/shop/x',1,'x');" class="">X</a><a id="y"   href="javascript:lazyer('/shop/y',1,'y');" class="">Y</a><a id="z"   href="javascript:lazyer('/shop/z',1,'z');" class="">Z</a>
+			             <a id="all" class="showAll" href="http://fanxian.egou.com/sjdq.html" target="_blank">显示全部</a>
+			        </div>
+			    </div>
+				<div class="right_div"><a href="http://brand.egou.com/" target="_blank" class="div_a bg_02"></a></div>
+				<div class="right_div" onMouseOver="document.getElementById('div_code').style.display='block';document.getElementById('active_03').className='div_a bg_03 active'" onMouseOut="document.getElementById('div_code').style.display='none';document.getElementById('active_03').className='div_a bg_03'"><a href="http://jifen.egou.com/hd/2014/app/" id="active_03" class="div_a bg_03" target="_blank"></a><div class="div_code" id="div_code"></div></div>
+			</div>
+			<div class="zimu_tishi" id="zmts" style="display: none;">首字母为<strong class="englist_one font16" id="searchTypeStr"></strong>的商家有</div>
+            <div class="fx_sollor" style="display: none;">
+            	<a class="prev"  href="javascript:void(0)">&lt;</a>
+            	<a class="next"  href="javascript:void(0)">&gt;</a>
+            </div>
+            <div class="fx_list_main">
+                <div class="fx_list_onebg">
+                    <div class="fx_list_one" id="fx_list_html">
+                    
+                      		<div class="fx_list"><ul>
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/492767/" class="item_logo">
+                        	
+                            <img alt="京东商城" src="http://img0.egou.com/shop/201404/30/0bfdd902bec96086edd907ccfa2106b6.gif">最高返0.6%-2.5%
+                        	</a>
+                        	<span style="display: none;">492767</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="javascript:void(0);" onclick="egou.open('http://union.egou.com/to?site=2&term=1&shop=719111&page=fxlist&pos=detail_btn','_blank');" class="item_logo">
+                        	
+                            <img alt="淘宝网" src="http://img0.egou.com/shop/201410/28/233b4163db45faa075b8a8d9fbecbe0d.jpg">最高返0-90%
+                        	</a>
+                        	<span style="display: none;">719111</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/811816/" class="item_logo">
+                        	
+                            <img alt="易迅网" src="http://img0.egou.com/shop/201312/02/fff8e6bceae2b1fdaed4b6d5c5f977db.gif">最高返0.7%～1.4%
+                        	</a>
+                        	<span style="display: none;">811816</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/550364/" class="item_logo">
+                        	
+                            <img alt="1号店网上商城" src="http://img0.egou.com/shop/201312/02/1b513d625479284c8bf6166e9b29122b.gif">最高返0.35%-4.2%
+                        	</a>
+                        	<span style="display: none;">550364</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/3778805/" class="item_logo">
+                        	
+                            <img alt="乐视TV" src="http://img0.egou.com/shop/201505/06/6879ec7bbf953c2558878d9a1520193a.gif">最高返1-2倍易币
+                        	</a>
+                        	<span style="display: none;">3778805</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/3616407/" class="item_logo">
+                        	
+                            <img alt="华为商城" src="http://img0.egou.com/shop/201312/03/beb140a967bd6db5667803a2a0c0e9ab.gif">最高返0.21%～3.5%
+                        	</a>
+                        	<span style="display: none;">3616407</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/1441058/" class="item_logo">
+                        	
+                            <img alt="国美在线" src="http://img0.egou.com/shop/201312/02/728ec2cd09ce606ae8dcc23715db2d77.gif">最高返1.4%～5.6%
+                        	</a>
+                        	<span style="display: none;">1441058</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/492765/" class="item_logo">
+                        	
+                            <img alt="当当" src="http://img0.egou.com/shop/201410/24/2e516129a16921beb891d6de2349a53c.gif">最高返1.68倍易币~3.36倍易币
+                        	</a>
+                        	<span style="display: none;">492765</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/492825/" class="item_logo">
+                        	
+                            <img alt="携程网" src="http://img0.egou.com/shop/201312/03/867ea7c70d8d13081d300f665e9e5d72.gif">最高返0.3%-3%
+                        	</a>
+                        	<span style="display: none;">492825</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/1060918/" class="item_logo">
+                        	
+                            <img alt="银泰网" src="http://img0.egou.com/shop/201312/02/1167a00f953c2641d1ded21cd0f48e97.gif">最高返2.4%-12.8%
+                        	</a>
+                        	<span style="display: none;">1060918</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/852223/" class="item_logo">
+                        	
+                            <img alt="苏宁易购" src="http://img0.egou.com/shop/201505/06/a1069f186d6c2dbbfdf7c319f9eb1adf.gif">最高返0.39%-2.4%
+                        	</a>
+                        	<span style="display: none;">852223</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/3451463/" class="item_logo">
+                        	
+                            <img alt="丝芙兰官网" src="http://img0.egou.com/shop/201312/03/8eac6c0b772ce4ef850f7c7bc91e7e09.gif">最高返14%
+                        	</a>
+                        	<span style="display: none;">3451463</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/492764/" class="item_logo">
+                        	
+                            <img alt="亚马逊（卓越网）" src="http://img0.egou.com/shop/201312/02/b5439bb97d0c2346ece00cc9f8ba24fc.gif">最高返0.25-3倍易币
+                        	</a>
+                        	<span style="display: none;">492764</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/7057487/" class="item_logo">
+                        	
+                            <img alt="LifeVC丽芙家居" src="http://img0.egou.com/shop/201409/15/a30056cc282c981439fec961b7c08541.gif">最高返23%
+                        	</a>
+                        	<span style="display: none;">7057487</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/715203/" class="item_logo">
+                        	
+                            <img alt="yoho有货" src="http://img0.egou.com/shop/201508/31/c813b2cbaed5760afc758b72e01857ab.png">最高返4%～14%
+                        	</a>
+                        	<span style="display: none;">715203</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/715190/" class="item_logo">
+                        	
+                            <img alt="唯品会" src="http://img0.egou.com/shop/201508/25/91ee23eb3b7c8ab65b4b2623fff79f48.jpg">最高返2.45%
+                        	</a>
+                        	<span style="display: none;">715190</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/946795/" class="item_logo">
+                        	
+                            <img alt="银泰" src="http://img0.egou.com/shop/1289987660099.jpg">最高返1.05%~5.6%
+                        	</a>
+                        	<span style="display: none;">946795</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/4291797/" class="item_logo">
+                        	
+                            <img alt="顺丰优选" src="http://img0.egou.com/shop/201312/03/3df93618a3d8ae634d347de7b2e28ac1.gif">最高返1.8%—6.5%
+                        	</a>
+                        	<span style="display: none;">4291797</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/946804/" class="item_logo">
+                        	
+                            <img alt="酒仙网" src="http://img0.egou.com/shop/201508/25/1dfe4233d31ea49fdecfb166b77a5a6f.jpg">最高返0.7%~7%
+                        	</a>
+                        	<span style="display: none;">946804</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/1318564/" class="item_logo">
+                        	
+                            <img alt="优购时尚商城" src="http://img0.egou.com/shop/201508/26/d2f812dc91e27f9a2b482f8b191b279d.jpg">最高返3%~11%
+                        	</a>
+                        	<span style="display: none;">1318564</span>
+                        </li> 
+                        
+                       <li>
+                        	<a href="http://fanxian.egou.com/861731/" class="item_logo">
+                        	
+                            <img alt="母婴之家" src="http://img0.egou.com/shop/201509/30/92dae5bb59a850c1b2b6c15ad334d34a.png">最高返2%～16%
+                        	</a>
+                        	<span style="display: none;">861731</span>
+                        </li> 
+                        
+                        	</ul><div class="clear"></div></div>
+                        
+                    </div>
+                </div>
+                <div class="fx_buy_tips" style="top:80px; left:156px;">
+                    <a href="#" id="logoUrl" class="logo_bg" target="_blank"></a>
+                    <div class="botton_bg">
+                        <a href="#" id="goUrl" target="_blank" class="botton botton1">直接购物</a>
+                        <a href="#" id="goDetails"  class="botton botton2" >返利详情</a>
+                    </div>
+                </div>
+        	</div>
+        	 <!-- <div class="fx_list_page" id="page"></div> -->
+        </div>
+        <!--  热门推荐 广告位 -->
+        <div class="fx_hot_name"><span class="word" >热门推荐</span></div>
+         <div class="fx_hot_listbg" id="adFx" style="display: none;">
+			<script type="text/javascript" src="http://ad.egou.com/ads.jsp?name=FANXIAN_INDEX_THREE&site=2&term=1&page=fxindex&dt=json&callback=adFx"></script>
+        </div>
+        <div class="fx_pro_list">
+        	<ul>
+                
+                <li>
+                    <a title="可得眼镜&nbsp;KNOX 诺思幻境奇缘半年抛一副(5色可选)送海俪恩护理液360ML&nbsp;19.9元包邮" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/11/d391cf433e201a25a536b451c0279b8c.jpg"  title="可得眼镜&nbsp;KNOX 诺思幻境奇缘半年抛一副(5色可选)送海俪恩护理液360ML"></a>
+                    <a title="可得眼镜&nbsp;KNOX 诺思幻境奇缘半年抛一副(5色可选)送海俪恩护理液360ML&nbsp;19.9元包邮" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">可得眼镜&nbsp;KNOX 诺思幻境奇缘半年抛一副(5色可选)送海俪恩护理液360ML&nbsp;19.9元包邮</span>
+                        <span class="color_red padding_top4">韩国品牌诺思幻境奇缘半年抛美瞳有黑色系，棕色性，紫色系，灰色系，蓝色系，共5种颜色分别体现出5种不同的美。直径：14.2MM，使美妆效果更强。更有3大设计亮点，专利真正三明治工艺；GMMA高分子亲水材质；智能边弧设计，使配戴更舒适，更健康。
+
+可得眼镜网新品上市，首次尝鲜价组合装19.9包邮，包括诺思幻境奇缘半年抛一副(5色可选)+送海俪恩护理液360ML（有效期2016年1月），单片售价在39元，这款组合装很实惠了，喜欢的朋友们可以购买！</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">19</span><span class="num float">.8</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="可得眼镜&nbsp;赠美瞳一副：weicon 卫康清凉型隐形眼镜护理液500+500+125ml &nbsp;39元包邮" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/11/fe5e4a0e9313ac44fedff60798148906.jpg"  title="可得眼镜&nbsp;赠美瞳一副：weicon 卫康清凉型隐形眼镜护理液500+500+125ml "></a>
+                    <a title="可得眼镜&nbsp;赠美瞳一副：weicon 卫康清凉型隐形眼镜护理液500+500+125ml &nbsp;39元包邮" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">可得眼镜&nbsp;赠美瞳一副：weicon 卫康清凉型隐形眼镜护理液500+500+125ml &nbsp;39元包邮</span>
+                        <span class="color_red padding_top4">可得眼镜网目前售价仅39包邮 ，包括了 卫康清凉型隐形眼镜护理液500+500+125ml送赠卫康半年抛美瞳一副（度数齐全），天猫售价在49元一组无赠品，数量限量500瓶，售完即止。目前价格有一定优势，喜欢卫康这款老品牌的朋友可以值得入手。
+
+卫康清凉型隐形眼镜护理液具有清洁、 冲洗、消毒、储存、润滑及清除蛋白沉淀免揉搓之功能，适用于软性隐形眼镜；此款护理液采用硼酸盐缓冲剂，具有适合眼部的酸碱度，温和不刺激令配戴者更舒适；清凉保湿组合，可提高水份存留，夏季更清凉湿润；
+含温和杀菌剂对化脓菌 大肠杆菌 致病性真菌和常见感染菌有杀灭作用，温和呵护眼睛，倍感安全舒适。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">39</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="易视眼镜网&nbsp;科莱博小黑裙系列半年抛黑色美瞳1片*2瓶&nbsp;韩国进口 人气热销款！" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/10/3e1748fadbb5cef76875de52cc824da3.jpg"  title="易视眼镜网&nbsp;科莱博小黑裙系列半年抛黑色美瞳1片*2瓶"></a>
+                    <a title="易视眼镜网&nbsp;科莱博小黑裙系列半年抛黑色美瞳1片*2瓶&nbsp;韩国进口 人气热销款！" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">易视眼镜网&nbsp;科莱博小黑裙系列半年抛黑色美瞳1片*2瓶&nbsp;韩国进口 人气热销款！</span>
+                        <span class="color_red padding_top4">科莱博小黑裙系列由韩国进口，花纹自然且不失优雅精致！镜片物理性佳，不卷曲、不坍塌、不沾黏，取用时自然挺立，配戴超顺手。易视网目前报价38元一副包邮，非离子材质不易吸附杂志或蛋白质，在保养和清洁上更简单容易。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">38</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="良品铺子CPS&nbsp;良品铺子的炭烧腰果  好吃又实惠&nbsp;原价11.9  现在8.9  即可入手了" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/09/515523e8c5aa3e341774b17d0c7f3d87.jpg"  title="良品铺子CPS&nbsp;良品铺子的炭烧腰果  好吃又实惠"></a>
+                    <a title="良品铺子CPS&nbsp;良品铺子的炭烧腰果  好吃又实惠&nbsp;原价11.9  现在8.9  即可入手了" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">良品铺子CPS&nbsp;良品铺子的炭烧腰果  好吃又实惠&nbsp;原价11.9  现在8.9  即可入手了</span>
+                        <span class="color_red padding_top4">很喜欢这个腰果，脆脆的，好吃。以前在实体店买，以后就在官方商城买了，很好的产品哦，味道真的好好。吃了根本停不下来。包装也很精美，真的是大品牌值得信赖啊。而且客服真的很好很耐心啊。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">8</span><span class="num float">.9</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="视客眼镜网&nbsp;博士伦清朗一日水润高清日抛隐形眼镜30片装 + 蓝睛灵润眼液15ml&nbsp;超值仅售85元" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/08/1535e6c7c441d1534f73ee926c271a0b.jpg"  title="视客眼镜网&nbsp;博士伦清朗一日水润高清日抛隐形眼镜30片装 + 蓝睛灵润眼液15ml"></a>
+                    <a title="视客眼镜网&nbsp;博士伦清朗一日水润高清日抛隐形眼镜30片装 + 蓝睛灵润眼液15ml&nbsp;超值仅售85元" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">视客眼镜网&nbsp;博士伦清朗一日水润高清日抛隐形眼镜30片装 + 蓝睛灵润眼液15ml&nbsp;超值仅售85元</span>
+                        <span class="color_red padding_top4">博士伦日抛单买好价包邮，有赠品~ 博士伦 清朗一日 高清日抛隐形眼镜 ，各渠道用户都比较受好评的一款，不会软的戴不上也不会生硬的硌眼。非球面光学设计，能减少球面相差，使得影像更清晰，这个与平面眼镜一个道理。规格30片装。
+
+视客眼镜网目前特价至85元包邮，还送蓝睛灵润眼液15ml，日抛相对来说更加方便卫生也适合旅游携带，习惯佩戴日抛的同学可入手。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">85</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="易视眼镜网&nbsp;易视眼镜网 开学季赢好礼 专场3折起！&nbsp;海昌月抛低至29元" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/08/6f99533789188608085efdede2dc6917.jpg"  title="易视眼镜网&nbsp;易视眼镜网 开学季赢好礼 专场3折起！"></a>
+                    <a title="易视眼镜网&nbsp;易视眼镜网 开学季赢好礼 专场3折起！&nbsp;海昌月抛低至29元" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">易视眼镜网&nbsp;易视眼镜网 开学季赢好礼 专场3折起！&nbsp;海昌月抛低至29元</span>
+                        <span class="color_red padding_top4">开学季专场3折起！海昌月抛低至29元，韩国进口BESCON美瞳29.9元起！全场仅需25元即可换购原价58元视康双氧水隐形眼镜护理液360ml一瓶！还多更多萌爆护理周边可选！参与微博提问互动可赢取蓝睛灵隐形眼镜护理液120ML+猫咪钱袋好礼！</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">29</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="可得眼镜&nbsp;海俪恩乐眸隐形眼镜多功能护理液360ML*2&nbsp;9.9包邮" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/07/e7d71e1a118f6dbb59c93b4f7e639e4c.jpg"  title="可得眼镜&nbsp;海俪恩乐眸隐形眼镜多功能护理液360ML*2"></a>
+                    <a title="可得眼镜&nbsp;海俪恩乐眸隐形眼镜多功能护理液360ML*2&nbsp;9.9包邮" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">可得眼镜&nbsp;海俪恩乐眸隐形眼镜多功能护理液360ML*2&nbsp;9.9包邮</span>
+                        <span class="color_red padding_top4">可得眼镜网海俪恩乐眸隐形眼镜多功能护理液360ML*2，限时促销9.9包邮，有效期至2016年1月，温馨提示：护理液开封满3个月，需丢弃，不能再继续使用。此款护理液数量有限，需要的小伙伴们可以尽快入手！</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">9</span><span class="num float">.9</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="可得眼镜&nbsp;HYDRON 海昌NEWMONTH新月抛6片装*2+海俪恩乐眸多功能护理液360ML&nbsp;59元包邮" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/07/36f4e44a1582ca75ad525e49bb8115c8.jpg"  title="可得眼镜&nbsp;HYDRON 海昌NEWMONTH新月抛6片装*2+海俪恩乐眸多功能护理液360ML"></a>
+                    <a title="可得眼镜&nbsp;HYDRON 海昌NEWMONTH新月抛6片装*2+海俪恩乐眸多功能护理液360ML&nbsp;59元包邮" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">可得眼镜&nbsp;HYDRON 海昌NEWMONTH新月抛6片装*2+海俪恩乐眸多功能护理液360ML&nbsp;59元包邮</span>
+                        <span class="color_red padding_top4">可得眼镜网目前组合装售价59元包邮，包括海昌 New Month 新月抛 隐形眼镜 6片装*2+海俪恩乐眸多功能护理液360ML（护理液有效期至16年1月），天猫单盒售价在45元左右，需要的考虑入手。
+
+海昌NEW NONTH 月抛隐形眼镜，网友体验不错，海昌品牌的热销产品之一。佩戴水润，无异物感，性价比较高。该月抛隐形眼镜采用全视力镜片，避免传统球面镜片成像差，使成像更集中，视觉更清晰。材质方面更薄更透氧，多弧设计舒适的服贴角膜。规格6片装/盒。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">59</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="视客眼镜网&nbsp;Alcon 视康 多水润天天抛隐形眼镜30片装 + 伊丽视隐形眼镜润滑液10ml&nbsp;超值仅售59元" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/02/12967f3c81bcae657dc4e861358cd044.jpg"  title="视客眼镜网&nbsp;Alcon 视康 多水润天天抛隐形眼镜30片装 + 伊丽视隐形眼镜润滑液10ml"></a>
+                    <a title="视客眼镜网&nbsp;Alcon 视康 多水润天天抛隐形眼镜30片装 + 伊丽视隐形眼镜润滑液10ml&nbsp;超值仅售59元" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">视客眼镜网&nbsp;Alcon 视康 多水润天天抛隐形眼镜30片装 + 伊丽视隐形眼镜润滑液10ml&nbsp;超值仅售59元</span>
+                        <span class="color_red padding_top4">Alcon爱尔康成立于1947年，是知名的眼科保健公司。今天推荐的这款Alcon 爱尔康 多水润天天抛隐形眼镜，添加三重水润因子，特含专利的眨眼保湿技术，每次眨眼的时候，都会释放独特的aqua水润因子。透氧度高，每日更换也能保证卫生程度。30片装日抛型。
+
+视客眼镜网目前报价59元包邮，并赠送伊丽视隐形眼镜润滑液10ml，其他渠道单盒100元以上，有需要的朋友可以考虑。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">59</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="视客眼镜网&nbsp;Alcon视康水润舒视氧非球面硅水凝胶隐形眼镜月抛3片装* 2盒 + 视康双氧水360ml&nbsp;超值仅售118元" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201509/01/52ee67f02573d917c57298367a82f4dc.jpg"  title="视客眼镜网&nbsp;Alcon视康水润舒视氧非球面硅水凝胶隐形眼镜月抛3片装* 2盒 + 视康双氧水360ml"></a>
+                    <a title="视客眼镜网&nbsp;Alcon视康水润舒视氧非球面硅水凝胶隐形眼镜月抛3片装* 2盒 + 视康双氧水360ml&nbsp;超值仅售118元" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">视客眼镜网&nbsp;Alcon视康水润舒视氧非球面硅水凝胶隐形眼镜月抛3片装* 2盒 + 视康双氧水360ml&nbsp;超值仅售118元</span>
+                        <span class="color_red padding_top4">视康是美国知名的隐形眼镜品牌，在注重美观的同时也很注重眼部配戴的舒适度。这款硅水凝胶算是视康的拳头产品，配合视康的双氧水一起，舒适度是目前市场上最好的，而且月抛的形式也是最大程度上满足了健康和性价比的综合要求。对天天习惯了戴隐形的人来说，这款是很合适的选择。水润舒适氧是舒适氧的升级版，除了透氧率很高之外，另外还多添加了Aqua水润因子，配戴更加水润舒适，规格3片装。
+视客眼镜网目前售价118元/2盒+视康双氧水360ml，仅需59元一盒。硅水凝胶的镜片建议搭配双氧水使用，洗的很干净免揉搓，</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">118</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="易视眼镜网&nbsp;魅瞳易彩魔幻星空年抛美瞳棕色*2瓶&nbsp;韩国进口 19.9元包邮" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201508/28/d04e2cea49114a065ef740a9699944e7.jpg"  title="易视眼镜网&nbsp;魅瞳易彩魔幻星空年抛美瞳棕色*2瓶"></a>
+                    <a title="易视眼镜网&nbsp;魅瞳易彩魔幻星空年抛美瞳棕色*2瓶&nbsp;韩国进口 19.9元包邮" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">易视眼镜网&nbsp;魅瞳易彩魔幻星空年抛美瞳棕色*2瓶&nbsp;韩国进口 19.9元包邮</span>
+                        <span class="color_red padding_top4">易视眼镜网5周年特庆 全场包邮3天！72小时底价狂欢！此款美瞳为韩国进口， 三明治结构工艺、38%的低含水量，使镜片成型好，不易变形，易配戴。避免水分蒸发引起不适，全天候舒适、水润。易视网目前报价19.9元包邮，散发出与众不同的色彩，配戴效果更自然，层次更丰富。</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">19</span><span class="num float">.8</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+                <li>
+                    <a title="视客眼镜网&nbsp;博士伦 纯视2代月抛隐形眼镜3片装*2盒+ 博士伦润明清透500ml&nbsp;超值仅售149元" href="http://youhui.egou.com" target="_blank"  class="pic"><img src="http://img0.egou.com/0/baoliao/201508/26/2458220e569b58e1ce8e068f78e58ff0.jpg"  title="视客眼镜网&nbsp;博士伦 纯视2代月抛隐形眼镜3片装*2盒+ 博士伦润明清透500ml"></a>
+                    <a title="视客眼镜网&nbsp;博士伦 纯视2代月抛隐形眼镜3片装*2盒+ 博士伦润明清透500ml&nbsp;超值仅售149元" href="http://youhui.egou.com" target="_blank"   class="title">
+                        <span class="font14">视客眼镜网&nbsp;博士伦 纯视2代月抛隐形眼镜3片装*2盒+ 博士伦润明清透500ml&nbsp;超值仅售149元</span>
+                        <span class="color_red padding_top4">BAUSCH+LOMB博士伦纯视2代采用专利的AERGEL硅水凝胶材质，能更好的为角膜传输氧气，相较其他镜片，纯视2代的镜片在与眼睛同样温度时，镜片弹性模数可降至很低的水平，这项指数越低意味着镜片越柔软服帖。该款镜片中心厚度0.07mm@-3.00D，并采用Performa工艺对镜片进行表面处理，佩戴更加清晰。
+
+视客眼镜网目前纯视2代月抛3片2盒组合只需要149元包邮，并额外赠送博士伦润明清透500ml一瓶，折合一盒售价在74.5元以内，近期好价，需要的朋友可入手。
+</span>
+                    </a>
+                    <div class="money_bg">
+                    	<span class="symbol">￥</span><span class="num">149</span><span class="num float">.0</span>
+                        <span class="botton"><a  href="http://youhui.egou.com" target="_blank" >马上抢<em></em></a></span>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="clear"></div>
+            <div class="more"><a href="http://youhui.egou.com" target="_blank"></a></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- 底部信息   -->
+<div id="footer">
+	
+<link rel="stylesheet" rev="stylesheet" href="http://static.egou.com/egoufooter/footer_allv2.0.css" type="text/css"/>
+<div class="footer_top">
+	<div class="footer_main">
+        <div class="footer_server_list">
+        	<dl>
+            	<dt>购物指南</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/memberRegister.do" target="_blank">免费注册</a>
+               	 <a href="http://fanxian.egou.com/help/shang_yi.html" target="_blank">返利指导</a>
+               	 <a  href="http://fanxian.egou.com/help/nafanxian.html#fx22" target="_blank">提现指导</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>常用服务</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/myegoutraceorder.do" target="_blank">跟单查询</a>
+               	 <a href="http://fanxian.egou.com/help/" target="_blank">网站帮助</a>
+               	 <a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>商家服务</dt>
+                <dd>
+               	 <a href="http://zhaoshang.egou.com/temai/" target="_blank">商家入驻</a>
+               	 <a href="http://fanxian.egou.com/help/advertisement.html" target="_blank">广告合作</a>
+               	 <a href="http://fanxian.egou.com/help/links.html" target="_blank">友情链接</a>
+                </dd>
+            </dl>
+        	<dl>
+            	<dt>关于易购</dt>
+                <dd>
+               	 <a href="http://fanxian.egou.com/help/aboutegou.html" target="_blank">了解易购</a>
+               	 <a href="http://fanxian.egou.com/help/zhaopin.html" target="_blank">加入易购</a>
+               	 <a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们</a>
+                </dd>
+            </dl>
+        	<dl class="two">
+            	<dt>关注我们</dt>
+                <dd>
+               	 <a href="http://weibo.com/wwwegoucom/home" target="_blank">新浪微博</a>
+               	 <a href="http://user.qzone.qq.com/1494014167/2" target="_blank">QQ空间</a>
+               	 <a href="javascript:alert('请扫描下方的二维码，谢谢！');">官方微信</a>
+                </dd>
+            </dl>
+            <dl class="last">
+            	<dd><p class="font16">400-0060-666</p><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
+            </dl>
+        </div>
+        <ul class="footer_app_list">
+        	<li>
+            	<div class="app_pic egou_app"></div>
+                <dl class="app_right">
+                	<dt>易购网</dt>
+                    <dd class="sub_title">易购返利 随时随地</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=com.emar.egou&plat=1" class="btn_app btn_android" target="_blank"></a><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=892332027" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li>
+            	<div class="app_pic tmh_app"></div>
+                <dl class="app_right">
+                	<dt>特卖惠</dt>
+                    <dd class="sub_title">特价包邮 如影随行</dd>
+                    <dd><a href="http://mapi.egou.com/app.jsp?app=egtm&plat=1" target="_blank" class="btn_app btn_android"></a><a href="https://itunes.apple.com/us/app/yi-gou-te-mai-hui/id903311028" target="_blank" class="btn_app btn_store"></a></dd>
+                </dl>
+            </li>
+        	<li class="last">
+            	<div class="app_pic egou_weixin"></div>
+                <dl class="app_right">
+                	<dt>超级红包官微</dt>
+                    <dd class="sub_name font12">易购网-超级红包</dd>
+                    <dd class="sub_title">扫描二维码,即刻关注<br>随时随地抢红包</dd>
+                </dl>
+            </li>
+    		<div class="clear"></div>
+        </ul>
+        <div class="footer_links">
+        	<span class="name">友情链接：</span>
+            <div class="links_list" id="demo" onmouseover="stopscroll();" onmouseout="doscroll()">
+            	<div id="demo1">
+            		<a target="_blank" href="http://www.itoumi.com/">投米网</a><a target="_blank" href="http://www.gouwubang.com/">购物帮</a><a target="_blank" href="http://www.vmall.com/">华为商城</a><a target="_blank" href="http://www.818.com/">818网上药店</a><a target="_blank" href="http://www.kela.cn/">珂兰钻石</a><a target="_blank" href="http://brand.vip.com/">唯品会</a><a target="_blank" href="http://www.taoxie.com">淘鞋网</a><a target="_blank" href="http://www.zol.com">中关村商城</a><a target="_blank" href="http://www.s.cn">名鞋库</a>
+            	</div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div class="footer_bottom_bg">
+	<div class="footer_main">
+    	<ul class="footer_nav">
+        	<a href="http://fanxian.egou.com/help/mediumreported.html" target="_blank">媒体报道<em></em></a>
+        	<a href="http://www.egou.com/map/" target="_blank">分类大全<em></em></a>
+        	<a href="http://fanxian.egou.com/shop_index.html" target="_blank">网商大全<em></em></a>
+        	<a href="http://fanxian.egou.com/help/sitemap.html" target="_blank">网站地图<em></em></a>
+        	<a href="http://www.egou.com/brand/" target="_blank">品牌大全</a>
+    		<div class="clear"></div>
+        </ul>
+    	<div class="clear"></div>
+        <ul class="footer_logos">
+        	<li><a href="https://search.szfw.org/cert/l/CX20130128002166002282" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_1.png"></a></li>
+        	<li><a href="http://about.58.com/fqz/index.html" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_2.png"></a></li>
+        	<li><a href="http://www.cnr.cn/gundong/201106/t20110620_508119107.shtml" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_3.png"></a></li>
+        	<li><a href="http://pub.alimama.com/" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_4.png"></a></li>
+        	<li><a href="http://www.so.com/s?ie=utf-8&src=360sou_home&q=site%3Awww.egou.com" target="_blank"><img src="http://egouimg1.qutu.com/egoufooter/foot_5.png"></a></li>
+        </ul>
+        <div class="footer_word"><p class="englist_one">Copyright © 2004-2014 by www.egou.com all rights reserved</p><p>北京亿玛联盟传媒广告有限公司 旗下网站 京公网安备110105000795 京ICP备10005197号-5</p></div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript">
+	var t=demo.scrollWidth
+	demo1.innerHTML+=demo1.innerHTML
+	function doMarquee()
+	{
+	demo.scrollLeft=demo.scrollLeft<demo.scrollWidth-demo.offsetWidth?demo.scrollLeft+1:t-demo.offsetWidth
+	}
+	function doscroll()
+	{
+	   sc=setInterval(doMarquee,30)
+	}
+	function stopscroll()
+	{
+	   clearInterval(sc)
+	}
+	doscroll()
+</script>
+<script src="http://static.egou.com/b=p/bi/js&f=alltracker.js"></script>
+<script type="text/javascript">
+var _egtk = _egtk || {"site": 2};
+(function() {
+ var eg = document.createElement('script'); eg.type = 'text/javascript'; eg.async = true;
+ eg.src = 'http://static.egou.com/js/egoutracker.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(eg, s);
+})();
+</script>
+</div>
+</body>
+</html>

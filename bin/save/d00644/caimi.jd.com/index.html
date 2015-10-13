@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+     <head lang="zh-cn">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="Keywords" content= 京东财谜,股票,互联网股票,证券,股票投资,京东金融,京东  />
+    <meta name="description" content= 京东财谜是互联网中最专业的股票投资平台，众多股票行业资深分析师对不同的行业进行深入研究，预测发展趋势，帮您推荐收益最高的行业股票组合。  />
+    <title>
+                             京东股票-互联网股票投资综合服务平台,带你开启财谜之旅!
+            </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/caimi/common/1.0.0/css/common.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/caimi/index/1.0.0/css/caimiIndex.css">
+    <script>
+        window.jrBase = {
+            //footerFix: true,
+			navId:'nav-caimi',
+			//navSubId:'nav-cimiIndex',
+            assetsId:'myCaimi',
+            headerFix: true,
+            sidebar: true,
+            // 问卷反馈 id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=123'
+        };
+    </script>
+    <script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.8.3/jquery.js,base/1.1.0/js/base.js"></script>
+</head>
+<body>
+    <!--header-->
+
+
+<!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end-->    <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->    <div class="sub-nav">        <div class="grid-1200 sub-nav-wrap">                    <a id="nav-cimiIndex" class="sub-nav-item" href="/" clstag="jr|keycount|jr_caimi|nav_index">财谜首页</a>        <a id="nav-famous" class="su-nav-item " href="/expert/" clstag="jr|keycount|jr_caimi|nav_expert">找精英</a>        <a id="nav-industry" class="sub-nav-item " href="/package/" clstag="jr|keycount|jr_caimi|nav_industry">看行业</a>        <a id="nav-info" class="sub-nav-item " href="/info/" clstag="jr|keycount|jr_caimi|nav_news">每日资讯</a>        <a id="nav-baike" class="sub-nav-item " href="/baike/" clstag="jr|keycount|jr_caimi|nav_wiki">财花百科</a>        <a id="nav-xiaoBai" class="sub-nav-item " href="/baodian/" clstag="jr|keycount|jr_caimi|nav_bible">财花宝典</a>        <a id="nav-myCenter" class="sub-nav-item " href="/center/asset.html" clstag="jr|keycount|jr_caimi|nav_mycaimi">我的财谜</a>        </div>    </div>    <!--sub-nav-end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+
+<!--header end-->
+<script type="text/javascript">
+    var isExpert = '$isExpert';
+	if(isExpert && isExpert == 'true'){
+		$("#nav-myCenter").html("后台管理");
+	}
+	var isCheckIn = '$isCheckIn';
+	var disabled = '$disabled';
+	if( isCheckIn && isCheckIn == 'true' && disabled && disabled == 0 ){
+		$("#nav-myCenter").html("我的财谜");
+	}
+	
+	var navCimiIndex = 'true';
+	var navFamous = '$navFamous';
+	var navIndustry = '$navIndustry';
+	var navInfo = '$navInfo';
+	var navBaike = '$navBaike';
+	var navXiaoBai = '$navXiaoBai';
+	var navMyCenter = '$navMyCenter';
+	if( navCimiIndex && navCimiIndex=='true' ){
+		$("#nav-cimiIndex").addClass("current");
+	}
+	if( navFamous && navFamous=='true' ){
+		$("#nav-famous").addClass("current");
+	}
+	if( navIndustry && navIndustry=='true' ){
+		$("#nav-industry").addClass("current");
+	}
+	if( navInfo && navInfo=='true' ){
+		$("#nav-info").addClass("current");
+	}
+	if( navBaike && navBaike=='true' ){
+		$("#nav-baike").addClass("current");
+	}
+	if( navXiaoBai && navXiaoBai=='true' ){
+		$("#nav-xiaoBai").addClass("current");
+	}
+	if( navMyCenter && navMyCenter=='true' ){
+		$("#nav-myCenter").addClass("current");
+	}
+	
+</script><div class="caimiIndex">
+		
+
+<div class="cai-banner">
+        <div class="b-layer" id="J_cai-banner">
+            <ul class="b-l-ulist">
+                                   <li class="b-l-list b-l-list--now" data-bkg="http://img30.360buyimg.com/jr_image/jfs/t1582/184/1081021632/158492/bba61f93/55b8a8a6N7c0c2b6f.jpg" style="opacity: 1; background-image: none;">
+                    <a class="b-l-list-link" href="http://caimi.jd.com/center/perfect.html" target="_blank" clstag="jr|keycount|jr_caimi_index|open_caimi"></a>
+                                                  <div class="b-l-l-animate animation" data-delay="1" data-bkg="http://img30.360buyimg.com/jr_image/jfs/t1582/184/1081021632/158492/bba61f93/55b8a8a6N7c0c2b6f.jpg"
+                                data-animationType="" data-isbg="true"></div>
+                                                  <div class="b-l-l-animate animation" data-delay="1" data-bkg="http://img30.360buyimg.com/jr_image/jfs/t1582/184/1081021632/158492/bba61f93/55b8a8a6N7c0c2b6f.jpg"
+                                data-animationType="" data-isbg="true"></div>
+                                          </li>
+                            </ul>
+			<div class="b-l-holder">
+				                <a class="b-l-h-btn  b-l-h-btn--now " href="javascript:;"></a>
+							</div>
+        </div>
+    </div>	 <div class="cai-leader">
+        <div class="caimiIndex-head animation" data-animationType="fadeInDown">
+            <h2 class="h-tit">“高手带你玩转股市”</h2>
+        </div>
+        <div class="w">
+            			
+			    			                            	<div class="l-current animation" data-animationType="fadeInUp">
+<div class="caimiIndex-title">
+    <em class="t-line"></em>
+    <h3 class="t-tit">每日推荐</h3>
+    <input type="hidde" id="thisweek_id" value="8"/>
+</div>
+<div class="l-c-boss">
+    <div class="l-c-b-left">
+        <div class="l-c-b-l-title">
+            <span class="l-c-b-l-t-name">武超则</span><span class="l-c-b-l-t-tip">中信建投 研究部总监</span>
+        </div>
+        <div>
+            <div class="caimiIndex-tag clearfix">
+															<span class="t-label">稳健</span>
+																				<span class="t-label">价值投资</span>
+																				<span class="t-label">事件驱动</span>
+																		            </div>
+        </div>
+        <div class="l-c-b-l-info clearfix">
+            <div class="l-c-b-l-i-income">
+                <p>组合累计收益</p>
+				<p class=" font-red ">
+				<em class="font-size48 animateNum" data-animatetarget="33.65">33.65</em>%</p>
+            </div>
+            <div class="l-c-b-l-i-time">
+                <p>持仓天数</p>
+                <p class="font-grey3"><em class="font-size48 animateNum" data-animatetarget="141">141</em>天</p>
+            </div>
+        </div>
+        <div class="l-c-b-l-msg">英国斯旺西大学法学硕士。2013、2014年为“新财富”最佳分析师通信第一名、2014年为《水晶球》第一名</div>
+        <div class="l-c-b-l-love">
+            <span class="caimiIndex-loveHeart"><em class="l-ico"></em>28,983</span>
+        </div>
+    </div>
+    <div class="l-c-b-middle">
+        <a href="/expert/8.html"><img src="http://img30.360buyimg.com/jr_image/jfs/t880/190/871785306/194916/cfe9fb66/5551f1d0N43eb6205.png" alt="" width="380" height="530" clstag="jr|keycount|jr_caimi_index|exp_pic1"/></a>
+    </div>
+    <div class="l-c-b-right">
+        <div class="l-c-b-r-tit">当前持仓</div>
+        <div class="l-c-b-r-chart">
+            <div id="curPosition" class="chart"></div>
+        </div>
+        <div class="l-c-b-r-info">
+            <p class="l-c-b-r-i-tit">TA的动态</p>
+            <div class="l-c-b-r-i-msg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="l-c-btnBox">
+    <a class="caimiIndex-button caimiIndex-button-XL" href="/expert/8.html" clstag="jr|keycount|jr_caimi_index|exp_detail1">模拟交易</a>
+</div>
+</div>
+<script>
+var COMBO_PACKAGE_ID='10052';
+</script>    												
+<div class="l-past">
+    <div class="caimiIndex-title animation" data-animationType="fadeInUp">
+        <em class="t-line"></em>
+        <h3 class="t-tit">选股精英 </h3>
+    </div>
+    <ul class="l-p-ulist clearfix animation" data-animationType="fadeInUp">
+		        <li class="l-p-list">
+            <div class="l-p-l-image">
+                <a href="/expert/21.html" target="_blank" clstag="jr|keycount|jr_caimi_index|exp_pic2"><img class="l-p-l-i-img" src="http://img30.360buyimg.com/jr_image/jfs/t1102/235/855798479/49857/4f362071/5551ee78Neb6bf40f.jpg" alt="" width="250" height="350"></a>
+            </div>
+            <div class="l-p-l-name">欧阳长征</div>
+            <div class="font-ellipsis" title="阿尔法工场&nbsp;创始人">阿尔法工场 创始人</div>
+            <div>
+                <div class="caimiIndex-tag clearfix">
+                  										<span class="t-label">稳健</span>
+									                  </div>
+            </div>
+            <div>
+                <div class="caimiIndex-incomeNum">
+					组合累计收益： <span class=" font-red "> <em class="font-size30">4.41</em>%</span>
+				</div>
+            </div>
+            <div class="l-p-l-btnBox"><a class="caimiIndex-button" href="/expert/21.html" clstag="jr|keycount|jr_caimi_index|exp_detail2">模拟交易</a></div>
+        </li>
+		        <li class="l-p-list">
+            <div class="l-p-l-image">
+                <a href="/expert/10001.html" target="_blank" clstag="jr|keycount|jr_caimi_index|exp_pic3"><img class="l-p-l-i-img" src="http://img30.360buyimg.com/jr_image/jfs/t1177/262/887476092/132467/52bf0d0f/55534220N81f3910a.png" alt="" width="250" height="350"></a>
+            </div>
+            <div class="l-p-l-name">卢飞</div>
+            <div class="font-ellipsis" title="汇嘉投资&nbsp;研究主管">汇嘉投资 研究主管</div>
+            <div>
+                <div class="caimiIndex-tag clearfix">
+                  										<span class="t-label">稳健</span>
+									  										<span class="t-label">价值投资</span>
+									  										<span class="t-label">混合策略</span>
+									                  </div>
+            </div>
+            <div>
+                <div class="caimiIndex-incomeNum">
+					组合累计收益： <span class=" font-red "> <em class="font-size30">15.28</em>%</span>
+				</div>
+            </div>
+            <div class="l-p-l-btnBox"><a class="caimiIndex-button" href="/expert/10001.html" clstag="jr|keycount|jr_caimi_index|exp_detail3">模拟交易</a></div>
+        </li>
+		        <li class="l-p-list">
+            <div class="l-p-l-image">
+                <a href="/expert/10000.html" target="_blank" clstag="jr|keycount|jr_caimi_index|exp_pic4"><img class="l-p-l-i-img" src="http://img30.360buyimg.com/jr_image/jfs/t1162/179/882125848/43868/68267405/555488baNc6624bd7.jpg" alt="" width="250" height="350"></a>
+            </div>
+            <div class="l-p-l-name">杨光</div>
+            <div class="font-ellipsis" title="赢华投资&nbsp;创始人">赢华投资 创始人</div>
+            <div>
+                <div class="caimiIndex-tag clearfix">
+                  										<span class="t-label">成长</span>
+									  										<span class="t-label">事件驱动</span>
+									  										<span class="t-label">主题投资</span>
+									                  </div>
+            </div>
+            <div>
+                <div class="caimiIndex-incomeNum">
+					组合累计收益： <span class=" font-green "> <em class="font-size30">-5.11</em>%</span>
+				</div>
+            </div>
+            <div class="l-p-l-btnBox"><a class="caimiIndex-button" href="/expert/10000.html" clstag="jr|keycount|jr_caimi_index|exp_detail4">模拟交易</a></div>
+        </li>
+		        <li class="l-p-list">
+            <div class="l-p-l-image">
+                <a href="/expert/5.html" target="_blank" clstag="jr|keycount|jr_caimi_index|exp_pic5"><img class="l-p-l-i-img" src="http://img30.360buyimg.com/jr_image/jfs/t1168/264/855325985/38705/cc21e84b/554f1dc2N1d82a742.jpg" alt="" width="250" height="350"></a>
+            </div>
+            <div class="l-p-l-name">马中恕</div>
+            <div class="font-ellipsis" title="混沌道然&nbsp;研究主管">混沌道然 研究主管</div>
+            <div>
+                <div class="caimiIndex-tag clearfix">
+                  										<span class="t-label">平衡</span>
+									  										<span class="t-label">混合策略</span>
+									                  </div>
+            </div>
+            <div>
+                <div class="caimiIndex-incomeNum">
+					组合累计收益： <span class=" font-red "> <em class="font-size30">1.91</em>%</span>
+				</div>
+            </div>
+            <div class="l-p-l-btnBox"><a class="caimiIndex-button" href="/expert/5.html" clstag="jr|keycount|jr_caimi_index|exp_detail5">模拟交易</a></div>
+        </li>
+		    </ul>
+    <div class="l-p-btnBox animation" data-animationType="fadeInDown">
+        <a class="caimiIndex-button caimiIndex-button-white caimiIndex-button-XL" href="/expert/" clstag="jr|keycount|jr_caimi_index|exp_more">更多高手</a>
+    </div>
+</div>        </div>
+    </div>
+	<div class="cai-direction">
+        <div class="d-head">
+            <div class="caimiIndex-head animation" data-animationType="fadeInDown">
+                <h2 class="h-tit">“ 找对<span class="font-red">行业</span>，才能水涨船高 ”</h2>
+                <p class="h-tip">资深分析师对行业进行深入研究，预测发展趋势，推荐行业股票组合</p>
+            </div>
+        </div>
+				          <div class="w">
+            <ul class="d-ulist clearfix">
+                                <li class="d-list animation" data-animationType="fadeInLeft">
+                        <a href="/expert/7.html" target="_blank" clstag="jr|keycount|jr_caimi_index|ind_pic1"><img src="http://img30.360buyimg.com/jr_image/jfs/t1420/199/166263900/20345/c1df41fd/555ebf7cNf195d43d.jpg" alt="" width="580" height="240"></a>
+                        <div class="d-l-h-title"><span class="d-l-h-t-name">民生证券 环保能源</span><span class="d-l-h-t-tip">沪深</span></div>
+                    <div class="d-l-info">
+                        <div class="d-l-i-user"><img class="d-l-i-u-img" src="http://img30.360buyimg.com/jr_image/jfs/t1216/56/856792368/17767/c5e40445/5551f0dbNb7ee0db0.png" alt="" width="68" height="68"></div>
+                        <div class="d-l-i-title"><span class="d-l-i-t-name">陶贻功</span><span class="d-l-i-t-tip">民生证券&nbsp;行业首席分析师</span></div>
+                        <div class="d-l-i-income">
+                            <div class="caimiIndex-incomeNum">组合累计收益： <span class=" font-green "><em class="font-size30">-2.13</em>%</span></div>
+                        </div>
+                    </div>
+                    <div class="d-l-msg">毕业于中国矿业大学（北京）。4年能源环保行业研究经验。一直从事煤炭、电力、燃气、环保等大能源方向的行业研究</div>
+                    <div class="d-l-other">
+                        <div class="d-l-o-love">
+                            <span class="caimiIndex-loveHeart"><em class="l-ico"></em>3,739</span>
+                        </div>
+                        <div class="d-l-o-btnBox">
+                            <a class="caimiIndex-button" href="/expert/7.html" clstag="jr|keycount|jr_caimi_index|ind_detail1">模拟交易</a>
+                        </div>
+                    </div>
+                </li>
+                                <li class="d-list animation" data-animationType=" fadeInRight">
+                        <a href="/expert/10009.html" target="_blank" clstag="jr|keycount|jr_caimi_index|ind_pic2"><img src="http://img30.360buyimg.com/jr_image/jfs/t1294/274/256677131/129458/2e95f8d5/555ebe08N0d21e45f.jpg" alt="" width="580" height="240"></a>
+                        <div class="d-l-h-title"><span class="d-l-h-t-name">华泰证券 家电</span><span class="d-l-h-t-tip">沪深</span></div>
+                    <div class="d-l-info">
+                        <div class="d-l-i-user"><img class="d-l-i-u-img" src="http://img30.360buyimg.com/jr_image/jfs/t1627/180/103075831/6269/2a89e143/5558631dNbfc472be.jpg" alt="" width="68" height="68"></div>
+                        <div class="d-l-i-title"><span class="d-l-i-t-name">张立聪</span><span class="d-l-i-t-tip">华泰证券&nbsp;行业首席分析师</span></div>
+                        <div class="d-l-i-income">
+                            <div class="caimiIndex-incomeNum">组合累计收益： <span class=" font-green "><em class="font-size30">-12.27</em>%</span></div>
+                        </div>
+                    </div>
+                    <div class="d-l-msg">北大光华企业管理硕士。2013年“天眼中国最佳证券分析师”第三名，新财富团队。</div>
+                    <div class="d-l-other">
+                        <div class="d-l-o-love">
+                            <span class="caimiIndex-loveHeart"><em class="l-ico"></em>3,989</span>
+                        </div>
+                        <div class="d-l-o-btnBox">
+                            <a class="caimiIndex-button" href="/expert/10009.html" clstag="jr|keycount|jr_caimi_index|ind_detail2">模拟交易</a>
+                        </div>
+                    </div>
+                </li>
+                                <li class="d-list animation" data-animationType="fadeInLeft">
+                        <a href="/expert/10003.html" target="_blank" clstag="jr|keycount|jr_caimi_index|ind_pic3"><img src="http://img30.360buyimg.com/jr_image/jfs/t1303/281/170092781/74359/71c566cf/5555a617N958d33b3.jpg" alt="" width="580" height="240"></a>
+                        <div class="d-l-h-title"><span class="d-l-h-t-name">方正证券 食品饮料</span><span class="d-l-h-t-tip">沪深</span></div>
+                    <div class="d-l-info">
+                        <div class="d-l-i-user"><img class="d-l-i-u-img" src="http://img30.360buyimg.com/jr_image/jfs/t1246/143/915413441/25470/6c577cb/5557296cNf6776cd5.jpg" alt="" width="68" height="68"></div>
+                        <div class="d-l-i-title"><span class="d-l-i-t-name">薛玉虎</span><span class="d-l-i-t-tip">方正证券&nbsp;行业首席分析师</span></div>
+                        <div class="d-l-i-income">
+                            <div class="caimiIndex-incomeNum">组合累计收益： <span class=" font-green "><em class="font-size30">-16.15</em>%</span></div>
+                        </div>
+                    </div>
+                    <div class="d-l-msg">方正证券食品饮料行业高级分析师，食品饮料小组组长。曾任知名咨询公司高级咨询师，多年消费品行业从业经验</div>
+                    <div class="d-l-other">
+                        <div class="d-l-o-love">
+                            <span class="caimiIndex-loveHeart"><em class="l-ico"></em>8,668</span>
+                        </div>
+                        <div class="d-l-o-btnBox">
+                            <a class="caimiIndex-button" href="/expert/10003.html" clstag="jr|keycount|jr_caimi_index|ind_detail3">模拟交易</a>
+                        </div>
+                    </div>
+                </li>
+                                <li class="d-list animation" data-animationType=" fadeInRight">
+                        <a href="/expert/12.html" target="_blank" clstag="jr|keycount|jr_caimi_index|ind_pic4"><img src="http://img30.360buyimg.com/jr_image/jfs/t1609/305/74139877/87640/d03e90d/5555ac6bN48c4b5f8.jpg" alt="" width="580" height="240"></a>
+                        <div class="d-l-h-title"><span class="d-l-h-t-name">华泰证券 农林牧渔</span><span class="d-l-h-t-tip">沪深</span></div>
+                    <div class="d-l-info">
+                        <div class="d-l-i-user"><img class="d-l-i-u-img" src="http://img30.360buyimg.com/jr_image/jfs/t910/266/896722112/6314/8b8eb7a/55585d23Ne93c9ed2.jpg" alt="" width="68" height="68"></div>
+                        <div class="d-l-i-title"><span class="d-l-i-t-name">李方新</span><span class="d-l-i-t-tip">华泰证券&nbsp;行业首席分析师</span></div>
+                        <div class="d-l-i-income">
+                            <div class="caimiIndex-incomeNum">组合累计收益： <span class=" font-green "><em class="font-size30">-22.08</em>%</span></div>
+                        </div>
+                    </div>
+                    <div class="d-l-msg">北京大学经济学硕士。曾就职于中船集团，2013年起从事农林牧渔行业研究，逐步打造了华泰农业独特的研究视角</div>
+                    <div class="d-l-other">
+                        <div class="d-l-o-love">
+                            <span class="caimiIndex-loveHeart"><em class="l-ico"></em>2,191</span>
+                        </div>
+                        <div class="d-l-o-btnBox">
+                            <a class="caimiIndex-button" href="/expert/12.html" clstag="jr|keycount|jr_caimi_index|ind_detail4">模拟交易</a>
+                        </div>
+                    </div>
+                </li>
+                            </ul>
+            <div class="d-btnBox animation" data-animationType="fadeInDown">
+                <a class="caimiIndex-button caimiIndex-button-white caimiIndex-button-XL" href="/package/" clstag="jr|keycount|jr_caimi_index|ind_more">更多行业</a>
+            </div>
+        </div>
+    </div>
+				
+</div>
+    
+<div class="cooperation">
+    <div class="w clearfix qr-one">
+        <div  id="homeFooter" class="coop-wrap">
+            <!--合作机构-->
+            <div class="coop-tit">
+                <span class="coop-tit-name">合作机构</span>
+
+                <div class="coop-slide-btn">
+                    <a href="javascript:;" class="coop-btn-prev" style="color: rgb(184, 189, 196);">&lt;</a>
+                    <a href="javascript:;" class="coop-btn-next">&gt;</a>
+                </div>
+            </div>
+
+            <div class="coop-list">
+                <div class="scroll-layer">
+                    <ul class="coop-list-ul clearfix">
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1063/300/925127634/6360/c8789531/555bfafaN2824a635.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1639/4/123756301/7379/f1d5ccf9/555bfaf9N3c61d56f.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1036/58/912159587/10883/c9a24e18/555bfaf9N8b672518.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1393/7/124281328/10134/91bbef98/555bfafaN649726fa.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t886/64/953815869/7495/4e269b7c/555bfaf9N1ba564c5.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1081/90/941632342/6361/b7fe982a/555bfafaNe2520e2c.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1189/218/937660137/10160/b5c200b9/555bfaf9N4d409ac4.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1057/320/947011251/7012/39aaca73/555bfafaN4961ae10.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1450/313/118344091/11277/778b3df0/555bfaf9Nc4ac11c7.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1630/229/116627445/9942/f17338c7/555bfaf9N52e8783d.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1207/233/925010772/9089/1e5978d2/555bfafaN1ea390f0.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t790/66/924213855/6185/84a691a5/555bfaf9Nc3794f8e.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1084/133/916426986/8988/184f720/555bfafaNa1ff23f1.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1039/23/940556408/6565/a11f8518/555bfaf9Nfc5b39ce.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1393/6/120665352/8154/83e47971/555bfaf9N823555e9.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1132/297/949342303/6673/f296fd28/555bfaf9N0a5b3cb8.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t880/74/924957197/8075/362f0236/555bfaf9N4b55aa98.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1372/123/123979980/8060/ad85f93b/555bfafaN3f4db784.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1471/79/113524070/13353/73d35071/555bfaf8N488bb5cf.png" alt="" width="120" height="40" /></a>
+                            </div>
+                            <div class="logoBlock">
+                                <a href="javascript:void(0);" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t1363/179/114589476/7050/1aa01130/555bfafaN477168ae.png" alt="" width="120" height="40" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-attention clearfix">
+
+            <div class="wx-attention">
+                <div class="attention-tit">关注微信</div>
+                <ul class="wx-attention-list">
+                    <li>
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1492/81/63418868/8284/ab4aad5/555463bdNebeead22.png" alt="">
+                        <span>京东财谜</span>
+                    </li>
+                    <li>
+                        <img src="http://img30.360buyimg.com/jr_image/jfs/t1492/81/63418868/8284/ab4aad5/555463bdNebeead22.png" alt="">
+                        <span>京东财谜</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wb-attention">
+                <div class="attention-tit">关注微博</div>
+                <div class="pub-btn btn-style-0 mt5">
+                    <a class="size12" href="http://weibo.com/jdcaimi" target="_blank"><img src="http://img30.360buyimg.com/jr_image/jfs/t514/82/395635119/102/86f09296/5463373fN9b93d43e.png">&nbsp;京东财谜</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>    <!--footer-->
+<div class="exemption">
+    <div class="exemption-con">
+        <div class="w">
+            免责声明：京东财谜仅提供平台对接功能，平台上所有专业人士发布的观点均为其个人研究成果，仅供学习，不建议用户进行实盘交易
+            <br>
+            本网站所有数据均得到上海和丰永讯金融信息服务有限公司授权
+        </div>
+    </div>
+</div>
+
+<!--footer--><div class="f-copyright">    <div class="grid-1200 footerHolder">        <div class="footer-nav">            <p>                <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于京东钱包</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>                <span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>                <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>            </p>            <p>                Copyright &copy; 2004-2015 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎            </p>        </div>        <div class="footer-contact">            <div class="f-contact-time">联系我们<span>（9:00-22:00）</span></div>            <div class="f-contact-way">                <span class="f-contact-tel">400 098 8511</span>                <span class="f-contact-type">(个人业务)</span>                <a class="f-contact-ol online" href="http://chat.jd.com/jd/chat?entry=jd_jr" target="_blank" clstag="jr|keycount|jr_shouye|footerkf">在线客服</a>                <a class="f-contact-ol f-contact-mail" target="_blank" href="http://jr.jd.com/mail/index.html" clstag="jr|keycount|jr_shouye|footerkfmail">客服邮箱</a>            </div>            <div class="f-contact-way">                <span class="f-contact-tel">400 088 8816</span>                <span class="f-contact-type">(企业业务)</span>            </div>        </div>    </div></div><!--footer end-->
+
+
+
+<!--footer end--><script type="text/javascript" src="http://static.360buyimg.com/finance/caimi/index/1.0.0/js/caimiIndex.js"></script>
+<script src="/resources/js/common/Date.js"></script>
+<script src="/resources/js/caimi_common.js"></script>
+<script >
+$(function(){
+    $.post("/dynamic/expert_recent.html",{"id":$("#thisweek_id").val()},function(result){
+        if(result.success && result.recent!=''){
+            var msgHtml =" <p>"+result.showTime+" "+(result.recent.category == 1 ? "发表了观点": "进行了调仓") +"：</p>";
+            var content = result.recent.content ? result.recent.content : "";
+            var maxSize = 25;
+            content = content.length > maxSize ? content.substring( 0 , maxSize ) + "..." : content;
+            msgHtml+="<p class=\"font-ellipsis\">"+content+"</p>"
+            $(".l-c-b-r-i-msg").append(msgHtml);
+        }else{
+            $(".l-c-b-r-i-msg").html( "暂无动态" );
+        }
+    });
+});
+</script>
+<script src="http://static.360buyimg.com/finance/??common/lib/highstock/1.0.0/highstock.js"></script>
+<script src="http://static.360buyimg.com/finance/caimi/famous/1.0.0/js/index.js"></script>
+<script src="http://static.360buyimg.com/finance/caimi/index/1.0.0/js/index.js"></script>
+<script>
+seajs.use('common/unit/xPromotion/1.0.0/xPromotion.js', function(xPromotion){
+    // 金融通用顶部广告位
+    new xPromotion({
+        // 广告位id
+        ad_id: '404244',
+        // 广告位展示最大数量
+        batchCount: '1',
+        // 模板类型
+        // 1: 金融通用顶部广告位
+        // 2: 金融通用右侧广告位
+        // 3: 金融通用底部广告位
+        tplType: '1',
+        // 回调
+        callback: function(ele){
+            // ele {Object} 渲染容器对象
+            // console.log(ele);
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+    var jaq = jaq || [];
+    jaq.push(['account','UA-J2011-12']);
+    jaq.push(['domain','jr.jd.com']);
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+    })();
+</script>
+<script type="text/javascript">
+    var jaq = jaq || [];
+    jaq.push(['account','UA-J2011-12']);
+    jaq.push(['domain','jr.jd.com']);
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://click' : 'http://click') + '.jr.jd.com/wl.dev.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+    })();
+</script>
+</body>
+</html>

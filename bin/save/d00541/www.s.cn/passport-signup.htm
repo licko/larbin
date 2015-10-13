@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <title>用户注册</title> <meta name="keywords" content=""> <meta name="description" content=""> <script type="text/javascript" src="statics/script/formplus.js"></script> <link rel="stylesheet" href="statics/style.css" type="text/css" /> <link href="http://images.s.cn/themes/scn2012/images/style_b.css" rel="stylesheet" type="text/css" /> <link href="http://images.s.cn/themes/scn2012/images/skin/style.css" rel="stylesheet" type="text/css"/> <script type="text/javascript" src="http://images.s.cn/statics/script/tools.js"></script> </head> <body> <div class="head"> <div class="warp clfix"> <span class="logo"><a title="返回名鞋库首页" href="http://www.s.cn/"><img alt="欢迎来到名鞋库网上鞋城!" src="http://images.s.cn/images/css/newlogo.png"></a></span> </div> </div> <div class="AllWrapInside"> <div class="PassportWrap"><style> .foot{border:0;width:980px;margin:30px auto 0} .head{padding:20px 0 0} .login-descript{padding:12px 0 0;border:0;margin:0} .RegisterWrap .form table th{text-align:right;color:#666;width:75px;padding:0} .returnlogin{display:inline-block;width:91px;height:32px;line-height:30px;text-align:center;color:#c66;font-size:14px;font-weight:700;background:url(http://images.s.cn/images/css/loginbg.png) no-repeat;} .returnlogin:hover{ text-decoration:none;color:#c00} .head .logo{height:auto} </style> <script>
+function openWind(url){
+ var top=(document.body.clientHeight-420)/2;
+ var left=(document.body.clientWidth-520)/2;
+ window.open(url,'kaixinwindow', 'height=420, width=520, toolbar =no, menubar=no, scrollbars=yes, resizable=no,top='+top+',left='+left+', location=no, status=no');
+} 
+</script> <div style="margin:0 auto;width:780px;line-height:30px;text-align:right;padding-right:10px" class="c999"><a href="http://www.s.cn">返回首页</a></div> <form method="post" action='http://www.s.cn/passport-create.html' id="signupform" class='signupform'> <div class="RegisterWrap" style="margin:0 auto;width:780px;"> <div class="form" style="padding:0;border:1px solid #efefef;border-radius:2px;box-shadow:0 0 8px #E5E5E5"> <div style="font-size:16px;font-family:microsoft yahei;color:#888;background:#f8f8f8;padding:4px 10px;border-bottom:1px solid #efefef;text-shadow:1px 1px #fff;font-weight:700;">名鞋库用户注册</div> <input name="forward" type="hidden" value="http://www.s.cn/"> <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background:url(http://images.s.cn/images/css/signup.jpg) no-repeat center bottom;"> <tr> <td width="65%"> <div style="padding:40px 0 80px 80px"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <th></th> <td style="height:35px;line-height:25px"><input type="hidden" id="for_vali"><span class="valierror" id="valierror" style="margin:0;display:none;"></span></td> </tr> <tr> <th>用户名：</th> <td><input autocomplete="off" class="x-input newinputstyle" class="newinputstyle" name="uname" id="reg_user" maxlength="50" value="邮箱/手机" onfocus="rmDefault(this)" onblur="nameCheck(this);" style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa" type="text" /><span></span></td> </tr> <tr> <th style="padding-top:15px">密码：</th> <td style="padding-top:15px"><input autocomplete="off" class="x-input newinputstyle" class="newinputstyle" name="passwd" type="password" id="reg_passwd" onblur="verifyPasswd('reg_passwd')" style="width:220px;border:1px solid #ccc;padding:3px 5px" /><span id="passwd_err_msg"></span></td> </tr> <tr> <th style="padding-top:15px">确认密码：</th> <td style="padding-top:15px"><input autocomplete="off" class="x-input newinputstyle" class="newinputstyle" name="passwd_r" type="password" id="reg_passwd_r" onfocus="hiddenError('valierror');" onblur="verifyPasswdr('reg_passwd', 'reg_passwd_r')" style="width:220px;border:1px solid #ccc;padding:3px 5px" /><span id="passwd_r_err_msg"></span> </td> </tr> <!-- <tr> <th><i>*</i>电子邮箱：</th> <td><input autocomplete="off" class="x-input newinputstyle" class="newinputstyle" name="email" type="text" required="true" id="reg_email" maxlength="200" vtype="email" /></td> </tr> -->  <tr> <th></th> <td class="c777" style="padding-top:25px"> <label for="license" class="nof" style="width:auto; text-align:left; font-weight:normal;"> <input type="checkbox" id="license" name="license" value="agree" checked="checked"/> 我已阅读并同意 <a href="http://www.s.cn/page-license.html" id="terms_error" class="lnk" target='_blank'> <span class="FormText" id="terms_error_sym"><font color="#3366dd">名鞋库会员注册协议</font></span></a>。 </label> </td> </tr> <tr> <th></th> <td style="padding-top:10px"> <input class="actbtn cart-btn-next06" onclick="return verfiySignupForm();" type="submit" value="注册新用户" id="fast_reg_reg"/> </td> </tr> </table> </div> </td> <td width="35%" style="text-align:center;"> <div style="border-left:1px dashed #ccc;height:300px"> <br /><br /><br /><br /> <b>已经有名鞋库账号？</b><div class="box10"></div> <a href='/passport-login.htm' class='returnlogin' id="fast_reg_login">现在登录</a> <div style="padding:40px 0 0 0; text-align:center"> <img src="http://images.s.cn/images/css/singupmy.png" /> </div> </div> </td> </tr> </table>  </div> </div>  </form>  <script>
+function nameCheck(input){
+    var pass = 0;
+    var mobilePreg =/(^1[3|4|5|8][0-9]\d{8,8}$)|(^17[7890][0-9]{8}$)/;
+    var mailPreg =/^([a-z0-9A-Z]+[-|_|\.]?)+([a-z0-9A-Z]?)@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\.)+[a-zA-Z]{1,}$/;
+    var domainPreg =/^([a-z0-9]([-a-z0-9]*[a-z0-9])?\.)+((a[cdefgilmnoqrstuwxz]|aero|arpa)|(b[abdefghijmnorstvwyz]|biz)|(c[acdfghiklmnorsuvxyz]|cat|com|coop)|d[ejkmoz]|(e[ceghrstu]|edu)|f[ijkmor]|(g[abdefghilmnpqrstuwy]|gov)|h[kmnrtu]|(i[delmnoqrst]|info|int)|(j[emop]|jobs)|k[eghimnprwyz]|l[abcikrstuvy]|(m[acdghklmnopqrstuvwxyz]|mil|mobi|museum)|(n[acefgilopruz]|name|net)|(om|org)|(p[aefghklmnrstwy]|pro)|qa|r[eouw]|s[abcdeghijklmnortvyz]|(t[cdfghjklmnoprtvwz]|travel)|u[agkmsyz]|v[aceginu]|w[fs]|y[etu]|z[amw])$/i;
+    if(mobilePreg.test(input.value)) {
+        pass = 1;
+    }
+    if(mailPreg.test(input.value)){
+        str = input.value;
+        var strs= new Array(); //定义一数组
+        strs=str.split("@"); //字符分割
+        if(domainPreg.test(strs[1])) {
+            pass = 1;
+        }
+
+    }
+    if(!pass) {
+        $("valierror").set("class","valierror").setHTML('请输入正确的邮箱账号或手机!').setStyle('display','');return;
+    }
+    new Request.HTML({update:$('valierror'),
+    onComplete: function(a,b,c){
+        if(c.indexOf('可以使用') == -1 ){
+            $('valierror').set("class","valierror").setStyle('display','');
+        }else{
+            $('valierror').set("class","valisuccess").setStyle('display','');
+        }
+    },
+    data:'name='+encodeURIComponent(input.value=input.value.trim())}).post('http://www.s.cn/passport-namecheck.html');
+}
+function rmDefault(input){
+    if(input.value==input.defaultValue){
+        input.value='';
+        input.style.color="rgb(0, 0, 0)";
+    }
+}
+
+
+function verifyPasswd(passwdinput) {
+    var passwdinput = $(passwdinput);
+    var passwd = passwdinput.get('value');
+    if (passwd.length < 4) {
+    	$("valierror").set("class","valierror").setHTML('您输入的密码不能小于4个字符!').setStyle('display','');
+        return false;
+    } else if (passwd.length > 20) {
+    	$("valierror").set("class","valierror").setHTML('您输入的密码不能大于20个字符!').setStyle('display','');
+        return false;
+    }
+    var passwdr = $('reg_passwd_r').get('value');
+    if(passwdr.length>0){
+        if (!(passwd == passwdr)) {
+            $("valierror").set("class","valierror").setHTML('您两次输入的密码不一致!').setStyle('display','');
+            return false;
+        }
+    }
+    $("valierror").setStyle('display','none');
+    return true;
+}
+
+function verifyPasswdr(passwdinput, passwdrinput) {
+    var passwd = $(passwdinput).get('value');
+    if (passwd.length < 4) {
+        $("valierror").set("class","valierror").setHTML('您输入的密码不能小于4个字符!').setStyle('display','');
+        return false;
+    } else if (passwd.length > 20) {
+        $("valierror").set("class","valierror").setHTML('您输入的密码不能大于20个字符!').setStyle('display','');
+        return false;
+    }
+    var passwdr = $(passwdrinput).get('value');
+    if (!(passwd == passwdr)) {
+        $("valierror").set("class","valierror").setHTML('您两次输入的密码不一致!').setStyle('display','');
+    }
+}
+/**消除错误提示*/
+function hiddenError(error_id) {
+    var obj = $(error_id);
+    obj.setStyle('display','none');
+}
+
+/**用户提交表单的时候 对表单进行验证*/
+function verfiySignupForm() {
+    var passwd = $('reg_passwd').get('value');
+    var passwdr = $('reg_passwd_r').get('value');
+    var ret = true;
+    new Request.HTML({update:$('valierror'),
+    onComplete: function(a,b,c){
+        if(c.indexOf('可以使用') == -1 ){
+            $('valierror').set("class","valierror").setStyle('display','');
+        }else{
+            $('valierror').setStyle('display','none');
+        }
+    },
+    async:false,data:'name='+encodeURIComponent($('reg_user').value.trim())}).post('http://www.s.cn/passport-namecheck.html');
+    var check_name = $('valierror').get('html');
+    if(check_name.indexOf('可以使用') == -1 ){
+        //$('errorspan').set('html',check_name);
+        return false;
+    }
+    if (passwd.length < 4) {/*密码小于4个字符*/
+        $("valierror").setHTML('您输入的密码不能小于4个字符!').set("class","valierror").setStyle('display','');
+        return false;
+    } else if (passwd.length > 20) {/*密码大于20个字符*/
+        $("valierror").setHTML('您输入的密码不能大于20个字符!').set("class","valierror").setStyle('display','');
+        return false;
+    }
+
+    if (passwd !== passwdr) {
+        $("valierror").setHTML('您两次输入的密码不一致!').set("class","valierror").setStyle('display','');
+        return false;
+    }
+    return ret;
+}
+</script> <script type="text/javascript">
+try{
+    _mvsite.$logAction("20_register");
+}catch(err){}
+</script> <script>
+    // GA 监控
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-6779927-2', 'auto');
+    ga('create', 'UA-55145319-1', 'auto', {'name': 'scnTracker'});  // New tracker.
+    if(Cookie.get('S[SEND_GA]')){
+        ga('set', '&uid', Cookie.get('S[SEND_GA]'));
+        ga('scnTracker.set', '&uid', Cookie.get('S[SEND_GA]'));
+        //setCookie('S[SEND_GA]',0,1,"/");
+    }
+    ga('require', 'linkid');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    ga('scnTracker.send', 'pageview');
+
+</script></div> </div> <div class="foot" style="border-top:2px solid #CE3C3B;background:none"> <div class="row02 c777"> <span> <a target="_blank" href="http://www.s.cn/page-aboutus.html">关于名鞋库</a>&nbsp;|&nbsp;<a target="_blank" href="/page-aboutcontact.html">联系名鞋库</a>&nbsp;|&nbsp;<a target="_blank" href="/page-scnjob.html">人才招聘</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Disclaimer.html">免责条款</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Copyright.html">法律声明</a>&nbsp;|&nbsp;<a target="_blank" href="/message.html">客户留言</a>&nbsp;|&nbsp;<a target="_blank" href="/suggest.html">意见反馈</a>&nbsp;|&nbsp;<a target="_blank" href="/page-Sitemap.html">全部分类</a>&nbsp;|&nbsp;<a target="_blank" href="/link-showList.html">友情链接</a>&nbsp;|&nbsp;<a target="_blank" href="/page-chimahedui.html">鞋子尺码对照表</a>&nbsp;|&nbsp;<a target="_blank" href="http://faq.s.cn">问答</a><a target="_blank" href="http://www.s.cn/qalist.html">咨询</a><a target="_blank" href="http://www.s.cn/review.html">评论</a><a target="_blank" href="http://www.s.cn/topic/">主题</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.s.cn/page-brandhall.html">鞋子品牌大全</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.s.cn/pa.html">商品大全</a> </span> <div class="cl"> </div> Copyright&nbsp;&copy;&nbsp;2008-2014 <s>s.cn </s> All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">闽ICP备08106896号 </a> &nbsp;&nbsp;&nbsp;&nbsp;经营许可证闽B2-20110061 </div> </div> </div> </body> </html>

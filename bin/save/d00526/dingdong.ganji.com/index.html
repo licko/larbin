@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>叮咚首页</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/css3.css">
+<script src="http://sta.ganji.com/cgi/ganji_sta.php?file=ganji"></script>
+<!-- <script type="text/javascript" src="http://sta.ganjistatic1.com/src/js/util/ganji/ganji.js"></script> -->
+</head>
+<body>
+	<div class="header">
+		<div class="header-box">
+			<div class="hb-left fl"><a href="##"></a></div>
+			<div class="hb-right fr" data-widget="app/dingdong/dingdong_widget.js#showOrHide">
+				<a class="on" href="index.html">首页</a><a href="http://dingdong.ganji.com/mobile/">手机版</a><a href="computer.html">电脑版</a><a href="weixindd.html">微信叮咚</a><a class="dd-com" href="#" data-role="trigger" data-target="target1">叮咚交流</a>
+				<div class="hb-sel target1"><a class="icon-line" target="_blank" href="wenti_new.html">常见问题</a><a target="_blank" href="feedback_new.html">问题反馈</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrap active">
+		<div class="wrap-box">
+			<div class="box-left fl">
+				<div class="computer scale"></div>
+				<div class="pos-img-1 scale1"></div>
+				<div class="pos-img-2 scale3"></div>
+				<div class="pos-img-3 scale2"></div>
+				<a href="computer.html" class="link"></a>
+				<div class="box-txt leftIn">
+					<p class="txt-tit"></p>
+					<p class="txt">1.多账号同时登录</p>
+					<p class="txt">2.供需匹配更多频道</p>
+					<p class="txt">3.炫彩换肤，区分账号</p>
+					<p class="txt">4.合并窗口，会话不乱</p>
+				</div>
+			</div>
+			<div class="box-right fr">
+				<p class="banben" data-widget="app/dingdong/dingdong_widget.js#setLatestFileVersion">电脑版</p>
+                <div class="btn-box">
+                    <a data-widget="app/dingdong/dingdong_widget.js#setLatestLink" class="download-btn" gjalog="/dongdong/-/download_index@type=1@atype=click">
+                        <span class="text">立即下载</span><span class="topIn"></span>
+                    </a>
+                </div>
+				<p class="banben">手机版扫描下载</p>
+				<div class="ewm-box"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<a href="http://www.ganji.com/misc/abouts/index.php" rel="nofollow">关于Ganji</a>&nbsp;-&nbsp;<a
+            href="http://www.ganji.com/tuiguang/index/" rel="nofollow">赶集推广</a>&nbsp;-&nbsp;<a
+            href="http://tuiguang.ganji.com/zhaoshang/agent.htm" rel="nofollow">渠道合作</a>&nbsp;-&nbsp;<a href="http://help.ganji.com"
+            rel="nofollow">帮助中心</a>&nbsp;-&nbsp;<a href="http://help.ganji.com/html/sjbmy/" rel="nfollow"
+            class="fc-red">手机号被冒用</a>&nbsp;-&nbsp;<a href="http://www.ganji.com/misc/abouts/link.php?act=link" rel="nofollow">友情链接</a>&nbsp;-&nbsp;<a
+            href="http://www.ganji.com/aboutus/linkApply.htm" rel="nofollow">网站合作</a>&nbsp;-&nbsp;<a
+            href="http://www.ganji.com/misc/abouts/index.php?act=job" rel="nofollow">招贤纳士</a>&nbsp;-&nbsp;<a href="http://bj.ganji.com/quxiandaohang/">区县导航</a>&nbsp;-&nbsp;<a rel="nofollow" class="sina-weibo" href="http://weibo.com/ganjiwang">关注赶集微博</a>
+	</div>
+</body>
+<script>
+    GJ.use('app/common/widget/widget.js', function (Widget) {
+        Widget.initWidgets();
+    });
+    GJ.use(['jquery','log_tracker'], function ($) {
+        GJ.LogTracker.gjch = '/dingdong/index';
+        GJ.LogTracker.trackPageView();
+        $('[gjalog]').each(function(){
+            $(this).click(function(){
+                GJ.LogTracker.trackEvent($(this).attr('gjalog'));
+            })
+        })
+    })
+</script>
+</html>

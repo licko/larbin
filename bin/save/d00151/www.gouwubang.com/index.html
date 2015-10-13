@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script>
+var ncc=12; //当前页面中已有的商品数目
+var imgPath="http://image.gouwubang.com/product_images/";
+var defaultNumber=12
+var nload=0; //加载次数
+var loading=false; //是否正在加载
+var bh=0; //document.body的高度
+var tpl; //淘宝模板
+var otpl; //非淘宝模板
+var adtpl;//广告模板
+var pinpaiProducttpl;	//品牌商品模板
+var lazyUrl="/lazy.do";
+var searchUrl="/searchLazy.do";
+var searchNameUrl="/searchByName.do";
+var tmallUrl="/tmall.do";
+var adredirectUrl="/redirectUrl.do";
+var previewLazyLoadUrl="/previewLazyLoad.do";
+</script>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>购物帮–做特惠的导购网站,天天特价商品,什么值得买,导购网单品精选,高性价比网购产品推荐</title>
+	<meta name="keywords" content="购物帮,聚划算,什么值得买,特价商品,名品导购网,九块九包邮,折八百,九块邮" />	
+	<meta name="description" content="购物帮致力于帮助网友寻找更有性价比的网购产品推荐网站,海量特价商品推荐,每日精选抢购单品,体验购便宜给您带来的超低折扣单品" />
+     </head>
+     <body>
+     <form action="" id="goTaobao" target="_blank">
+	<input type="hidden" id="queryproductUrlId" name="id"/>
+	<input id="click_type" name="click_type" value="0" style="display:none"/>
+	<input id="curPageNum" name="curPageNum" value="1" style="display:none"/> <!-- 当前页码 -->
+	<input type="hidden" id="line_site" name="line_site"/>	<!-- 商品所在行 -->
+	<input type="hidden" id="colu_site" name="colu_site"/>	<!-- 商品所在列 -->
+</form>
+	 <form id="searchForm" name="searchForm"  method="post" action="index.html">
+
+		<div class="tips_top"><div class="inner">按<strong> Ctrl+D</strong>，把购物帮放入收藏，折扣信息一手掌握！<a class="font_red" id="no-tixing">不再提醒</a><a class="close" id="tips_top_close">X 关闭</a></div></div>
+     	<!--顶部菜单导航栏-->
+		
+<link href="/css/css_v1/common.css?ver=2015071401" rel="stylesheet" />
+<script type="text/javascript" src="/js/js_v1/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="/js/js_v1/min_js/goback_min.js"></script>
+<script src="http://l.tbcdn.cn/apps/top/x/sdk.js?appkey=21776497"></script> 
+<script type="text/javascript" src="/js/js_v1/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/js_v1/min_js/jquery.cookie_min.js"></script>
+<script type="text/javascript" src="/js/func_1.js?ver=2015070801"></script>
+<script type="text/javascript" src="/js/js_v1/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/js/js_v1/style.js?ver=2015071403" id="testjs" channel="30"></script>
+<script type="text/javascript" src="/js/js_v1/daojishi.js"></script>
+<script type="text/javascript" src="/js/js_v1/min_js/util_min.js"></script>
+
+<script type="text/javascript">
+var pageClickUrl = 'http://click.gouwubang.com/postPageClickLog.do';
+$(document).ready(function(){
+	$("a[class*='channel']").click(function(){
+		var pageNum = $("#pageNumber").val();
+		var channelId = $("#channelId").val();
+		var clickType = "0";
+		var hannels = $.cookie("promissionChannel") || "";
+		var data = {channelId:channelId,
+				pageNum:pageNum,
+				clickType:clickType,
+				hannels : hannels
+			}
+		var href = $(this).attr("href");
+		if(href == "/" && (location.href== 'http://gouwubang.com/' || location.href == 'http://www.gouwubang.com/')){
+			return true;
+		}
+		if(href != "/" && location.href.indexOf(href) > -1){
+			return true;
+		}
+		$.ajax({
+			url: pageClickUrl,
+			contentType: "application/json;charset=utf-8", 
+			dataType:"jsonp",
+			type:"GET",
+			async:true,
+			data:data,
+			success: function(){
+			},complete: function (XHR, TS){}
+			,error:function(e){}
+		});
+		setTimeout("location.href='"+href+"'",10);
+		return false;
+	});
+	bh=$(document.body).height();
+	getData(lazyUrl);	//获取商品数据
+});
+</script>
+<!--顶部菜单-->
+<div id="top">
+	<div class="top-toolbar">
+		<div class="inner">亿玛旗下产品<span>|</span>
+		<a href="/app.jsp" class="gwbApp" target="_blank">手机购物帮</a>
+		<span>|</span><a target="_blank" id="contractKf" title="商务合作" href="http://zhaoshang.egou.com">商务合作</a>
+			<div class="collect_tip" id="collect_tip">
+				<i class="ct_arrow_out"><i class="ct_arrow_in"></i></i>
+				<div class="collect_tip_txt clearfix">
+					<div><img src="/images/appWord.png" /></div>
+					<div class="fl"><img src="/images/app.png" /></div>
+					<div class="fr"><p>手机购物帮</p><a href="/appDownload.do" target="_blank" class="btn-android">下载Android App</a><a href="https://itunes.apple.com/cn/app/gou-wu-bang-dao-gou/id941006168?l=en&mt=8" target="_blank" class="btn-ios">下载iPhone App</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="inner clearfix">				
+        <div class="top-left"><a href="http://www.gouwubang.com" class="logo"></a></div>
+		<div class="adv-01">
+			
+				<a href="javascript:void(0)" onclick="showad('155','http://www.gouwubang.com/baoyou.html','/redirectUrl.do')">
+					<img src="http://image.gouwubang.com/product_images//adZoneCampaign/1435651376216.jpg" />
+				</a>
+			
+		</div>
+		<div class="top-right">
+			<div class="filter-seek">
+			    <div class="dropdown">
+			    <input type="hidden" id="dropType" value="1" />
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">天猫</a><b class="caret"></b>
+			    <ul id="hideUl" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			    	<li><a href="javascript:void(0)">站内</a></li>
+			    </ul>
+			    </div>
+			    <input name="searchName" type="text" id="searchNameId" class="input-seek" value="输入你搜索的商品"/><input type="button" value="" id="seekBtn" class="new-btn-seek" onclick="searchmall('/searchByName.do','/tmall.do','top')" />
+			</div>
+		</div>
+    </div>
+</div>
+<div class="nav">
+	<div class="inner">
+		<div class="nav-left">
+			<a href="/" class="channel1">首页</a>
+			<a href="/nvzhuang.html" class="channel2">女装</a>
+	        <a href="/nanzhuang.html" class="channel3">男装</a>
+			<a href="/jiaju.html" class="channel6">家居</a>
+	        <a href="/xiebao.html" class="channel4">鞋包</a>
+	        <a href="/meizhuang.html" class="channel5">美妆</a>    	
+			<a href="/muying.html" class="channel9">母婴</a>
+			<a href="/meishi.html" class="channel8">美食</a>
+			<a href="/hot.html" class="channel10">爆款</a>
+		</div>
+		<div class="nav-right"><i></i>关注微信有惊喜<div class="erweima"></div></div>
+	</div>
+</div>
+<div class="nav-middle"> 
+    <div class="inner clearfix">
+		<span>今日新品</span>
+		<a class="channel2" href="/nvzhuang.html">女装惠</a>
+		<a class="channel3" href="/nanzhuang.html">男装</a>
+		<a class="channel6" href="/jiaju.html">家居</a>
+		<a class="channel4" href="/xiebao.html">鞋包</a>
+		<a class="channel5" href="/meizhuang.html">美妆</a>
+		<a class="channel9" href="/muying.html">母婴</a>
+		<a class="channel8" href="/meishi.html">爱吃美食</a>
+		<a class="channel10 red" href="/preview.html">【明日预告】</a>	
+    </div>			
+</div>
+<div class="sort-nav" id="sort-nav">
+	<div class="inner clearfix">
+		<div class="title"><i></i>10点上新开抢</div>
+		<div class="list-page clearfix">
+<script language="Javascript">
+	//<!--
+		function turnPage(pageNumber) {
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = pageNumber;
+			$("#pid").val("");
+			searchForm.submit();
+		}
+		function selectPage() {
+			var selectPageForm = eval('document.selectPageForm');
+			var pageNumber = selectPageForm.pageNumber_select.options[selectPageForm.pageNumber_select.selectedIndex].value;
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = pageNumber;
+			searchForm.submit();
+		}
+		function changePage(){
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = document.getElementById("gotoNpage").value;
+			searchForm.submit();
+		}
+		function changePageSize(){
+			var searchForm = eval('document.searchForm');
+			searchForm.pageSize.value = document.getElementById("perSize").value;
+			if(document.getElementById("pageNumber")!=null){
+				document.getElementById("pageNumber").value = 1;
+			}
+			searchForm.submit();
+		}
+	//-->
+</script>
+
+	<table border=0 cellpadding=0 cellspacing=0>
+		<tr>
+			<td colspan="11" class="td_left">
+			<div style="float:right;">
+				
+					<span class="forwardPage" href="javascript: turnPage2(0)"><i></i></span>
+				
+					<a class="nextPage" href="javascript: turnPage2(2)">下一页<i></i><span>1</span>/<span>8</span></a>	
+							
+			</div>
+			</td>
+	      </tr>
+	</table>
+</div>
+		<div class="filter-seek">
+		    <div class="dropdown">
+		    <input type="hidden" id="dropType" value="1" />
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">天猫</a><b class="caret"></b>
+		    <ul id="hideUl" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+		    	<li><a href="javascript:void(0)">站内</a></li>
+		    </ul>
+		    </div>
+		    <input name="searchName" type="text" id="searchNameId" class="input-seek" value="输入你搜索的商品"/><input type="button" value="" id="seekBtn" class="new-btn-seek" onclick="searchmall('/searchByName.do','/tmall.do','top')" />
+		</div>
+		<div class="list-sort"> 
+	<!--排序-->
+<ul>
+	<li><a href="javascript:void(0)" class="on" id="weight_style">
+			<span onclick="fnSearch('weight',1,$('#currentUrl').val(),$('#channelId').val())">默认
+			</span>
+		</a>
+	</li>
+	<li><a href="javascript:void(0)" id="sale_amount_style">
+			<span onclick="fnSearch('sale_amount',1,$('#currentUrl').val(),$('#channelId').val())">销量
+				
+					<input type="hidden" id="sale_amount_sortType" value="asc"/><i class="sort-sign"></i>
+				
+			</span>
+		</a>
+		<input type="hidden" id="sale_amount_sortType" value="desc"/>
+	</li>
+	<li><a href="javascript:void(0)" id="rebate_price_style">
+			<span onclick="fnSearch('rebate_price',1,$('#currentUrl').val(),$('#channelId').val())">价格
+				
+					<input type="hidden" id="rebate_price_sortType" value="desc"/><i class="sort-sign1"></i>
+				
+			</span>
+		</a>
+	</li>
+</ul>
+		
+		
+
+</div>
+		<div class="small-nav">	
+			<a class="channel11" href="/baoyou.html">9.9包邮</a>
+			<a class="channel12" href="/baoyou2.html">19.9包邮</a>
+			<span></span>
+		</div>
+	</div>
+</div>
+		
+
+
+          <input id="currentUrl" value="/index.html" style="display:none"/> <!-- 当前频道路径 不可缺 -->
+          <input id="pageNumber" name="pageNumber" value="1" style="display:none"/> <!-- 当前页码 -->
+ 		  <input id="channelId" name="channel" value="30" style="display:none"/>	<!-- 当前频道id -->
+		  <input id="orderbyColumn" name="orderbyColumn" value="weight" style="display:none"/>	<!-- 当前需要排序的列 -->
+          <input id="orderbyType" name="orderbyType" value="desc" style="display:none"/> <!-- 当前排序的规则：升序/降序 -->         
+          <input id="pid" name="pid" value="" style="display:none"/> 	<!-- 投放链接的pid -->
+          <input id="pop" value="false" style="display:none"/> 	<!-- 首页弹窗 -->
+          <input id="popAdImg" value="" style="display:none"/> <!-- 首页弹窗 -->
+          <input id="popAdLink" value="" style="display:none"/> <!-- 首页弹窗 -->
+          <input id="popId" value="" style="display:none"/> <!-- 首页弹窗 -->
+          <input id="carousels" value="[]" style="display:none"/> <!-- 首页轮播 -->
+		<!--广告区-->
+		<div class="gg-area">
+			<div class="bs-docs-example"> 
+				<div id="myCarousel" class="carousel slide"> 
+				<ol class="carousel-indicators">
+				</ol> 
+				<div class="carousel-inner"> 
+				</div>	
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a> 
+				<a class="right carousel-control" href="#myCarousel" data-slide="next"></a> 
+				</div> 
+			</div>
+		</div>
+		<!--<div class="site-words">
+			<span><i>折</i>淘宝天猫特卖1折起</span><span><i>9.9</i>全场9.9元包邮</span><span><i>检</i>100%验货质检</span>
+		</div>-->
+		<!--内容区-->
+		<div class="container">
+		<div class="content clearfix">
+		    <!--商品列表-->
+		    <div class="items-list">
+			    <ul id="contentsId">
+		        </ul>
+		    </div>
+		      <!--商品列表结束-->
+		    <!--下分页-->
+			<div class="list-page pageDown clearfix" id="pagination2" style="display: none;">
+<script language="Javascript">
+		function turnPage2(pageNumber) {
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = pageNumber;
+			var searchAction = '/searchByName.do';
+			if(location.pathname == searchAction){
+				//搜索页下一页
+				searchForm.action=document.getElementById("currentUrl").value + location.search;
+				$("#pid").val("");
+				searchForm.submit();
+				return ;
+			}
+			if(pageNumber>1){
+				searchForm.action=document.getElementById("currentUrl").value+"/p"+pageNumber+".html";
+			}else{
+				searchForm.action=document.getElementById("currentUrl").value;
+			}
+			$("#pid").val("");
+			searchForm.submit();
+		}
+		function selectPage2() {
+			var selectPage2Form2 = eval('document.selectPage2Form2');
+			var pageNumber = selectPage2Form2.pageNumber_select.options[selectPage2Form2.pageNumber_select.selectedIndex].value;
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = pageNumber;
+			searchForm.submit();
+		}
+		function changePage2(){
+			var searchForm = eval('document.searchForm');
+			searchForm.pageNumber.value = document.getElementById("gotoNpage2").value;
+			searchForm.submit();
+		}
+		function changePage2Size2(){
+			var searchForm = eval('document.searchForm');
+			searchForm.pageSize.value = document.getElementById("perSize2").value;
+			if(document.getElementById("pageNumber")!=null){
+				document.getElementById("pageNumber").value = 1;
+			}
+			searchForm.submit();
+		}
+</script>
+	<table border=0 cellpadding=0 cellspacing=0 align="center">
+		<tr>
+			<td colspan="11" class="td_left">
+			<div style="padding-right:20px;float:left;" class="bottomPages">
+				<!-- 一页显示10个页码-->
+				
+				<!--
+					<a href="javascript: turnPage2(1)">首页</a>
+				
+				-->
+					  <span class="currPage">
+						 1
+					  </span>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(2)">	
+						2
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(3)">	
+						3
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(4)">	
+						4
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(5)">	
+						5
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(6)">	
+						6
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(7)">	
+						7
+					  </a>
+				   
+					   <a class="font_table_number" href="javascript: turnPage2(8)">	
+						8
+					  </a>
+				   
+					<a href="javascript: turnPage2(2)" class="noborder">下一页<i></i></a>
+				
+				<span class="float:left;"><img src="/images/page-pic.png" style="margin-top:-8px;margin-left:10px;" /></span>
+			</div>
+			</td>
+	      </tr>
+	</table>
+</div>
+		    </div>
+		    </div>
+			
+<div id="weixin" class="floatLay">
+	<a class="close">X</a>
+	<div class="title">购物帮——专门做特惠的网站</div>
+	<div class="artical">
+		<p>关注<span class="red">购物帮官方微信</span>，特惠咨询快速知晓</p>
+		<img src="/images/floatLay-weixin.png" style="margin-left:30px;margin-top:15px;" />
+	</div>
+	<div class="bottomWord">也可以选择桌面登陆！<a target="_blank" href="/getindex.jsp">点击下载</a>>></div>
+</div>
+			<div class="win-bg"></div>		    
+			<div class="win-welcome"><a href="javascript:void(0)"><img id="popImg" src="" width="824" height="302"/></a><span class="close"></span></div>
+  		    
+<div class="tianmao-tips">
+	<input type="hidden" id="pos" />
+	<div class="title">购物帮温馨提示<span class="close"></span></div>
+	<div class="words"><p class="col-black">亲~您即将进入天猫网~</p><p class="col-red">百度一下“购物帮” ~小编盼您下次再来。</p><a href="javascript:void(0)" class="btn-go-tmall" onclick="openTmall()">去天猫</a></div>
+</div>
+			 
+<!--左侧分类树-->
+<div class="menuBar clearfix" id="menuBar">
+	<div class="menu">
+		<div class="title"><img src="/images/tag.png" /></div>
+		<div class="category-word"><a href="/baoyou.html" class="channel">9块9包邮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/baoyou2.html" class="channel12">19.9包邮</a></div>
+        <div class="category clearfix">
+        	<a href="/nvzhuang.html" class="channel"><i class="nvzhuang"></i>女装</a>
+        	<a href="/nanzhuang.html" class="channel"><i class="nanzhuang"></i>男装</a>
+			<a href="/jiaju.html" class="channel"><i class="jiaju"></i>家居</a>
+        	<a href="/xiebao.html" class="channel"><i class="xiebao"></i>鞋包</a>
+        	<a href="/meizhuang.html" class="channel"><i class="meizhuang"></i>美妆</a>    	
+			<a href="/muying.html" class="channel"><i class="tongzhuang"></i>母婴</a>
+			<a href="/meishi.html"  style="float:left;margin-left:14px;" class="channel"><i class="meishi"></i>美食</a>
+         </div>
+         <div class="sel-pre"><a href="/preview.html" class="channel">精选预告</a></div>
+		<div class="filter-seek" style="width:118px;*width:118px;height:25px;float:none;margin:0 auto;padding-bottom:10px;border:0 none;border-bottom:1px solid #f1f1f1;">
+			<input name="searchNameLeft" type="text" id="searchNameLeftId" class="input-seek" style="width:91px;height:23px;border:1px solid #e5e5e5;" value="去天猫搜索" /><input type="button" class="btn-seek" style="width:25px;height:25px;" onclick="searchmall('/searchByName.do','','left')" /><span class="search-btn-bg"></span>
+     	</div>
+		<div class="swhz"><a target="_blank" id="contractKf" title="商务合作" href="http://zhaoshang.egou.com"><img src="/images/hezuo.png" /></a></div>
+		<div style="margin-bottom:15px;"><img src="/images/app.png" /></div>
+	</div>
+</div>
+	
+  		     
+<div class="footer">
+<div class="footer">
+	<div class="inner clearfix">
+		 <div class="link-list" style="width:170px;border-left:0 none;">
+			<h3>工作时间</h3>
+			<ul>
+				<li><span>工作时间</span></li>
+				<li><span>周一至周五 10:00—18:00</span></li>
+				<li><a href="mailto:tousu@emar.com" target="_blank">tousu@emar.com</a></li>
+			</ul>
+		</div>
+		<div class="link-list" style="width:135px;">
+			<h3>了解我们</h3>
+			<ul>
+				<li><a href="/aboutUs.jsp" target="_blank">关于我们</a></li>
+				<li><a href="/recruitment.jsp" target="_blank">加入我们</a></li>
+				<li><a href="/contactUs.jsp" target="_blank">联系我们</a></li>
+				<li><a href="/service.jsp" target="_blank">服务条款</a></li>
+			</ul>
+		</div>
+		<div class="link-list" style="width:135px;">
+			<h3>市场合作</h3>
+			<ul>
+				<li><a href="mailto:tousu@emar.com" target="_blank">客户投诉</a></li>
+				<li><a href="/api.jsp" target="_blank">购物帮开放API</a></li>
+			</ul>
+		</div>
+		<div class="link-list" style="width:215px;">
+			<h3>下次怎么来？</h3>
+			<ul>
+				<li><span>记住域名：</span><a href="http://www.gouwubang.com" target="_blank" class="font-red">www.gouwubang.com</a></li>
+				<li><span>百度搜索：</span><span class="text">购物帮</span><a href="http://www.baidu.com/s?wd=site%3Awww.gouwubang.com" target="_blank" class="zoom"></a></li>
+				<li><span>收藏本站：</span><a href="javascript:AddFavorite(window.location,document.title);">加入收藏</a></li>
+				<li><span>桌面登录：</span><a href="http://221.122.113.166/gouwubang.url" target="_blank">点击下载</a></li>
+			</ul>
+		</div>
+		<div class="link-list">
+			<h3>下载手机版</h3>
+			<ul>
+				<li><span><img src="/images/weixin.jpg" style="margin-left:8px;" /></span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="link">
+		<span>友情链接：</span>
+		<a href="javascript:void(0)" onclick="window.open('http://www.emar.com.cn/')">亿玛</a>
+		<a href="javascript:void(0)" onclick="window.open('http://www.egou.com/')">易购</a>
+		<a href="http://www.paidai.com" target="_blank">电子商务</a>
+		<a href="http://www.rehui.com" target="_blank">热惠</a>
+		<a href="http://www.good.cc" target="_blank">价格网</a>
+		<a href="javascript:void(0)" onclick="window.open('http://www.mogujie.com/tuan/')">蘑菇优品</a>
+		<a href="javascript:void(0)" onclick="window.open('http://www.lianglihui.cn/')">靓丽汇</a>
+		<a href="javascript:void(0)" onclick="window.open('http://www.mizhepai.com/')">米折派</a>
+		<a href="link.jsp" target="_blank" class="more">更多》</a>
+	</div> 
+</div> 
+	<div class="banquan">
+	<div class="inner"><p>Copyright  2013-2014 by www.gouwubang.com all rights reserved&nbsp;&nbsp;&nbsp;&nbsp;北京亿玛联盟传媒广告有限公司  旗下网站 京ICP备10001024号</p></div>
+</div>
+
+</div>
+<!--返回顶部和下载-->
+<div class="sidePanel">
+	<a href="/jiaju.html" class="jiaju"><p>家居<br/>频道</p></a>
+	<a href="/nvzhuang.html" class="nvzhuang"><p>女装<br/>频道</p></a>
+	<a href="/nanzhuang.html" class="nanzhuang"><p>男装<br/>频道</p></a>
+	<a href="/xiebao.html" class="xiebao"><p>鞋包<br/>频道</p></a>
+	<a href="#" class="careUs"><p>APP<br/>下载</p><div class="careUs-hover"></div></a>
+	<a href="#" class="backToTop" id="goBack"><p>返回<br/>顶部</p></a>
+</div>
+
+<script language="javascript">
+	var anchorFlag = '' || "";
+</script>
+
+
+  		    
+<!-- 淘宝商品模板 -->
+<script type="text/template" id="taobaotpl">
+	<li>
+		 <div class="link-box" >
+			 <a class="pic" href="javascript:void(0)" onclick="showtb('{id}','/queryproductUrl.do','{status}')">									
+			    <img id="p_{id}_img" data_src="http://image.gouwubang.com/product_images/{picUrl}"  src="/images/2_new.jpg" />									
+				<div class="newTag"></div><div class="endingTag"></div>			
+			 </a>
+			<h3><a href="javascript:void(0)" onclick="showtb('{id}','/queryproductUrl.do','{status}')">
+			     {productName}</a></h3>
+			         <div class="items-price">
+			         	<span class="xianjia"><em>&yen;</em>{rebatePrice}<em></em></span>
+			         <div class="zhekou">
+						<del class="orig-price">&yen;{originalPrice}</del><i>|</i>
+						<span>{discountVal}折</span>
+						<p><span class="modify-price">@labelName</span><span class="baoyou">包邮</span>
+						</p>
+					 </div>
+					 <div class="items-num">
+							<p class="@tmall@"></p>
+							<p class="buy-num"><span class="@fire@"></span><span class="num">@saleAmount@</span>人已买</p>
+					 </div>
+			         <div class="isAgain anniu"><a href="javascript:void(0)" onclick="showtb('{id}','/queryproductUrl.do','{status}')">{buttonContent}</a></div>
+			         </div>
+		</div>
+    </li>
+</script>
+<!-- 非淘宝商品模板 -->
+<script type="text/template" id="othertpl">
+	<li>
+		 <div class="link-box" >
+			 <a class="pic" href="javascript:void(0)" onclick="show('{id}','{campaignId}','/queryproductUrl.do','/click.do','{status}')">
+			    <img id="p_{id}_img" data_src="http://image.gouwubang.com/product_images/{picUrl}"  src="/images/2_new.jpg" />	
+				<div class="newTag"></div><div class="endingTag"></div>										
+			 </a>
+			 <h3><a href="javascript:void(0)" onclick="show('{id}','{campaignId}','/queryproductUrl.do','/click.do','{status}')">
+			     {productName}</a></h3>
+			         <div class="items-price">
+			         	<span class="xianjia"><em>&yen;</em>{rebatePrice}<em></em></span>
+			         <div class="zhekou">
+						<del class="orig-price">&yen;{originalPrice}</del><i>|</i>
+						<span>{discountVal}折</span>
+						<p><span class="modify-price">@labelName</span><span class="baoyou">包邮</span>
+						</p>
+					</div>
+					<div class="items-num">
+							<p class="buy-num"><span class="fire"></span><span class="num">@saleAmount@</span>人已买</p>
+					 </div>
+			         <div class="isAgain anniu"><a href="javascript:void(0)" onclick="show('{id}','{campaignId}','/queryproductUrl.do','/click.do','{stauts}')">{buttonContent}</a></div>
+			         </div>
+		</div>
+    </li>
+</script>
+<!-- 品牌商品模板 -->
+<script type="text/template" id="pinpaiProduct">
+	<li>
+		<div class="link-box brand-active">
+	        <a class="pic" href="javascript:void(0)" onclick="showtb('{id}','/queryproductUrl.do','{status}')">
+	             <img id="p_{id}_img" data_src="http://image.gouwubang.com/product_images/"  src="/images/2_new.jpg" />
+				 <div class="newTag"></div><div class="endingTag"></div>			
+	        </a>
+			<div class="clearfix">
+			<div class="brand-logo"><img src="http://image.gouwubang.com/product_images/@logoPic@" /></div>
+			<div class="pro-con">
+	               <div class="items-price clearfix">
+	                 <div class="zhekou">
+						<span>{discountVal}折</span>
+						<del class="orig-price">&yen;{originalPrice}</del>
+					</div>
+	                 <span class="xianjia"><em>&yen;</em>{rebatePrice}<em></em></span>
+	            	</div>
+				<h3><a href="javascript:void(0)" onclick="showtb('{id}','/queryproductUrl.do','{status}')">{productName}</a></h3>
+			</div>
+			</div>
+	     </div>
+	</li>
+</script>
+<!-- 图片广告位信息样式模板 -->
+<script type="text/template" id="adtpl">
+	<li>
+		 <div class="link-box ad-active">
+			 <a class="pic" href="javascript:void(0)" onclick="showad('{id}','{linkUrl}','/redirectUrl.do')">
+			    <img id="p_{id}_img" data_src="{picUrl}"  src="/images/2_new.jpg" />										
+			 </a>
+			 <h3><a href="javascript:void(0)" onclick="showad('{id}','{linkUrl}','/redirectUrl.do')">
+			     {campaignName}</a></h3>
+			         <div class="items-price">
+					 <h4><a href="javascript:void(0)" onclick="showad('{id}','{linkUrl}','/redirectUrl.do')" class="title">{adName}</a></h4>
+			         <div class="go"><a href="javascript:void(0)" onclick="showad('{id}','{linkUrl}','/redirectUrl.do')">去看看</a></div>
+			         </div>
+		</div>
+    </li>
+</script>
+
+<!-- 预告商品模板 -->
+<script type="text/template" id="preview_tpl">
+	<li>
+		 <div class="link-box" >
+			 <a class="pic" href="javascript:void(0)">
+			    <img id="p_{id}_img" data_src="http://image.gouwubang.com/product_images/{picUrl}"  src="/images/2_new.jpg" />	
+				<div class="newTag"></div><div class="endingTag"></div>										
+			 </a>
+			 <h3><b>【{promo}】</b><a href="javascript:void(0)">
+			     {productName}</a></h3>
+			         <div class="items-price">
+			         	<span class="xianjia"><em>&yen;</em>{rebatePrice}<em></em></span>
+			         <div class="zhekou">
+						<del class="orig-price">&yen;{originalPrice}</del><i>|</i>
+						<span>{discountVal}折</span>
+					</div>
+			         <div class="go" title="{saleDateStart}"><a href="javascript:void(0)">{buttonContent}</a></div>
+			         </div>
+		</div>
+    </li>
+</script>
+
+<!-- 预告详细 div模板 -->
+<script type="text/template" id="yugao_detail_tpl">
+		<div class="yugao" id="yugao_detail">
+				<div class="pop-box">
+					<span class="icon-close"  id="yugao-close" onclick="yugao_close();"></span>
+					<div class="yugao-content">
+						<img src="@pic_url" />
+						<p class="yugao-title">@productName</p>
+						<p class="yugao-time">开抢时间:<strong>@saleStart</strong></p>
+					</div>
+				</div>
+			</div>
+</script>
+</form>
+
+<!-- gouwubang.com Baidu tongji analytics -->
+<div style="display:none;">
+<script type="text/javascript">
+$(function(){
+	var _hmt = _hmt || [];
+	var hm = document.createElement("script");
+  	hm.src = "//hm.baidu.com/hm.js?ef4d545ab879a6300d40cf3854fdcf5c";
+  	hm.type = "text/javascript";
+  	var s = document.getElementsByTagName("script")[0]; 
+  	s.parentNode.insertBefore(hm, s);
+
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	var script2 = unescape(_bdhmProtocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253813828");
+	$("<script>",{src:script2,type:"text/javascript"}).appendTo("head");
+})
+</script>
+
+<script language="javascript">
+$(function(){
+	var pageNum = $("#pageNumber").val();
+	if(pageNum && pageNum > 1){
+		$(".hide-nav").hide();
+		$(".site-words").hide();
+		$('.channel1').hover(function(){
+			$('.hide-nav').show();
+		});
+		$('.hide-nav').hover(function(){
+			$(this).show();
+		},function(){
+			$(this).hide();
+		});
+	}
+	$(window).scroll(function(){
+	 	lazyload();
+	 });
+});
+</script>
+</div>  
+</body>
+</html>

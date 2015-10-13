@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! "/>
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/"/>
+    <title>            健康险</title>
+    <link rel="icon" href="http://www.jd.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/base/1.1.0/css/base.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/finance/insurance/index/1.0.0/css/list.css"/>
+    <script>
+        window.jrBase = {
+            navId: 'nav-baoxian',
+                        navSubId: 'nav-baoxian-health',//            navSubId: '',
+//            footerFix: true,
+            headerFix: true,
+            // 侧边工具栏
+            sidebar: true,
+            // 金融问答
+            jrQaUrl: 'http://club.jr.jd.com/baoxian/jingxuan',
+            // 问卷反馈url id为业务线配置
+            feedbackUrl: 'http://ur.jr.jd.com/survey/show?id=115'
+        };
+
+                var _jraq  = _jraq || [];
+        _jraq.push(['account','UA-J2011-12']);
+        _jraq.push(['domain','jr.jd.com']);
+        (function() {
+            var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+            ja.src = 'https:' == document.location.protocol ? 'https://static.wangyin.com/member/assets/click.js' : 'http://click.jr.jd.com/wl.dev.js';
+            var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+        })();
+
+    </script>
+
+</head>
+<body>
+<!--header--><!--header--><div class="header">    <!--topbar-->    <div class="topbar" id="topbar">        <div class="grid-1200 topbar-wrap clearfix">            <div class="topbar-left">                <ul class="toplink">                    <li class="toplink-link">                        <i class="icon icon-home"></i>                        <a target="_blank" href="http://www.jd.com/">京东首页</a>                    </li>                </ul>            </div>            <div class="topbar-right">                <ul class="topmenu fl">                    <li class="topmenu-item topmenu-userinfo">                        <span id="loginbar"></span>                    </li>                    <li class="topmenu-item">                        <a href="http://trade.jr.jd.com/trade/tradebuy.action" clstag="jr|keycount|jr_shouye|jiaoyidan">我的交易单</a>                    </li>                    <li id="app-jr" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <b class="topmenu-app-ico"></b>                        <a href="http://m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank" class="topmenu-outline" clstag="jr|keycount|jr_shouye|sjjr">手机金融</a>                        <div class="dropbox clearfix">                            <div class="fl">                                <img src="http://img30.360buyimg.com/jr_image/jfs/t1618/62/715262005/11754/a1aebbed/55a60f21N5761d623.png" alt="">                            </div>                            <div class="fr">                                <span class="topmenu-app-tip">下载金融客户端</span>                                <a class="topmenu-app-iphone" target="_blank" href="https://itunes.apple.com/cn/app/jing-dong-jin-rong/id895682747?mt=8"></a>                                <a class="topmenu-app-android" target="_blank" href="http://app.jd.com/download/jr/jrapp.apk"></a>                            </div>                        </div>                    </li>                    <li id="topbar-help" class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a id="J_topbarFeedback" target="_blank" href="http://ur.jr.jd.com/survey/show?id=100" clstag="jr|keycount|jr_shouye|topbar_feedback" class="topmenu-outline">我要吐槽</a>                        <ul class="dropbox">                            <li><a href="http://help.jr.jd.com/" clstag="jr|keycount|jr_shouye|help">帮助中心</a>                            </li>                            <li><a id="J_topbarKf" href="http://chat.jd.com/jd/chat?entry=jd_jr_trade" target="_blank" clstag="jr|keycount|jr_shouye|topbar_kf">在线客服</a></li>                        </ul>                    </li>                    <li class="topmenu-item dropdown topmenu-dropdown" data-hover="topmenu-dropdown-hover">                        <i class="drop-arrow"></i>                        <a href="javascript:;" class="topmenu-sitemap">网站导航</a>                        <ul class="dropbox">                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|hdjjlc">基金理财</a>                            </li>                            <li><a href="http://z.jd.com" clstag="jr|keycount|jr_shouye|hdyzc">众筹</a></li>                            <li><a href="https://www.wangyin.com/center/index.htm" target="_blank" clstag="jr|keycount|jr_shouye|hdwyqb">网银钱包</a></li>                        </ul>                    </li>                </ul>                <ul class="toplink fl">                    <li class="toplink-item toplink-title">&nbsp;</li>                    <li class="toplink-item dropdown toplink-dropdown " data-hover="toplink-dropdown-hover">                        <i class="icon icon-weixin"></i>                        <ul class="dropbox dropbox-weixin">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-ercode-01.jpg" alt="京东金融"/><h6>京东金融</h6></li>                        </ul>                    </li>                    <li class="toplink-item dropdown toplink-dropdown" data-hover="toplink-dropdown-hover">                        <i class="icon icon-weibo"></i>                        <ul class="dropbox dropbox-weibo">                            <li><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo.jpg" alt="京东金融微博"/></li>                            <li>                                <div class="pub-btn btn-style-0">                                    <a class="size12" href="http://weibo.com/u/5057784708" target="_blank" clstag="jr|keycount|jr_shouye|hdblogjr"><img src="http://static.360buyimg.com/finance/base/1.1.0/images/topbar-weibo-addbtn.png"/>京东金融</a>                                </div>                                                            </li>                        </ul>                    </li>                </ul>            </div>                    </div>    </div>    <!--topbar end-->    <!--main-nav-->    <div class="main-nav">        <div class="grid-1200 nav-wrap pr clearfix">            <div class="main-nav-logo fl">                <a href="http://jr.jd.com/index.html" clstag="jr|keycount|jr_shouye|jrlogo">                    <img src="http://static.360buyimg.com/finance/base/1.1.0/images/logo-slogan.png" width="164" height="36" alt="京东金融">                </a>            </div>            <div class="nav fl">                <ul class="nav-box fl clearfix" id="navBox">                    <li id="nav-index" class="nav-item"><a class="nav-item-primary" href="http://jr.jd.com" clstag="jr|keycount|jr_shouye|shouye">首页</a></li>                    <li id="nav-licai" class="nav-item">                        <a class="nav-item-primary" href="http://licai.jd.com" clstag="jr|keycount|jr_shouye|jr_shouye_licai">理财</a>                        <ul class="dropbox">                            <li><a href="http://xjk.jr.jd.com/index.htm " clstag="jr|keycount|jr_shouye|jjxjk">京东小金库</a></li>                            <li><a href="http://xiaobai.jr.jd.com/xiaobai/main.htm" clstag="jr|keycount|jr_shouye|xblc">京东小白理财</a></li>                            <li><a href="http://list.jr.jd.com/fundlist/1-11-112.htm" clstag="jr|keycount|jr_shouye|jjlc">基金理财</a></li>                            <li><a href="http://bill.jr.jd.com/buy/list.htm" clstag="jr|keycount|jr_shouye|pjlc">票据理财</a></li>                            <li><a href="http://dq.jd.com/" clstag="jr|keycount|jr_shouye|bxlc">定期理财</a></li>                            <li><a href="http://jdd.jr.jd.com/" clstag="jr|keycount|jr_shouye|fblc">固收理财</a></li>                            <li><a href="http://club.jr.jd.com" clstag="jr|keycount|jr_shouye|cswd">理财问答</a></li>                        </ul>                    </li>                    <li id="nav-zhongchou" class="nav-item">                        <a class="nav-item-primary" href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|zc">众筹</a>                        <ul class="dropbox">                            <li><a href="http://z.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|cpzc">产品众筹</a></li>                            <li><a href="http://dj.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|gqzc">私募股权</a></li>                            <li><a href="http://q.jd.com" target="_blank" clstag="jr|keycount|jr_shouye|qzc">轻众筹</a></li>                            <li><a href="http://zbbs.jd.com/" target="_blank" clstag="jr|keycount|jr_shouye|zcsq">众筹社区</a></li>                        </ul>                    </li>                    <li id="nav-baoxian" class="nav-item">                        <a class="nav-item-primary" href="http://bao.jd.com/" clstag="jr|keycount|jr_shouye|baoxian">保险</a>                        <ul class="dropbox">                            <li><a href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|chexian">车险</a></li>                            <li><a href="http://bao.jd.com/health" clstag="jr|keycount|jr_shouye|jiankangxian">健康险</a></li>                            <li><a href="http://bao.jd.com/accident" clstag="jr|keycount|jr_shouye|yiwaixian">意外险</a></li>                            <li><a href="http://bao.jd.com/travel" clstag="jr|keycount|jr_shouye|lvxingxian">旅行险</a></li>                        </ul>                    </li>                    <li id="nav-baitiao" class="nav-item">                        <a class="nav-item-primary" href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|bt">白条</a>                        <ul class="dropbox">                            <li><a href="http://baitiao.jd.com/" clstag="jr|keycount|jr_shouye|jdbt">京东白条</a></li>                            <li><a href="http://bk.jd.com/" clstag="jr|keycount|jr_shouye|btlmk">白条联名卡</a></li>                            <li><a href="http://gb.jd.com" clstag="jr|keycount|jr_shouye|gangbeng">京东钢镚</a></li>                            <li><a href="http://go.jd.com/activity/introduce" clstag="jr|keycount|jr_shouye|btly">旅游白条+</a></li>                            <li><a href="http://fang.jd.com" clstag="jr|keycount|jr_shouye|btzf">安居白条+</a></li>                            <li><a href="http://baitiao.jd.com/stu/home" clstag="jr|keycount|jr_shouye|btxy">校园白条</a></li><li><a href="http://chedai.jd.com/" clstag="jr|keycount|jr_shouye|qcjr">汽车金融</a></li>                            <li><a href="http://jincai.jd.com/" clstag="jr|keycount|jr_shouye|jincai">京东金采</a></li>                        </ul>                    </li>                    <li id="nav-loan" class="nav-item">                        <a class="nav-item-primary" href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jingdongdai">京东贷</a>                        <ul class="dropbox">                            <li><a href="http://loan.jd.com/jdd.html" clstag="jr|keycount|jr_shouye|jddsy">京东贷首页</a></li>                            <li><a href="http://8.jd.com" clstag="jr|keycount|jr_shouye|wsd">网商贷</a></li>                            <li><a href="http://loan.jd.com/home.html" clstag="jr|keycount|jr_shouye|jxd">京小贷</a></li>                            <li><a href="http://loan.jd.com/scf/" clstag="jr|keycount|jr_shouye|jbb">京保贝</a></li>                        </ul>                    </li>                    <li id="nav-caimi" class="nav-item">                        <a class="nav-item-primary" href="http://caimi.jd.com/" clstag="jr|keycount|jr_shouye|caimi">股票</a>                    </li>                </ul>            </div>            <div class="main-nav-userInfoWrap fr">                <div id="userInfo" class="main-nav-userinfo">                    <div class="main-nav-userimg">                        <div class="userimg-mask"><a href="http://trade.jr.jd.com/centre/browse.action"></a></div>                        <img src="http://static.360buyimg.com/finance/base/1.1.0/images/user-unlogin-icon.png" id="userSmaImage" />                        <span></span>                    </div>                    <p><a href="http://trade.jr.jd.com/centre/browse.action">我的资产</a><i></i></p>                    <ul>                        <li>                            <a href="http://trade.jr.jd.com/centre/browse.action" clstag="jr|keycount|jr_shouye|myzl">                                <span class="fl">资产总览</span>                                <span class="ajaxData fr" data-name="jRTotal"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/jrbincome.action"                               clstag="jr|keycount|jr_shouye|myxjk">                                <span class="fl">我的小金库</span>                                <span class="ajaxData fr" data-name="jRBAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/centre/financing.action"                               clstag="jr|keycount|jr_shouye|mylc">                                <span class="fl">我的理财</span>                                <span class="ajaxData fr" data-name="jJAccount"></span>                            </a>                        </li>                        <li>                            <a href="http://z.jd.com/funding/myCrowdfunding.action" clstag="jr|keycount|jr_shouye|myzc">                                <span class="fl">我的众筹</span>                                <span class="fr"></span>                            </a>                        </li>                        <li>                            <a href="http://trade.jr.jd.com/trade/tradebuy.action">                                <span class="fl">我的交易单</span>                                <span class="fr"></span>                            </a>                        </li>                    </ul>                </div>            </div>        </div>    </div>    <!--main-nav end-->    <!--sub-nav 如果页面项目需要二级导航 才需添加 否则此段落请删除-->    <div class="sub-nav">        <div class="grid-1200 sub-nav-wrap"><a id="nav-baoxian-vehicle" class="sub-nav-item" href="http://bao.jd.com/vehicle" clstag="jr|keycount|jr_shouye|bxcx">车险</a>            <a id="nav-baoxian-accident" class="sub-nav-item" href="http://bao.jd.com/accident" clstag="jr|keycount|jr_baoxian|ywx">意外险</a><a id="nav-baoxian-travel" class="sub-nav-item" href="http://bao.jd.com/travel" clstag="jr|keycount|jr_baoxian|lyx">旅行险</a><a id="nav-baoxian-health" class="sub-nav-item" href="http://bao.jd.com/health" clstag="jr|keycount|jr_baoxian|jkx">健康险</a>        </div>    </div>    <!--sub-nav-end--></div><script type="text/javascript">    (function(){if(typeof jrBase!=='undefined'){if(typeof jrBase.navId!=='undefined'){var mainNav=document.getElementById(jrBase.navId);if(mainNav){mainNav.className+=' current'}}if(typeof jrBase.navSubId!=='undefined'){var subNav=document.getElementById(jrBase.navSubId);if(subNav){subNav.className+=' current'}}}})();</script><!--header end-->
+<!--header end-->
+
+<!--container-->
+<div class="list-banner health-list">
+    <div class="w">
+        <div class="introduction">
+            <span class="text">健康险</span><span class="text text-vis">健康险</span>是对重大疾病、医疗造成的经济损失提供补偿，以帮助个人及家庭应对健康风险的产品。包括重大疾病大额赔付责任、医疗费用报销责任等。
+        </div>
+        <div class="week-recom">
+            <div class="week-catewrap" id="scrollBanner">
+                <span class="tips"></span>
+                <div class="week-catecon">
+                    <ul class="list">
+                        <li class="fore1 banner-item banner-current">
+                            <div class="info-block" data-speed="700" data-dir="left-right" data-target="69" data-start="80">
+                                <div class="intro">
+                                    <h2 class="name">出行无忧</h2>
+                                    <span class="icon"></span>
+                                    <dl class="week-catelist">
+                                        <dd><i></i>投保一次 保障全车</dd>
+                                        <dd><i></i>儿童、成人、团体都适用</dd>
+                                        <dd><i></i>生活各种意外 全保障</dd>
+                                    </dl>
+                                </div>
+                                <div class="price">
+                                    <h2 class="name">太平洋保险公司提供</h2>
+                                    <div class="price-details">
+                                        &yen;<span class="number">175</span>/年
+                                    </div>
+                                    <div class="price-btn">
+                                        <a href="" class="com-redbtn1">立即购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fore2 banner-item">
+                            <div class="info-block" data-speed="700" data-dir="left-right" data-target="69" data-start="80">
+                                <div class="intro">
+                                    <h2 class="name">出行无忧</h2>
+                                    <span class="icon"></span>
+                                    <dl class="week-catelist">
+                                        <dd><i></i>投保一次 保障全车</dd>
+                                        <dd><i></i>儿童、成人、团体都适用</dd>
+                                        <dd><i></i>生活各种意外 全保障</dd>
+                                    </dl>
+                                </div>
+                                <div class="price">
+                                    <h2 class="name">太平洋保险公司提供</h2>
+                                    <div class="price-details">
+                                        &yen;<span class="number">175</span>/年
+                                    </div>
+                                    <div class="price-btn">
+                                        <a href="" class="com-redbtn1">立即购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fore3 banner-item">
+                            <div class="info-block" data-speed="700" data-dir="left-right" data-target="69" data-start="80">
+                                <div class="intro">
+                                    <h2 class="name">出行无忧</h2>
+                                    <span class="icon"></span>
+                                    <dl class="week-catelist">
+                                        <dd><i></i>投保一次 保障全车</dd>
+                                        <dd><i></i>儿童、成人、团体都适用</dd>
+                                        <dd><i></i>生活各种意外 全保障</dd>
+                                    </dl>
+                                </div>
+                                <div class="price">
+                                    <h2 class="name">太平洋保险公司提供</h2>
+                                    <div class="price-details">
+                                        &yen;<span class="number">175</span>/年
+                                    </div>
+                                    <div class="price-btn">
+                                        <a href="" class="com-redbtn1">立即购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="week-control">
+                    <span class="curr"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w health-container">
+<div class="list-container clearfix">
+    <div class="insur-ad">
+        <div class="tit">
+            <span class="jr-name">京东金融APP</span>
+            <span class="text">随身理财&nbsp;&nbsp;轻松赚钱</span>
+        </div>
+        <div class="item jrappbg"><img src="http://img30.360buyimg.com/jr_image/jfs/t769/342/378057560/42616/f35481c7/54a9ec7bN50df140e.png"></div>
+        <div class="item">
+            <a href="http://licai.bx.jd.com/item.action?skuId=101001" target="_blank" clstag="jr|keycount|jr_baoxian|jkxgg1"><img src="http://static.360buyimg.com/finance/insurance/index/1.0.0/css/i/1.jpg" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="http://licai.bx.jd.com/item.action?skuId=100821" target="_blank" clstag="jr|keycount|jr_baoxian|jkxgg2"><img src="http://static.360buyimg.com/finance/insurance/index/1.0.0/css/i/2.jpg" alt=""></a>
+        </div>
+    </div>
+<div class="insur-goodsall">
+<div class="selectall">
+    <div class="con">
+        <dl class="select-catelist">
+            <dt>类型：</dt>
+            <dd>
+                <a href="javascript:void(0);" id="health" class="curr">全部</a>
+                <a href="javascript:void(0);" id="toddler">婴幼</a>
+                <a href="javascript:void(0);" id="female">女性</a>
+                <a href="javascript:void(0);" id="aged">老年</a>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="insur-goodslist">
+<div class="tit">
+                    <span class="extra fr">
+                        共有<strong>18</strong>款产品
+                    </span>
+    <div class="cate-sel">
+        <span class="label">排序：</span>
+        <a href="javascript:void(0);" class="fore1 curr" id="defaultSort">默认</a>
+        <a href="javascript:void(0);" class="fore2" id="priceSort">价格</a>
+    </div>
+</div>
+<div class="con">
+    <ul>
+                <li  class="insur-deatilslist">
+            <div class="title">
+                <a href="/item/10000068" target="_blank">泰康女性特定疾病保障计划 </a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                                                        <div class="listname">
+                        <span class="name">乳腺癌</span>
+                        <span class="number">20万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">女性特定妇科癌症 </span>
+                        <span class="number">10万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外面部整形手术金</span>
+                        <span class="number">2万元</span>
+                    </div>
+                                </dt>
+                <dd>
+                    <span class="sprite">&yen;<span class="number">100.00</span>/年</span>
+                    <div class="btn">
+                        <a href="/item/10000068" target="_blank" class="com-redbtn2">立即购买</a>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+                <li  class="insur-deatilslist">
+            <div class="title">
+                <a href="/item/10000058" target="_blank">平安少儿大病综合意外保障计划 </a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                                                        <div class="listname">
+                        <span class="name">意外身故保障</span>
+                        <span class="number">5万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外残疾保障</span>
+                        <span class="number">5万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外住院医疗</span>
+                        <span class="number">5万元</span>
+                    </div>
+                                                                            </dt>
+                <dd>
+                    <span class="sprite">&yen;<span class="number">100.00</span>/年</span>
+                    <div class="btn">
+                        <a href="/item/10000058" target="_blank" class="com-redbtn2">立即购买</a>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+                <li  class="insur-deatilslist">
+            <div class="title">
+                <a href="/item/10000059" target="_blank">平安宝贝健康保障计划 Baby版</a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                                                        <div class="listname">
+                        <span class="name">意外身故 </span>
+                        <span class="number">5万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">住院医疗 </span>
+                        <span class="number">8万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外医疗 </span>
+                        <span class="number">1万元</span>
+                    </div>
+                                                                            </dt>
+                <dd>
+                    <span class="sprite">&yen;<span class="number">480.00</span>/年</span>
+                    <div class="btn">
+                        <a href="/item/10000059" target="_blank" class="com-redbtn2">立即购买</a>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+                <li  class="insur-deatilslist">
+            <div class="title">
+                <a href="/item/10000062" target="_blank">中国人寿健康宝贝 Baby计划</a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                                                        <div class="listname">
+                        <span class="name">意外伤残</span>
+                        <span class="number">10万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">住院医疗 </span>
+                        <span class="number">10万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外门诊医疗</span>
+                        <span class="number">1万元</span>
+                    </div>
+                                </dt>
+                <dd>
+                    <span class="sprite">&yen;<span class="number">350.00</span>/年</span>
+                    <div class="btn">
+                        <a href="/item/10000062" target="_blank" class="com-redbtn2">立即购买</a>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+                <li  class="insur-deatilslist">
+            <div class="title">
+                <a href="/item/10000063" target="_blank">中国人寿健康宝贝 少儿计划</a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                                                        <div class="listname">
+                        <span class="name">意外伤残</span>
+                        <span class="number">10万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">住院医疗 </span>
+                        <span class="number">10万元</span>
+                    </div>
+                                                        <div class="listname">
+                        <span class="name">意外门诊医疗</span>
+                        <span class="number">1万元</span>
+                    </div>
+                                </dt>
+                <dd>
+                    <span class="sprite">&yen;<span class="number">300.00</span>/年</span>
+                    <div class="btn">
+                        <a href="/item/10000063" target="_blank" class="com-redbtn2">立即购买</a>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+            </ul>
+    <div class="page" id="healthPage">
+                                                                        <a href="javascript:;" class="curr">1</a>
+                                                <a href="javascript:;">2</a>
+                                                <a href="javascript:;">3</a>
+                                                <a href="javascript:;" >4</a>
+                            <a href="javascript:;" class="next" pv="2">下一页</a>
+                <span class="mr10">共18条记录&nbsp;&nbsp;&nbsp;&nbsp;共4页</span>
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--container end-->
+
+<!--footer-->
+<div class="f-copyright">
+    <div class="grid-1200 footerHolder">
+        <div class="footer-nav">
+            <p>
+                <a href="http://help.jr.jd.com/show/helpcenter/110.html" target="_blank" clstag="jr|keycount|jr_shouye|footer1">关于京东金融</a><span class="footer-nav-cut">|</span>
+                <a href="http://help.jr.jd.com/show/helpcenter/113.html" target="_blank" clstag="jr|keycount|jr_shouye|footer2">关于京东小金库</a><span class="footer-nav-cut">|</span>
+                <a href="http://help.jr.jd.com/show/helpcenter/133.html" target="_blank" clstag="jr|keycount|jr_shouye|footer3">关于网银钱包</a><span class="footer-nav-cut">|</span>
+                <a href="http://help.jr.jd.com/show/helpcenter/148.html" target="_blank">关于京东白条</a>
+                <span class="footer-nav-cut">|</span>
+                <a href="http://help.jr.jd.com/show/helpcenter/139.html" target="_blank" clstag="jr|keycount|jr_shouye|footer4">联系我们</a><span class="footer-nav-cut">|</span>
+                <a href="http://help.jr.jd.com/show/helpcenter/117.html" target="_blank" clstag="jr|keycount|jr_shouye|footer5">免责声明</a>
+            </p>
+            <p>
+                Copyright © 2004-2014 京东JD.com 版权所有<span class="footer-nav-cut">|</span>投资有风险，购买需谨慎
+            </p>
+        </div>
+
+        <div class="footer-contact">
+            <div class="f-contact-time">联系我们<span>（9:00-22:00）</span></div>
+            <div class="f-contact-way">
+                <span class="f-contact-tel">400 622 7186</span>
+                <span class="f-contact-type">(个人业务)</span>
+                <a class="f-contact-ol" href="http://chat.jd.com/jd/chat?entry=jd_baoxian" target="_blank" clstag="jr|keycount|jr_shouye|footerkf">在线客服</a>
+            </div>
+            <div class="f-contact-way">
+                <span class="f-contact-tel">400 622 6586</span>
+                <span class="f-contact-type">(企业业务)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="right-slide-box" id="rightSlide" style="display: none;">
+    <a class="slide-block backtop" href="#"></a>
+     <a class="slide-block wenjuan" href="http://survadmin.jd.com/index.php?r=survey/index/sid/394833/lang/zh-Hans" target="_blank"></a>
+</div>
+
+<div class="ui-sidebar">
+    <a class="ui-sidebar-block feedback" href="http://survadmin.jd.com/index.php?r=survey/index/sid/394833/lang/zh-Hans" target="_blank"></a>
+    <a class="ui-sidebar-block backtop" href="javascript:void(0)"></a>
+</div> -->
+<!--footer end-->
+<script src="http://static.360buyimg.com/finance/??common/lib/jquery/1.6.4/jquery.js,base/1.1.0/js/base.js"></script>
+<script src="http://static.360buyimg.com/finance/insurance/index/1.0.0/js/list.js"></script>
+<script src="/statics/js/bx-goods.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        loadHealthBanner();
+    });
+
+    var jaq = jaq || [];
+    jaq.push(['account','UA-J2011-12']);
+    jaq.push(['domain','jr.jd.com']);
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+
+        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : 'http://csc') + '.jd.com/joya.js';
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ja,s);
+    })();
+
+    var _jaq = _jaq || [];
+    _jaq.push(['_setAccount', 'UA-JR-BAOXIAN']);
+    _jaq.push('healthList');
+
+
+    (function() {
+        var ja = document.createElement('script'); ja.type = 'text/javascript'; ja.async = true;
+        ja.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'rdp.jd.com/resource/ja.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ja, s);
+    })();
+</script>
+
+<input type="hidden" name="buried_point" id="buried_point" value="11004"/>
+<script type="text/javascript" src="http://t.jr.jd.com/js/clickBao.js"></script>
+
+<script type="text/javascript">
+    var google_tag_params = {
+        dynx_itemid:[''],
+        dynx_prodtype:['baoxianpindao'],
+        dynx_pagetype:['category'],
+        dynx_usertype:['']
+    };
+    var conversion_value = null;
+</script>
+
+<script type="text/javascript">
+    dataLayer = [{
+        'google_tag_params': window.google_tag_params,
+        'conversion_value': window.conversion_value
+    }];
+</script>
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9HSZR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W9HSZR');</script>
+<!-- End Google Tag Manager -->
+
+</body>
+</html>

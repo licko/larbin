@@ -1,0 +1,740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>登录-【爱旅行】</title>
+  <meta name="description" content="爱旅行（ www.ilvxing.com）是国内第一家提供限时特价旅游产品的网络平台，其产品包括旅游套餐，折扣机票，度假酒店。爱旅行通过分布在全国的1000多家供应商，第一时间为用户提供全球100多个国家与地区超过5000条的精品特价旅游线路。未来我们将致力于成为国内最大的旅游度假平台，为不同需求的用户提供专业、及时、高效的旅游度假服务。" />
+  <meta name="keywords" content="爱旅行,爱旅行度假折扣,特价机票,旅游尾单,自由行,出境游,国内游,特价邮轮,打折机票 ,打折酒店,特价旅游,度假,说走就走,限时特价" />
+  <meta name="baidu-site-verification" content="vJkVNONGyy" />
+  <meta property="wb:webmaster" content="85098832c08b129d" />
+  <link rel="icon" href="/Public/favicon/favicon.ico" type="image/x-icon" />
+  <link href="/Public/version_20140225/css/main.css?20140403" rel="stylesheet" type="text/css" />  <link href="/Public/version_20140225/css/user_info.css?3452" rel="stylesheet" type="text/css" />
+      <script type="text/javascript">
+        var BASE_URL = "",PUBLIC_URL="/Public";
+        var IS_USER_LOGIN=false;
+        var PHPSESSID = '';
+    </script>
+  <link rel="stylesheet" type="text/css" href="/Public/css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/Public/version_20140225/css/login.css" media="screen" />
+</head>
+<a href="http://www.anquan.org/s/www.ilvxing.com" name="eykwYxiSqq3z7lhy6FRm28RASR9fkCtgNJuZT49lzh5tA2RNVU" ></a>
+<body>
+<div class="helper">
+  <div class="helper_user">
+    <ul class="helper_user__ul cl" id="hLogin">
+      <li class="helper_user__li">你好，欢迎来到爱旅行！请</li>
+      <li class="helper_user__li">
+        <a class="helper_user__login" href="http://www.ilvxing.com/User/login">登录</a>
+      </li>
+      <li class="helper_user__li">|</li>
+      <li class="helper_user__li">
+        <a class="helper_user__reg" href="http://www.ilvxing.com/User/register">注册</a>
+      </li>
+      <li class="helper_user__li">
+        <a class="helper_user__qq animated" href="http://www.ilvxing.com/login_api/qq/?callback=http://www.ilvxing.com/ThirdParty/login">qq登陆</a>
+      </li>
+      <li class="helper_user__li">
+        <a class="helper_user__weibo animated" href="http://www.ilvxing.com/login_api/sina/?callback=http://www.ilvxing.com/ThirdParty/login">wb登陆</a>
+      </li>
+      <li class="cl"></li>
+    </ul>
+  </div>
+</div>
+<!--导航-->
+<div class="header">
+  <div class="header_wrapper">
+    <div class="logo">
+      <a class="logoLink" href="/" title="返回爱旅行首页" alt="爱旅行">
+      </a>
+    </div>
+    <div class="nav-new" id="headerNav">
+      <ul class="navUl">
+        <!--判断当前是哪个页面， 当前页添加 nav_link__active 类名 -->
+        <li class="navLi">
+          <a class="nav_link " href="/" target="_blank">首页</a>
+        </li>
+          <li class="navLi">
+              <a class="nav_link" href="http://www.ilvxing.com/list?ptype=1" target="_blank">旅行线路</a>
+          </li>
+          <li class="navLi">
+              <a class="nav_link" href="http://www.ilvxing.com/place" target="_blank">当地游</a>
+          </li>
+          </li>
+        <li class="navLi">
+          <a class="nav_link" href="http://visa.ilvxing.com/" target="_blank">签证</a>
+        </li>
+        <li class="navLi">
+          <a class="nav_link" href="http://www.ilvxing.com/active/liner" target="_blank">邮轮</a>
+
+        </li>
+        <li class="navLi navmarket">
+          <a class="nav_link " href="http://www.ilvxing.com/zhuanti/tehui" target="_blank">特卖场</a>
+        </li>
+        <li class="navLi navdownload" id="navDownLoad">
+          <a class="nav_link" href="http://www.ilvxing.com/appdownload" target="_blank">手机专享</a>
+          <div class="mobile" id="mobileShow">
+            <div class="mobile_sanjiao"></div>
+            <div class="mobile_section">
+              <img class="mobile_apple__pic" src="http://s.ilvxing.cn/ilv/image/er-download-i.png" width="200" width="200" alt=""/>
+              <h3 class="mobile_section__text">扫一扫 下载APP</h3>
+              <h3 class="mobile_section__text">更多惊喜等着你</h3>
+            </div>
+            <div class="mobile_section">
+              <img class="mobile_android__pic" src="http://s.ilvxing.cn/ilv/image/er-download-a.png" width="200" width="200" alt=""/>
+              <h3 class="mobile_section__text">扫一扫 下载APP</h3>
+              <h3 class="mobile_section__text">更多惊喜等着你</h3>
+            </div>
+          </div>
+        </li>
+        <li class="cl"></li>
+      </ul>
+    </div>
+    <div class="tel">
+      <div class="cl"></div>
+    </div>
+  </div>
+</div><!--end导航-->
+<script type="text/javascript" src="/Public/new/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/Public/js/jquery.validate.js"></script>
+<script src="/Public/version_20140225/js/common.js?v20150611" type="text/javascript"></script>
+<script>
+  $('#headerNav').on('mouseenter', '#navDownLoad', function () {
+    $('#mobileShow').slideDown();
+  });
+  $('#headerNav').on('mouseleave', '#navDownLoad', function () {
+    $('#mobileShow').stop().slideUp();
+  });
+</script>
+<!--nav end-->
+
+<div id="login_main">
+  <h1>欢迎登录</h1>
+  <p>还没有账号？<a href="/User/register" >点击注册</a></p>
+  <div id="login_section">
+    <h3>1、使用第三方平台快速登录</h3>
+    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxc9fc988534c92235&redirect_uri=http://ilvxing.com/ThirdParty/wxlogin&response_type=code&scope=snsapi_login&state=52c1d0445bafb7b5c2a36ef0b439883e#wechat_redirect" target="_blank" class="weixin-login" ></a>
+    <a href="#" class="qq" data-type="qq"></a>
+    <a href="#" class="wx" data-type="sina"></a>
+    <h3>2、用爱旅行账号登录</h3>
+    <form action="/User/checkLogin" method="post" id="regForm">
+      <label>
+        <p><b>*</b>&nbsp;账 号：</p>
+        <div class="outInput"><input type="text" class="input" name="account" id="account" tabindex="10" placeholder="请输入您的手机号或邮箱" /></div>
+        <span></span>
+        <div class="cl"></div>
+      </label>
+      <label>
+        <p><b>*</b>&nbsp;密 码：</p>
+        <div class="outInput"><input type="password" name="password" id="password" tabindex="10" placeholder="请输入6位以上的密码" /></div>
+        <span></span>
+        <div class="cl"></div>
+      </label>
+      <label class="auto"><input type="checkbox" name="remember" value="remember" class="remember"/>自动登录</label>
+      <a href="#" id="findPw2" >忘记密码？</a>
+      <button type="submit" id="submit" class="lgIn" value="">登录</button>
+      <em></em>
+    </form>
+  </div>
+</div>
+<iframe id="jump" src="#" width="0" height="0" scrolling="no" style="display: none;"></iframe>
+
+<script type="text/javascript">
+  $(function(){
+
+//    $('label input').focusin(function() {
+//      var input = $(this).parent().prev().find('input');
+//      $(this).addClass('in');
+//      //如果上一个input没有错误信息
+//      if(!input.hasClass('error')) {
+//        input.removeClass('in').addClass('success');
+//
+//      }
+//      if(input.hasClass('valid')) {
+//        if(input.next().find('label').length > 0){
+//          input.next().find('label').removeClass('error').addClass('noerror').html('&nbsp;');
+//        } else {
+//          input.next().addClass('noerror').html('&nbsp;')
+//        }
+//      }
+//    })
+
+
+
+
+
+    $('label input').keyup(function() {
+      var input =$(this);
+      $(this).addClass('in');
+      //如果上一个input没有错误信息
+      if(input.attr('class')){
+        if(input.attr('class').indexOf('valid') >= 0) {
+          input.removeClass('in').addClass('success');
+          input.parent().next().addClass('noerror').empty();
+        }
+        if(input.attr('class').indexOf('error') >= 0) {
+          if(input.next().find('label').length > 0){
+            input.parent().next().removeClass('noerror');
+            input.parent().next().find('label').removeClass('noerror');
+          } else {
+            input.parent().next().removeClass('noerror')
+          }
+        }
+      }
+
+
+    })
+
+    $('label input').focusin(function() {
+      var input =$(this).parent().parent().prev().find('input');
+      $(this).addClass('in');
+      //如果上一个input没有错误信息
+      if(input.attr('class')){
+        if(input.attr('class').indexOf('valid') >= 0) {
+          input.removeClass('in').addClass('success');
+          input.parent().next().addClass('noerror').empty();
+        }
+        if(input.attr('class').indexOf('error') >= 0) {
+          if(input.next().find('label').length > 0){
+            input.parent().next().removeClass('noerror');
+            input.parent().next().find('label').removeClass('noerror');
+          } else {
+            input.parent().next().removeClass('noerror')
+          }
+        }
+      }
+
+
+    })
+
+
+
+    var form = $("#regForm");
+    $.validator.addMethod("isLegalAccount", function(value, element) {
+      return (/^1[0-9]{10}$/).test(value) || $.validator.methods.email.call(this,value,element);
+    }, "请输入手机号或者邮箱");
+
+    //添加验证用户名是否存在方法
+    /*$.validator.addMethod("isAccountNotExist", function(value, element) {
+     var retVal = true;
+     //同步验证用户名
+     //  console.log("ajaxchecking...");
+     $.ajax({
+     url:'/User/checkUser',
+     data:{account:value},
+     success:function(ret){
+     retVal = ret.ok;
+     },
+     dataType:'json',
+     async:false
+     });
+     return retVal;
+     }, "用户名已经存在");
+     //添加验证昵称是否存在方法
+     $.validator.addMethod("isNicknameNotExist", function(value, element) {
+     var retVal = true;
+     //同步验证用户名
+     //  console.log("ajaxchecking...");
+     $.ajax({
+     url:'/User/checkNickname',
+     data:{nickname:value},
+     success:function(ret){
+     retVal = ret.ok;
+     },
+     dataType:'json',
+     async:false
+     });
+     return retVal;
+     }, "该昵称已经被占用");*/
+
+    form.validate({
+      rules:{
+        account:"required",
+        password:"required"
+      },
+      messages:{
+          account:{required:"请输入您的账号"},
+          password:{required:"请输入您的密码"}
+      },
+      errorPlacement: function(error, element) {
+        element.parent().parent().find('span').append(error);
+
+        if (element.attr('class').indexOf('error') >= 0) {
+          if (element.next().find('label').length > 0) {
+            element.next().removeClass('noerror');
+            element.next().find('label').removeClass('noerror');
+          } else {
+            element.next().removeClass('noerror')
+          }
+        }
+
+
+
+      },
+      submitHandler:function() {
+        if('ajaxing' in form  && form.ajaxing) return false;
+        form.ajaxing = true;
+        $.post(form[0].action,form.serialize(),function(ret){
+          form.ajaxing = false;
+          if(ret.ok) {
+              if(ret.activated){
+                  window.location.href = "/User/syncses/type/user";
+              }else{
+                  window.location.href = "/User/verify_user";
+               }
+          } else {
+            $.popup.alert("登录失败",ret.msg);
+          }
+        },"json");
+        return false;
+      }
+    });
+
+
+    });
+
+
+    $("#login_section>a").click(function(){
+      var type = $(this).data("type");
+      if(type) {
+        window.location.href = '' + BASE_URL + '/login_api/' + type + '/?callback=' + (BASE_URL + '/ThirdParty/login');
+        return false;
+      }
+    });
+
+
+
+</script>
+
+<script language="JavaScript">
+    function changeVerify(){
+        var timenow = new Date().getTime();
+        document.getElementById('verifyImg').src='/User/verify/'+timenow;
+    }
+</script>
+
+<script type="text/plain" id="ajaxLoginBox">
+    <!--注册登录弹窗-->
+    <div class="login_a1_bg"></div>
+    <div class="login_a1_inner">
+        <div class="logo" style="float: none;"></div>
+        <div class="lt_nav">
+            <ul>
+                <li class="current" id="aaa"><a href="#" data-id="1" >手机快速登录</a></li>
+                <li id="bbb"><a href="#" data-id="2" >登录</a></li>
+                <li><a href="#" data-id="3">注册</a></li>
+            </ul>
+        </div>
+        <div class="form_box">
+
+                  <div class="validate error" id="randomKeyError" style="display:none;"></div>
+                  <div class="validate success" id="success" style="display:none;"></div>
+                  <div class="cl"></div>
+                  <div id="third">
+                      <p>1 .使用这些账号登录</p>
+                      <ul class="im_box" id="thirdPartyLoginIcons">
+                          <li class="weixin"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxc9fc988534c92235&redirect_uri=http://ilvxing.com/ThirdParty/wxlogin&response_type=code&scope=snsapi_login&state=52c1d0445bafb7b5c2a36ef0b439883e#wechat_redirect" target="_blank" class="weixin-login" ></a>
+</li>
+                          <li class="sina"><a href="#" class="fn-mr-10" data-type="sina"></a></li>
+                          <li class="qq"><a href="#" class="fn-mr-10" data-type="qq"></a></li>
+                      </ul>
+                  </div>
+                  <form method="POST" id="nonRegLoginForm">
+                      <div class="cl"></div>
+                      <p>2 .使用已注册帐号登录</p>
+                      <div class="cl"></div>
+                      <div class="control-group fl">
+                          <label class="control-label2">手机号码</label>
+                          <div class="controls">
+                              <input type="text" class="input-medium txt" id="phone" name="phone">
+                              <div class="cl"></div>
+                          </div>
+                      </div>
+                      <div class="control-group fl">
+                          <label class="control-label2" for="randomKey">验证码</label>
+                          <div class="controls">
+                              <input type="text" class="w_100 txt" name="random_key" id="randomKey">
+                              <input class="get-random-key code" name="get_random_key" id="getRandomKey" name="" type="button" value="获取验证码" />
+                              <div class="cl"></div>
+                          </div>
+                      </div>
+                      <div class="cl"></div>
+                      <div class="control-group fl">
+                          <input class="go" name="" id="phoneBtn" type="image" src="http://static.ilvxing.com/version_20140225/image/login_btn.jpg" />
+                      </div>
+                  </form>
+                  <form method="POST" id="loginForm" class="fn-hidden">
+                      <div class="cl"></div>
+                          <div class="control-group fl">
+                              <label class="control-label2">用户名</label>
+                              <div class="controls">
+                                  <input type="text" class="input-medium txt" id="account" name="account" tabindex="10">
+                                  <div class="cl"></div>
+                              </div>
+                          </div>
+                          <div class="control-group fl">
+                              <label class="control-label2">密码</label>
+                              <div class="controls">
+                                  <input type="password" class="input-medium txt" id="password" name="password" tabindex="10">
+                                  <div class="cl"></div>
+                              </div>
+                          </div>
+                          <div class="control-group fl">
+                              <div class="controls nopadding">
+                                  <label class="check">
+                                      <input type="checkbox" name="remember" id="remember" class="checkbox">
+                                      <div class="tip">记住我</div>
+                                  </label>
+                                  <div class="forget_password">
+                                      <a class="blue" id="forgetPwd" href="javascript:void(0);">忘记密码</a></div>
+                                  <!--<div class="forget_password">忘记密码了？ <a class="blue" href="#">点击这里</a>|<a class="blue" href="/User/register">注册</a></div>-->
+                              </div>
+                          </div>
+                          <div class="cl"></div>
+                          <div class="control-group fl">
+                              <input class="go" name="" id='loginBtn' type="image" src="http://static.ilvxing.com/version_20140225/image/login_btn.jpg" />
+                          </div>
+                  </form>
+                <form method="POST" id="regForm" class="fn-hidden">
+                    <div class="control-group fl">
+                        <label class="control-label2">帐号</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium txt" placeholder="请填写手机号码或邮箱" id="reg_account" name="reg_account" tabindex="10">
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="control-group fl">
+                        <label class="control-label2">密码</label>
+                        <div class="controls">
+                            <input type="password" class="input-medium txt" id="reg_password" name="reg_password" tabindex="10">
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="control-group fl">
+                        <label class="control-label2">确认密码</label>
+                        <div class="controls">
+                            <input type="password" class="input-medium txt" id="rePassword" name="rePassword" tabindex="10">
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="control-group fl">
+                        <label class="control-label2" for="randomKey">验证码</label>
+                        <div class="controls">
+                            <input type="text" class="w_100 txt" name="random_key" id="verifyCode">
+                            <a href="javascript:void(0)"><img  style="margin-left: 10px;margin-top: 3px;" id="verifyImg" src="/User/verify" onClick="changeVerify()" title="点击刷新验证码" /></a>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="control-group fl">
+                        <p><input type="checkbox" id="read" name="read" checked="checked" value="1"/> 我已阅读并同意遵守<a class="blue" href="../Site/agreements" target="user_agreements">《爱旅行服务协议》</a></p>
+                        <div class="cl"></div>
+                        <div class="control-group fl">
+                            <input class="go" name="" id='regBtn' type="image" src="http://static.ilvxing.com/version_20140225/image/register_btn.jpg" />
+                        </div>
+                    </div>
+                </form>
+                <form method="POST" id="emailForm" class="fn-hidden">
+                    <div class="control-group fl">
+                        <label class="control-label2">注册邮箱</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium txt" placeholder="请填写邮箱地址" id="email" name="email" tabindex="10">
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="control-group fl">
+                        <input class="go" name="" id='emailBtn' type="image" src="http://static.ilvxing.com/version_20140225/image/find_pwd.jpg" />
+                    </div>
+                </form>
+        </div>
+    </div>
+</script>
+
+<style>
+
+  /*footer*/
+  .footer{
+    width: 100%;
+    background: #484848;
+    font-size: 12px;
+    color: #afaeae;
+  }
+  .footer a:hover{
+    color: #28b7d9;
+  }
+  .footer_container{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .about{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #332e2e;
+  }
+  .about__tel{
+    float: right;
+    width: 272px;
+  }
+  .about_dl{
+    width: 120px;
+    float: left;
+    margin-right: 45px;
+  }
+  .about__tel{
+    background: url("http://s.ilvxing.com/ilv/image/index-s.png?v=1") no-repeat -733px -541px;
+    width: 268px;
+    height: 84px;
+    float: right;
+    margin-right: 0;
+    margin-top: 22px;
+  }
+  .about_dt{
+    border-bottom: 1px dotted #7e7e7e;
+    height: 46px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #c4c4c4;
+  }
+  .about_dd{
+    margin: 6px 0;
+    color: #afaeae;
+  }
+  .about_link{
+    display: block;
+    line-height: 24px;
+  }
+
+  .partner{
+    border-top: 1px solid  #636363;
+    border-bottom: 1px solid #332e2e;
+    padding: 27px 0 20px;
+    overflow: hidden;
+
+  }
+  .partner_title{
+    width: 70px;
+  }
+  .partner_ul{
+    float: left;
+    margin-bottom: 27px;
+  }
+  .partner_title, .partner_ul, .partner_li, .partner_li_link, .partner_li__img{
+    float: left;
+  }
+  .partner_li_link{
+    text-align: center;
+  }
+  .partner_li{
+    width: 92px;
+    margin-right: 22px;
+  }
+  .partner_li__img{
+    margin-bottom: 16px;
+  }
+  .f_link{
+    clear: both;
+  }
+  .f_link__a{
+    margin-right: 10px;
+  }
+  .company{
+    border-top: 1px solid #636363;
+  }
+  .company_container{
+    width: 514px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 32px;
+  }
+  .company_pic{
+    overflow: hidden;
+    width: 530px;
+    padding-left: 10px;
+  }
+  .company_pic__list{
+    float: left;
+    margin: 20px 4px;
+  }
+  #footer{
+    border-top: none !important;
+  }
+</style>
+<div class="footer" id="footer" style="background: #484848">
+  <div class="footer_container">
+    <div class="about">
+      <dl class="about_dl">
+        <dt class="about_dt">关于爱旅行</dt>
+        <dd class="about_dd">
+          <a class="about_link" href="/Site/aboutus" target="_blank">关于我们</a>
+          <a class="about_link" href="/Site/contact" target="_blank">联系我们</a>
+        </dd>
+      </dl>
+        <dl class="about_dl">
+            <dt class="about_dt">产品服务</dt>
+            <dd class="about_dd">
+                <a class="about_link" href="http://flight.ilvxing.com"  target="_blank">航班查询</a>
+                <a class="about_link" href="http://flight.ilvxing.com/visa/search"  target="_blank">签证查询</a>
+            </dd>
+        </dl>
+      <dl class="about_dl">
+        <dt class="about_dt">网站合作</dt>
+        <dd class="about_dd">
+          <a class="about_link" href="/Site/links" target="_blank">友情链接</a>
+          <a class="about_link" href="/Site/job_offers" target="_blank">达人招募</a>
+        </dd>
+      </dl>
+      <dl class="about_dl">
+        <dt class="about_dt">网站条款</dt>
+        <dd class="about_dd">
+          <a class="about_link" href="/Site/agreements" target="_blank">用户协议</a>
+          <a class="about_link" href="/Site/agreement" target="_blank">网签协议</a>
+          <a class="about_link" href="/Site/duty" target="_blank">免责条款</a>
+        </dd>
+      </dl>
+      <dl class="about_dl about__tel" style="text-indent: 56px;">
+          <p class="about_call" style="font-size: 28px;">1010-6066</p>
+          <p class="about_time" style="font-size: 12px;">服务时间：9:00-22:00</p>
+      </dl>
+    </div>
+    <div class="partner">
+      <div class="partner_title">合作伙伴：</div>
+      <ul class="partner_ul">
+        <li class="partner_li">
+          <a class="partner_li_link" href="http://www.mafengwo.cn/" target="_blank">
+            <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/partner-1.jpg?v1"
+                 width="92" height="42" alt=""/>
+            <span class="partner_li__name">蚂蜂窝</span>
+          </a>
+        </li>
+        <li class="partner_li">
+          <a class="partner_li_link" href="http://www.qunar.com/" target="_blank">
+            <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/partner-2.jpg?v1"
+                 width="92" height="42" alt=""/>
+            <span class="partner_li__name">去哪儿网</span>
+          </a>
+        </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="http://zgsslxs.tmall.com/" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/hb_qa.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">去啊</span>
+              </a>
+          </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="http://z.qyer.com/sup/103/" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/hb_qy.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">穷游网</span>
+              </a>
+          </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="http://go.360.cn/top10?sup=%E7%88%B1%E6%97%85%E8%A1%8C#filtertop" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/hb_360.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">360旅行</span>
+              </a>
+          </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="http://cc.cmbchina.com/" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/hb_zs.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">招商银行信用卡</span>
+              </a>
+          </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="http://go.jd.com/" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/hb_jd.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">京东金融</span>
+              </a>
+          </li>
+          <li class="partner_li">
+              <a class="partner_li_link" href="https://www.95516.com/" target="_blank">
+                  <img class="partner_li__img" src="http://s.ilvxing.com/ilv/image/partner-8.jpg?v1"
+                       width="92" height="42" alt=""/>
+                  <span class="partner_li__name">银联</span>
+              </a>
+          </li>
+      </ul>
+      <p class="f_link">
+        <span>友情链接：</span>
+        <a class="f_link__a" href="http://www.piaojia.com" target="_blank">票价旅游网</a>
+        <a class="f_link__a" href="http://www.keyunzhan.com/lvyou" target="_blank">旅游网</a>
+        <a class="f_link__a" href="http://www.huoche.net/lvyou" target="_blank">旅游</a>
+        <a class="f_link__a" href="http://www.huayo365.com" target="_blank">四川旅游</a>
+        <a class="f_link__a" href="http://visa.ilvxing.com/" target="_blank">签证办理</a>
+        <a class="f_link__a" href="http://www.guolv.com/chujing" target="_blank">出境旅游</a>
+        <a class="f_link__a" href="http://www.ilvxing.com/" target="_blank">出境特价游</a>
+        <a class="f_link__a" href="http://www.temaiku.com" target="_blank">特卖库</a>
+        <a class="f_link__a" href="http://www.1ting.com" target="_blank">一听音乐网</a>
+        <a class="f_link__a" href="http://www.miqi.cn/" target="_blank">米奇网</a>
+        <a class="f_link__a" href="http://www.ailianjia.com/" target="_blank">爱廉价</a>
+      </p>
+    </div>
+
+    <div class="company">
+      <div class="company_container">
+        <p class="company_name" style="text-align: center; line-height: 1.5;">
+            北京爱旅伟邦科技有限公司 | 京ICP备13033032号-2 京ICP证150057号<br/>
+            地址：北京市西城区西什库大街31号院23号楼1层 | 电话：1010-6066<br/>
+            Copyright © 2015 ilvxing.com All Rights Reserved.
+        </p>
+        <ul class="company_pic">
+          <li class="company_pic__list">
+            <a href="" target="_blank"><img src="http://s.ilvxing.com/ilv/image/company-1.png"
+                                            width="110" height="40" alt=""/></a>
+          </li>
+          <li class="company_pic__list">
+            <a href="" target="_blank"><img src="http://s.ilvxing.com/ilv/image/company-2.png"
+                                            width="110" height="40" alt=""/></a>
+          </li>
+          <li class="company_pic__list">
+            <a href="" target="_blank"><img src="http://s.ilvxing.com/ilv/image/company-3.png"
+                                            width="110" height="40" alt=""/></a>
+          </li>
+          <li class="company_pic__list">
+            <a href="" target="_blank"><img src="http://s.ilvxing.com/ilv/image/company-4.png"
+                                            width="110" height="40" alt=""/></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<div class="rt_wrap">
+        <div class="return_top" style="display: none;"><a title="返回顶部" href="#"></a></div>
+        <div class="cl"></div>
+                <div class="weixin_sidebar_box">
+                <div class="close"><a title="关闭" href="javascript:void(0);" onclick="$('.weixin_sidebar_box').hide();"></a></div>
+                <img src="http://static.ilvxing.com/version_20140225/image/mark_preview100.png" width="131"/>
+            </div>    </div>
+
+
+<div id="ifram"></div>
+<script>
+    $.post('/User/getpsid', function (json) {
+        if($('#ifram-dev').length > 0) {
+            var ifram = $('#ifram-dev');
+            var url = 'http://visa.ilvxing.cn/common/syncses?psid=' + json;
+        } else {
+            var ifram = $('#ifram');
+            var url = 'http://visa.ilvxing.com/common/syncses?psid=' + json;
+        }
+        var iframeHtml = document.createElement('iframe');
+        iframeHtml.src = url;
+        iframeHtml.style.display = 'none';
+        ifram.append(iframeHtml);
+    })
+</script>
+<!--2015-10-02 21:18:32-->
+<script src="http://bii.ilvxing.com/bii-200.js?version=14260620971426062097" type="text/javascript"></script>
+<div style="display: none;">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F943b1cce7d3ec9dbed9f503f471f5ae5' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <!--  CNZZ统计  -->
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256268758'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256268758' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</html>

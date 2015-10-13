@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>京东智能</title>
+    <meta content="智能硬件，智能手环，智能手表，智能生活，智能社区，微联，JD，京东首发，智能试用" name="keywords">
+    <meta content="京东智能是京东成立的子集团，主要负责未来京东集团在智能领域的相关业务。京东智能建立了开放的线上页面，让所有对智能感兴趣的人都能来体验智能，试用、购买智能新品。同时，京东建立了线下京东JD+智能奶茶馆，通过奶茶馆的运营，让爱智能的人一起来玩智能，感受智能。" name="description">
+    <link href="http://static.360buyimg.com/nsng/jingzhi/2.0/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet"  href="http://misc.360buyimg.com/jdf/1.0.0/unit/??ui-base/1.0.0/ui-base.css,shortcut/2.0.0/shortcut.css,global-header/1.0.0/global-header.css,myjd/2.0.0/myjd.css,nav/2.0.0/nav.css,shoppingcart/2.0.0/shoppingcart.css,global-footer/1.0.0/global-footer.css,service/1.0.0/service.css,basePatch/1.0.0/basePatch.css"/>
+    <script type="text/javascript">window.pageConfig = {compatible: true}</script>
+    <link rel="stylesheet" href="http://static.360buyimg.com/nsng/smart/2.0/skin/common.css"/>
+    <link rel="stylesheet" href="http://static.360buyimg.com/nsng/smart/2.0/skin/about.css"/>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body class="root61">
+<div id="shortcut-2014" tag="10">
+    <div class="w">
+        <ul class="fl">
+            <li class="return-jd"><a href="http://www.jd.com/">京东首页</a></li>
+        </ul>
+        <ul class="fr">
+            <li class="fore1" id="ttbar-login">
+                <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore2">
+                <div class="dt">
+                    <a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore3 dorpdown" id="ttbar-myjd">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://home.jd.com/">我的京东</a>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore4">
+                <div class="dt">
+                    <a target="_blank" href="http://vip.jd.com/">京东会员</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore5">
+                <div class="dt">
+                    <a target="_blank" href="http://b.jd.com/">企业采购</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore6 dorpdown" id="ttbar-apps">
+                <div class="dt cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://app.jd.com/">手机京东</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore7 dorpdown" id="ttbar-atte">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>关注京东
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore8 dorpdown" id="ttbar-serv">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>客户服务
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore9 dorpdown" id="ttbar-navs">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>网站导航
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+<div class="header-wrap">
+    <div class="w smart-header">
+        <div id="logo-2014" tag="1">
+            <a href="http://smart.jd.com/" class="logo">京东智能</a>
+        </div>
+        <div id="search-2014" tag="2">
+            <ul id="shelper" class="hide"></ul>
+            <div class="form">
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
+                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+            </div>
+        </div>
+        <div id="settleup-2014" tag="3">
+            <div class="cw-icon">
+                <i class="ci-left"></i>
+                <i class="ci-right">&gt;</i>
+                <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+            </div>
+        </div>
+        <div id="hotwords-2014"></div>
+        <div class="links">
+            <ul>
+                <li tag="4" class="curr"><a href="http://smart.jd.com/">首页</a></li>
+                <li tag="5"><a target="_blank" href="http://jingzhi.jd.com/">社区</a></li>
+                <li tag="6"><a target="_blank" href="http://smarthome.jd.com/">微联</a></li>
+                <li tag="7"><a target="_blank" href="http://try.smart.jd.com/">试用</a></li>
+                <li tag="8"><a target="_blank" href="http://sale.jd.com/act/hXAiw4m1WF.html">众筹</a></li>
+                <li tag="9"><a target="_blank" href="http://new.jd.com/">首发</a></li>
+            </ul>
+        </div>
+
+        <span class="clr"></span>
+    </div>
+</div>
+
+<div id="about">
+    <div class="w">
+        <div class="left">
+            <div class="ab_sideMenu">
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about1.html"><i></i>京东智能</a></h3>
+                    <ul>
+                        <!--当前加 “cur”-->
+                        <li><a href="about1.html#1" target="_self">关于京东智能</a></li>
+                        <li><a href="about1.html#2" target="_self">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about2.html"><i></i>智能社区</a></h3>
+                    <ul>
+                        <li><a href="about2.html#1" target="_self">关于智能社区</a></li>
+                        <li><a href="about2.html#2" target="_self">玩转社区</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about3.html"><i></i>京东微联</a></h3>
+                    <ul>
+                        <li><a href="about3.html#1" target="_self">关于京东微联</a></li>
+                        <li><a href="about3.html#2" target="_self">厂商加入</a></li>
+                    </ul>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about4.html"><i></i>JD<sup>+</sup>孵化器</a></h3>
+                </div>
+                <div class="ab_sideMenuItem">
+                    <h3><a href="about5.html"><i></i>JD<sup>+</sup>首发</a></h3>
+                    <ul>
+                        <li><a href="about5.html#1" target="_self">关于JD<sup>+</sup>首发</a></li>
+                        <li><a href="about5.html#2" target="_self">商家报名</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="ab_article">
+                <h2 class="pmTit">JD<sup>+</sup>首发</h2>
+                <div class="pmCon">
+                    <a  class="anchor_line" name="1"></a>
+                    <h4>一、关于JD<sup>+</sup>首发</h4>
+                    <p>
+                        京东“JD<sup>+</sup>首发”是由京东商城和京东智能集团联合打造推出的一项针对智能硬件新品的首发营销推广计划。首发团队由经验丰富的电商和广告从业人员组成，并深度整合了多家优秀专业的广告公司，为智能硬件企业提供创新、高性价比的全案营销服务，支持智能硬件新品在京东商城进行首发营销活动。
+                        <br /><br />
+                        在供应商（智能硬件生产企业）和京东商城对应采销人员确定新品首发计划之后，将获得专门的客户经理服务于即将发布的新品。供应商可以京东协议价格在广告公司库中选择心仪的广告公司执行产品的广告策略和创意工作。智能硬件生产企业、京东JD+首发团队和广告公司将在首发前的40天通力合作，制定新品首发所需的策略和创意作品。
+                        <br /><br />
+                        服务期间，我们将提供以下9项围绕首发的广告服务：
+                        <br />
+                        ①   产品品牌策略咨询：包括但不限于，提供产品卖点、产品定位、传播策略、创意文案等服务以及全服务周期时间进度表；<br />
+                        ②   图片物料：包含服务期间所使用图片素材网络版权（不包含图片线下使用版权、棚拍和3D渲染）；<br />
+                        ③   产品页面设计：<br />
+                        &nbsp;· 有前端代码和页面动效的京东智能产品页及其移动端匹配H5<br />
+                        &nbsp;· 前端代码和页面动效的京东智能试用页及其移动端匹配H5<br />
+                        &nbsp;· 京东商城商品详情页（PC、app、微信手Q）平面版<br />
+                        &nbsp;· 相关页面的全部banner（京东智能页面、京东商城首页、京东试用页面、京东APP、京东微信手Q、易迅）<br />
+                        ④   产品预热海报1套：不多于5张，双方根据营销策略确定海报张数及类型，海报类型包括但不限于悬念海报、预热海报等<br />
+                        ⑤   手机H5设计（简版）：手机H5页面（文案以及平面）设计，并生成利于传播的简版H5，形式不限；若甲方要求做游戏或者测试等较复杂，涉及大量编程的H5，需双方商议额外支付费用。<br />
+                        ⑥   社会化软文稿件5篇：包括纸媒通稿、社会化软文、测评文章及科技媒体报道通稿等，最终按甲方要求提供；<br />
+                        ⑦   产品微信发布会策划：流程的规划以及内容的撰写；<br />
+                        ⑧   京东智能试用活动的相关支持；<br />
+                        ⑨   品牌传播监控与营销活动结案报告<br /><br />
+                    </p>
+                    <div>
+                        <em class="color333">我们的协议收费标准如下：</em>
+                        <br />
+                        广告公司费用：按照京东协议价格15万，部分国际级4A广告公司30万，包含首发准备期40天和首发上线后30天，约定范围内的广告服务。需要签署协议，使用京东方面提供的合同模板。
+                        <br /><br />
+                        京东执行费用：首发期间销售总额的2%，通过商城采销人员以返点账扣方式录入。
+                        <br /><br /><br />
+                        <em class="color333">我们目前已经完成的项目案例如下：</em>
+                        <br />
+                        <table class="ab_table01">
+                            <thead>
+                                <tr>
+                                    <th>产品名称</th>
+                                    <th>产品详情页链接</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>猫王²典藏级蓝牙收音机</td>
+                                    <td><a href="http://item.jd.com/1613442.html" target="_blank">http://item.jd.com/1613442.html</a></td>
+                                </tr>
+                                <tr>
+                                    <td>DINGDONG智能音箱</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000001" target="_blank">http://item.smart.jd.com/product/100000001</a></td>
+                                </tr>
+                                <tr>
+                                    <td>流云可充电的无线智能存储</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000002" target="_blank">http://item.smart.jd.com/product/100000002</a></td>
+                                </tr>
+                                <tr>
+                                    <td>小智智能水壶</td>
+                                    <td><a href="http://item.smart.jd.com/resources/sh/index.html" target="_blank">http://item.smart.jd.com/resources/sh/index.html</a></td>
+                                </tr>
+                                <tr>
+                                    <td>极路客行车记录仪</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000006" target="_blank">http://item.smart.jd.com/product/100000006</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jabra 扩驰  智能运动耳机</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000009" target="_blank">http://item.smart.jd.com/product/100000009</a></td>
+                                </tr>
+                                <tr>
+                                    <td>糖护士智能血糖仪</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000008" target="_blank">http://item.smart.jd.com/product/100000008</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jawbone UP3智能手环</td>
+                                    <td><a href="http://item.smart.jd.com/product/100000010" target="_blank">http://item.smart.jd.com/product/100000010</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br /><br />
+                        <em class="color333">报名流程:</em>
+                        <br />
+                        如果贵司有计划将智能硬件新品的首发与京东合作，需要尽快与商城采销的对应产品经理商定首发日期。确定首发日期后可与JD+首发团队的客户经理预约首发排期。
+                        <br /><br />
+                        确定首发排期后将进入广告执行公司的招标流程，您可在我司的广告商库中指定3家广告公司参加项目招标，经过面谈对比择优选用。之后贵司、京东以及广告公司将通力合作进入首发之前的广告设计和执行阶段。
+                        <br /><br />
+                        首发上线阶段，产品将露出于京东智能（<a href="smart.jd.com" target="_blank">smart.jd.com</a>）内的JD+首发栏目。对于重点合作项目我们将协调更多的露出资源以促进产品达成销售。
+                    </div>
+                    <br /><br />
+                    <h4>Q&A</h4>
+                    <p>
+                        <em class="color333">Q：京东智能是什么？</em>
+                        <br />
+                        A：京东智能是京东集团成立的子公司，主要负责京东智能相关业务。目前京东智能主要聚焦于两部分业务：
+                        <br /><br />
+                        1、“JD+”生态圈的运营<br />
+                        包括针对于各阶段企业的孵化器、加速器、智能解决方案服务，并与优质合作企业一起打造量级产品。同时，我们会选择优秀项目进行投资，从资金层面进行支持。
+                        <br /><br />
+                        2、打造三个连接，构建京东智能开放生态圈<br />
+                        &nbsp;（1）整合上游产业链，连接京东智能和上游产业链。<br />
+                        &nbsp;（2）打造京东智能开放生态，使得京东智能产品互联互通。智能云平台可以让可联网的设备通过京东云接入到互联网上来。<br />
+                        &nbsp;（3）建立连接品牌商、初创团队和用户的智能硬件开放社区，连接京东智能和下游消费者。<br />
+                        <br />
+                        <em class="color333">Q：京东JD+首发和京东众筹是怎样的关系？</em><br />
+                        A：京东JD+首发和京东众筹都是京东集团为扶持创业企业而推出的平台。众筹是在产品正式面对市场之前，通过产品计划收集用户支持，从而利用众筹金额实现量产的行为；而首发是产品已经量产首次正式在京东销售平台上对消费者批量销售的行为。众筹要比首发所处的阶段更早。产品可以先众筹再上首发，也可以直接进行首发。
+                        <br /><br />
+                        <em class="color333">Q：京东JD+首发和京东商城采销是什么关系？</em><br />
+                        A：商城采销是JD+首发业务的发起方之一，商城对商品进行采购和销售是首发业务进行的前提条件，首发业务优先服务于京东商城的战略单品。首发期间产品采购、定价、活动促销等进销存业务均由商城采销进行主导。首发业务京东方面收取的执行费用（首月销售额2%）由商城采销录入。
+                        <br /><br />
+                        <em class="color333">Q：JD+首发的销量是否使用京东物流、仓储、配送、客服？是否计入商城销量排名？</em><br />
+                        A：首发采用全部京东仓配客体系，所有销量均计入商城销量排名。
+                        <br /><br />
+                        <em class="color333">Q：品牌商选择广告公司的机制是什么样的？</em><br />
+                        A：首发团队已经收集、审核和整合了大量专业广告公司，确认首发合作后，我们将向品牌商开放广告商资料库。通过审阅广告商资料库的案例及背景调查资料，品牌商（甲方）可选择3家意向备选广告公司（乙方）。在已经签署保密协议的情况下，我们将把甲方广告需求传递给乙方，并在规定时间内发起三方面谈。甲方根据面谈结果，以及在规定时间内的后续沟通选定中标乙方。
+                        <br /><br />
+                        <em class="color333">Q：新品销售是否有保底？</em><br />
+                        A：没有。JD+首发提供的是广告营销服务，销售部分由商城采销负责。
+                        <br /><br />
+                        <em class="color333">Q：什么是微信发布会？如何操作？</em><br />
+                        A：微信发布会是指在微信群中进行新产品发布。京东JD+首发团队利用自身资源优势，目前已组建科技媒体群，核心用户群等多个群组；同时在产品进行预热时，也将征集对产品感兴趣的新用户入群。新品发布时，智能硬件厂商将在约6个群内，面对近3000名核心用户同步进行产品发布。
+                        <br /><br />
+                        <em class="color333">Q：广告公司的费用是否都是15万？有没有附加收费？</em><br />
+                        A：广告公司的费用依据首发业务的评级不同，而费用不同。截至7月23日，广告商库中除却奥美Neo、DDB国安、Chiel杰尔思行三家国际级4A广告公司报价为30万之外，其他三十余家广告公司的费用均为15万。我们每半年会根据广告公司的案例表现进行重新评级，做价格调整。超出基础服务的项目需要额外收费。
+                        <br /><br />
+                        整体而言，JD+首发是一项“京东JD+”为扶持初创、打造爆品而推出的半公益项目。我们希望能够依靠京东的行业资源和流量资源，提供创新、高性价比的全案营销服务，帮助智能硬件企业提升智能硬件营销水准。希望能帮助更多对“智能硬件”怀抱梦想的团队更快获得市场的接受和消费者的认可。
+                    </p>
+                    <br /><br />
+                    <a  class="anchor_line" name="2"></a>
+                    <h4>二、商家报名：</h4>
+                    <div> 
+                        新品首发报名联系人：杨红波 
+                        <br />
+                        报名邮箱：<a href="mailto:shoufa@jd.com">shoufa@jd.com</a>
+                    </div>
+                    <br /><br />
+                    <h4>三、意见反馈</h4>
+                    <div> 
+                        如对我们有任何的意见和建议，欢迎登陆京东智能社区JD+首发小站留言，我们将随时关注，及时回复。
+                        <br /><br />
+                        小站网址：<a href="http://jingzhi.jd.com/open/bsite/topic/22472.html" target="_blank">http://jingzhi.jd.com/open/bsite/topic/22472.html</a>
+                    </div>
+                    <br /><br /><br />
+                    备注：服务内容请以最终合同为准，其中细则若有调整恕不另行通知。<br />
+                    本服务最终解释权归京东JD+首发团队所有。
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" tag="70">
+    <div class="w">
+        <div class="footer-group">
+            <h3><a href="http://smart.jd.com/">京东智能</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#1">关于京东智能</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about1.html#2">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://jingzhi.jd.com/">智能社区</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://try.smart.jd.com/">JD<sup>+</sup>试用</a></li>
+                <li><a target="_blank" href="http://jingzhi.jd.com/open/bsite/square">小站广场</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://smarthome.jd.com/">京东微联</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smartcloud.jd.com/app">微联APP</a></li>
+                <li><a target="_blank" href="http://devsmart.jd.com/dev/index">开发者中心</a></li>
+            </ul>
+        </div>
+        <div class="footer-group">
+            <h3><a target="_blank" href="http://new.jd.com/">JD<sup>+</sup>首发</a></h3>
+            <ul>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#1">关于JD<sup>+</sup>首发</a></li>
+                <li><a target="_blank" href="http://smart.jd.com/pages/about5.html#2">商家报名</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2004-2015 京东JD.com 版权所有
+        </div>
+    </div>
+</div>
+<script src="http://static.360buyimg.com/nsng/jingzhi/common/js/jquery-1.11.2.min.js"></script>
+<script src="http://static.360buyimg.com/nsng/jingzhi/common/js/juicer-min.js"></script>
+<script src="http://static.360buyimg.com/nsng/smart/2.0/js/common.js"></script>
+<script src="http://static.360buyimg.com/nsng/smart/2.0/js/about.js"></script>
+<script>
+seajs.use(['http://misc.360buyimg.com/jdf/1.0.0/unit/globalInit/2.0.0/globalInit.js'],function(globalInit){
+    globalInit();
+    (function(){
+        var A="";
+        var B=[""];
+        B=pageConfig.FN_GetRandomData(B);
+        $("#hotwords-2014").html(A);
+        $("#key").val(B).css("color","#ccc").bind("focus",function(){if (this.value==B){this.value="";this.style.color="#333"}}).bind("blur",function(){if (!this.value){this.value=B;this.style.color="#999"}});
+    })();
+});
+</script>
+</body>
+</html>

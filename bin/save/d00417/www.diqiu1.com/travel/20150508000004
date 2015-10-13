@@ -1,0 +1,1723 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>【韩国春暖花开】天津|首尔济州5天4晚跟团游，自主包机游，赠送价值350元的精彩涂鸦秀-地球咦旅行网</title>
+    <link rel="stylesheet" href="/resources/pc/css/base.css">
+    <link href="/resources/pc/css/d_3rd_base.css" rel="stylesheet">
+    <link href="/resources/pc/css/d_base.css" rel="stylesheet">
+    <link href="/resources/pc/css/d_application.css" rel="stylesheet">
+    <link href="/resources/pc/css/calendar.css" rel="stylesheet">
+    <link href="/resources/pc/css/pro_pc.css" rel="stylesheet">
+    <link href="/resources/pc/css/scenic.css" rel="stylesheet">
+    <link href="/resources/pc/css/modal_login.css" rel="stylesheet">
+    
+     <link href="/resources/pc/css2/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/resources/pc/css/spinner.css">
+	<link rel="stylesheet" href="/resources/pc/css/datepicker.css">
+    
+    <link rel="shortcut icon" href="http://diqiu1-static.oss-cn-beijing.aliyuncs.com/favicon.ico" type="image/x-icon" />
+    <script src="/resources/pc/js/jquery.min.js"></script>
+</head>
+<body>
+<!--导航开始-->
+
+
+<!--顶部 开始-->
+
+<div class="header">
+    <div class="header_wrapper">
+        <div class="logo"><a href="http://www.diqiu1.com"><img src="/resources/pc/images2/logo-com.jpg">
+
+            <h1 class="disapear">特价自由行_地球咦旅行网</h1></a></div>
+        <div class="topbar" id="noLogin">
+            <ul class="topbar2">
+                <li><a href="/register" rel="nofollow">免费注册</a></li>
+                <li class="bg_none"><a href="/login" rel="nofollow">您好，请登录</a> </li>
+            </ul>
+            <a href="/corp/card.htm" class="trip_card"></a>
+        </div>
+        <div class="topbar" id="memberCenter"  style="display:none">
+            <ul >
+                <li id="welcome">&nbsp;&nbsp;</li><br>
+                <li ><a href="/logout" rel="nofollow">退 出</a></li>
+                <li ><a href="/order/list" rel="nofollow">会员中心</a></li>
+            </ul>
+            <a href="/corp/card.htm" class="trip_card"></a>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+
+
+
+
+
+    <div class="nav">
+        <div class="nav-bg"></div>
+        <div class="c-wrapper">
+            <div></div>
+
+            <div class="categorys floatL">
+                <div class="title">全部旅行目的地</div>
+                <div class="continents">
+                    <ul class="sf-menu sf-vertical" id="dropdown_menu">
+
+                            <li>
+                                <ul class="citybg1">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="#">热门海岛</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/saibandao">塞班岛</a></span> <span><a href="http://www.diqiu1.com/lvyou/maerdaifu">马尔代夫</a></span> <span><a href="http://www.diqiu1.com/lvyou/palao">帕劳</a></span> <span><a href="http://www.diqiu1.com/lvyou/pujidao">普吉岛</a></span> <span><a href="http://www.diqiu1.com/lvyou/sumeidao">苏梅岛</a></span> <span><a href="http://www.diqiu1.com/lvyou/sililanka">斯里兰卡</a></span> <span><a href="http://www.diqiu1.com/lvyou/lankawei">兰卡威</a></span>&nbsp;<span><a href="http://www.diqiu1.com/lvyou/shaba">沙巴</a></span> <span><a href="http://www.diqiu1.com/lvyou/saisheer">塞舌尔</a></span> <span><a href="http://www.diqiu1.com/lvyou/guandao">关岛</a></span> <span><a href="http://www.diqiu1.com/lvyou/feiji">斐济</a></span> <span><a href="http://www.diqiu1.com/lvyou/changtandao">长滩岛</a></span>  <span><a href="http://www.diqiu1.com/lvyou/daxidi">大溪地</a></span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 海岛</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/balidao">巴厘岛</a>
+                                            <a href="http://www.diqiu1.com/lvyou/saibandao">塞班岛</a>
+                                            <a href="http://www.diqiu1.com/lvyou/palao">帕劳</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <ul class="citybg2">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="#">港澳台</a>
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/xianggang">香港</a></span> <span> <a href="http://www.diqiu1.com/lvyou/aomen">澳门</a></span> <span> <a href="http://www.diqiu1.com/lvyou/taiwan">台湾</a></span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 港澳台</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/xianggang">香港</a>
+                                            <a href="http://www.diqiu1.com/lvyou/aomen">澳门</a>
+                                            <a href="http://www.diqiu1.com/lvyou/taiwan">台湾</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <ul class="citybg3">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/hanguo">韩国</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/jizhou">济州</a></span> <span> <a href="http://www.diqiu1.com/lvyou/shouer">首尔</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/gz">光州</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/tanyang">潭阳</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/fushan">釜山</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/riben">日本</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/dongjing">东京</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/daban">大阪</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/jinggang">静冈</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/fugang">福冈</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/长崎">长崎</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/zhahuang">札幌</a></span> 
+		</dd>
+		<dd>
+			<a href="http://www.diqiu1.com/lvyou/hanguan">函馆</a> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/beihaidao">北海道</a></span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/chongsheng">冲绳</a></span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 日韩</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/riben">日本</a>
+                                            <a href="http://www.diqiu1.com/lvyou/hanguo">韩国</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <ul class="citybg4">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/xinjiapo">新加坡</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/xinjiapo">新加坡</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/malaixiya">马来西亚</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/jilongpo">吉隆坡</a></span> <span> <a href="http://www.diqiu1.com/lvyou/shaba">沙巴</a></span> <span> <a href="http://www.diqiu1.com/lvyou/lankawei">兰卡威</a></span> <span> <a href="http://www.diqiu1.com/lvyou/lvzhonghai">绿中海</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/taiguo">泰国</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/mangu">曼谷</a></span><span> <a href="http://www.diqiu1.com/lvyou/qingmai">清迈</a></span> <span> <a href="http://www.diqiu1.com/lvyou/sumeidao">苏梅</a></span> <span> <a href="http://www.diqiu1.com/lvyou/pujidao">普吉岛</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/yinni">印度尼西亚</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/balidao">巴厘岛</a> </span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/sililanka">斯里兰卡</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/kelunpo">科伦坡</a> </span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="南亚">南亚地区</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/niboer">尼泊尔</a> </span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/budan">不丹</a> </span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/yindu">印度</a> </span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="中东">其他地区</a> 
+		</dt>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/dibai">迪拜</a> </span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/feilvbin">菲律宾</a> </span> 
+		</dd>
+		<dd>
+			<span> <a href="http://www.diqiu1.com/lvyou/Dumaguete">杜马盖地</a> </span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 亚洲及其他</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/xinjiapo">新加坡</a>
+                                            <a href="http://www.diqiu1.com/lvyou/malaixiya">马来西亚</a>
+                                            <a href="http://www.diqiu1.com/lvyou/taiguo">泰国</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <ul class="citybg5">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/meiguo">美国</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/huashengdun">华盛顿</a></span> <span><a href="http://www.diqiu1.com/lvyou/jiujinshan">旧金山</a></span> <span><a href="http://www.diqiu1.com/lvyou/luoshanji">洛杉矶</a></span> <span><a href="http://www.diqiu1.com/lvyou/xiaweiyi">夏威夷</a></span> <span><a href="http://www.diqiu1.com/lvyou/saibandao">塞班</a></span> <span><a href="http://www.diqiu1.com/lvyou/guandao">关岛</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="http://www.diqiu1.com/lvyou/aodaliya">澳洲</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/xini">悉尼</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/kaiensi">凯恩斯</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">非洲</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/saisheer">塞舌尔</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/maoliqiusi">毛里求斯</a></span> 
+		</dd>
+<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/nanfei">南非</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">欧洲</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/xila">希腊</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/yingguo">英国</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/faguo">法国</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/deguo">德国</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/ruishi">瑞士</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/yidali">意大利</a></span> 
+		</dd>
+		<dd>
+			<a href="http://www.diqiu1.com/lvyou/yidali">芬兰</a> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/danmai">丹麦</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/nuowei">挪威</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/he'lan">荷兰</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/bilishi">比利时</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/eluosi">俄罗斯</a></span> 
+		</dd>
+		<dd>
+			<a href="http://www.diqiu1.com/lvyou/xyl">匈牙利</a> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/saierweiya">塞尔维亚</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/bbaojialiya">保加利亚</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/maqidun">马其顿</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/aerbaniya">阿尔巴尼亚</a></span> 
+		</dd>
+		<dd>
+			<a href="http://www.diqiu1.com/lvyou/heishan">黑山</a> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/bohei">波黑</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/keluodiya">克罗地亚</a> </span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/siluowenniya">斯洛文尼亚</a></span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/aodili">奥地利</a> </span> 
+		</dd>
+		<dd>
+			<a href="http://www.diqiu1.com/lvyou/fandigang">梵蒂冈</a> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/tuerqi">土耳其</a> </span> 
+		</dd>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/xibanya">西班牙</a> </span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 欧美澳非</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/meiguo">美国</a>
+                                            <a href="http://www.diqiu1.com/lvyou/aodaliya">澳大利亚</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <ul class="citybg6">
+                                    <li>
+	<dl>
+		<dt>
+			<a href="#">福建</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/xiamen">厦门</a></span> <span><a href="http://www.diqiu1.com/lvyou/wuyishan">武夷山</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">云南</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/kunming">昆明</a></span> <span><a href="http://www.diqiu1.com/lvyou/dali">大理</a></span> <span><a href="http://www.diqiu1.com/lvyou/lijiang">丽江</a></span> <span><a href="http://www.diqiu1.com/lvyou/xishuangbanna">西双版纳</a></span> <span><a href="http://www.diqiu1.com/lvyou/xianggelila">香格里拉</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">江西</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/wuyuan">婺源</a></span> <span><a href="http://www.diqiu1.com/lvyou/lushan">庐山</a></span> <span><a href="http://www.diqiu1.com/lvyou/sanqingshan">三清山</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">海南</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/sanya">三亚</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">广西</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/guilin">桂林</a></span> <span><a href="http://www.diqiu1.com/lvyou/yangshuo">阳朔</a></span> <span><a href="http://www.diqiu1.com/lvyou/nanning">南宁</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">四川</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/jiuzhaigou">九寨沟</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">东北</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/jilin">吉林</a></span> <span><a href="http://www.diqiu1.com/lvyou/changbaishan">长白山</a></span> <span><a href="http://www.diqiu1.com/lvyou/haerbin">哈尔滨</a></span> <span><a href="http://www.diqiu1.com/lvyou/wudalianchi">五大连池</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">内蒙古</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/hailaer">海拉尔</a></span> 
+		</dd>
+	</dl>
+</li>
+<li>
+	<dl>
+		<dt>
+			<a href="#">山西</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/mianshan">绵山</a></span> 
+		</dd>
+	</dl>
+</li>
+
+<li>
+	<dl>
+		<dt>
+			<a href="#">青海</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/qinghaihu">青海湖</a></span> 
+		</dd>
+	</dl>
+</li>
+
+<li>
+	<dl>
+		<dt>
+			<a href="#">甘肃</a> 
+		</dt>
+		<dd>
+			<span><a href="http://www.diqiu1.com/lvyou/lanzhou">兰州</a></span> <span><a href="http://www.diqiu1.com/lvyou/dunhuang">敦煌</a></span> <span><a href="http://www.diqiu1.com/lvyou/zhangye">张掖</a></span> 
+		</dd>
+	</dl>
+</li>
+                                </ul>
+                                <div class="contientsli">
+                                    <div class="contientsname"> <span> 国内精选</span> </div>
+                                    <div class="hotcities hotcitiesnone">
+                                            <a href="http://www.diqiu1.com/lvyou/sanya">三亚</a>
+                                            <a href="http://www.diqiu1.com/lvyou/xiamen">厦门</a>
+                                            <a href="http://www.diqiu1.com/lvyou/guilin">桂林</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+
+                    </ul>
+                    <div class="ad1">
+                        <a rel="nofollow" href="https://itunes.apple.com/us/app/lu-you-dian-ping-chu-jing/id958408932?l=zh&ls=1&mt=8" target="_blank" class="ad_btn1"></a>
+                        <a rel="nofollow" href="http://www.diqiu1.com/download/DiQiuYi_Travel_default.apk" class="ad_btn2"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div></div>
+            <div class="navitems floatL">
+                <ul class="header_themlist">
+                    <li class="selected"><a class="title" href="http://www.diqiu1.com" target="_self">首页</a></li>
+                    <li rel="Tickets|Coupon"> <a class="title" href="/tejia" target="_self" >特价自由行<b class="nav_icon_triangle"></b></a>
+                        <div class="navitems_content one_list">
+                            <dl class="nav_content_left">
+                                            <dd> <a href="/tejia/taocan" >机+酒套餐</a> </dd>
+                                            <dd> <a href="/tejia/wanle" >当地玩乐</a> </dd>
+                                            <dd> <a href="/tejia/menpiao" >当地门票 </a> </dd>
+                                            <dd> <a href="/tejia/zuche" >当地租车</a> </dd>
+                                            <dd> <a href="/tejia/tdyh" >团队优惠</a> </dd>
+
+                            </dl>
+                        </div>
+                    </li>
+
+
+
+
+                    <li rel="shopping"> <a class="title" href="/zhuti" target="_self"  >特色主题<b class="nav_icon_triangle"></b></a>
+                        <div class="navitems_content one_list">
+                            <dl class="nav_content_left">
+                                        <dd> <a href="/zhuti/zijia" >自驾游</a> </dd>
+                                        <dd> <a href="http://www.diqiu1.com/zhuti/qijing" >跟团游</a> </dd>
+                                        <dd> <a href="/zhuti/gaoerfu" >高尔夫</a> </dd>
+                                        <dd> <a href="http://www.diqiu1.com/zhuti/miyue" >婚礼蜜月</a> </dd>
+                                        <dd> <a href="/zhuti/youxue" >名校游览</a> </dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                            <li rel="Activities"> <a class="title" href="http://www.diqiu1.com/zhuti/qijing" target="_self" >跟团游</a></li>
+                            <li rel="Activities"> <a class="title" href="http://www.diqiu1.com/zhuti/miyue" target="_self" >婚礼蜜月</a></li>
+
+                    <li > <a class="title" href="/menpiao" target="_self" >门票</a></li>
+                    <li > <a class="title" href="/hotel" target="_self" >酒店</a></li>
+                    <li > <a class="title" href="/app"   rel="nofollow"  target="_blank" >出境旅游指南</a></li>
+                    <i class="cui_ico_new"></i>
+                    <i class="cui_ico_new2"></i>
+
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<!--顶部 结束-->
+<!--导航结束-->
+
+<!--面包屑开始-->
+<div class="subnav" style="margin-top:20px;">
+    <div class="container">
+        <ul class="span10 breadcrumb" style="margin-left:-140px">
+            <li><a href="http://www.diqiu1.com">地球咦旅行网</a> <span class="yicon yicon-bread-arrow"></span></li>
+            <li> <a href="/zhuti">主题X体验</a> </li>
+            <li> <span class="yicon yicon-bread-arrow"></span><a href="/travel/20150508000004">【韩国春暖花开】天津|首尔济州5天4晚跟团游，自主包机游，赠送价值350元的精彩涂鸦秀</a> </li>
+        </ul>
+    </div>
+</div>
+<!--面包屑结束-->
+
+<!--中部开始-->
+<div class="container page-container">
+    <div class="tour-detail-page">
+        <div class="row yu-column-two" id="all_con">
+
+
+            <!--左侧产品详情内容 开始-->
+            <div class="span9 left-column" style="margin-left:0px" id="pro_left">
+
+
+                <div class="tour-title row-fluid">
+                    <div class="title-line row-fluid">
+                        <h2>【韩国春暖花开】天津|首尔济州5天4晚跟团游，自主包机游，赠送价值350元的精彩涂鸦秀</h2>
+                    </div>
+                </div>
+
+                <div class="tour-showcase row-fluid" >
+                    <input type="hidden" class="installmentMark" value="12">
+
+                    <div class="bt_all">
+                        <span class="installmentLogo"></span><br>
+                        <small class="bt_con1">¥</small>
+                        &nbsp;
+                        <small class="bt_con2 installmentPrice"></small>
+                        &nbsp;/期起&nbsp;×&nbsp;<span class="installmentNum"></span>期
+                    </div>
+                    <div class="bt_con3"></div>
+                    <img src="http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/7a2fbff4-3ed3-4864-84c7-16e72bb15f68.jpg" alt="">
+                </div>
+
+
+
+                <!-- 日历开始 -->
+                <div id="myModal" style="margin-bottom:40px">
+                    <div class="tab">
+                        <ul></ul>
+                    </div>
+                    <div class="tab_cont">
+                        <div style="display:block;" class="Calendar">
+                            <table cellspacing="0" cellpadding="0" border="0" id="calendar">
+                                <tbody>
+                                <tr>
+                                    <th>周日</th>
+                                    <th>周一</th>
+                                    <th>周二</th>
+                                    <th>周三</th>
+                                    <th>周四</th>
+                                    <th>周五</th>
+                                    <th>周六</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 日历结束 -->
+
+
+
+                <div class="tour-content tour_content">
+                    <div class="tab_nav_field tab-nav-field">
+                        <div class="tab-wrapper tab_wrapper affix-top">
+                            <ul class="nav nav-tabs yu-tabs yu_tabs">
+	                            <li class="active" id="tabs_kfjfw"><a href="#kfjfw">
+	                					<h2>可附加服务</h2>
+	                				</a></li>
+                                <li class="active"> <a href="#fysm">
+                                    <h2>费用说明</h2>
+                                </a> </li>
+                                <li class=""> <a href="#cpxq">
+                                    <h2>产品详情</h2>
+                                </a> </li>
+                                <li class=""> <a href="#tjxc">
+                                    <h2>玩法推荐</h2>
+                                </a> </li>
+                                <li class=""> <a href="#ddxz">
+                                    <h2>订单须知</h2>
+                                </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                   <div class="tab-content pro_con1">
+						
+			<form action="/order/orderinit" id="orderInit" method="post">
+			<input type="hidden" id="pid" name="pid" value="1094"/>						 
+			<input type="hidden" id="pdid" name="pdid" />			 
+			<input type="hidden" id="pnum" name="num"/>						 
+			<input type="hidden" id="orderInitotal" name="orderInitotal"/>						 
+          <!--可附加服务开始-->
+          <div class="wrap" id="kfjfw">
+                <table class="table table-hover" id="additionalTable">
+                    <thead style="background:#EEEFF0; ">
+                        <th width="5%"></th>
+                        <th width="10%">类别</th>
+                        <th width="42%">可附加服务</th>
+                        <th width="6%">价格</th>
+                        <th width="18%">使用日期</th>
+                        <th width="19%">数量</th>
+                    </thead><tbody>
+                    </tbody>
+                 </table>
+            </div>
+            <!--可附加服务结束-->
+		
+		</form>				
+
+                        <!--费用说明开始-->
+                        <div class="wrap" id="fysm">
+                                <div class="item-box fee">
+    <div class="title clearfix">
+        <label class="t_ico13"></label>
+        <span>小球推荐</span>
+    </div>
+    <div class="con tuijian">
+    <p>
+	1.动感之都-首尔+浪漫岛屿-济州，包揽韩国旅游精华。
+</p>
+<p>
+	2.漫步明洞，休闲、游览、购物，再赠送价值350元的精彩涂鸦秀。
+</p>
+<p>
+	3.室内主题乐园-乐天世界和济州岛的hello kitty 主题公园，双园乐翻天。
+</p>
+<p>
+	4.多次安排韩国美食：石锅饭+参鸡汤……尽情收货美食与美景。
+</p>
+<p>
+	5.自主包机游，带您看美景，吃美食，开心购。
+</p>
+<p>
+	<br />
+</p>
+    </div>
+</div>
+
+<div class="item-box fee">
+    <div class="title clearfix">
+        <label class="t_ico1"></label>
+        <span>费用包含</span>
+    </div>
+    <div class="con"><p>
+	1、国际间往返机票，团队经济舱（含税）
+</p>
+<p>
+	2、韩国四花酒店（双标间/大床房）
+</p>
+<p>
+	3、境外旅游巴士及司机
+</p>
+<p>
+	4、境外导游、领队服务费
+</p>
+<p>
+	5、游览用餐（桌餐位4-10人一桌）
+</p>
+<p>
+	6、行程内所列景点门票
+</p>
+<p>
+	7、韩国国家签证费;（使馆要求除北京户口其他地区需交50000元/人押金）
+	<p>
+		<br />
+	</p>
+</p>
+<p>
+	8、旅行社责任险；
+</p>
+<p>
+	9、赠送旅游意外伤害保险
+</p></div>
+</div>
+
+
+<div class="item-box fee">
+    <div class="title clearfix">
+        <label class="t_ico2"></label>
+        <span>费用不含</span>
+    </div>
+    <div class="con">
+    <p>
+	<p>
+		1、护照费
+	</p>
+	<p>
+		2、洗衣、理发、电话、饮料、烟酒、付费电视、行李搬运等私人费用；
+	</p>
+	<p>
+		3、出入境的行李海关课税，超重行李的托运费、管理费等；
+	</p>
+	<p>
+		4、行程中未提到的其它费用：如特殊门票、游船（轮）、缆车、地铁票等费用；
+	</p>
+	<p>
+		5、公务活动及专业翻译费；
+	</p>
+	<p>
+		6、行程中涉及到的另附小费（包括酒店服务费），是因目的地国家习俗产生的服务行业中通行的顾客对服务人员的一种酬谢方式，是在固定工资以外的赏钱。
+	</p>
+	<p>
+		7、全程单房差1000/人。
+	</p>
+	<p>
+		<br />
+	</p>
+    </div>
+</div>
+                        </div>
+                        <!--费用说明结束-->
+
+                        <!--产品详情开始-->
+                        <div class="wrap"  id="cpxq">
+                                <div class="item-box fee">
+    <div class="title clearfix">
+        <label class="t_ico3"></label>
+        <span>温馨提示</span>
+    </div>
+    <div class="con"><p>
+	1.团队机场集合时间一般为航班起飞前三个小时，在天气状况不好的情况下，请您尽量提前出发前往机场，以免因突发情况（无交通工具、塞车等）而延误。
+</p>
+<p>
+	2.非北京/天津的客人，请您务必提前一天抵达北京/天津，并建议入住机场附近酒店，以保障第二天机场有效集合。
+</p>
+<p>
+	3.如因天气、机器故障、国际罢工/暴乱等非人为因素而导致国际航班延误/取消、行程变更等是人力不可抗力事件。一旦发生类似情况，旅行社会积极协助游客与航空公司协调处理，并尽最大努力保障原计划安排不受大幅影响，与境外沟通争取损失最小化。但最终仍因不可抗力导致行程变更、取消等情况给游客造成损失，旅行社不存在违约责任和经济赔偿义务（除未实际发生费用退还外），敬请理解并周知！也恳请游客面对不可抗力和突发事件时给予包容和配合，与旅行社协力应对，以求最佳处理结果将损失降低到最低。
+</p></div>
+</div>
+                        </div>
+                        <!--产品详情结束-->
+
+                        <!--玩法推荐开始-->
+                        <div class="wrap" id="tjxc">
+                                <div class="item-box hotel">
+    <div class="title clearfix">
+        <label class="t_ico11"></label>
+        <span>精彩行程</span>
+    </div>
+</div>
+
+<div class="item-box hotel">
+    <div class="con">
+        <span>第一天 天津-济州</span>
+        <p class="day_img"><img   width='undefined' height='undefined' title='undefined' alt='undefined'  src='http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/9cf6087f-10a8-444b-b41f-7360778af712.jpg'/></p>
+        <p><strong>餐食：</strong>中晚</p>
+        <p><strong>住宿：</strong>【四花级】 标准间、三人间</p>
+        <p><strong>交通：</strong>飞机【参考航班】GS7575 0815-1105</p>
+        <p>于指定地点集合，搭乘飞机前往济州国际机场,抵达后游览
+★【城山日出峰】（游览时间不少于60分钟）。城山日出峰海拔182米，系10万年前海底火山爆发而形成，位于济州岛东端（33°27′北，126°56′东），是一块高耸的巨岩，其顶部有巨大的火山口。火山口直径600米，深90米，面积达8万多坪。99块尖石围绕在火山口周围，如同一顶巨大的皇冠。东南面及北面是悬崖，只有西北面是草坪山脊，与城山村相连。由于山脊上铺了草坪，既可散步，也可骑马。
+★【城邑民俗村】（游览时间不少于60分钟）。民俗村现在有以前多人居住在这里。民居、乡校、古代官公署、石神像、碾子、城址、碑石等有形文化遗产及民歌、民俗游戏、乡土食品、民间工艺、济州方言等无形文化遗产。村子中间几百年树龄的榉树、朴树已被指定为自然保护对象。城邑民俗村由于位于济州岛上，因而也完全反映了济州岛独特的居住文化。你在这里可以看到那看似堆得稀稀疏疏的挡风石墙（黑熔岩石），为了防止风直接进入里屋而建得又直又弯的“奥来”（窄胡同），还有成为济州岛之象征的石神像。</p>
+    </div>
+</div>
+
+<div class="item-box hotel">
+    <div class="con">
+        <span>第二天 济州</span>
+        <p class="day_img"><img   width='undefined' height='undefined' title='undefined' alt='undefined'  src='http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/39c1f780-0ade-4aa7-9c06-336f9a3754cd.jpg'/></p>
+        <p><strong>餐食：</strong>早中晚</p>
+        <p><strong>住宿：</strong>【四花级】 标准间、三人间</p>
+        <p><strong>交通：</strong>汽车</p>
+        <p>★【潮安泰迪熊博物馆】（游览时间不少于60分钟）。Joanne Bear博物馆是世界上著名的泰迪熊设计师Joanne Oh的工作室展示空间。在这里可以欣赏到以“亲环境和自然主义”为理念，用天然材质制作而成的泰迪熊，同时还可以憩息在济州岛的美丽大自然里面。坐落于低矮山坡上的Joanne Bear博物馆还展示着模仿韩流巨星裴勇俊制作而成的“俊俊熊”系列以及其他的北极熊系列等各种各样的泰迪熊。因此，吸引了大批的游客慕名而来。博物馆内各种憨态可掬的小熊，让人仿佛回到童年时光。
+★【涉地可支】（游览时间不少于60分钟）位于韩国济州岛东部海岸的一端。“涉地”是這一地区古代的名称，“可支”是济州岛方言，意思是指外凸出的地形。这片海岸岬地因为作为韩剧《ALL IN》中的场景而变成热门景点。矗立在坡地上的白色美丽教堂、修女院建筑十分显眼，具有欧洲风味，远远地就能吸引住众人的目光。扶栏而立，涉地可支海岸的风景便尽收眼底。辽阔平缓的考地山坡上有石结构的烽燧台（高约4米，呈边长9米的正方形），至今保留着原貌，这里更是韩剧《洛城生死恋》拍摄地，可以欣赏到海天一色的美丽风光。
+★【汉拿山-不登山】（游览时间不少于40分钟）。从济州岛的任何地方都可以看到汉拿山，但是从不同的角度所看到的山势却各不相同，其山姿给人的印象也因人而异，而且随着季节的交替千变万化。何止如此，即使一样的树木、一样的花草，在汉拿山看到的却不知为何更为别致。
+★【特别赠送：涂鸦秀】（游览时间按一场计算）。韩国年轻的艺术家开创世界上绘画先河，大胆摆脱了既有的艺术框架，以舞台哑剧形式，将绘画的整个过程搬到舞台上，辅以动感音乐和诙谐的肢体语言，山水泼墨，人物舞僮，分秒之间，跃然纸上，技巧卓越，特效惊人，引人入胜，用艺术推动剧情的发展，大大刺激你的想象力。感受耳目一新的演出，收获到前所未有的视觉享受。
+■【化妆品专卖店】（游览时间不多于60分钟）。随着部分人群喜欢看韩剧，韩国化妆品慢慢也流行了。韩国的化妆品品牌数不胜数，各种产品更是应有尽有。</p>
+    </div>
+</div>
+
+<div class="item-box hotel">
+    <div class="con">
+        <span>第三天 济州-首尔</span>
+        <p class="day_img"><img   width='undefined' height='undefined' title='undefined' alt='undefined'  src='http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/625e509c-3f92-4af3-8ad4-2c3706d1f3ca.jpg'/></p>
+        <p><strong>餐食：</strong>早中晚</p>
+        <p><strong>住宿：</strong>【四花级】 标准间、三人间</p>
+        <p><strong>交通：</strong>飞机/汽车</p>
+        <p>★【景福宫】（游览时间不少于50分钟）。景福宫是朝鲜王朝的第一座正宫，是朝鲜古宫群中维护最完善的建筑群，保持着王朝昔日的建筑格调。其中的庆会楼及香远池等建筑结构精美，呈现出朝鲜时代宫廷建筑的风范，被誉为“韩国最美的阁楼”。（如巧遇周二不对外开放，则更改为游览昌德宫，望广大团友谅解）。
+★【光华门广场】（游览时间不少于20分钟）。光华门广场是首尔城市的中轴线，在熙熙攘攘的街道中，闹中取静，开辟出一片广场，广场上塑有韩国民族英雄李舜臣及世宗大王雕像，常常举行各种文化活动，是韩国市民的重要文化空间之一。
+★【清溪川】（游览时间不少于30分钟）。位于韩国首尔市中心，是贯穿首尔南北、有600多年历史的河流，至今超过1亿7千万人次来到这里观光和游玩。清溪川为人们提供了一处感受文化、亲近大自然和观察、学习生态的理想天地。经过47年的覆盖后重现人间，被誉为“韩国现代奇迹”。清溪川白天宁静悠闲、晚上灯光璀璨，周围现代化高楼与老字号餐厅鳞次栉比，让您尽情领略首尔魅力。
+★【曹溪寺】（游览时间不少于30分钟）:位于景福宫与仁寺洞之间，是韩国佛教最大宗派—大韩佛教曹溪宗的中心、寺院主殿为大雄殿、每年农历四月八日举办提灯遊行以纪念佛祖诞辰。寺庙前，邮政局两侧的坚志洞则是聚集了佛教书籍与用品的小店。
+★【城市里安静休闲的小巷--北村韩屋村】（游览时间不少于30分钟）。这里是一片保存非常完好的韩国传统建筑群，目前仍作为真正居民所居住的地方。每一个小屋子都很精致小巧。这一片区域非常的大，很容易走迷路，不过很多地方都会看到穿红色衣服的志愿者，可以去管他们要免费地图，他们也会告诉你应该要怎么走。
+★【汝矣岛公园】（游览时间不少于60分钟）。汝矣岛公园由韩国传统丛林、草园、文化院坝、自然生态丛林等主题构成。在由湿地、水岸、草地、丛林构成的自然生态环境里，游客们可以近距离了解多种生物。还有一处游览汝矣岛绝不可错过的景点，这便是轮中路。6公里长的街道两旁，有着三四十年历史的樱花蔓延绽放，使这条街道成为首尔城内名副其实、闻名遐迩的樱花街。为此，每年春天都有不少游客慕名而来汝矣岛公园一睹樱花美景。汝矣岛公园是市中心一片珍贵的绿色休憩空间，人们可以在这里散步、运动，还可以欣赏各种文化演出。
+★【韩流明星街】（游览时间不少于40分钟）。韩国为了开发国际市场，已于2013年打造一条“明星街”，向外国游客推广文化和观光产业。约一公里长的韩流明星街，将连贯江南狎鸥亭洞闹区和多家韩国最知名的娱乐公司，并以就地取材的方式，规划多个韩流相关景点和互动活动，预估造价不超过2亿韩元(约合100万元人民币)。韩流街将有韩星手印、展览和照片专区供旅客游览，还有韩星常现身的餐厅和咖啡厅。旗下有“少女时代”和Super Junior等大牌韩星的SM娱乐公司，每周将开放外国旅客参观位于韩流街附近的办公室，为自家艺人宣传。
+★【新罗免税店】（游览时间不少于40分钟）。新罗免税店隶属于韩国三星集团旗下的新罗酒店，自1986年开业以来，以时尚潮流的商品、合理的价格、高雅的购物环境以及优质的服务为海内外游客所青睐，是韩国最具代表性的免税店。
+★【东和免税店】（游览时间不少于40分钟）。“东和免税店”是韩国国内具最悠久传统和历史的免税店。是韩国第一家开在市区，是韩国人尽皆知的老牌免税店。这里化妆品品牌丰富齐全，不仅是外国游客，在韩国当地人中也是人气颇高哦。</p>
+    </div>
+</div>
+
+<div class="item-box hotel">
+    <div class="con">
+        <span>第四天 首尔</span>
+        <p class="day_img"><img   width='undefined' height='undefined' title='undefined' alt='undefined'  src='http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/78bbeb78-5299-4cc2-b9de-c3f62cd6d1d0.jpg'/></p>
+        <p><strong>餐食：</strong>早中晚</p>
+        <p><strong>住宿：</strong>【四花级】 标准间、三人间</p>
+        <p><strong>交通：</strong>汽车</p>
+        <p>★【外国游客慕名而来的著名景点--南山公园（不含登塔费）】（游览时间不少于60分钟）。位居海拔265米高的南山公园，山顶耸立着236米的首尔塔，登上高塔可俯瞰首尔中心地区，与生命大厦同 为首尔的标志。公园内分布和栖息着首尔数量最多的树木和野生动物。这里不仅散步路漂亮，还可以近距离观察到松鼠等野生动物。除了首尔塔，山顶上还有八角亭、海洋水族馆、喷水池，半山腰有植物园和南山图书馆等。
+■【高丽人参】（游览时间不多于60分钟）。高丽参在世界上享有声誉，是韩国最知名的代表产品。高丽参拥有多种吃法，在预防慢性病方面有明显效果，高丽参还有抗癌，控制疾病，促进血液循环，防止疲劳，增强免疫力等方面的功效。高丽参性温不燥，不仅可以补气、提神，也有滋阴、补水的功效。
+■【韩国护肝宝】（游览时间不多于60分钟）。护肝宝采用了世界先进的高分子和低分子提取技术，从天然珍贵的枳椇果中提取对肝病具有显著效果的因子HD-1。HD-1能迅速渗入到肝细胞内，启动并促进肝细胞的大量再生，有效控制和清除脂肪肝；杜绝肝疾病向肝硬化、肝癌的转变。
+★【乐天世界游乐场含自由劵、蚕室乐天免税店、明洞乐天免税店】（自由活动时间不少于120分钟）。首尔最大的游乐场，您可尽情享受这个神秘的室内主题公园带给您的欢乐。自1989年开业以来，游客已超过1亿！全园包括室内和室外两个部分，室内部分面积达12万8千余平方米，是世界上最大的室内游乐园；室外部分位于湖水中央，最惊险刺激的游乐设施都汇集于此；到乐天世界，惊险和刺激等着你！  （如因客人游览时间不统一，则由客人书面同意后领取餐费后在园内自行解决，个人原因不能退还）。</p>
+    </div>
+</div>
+
+<div class="item-box hotel">
+    <div class="con">
+        <span>第五天 首尔-天津市</span>
+        <p class="day_img"><img   width='undefined' height='undefined' title='undefined' alt='undefined'  src='http://diqiu1-img.oss-cn-beijing.aliyuncs.com/mb/zh20150508000004/ae67755f-9c11-499b-9162-b45fb09b14ed.jpg'/></p>
+        <p><strong>餐食：</strong>早</p>
+        
+        <p><strong>交通：</strong>飞机【参考航班】GS6626 1150-1230</p>
+        <p>■【土特产专卖店】（游览时间不多于60分钟）。主要以样式繁多的纪念品、各种小食品、各类小百货为主，店中大多都是韩国原汁原味的商品和本地人日用的物品，您可从锅碗瓢盆的日常生活中了解、体味韩国生活的质量，或者可以将这种生活质量择优带回家。</p>
+    </div>
+</div>
+
+
+                        </div>
+                        <!--玩法推荐结束-->
+
+                        <!--订单须知开始-->
+                        <div class="wrap" id="ddxz">
+                                <div class="item-box fee" >
+    <div class="title clearfix">
+        <label class="t_ico7"></label>
+        <span>使用方法</span>
+    </div>
+    <div class="con">
+    <ul>
+	<li>
+		提交订单。我们的客服会在1个工作日内通过电话跟您确认订单。
+	</li>
+	<li>
+		付款。请在确认订单后30分钟内付款，以便我们保留您的订单。
+	</li>
+	<li>
+		行程单。我们会将详细的行程单通过电子邮件的形式发送给您，请注意查收。
+	</li>
+	<li>
+		出行凭证。出行时，请携带您提交订单时旅客的有效证件（身份证、护照等）办理登机及住宿手续即可。
+	</li>
+</ul>
+    </div>
+</div>
+
+
+<div class="item-box fee" id="ydxz">
+    <div class="title clearfix">
+        <label class="t_ico9"></label>
+        <span>预订须知</span>
+    </div>
+    <div class="con">
+        <ul>
+	<li>
+		为了确保您能够按时出行，产品确认后请在30分钟内付款，并按要求尽快提供出游所需的材料。
+	</li>
+	<li>
+		我们将尽力为您安排产品中的酒店入住，如遇酒店满房其他不可抗力等因素导致您无法入住，地球咦将为您安排在其他同级酒店入住，并将在您出行前通知您，保证您的出行体验。
+	</li>
+	<li>
+		如遇部分航班紧张无票，我们会为您调换其他航班，确保您正常出行。
+	</li>
+</ul>
+    </div>
+</div>
+
+
+<div class="item-box fee">
+    <div class="title clearfix">
+        <label class="t_ico10"></label>
+        <span>退改规则</span>
+    </div>
+    <div class="con">
+        <ul>
+	<li>
+		因本产品为特价产品，需提前预订舱位，故购买后不可退款及改签，请您谨慎购买。
+	</li>
+	<li>
+		请您确保签证、护照等有效证件均在有效期内，如因签证等问题导致客户无法按时出行，地球咦概不退款。
+	</li>
+</ul>
+    </div>
+</div>
+
+
+<div class="item-box fee" >
+    <div class="title clearfix">
+        <label class="t_ico8"></label>
+        <span>其他说明</span>
+    </div>
+    <div class="con"><p>
+	1、用餐提示
+</p>
+<p>
+	¤ 用餐方式：行程所列早餐为酒店外用餐；正餐餐标30元/人/顿，全部按人数提前为客人预定；如客人自动放弃用餐，费用不退还。
+</p>
+<p>
+	2、酒店提醒
+</p>
+<p>
+	¤ 团体境外分房安排同性二人一间房，如遇夫妻、母子、父子、同行亲属或朋友等我社有权调整分房。夫妻可以在不影响总数的前提下尽量安排同一间房，若出现单男单女房，导游领队有权安排调整，若客人坚持须由客人当时支付所增单间差费用。
+</p>
+<p>
+	¤ 韩国酒店房间均无牙刷等用品，请自备牙刷等个人用品。
+</p>
+<p>
+	¤&nbsp;游客勿将衣物挂在住宿房间的灯罩上、勿在床上吸烟、烟蒂不要随地乱丢、以防造成火灾的刑责，及酒店房间内物品损坏的所有赔偿责任。
+</p>
+<p>
+	¤&nbsp;游泳池未开放或没有救生人员在场，请勿擅自入游泳池内，如发生意外，后果自负。
+</p>
+<p>
+	¤&nbsp;请先观察紧急出口所在位置，若所住酒店报警铃响时勿慌张，请迅速由紧急出口离开。
+</p>
+<p>
+	¤&nbsp;房内休息时，务必扣上房门安全琐，不要随意让陌生人进入。
+</p>
+<p>
+	¤&nbsp;住宿房间的所有酒店物品，不能随意取走，小心犯下偷窃刑责，及个人赔偿损失。
+</p>
+<p>
+	¤&nbsp;请随身携带所住酒店的名片，以防外出走失时便于联系。
+</p>
+<p>
+	¤&nbsp;沐浴时地面、浴缸容易打滑,一定要注意防滑，避免受伤。
+</p>
+<p>
+	¤ 韩国酒店内有“付费电视”频道，如客人需要可到前台开通，费用自理。提醒客人部分频道有不适宜未成年人观看及违反我国法律的节目，在此我社提醒未成年同行的监护人予以关注，因此违反《旅游法》而产生的后果客人自负。
+</p>
+<p>
+	¤ 韩国电压基本为110伏, 在酒店一般用220伏特电源，前台也可以借用电压转换插头，插孔为两圆柱形状。
+</p>
+<p>
+	3、交通信息提醒
+</p>
+<p>
+	¤ 非出发地本地居民的旅游者请提前到达出发城市，以免影响行程。
+</p>
+<p>
+	¤ 机票为团队票，一旦出票不得签转、更改、改期或退票；
+</p>
+<p>
+	¤ 行程标注参考航班时间仅供参考，以机票票面为准，机票如遇国家政策性调价，核收差价。
+</p>
+<p>
+	¤搭乘船或从事水上活动时，务必穿上救生衣；乘坐快艇时严禁坐在船头前面的位置，以免脊椎骨受伤；任何船只开动时，请勿随意走动，以免跌撞受伤；切勿将手或脚放置在船边或栏杆上，以免夹伤或磕碰受伤。
+</p>
+<p>
+	¤行车、乘船、乘坐缆车等交通工具过程中,有时速度较快,务必注意安全；根据自身身体状况,请自行带些常用药。
+</p>
+<p>
+	4、个人证照提醒
+</p>
+<p>
+	¤ 如参团者为外籍旅游者，应请旅游者自查证件有效期，如其参加出境旅游团，还应请旅游者确保其证件可再次进入中国境内。
+</p>
+<p>
+	¤ 凡持公务护照，请让客人自行到外事办公室或相关部门开具出国申请表或相关出国证明。
+</p>
+<p>
+	¤ 个人身份证件、旅行证件、机票证件请随身携带并妥善保管。
+</p>
+<p>
+	5、旅游目的地相关情况提醒
+</p>
+<p>
+	¤&nbsp;当地接待社将举“领队姓名”接站牌接机。
+</p>
+<p>
+	¤当您入境时，一定保留好离境卡；当您离境时，一定检查海关是否给您的护照盖了清晰的离境章，它是您已经回到中国的唯一凭证。如果没有盖章或者章不清晰无法辨认将会导致使馆要求您面试销签，由此造成不必要的损失，非常抱歉只能由本人承担！ 请您谅解的同时也请您自己务必仔细留意！
+</p>
+<p>
+	¤&nbsp;请自行购买航空意外保险，航空意外保险是不包含在费用中的，如不购买纯属个人放弃,我社报价中不含此项，并由此带来的一切后果有客人自负。
+</p>
+<p>
+	¤&nbsp;折扣机票一经出票不得签转、更改、退票，如因航空公司原因（包括运力安排、故障、气候等）造成飞机取消、延误、时间变更、我社将协助游客安排行程，调整后具体时间以机票票面为准！我社保留对航班号的更改权利！如遇国家政策性调价，核收差价！
+</p>
+<p>
+	¤&nbsp;团队旅游活动不得脱团。若游客执意脱团，我社可视该游客脱团后旅游活动（包括住宿）自动放弃，脱团一切后果由脱团者负责，与我社无关。参团的老人及儿童，在全程中务必同随行亲属或朋友在一起不得独立行动。
+</p>
+<p>
+	¤ 因语言、习惯、当地治安等因素，请随团客人在行程结束后，不要独自或者结伴外出，以免发生不必要的麻烦，由此而产生的相关责任由客人自己承担。
+</p>
+<p>
+	¤&nbsp;旅游中不光顾路边无牌照摊档，不吃不洁和生冷食品，切勿吃生食、生海鲜、已剥皮的水果及不要喝生水。
+</p>
+<p>
+	¤&nbsp;60岁以上的老人参团,需有直系亲属的陪同。患绝症者、残疾人及孕妇不得参团。
+</p>
+<p>
+	¤&nbsp;全世界的观光地区都有不法分子，建议游客不要单独外出，行程中或住宿酒店外请不要与陌生人随意搭讪，以免受骗导致财务损失或危及个人安全。
+</p>
+<p>
+	¤&nbsp;自身的贵重物品（现金、首饰、护照、照相机、笔记本电脑、手机……等）务必随身携带或寄存在入住酒店的保险箱内，绝不可以放在游览车上或住宿房间内，如有遗失，责任自负。
+</p>
+<p>
+	¤&nbsp;游客水上/高危活动的注意事项：
+</p>
+<p>
+	（1）再三声明：如孕妇、心脏病患者、高（低）血压病患者、骨质疏松者、老年人、幼童，或任何不适合剧烈、刺激性活动的病患者等，绝对不可以参加任何水上活动。如游客隐瞒疾病或坚持参加活动，而导致意外发生，则游客必须承担一切责任及后果。
+</p>
+<p>
+	（2）搭乘船或从事水上活动时，务必穿上救生衣；乘坐快艇时严禁坐在船头前面的位置，以免脊椎骨受伤；任何船只开动时，请勿随意走动，以免跌撞受伤；切勿将手或脚放置在船边或栏杆上，以免夹伤或磕碰受伤。
+</p>
+<p>
+	（3）海边戏水、游泳时不要单独活动，更勿超过海边、海上安全警戒线的范围，建议不要下水，如执意下水务必穿着救生衣下水。
+</p>
+<p>
+	¤&nbsp;与动物合照时，请听从驯兽师或相关人员的指示，切勿用食物或个人行为挑逗动物，如因个人因素发生意外，一切后果自负。
+</p>
+<p>
+	¤&nbsp;因季节性的关系，游客在东南亚难免会有水土不服而引起呕吐腹泻的情况，及时告知当团领队或导游，不要擅自乱服药物，尽量避免食用生冷食物、冰块、椰子、牛奶等。
+</p>
+<p>
+	¤&nbsp;请务必留意当团领队或导游所宣布的集合时间及地点和所交代的注意事项。
+</p>
+<p>
+	¤&nbsp;韩国当地规定，导游司机每日工作时间不得超过8小时（包括休息时间），请您务必严格遵守游览时间安排，避免耽误行程，如因客人自身原因导致工作延时我社有权收取相应延时补偿金。
+</p>
+<p>
+	¤&nbsp;东南亚各国均可使用带有银联标志的信用卡和储蓄卡。
+</p>
+<p>
+	¤&nbsp;时差：韩国比中国早1小时。
+</p>
+<p>
+	¤&nbsp;应带物品：出团时请自备牙具，拖鞋，因亚洲地区酒店不配备此类物品，主要是为环保及个人卫生。雨伞、胶卷、太阳镜、护肤品等日用品也请自备，在国外价格很贵。依照首都机场的相关规定，随手提行李携带的液态物品容积要小于100ml，若超过此规格则只能托运。
+</p>
+<p>
+	¤&nbsp;请准备长衣长裤，以备特殊景点有服装要求时使用。
+</p>
+<p>
+	¤&nbsp;请尊重不同国家的宗教信仰。
+</p>
+<p>
+	¤&nbsp;出入境边防检查时，请勿拍照、使用手机。
+</p>
+<p>
+	¤&nbsp;请所有成员尊重领队工作，听从领队的安排，如遇紧急突发事件，请客人务必保持冷静，协助领队妥善处理好问题，保证旅程能够顺利完成。
+</p>
+<p>
+	¤&nbsp;本次活动车辆统一标志，人员统一挂牌，言谈举止请注意维护中国国际形象。
+</p>
+<p>
+	¤&nbsp;所有驾驶车辆需要正规国家认可的国际驾照，如无国际驾照或私自驾驶，发生问题，责任自行承担！
+</p>
+<p>
+	¤&nbsp;提车时满箱油提出，交还时请满箱油换车。
+</p>
+<p>
+	6、自由活动中提醒
+</p>
+<p>
+	¤ 请您在自由活动期间妥善保管个人财物，防止丢失、被盗；如遇被盗、被抢或者其他暴力犯罪应立即报案。
+</p>
+<p>
+	¤ 在自己能够控制风险的范围内活动，切忌单独外出，注意人身安全。
+</p>
+<p>
+	¤ 自由活动期间须谨慎，尤其是风险的活动项目，特别是患有心脏病、高血压、恐高症等不宜参加剧烈或激烈活动的旅游者，请详细了解活动项目的具体情况，结合自身的健康情况谨慎选择，涉水、登山、滑雪等活动请不要独自进行，以免发生不测。特别是参加攀岩、滑翔、探险、漂流、潜水、游泳、滑雪、滑冰、跳伞、热气球、蹦极、冲浪、探险、赛马、赛车等高风险活动，由此造成的人身伤亡或财产损失，不属于旅行社责任险赔偿的范围。参加此类高风险项目前，请充分了解具体的活动常识，服从指导人员的指挥，时刻谨记安全第一的原则。如执意要参加，应当提前征得医生同意，备好药品，并征得家属子女同意。要听从工作人员的安排，落实各项安全措施，切忌麻痹大意。携带儿童或陪伴老人的游客，参加此类活动时应照顾好自己的孩子和老人，不要让他们独自活动。应根据自身身体状况，注意适当休息，避免过度激烈运动以及自身身体无法适应的活动，同时做好防护工作。
+</p>
+<p>
+	海关出入境时，邮寄或者携带超出免税金额的物品需要补交税的，由客人自负。
+</p></div>
+</div>
+
+                        </div>
+                        <!--订单须知结束-->
+                    </div>
+                </div>
+
+            </div>
+            <!--左侧产品详情内容 结束-->
+
+            <!--右侧产品详情内容 开始-->
+
+            <form id="inputForm" method="post">
+                <div class="span3 right-column right-aside" style="position:relative">
+
+                    <div id="pro_con" style="position:fixed;">
+
+                        <!--立即预订开始-->
+                        <div class="tour-project-list">
+                            <ul class="names">
+                                <li class="name"><span class="letter">会员价：</span>
+                                    <small class="hyj">¥</small>
+                                    &nbsp;
+                                    <small class="hyj5">2580</small>
+                                    <small class="hyj6">起</small>
+                                    <br>
+                                    <span class="qjsm"><a href="###" id="price-total">[ 起价说明 ]</a></span></li>
+                                <li class="name"> <span class="letter">市场价：</span><span class="scj">¥ 3580</span></li>
+                                <li class="name"> <span class="letter">产品编号：</span><span class="cpbh">zh20150508000004</span></li>
+                                <li class="name"> <span class="letter">行程天数：</span>5天</li>
+                                <li class="name"> <span class="letter">出发地：</span>天津</li>
+                                <li class="name"> <span class="letter">目的地：</span><a href="###" id="mdd">济州 首尔 </a></li>
+                                
+                                <li class="name" id="cfrq"> <span class="letter">出行日期：</span> <span id="datediv"></span><input type="hidden" name="tripdate" id="tripdate"></li>
+                                <li class="name"> <span class="letter">成人：</span><div class="crrs"><input type="text" name="xnum" id="chengrennum" class="spinnerExample2" maxlength="6"></div><span id="personPrice" style="display:none"></span></li>
+                                <li class="name"><span class="letter">单房差：</span>
+                                    <small class="hyj">¥</small>
+                                    &nbsp;
+                                    <small class="hyj4" id="roompricespread"></small>
+                                </li>
+								<li class="name"> <span class="letter">可附加服务：</span><small class="hyj">¥</small>&nbsp;<small class="hyj4" id="additionalPrice"></small></li>
+								<li class="name"> <span class="letter">合计：</span><small class="hyj">¥</small>&nbsp;<small class="hyj2" id="totalPrice">0</small></li>
+                                <li class="name">
+                                    <span id="jdFinance_name" class="letter"></span>
+                                    <small class="hyj">¥</small>
+                                    &nbsp;
+                                    <small class="hyj" style="font-size:14px; font-weight:bold" id="installmentPrice"></small>
+                                    <small class="hyj6"> /期起×<span id="jdFinance_stage"></span>期</small>
+                                    <br>
+                                    <span class="qjsm"><a href="###" id="baitiao">[ 白条说明 ]</a></span>
+                                </li>
+
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="timer" data-num="-8198375"><cite></cite></div>
+                            <div class="buy" >
+                                <input type="button" class="btn btn-primary" value="立即预订" id="btn_ljyd" style="margin-bottom:25px;width: 96%;">
+                                <!--<input type="button" class="btn btn-apply" value="已结束" id="btn_ljyd">
+                                <input type="button" class="btn btn-yu-yellow" value="抢光了" id="btn_ljyd">-->
+                            </div>
+                        </div>
+                            <!--立即预订结束-->
+
+                        <!--推荐产品开始-->
+                        <div class="flexslider" style="display:none;">
+                            <ul class="slides">
+
+
+                            </ul>
+                        </div>
+                        <!--推荐产品结束-->
+
+                    </div>
+
+				</div>
+
+            </form>
+            <!--右侧产品详情内容 结束-->
+        </div>
+   </div>
+</div>
+<!--中部结束-->
+
+<!--登录开始-->
+<div id="overlay" class="hidden"></div>
+<div id="login-popup" class="login-popup hidden">
+    <div class="header">
+        <span class="title">登录</span>
+    </div>
+    <div class="content fn-clear">
+        <div class="login-popup-other fl">
+            <span><a href="javascript:redirectReg('register/flag');">注册</a>使用地球咦帐号登录</span>
+            <div class="login-popup-form">
+                <!--<div class="alert alert-warning" role="alert" style="margin:10px 0;font-size:14px">邮箱或密码错误</div>-->
+                <form method="post" id="login-popup-form" action="/dologin">
+                    <input type="hidden" id="redirect" name="redirectUrl" value="">
+                    <input type="hidden" name="captchaId" value="73c0a38f-0019-44e0-a28a-fd21aec44203">
+                    <p class="text"><input type="text" id="username" name="account" class="login-popup-name1" placeholder="用户名/邮箱"></p>
+                    <p class="text"><input type="password" id="password" name="password" class="login-popup-pwd1" placeholder="密码"></p>
+                    <p class="text"><input type="text" id="captcha" name="captcha" placeholder="验证码" autocomplete="off" style="width:50%;margin-right:15px">
+                        <img src="/captcha/73c0a38f-0019-44e0-a28a-fd21aec44203" onclick="this.src='/captcha/73c0a38f-0019-44e0-a28a-fd21aec44203?now=' + new Date().getTime()" id="captchaImage" class="captchaImage" title="点击更换验证码" style="height:32px"></p>
+                    <p class="fn-clear">
+                        <!--<label style="width:100px; display:block; float:left"><input name="isRememberUsername" type="checkbox"> 记住我</label> -->
+                        <a class="fr" href="/getpassword/inputemail">忘记密码？</a></p>
+                    <input type="submit" id="loginbtn" value="登     录" class="btn btn-primary" style="width:240px">
+                    <p class="fn-clear" ><a href="javascript:redirectReg('login/mobile');" class="fr">手机用户入口</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="login-popup-sns1 fr">
+            <span>使用社交网络登录</span>
+            <ul class="login-popup-sns-list1">
+                <li class="login-popup-sns-weibo1" data-sns-type="sina" data-url=""><a href="javascript:redirectReg('login/weibologin');">微博登录</a></li>
+                <li class="login-popup-sns-qq1" data-sns-type="qq" data-url=""><a href="javascript:redirectReg('login/qqlogin');">QQ登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <a href="###" class="close1"></a>
+</div>
+<!--登录结束-->
+
+
+<!--起价说明开始-->
+<div class="hover-tip" id="qi-tip">
+    <p>本起价是可选日期中，按双人行共住一间房核算的最低单人价格。产品价格会根据您所选的出发日期、出行人数不同而有所变动。</p>
+</div>
+<!--起价说明结束-->
+
+<!--目的地说明开始-->
+<div class="hover-tip" id="mdd-tip">
+    <p>目的地<br>济州 首尔 </p>
+</div>
+<!--目的地说明结束-->
+
+<!--白条说明开始-->
+<div class="hover-tip" id="bt-tip">
+    <p>【灵活分期】价格和期数，以实际白条支付时选择的分期数为准。</p>
+</div>
+<!--白条说明结束-->
+
+
+<!--底部开始-->
+<!--底部开始-->
+<!--底部结束-->
+
+<!--底部开始-->
+
+<div class="foot_t_border">
+    <div class="footer clear">
+        <dl class="w1">
+            <dt>我们是谁</dt>
+            <dd>
+                <ul>
+                    <li><a href="/corp/aboutus.htm" target="_blank">关于我们</a></li>
+                    <li><a href="/corp/contactus.htm" target="_blank">联系我们</a></li>
+                    <li><a href="/corp/agreement.htm" target="_blank">用户协议</a></li>
+                    <li><a href="/corp/privacy.htm" target="_blank">法律公告</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="w2">
+            <dt>帮助中心</dt>
+            <dd>
+                <ul>
+                    <li><a href="/corp/help_baitiao.htm" target="_blank" rel="nofollow" >如何使用京东旅游白条</a></li>
+                    <li><a href="/corp/help_feedback.htm" target="_blank" rel="nofollow" >用户反馈</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="w3">
+            <dt>关注我们</dt>
+            <dd>
+                <ul>
+                    <li><a href="http://weibo.com/dqytrip" rel="nofollow" target="_blank">新浪微博</a></li>
+                    <li><a href="http://t.qq.com/di-qiu-yi" rel="nofollow" target="_blank">腾讯微博</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div class="dibu">
+
+            <p>
+                Copyright © 2014 diqiu1.com 天津地球咦国际旅行社有限公司 版权所有&nbsp;&nbsp;津ICP备14003745号</br>
+                本站提供的旅游产品均由天津地球咦国际旅行社有限公司或资质齐全的合作伙伴提供</br>
+                旅行社业务经营许可证：L-TJ00469&nbsp;增值电信业务经营许可证号：津B2-20140024
+            </p>
+    </div>
+
+    <div style="display:none">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252977770'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1252977770%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5fa22e99e2da6fdce4ed94e834752c21' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+    </div>
+
+</div>
+
+
+<!--底部结束--><!--底部结束-->
+
+<!--在线客服 开始-->
+<div class="izl-rmenu" id="izl_rmenu"></div>
+<!--在线客服 结束-->
+
+<input type="hidden" id="isHomeBander" value=""/>
+<script src="/resources/pc/js/bootstrap.min.js" ></script>
+<script src="/resources/pc/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/resources/pc/js/d_3rd_base.js" type="text/javascript"></script>
+<script src="/resources/pc/js/d_base.js" type="text/javascript"></script>
+<script src="/resources/pc/js/d_application.js" type="text/javascript"></script>
+<script src="/resources/pc/js/teamline2.js"></script>
+<script>loadgroup('1094','/teamline/getProductDetail');</script>
+<script type="text/javascript" src="/resources/pc/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/resources/pc/js/common.js"></script>
+<script type="text/javascript" src="/resources/pc/js/input.js"></script>
+<script type="text/javascript" src="/resources/pc/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/resources/pc/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/resources/pc/js/slider.js"></script>
+
+<script type="text/javascript" src="/resources/pc/js2/onlineqq.js"></script>
+<script type="text/javascript" src="/resources/pc/js2/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/resources/pc/js2/base.js"></script>
+
+<script src="/resources/pc/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/resources/pc/js/jquery.spinner.pro.ten.js"></script>
+<script src="/resources/pc/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/resources/pc/js/bootstrap-datepicker.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(e) {
+    
+    $("#additionalTable").hide(); //隐藏可附加服务 table
+    $("#tabs_kfjfw").hide(); //可附加服务选项卡
+    var endstr = $("#mdd").text();
+    if(endstr.length>9) {
+    	endstr = endstr.substring(0,9)+"...";
+    	$("#mdd").text(endstr)
+    } 
+    
+    if(isClick==0) {
+    	$(".spinnerExample2").parent().find('.increase').attr('disabled','disabled');
+    }
+
+	//可附加服务使用日期
+		$('.syrq').datepicker();
+		$('.syrq').val(formatterDate(new Date()));
+
+        $("#curzhuti").removeClass().addClass("cur");
+
+        //右侧产品详情滚动监听
+        t = $('#pro_con').offset().top;
+        mh = $('#pro_left').height();
+        fh = $('#pro_con').height();
+        $(window).scroll(function(e){
+            s = $(document).scrollTop();
+            if(s > t - 10){
+                $('#pro_con').css('position','fixed');
+                $('#gotop').show();
+                if(s + fh > mh){
+                    $('#pro_con').css('top',mh-s-fh+'px');
+                }
+            }else{
+                $('#pro_con').css('top','0');
+                $('#pro_con').css('position','');
+                $('#gotop').hide();
+            }
+
+        })
+        //右侧微信和返回顶部浮动框
+        $('#gotop').click(function(){
+            $("html,body").stop().animate({scrollTop:0},500);
+        });
+        $('#code').hover(function(){
+            $(this).attr('id','code_hover');
+            $('#code_img').show();
+        },function(){
+            $(this).attr('id','code');
+            $('#code_img').hide();
+        })
+
+        //起价说明提示框
+        $("#price-total").tooltip({
+            tip: "#qi-tip",
+            tipClass: "hover-tip",
+            position: "top right",
+            offset: [150, -240]
+        });
+        
+   //全部目的地提示框
+    $("#mdd").tooltip({
+        tip: "#mdd-tip",
+        tipClass: "hover-tip",
+        position: "top right",
+        offset: [100, -240]
+    });
+        //白条说明提示框
+        $("#baitiao").tooltip({
+            tip: "#bt-tip",
+            tipClass: "hover-tip",
+            position: "top right",
+            offset: [0, -240]
+        });
+
+
+        //推荐产品轮播
+        $(function(){
+
+
+            //初始化，自动计算分期付款，分期价格＝订单金额 * 1.06 / 12，保留两位小数。
+            var $ijd = $('.tour-showcase');
+            var $iid = $ijd.find(".installmentPrice");//分期价
+            var $lid = $ijd.find(".installmentLogo");//分期logo
+            var $nid = $ijd.find(".installmentNum");//期数
+            if ($ijd.find('.installmentMark').val() == '12') {
+                var pidval = $('.hyj5').text() * 1.06 / 12;
+                $($lid).html('<img src="/resources/pc/images/lybt.jpg" class="img1">');//分期logo
+                $($nid).text(12);//期数
+                $($iid).text(pidval.toFixed(2));//分期价
+                $("#installmentPrice").text(pidval.toFixed(2));
+                $("#jdFinance_name").text("旅游白条：");
+                $("#jdFinance_stage").text("12");
+            }
+            if ($ijd.find('.installmentMark').val() == '10') {
+                var pidval = $('.hyj5').text() / 10;
+                $($lid).html('<img src="/resources/pc/images/oneoverten.jpg" class="img1">');//分期logo
+                $($nid).text(10);//期数
+                $($iid).text(pidval.toFixed(2));//分期价
+                $("#installmentPrice").text(pidval.toFixed(2));
+                $("#jdFinance_name").text("分期价：");
+                $("#jdFinance_stage").text("10");
+            }
+
+
+            $.ajax({
+                url: "/commendationpro/getrecommendationproductlist.do?id="+1094,
+                type: "POST",
+                dataType: "json",
+                cache: false,
+                success: function(data) {
+                    //var a=JSON.stringify(data);
+                    //alert(a);
+                    if(data.length>0){
+                        for(var i=0;i<data.length;i++){
+                            var sn=data[i][0].substring(2),img=data[i][1],brief=data[i][2];
+
+                            var html='<li><div class="img"><a href="/travel/'+sn+'" target="_blank" ><img class="lazy" src="http://diqiu1-img.oss-cn-beijing.aliyuncs.com/'+img+'"/><span>'+brief+'</span></a></div> </li>';
+                            $("ul.slides").append(html);
+
+
+                        }
+                        $('.flexslider').show().flexslider({
+                            animation: "slide",
+                            start: function(slider){
+                                $('body').removeClass('loading');
+                            }
+                        });
+
+                    }
+                }
+            });
+
+        });
+
+    });
+
+    var endtimes = -8198375;
+    if(endtimes<0) {
+        $("#btn_ljyd").removeClass().addClass("btn btn-apply");
+        $("#btn_ljyd").val("抢光了");
+        $("#btn_ljyd").attr('disabled',"true");
+    }
+
+    //验证出行日期，弹出登录框让会员登录
+    $("#btn_ljyd").click(function() {
+        if ($("#tripdate").val()==""){
+            $("html,body").stop().animate({scrollTop:$("#myModal").offset().top},1000);//滚动到左侧出行日期的位置
+            shake($("#cfrq"),"rq",3);//右侧出行日期闪动
+            return false;
+        }else{//弹出登录框
+            $.ajax({
+                type:'POST',
+                url:'/product/login',
+                success:function(data){
+                    if(data==false) {
+                       // var redirectUrl = "/order/orderinit?pid=1094&pdid="+ $('#pdid').val()+"";
+                       	 $("#pnum").val($("#chengrennum").val());
+                         var url = "/order/orderinit?"+$('#orderInit').serialize();
+       					 var redirectUrl = encodeURIComponent(url);
+                        $("#redirect").val(redirectUrl)
+                        $("#overlay").show();
+                        $("#login-popup").fadeIn();
+
+                        var windowWidth = document.documentElement.clientWidth;
+                        var windowHeight = document.documentElement.clientHeight;
+                        var popupHeight = $("#login-popup").height();
+                        var popupWidth = $("#login-popup").width();
+                        $("#login-popup").css({
+                            "position": "fixed",
+                            "top": windowHeight / 2 - popupHeight / 2,
+                            "left": windowWidth / 2 - popupWidth / 2,
+                            "z-index": 2100
+                        });
+
+                        $("#overlay").click(function() {
+                            $("#login-popup").fadeOut();
+                            $("#overlay").hide();
+                        });
+
+                        $("#login-popup").find(".close1").click(function() {
+                            $("#login-popup").fadeOut();
+                            $("#overlay").hide();
+                        });
+                    } else {
+                        $.ajax({
+                            type:'POST',
+                            url:'/product/getProduct',
+                            data:{"sn":"zh20150508000004"},
+                            success:function(data) {
+                                var status = data.check;
+                                if(status!="0") {
+                                    $("#btn_ljyd").removeClass().addClass("btn btn-apply");
+                                    $("#btn_ljyd").val("已结束");
+                                    $("#btn_ljyd").attr('disabled',"true");
+                                } else {
+
+
+
+
+
+
+                                    var pdid = $('#pdid').val();
+                                    $("#pdid").val(pdid);
+                                    $("#pnum").val($("#chengrennum").val());
+                                    
+                                    $("#orderInit").submit();
+                                    //window.location.href="/order/orderinit?pid=1094&pdid="+pdid+"";
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+
+        }
+    });
+
+    //弹出框注册跳转
+    function redirectReg(redirect) {
+ //       var redirectUrl = "/order/orderinit?pid=1094&pdid="+ $('#pdid').val()+"";
+ 		 $("#pnum").val($("#chengrennum").val());
+        var url = "/order/orderinit?"+$('#orderInit').serialize();
+        var redirectUri = encodeURIComponent(encodeURIComponent(url));
+        window.location.href="/iproduct/"+redirect+"?url="+redirectUri+"";
+    }
+
+    //计时器js
+    updateEndTime();
+
+    //倒计时函数
+    function updateEndTime()
+    {
+        $(".timer").each(function(i){
+            var lag =parseInt(this.getAttribute("data-num"));
+            $(this).attr("data-num",--lag);
+            if(lag > 0)
+            {
+                var minite = Math.floor((lag / 60) % 60);
+                var hour = Math.floor((lag / 3600) % 24);
+                var day = Math.floor((lag / 3600) / 24);
+                var second=returnFloat1(lag-day*3600*24-hour*3600-minite*60);
+                $(this).children("cite").html(day+"天"+hour+"小时"+minite+"分"+second+"秒");
+            }
+            else
+                $(this).children("cite").html("抢光啦");
+        });
+        setTimeout("updateEndTime()",100);
+    }
+    function returnFloat1(value){
+        value = Math.round(parseFloat(value) * 10) / 10;
+        if (value.toString().indexOf(".") < 0)
+            value = value.toString() + ".0";
+        return value;
+    }
+
+    //日期为空时闪动函数
+    function shake(ele,cls,times){
+        var i = 0,t= false ,o =ele.attr("class")+" ",c ="",times=times||2;
+        if(t) return;
+        t= setInterval(function(){
+            i++;
+            c = i%2 ? o+cls : o;
+            ele.attr("class",c);
+            if(i==3*times){
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        },200);
+    }
+
+    //登录验证
+    $("#loginbtn").click(function() {
+
+        var $loginpopupform = $("#login-popup-form");
+        $loginpopupform.validate({
+            errorElement:"font",
+            rules: {
+                account: {//邮箱
+                    required: true,
+                },
+                password: {//密码
+                    required: true,
+                },
+                captcha: {//验证码
+                    required: true,
+                },
+            },
+            errorPlacement: function(error, element) {
+                error.appendTo(element.parent());
+            }
+        });
+    });
+
+//可附加服务选择数量
+$('.spinnerExample2').spinner({});
+
+//可附加服务产品名称展开关闭效果
+$(function(){
+	$(".kfjlink").toggle(function(){
+		$(this).next("div.kfjcon").show();
+	},function(){
+		$(this).next("div.kfjcon").hide();
+	});
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="珂兰，国内著名的电子商务珠宝品牌，提供最新更全的钻石、裸钻、钻戒、结婚钻戒、情侣对戒、吊坠、钻饰、钻石首饰，更有黄金、彩钻等稀有首饰品，以及定制专属钻戒。支持货到付款、全国联保等品质保障服务。" />
+    <meta name="keywords" content="钻石,钻戒,黄金,裸钻,对戒,彩钻,铂金,钻石价格,裸钻定制,吊坠,钻饰,珂兰" />
+    <title>珂兰|国内著名的电子商务珠宝品牌,钻石,钻戒,黄金,彩钻,铂金,所有的用心只为专属你的爱</title>
+    <link href="/Public/css/home/header/header.combo.css?2" rel="stylesheet" type="text/css"/>
+    <link href="/Public/js/home/swiper/css/swiper.css?1" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/Public/js/home/jquery-1.10.2.min.js?1"></script>
+    <script type="text/javascript" src="/Public/js/home/sea.js?1"></script>
+    <script  type="text/javascript" src="/Public/js/home/swiper/swiper.js?1"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js?1"></script>
+    <![endif]-->
+    <!-- 百度竞价防恶意点击代码 start -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?c420722cee3818ef76862dcc91d7824f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!-- 百度竞价防恶意点击代码 end -->
+</head>
+<style>
+    .max_img{height:270px;  display:block; text-indent:-999em;background: url('/Public/images/home/index-top/max.jpg') center;}
+    .max_img.min_img{height:80px; display:block; text-indent:-999em;background: url('/Public/images/home/index-top/min.jpg') no-repeat center;}
+</style>
+<body>
+<div id="siteCity">
+    <div class="city-box">
+        <div class="cityfortop clearfix">
+            <span class='nowstay'>您所在的城市：<span class='nowstay_cityname'>全国</span></span><a class='city-close2' href='javascript:;' title='去全国体验店'></a>
+        </div>
+        <h4 class="pleasecity">请选择城市</h4>
+        <div class="city-wrap">
+            <div>
+                <div class="hostcity clearfix">
+                    <span class="citycomtit">热门城市：</span>
+                    <ul class="province_ul">
+                        <li><a href="javascript:;" province-id="0" city-id='0' class="province_name city_name">全国</a></li>
+                        <li><a href="javascript:;" province-id="25" city-id='321' class="province_name city_name">上海</a></li>
+                        <li><a href="javascript:;" province-id="2" city-id='52' class="province_name city_name">北京</a></li>
+                        <li><a href="javascript:;" province-id="6" city-id='76' class="province_name city_name">广州</a></li>
+                        <li><a href="javascript:;" province-id="6" city-id='77' class="province_name city_name">深圳</a></li>
+                        <li><a href="javascript:;" province-id="13" city-id='180' class="province_name city_name">武汉</a></li>
+                        <li><a href="javascript:;" province-id="26" city-id='322' class="province_name city_name">成都</a></li>
+                    </ul>
+                </div>
+                <div class="shench clearfix">
+                    <span class="citycomtit">按省份选择：</span>
+                    <select id="select_province" name="province"  class="cybox"></select>
+                    <select id="select_city" name="city"  class="cybox"></select>
+                    <!--<button class="search_shop_btn shop_btn">确定</button>-->
+                </div>
+                <div class="citysch">
+                    <div class="clearfix">
+                        <span class="citycomtit">快捷搜索：</span><input type="text" name="search_city_shop" class="xuanzk" value="请输入具体城市(例如：深圳)!"/>
+                        <span class="sear_tips"></span>
+                    </div>
+                    <ul class="hot_city_list">
+                        <li class="hot_city" city-id="321">上海&nbsp;shanghai</li>
+                        <li class="hot_city" city-id="52">北京&nbsp;beijing</li>
+                        <li class="hot_city" city-id="76">广州&nbsp;guangzhou</li>
+                        <li class="hot_city" city-id="77">深圳&nbsp;shenzhen</li>
+                        <li class="hot_city" city-id="180">武汉&nbsp;wuhan</li>
+                        <li class="hot_city" city-id="322">成都&nbsp;chengdu</li>
+                        <li class="hot_city" city-id="3401">合肥&nbsp;hefei</li>
+                    </ul>
+                </div>
+                <div class="cityin clearfix">
+                    <span class="citycomtit">进入：</span>
+                    <ul class="city_right_shop city_choole zgoto_shop citynw clearfix">
+                    </ul>
+                </div>                
+            </div>
+            <div class='citydetail' data-province-id='' data-city-id='',data-shop-id=''> </div>
+        </div>
+        <div class="zcity_bottom">
+            <a href='javascript:' class='gothere'>立即体验</a>
+        </div>
+    </div>
+</div>
+<!-- 设置城市 E -->
+<script type="text/javascript"> 
+seajs.use(['/Public/js/home/getShops'],function(getshops){
+        getshops.init();
+    })
+</script>
+<script type="text/javascript">
+    seajs.use("/Public/js/common/AreaPicker", function(at) {
+        /*at.init({
+            province:province,
+             city:city,
+             county:district,
+            provinceUrl: "/api/region/listProvinces", //获取省份的api接口(获取有体验店的省份)
+            cityUrl: "/api/region/listCities", //获取城市（县级单位）的API接口
+            countyUrl: "/api/region/listCounties" //获取乡级单位的api接口
+        });*/
+        //var province = parseInt($("#site_city").attr('province-id'));
+        //var city = parseInt($("#site_city").attr('city-id'));
+        var province = parseInt($("#site_city").attr('now-province'));
+        var city = parseInt($("#site_city").attr('now-city'));
+        at.init({
+            renderLevel:2,
+            provinceSelector: "#select_province",
+            citySelector:"#select_city",
+            province:2,
+            city:52,
+            /*county:district,*/
+            provinceUrl: "/api/region/listShopProvince", //获取省份的api接口(获取有体验店的省份)
+            cityUrl: "/api/region/listShopCity" //获取城市（县级单位）的API接口
+            /*countyUrl: "/api/region/listCounties" //获取乡级单位的api接口*/
+        });
+    });
+</script>
+<script type="text/javascript" src="/Public/js/common/cps_stat.js"></script>
+<!-- header S -->
+<div style=" overflow:hidden;text-indent:-999em;background: url('/Public/images/home/index-top/max.jpg')no-repeat center;" >
+    <a  href="/Public/subject/201509/8/" class="max_img">第一张图</a>
+</div>
+
+
+
+<header id="header" class="homeheader" >
+    <!-- 额外导航连接 -->
+    <div class="site-nav clearfix">
+        <div class="site-nav-fl pull-left">
+            <div class="site-city" data-need-select-shop="" data-is-first-in="1" data-match="1">
+                <span class="whereyu">
+                  <i class="whch"></i><i class="wheng"><!--QUANGUO--></i>
+                </span>
+                <span class="rtwhere">
+                <i class="nearcl chan_city" now-city="52" province-id="0" city-id="0" shop-id="0">切换城市<!-- 成都中环广场体验店 --></i>
+                <em id="site_city" class="nearly nearcl" now-province="26" now-city="322" shop-id="41" province-id="26" city-id="322">您附近的珂兰体验店</em>
+                </span>  
+            </div>
+            <img src="/Public/images/home/fire.gif" class="fire" />
+        </div>
+        <ul class="list-inline pull-right quick-menu quanzm">
+                            <li>
+                    <a class="link-login" href="/user/user/login" target="_blank">登录</a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a class="link-regist" href="/user/user/reg" target="_blank">注册</a>
+                </li>
+                <li class="spacer"></li>            <li>
+                <a class="link-cart" href="/user/shopcart/index" target="_blank">购物车(0)</a>
+            </li>
+            <li class="spacer"></li>
+            <li>
+                <a class="link-tel header_phone" href="javascript:;">客服热线：400-898-0188</a>
+            </li>
+            <li class="spacer"></li>
+            <li>
+                <a class="link-login" href="/home/article/help" target="_blank">帮助中心</a>
+            </li>
+        </ul>
+    </div>
+    <!-- logo -->
+    <div class="logo">
+        <img class="center-block" src="/Public/css/home/img/logo-1.png" style="margin-top: 20px" width="235" height="56" alt="珂兰钻石">
+    </div>
+    <!-- 导航box -->
+    <nav class="nav">
+        <div class="navbox clearfix menue">
+            <!-- 导航 -->
+            <ul class="list-inline pull-left nav-items">
+                <li data-class="home">
+                    <a class="current" href="/index.php">首页</a>
+                </li>
+                <li data-class="nav-shop ">
+                    <img class="shop_img" src="/Public/css/home/img/8-2.gif" alt=""/>
+                    <a href="/home/mall/index">在线商城</a>
+                </li>
+                <li data-class="nav-custom">
+                    <a  href="/home/diamond/index">裸钻定制</a>
+                </li>
+                <li data-class="nav-wedding">
+                    <a  href="/home/wedding" >婚嫁</a>
+                </li>
+                <li data-class="nav-gift">
+                    <a  href="/home/gift">礼物</a>
+                </li>
+                <li data-class="nav-star">
+                    <a    href="/home/shop/star">明星系列</a>
+                </li>
+                <li>
+                    <a    href="/home/shop/home">体验店</a>
+                </li>
+                <li data-class="nav-brand">
+                    <a    href="/home/brand/brandwh" >品牌馆</a>
+                </li>
+                <li data-class="nav-kela" >
+                    <a   class="l_text "  target="_blank" href="http://www.kela.cn/Public/subject/201508/franch/">加入珂兰</a>
+                </li>
+            </ul>
+            <!-- 搜索 -->
+            <!--<form class="nav-search pull-right" action="/home/mall/lists" method="post">-->
+            <!--<input class="form-control" type="text" name="kwd" value="">-->
+            <!--<input class="btn" type="submit" title="点击搜索" value="">-->
+            <!--</form>-->
+            <div style="position: absolute; right:0; top:-70px;">
+                <form class="nav-search pull-right" action="/home/mall/lists" method="post">
+                    <input class="form-control" type="text" name="kwd" value="">
+                    <input class="btn" type="submit" title="点击搜索" value="">
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+</header>
+<!-- 二级导航 -->
+<div class="subnav-box"  style="display:block !important;">
+    <!-- 商城 -->
+    <div class="nav-shop clearfix">
+        <div class="navbox shop-dnnav">
+            <div class="zdnnav-zj1 pull-left clearfix">
+                <h4 class="zdntit"><a href="/home/mall/lists/kwd/钻戒">钻戒</a></h4>
+                <ul class="clearfix">
+                    <li data-ring="mering" ><a href="/home/mall/lists/nav_cid/46">女戒</a></li>
+                    <li data-ring="fering"><a href="/home/mall/lists/nav_cid/45">男戒</a></li>
+                    <li data-ring="lovering"><a href="/home/mall/lists/nav_cid/47">对戒</a></li>
+                </ul>
+                <a href="/home/mall/lists/nav_cid/46" class="zdndba mnu0"><img src="/Public/img/common/menu/mering.png" class="shop-dnimg1 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/45" class="zdndba mnu1"><img src="/Public/img/common/menu/fering.png" class="shop-dnimg1 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/47" class="zdndba mnu2"><img src="/Public/img/common/menu/lovering.png" class="shop-dnimg1 navdn-img" /></a>
+            </div>
+            <div class="zdnnav-zj zdnnav-zj2 pull-left">
+                <h4 class="zdntit"><a href="/home/mall/lists/kwd/钻饰">钻饰</a></h4>
+                <ul class="clearfix">
+                    <li data-ring="xl" ><a href="/home/mall/lists/nav_cid/36">项链</a></li>
+                    <li data-ring="dz"><a href="/home/mall/lists/nav_cid/35">吊坠</a></li>
+                    <li data-ring="sl"><a href="/home/mall/lists/nav_cid/39">手链</a></li>
+                    <li data-ring="ed"><a href="/home/mall/lists/nav_cid/69">耳钉</a></li>
+                    <li data-ring="ez"><a href="/home/mall/lists/nav_cid/70">耳坠</a></li>
+                </ul>
+                <a href="/home/mall/lists/nav_cid/36" class="dias mnu0"><img src="/Public/img/common/menu/xl.jpg" class="shop-dnimg2 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/35" class="dias mnu1"><img src="/Public/img/common/menu/dz.jpg" class="shop-dnimg2 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/39" class="dias mnu2"><img src="/Public/img/common/menu/sl.jpg" class="shop-dnimg2 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/69" class="dias mnu3"><img src="/Public/img/common/menu/ed.jpg" class="shop-dnimg2 navdn-img" /></a>
+                <a href="/home/mall/lists/nav_cid/70" class="dias mnu4"><img src="/Public/img/common/menu/ez.jpg" class="shop-dnimg2 navdn-img" /></a>
+            </div>
+            <div class="zxhd  pull-left">
+                <h4 class="zdntit zxtitle">最新活动</h4>
+                 <div id="new-product" >
+
+                     <div class="swiper-wrapper">
+                         <div class="swiper-slide red-slide">
+                             <!--<a href="http://www.kela.cn/Public/subject/201509/party/" target="_blank" >
+                                 <img src="/Public/img/common/menu/party.jpg" alt=""/>
+                             </a>-->
+                             <a href="http://www.kela.cn/Public/subject/201509/national/" target="_blank" >
+                                 <img src="/Public/img/common/menu/guoqingpa.png" alt=""/>
+                             </a>
+                         </div>
+                         <div class="swiper-slide red-slide">
+                             <a href="http://www.kela.cn/Public/subject/201509/8/" target="_blank" >
+                                 <img src="/Public/img/common/menu/zhc.jpg" alt=""/>
+                             </a>
+                         </div>
+                     </div>
+                         <div class="pagination"></div>
+                     </div>
+
+            </div>
+        </div>
+
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 裸钻定制 -->
+    <div class="nav-custom clearfix" style="padding-bottom: 30px;">
+        <div class="navbox clearfix">
+            <div class="nav-luozuan zdnnav-zj clearfix pull-left">
+                <ul class="nav-dnlzl pull-left">
+                    <li data-ring="lz-tsyd"><a href="/home/diamond/index/type/1">天生一对</a></li>
+                    <li data-ring="lz-gia" ><a href="/home/diamond/index/type/2">GIA</a></li>
+                    <li data-ring="lz-star" ><a href="/home/diamond/index/type/3">星耀钻石</a></li>
+                    <li data-ring="lz-cz" ><a href="/home/diamond/index/type/4">彩钻</a></li>
+                    <h4 class="moreact">更多活动敬请期待</h4>
+                </ul>
+                <a href="/home/diamond/index/type/1" class="luoz mnu0"><img src="/Public/img/common/menu/lz-tsyd.jpg" class="nav-lzr navdn-img pull-right" /></a>
+                <a href="/home/diamond/index/type/2" class="luoz mnu1"><img src="/Public/img/common/menu/lz-gia.jpg" class="nav-lzr navdn-img pull-right" /></a>
+                <a href="/home/diamond/index/type/3" class="luoz mnu2"><img src="/Public/img/common/menu/lz-star.jpg" class="nav-lzr navdn-img pull-right" /></a>
+                <a href="/home/diamond/index/type/4" class="luoz mnu3"><img src="/Public/img/common/menu/lz-cz.jpg" class="nav-lzr navdn-img pull-right" /></a>
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 品牌馆 -->
+    <div class="nav-wedding clearfix">
+        <div class="navbox clearfix">
+            <div class="nav-brandl hunjia1 zdnnav-zj clearfix pull-left">
+                <ul class="hunjia">
+                    <li class="title1"><span>婚嫁</span></li>
+                    <li data-ring="tszy"><a href="http://www.kela.cn/home/mall/lists/nav_cid/83" target="_blank">求婚钻戒</a></li>
+                    <li data-ring="uno" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/47" target="_blank">结婚对戒</a></li>
+                    <li data-ring="prxd" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/35" target="_blank">吊坠</a></li>
+                    <li data-ring="bduck" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/39" target="_blank">手链/手镯</a></li>
+                    <li data-ring="bduck" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/69" target="_blank">耳钉</a></li>
+                </ul>
+                <a href="/home/wedding"><img  class="img" src="/Public/img/common/menu/bar11.jpg" class="navdn-img" /></a>
+
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 礼物 -->
+    <div class="nav-gift clearfix" style="padding-bottom: 30px;">
+        <div class="navbox ">
+
+            <div class="nav-starl nav-star2   clearfix pull-left">
+                <ul  style="margin-left: 120px;">
+                    <li style="margin-left: -51px;" class="zdntit6"><span class="span1">礼物</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span style="border-right:none; ">女士</span></li>
+                    <li data-ring="pre_couple"><a href="http://www.kela.cn/home/mall/lists/nav_cid/35" target="_blank">吊坠</a></li>
+                    <li data-ring="tszy"><a href="http://www.kela.cn/home/mall/lists/nav_cid/36" target="_blank">项链/套链</a></li>
+                    <li data-ring="uno" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/82" target="_blank">戒指</a></li>
+                    <li data-ring="prxd" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/39" target="_blank">手链/手镯</a></li>
+                    <li data-ring="bduck" ><a href="http://www.kela.cn/home/mall/lists/nav_cid/69" target="_blank">耳钉</a></li>
+
+                    <!--<li data-ring="fanny" ><a href="/Public/subject/201506/fanny" target="_blank">FANNY PARIS</a></li>-->
+                </ul>
+                <div>
+                    <a href="/home/gift"  target="_blank"><img src="/Public/img/common/menu/bar12.jpg"  /></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 明星系列 -->
+    <div class="nav-star clearfix" style="padding-bottom: 30px;">
+        <div class="navbox clearfix">
+            <div class="nav-starl zdnnav-zj clearfix pull-left">
+                <ul>
+                    <li data-ring="pre_couple"><a href="/Public/subject/201507/perfectcouple/"  target="_blank">天生一对</a></li>
+                    <li data-ring="tszy"><a href="/Public/subject/201412/nlaa/" target="_blank">天使之翼</a></li>
+                    <li data-ring="uno" ><a href="/Public/subject/201410/xinpin/" target="_blank">UNO</a></li>
+                    <li data-ring="prxd" ><a href="/Public/subject/201411/xindong/" target="_blank">怦然心动</a></li>
+                    <li data-ring="bduck" ><a href="/Public/subject/201502/bduck/" target="_blank">B.Duck</a></li>
+                    <li data-ring="lmm" ><a href="/Public/subject/201411/xinpin/" target="_blank">刘萌萌</a></li>
+                    <li data-ring="te" ><a href="/Public/subject/201411/tiane/" target="_blank">天鹅</a></li>
+                    <li data-ring="qs" ><a href="/Public/subject/201508/pe/" target="_blank">Pink Emily</a></li>
+                </ul>
+                <a href="/Public/subject/201507/perfectcouple" class="nav-stara mnu0" target="_blank"><img src="/Public/img/common/menu/pre_couple.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201412/nlaa" class="nav-stara mnu1" target="_blank"><img src="/Public/img/common/menu/tszy.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201410/xinpin" class="nav-stara mnu2" target="_blank"><img src="/Public/img/common/menu/uno.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201411/xindong" class="nav-stara mnu3" target="_blank"><img src="/Public/img/common/menu/prxd.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201502/bduck" class="nav-stara mnu4" target="_blank"><img src="/Public/img/common/menu/bduck.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201411/xinpin" class="nav-stara mnu5" target="_blank"><img src="/Public/img/common/menu/lmm.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201411/tiane" class="nav-stara mnu6" target="_blank"><img src="/Public/img/common/menu/te.jpg" class="navdn-img" /></a>
+                <a href="/Public/subject/201508/pe/" class="nav-stara mnu7" target="_blank"><img src="/Public/img/common/menu/qingshe.jpg" class="navdn-img" /></a>
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 品牌馆 -->
+    <div class="nav-brand clearfix" >
+        <div class="navbox clearfix">
+            <div class="nav-brandl zdnnav-zj clearfix pull-left">
+                <ul>
+                    <li data-ring="tszy"><a href="/home/brand/brandwh">品牌理念</a></li>
+                    <li data-ring="uno" ><a href="/home/brand/comsth">珂兰实力</a></li>
+                    <li data-ring="prxd" ><a href="/home/brand/comres">品牌责任</a></li>
+                    <li data-ring="bduck" ><a href="/home/brand/comcou">珂兰历程</a></li>
+                </ul>
+                <a href="/home/brand/brandwh" class="nav-stara mnu0"><img src="/Public/img/common/menu/br1.jpg" class="navdn-img" /></a>
+                <a href="/home/brand/comsth" class="nav-stara mnu1"><img src="/Public/img/common/menu/br2.jpg" class="navdn-img" /></a>
+                <a href="/home/brand/comres" class="nav-stara mnu2"><img src="/Public/img/common/menu/br3.jpg" class="navdn-img" /></a>
+                <a href="/home/brand/comcou" class="nav-stara mnu3"><img src="/Public/img/common/menu/br4.jpg" class="navdn-img" /></a>
+            </div>
+            <div class="netdn-nav2">
+                <ul>
+                    <li><a href="/home/brand/comnews">公司新闻</a></li>
+                    <li><a href="/home/brand/mediaat">媒体关注</a></li>
+                    <li><a href="/home/brand/videoh">视频热点</a></li>
+                    <li class="netdn-more"><a href="/Home/Article/alist/position/shop_news/type/shop/catname/%25E6%259B%25B4%25E5%25A4%259A%25E6%2596%25B0%25E9%2597%25BB">更多新闻...</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+    <!-- 加入珂兰 -->
+    <div class="nav-kela clearfix" style="padding-bottom: 30px;">
+        <div class="navbox ">
+
+            <div class="nav-starl nav-star2 nav-kela1  clearfix pull-left">
+                <ul  style="margin-left: 120px;">
+                    <li style="margin-left: -78px;" class="zdntit6"><span class="span1">微信专享</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span style="border-right:none; ">活动专享</span></li>
+                    <li><a >砸金蛋</a></li>
+                    <li><a >0元竞拍</a></li>
+                    <li><a >晒单有奖</a></li>
+
+
+                    <!--<li data-ring="fanny" ><a href="/Public/subject/201506/fanny" target="_blank">FANNY PARIS</a></li>-->
+                </ul>
+                <div>
+                    <a href="http://www.kela.cn/Public/subject/201508/exc/"  target="_blank"><img src="/Public/img/common/menu/544.jpg"  /></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="sunav-bj"></div>
+    </div>
+</div>
+<div id="tabox" class="tabox" style="display:none">
+    <div class='yuebox'>
+        <div class="close"></div>
+        <ul class="Res_form">
+            <li>
+                <input type="hidden" name="bes_remark" class="bes_remark" value=""/>
+                <input class="bes_name shr1 shr" type="text" name="bes_name" value="您的姓名" value="您的姓名" onfocus='if(this.value=="您的姓名"){this.value="";}' onblur='if(this.value==""){this.value="您的姓名";}' />
+                <input class="bes_phone shr1 shr" type="text" name="bes_phone" value="手机号码" value="手机号码" onfocus='if(this.value=="手机号码"){this.value="";}' onblur='if(this.value==""){this.value="手机号码";}' />
+            </li>
+            <li>
+                <input class="bes_time shr2 shr" type="text" name="bes_time"  onfocus='if(this.value=="选择到店时间"){this.value="";}' onblur='if(this.value==""){this.value="选择到店时间";}' readonly value="选择到店时间" />
+            </li>
+            <li class="tabsel-wrap">
+                <label class="tabsel shr">选择预约体验店</label>
+                <select class="bes_shop shr3" name="bes_shop">
+                    <option value="">选择预约体验店</option>
+                </select>
+            </li>
+            <li><input class="bes_submit" id="bes_submit" type="button" value="" title="" onclick="KelaBespokeFunc.saveBespoke('.yuebox');"/></li>
+        </ul>
+    </div>
+    <div id="yuebg"></div>
+</div>
+<!---体验店婚纱系列预约弹出框-->
+<div class="wedding_veil" style="display: none;">
+    <div class="l_close" onclick="$('.wedding_veil').hide();"></div>
+    <ul class="l_list">
+        <li><input type="radio" name="flag" value="[珂兰主钻]" checked="checked" /><label>珂兰主钻</label></li>
+        <li><input type="radio" name="flag" value="[金夫人婚纱摄影]"/><label>金夫人婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[古摄影]"/><label >古摄影</label></li>
+        <li><input type="radio" name="flag" value="[天长地久婚纱摄影]"/><label>天长地久婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[蒙娜丽莎婚纱摄影]"/><label > 蒙娜丽莎婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[巴黎婚纱摄影]"/><label> 巴黎婚纱摄影</label></li>
+
+        <li><input type="radio" name="flag" value="[色色婚纱摄影]"/><label > 色色婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[钟爱一生婚纱摄影]"/><label>钟爱一生婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[蔚蓝海岸婚纱摄影]"/><label>蔚蓝海岸婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[爱城薇纪婚纱摄影]"/><label>爱城薇纪婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[金佰合婚纱摄影]"/><label> 金佰合婚纱摄影</label></li>
+
+        <li><input type="radio" name="flag" value="[佛山百合婚纱摄影]"/><label>佛山百合婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[韩国艺匠婚纱摄影]"/><label>韩国艺匠婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[圣芭芭拉婚纱摄影]"/><label>圣芭芭拉婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[麦田映像婚纱摄影]"/><label> 麦田映像婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[兰蔻婚纱摄影]"/><label> 兰蔻婚纱摄影</label></li>
+
+        <li><input type="radio" name="flag" value="[雨墨婚纱摄影]"/><label>雨墨婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[玛雅社婚纱摄影]"/><label>玛雅社婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[花田视觉婚纱摄影]"/><label>花田视觉婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[唯我婚纱摄影]"/><label > 唯我婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[日光视觉婚纱摄影]"/><label> 日光视觉婚纱摄影</label></li>
+
+        <li><input type="radio" name="flag" value="[婚纱摄影联盟协会]"/><label>  婚纱摄影联盟协会</label></li>
+        <li><input type="radio" name="flag" value="[婚庆企业联盟协会]"/><label>  婚庆企业联盟协会</label></li>
+        <li><input type="radio" name="flag" value="[韩国SUM婚纱摄影]"/><label>  韩国SUM婚纱摄影</label></li>
+        <li><input type="radio" name="flag" value="[韩国LUNA婚纱摄影]"/><label>  韩国LUNA婚纱摄影</label></li>
+
+
+    </ul>
+    <button class="l_button"  type="button" >立即提交</button>
+</div><div id="footicon">
+  <ul>
+            <li class="ntkf-chat clearfix" data-after-sale="0"><a href="javascript:"><img src="/Public/subject/home/css/img/weixin_bj_rit.png" height="47" ><span class="weixinicon byto">快捷咨询</span></a></li>    <li class="clearfix"><a id="homeqq" href="javascript:"><img src="/Public/css/home/img/qp_code_d.png" height="47" ><span class="qqicon byto">联系我们</span></a></li>
+    <li class="clearfix"><a href="javascript:" class="ztyubo"><img src="/Public/css/home/img/gtgt_05.png" height="47" ><span class="onlineicon byto">在线预约</span></a></li>
+    <li class="erwei_m clearfix">
+         <span class="maicon"><div class="ewm_div"></div></span>
+    </li>
+    <div class="fterwei">二维码</div>
+      <!--<img class="ewm_hover" src="/Public/css/home/img/erwei_m.png" >-->
+    <li class="ztotop clearfix"><a href="javascript:" class="top_btn"><img src="/Public/css/home/img/calback.png" height="47" ><span class="backicon byto">返回顶部</span></a></li>
+  </ul>
+</div>
+
+</div>
+<!-- header E -->
+<span class="hide" id="shops"><a href='/Home/Shop/home' class="pr20">全国</a></span>
+<div class="clear"></div>
+<script type="text/javascript" src="/Public/js/home/datetimepicker/jquery.datetimepicker.min.js?1"></script>
+<script type="text/javascript" src="/Public/js/home/bespoke.js?1" ></script>
+<script>
+
+window.JsDomain  = ".kela.cn";
+    /*立即预约*/
+    $(function(){
+        var proSwiper = new Swiper('#new-product', {
+            pagination: '#new-product .pagination',
+            loop: true,
+            grabCursor: true,
+            autoplay: 3000,
+            paginationClickable: true
+        });
+        $('.close').click(function(){
+            $('#tabox').fadeOut()
+        });
+        $('.ztyubo').click(function(){
+            $('#tabox').fadeIn()
+        })    
+      seajs.use("/wpa.php#",function(wpa){
+          if(typeof BizQQWPA != "undefined") {
+              BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4008980188, selector: 'homeqq'});
+          }
+      })
+      $(".tabsel-wrap").on("change",function(){
+        var o;
+        var opt = $(this).find('option');
+        opt.each(function(i){
+          if(opt[i].selected == true){
+            o = opt[i].innerHTML
+          }
+        })
+        $(this).find('label').html(o);
+      });
+
+        KelaBespokeFunc.setDatatime('.yuebox');
+        KelaBespokeFunc.setShopOptions('.yuebox .bes_shop');
+        $(".bes_time").mousewheel(function(){
+            return false;
+        });
+
+
+        setTimeout(function(){
+            $(".max_img").animate({height:"0"},250,"linear").addClass('min_img').animate({height:"80px"},500,"linear");
+
+        },1000)
+    });  
+  
+</script>
+<!-- 结束 预约验证 -->
+<script type="text/javascript">
+   $(function() {
+    $(".sforv").hover(function(){
+        $(this).find(".scword").stop().animate({bottom: '0'},200);
+      },function(){
+        $(this).find(".scword").stop().animate({bottom: '-76px'},200);
+      });
+       // 二级导航自动选中
+       $('.subnav-box [data-ring]').each(function() {
+           var a = $(this).find('a');
+           var ahref = a.attr('href');
+
+           if (ahref == location.pathname) {
+               $(this).addClass('eventn');
+           }
+       });
+
+    });
+</script>
+</body>
+<!-- header end -->
+
+
+
+<style>
+    .friendlink{ display: block; }
+</style>
+<div style="height:30px; width:100%; "></div>
+<section class="banner clearfix">
+<div id="homescroll" class="homescroll clearfix">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="http://www.kela.cn/Public/subject/201509/cdguoqi/" target="_blank" style="background:url(http://kelacms.kela.cn/images/banners/index/WH_CD784.jpg) center top no-repeat" title=""> </a>
+</div><div class="swiper-slide">
+<a href="http://www.kela.cn/Public/subject/201508/shidai/" target="_blank" style="background:url(http://kelacms.kela.cn/images/banners/index/032714_816073.jpg) center top no-repeat" title=""> </a>
+</div><div class="swiper-slide">
+<a href="http://www.kela.cn/home/article/read/aid/3723/type/shop/position/mall_home_firm_info" target="_blank" style="background:url(http://kelacms.kela.cn/images/banners/index/kelanrongying.jpg) center top no-repeat" title=""> </a>
+</div><div class="swiper-slide">
+<a href="http://www.kela.cn/Public/subject/201508/qqvip/" target="_blank" style="background:url(http://kelacms.kela.cn/images/banners/index/qqvip.jpg) center top no-repeat" title=""> </a>
+</div></div>
+<div class="pagination"></div>
+</div>
+
+</section>
+<div class="index_box " >
+    <a href="http://www.kela.cn/home/diamond/index" target="_blank" class="l_div show_l ">
+        <img src="/Public/images/home/shouye1.jpg" alt=""/>
+        <div  class="l_div1 yinyin">
+           <span class="text1">鉴赏&nbsp;&nbsp;+</span>
+        </div>
+    </a>
+    <div class="l_div2">
+        <a target="_blank"  href="http://www.kela.cn/home/mall/lists/nav_cid/46" class="box1 show_l">
+            <img src="/Public/images/home/shouye2.jpg" style="margin-bottom: 18px;" alt=""/>
+            <div class="l_div3 yinyin">
+                <span class="text2">鉴赏&nbsp;&nbsp;+</span>
+            </div>
+        </a>
+      <a target="_blank" href="http://www.kela.cn/home/color/" class="box2 show_l">
+          <img src="/Public/images/home/shouye3.jpg" alt=""/>
+          <div class="l_div4 yinyin">
+              <span class="text3">鉴赏&nbsp;&nbsp;+</span>
+          </div>
+      </a>
+
+    </div>
+
+
+</div>
+<div class="banner_box box">
+    最新资讯
+</div>
+<div class="banner_box1"></div>
+
+<section class="index-slide">
+<span class="slide-btn slide-left"></span>
+<span class="slide-btn slide-right"></span>
+<div class="slide-box">
+<ul class="list-inline swiper-wrapper">
+
+<!--    <li class="swiper-slide">
+        <a href="http://www.kela.cn/home/mall/index" target="_blank"><img src="/Public/images/home/ll1.jpg" width=362 height=206/></a>
+        <p>
+            珂兰在线商城新上线<br/><a href="http://www.kela.cn/home/mall/index">立即前往+</a>
+        </p>
+    </li>
+    <li class="swiper-slide">
+        <a href="http://www.kela.cn/home/shop/star" target="_blank"><img src="/Public/images/home/ll2.jpg" width=362 height=206/></a>
+        <p>
+            八大明星系列产品<br/><a href="http://www.kela.cn/home/shop/star">立即前往+</a>
+        </p>
+    </li>
+    <li class="swiper-slide">
+        <a href="http://www.kela.cn/home/shop/home" target="_blank"><img src="/Public/images/home/ll3.jpg" width=362 height=206/></a>
+        <p>
+            全国60家体验店<br/><a href="http://www.kela.cn/home/shop/home">立即前往+</a>
+        </p>
+    </li>
+    <li class="swiper-slide">
+        <a href="http://www.kela.cn/home/brand/index" target="_blank"><img src="/Public/images/home/ll4.jpg" width=362 height=206/></a>
+        <p>
+            珂兰品牌故事<br/><a href="http://www.kela.cn/home/brand/index">立即前往+</a>
+        </p>
+    </li>
+    <li class="swiper-slide">
+        <a href="http://www.kela.cn/Public/subject/201508/exc/" target="_blank"><img src="/Public/images/home/weix.jpg" width=362 height=206/></a>
+        <p>
+            砸金蛋赢豪礼|会员日专享福利|晒单赢吊坠<br/><a href="http://www.kela.cn/Public/subject/201508/exc/">立即前往+</a>
+        </p>
+    </li>-->
+
+    <li class="swiper-slide">
+            <a href="http://www.kela.cn/Home/Article/read/aid/3723" target="_blank">
+                <img src="http://kelacms.kela.cn/images/banners/shop/quanguodian/home_bottom/01.jpg" width="" height="" />
+            </a>
+            <p>
+                珂兰荣膺JNA亚洲“最佳电商平台”奖<br/><a href="http://www.kela.cn/Home/Article/read/aid/3723">立即前往+</a>
+            </p>
+        </li><li class="swiper-slide">
+            <a href="http://www.kela.cn/Home/Article/read/aid/3726" target="_blank">
+                <img src="http://kelacms.kela.cn/images/banners/shop/quanguodian/home_bottom/02.jpg" width="" height="" />
+            </a>
+            <p>
+                解读上海国际珠宝年度展览<br/><a href="http://www.kela.cn/Home/Article/read/aid/3726">立即前往+</a>
+            </p>
+        </li><li class="swiper-slide">
+            <a href="http://www.kela.cn/home/article/read/aid/3707/type/common/position/media_follow" target="_blank">
+                <img src="http://kelacms.kela.cn/images/banners/shop/quanguodian/home_bottom/lichen.jpg" width="" height="" />
+            </a>
+            <p>
+                “天生一对”成明星时尚新宠<br/><a href="http://www.kela.cn/home/article/read/aid/3707/type/common/position/media_follow">立即前往+</a>
+            </p>
+        </li><li class="swiper-slide">
+            <a href="http://www.kela.cn/home/article/read/aid/3711/type/common/position/color_diamond_news" target="_blank">
+                <img src="http://kelacms.kela.cn/images/banners/shop/quanguodian/home_bottom/03.jpg" width="" height="" />
+            </a>
+            <p>
+                LEIBISH礼献“臻罕彩钻”上海首展<br/><a href="http://www.kela.cn/home/article/read/aid/3711/type/common/position/color_diamond_news">立即前往+</a>
+            </p>
+        </li>
+</ul>
+</div>
+</section>
+<script src="/Public/js/home/swiper/swiper.js?1"></script>
+<script src="/Public/js/home/kelascroll.js?1"></script>
+<script type="text/javascript">kelascroll.scrollht();kelascroll.scrollh();</script>
+<script>
+    $(".show_l").hover(function(){
+        $(this).find(".yinyin").show();
+    },function(){
+        $(this).find(".yinyin").hide();
+    })
+</script>
+<!-- footer S --><link rel="stylesheet" href="/Public/js/home/datetimepicker/jquery.datetimepicker.min.css"><footer id="footer" class="footer3">    <div class="footer_sec5" >      <div class="footmn clearfix">        <div class="weixin1">         <img src="/Public/images/home/weixin1.jpg" alt=""/>         <span>珂兰官方微信</span>        </div>        <div class="weixin3 weixin1">          <img src="/Public/images/home/weixin2.jpg" alt=""/>          <a target="_blank" href="http://weibo.com/wwwkelacn">官方微博</a>        </div>        <nav class="footer-desc">
+    <dl>
+        <dt>关于我们</dt>
+        <!--<dd><a href="/Home/Article/read/aid/100/type/common/position/footer/title/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC" target="_blank">公司简介</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/100" target="_blank">公司简介</a></dd><!--<dd><a href="/Home/Article/read/aid/101/type/common/position/footer/title/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC" target="_blank">权威认证</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/101" target="_blank">权威认证</a></dd><!--<dd><a href="/Home/Article/read/aid/102/type/common/position/footer/title/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC" target="_blank">联系我们</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/102" target="_blank">联系我们</a></dd>
+      </dl><dl>
+        <dt>新手指南</dt>
+        <!--<dd><a href="/Home/Article/read/aid/32/type/common/position/footer/title/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97" target="_blank">新手注册</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/32" target="_blank">新手注册</a></dd><!--<dd><a href="/Home/Article/read/aid/2411/type/common/position/footer/title/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97" target="_blank">网站地图</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2411" target="_blank">网站地图</a></dd><!--<dd><a href="/Home/Article/read/aid/2412/type/common/position/footer/title/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97" target="_blank">如何预约</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2412" target="_blank">如何预约</a></dd>
+      </dl><dl>
+        <dt>预约购买</dt>
+        <!--<dd><a href="/Home/Article/read/aid/2413/type/common/position/footer/title/%E9%A2%84%E7%BA%A6%E8%B4%AD%E4%B9%B0" target="_blank">订单查询</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2413" target="_blank">订单查询</a></dd><!--<dd><a href="/Home/Article/read/aid/35/type/common/position/footer/title/%E9%A2%84%E7%BA%A6%E8%B4%AD%E4%B9%B0" target="_blank">支付方式</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/35" target="_blank">支付方式</a></dd><!--<dd><a href="/Home/Article/read/aid/45/type/common/position/footer/title/%E9%A2%84%E7%BA%A6%E8%B4%AD%E4%B9%B0" target="_blank">签收须知</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/45" target="_blank">签收须知</a></dd>
+      </dl><dl>
+        <dt>服务保障</dt>
+        <!--<dd><a href="/Home/Article/read/aid/2415/type/common/position/footer/title/%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C" target="_blank">一钻双证</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2415" target="_blank">一钻双证</a></dd><!--<dd><a href="/Home/Article/read/aid/2416/type/common/position/footer/title/%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C" target="_blank">质量承诺</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2416" target="_blank">质量承诺</a></dd><!--<dd><a href="/Home/Article/read/aid/2417/type/common/position/footer/title/%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C" target="_blank">全程保价</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/2417" target="_blank">全程保价</a></dd>
+      </dl><dl>
+        <dt>售后服务</dt>
+        <!--<dd><a href="/Home/Article/read/aid/47/type/common/position/footer/title/%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1" target="_blank">退换办理</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/47" target="_blank">退换办理</a></dd><!--<dd><a href="/Home/Article/read/aid/46/type/common/position/footer/title/%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1" target="_blank">售后规则</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/46" target="_blank">售后规则</a></dd><!--<dd><a href="/Home/Article/read/aid/48/type/common/position/footer/title/%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1" target="_blank">以旧换新</a></dd>-->
+        <dd><a href="/Home/Article/read/aid/48" target="_blank">以旧换新</a></dd>
+      </dl>
+     <!--<dl class="footer_last_dl">
+        <dt>珂兰</dt>
+        <dd><a href="/Home/Article/help" target="_blank">帮助中心</a></dd>
+        <dd><a href="/Home/Article/alist/position/shop_news_zuanshi/type/common/catname/%25E9%2592%25BB%25E7%259F%25B3%25E7%2599%25BE%25E7%25A7%2591" target="_blank">钻石百科</a></dd>
+        <dd><a href="/Home/Article/alist/position/shop_news/type/shop/catname/%25E6%2596%25B0%25E9%2597%25BB%25E8%25B5%2584%25E8%25AE%25AF" target="_blank">新闻资讯</a></dd>
+    </dl>-->
+
+    <dl class="footer_last_dl">
+        <dt>珂兰</dt>
+        <dd><a href="/Home/Article/help" target="_blank">帮助中心</a></dd>
+        <dd><a href="/Home/Article/alist/art_cat/15" target="_blank">钻石百科</a></dd>
+        <dd><a href="/Home/Article/alist/art_cat/18" target="_blank">新闻资讯</a></dd>
+    </dl>
+</nav>        <div class="phoney">          <h4>电话预约</h4>          400-898-0188<br>          <span>咨询时间： 9: 00-23: 00</span>          <a href="javascript:;" class="ntkf-chat"><img src="/Public/css/home/img/onlineask.png" /></a>        </div>      </div>            <div class="friendlink">
+	<span><a href="/Home/Index/frlnk/pos/homefooter" target="_blank">友情链接</a></span>
+	<div class="fdlian">
+		<MARQUEE behavior="scroll" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="3" width="930" onmouseover="this.stop()" onmouseout="this.start()">
+			<a href="http://www.wed114.cn/index.html" target="_blank">中国结婚网</a><a href="http://www.crd.cn/" target="_blank">钻戒网</a><a href="http://www.jianshen8.com/" target="_blank">健身吧</a><a href="http://www.dionly.com/" target="_blank">戴欧妮钻石</a><a href="http://www.51fashion.com.cn/" target="_blank">时尚饰界</a><a href="http://www.moonbasa.com/category" target="_blank">梦芭莎</a><a href="http://www.jewelchina.com/" target="_blank">饰品网</a><a href="http://www.bbhun.com/" target="_blank"> 婚纱摄影</a><a href="http://www.egou.com/" target="_blank">易购网</a><a href="http://www.taoxie.com" target="_blank">淘鞋网</a><a href="http://www.shoes.net.cn" target="_blank">环球鞋网 </a><a href="http://bbs.xbiao.com" target="_blank">手表论坛</a><a href="http://www.2liang.net/" target="_blank">爱靓网</a><a href="http://m.kuaidi100.com/" target="_blank">快递查询</a><a href="http://www.zgqsc.com" target="_blank">奇石</a><a href="http://www.dalings.com" target="_blank">钻戒品牌排行</a><a href="http://bj.jiehun.com.cn" target="_blank">中国婚博会</a><a href="http://www.zbwbbs.com/" target="_blank">珠宝窝</a><a href="http://www.iyingji.com" target="_blank">相册制作</a><a href="http://www.26abc.com/" target="_blank">婚纱图片</a><a href="http://www.17ugo.com" target="_blank">优品惠</a><a href="http://www.lovewith.me/" target="_blank">婚礼时光</a><a href="http://jd.cang.com/" target="_blank">鉴定估价</a><a href="http://www.xitieba.com" target="_blank"> 电子请柬</a><a href="http://www.meilishuo.com" target="_blank">美丽说</a><a href="http://www.uuzhufu.com/" target="_blank">礼品定制</a><a href="http://www.cnwear.com/" target="_blank">时尚服装网</a><a href="http://www.hc699.com/" target="_blank">皇朝翠玉翡翠</a><a href="http://www.tuniu.com/" target="_blank">途牛旅游</a><a href="http://jiudian.cncn.com/" target="_blank">酒店预订网</a><a href="http://www.2298.com/" target="_blank">女装批发</a><a href="http://www.xiu.com/" target="_blank">走秀网</a><a href="http://www.meidebi.com/" target="_blank">没得比导购网</a><a href="http://www.fwol.cn" target="_blank">名站在线</a><a href="http://www.5lux.com/" target="_blank">第五大道奢侈品网</a><a href="http://www.paixie.net/" target="_blank">拍鞋网</a><a href="http://www.sxxl.com" target="_blank">服装设计 </a><a href="http://www.gome.com.cn" target="_blank">国美在线</a><a href="http://j.renren.com/" target="_blank">人人逛街</a><a href="http://www.7192.com/" target="_blank">影楼 </a><a href="http://hk.szhk.com" target="_blank">香港购物</a><a href="http://www.xiaomishu.com" target="_blank">订餐小秘书</a><a href="http://www.7dapei.com/" target="_blank">服装搭配</a><a href="http://www.1zw.com" target="_blank">9块9包邮</a><a href="http://www.yeesha.com" target="_blank">婚纱礼服</a><a href="http://s.vancl.com/" target="_blank">凡客</a><a href="http://njhaiwai.com/" target="_blank">康辉旅行</a><a href="http://www.zb580.tv" target="_blank">珠宝招商网</a><a href="http://www.yesmywine.com/" target="_blank">也买酒网</a><a href="http://www.uya100.com" target="_blank">优雅100</a><a href="http://www.15880.com" target="_blank">拉拉les交友</a><a href="http://www.lovenus.cn/" target="_blank">求婚钻戒</a><a href="http://www.lovenus.cn/ " target="_blank">求婚钻戒</a><a href="http://www.skyphoto.com.cn" target="_blank">北京婚纱摄影工作室 </a><a href="http://www.biancui.com" target="_blank">砭石</a>		</MARQUEE>
+	</div>
+</div>      <p class="copyright ">Copyright&copy; 2007-2015 <a href="http://www.kela.cn">kela.cn</a> 上海珂兰商贸有限公司 版权所有 并保留所有权利 <a target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备12001099号-4 京公网安备110102003015号</a></p>    </div></footer><!-- modal背景 --><div class="modal-backdrop"></div><script type="text/javascript" src="/Public/js/home/app.min.js?1" ></script><script>    $(function(){    App.init();  });</script><!-- 小能客服代码 --><script language="javascript" type="text/javascript">    seajs.use("/Public/js/common/ntkf-v1", function(app) {        var config = typeof NTKFConfig == 'undefined' ? {} : NTKFConfig; // 各自页面配置自己的NTKFConfig，默认{}        app.init(config);    });    </script><script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9777"charset="utf-8"></script><!-- 流量监控 --><div style="display:none">    <!-- cnzz -->    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255830973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255830973%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>    <!-- 360 -->    <script type="text/javascript" src="http://stat.e.tf.360.cn/search/c.js?u=1235168563"></script>    <script type="text/javascript">    var _e360_uid=1235168563;    (function () {    try {    var d = document;    var at = d.createElement('script'); at.type = 'text/javascript'; at.async = true;    at.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//t3.adsage.com/trc/atac/conv_q.js?id=' + _e360_uid;    var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(at, s);    } catch (e) { }     })();    </script>    <!-- 广点通 -->    <script type="text/javascript">    TA = window.TA || {};    TA.pgv = function(){        var r2 = '32869744';        var dm = window.location.host;        var url = window.location.pathname;        var src = 'http://pingtcss.qq.com/pingd?' + 'r2=' + r2 + '&dm=' + dm + '&url=' + url;        var img = new Image();        img.src = src;    };    TA.pgv();    </script>    <!-- 网易 -->   <script type="text/javascript">    var youdao_conv_id = 279718;     </script>     <script type="text/javascript" src="http://conv.youdao.com/pub/conv.js"></script>    <script type="text/javascript" src="http://a.ad7.com/js/i.js?uid=rvkj" id="_mutmzc"></script></div></body></html>

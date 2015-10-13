@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>求报道-业务体系-亿邦动力网</title>
+<link href="style/globle.css" rel="stylesheet" type="text/css" /><link href="style/public.css" rel="stylesheet" type="text/css" /><link href="style/layout2.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="http://imgs.ebrun.com/js/jquery-142min.js"></script>
+</head>
+<body>
+<div class="aboutdiv">
+  <dl>
+   <dt><a href="http://www.ebrun.com/" title="亿邦动力网" target="blank"><img src="images/aboutlogo.jpg" /></a></dt> 
+   <dd>
+     <span class="backspan"><a href="http://www.ebrun.com/" title="返回首页" target="blank">返回亿邦动力网 &gt;</a></span>
+     <span class="menuspan"><a href="copyright.shtml" title="法律声明">法律声明</a><img src="images/aboutaimage.jpg"/><a href="job.shtml" title="加入亿邦">加入亿邦</a><img src="images/aboutaimage.jpg"/><a href="work_together.shtml" title="业务体系">业务体系</a><img src="images/aboutaimage.jpg"/><a href="comInfo_about.shtml" title="公司介绍">公司介绍</a><img src="images/aboutaimage.jpg"/><a href="about.shtml" title="首页">首页</a></span>
+   </dd>
+  </dl>
+</div>
+<script type="text/javascript">
+$('.menuspan a').each(function(index, el){
+	var url = el.href;
+	var currentUrl = document.URL;
+	if (currentUrl.indexOf(url) != -1)
+	{
+		el.className = 'a_hover';
+	}
+});
+
+</script>
+<div id="aboutcenter">
+  <div class="aboutleft">
+    <ul>
+      <li class="tipli"><a href="comInfo_about.shtml" title="公司介绍">公司介绍</a></li>
+       <li class="titleli">业务体系</li>
+	   <li><a href="work_report.shtml" title="求报道" class="a_centr">求报道</a></li>
+       <li><a href="work_together.shtml" title="内容合作">内容合作</a></li>
+       <li><a href="work_adv.shtml" title="广告合作">广告合作</a></li>
+       <li><a href="work_meeting.shtml" title="会议合作">会议合作</a></li>
+       <li><a href="work_study.shtml" title="研究咨询">研究咨询</a></li>
+      <li class="tipli"><a href="job.shtml" title="加入亿邦">加入亿邦</a></li>
+      <li class="tipli"><a href="copyright.shtml" title="法律声明">法律声明</a></li>
+    </ul>
+     
+  </div>
+  <div class="aboutright">
+    <h2>求报道</h2>
+    <p class="p">
+	我们广泛接受电商业界相关新闻线索，如果你有关于电商创业、融资信息、战略决策、新品发布、电商内幕、平台误判、商业纠纷等等方面的信息，欢迎你独家提供给我们。
+	</p>
+    <p class="p"><strong>关注领域</strong></p>
+    <p class="p"> 
+	网上零售（含B2C、C2C）、传统零售、B2B、品牌商、移动电商（含微商）、跨境电商（含进口、出口）、电商服务、国际电商等。 
+	</p>
+    <p class="p"><strong>关注信息</strong></p>
+    <p class="p">
+	新品发布、电商政策、行业数据、人事变动、投融资、会议信息、商业纠纷、大型平台业务动态等。我们不关注个人八卦等非商业性信息。
+	</p>
+	<p class="p"><strong>我们承诺</strong></p>
+    <p class="p">
+	1、在你提供线索的2个工作日之内，是否采用和是否可以做后续报道，我们将给出邮件回复；<br>
+	2、线索收集和报道都是免费的；
+	</p>
+	<p class="p"><strong>联系方式</strong></p>
+    <p class="p">
+	请发送您的新闻线索至<a href="mailto:news@ebrun.com">news@ebrun.com</a>。
+	</p>
+	<br>
+	<hr>
+	<p class="p"><strong>建议</strong></p>
+    <p class="p">
+	鉴于每日处理线索量巨大，请你尽量简明扼要写明线索信息。如：时间、地点、人物、事件、影响等等。
+	</p>
+	<p class="p"><strong>欢迎投稿</strong></p>
+    <p class="p">
+	如果您在电商某领域或某方面有独到见解，欢迎撰写分析类文章给我们，发送至邮箱<a href="mailto:news@ebrun.com">news@ebrun.com</a>。
+	观点类文章见仁见智，本站不承诺可以发布，如不能发布，将给出正式回复，敬请理解。
+	</p>
+	
+  </div>
+</div>
+<div id="aboutfooter">
+  <dl>
+    <dd>Copyright <font>&copy;</font> 2007-2015 ebrun.com Co.,Ltd . All rights reserved. <br />京ICP证070369号 | 京ICP备09097961号 | 京公网安备110107000429</dd>
+    <dt><a href="http://www.siilu.com/" title="思路网" target="blank"><img src="images/blursiilulogo.jpg" /></a><a href="http://www.ebrun.com/" title="亿邦动力网" target="blank"><img src="images/blurebrunlogo.jpg" /></a></dt>
+  </dl>
+</div><script type="text/javascript" src="http://imgs.ebrun.com/js/track.js"></script>
+<script src='http://w.cnzz.com/c.php?id=30003236' language='JavaScript'></script>
+<script type="text/javascript">
+if (!document.referrer.match("www.ebrun.com/manage/sysdata/tmp/effect/index.php")) {
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F87daad7faca22f66ec178d201d855ddb' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+
+
+</body>
+</html>

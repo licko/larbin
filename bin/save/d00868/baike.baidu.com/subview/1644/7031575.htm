@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="description" content="简易信息聚合（也叫聚合内容）是一种RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议。RSS(Really Simple Syndication)是一种描述和同步网站内容的格式，是使用最广泛的XML应用。RSS搭建了信息迅速传播的一个技术平台，使得每个人都成为潜在的信息提供者。发布一个RSS文件后，这个RSS Feed中包...">
+<title>rss（简易信息聚合）_百度百科</title>
+
+<meta name="keywords" content="rss  百度百科 baike  本质 版本 特点 起源 历史 发展 模块 用途 步骤 阅读器 文件 优点 营销 赢利模式 语法">
+<meta name="image" content="http://baike.bdimg.com/cms/static/baike.png">
+
+<!--[if lte IE 9]>
+<script>
+    (function() {
+      var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+        i = e.length;
+      while (i--) {
+        document.createElement(e[i]);
+      }
+    })();
+  </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/pkg/wiki-lemma_7feaaab.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-common/pkg/wiki-common-base_31046db.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/praise/praise_2120cd2.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/searchHeader/toolButtons/toolButtons_a2c470f.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/searchHeader/toolButtons/userInfo_9ba20c1.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/video/pageMask/pageMask_ff9a193.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/pkg/wiki-lemma-module_6adf590.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/cardLink/cardLink_40dc1e5.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/lemmaCode/style/shCore_7fba49a.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/lemmaCode/style/shCoreDefault_3f91dc3.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/mainContent_847fed6.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/lemmaRelation_9f629f5.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/zhixin/zhixin_9813bcd.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/sideAuth/sideAuth_6f2b031.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/searchHeader/searchHeader_e786bfb.css"/><link rel="stylesheet" type="text/css" href="http://baike.bdimg.com/static/wiki-lemma/widget/tools/sideShare/sideShare_afe05e7.css"/></head>
+<body class="wiki-lemma normal">
+
+
+<div class="header-wrapper">
+<ul class="wgt-userbar">
+<li>
+<a href="http://www.baidu.com/">百度首页</a>
+</li>
+</ul>
+<div class="header">
+<div class="layout">
+<div class="wgt-searchbar wgt-searchbar-main cmn-clearfix">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="nav">
+<a href="http://news.baidu.com/" data-href="http://news.baidu.com/ns?tn=news&cl=2&rn=20&ct=1&fr=bks0000&ie=utf-8&word=">新闻</a><a href="http://www.baidu.com/" data-href="http://www.baidu.com/s?ie=utf-8&fr=bks0000&wd=">网页</a><a href="http://tieba.baidu.com/" data-href="http://tieba.baidu.com/f?ie=utf-8&fr=bks0000&kw=">贴吧</a><a href="http://zhidao.baidu.com/" data-href="http://zhidao.baidu.com/search?pn=0&&rn=10&lm=0&fr=bks0000&word=">知道</a><a href="http://music.baidu.com/" data-href="http://music.baidu.com/search?f=ms&ct=134217728&ie=utf-8&rn=&lm=-1&pn=30fr=bks0000&key=">音乐</a><a href="http://image.baidu.com/" data-href="http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=">图片</a><a href="http://v.baidu.com/" data-href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=22&ie=utf-8&fr=bks0000&word=">视频</a><a href="http://map.baidu.com/" data-href="http://map.baidu.com/m?ie=utf-8&fr=bks0000&word=">地图</a><a class="baike">百科</a><a href="http://wenku.baidu.com/" data-href="http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&fr=bks0000&word=">文库</a>
+</div>
+<div class="form">
+<form id="searchForm" action="/search/word" method="GET" target="_self">
+<input id="query" name="word" type="text" autocomplete="off" autocorrect="off" value="rss" /><button id="search" type="button">进入词条</button><button id="searchLemma" type="button">搜索词条</button><a class="help" href="/help" target="_blank">帮助</a>
+</form>
+<form id="searchLemmaForm" action="/search" method="GET" target="_self">
+<input id="searchLemmaQuery" name="word" type="hidden" />
+<input name="pn" type="hidden" value="0" />
+<input name="rn" type="hidden" value="0" />
+<input name="enc" type="hidden" value="utf8" />
+</form>
+<ul id="suggestion" class="suggestion">
+<div></div>
+<li class="extra">
+<span id="close">关闭</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navbar-wrapper">
+<div class="wgt-navbar">
+<div class="navbar-bg">
+<div class="navbar-bg-top">
+<div class="navbar-content layout">
+<div class="navbar-content-box">
+<dl class="index ">
+<dt><a href="/">首页</a></dt>
+</dl>
+<dl class="cat ">
+<dt><a>分类</a></dt>
+<dd>
+<div><a href="/ziran" target="_blank">自然</a></div>
+<div><a href="/wenhua" target="_blank">文化</a></div>
+<div><a href="/dili" target="_blank">地理</a></div>
+<div><a href="/lishi" target="_blank">历史</a></div>
+<div><a href="/shenghuo" target="_blank">生活</a></div>
+<div><a href="/shehui" target="_blank">社会</a></div>
+<div><a href="/yishu" target="_blank">艺术</a></div>
+<div><a href="/renwu" target="_blank">人物</a></div>
+<div><a href="/jingji" target="_blank">经济</a></div>
+<div><a href="/keji" target="_blank">科技</a></div>
+<div><a href="/tiyu" target="_blank">体育</a></div>
+</dd>
+</dl>
+<dl class="special ">
+<dt><a>特色百科</a></dt>
+<dd>
+<div><a href="/calendar/" target="_blank">历史上的今天</a></div>
+<div><a href="/museum/" target="_blank">数字博物馆</a></div>
+<div><a href="/city/" target="_blank">城市百科</a></div>
+<div><a href="/operation/worldwar2" target="_blank">二战百科</a></div>
+<div><a href="/art" target="_blank">艺术百科</a></div>
+<div><a href="/science" target="_blank">科学百科</a></div>
+</dd>
+</dl>
+<dl class="user" >
+<dt><a>用户</a></dt>
+<dd>
+<div><a href="/kedou/" target="_blank">蝌蚪团</a></div>
+<div><a href="/event/ranmeng/" target="_blank">燃梦计划</a></div>
+<div><a href="/task/" target="_blank">百科任务</a></div>
+<div><a href="/mall/" target="_blank">百科商城</a></div>
+</dd>
+</dl>
+<dl class="cooperation" >
+<dt><a>权威合作</a></dt>
+<dd>
+<div><a href="/operation/cooperation#joint" target="_blank">合作模式</a></div>
+<div><a href="/operation/cooperation#issue" target="_blank">常见问题</a></div>
+<div><a href="/operation/cooperation#connection" target="_blank">联系方式</a></div>
+</dd>
+</dl>
+<dl class="mobile" >
+<dt><a>手机百科</a></dt>
+<dd>
+<div><a href="/m#download" target="_blank">客户端</a></div>
+<div><a href="/m#wap" target="_blank">网页版</a></div>
+</dd>
+</dl>
+<div class="usercenter">
+<div><a href="/usercenter" target="_blank"><em class="cmn-icon cmn-icons cmn-icons_navbar-usercenter"></em>个人中心</a></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="body-wrapper">
+<div class="before-content">
+<div class="polysemant-list polysemant-list-normal">
+<div class="polysemantList-header">
+<div class="polysemantList-header-title">
+<b>rss</b>是一个<a href="/view/10812277.htm" target="_blank">多义词</a>，请在下列<a href="/view/340519.htm" target="_blank">义项</a>上选择浏览（<a href="/view/1644.htm?force=1" target="_blank">共6个义项</a>）</div>
+<a class="polysemantList-addButton" target="_blank" href="/createsub/rss">添加义项</a>
+</div>
+<ul class="polysemantList-wrapper cmn-clearfix" >
+<li class="item">▪<span class="selected">简易信息聚合</span></li>
+<li class="item">▪<a title="直肠乙状结肠镜" href='/subview/1644/7031576.htm#viewPageContent'>直肠乙状结肠镜</a></li>
+<li class="item">▪<a title="系统相对灵敏性" href='/subview/1644/7031577.htm#viewPageContent'>系统相对灵敏性</a></li>
+<li class="item">▪<a title="数和的平方根" href='/subview/1644/7031578.htm#viewPageContent'>数和的平方根</a></li>
+<li class="item">▪<a title="统计平方公差法（Root-Sum-Squares）" href='/subview/1644/9565233.htm#viewPageContent'>统计平方公差法（Root-Sum-Squares）</a></li>
+<li class="item">▪<a title="旋转导向系统（钻井技术）" href='/item/RSS/17531112#viewPageContent'>旋转导向系统（钻井技术）</a></li>
+</ul>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="content">
+<div class="main-content">
+<a class="posterFlag expert-icon " href="javascript:;" title="权威专家认证词条"></a>
+<div class="top-tool">
+<a href="/divideload/rss" title="拆分词条" target="_blank" class="split-icon" style="display:none;" nslog-type="50000104"></a>
+<div class="top-collect">
+<span class="collect-text" nslog-type="50000102">收藏</span>
+<div class="collect-tip">查看<a href="/uc/favolemma" target="_blank">我的收藏</a></div>
+</div>
+<a href="javascript:void(0);" class="top-vote" nslog-type="50000103">
+<span class="vote-count">0</span>
+<span class="vote-tip">有用+1</span>
+<span class="voted-tip">已投票</span>
+</a>
+<div class="bdsharebuttonbox top-share" data-tag="top-share">
+<a class="bds_more top-share-icon" data-cmd="more" nslog-type="9067">
+<span class="bds_count share-count" id="j-topShareCount" data-cmd="count">0</span>
+</a>
+</div>
+</div>
+<div style="width:0;height:0;clear:both"></div><dl class="lemmaWgt-lemmaTitle lemmaWgt-lemmaTitle-">
+<dd class="lemmaWgt-lemmaTitle-title">
+<h1>rss</h1>
+<h2>（简易信息聚合）</h2>
+<a href="javascript:;" class="edit-lemma cmn-btn-hover-blue cmn-btn-28 j-edit-link"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+<a class="lock-lemma" target="_blank" href="/view/10812319.htm" title="锁定"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_lock-lemma"></em>锁定</a>
+</dd>
+</dl><div class="authorityListPrompt">
+<div class="main-content-zj">
+本词条由<a href="http://www.cast.org.cn/n35081/" target="_blank" class="nslog:7175">“科普中国”百科科学词条编写与应用工作项目</a>
+审核
+。</div>
+</div>
+<div class="lemma-summary">
+<div class="para"><a target=_blank href="/view/2521114.htm">简易信息聚合</a>（也叫聚合内容）是一种RSS基于<a target=_blank href="/view/63.htm">XML</a>标准，在互联网上被广泛采用的内容包装和投递协议。RSS(Really Simple Syndication)是一种描述和同步<a target=_blank href="/view/4232.htm">网站</a>内容的格式，是使用最广泛的XML应用。RSS搭建了<a target=_blank href="/view/1527.htm">信息</a>迅速传播的一个技术平台，使得每个人都成为潜在的信息提供者。发布一个RSS文件后，这个RSS Feed中包含的信息就能直接被其他站点调用，而且由于这些数据都是标准的XML格式，所以也能在其他的<a target=_blank href="/view/105503.htm">终端</a>和服务中使用，是一种描述和同步网站内容的格式。<sup>[1]</sup><a class="sup-anchor" name="ref_[1]_7031575">&nbsp;</a>
+RSS可以是以下三个解释的其中一个： <a target=_blank href="/subview/648797/15964587.htm">Really</a> Simple Syndication；RDF (Resource Description Framework) Site Summary； Rich Site Summary。但其实这三个解释都是指同一种Syndication的技术。</div><div class="para">RSS目前广泛用于网上新闻频道，<a target=_blank href="/view/560.htm">blog</a>和wiki，主要的版本有0.91, 1.0, 2.0。使用RSS订阅能更快地获取信息，网站提供RSS输出，有利于让用户获取网站内容的最新更新。网络用户可以在客户端借助于支持RSS的聚合工具软件，在不打开网站内容页面的情况下阅读支持RSS输出的网站内容。</div>
+</div>
+<div class="basic-info">
+<dl class="basicInfo-block basicInfo-left">
+<dt class="basicInfo-item name">中文名</dt>
+<dd class="basicInfo-item value">
+<a target=_blank href="/view/2521114.htm">简易信息聚合</a>
+</dd>
+<dt class="basicInfo-item name">外文名</dt>
+<dd class="basicInfo-item value">
+Really Simple Syndication等
+</dd>
+</dl><dl class="basicInfo-block basicInfo-right">
+<dt class="basicInfo-item name">外国语缩写</dt>
+<dd class="basicInfo-item value">
+RSS（也作<a target=_blank href="/view/70172.htm">文件扩展名</a>）
+</dd>
+<dt class="basicInfo-item name">支&nbsp;&nbsp;&nbsp;&nbsp;持</dt>
+<dd class="basicInfo-item value">
+各种互联网设备
+</dd>
+</dl><div style="clear:both;"></div>
+</div>
+<div class="lemmaWgt-lemmaCatalog">
+<div class="lemma-catalog">
+<h2 class="block-title">目录</h2>
+<div class="catalog-list column-4">
+<ol>
+<li class="level1">
+<span class="index">1</span>
+<span class="text"><a href="#1">本质</a></span>
+</li>
+<li class="level1">
+<span class="index">2</span>
+<span class="text"><a href="#2">版本</a></span>
+</li>
+<li class="level1">
+<span class="index">3</span>
+<span class="text"><a href="#3">特点</a></span>
+</li>
+<li class="level1">
+<span class="index">4</span>
+<span class="text"><a href="#4">起源</a></span>
+</li>
+<li class="level1">
+<span class="index">5</span>
+<span class="text"><a href="#5">历史</a></span>
+</li>
+<li class="level1">
+<span class="index">6</span>
+<span class="text"><a href="#6">发展</a></span>
+</li>
+</ol><ol><li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#6_1">总体</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#6_2">分支</a></span>
+</li>
+<li class="level1">
+<span class="index">7</span>
+<span class="text"><a href="#7">模块</a></span>
+</li>
+<li class="level1">
+<span class="index">8</span>
+<span class="text"><a href="#8">用途</a></span>
+</li>
+<li class="level1">
+<span class="index">9</span>
+<span class="text"><a href="#9">步骤</a></span>
+</li>
+<li class="level1">
+<span class="index">10</span>
+<span class="text"><a href="#10">阅读器</a></span>
+</li>
+</ol><ol><li class="level1">
+<span class="index">11</span>
+<span class="text"><a href="#11">文件</a></span>
+</li>
+<li class="level1">
+<span class="index">12</span>
+<span class="text"><a href="#12">优点</a></span>
+</li>
+<li class="level1">
+<span class="index">13</span>
+<span class="text"><a href="#13">营销</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#13_1">营销优点</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#13_2">营销缺点</a></span>
+</li>
+<li class="level1">
+<span class="index">14</span>
+<span class="text"><a href="#14">赢利模式</a></span>
+</li>
+</ol><ol><li class="level1">
+<span class="index">15</span>
+<span class="text"><a href="#15">语法</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#15_1">如何工作</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#15_2">实例</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#15_3">注释</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="#15_4">使用XML编写</a></span>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="anchor-list">
+<a name="1" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_1" class="lemma-anchor " ></a>
+<a name="本质" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">本质</span>
+</h2>
+<div class="para">就本质而言，RSS和<a target=_blank href="/view/21936.htm">Atom</a>是一种信息聚合的技术，都是为了提供一种更为方便、高效的互联网信息的发布和共享，用更少的时间分享更多的信息。同时RSS和Atom又是实现信息聚合的两种不同规范。1997年<a target=_blank href="/view/153922.htm">Netscape</a>（网景）公司开发了RSS，“推”技术的概念随之诞生。然而RSS的风行却是近两年的事，由于<a target=_blank href="/view/560.htm">Blog</a>技术的迅速普及和Useland、<a target=_blank href="/view/2391.htm">Yahoo</a>等大牌公司的支持，2003年RSS曾被吹捧成可以免除垃圾邮件干扰的替代产品，一时形成了新技术的某种垄断。这时<a target=_blank href="/view/105.htm">Google</a>为了打破这种垄断，支持了<a target=_blank href="/view/1937.htm">IBM</a>软件工程师SamRuby2003年研发的Atom技术，由于Google的加入，Atom迅速窜红。Useland公司的戴夫·温那(Dave Winner)也迅速将RSS升级到2.0版本，形成了两大阵营的对峙。但为了方便用户使用和市场实际的双重压力，两种标准有统一的可能，温那在(2010)3月表示RSS将与Atom合并。多数版本的阅读器都可以同时支持这两种标准。<sup>[2]</sup><a class="sup-anchor" name="ref_[2]_7031575">&nbsp;</a>
+</div>
+<div class="para">RSS/Atom源是基于XML的语义网内容,能够被客户端解析程序用做数据源。微格式是嵌入到网页中的语意网微内容。Web源包括RSS/Atom源和微格式源。RSS/Atom的标准化带来了众多软件和网站的广泛应用。扩展的RSS/Atom可用于专业领域。聚合供源与聚合消费器之间,采用&quot;服务器/客户机&quot;模式和标准的HTTP通讯。网站可以根据现有网页或者网站数据库生成RSS/Atom源,也可以考虑将多个外部RSS/Atom源聚合成新的RSS/Atom源。列表RSS/Atom源同时支持对客户端缓存的更新与删除操作。面向浏览器用户通报网站发布的RSS/Atom源,首选自动发现方式。微软提出的SSE协议,用于松散协作的两个网站之间交叉订阅对方的RSS/Atom源,服务于新条目和更新条目的双向、延时同步。<sup>[3]</sup><a class="sup-anchor" name="ref_[3]_7031575">&nbsp;</a>
+<a target=_blank href="/view/187386.htm">更多</a><a target=_blank href="/view/907814.htm">还原</a></div><div class="anchor-list">
+<a name="2" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_2" class="lemma-anchor " ></a>
+<a name="版本" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">版本</span>
+</h2>
+<div class="para">RSS规范的主要版本有0.91、1.0和2.0等。0.91版和1.0版完全不同，风格不同，制定标准的人也不同。0.91版和2.0版一脉相承。1.0版更接近<a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）标准。世界上大多数知名，虽有很多种不同的RSS，但都定型于两个重要的支干（RDF和2.*）。RDF或RSS 1.*的分支包括下列版本：</div>
+<ul class="custom_dot para-list list-paddingleft-1"><li class="list-dot list-dot-paddingleft"><div class="para">RSS 0.90原本属于美国网景公司的版本。这个RSS被称为<i><a target=_blank href="/view/328556.htm">RDF</a>Site Summary</i>，但其基础构图创建在初期的RDF规格上，以及和末版的RDF推荐标准不兼容。</div>
+</li><li class="list-dot list-dot-paddingleft"><div class="para">RSS 1.0是一个开放式的版本，由RSS-DEV工作团队再次创建为<i>RDF Site Summary</i>。RSS 1.0是一个像RSS 0.90的RDF形式，但是并没有完全的和他兼容，自从1.0基新闻网站都提供RSS订阅支持。</div>
+</li></ul><div class="anchor-list">
+<a name="3" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_3" class="lemma-anchor " ></a>
+<a name="特点" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">特点</span>
+</h2>
+<ol class="custom_cn para-list list-paddingleft-1"><li class="list-cn-1-1 list-cn-paddingleft-1"><div class="para">来源多样的个性化“<a target=_blank href="/view/823373.htm">聚合</a>”特性。</div>
+</li><li class="list-cn-1-2 list-cn-paddingleft-1"><div class="para">信息发布的时效、低成本特性。</div>
+</li><li class="list-cn-1-3 list-cn-paddingleft-1"><div class="para">无“<a target=_blank href="/view/8051.htm">垃圾</a>”信息、便利的本地内容管理特性。</div>
+</li></ol><div class="para"><a class="lemma-album layout-right nslog:10000206" title="RSS展示"  href="/picture/1644/7031575/346377/3bc6f7507f47c63a1138c270.html?fr=lemma&ct=cover" target="_blank"  style="width:222px;" nslog-type="10000206">
+<div class="album-wrap" style="width:220px;height:165px;">
+<img class="picture" alt="RSS展示" src="http://c.hiphotos.baidu.com/baike/s%3D220/sign=4d65285e1f30e924cba49b337c096e66/f7246b600c338744a1951a2a510fd9f9d72aa017.jpg" style="width:220px;height:165px;"/>
+</div>
+<div class="description">
+RSS展示
+<span class="number">(13张)</span>
+</div>
+<div class="albumBg">
+<div class="albumBgFir" style="width:214px;"></div>
+<div class="albumBgSec" style="width:208px;"></div>
+</div>
+</a>
+</div><div class="anchor-list">
+<a name="4" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_4" class="lemma-anchor " ></a>
+<a name="起源" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">起源</span>
+</h2>
+<div class="para">RSS实用的思想最早要追溯到<a target=_blank href="/view/28189.htm">1995年</a>，那时Ramanathan V. Guha和<a target=_blank href="/view/1023136.htm">苹果电脑公司</a>高级技术组的其他人员开发了测试内容框架（Meta Content Framework）。<sup>[2]</sup><a class="sup-anchor" name="ref_[2]_7031575">&nbsp;</a>
+</div>
+<div class="para"><a target=_blank href="/view/328556.htm">RDF</a>网页概述是最早版本的RSS，他最早于1999年3月在<a target=_blank href="/view/478896.htm">网景</a>公司由Guha创建使用。</div>
+<div class="para">1999年7月，网景公司的Dan Libby 开发了一个新的版本，于是就产生了 RSS 0.91。</div>
+<div class="para">主张网络自由的知名活动人士<a target=_blank href="/view/9986604.htm">亚伦·斯沃茨</a>星期五（2013年1月11日）被发现在纽约的公寓中自缢身亡，终年26岁。斯沃茨在孩童时期便开始接触电脑程式开发，他在14岁时参与编写RSS 1.0规格，他也曾参与社交新闻网站“<a target=_blank href="/view/1495272.htm">Reddit</a>”的早期开发。同为互联网组织“求进会”创始者之一的斯沃茨之后积极提倡网络自由，该组织反对网络审查。</div><div class="anchor-list">
+<a name="5" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_5" class="lemma-anchor " ></a>
+<a name="历史" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">历史</span>
+</h2>
+<div class="para">1997 年 - Dave Winer 开发出 scriptingNews。RSS 由此诞生。</div>
+<div class="para">1999 年 - Netscape 开发出 RSS 0.90 （由 scriptingNews 支持的）。这是带有一个 RDF header 的简单的 XML。</div>
+<div class="para">1999 年- Dave Winer 在 UserLand 公司开发出 scriptingNews 2.0b1 （包含了 Netscape 的 RSS 0.90 的特定）。</div>
+<div class="para">1999 年 - Netscape 开发出 RSS 0.91。在此版本中，他们删除了那个 RDF header，但是包含了大多数来自 scriptingNews 2.0b1 的特性。</div>
+<div class="para">1999 年 - UserLand 摆脱了 scriptingNews，而仅仅使用 RSS 0.91。</div>
+<div class="para">Netscape 停止了 RSS 的研发。</div>
+<div class="para">2000 年 - UserLand 发布了正式的 0.91 规范<sup>[4]</sup><a class="sup-anchor" name="ref_[4]_7031575">&nbsp;</a>
+。</div>
+<div class="para">2000 年 - 一个由 Rael Dornfest 领导的团队在 O&#39;Reilly 开发出 RSS 1.0。此格式使用了 RDF 和命名空间。此版本常被混淆为 0.91 的新版本，不过它是完全不依赖 RSS 0.91 的新格式。</div>
+<div class="para">2000 年 - Dave Winer 在 UserLand 公司开发出 RSS 0.92。</div>
+<div class="para">2002 年 - Dave Winer 在离开 Userland 之后开发出 RSS 2.0。</div>
+<div class="para">2003 年 - 正式的 RSS 2.0 规范发布。</div>
+<div class="para">2013年，1月11日，RSS规格的作者<a target=_blank href="/view/7854319.htm">Aaron Swartz</a>在纽约市自杀，终年26岁。</div>
+<div class="para">2014年，1月11日，RSS规格的作者Aaron Swartz逝世一周年。</div><div class="anchor-list">
+<a name="6" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_6" class="lemma-anchor " ></a>
+<a name="发展" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">发展</span>
+</h2>
+<div class="anchor-list">
+<a name="6_1" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_6_1" class="lemma-anchor " ></a>
+<a name="总体" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">总体</span>
+</h3>
+<div class="para">RSS是一种起源于<a target=_blank href="/view/478896.htm">网景</a>的推广技术，将用户订阅的内容传送给他们的通讯协同格式(Protocol)。</div>
+<div class="para">RSS这个缩写在英文中可以有几个源头，并被不同的技术团体做不同的解释。既可以是“Rich Site Summary”，或“RDF Site Summary”，也可以是“Really Simple Syndication”。</div>
+<div class="para">IE4刚刚推出来的时候有一个有趣的功能，那就是新闻频道。这个新闻频道的功能与Netscape推出的新闻频道是很相似的(当时Netscape还是市场上领先的浏览器)。为此Netscape定义了一套描述新闻频道的语言，这就是RSS，只不过Netscape自当时起每况愈下，所以最终也没有发布一个正式的RSS规范(只发布了一个0.9版本)。而<a target=_blank href="/view/2353.htm">微软</a>也在当时推出了支持自己<a target=_blank href="/view/703.htm">IE</a>的CDF(Channel Definition Format)数据规格，与RSS非常接近。微软试图用新闻频道的功能把“推”(Push)技术变成一个应用主流，并与Netscape抗衡。不过出乎预测的是，“推”技术自始至终没有找到合适的<a target=_blank href="/view/1391335.htm">商业模型</a>，而且伴随着其他各类网络特性的出现，也日益无法显现自身的优势。新闻频道在浏览器中的地位最终日暮西山，最后也在IE的后续版本中消失了。</div>
+<div class="para">新闻频道的确进入了低谷，但是RSS并没有被业界人士所抛弃。过去两年，<a target=_blank href="/view/1509.htm">博客</a>从一个专业群体开始，逐步成为了网络上最热门的新话题。而RSS成为了描述Blog主题和更新信息的最基本方法。于是RSS这项技术被著名Blogger/Geek戴夫·温那(Dave Winner)的公司UserLand所接手，继续开发新的版本，以适应新的网络应用需要。新的网络应用就是Blog，因为戴夫·温那的努力，RSS升级到了0.91版，然后达到了0.92版，随后在各种Blog工具中得到了应用，并被众多的专业新闻站点所支持。在广泛的应用过程中，众多的专业人士认识到需要<a target=_blank href="/view/8430567.htm">组织起来</a>，把RSS发展成为一个通用的规范，并进一步标准化。一个联合小组根据<a target=_blank href="/view/7913.htm">W3C</a>新一代的<a target=_blank href="/view/1967.htm">语义网</a>技术RDF对RSS进行了重新定义，发布了RSS 1.0，并把RSS定义为“RDF Site Summary”。这项工作并没有与戴夫·温那进行有效的沟通，而戴夫则坚持在自己设想的方向上进一步开发RSS的后续版本，也并不承认RSS 1.0的有效性。RSS由此开始分化形成了RSS 0.9x/2.0和RSS 1.0两个阵营，也由此引起了在专业人群中的广泛争论。</div>
+<div class="para">因为争论的存在，一直到今天，RSS 1.0还没有成为<a target=_blank href="/view/8087.htm">标准化</a>组织的真正标准。而戴夫·温那却在2002年9月独自把RSS升级到了2.0版本，其中的定义完全是全新的模式，并没有任何RSS 1.0的影子。这引发了网络上进一步争议，究竟让一个越来越普及的数据格式成为一个开放的标准，还是被一家公司所定义和控制，成为了争议的焦点。戴夫·温那并没有为自己辩解，他的观点是RSS还需要进一步发展，需要专业人士更明确的定义，不过恐怕这种轻描淡写不能消除人们对RSS“被一家商业公司独占”的担心。</div><div class="anchor-list">
+<a name="6_2" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_6_2" class="lemma-anchor " ></a>
+<a name="分支" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">分支</span>
+</h3>
+<div class="para">随着越来越多的站点对RSS的支持，RSS已经成为成功的<a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）应用。RSS搭建了信息迅速传播的一个技术平台，使得每个人都成为潜在的信息提供者。</div>
+<div class="para">RSS 2.*的分支包括下列版本：</div>
+<ul class="custom_dot para-list list-paddingleft-1"><li class="list-dot list-dot-paddingleft"><div class="para">RSS 0.91是一个精简的RSS形式，由美国网景公司所发布，同时也是原创的排行第一的版本编号，由Dave Winer从Userland软件所制作。网景公司的版本被称为<i>Rich Site Summary</i>； 这个是不久前（1999 年）的RDF格式，但是相对而言比较不方便使用。</div>
+</li><li class="list-dot list-dot-paddingleft"><div class="para">RSS 0.92通过0.94被扩大为RSS 0.91版本，更容易与其他兼容以及和Winer的RSS 0.91版本，但仍然和RSS 0.90不兼容。在所有的Userland RSS 0.9x规格里，RSS不再只是个缩写。</div>
+</li><li class="list-dot list-dot-paddingleft"><div class="para">RSS 2.0.1是国内版本编号2.0。 RSS 2.0.1虽被声称冻结，但是仍是一个网页然可以快速下载，之后再声称没有改变版本编号。 RSS现今代表着<b>简易供稿系统</b>。主要的改变在这个版本里使用伸的机制。</div>
+</li></ul><div class="para">对大部分而言，和较早的版本比较起来（除了无兼容性的RDF语法在0.90），较新的版本接触到各个分支时为逆兼容性，以及大部分的版本严格上来说包括以延伸机构使用XML Namespaces来证明，另一方面正好（在 2.* 分支）或通过RDF（在1.* 分支），大部分的企业联合组织化软件都有支持这两种分支。<sup>[5]</sup><a class="sup-anchor" name="ref_[5]_7031575">&nbsp;</a>
+</div><div class="anchor-list">
+<a name="7" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_7" class="lemma-anchor " ></a>
+<a name="模块" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">模块</span>
+</h2>
+<div class="para">RSS模块的主要目标是延伸基本的<a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）概要来获得更<a class="lemma-album layout-right nslog:10000206" title="手机RSS订阅"  href="/picture/1644/7031575/346379/d57e9994435aa841d31b705d.html?fr=lemma&ct=cover" target="_blank"  style="width:134px;" nslog-type="10000206">
+<div class="album-wrap" style="width:132px;height:220px;">
+<img class="picture" alt="手机RSS订阅" src="http://h.hiphotos.baidu.com/baike/s%3D220/sign=7777a399a7efce1bee2bcfc89f50f3e8/d0c8a786c9177f3e80911c6270cf3bc79f3d563c.jpg" style="width:132px;height:220px;"/>
+</div>
+<div class="description">
+手机RSS订阅
+<span class="number">(4张)</span>
+</div>
+<div class="albumBg">
+<div class="albumBgFir" style="width:126px;"></div>
+<div class="albumBgSec" style="width:120px;"></div>
+</div>
+</a>
+健全的内容汇集。此种传承允许更多的变化却又能够符合标准，在不用更改RSS核心之下运行。为了达成此项延伸，严密规范的字汇（在RSS中为“模块”；XML中为“概要”）通过XML namesspace命名各种概念之中的概念。</div><div class="anchor-list">
+<a name="8" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_8" class="lemma-anchor " ></a>
+<a name="用途" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">用途</span>
+</h2>
+<div class="para">1、订阅<a target=_blank href="/view/560.htm">BLOG</a></div>
+<div class="para">可以订阅工作中所需的技术文章，也可以订阅与你有共同爱好的作<div class="lemma-picture text-pic layout-right" style="width:220px; float: right;">
+<a class="image-link" nslog-type="9317" 
+			href="/picture/1644/7031575/0/b25aae51dae35247377abeff.html?fr=lemma&ct=single" target="_blank"
+		title="订阅新闻" style="width:220px;height:220px;">
+<img  class="lazy-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF9fX1AAAA0VQI3QAAAAxJREFUeNpiYAAIMAAAAgABT21Z4QAAAABJRU5ErkJggg==" data-src="http://c.hiphotos.baidu.com/baike/s%3D220/sign=985b194e728b4710ca2ffacef3cfc3b2/faedab64034f78f0d5cc7b9c79310a55b2191c9d.jpg"  alt="订阅新闻" style="width:220px;height:220px;"/>
+</a>
+<span class="description">
+订阅新闻
+</span>
+</div>者的<a target=_blank href="/view/560.htm">Blog</a>，总之，对什么感兴趣就可以订什么。</div>
+<div class="para">2、订阅新闻</div>
+<div class="para">无论是奇闻怪事、<a target=_blank href="/view/5249.htm">明星</a>消息、<a target=_blank href="/view/6121354.htm">体坛</a>风云，只要你想知道的，都可以订阅。你再也不用一个网站一个网站，一个网页一个<a target=_blank href="/view/828.htm">网页</a>去逛了。只要这将你需要的内容订阅在一个<a target=_blank href="/view/721.htm">RSS阅读器</a>中，这些内容就会自动出现你的阅读器里，你也不必为了一个急切想知道的消息而不断的刷新网页，因为一旦有了更新，RSS阅读器就会自己通知你。</div><div class="anchor-list">
+<a name="9" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_9" class="lemma-anchor " ></a>
+<a name="步骤" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">步骤</span>
+</h2>
+<div class="para">其实订阅RSS新闻内容要先安装一个RSS阅读器。然后将提供RSS服务的网站加入到RSS阅读器的频道即可。具体如下：</div>
+<ol class="custom_cn  para-list list-paddingleft-1"><li class="list-cn-1-1 list-cn-paddingleft-1"><div class="para">选择有价值的RSS信息源（称作<a target=_blank href="/view/1892290.htm">RSS源</a>）。</div>
+</li><li class="list-cn-1-2 list-cn-paddingleft-1"><div class="para">启动<a target=_blank href="/view/721.htm">RSS阅读器</a>，将RSS源添加到自己的RSS阅读器或者在线RSS中。</div>
+</li><li class="list-cn-1-3 list-cn-paddingleft-1"><div class="para">接收并获取定制的RSS信息。</div>
+</li><li class="list-cn-1-4 list-cn-paddingleft-1"><div class="para">取消定制的RSS信息。</div>
+</li></ol><div class="anchor-list">
+<a name="10" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_10" class="lemma-anchor " ></a>
+<a name="阅读器" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">阅读器</span>
+</h2>
+<div class="para"><a target=_blank href="/view/721.htm">RSS阅读器</a>基本可以分为三类。</div>
+<div class="para">第一类大多数阅读器是运行在计算机桌面上的<a target=_blank href="/view/330120.htm">应用程序</a>，通过所订阅网站的新闻供应，可自动、定时地更新新闻标题。在该类阅读器中，有<a target=_blank href="/item/Awasu">Awasu</a>、FeedDemon和RSSReader这三款流行的<a target=_blank href="/view/1647906.htm">阅读器</a>，都提供免费试用版和付费高级版。<a class="lemma-album layout-right nslog:10000206" title="国内外RSS阅读器"  href="/picture/1644/7031575/346378/566d0fdf96e75f4c632798c8.html?fr=lemma&ct=cover" target="_blank"  style="width:133px;" nslog-type="10000206">
+<div class="album-wrap" style="width:131px;height:220px;">
+<img class="picture" alt="国内外RSS阅读器" src="http://h.hiphotos.baidu.com/baike/s%3D220/sign=0af133927b899e517c8e3d1672a7d990/8ad4b31c8701a18bb8ddf2209e2f07082838feaf.jpg" style="width:131px;height:220px;"/>
+</div>
+<div class="description">
+国内外RSS阅读器
+<span class="number">(5张)</span>
+</div>
+<div class="albumBg">
+<div class="albumBgFir" style="width:125px;"></div>
+<div class="albumBgSec" style="width:119px;"></div>
+</div>
+</a>
+</div>
+<div class="para">第二类新闻阅读器通常是内嵌于已在计算机中运行的<a target=_blank href="/view/330120.htm">应用程序</a>中。例如，NewsGator内嵌在<a target=_blank href="/view/2353.htm">微软</a>的Outlook中，所订阅的<a target=_blank href="/view/3390492.htm">新闻标题</a>位于<a target=_blank href="/view/51490.htm">Outlook</a>的收件箱文件夹中。另外，Pluck内嵌在Internet Explorer<a target=_blank href="/view/7718.htm">浏览器</a>中！</div>
+<div class="para">第三类则是在线的WEB RSS阅读器，其优势在于不需要安装任何软件就可以获得RSS阅读的便利，并且可以保存阅读状态，推荐和收藏自己感兴趣的文章。提供此<a target=_blank href="/view/133203.htm">服务</a>的有两类网站，一种是专门提供RSS阅读器的网站，例如国外的<a target=_blank href="/view/10289758.htm">feedly</a>，国内的有道、<a target=_blank href="/view/1269460.htm">鲜果</a>、<a target=_blank href="/view/367040.htm">抓虾</a>；另一种是提供个性化首页的网站，例如国外的netvibes、pageflakes，国内的<a target=_blank href="/view/1344160.htm">雅蛙</a>、阔地。</div><div class="anchor-list">
+<a name="11" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_11" class="lemma-anchor " ></a>
+<a name="文件" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">文件</span>
+</h2>
+<div class="para">一个RSS文件就是一段规范的<a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）数据，该文件一般以rss，xml或者rdf作为后缀。</div><div class="anchor-list">
+<a name="12" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_12" class="lemma-anchor " ></a>
+<a name="优点" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">优点</span>
+</h2>
+<ol class="custom_cn  para-list list-paddingleft-1"><li class="list-cn-1-1 list-cn-paddingleft-1"><div class="para">您可以看到没有广告和图片的标题或文章的概要阅读，这样你不必阅读全文即可知文章讲的一个意思是什么，为您节省时间。</div>
+</li><li class="list-cn-1-2 list-cn-paddingleft-1"><div class="para">RSS阅读器会自动更新你定制的网站内容，保持新闻的及时性。要订阅新闻，可以直接点击seo博客上的XML图标，或到专栏作者点击订阅文章，即完成订阅，每天你就可以打开RSS阅读最新文章，而不必打开网页了。</div>
+</li><li class="list-cn-1-3 list-cn-paddingleft-1"><div class="para">使用RSS可以根据你自已的喜好定制多个RSS提要，这样做的好处是从多个新闻来源搜集，然后整合新闻到单个数据流当中。</div>
+</li><li class="list-cn-1-4 list-cn-paddingleft-1"><div class="para">RSS提交给RSS网站后，不但容易带来网站流量，而且能加快<a target=_blank href="/view/3192508.htm">搜索引擎收录</a>与信息的推广。</div>
+</li></ol><div class="anchor-list">
+<a name="13" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_13" class="lemma-anchor " ></a>
+<a name="营销" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">营销</span>
+</h2>
+<div class="para">RSS营销属于<a target=_blank href="/view/5422.htm">网络营销</a>中的一种模式，除具有网<div class="lemma-picture text-pic layout-right" style="width:250px; float: right;">
+<a class="image-link" nslog-type="9317" 
+			href="/picture/1644/7031575/0/f958981815410feb4aedbcb8.html?fr=lemma&ct=single" target="_blank"
+		title="Postrank" style="width:250px;height:110px;">
+<img  class="lazy-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF9fX1AAAA0VQI3QAAAAxJREFUeNpiYAAIMAAAAgABT21Z4QAAAABJRU5ErkJggg==" data-src="http://d.hiphotos.baidu.com/baike/s%3D250/sign=51b0924fb912c8fcb0f3f1c8cc0292b4/024f78f0f736afc35a0adf0ab319ebc4b745125e.jpg"  alt="Postrank" style="width:250px;height:110px;"/>
+</a>
+<span class="description">
+Postrank
+</span>
+</div>络营销的特点外，还具有由于采用RSS 技术而产生的新特点。且RSS 营销与<a target=_blank href="/view/2438258.htm">邮件列表营销</a>也有许多相似之处，它们之间的根本区别是向用户传递有价值信息的方式不同。因此，下面所述的RSS营销的优缺点主要是从RSS技术上，以及与邮件列表营销相比较而言的。</div><div class="anchor-list">
+<a name="13_1" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_13_1" class="lemma-anchor " ></a>
+<a name="营销优点" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">营销优点</span>
+</h3>
+<div class="para">(1)多样性、个性化信息的聚合。RSS是一种基于<a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）标准，是一种互联网上被广泛采用的内容包装和投递协议，任何内容源都可以采用这种方式来发布，包括专业新闻、网络营销、企业、甚至个人等站点。若在用户端安装了RSS阅读器软件，用户就可以按照喜好、有选择性地将感兴趣的内容来源聚合到该软件的界面中，为用户提供多来源信息的“一站式”服务。</div>
+<div class="para">(2)信息发布的时效强、成本低廉。由于用户端RSS阅读器中的信息是随着订阅源信息的更新而及时更新的，所以极大地提高了信息的时效性和价值。此外，服务器端信息的RSS包装在技术实现上极为简单，而且是一次性的工作，使长期的信息发布边际成本几乎降为零，这完全是传统的<a target=_blank href="/view/1524.htm">电子邮件</a>、互联网浏览等发布方式所无法比拟的。</div>
+<div class="para">(3)无“垃圾”信息和信息量过大的问题。RSS阅读器中的信息是完全由用户订阅的，对于用户没有订阅的内容，以及弹出式广告、<a target=_blank href="/view/1522.htm">垃圾邮件</a>等无关信息则会被完全屏蔽掉。因而不会有令人烦恼的“噪音”干扰。此外，在用户端获取信息并不需要专用的类似<a target=_blank href="/view/8622.htm">电子邮箱</a>那样的“RSS 信箱”来存储，因而不必担心信息内容的过大问题。</div>
+<div class="para">(4)没有病毒邮件的影响。在RSS<a target=_blank href="/view/1647906.htm">阅读器</a>中保存的只是所订阅信息的摘要，要查看其详细内容与到网站上通过<a target=_blank href="/view/7718.htm">浏览器</a>阅读没有太大差异，因而不必担心<a target=_blank href="/view/7600014.htm">病毒邮件</a>的危害。</div>
+<div class="para">(5)本地内容管理便利。对下载到RSS阅读器里订阅内容，用户可以进行离线阅读、存档保留、搜索排序及相关分类等多种管理操作，使阅读器软件不仅是一个“阅读”器，而且还是一个用户随身的“资料库”。</div><div class="anchor-list">
+<a name="13_2" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_13_2" class="lemma-anchor " ></a>
+<a name="营销缺点" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">营销缺点</span>
+</h3>
+<div class="para">(1)RSS的应用远不如<a target=_blank href="/view/1524.htm">电子邮件</a>普及，从而限制了RSS订阅的应用范围。</div>
+<div class="para">(2)若长期不接收RSS信息，对于过期的信息则无法浏览。这是由于没有专门的服务器为每个用户保存信息，如果用户不及时接收，信息则过时不候。</div>
+<div class="para">(3)难以评估RSS营销效果。因为在RSS中不能添加任何的脚本语言，使统计订阅人数比较困难，只能通过一些特别的技术方法来分析RSS的下载次数多少来估计订户数量，因而对于RSS营销效果无法准确地评价。</div>
+<div class="para">(4)难以实现个性化服务。电子邮件的用户个性化技术已经非常成熟了，但对于通过RSS获取信息的方式而言，还没有得到很好地解决。</div>
+<div class="para">总之，RSS 营销与<a target=_blank href="/view/2438258.htm">邮件列表营销</a>相比具有很大的优势，特别是克服了邮件列表营销中常出现的<a target=_blank href="/view/1522.htm">垃圾邮件</a>、病毒、信息即时性差等致命缺点，因而将有力地促进RSS营销的推广应用。所以，网络营销者一定要加以足够地重视，以增强自己的竞争优势。当然RSS<a target=_blank href="/view/1111902.htm">营销模式</a>还有很多的问题要面对，对于如何有效地利用更需深入地研究探讨。</div><div class="anchor-list">
+<a name="14" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_14" class="lemma-anchor " ></a>
+<a name="赢利模式" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">赢利模式</span>
+</h2>
+<div class="para">一是投递信息产生广告收入，比如一个用户用RSS订阅了高尔夫的内容，那么每条信息下面都会精准地出现一条高尔夫相关产品的广告，从高尔夫球杆到会员卡。</div>
+<div class="para">二是做个人门户，让所有的博客都变成这个门户的记者和编辑，利用流量收取广告费。再强调，我们不是单纯做RSS工具本身，因为工具只是初级阶段，是卖不了多少钱的，而是要通过工具聚拢人气，做成个人门户。</div>
+<div class="para">三是多平台统一，致力于开发和建设多渠道、多设备的整合信息服务平台，为用户提供随时随地、任意设备、个性化的信息服务。用户可以借助<a target=_blank href="/view/13621.htm">PC</a>、<a target=_blank href="/view/1455.htm">手机</a>、PDA、数字电视等多种终端，通过“<a target=_blank href="/view/1599718.htm">看天下</a>”“个人<a target=_blank href="/view/8929.htm">门户</a>”服务，实现个性化订制，从而获取并管理互联网上的最新资讯。</div><div class="anchor-list">
+<a name="15" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_15" class="lemma-anchor " ></a>
+<a name="语法" class="lemma-anchor " ></a>
+</div><h2 class="para-title level-2">
+<span class="title-text">语法</span>
+</h2>
+<div class="para">它用于在网站间分享信息。</div>
+<div class="para">使用 RSS，您在名为聚合器的公司注册您的内容。</div><div class="anchor-list">
+<a name="15_1" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_15_1" class="lemma-anchor " ></a>
+<a name="如何工作" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">如何工作</span>
+</h3>
+<div class="para">步骤之一是，创建一个 RSS 文档，然后使用 .xml 后缀来保存它。然后把此文件上传到您的网站。接下来，通过一个 RSS 聚合器来注册。每天，聚合器都会到被注册的网站搜索 RSS 文档，校验其链接，并显示有关 feed 的信息，这样客户就能够链接到使他们产生兴趣的文档。</div><div class="anchor-list">
+<a name="15_2" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_15_2" class="lemma-anchor " ></a>
+<a name="实例" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">实例</span>
+</h3>
+<pre class="brush: xml">&lt;rssversion=&quot;2.0&quot;&gt;
+
+&lt;channel&gt;
+
+&lt;title&gt;网站标题&lt;/title&gt;
+
+&lt;link&gt;网站首页地址&lt;/link&gt;
+
+&lt;description&gt;描述&lt;/description&gt;
+
+&lt;copyright&gt;授权信息&lt;/copyright&gt;
+
+&lt;language&gt;使用的语言（zh-cn表示简体中文）&lt;/language&gt;
+
+&lt;pubDate&gt;发布的时间&lt;/pubDate&gt;
+
+&lt;lastBuildDate&gt;最后更新的时间&lt;/lastBuildDate&gt;
+
+&lt;generator&gt;生成器&lt;/generator&gt;
+
+&lt;item&gt;
+
+&lt;title&gt;标题&lt;/title&gt;
+
+&lt;link&gt;链接地址&lt;/link&gt;
+
+&lt;description&gt;内容简要描述&lt;/description&gt;
+
+&lt;pubDate&gt;发布时间&lt;/pubDate&gt;
+
+&lt;category&gt;所属目录&lt;/category&gt;
+
+&lt;author&gt;作者&lt;/author&gt;
+
+&lt;/item&gt;
+
+&lt;/channel&gt;
+
+&lt;/rss&gt;
+</pre><div class="para"><sup>[6]</sup><a class="sup-anchor" name="ref_[6]_7031575">&nbsp;</a>
+</div><div class="anchor-list">
+<a name="15_3" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_15_3" class="lemma-anchor " ></a>
+<a name="注释" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">注释</span>
+</h3>
+<div class="para">在 RSS 中书写注释的语法与<a target=_blank href="/view/692.htm">HTML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集）的语法类似：</div>
+<pre class="brush: xml">&lt;!--百度百科--&gt;
+</pre><div class="anchor-list">
+<a name="15_4" class="lemma-anchor para-title" ></a>
+<a name="sub7031575_15_4" class="lemma-anchor " ></a>
+<a name="使用XML编写" class="lemma-anchor " ></a>
+</div><h3 class="para-title level-3">
+<span class="title-text">使用XML编写</span>
+</h3>
+<div class="para">因为 RSS 也是 <a target=_blank href="/view/63.htm">XML</a>（<a target=_blank href="/view/5286041.htm">标准通用标记语言</a>的子集），请记住：</div>
+<div class="para">所有的元素必须拥有关闭标签</div>
+<div class="para">元素对大小写敏感</div>
+<div class="para">元素必需被正确地嵌套</div>
+<div class="para">属性值必须带引号</div>
+<div class="para"><sup>[7]</sup><a class="sup-anchor" name="ref_[7]_7031575">&nbsp;</a>
+</div>
+<div class="anchor-list">
+<a name="a" class="lemma-anchor a" ></a>
+</div><div class="album-list">
+<div class="header">
+<span class="title">词条图册</span>
+<a class="more-link" href="/album/1644/7031575?fr=lemma" target="_blank" nslog-type="10000204">更多图册<em></em></a>
+</div>
+<div class="scroller">
+<div class="list">
+</div>
+</div>
+<div class="footer">
+</div>
+</div>
+<div class="rs-container-foot">
+<a name="rs-1"></a>
+<a name="rs_7031575_5829" class="anchor-2"></a>
+<div id="rs-container-7031575-5829" class="rslazy rs-container" lazy-init="lemmars.tableAction(baidu.g('rs-7031575-5829'))"></div>
+</div><script type="text/javascript">
+        window.rsInsertData = window['rsInsertData'] || [];
+        var rsdataList = {"foot":[{"fentryTableId":5829,"fentryTableName":"WEB\u6280\u672f","fentryTableType":0,"entryId":2320465,"templateId":789,"entryTitle":"\u7f51\u9875\u7f16\u7a0b","isManual":0,"isExpand":1}],"top":[]};
+
+        if (rsdataList.top || rsdataList.foot) {
+            rsInsertData.push([7031575, rsdataList]);
+        }
+    </script>
+<dl class="lemma-reference collapse nslog-area log-set-param" data-nslog-type="2" log-set-param="ext_reference">
+<dt class="reference-title">参考资料<em class="toggle"></em></dt>
+<dd class="reference-list-wrap">
+<ul class="reference-list">
+<li class="reference-item " id="reference-[1]-7031575-wrap">
+<span class="index">1.</span>
+<a class="gotop anchor"  name="refIndex_1_7031575" id="refIndex_1_7031575" title="向上跳转" href="#ref_[1]_7031575">&nbsp;&nbsp;</a>
+<span>易晓阳</span><span class="text">．图书馆学研究</span><span>：广东省科技图书馆</span><span>，2006年</span><span>：第8期 RSS：含义、本征与应用</span></li><li class="reference-item " id="reference-[2]-7031575-wrap">
+<span class="index">2.</span>
+<a class="gotop anchor"  name="refIndex_2_7031575" id="refIndex_2_7031575" title="向上跳转" href="#ref_[2]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/01ba3UuUax_RHaJSRwal4ZoEmy0TeNrcIJpZcd8niVTnmOcT7I5dyE_ApnQIzgDrkvF2HWcdZKCyt6Tsv5J8HfiUy6muR2mFOcgL_ZQSDPwNueMf7iEUy1GyZVn0GZU8_fA" target="_blank" class="text">RSS能不能活下去，关键在内容提供者<span class="linkout">&nbsp;</span></a>
+<span class="site">．搜我们</span><span>．2013-07-11</span><span>&#91;引用日期2013-07-11&#93;</span></li><li class="reference-item " id="reference-[3]-7031575-wrap">
+<span class="index">3.</span>
+<a class="gotop anchor"  name="refIndex_3_7031575" id="refIndex_3_7031575" title="向上跳转" href="#ref_[3]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/8905-E49rPhrhPn0RZHDOhCpvi0yCPFBpPEumVUb1zOl57m-AnQTkVIpI5QlP1wUhGeXtbnJ3kLNnLWotcpPwcTbNAE5PrG4_4Kx1ECC_gxCDWR7fNkDwt2GzGHYoFCurAYSwyBimfhfbYaLFHU2jhMRLgcpSHn3AIRUz8smaaJJ614aaFMpNfQTVFvtu9R0JEY8QslPm-7O1YWKEMz36hvLEKupOwpqE5AWEpxeSwZ44Tm_htsgPSAP9M0LrrIHg08YCoVLxu6xRuEvUu4-2NdZKt5vyfI0yDWeCbA49QgSgcU4g_TL43VvgqpssPNQ3MY24cnS6Tl0jt14G4pr1NbnN-QTKoGn0oW3svJFstCcCXpWmJ3zdQI3VCDtrfDuzEW8J5VT866KmbKCYt6v5HYmD13Lob5h1i5HESv7HcN_s8GJ7XAjq9C2TS8cVM_45CB_XeccAujauvXQcOlCi6wZBDIBw6uoKL5lgIFldyYZJ__93oqoPqBb1HlozKZzraHUtrlAmbHXtsfFJlwPHduVJfN9iSwkNw" target="_blank" class="text">Web源与内容聚合:RSS/Atom的扩展、生成、发布、发现与共享<span class="linkout">&nbsp;</span></a>
+<span class="site">．中国知网</span><span>．2009-06</span><span>&#91;引用日期2014-12-5&#93;</span></li><li class="reference-item " id="reference-[4]-7031575-wrap">
+<span class="index">4.</span>
+<a class="gotop anchor"  name="refIndex_4_7031575" id="refIndex_4_7031575" title="向上跳转" href="#ref_[4]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/d789_ycs9dOj5WUtA5cxT5BxgZyRxzM3MzwVbwKT4lGpJ7Kc9L-JvrOEtSZyJHAsQGd3Ih3QwYG99Lu3mSQSfxr-v5E" target="_blank" class="text">什么是rss<span class="linkout">&nbsp;</span></a>
+<span class="site">．中关村在线</span><span>&#91;引用日期2013-02-10&#93;</span></li><li class="reference-item " id="reference-[5]-7031575-wrap">
+<span class="index">5.</span>
+<a class="gotop anchor"  name="refIndex_5_7031575" id="refIndex_5_7031575" title="向上跳转" href="#ref_[5]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/6540N-LmCsWN5kOH7ptpNaCg-tyl2DEw6Vz3WrzwAZ7mHlg_15HCoLlGMLcgS0Kn5Fq2gUT9lfYtWS0ndai9OPebn8OvYe-uK80RsSRAcriRhw" target="_blank" class="text"> The application/rss+xml<span class="linkout">&nbsp;</span></a>
+<span class="site">．Media Type. Network Working Group</span><span>．2006-5-22 </span><span>&#91;引用日期2013-06-21&#93;</span></li><li class="reference-item " id="reference-[6]-7031575-wrap">
+<span class="index">6.</span>
+<a class="gotop anchor"  name="refIndex_6_7031575" id="refIndex_6_7031575" title="向上跳转" href="#ref_[6]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/7edcXVS6t7ELgN0kUn-yU0RfYCupXbyAl-MJmI9lZZI1ePzcw7gHK1NbO2rEeTOiYO7y5bRfB6zQGbIGc1dZLoCM7Qcjdso" target="_blank" class="text">成都装修网启用RSS订阅和查看页面rss.xml<span class="linkout">&nbsp;</span></a>
+<span class="site">．成都装修网</span><span>&#91;引用日期2013-04-18&#93;</span></li><li class="reference-item " id="reference-[7]-7031575-wrap">
+<span class="index">7.</span>
+<a class="gotop anchor"  name="refIndex_7_7031575" id="refIndex_7_7031575" title="向上跳转" href="#ref_[7]_7031575">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="http://baike.baidu.com/redirect/55480gYsE8BbimtEYMeXeVdWMIuiFcPEc87XTKcN0UiUCnTxOUbtjHAAOSuIz7_ybTLPCa6PRsPzT6jYMy-8fsJq6eo5oFeuVWE" target="_blank" class="text">rss<span class="linkout">&nbsp;</span></a>
+<span class="site">．w3c</span><span>&#91;引用日期2012-11-1&#93;</span></li></ul>
+</dd>
+</dl>
+<div id="open-tag">
+<div class="open-tag-title">词条标签：</div>
+<dd id="open-tag-item">
+<span class="taglist">
+<a target="_blank" href="/wikitag/taglist?tagId=68031">中国电子学会</a>
+</span>
+，<span class="taglist">
+计算机术语
+</span>
+，<span class="taglist">
+网站
+</span>
+，<span class="taglist">
+科技
+</span>
+，<span class="taglist">
+互联网
+</span>
+</dd>
+<div class="open-tag-collapse" id="open-tag-collapse"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="side-content">
+<div class="summary-pic">
+<a href="/picture/1644/7031575/0/500fd9f9d72a60591a55c55d2834349b033bba2b.html?fr=lemma&amp;ct=single" target="_blank">
+<img src="http://h.hiphotos.baidu.com/baike/w%3D268/sign=b56b725062d0f703e6b292da30fb5148/500fd9f9d72a60591a55c55d2834349b033bba2b.jpg" />
+<button class="picAlbumBtn"><em></em><span>图集</span></button>
+<div>rss图册</div>
+</a>
+</div>
+<div class="lemmaWgt-promotion-vbaike">
+<div class="promotion_title">V百科<a href="/vbaike" target="_blank">往期回顾</a></div>
+<div class="promotion_viewport">
+<dl>
+</dl>
+<div class="promotion_viewport_pager"></div>
+</div>
+</div><div class="lemmaWgt-promotion-rightPreciseAd" data-lemmaId="24470" data-lemmaTitle="rss"></div><a name="zhixinWrap" class="qnAnchor"></a>
+<div class="side-box zhixin-box" id="zhixinWrap" data-source="bdg" data-newLemmaId="24470">
+<div class="zhixin-group js-group">
+<h6 class="js-cardTitle">
+<span>其他人还看</span>
+</h6>
+<div class="zhixin-fixBtn js-fixBtn">
+<div class="openFix" title="若推荐内容有误，请点击纠错进行反馈">纠错</div>
+<div class="closeFix">关闭纠错</div>
+</div>
+<div class="zhixin-list zhixin-list-3">
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/721","targetId":"97475"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/721" target="_blank">
+<img width="72" height="72" src="http://d.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=56975fe581cb39dbc1953416b62b3816/3b292df5e0fe99253762525f34a85edf8db17156.jpg" alt="rss阅读器" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/721" target="_blank" title="rss阅读器">rss阅读器</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="97475">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/159832","targetId":"2885849"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/159832" target="_blank">
+<img width="72" height="72" src="http://g.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=a4199db0b27eca8012506aa7f71ea6ef/7af40ad162d9f2d341241f7cabec8a136327cc6f.jpg" alt="可扩展标记语言" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/159832" target="_blank" title="可扩展标记语言">可扩展标记语言</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2885849">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/733","targetId":"97695"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/733" target="_blank">
+<img width="72" height="72" src="http://d.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=f1eba102e1fe9925cb593a1052956fed/023b5bb5c9ea15cefd1159ceb7003af33b87b27e.jpg" alt="web2.0" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/733" target="_blank" title="web2.0">web2.0</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="97695">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/736401","targetId":"663114"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/736401" target="_blank">
+<img width="72" height="72" src="http://g.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=970350d839c79f3d8fb4b770dc9cfc23/203fb80e7bec54e768ef0f39bb389b504fc26a91.jpg" alt="RSS订阅" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/736401" target="_blank" title="RSS订阅">RSS订阅</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="663114">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/subview/8258/5896174","targetId":"10242"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/subview/8258/5896174" target="_blank">
+<img width="72" height="72" src="http://h.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=5332a5e3830a19d8cb56d74555c7b3b9/64380cd7912397dd3ec964565a82b2b7d0a28734.jpg" alt="SNS" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/subview/8258/5896174" target="_blank" title="SNS">SNS</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="10242">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/132241","targetId":"2385673"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/132241" target="_blank">
+<img width="72" height="72" src="http://a.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C0/sign=25206465aa51f3dec3e7ea24f2d3c12d/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg" alt="二维码" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/132241" target="_blank" title="二维码">二维码</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2385673">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/1047","targetId":"102990"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/1047" target="_blank">
+<img width="72" height="72" src="http://g.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=54e01ac5bc12c8fcb4a6a58d9a3ea377/4ec2d5628535e5ddc17acd3a73c6a7efcf1b6284.jpg" alt="seo" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/1047" target="_blank" title="seo">seo</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="102990">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/view/9986604","targetId":"4027108"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/view/9986604" target="_blank">
+<img width="72" height="72" src="http://h.hiphotos.baidu.com/baike/whfpf%3D120%2C120%2C50/sign=2e4d439155fbb2fb347e0b5229771196/4afbfbedab64034f0f5389caafc379310b551d5b.jpg" alt="亚伦·斯沃茨" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/view/9986604" target="_blank" title="亚伦·斯沃茨">亚伦·斯沃茨</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="4027108">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params='{"source":"bdg","url":"http://baike.baidu.com/subview/8258/5896175","targetId":"5166735"}'>
+<div class="portraitbox">
+<a href="http://baike.baidu.com/subview/8258/5896175" target="_blank">
+<img width="72" height="72" src="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/zhixin/img/cityzhixinemptyimg_1a62423.png" alt="SNS" />
+</a>
+</div>
+<p class="item-title js-name"><a href="http://baike.baidu.com/subview/8258/5896175" target="_blank" title="SNS">SNS</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="5166735">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<form id="zhixinErrorForm" class="hidden" action="http://f3.baidu.com/index.php/feedback/zx/baikeJC" target="zhixinSubErr" method="post">
+<input class="js-url" name="fb_html_url" type="hidden" />
+<input class="js-query" name="fb_query" type="hidden" />
+<input class="js-title" name="fb_card_title" type="hidden" />
+<input class="js-content" name="fb_content" type="hidden" />
+<input class="js-souceId"name="fb_source_id" type="hidden" />
+</form>
+<iframe id="zhixinSubErr" name="zhixinSubErr" style="display:none;" frameborder="0"></iframe>
+<div class="lemmaWgt-promotion-slide">
+<div class="promotion_viewport">
+<dl>
+</dl>
+<div class="promotion_viewport_pager"></div>
+</div>
+</div><div id="side-auth">
+<div id="authEdit" class="side-box">
+<dl>
+<dt class="sidetitle">权威合作编辑</dt>
+<dd class="side-auth-content">
+<div class="side-auth-img">
+<a href="http://www.cast.org.cn/n35081/" target="_blank" class="nslog:7075" id="authOrgRightEditPic">
+<img style="display: none" onload="this.style.width = '50px';this.style.display='';" src="http://baike.baidu.com/cms/rc/QQ%E5%9B%BE%E7%89%8720141121003618.jpg" alt="权威编辑" title="权威编辑"/>
+</a>
+</div>
+<div class="side-auth-info">
+<p class="auth-info-name">
+<a href="http://www.cast.org.cn/n35081/" nslog-type="7075" target="_blank" id="authOrgRightEdit">“科普中国”百科科学词条编写与应用工作项目</a>
+</p>
+<span id="authDetail">
+“科普中国”是为我国科普信息化建设塑造的全...
+</span>
+</div>
+<div class="clear"></div>
+</dd>
+<dd class="authVersion">
+<span style="">
+<a class="whatIs" align="absmiddle" href="javascript:void(0);"></a><a href="/hezuo/qwbj.html" target="_blank" nslog-type="36" class="link-toggle" id="whatIsAuthEdit">什么是权威编辑</a>
+</span>
+<span class="divisionLine"></span>
+<a href="/history/73417030" class="nslog:37" target="_blank" id="authEditVersion">查看编辑版本</a>
+</dd>
+</dl>
+</div>
+<div id="authResource" class="side-box">
+<dl>
+<dt class="sidetitle">资源提供</dt>
+<dd class="side-auth-content">
+<div class="side-auth-img">
+<a href="http://www.cie-info.org.cn/" target="_blank" nslog-type="7096">
+<img style="display: none" onload="this.style.width = '50px';this.style.display='';" src="http://baike.bdimg.com/cms/static/cie-logo.jpg" alt="资源合作" title="资源合作"/>
+</a>
+</div>
+<div class="side-auth-info">
+<div class="auth-info-name">
+<a href="http://www.cie-info.org.cn/" class="nslog:7096" target="_blank">中国电子学会</a>
+</div>
+<p>中国电子学会（Chinese Instit...</p>
+<p>提供资源类型：<span style="color: #555555;">内容</span></p>
+</div>
+</dd>
+<dd class="authVersion">
+<span>
+<a class="whatIs" align="absmiddle" href="javascript:void(0);"></a>
+<a href="/hezuo/zyhz.html" target="_blank" nslog-type="3024" class="link-toggle">什么是资源合作</a>
+</span>
+</dd>
+</dl>
+</div>
+</div><dl class="side-box lemma-statistics">
+<dt class="title">词条统计</dt>
+<dd class="description">
+<ul>
+<li>浏览次数：<span id="j-lemmaStatistics-pv"></span>次</li>
+<li>编辑次数：281次<a href="/historylist/rss/24470" class="nslog:1021" target="_blank">历史版本</a></li>
+<li>最近更新：<span class="j-modified-time" style="display:none">2015-09-16</span></li>
+<li>创建者：<a class="show-userCard" data-uid="11416511" title="查看此用户资料" target="_blank" href="http://www.baidu.com/p/workstar" nslog-type="1022">workstar</a></li>
+</ul>
+</dd>
+</dl>
+<div class="side-catalog" style="visibility:hidden">
+<div class="side-bar">
+<em class="circle start"></em>
+<em class="circle end"></em>
+</div>
+<div class="catalog-scroller">
+<dl class="catalog-list">
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">1</span>
+<a href="#1" class="title-link" nslog-type="1026">本质</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">2</span>
+<a href="#2" class="title-link" nslog-type="1026">版本</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">3</span>
+<a href="#3" class="title-link" nslog-type="1026">特点</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">4</span>
+<a href="#4" class="title-link" nslog-type="1026">起源</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">5</span>
+<a href="#5" class="title-link" nslog-type="1026">历史</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">6</span>
+<a href="#6" class="title-link" nslog-type="1026">发展</a>
+</span>
+</dt>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">6.1</span>
+<a href="#6_1" class="title-link" nslog-type="1026">总体</a>
+</span>
+</dd>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">6.2</span>
+<a href="#6_2" class="title-link" nslog-type="1026">分支</a>
+</span>
+</dd>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">7</span>
+<a href="#7" class="title-link" nslog-type="1026">模块</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">8</span>
+<a href="#8" class="title-link" nslog-type="1026">用途</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">9</span>
+<a href="#9" class="title-link" nslog-type="1026">步骤</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">10</span>
+<a href="#10" class="title-link" nslog-type="1026">阅读器</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">11</span>
+<a href="#11" class="title-link" nslog-type="1026">文件</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">12</span>
+<a href="#12" class="title-link" nslog-type="1026">优点</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">13</span>
+<a href="#13" class="title-link" nslog-type="1026">营销</a>
+</span>
+</dt>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">13.1</span>
+<a href="#13_1" class="title-link" nslog-type="1026">营销优点</a>
+</span>
+</dd>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">13.2</span>
+<a href="#13_2" class="title-link" nslog-type="1026">营销缺点</a>
+</span>
+</dd>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">14</span>
+<a href="#14" class="title-link" nslog-type="1026">赢利模式</a>
+</span>
+</dt>
+<dt  class="catalog-title level1">
+<em class="pointer"></em>
+<span class="text">
+<span class="title-index">15</span>
+<a href="#15" class="title-link" nslog-type="1026">语法</a>
+</span>
+</dt>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">15.1</span>
+<a href="#15_1" class="title-link" nslog-type="1026">如何工作</a>
+</span>
+</dd>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">15.2</span>
+<a href="#15_2" class="title-link" nslog-type="1026">实例</a>
+</span>
+</dd>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">15.3</span>
+<a href="#15_3" class="title-link" nslog-type="1026">注释</a>
+</span>
+</dd>
+<dd class="catalog-title level2">
+<span class="text">
+<span class="title-index">15.4</span>
+<a href="#15_4" class="title-link" nslog-type="1026">使用XML编写</a>
+</span>
+</dd>
+<a class="arrow" href="javascript:void(0);"></a>
+</dl>
+</div>
+<div class="right-wrap">
+<a class="go-up disable" href="javascript:void(0);"></a>
+<a class="go-down" href="javascript:void(0);"></a>
+</div>
+<div class="bottom-wrap">
+<a class="toggle-button" href="javascript:void(0);"></a>
+<a class="gotop-button" href="javascript:void(0);"></a>
+</div>
+</div>
+<div class="unionAd_fromPs side-box" id="unionAd_fromPs">
+<script type="BAIDU_HH">
+    {
+        type : 'pageembed',
+        di   : 'u2140330',
+        rsi0 : 270,
+        rsi1 : 175
+    }
+    </script>
+</div>
+<div class="fengchao side-box" nslog="area" nslog-type="10000902">
+</div>
+<div class="unionAd side-box">
+<p>推广链接</p>
+<div class="union-content"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="after-content">
+<div class="bottom-promotion" id="bottom-promotion">
+<div id="BOTTOM_PRO_AD"></div>
+</div>
+</div>
+</div>
+
+<div class="wgt-footer-main">
+<div class="content">
+<dl class="fresh">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-fresh"></em>新手上路</dt>
+<dd>
+<div><a target="_blank" href="/usercenter/tasks#guide">成长任务</a></div>
+<div><a target="_blank" href="/help#main01">编辑入门</a></div>
+<div><a target="_blank" href="/help#main06">编辑规则</a></div>
+<div><a target="_blank" href="/help#main05">百科术语</a></div>
+</dd>
+</dl>
+<dl class="question">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-question"></em>我有疑问</dt>
+<dd>
+<div><a target="_blank" href="/user/question">常见问题</a></div>
+<div><a target="_blank" href="http://zhidao.baidu.com/new?ie=GBK">我要提问</a></div>
+<div><a target="_blank" href="http://tieba.baidu.com/f?ie=utf-8&fr=bks0000&kw=%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">参加讨论</a></div>
+<div><a target="_blank" href="/feedback">意见反馈</a></div>
+</dd>
+</dl>
+<dl class="suggestion">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-suggestion"></em>投诉建议</dt>
+<dd>
+<div><a target="_blank" href="http://tousu.baidu.com/baike#1">举报不良信息</a></div>
+<div><a target="_blank" href="http://tousu.baidu.com/baike#2">未通过词条申诉</a></div>
+<div><a target="_blank" href="http://tousu.baidu.com/baike#4">投诉侵权信息</a></div>
+<div><a target="_blank" href="http://tousu.baidu.com/baike#3">封禁查询与解封</a></div>
+</dd>
+</dl>
+</div>
+<div class="copyright">©2015Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;|&nbsp;<a href="http://help.baidu.com/question?prod_en=baike&class=159&id=1047" target="_blank">百科协议</a>&nbsp;|&nbsp;<a href="/operation/cooperation" target="_blank">百度百科合作平台</a></div>
+</div>
+
+<div class="lemmaWgt-searchHeader">
+<div class="layout">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="form">
+<form id="searchForm" action="/search/word" method="GET" target="_self">
+<input id="query" name="word" type="text" autocomplete="off" autocorrect="off" value="rss" /><a id="search" href="javascript:;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_search"></em></a>
+</form>
+<ul id="suggestion" class="suggestion">
+<div></div>
+<li class="extra">
+<span id="close">关闭</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="tool-buttons">
+<a class="toolButtons-edit button j-edit-link" href="javascript:;" nslog-type="10010001"></a>
+<a class="toolButtons-collect button" href="javascript:;" nslog-type="10010002"></a>
+<a class="toolButtons-vote button" href="javascript:;" nslog-type="10010003"></a>
+</div>
+<div class="user-info">
+<a class="user-link unlogin" href="javascript:;" target="_blank">登录</a>
+</div>
+</div></div>
+<div class="bdsharebuttonbox side-share" data-tag="side-share">
+<span class="title">分享</span>
+<a class="bds_qzone" data-cmd="qzone" href="javascript:void(0);" nslog-type="9068"></a>
+<a class="bds_tsina" data-cmd="tsina" href="javascript:void(0);" nslog-type="9068"></a>
+<a class="bds_tqq" data-cmd="tqq" href="javascript:void(0);" nslog-type="9068"></a>
+<a class="bds_more" data-cmd="more" href="javascript:void(0);" nslog-type="9068"></a>
+</div>
+
+</body><script type="text/javascript" src="http://baike.bdimg.com/static/wiki-common/pkg/wiki-common_sync_js_0_8f81ba9.js"></script>
+<script type="text/javascript">require.resourceMap({"res":{"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/lemmaInsert.js":{"url":"http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/lemmaInsert_8f95785.js","pkg":"wiki-lemma:p3"},"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/tangram.js":{"url":"http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/tangram_67429c3.js","pkg":"wiki-lemma:p3"},"wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip.js":{"url":"http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip_98e1259.js","deps":["wiki-common:widget/lib/jquery/jquery.js"]},"wiki-lemma:widget/lemma_content/configModule/zhixin/zhixin.js":{"url":"http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/zhixin/zhixin_77497bc.js","deps":["wiki-common:widget/lib/jquery/jquery.js","wiki-common:widget/component/nslog/nslog.js"]}},"pkg":{"wiki-lemma:p3":{"url":"http://baike.bdimg.com/static/wiki-lemma/pkg/wiki-lemma-module-lemmaRelation_36b8718.js"}}});</script><script type="text/javascript" src="http://baike.bdimg.com/static/wiki-common/pkg/wiki-common_sync_js_1_16bd5e2.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-common/pkg/wiki-common_sync_js_3_1dca152.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-lemma/pkg/wiki-lemma_efcab16.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-lemma/lemmaCode/script/XRegExp_3e3f85b.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-lemma/lemmaCode/script/shCore_e2d4316.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-lemma/lemmaCode/script/shBrushXml_ce712fe.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/zhixin/zhixin_77497bc.js"></script>
+<script type="text/javascript" src="http://baike.bdimg.com/static/wiki-common/widget/component/unameFiller/unameFiller_0bbd803.js"></script>
+<script type="text/javascript">!function(){  var $ = require('wiki-common:widget/lib/jquery/jquery.js'),
+    userbar = require('wiki-common:widget/component/userbar/userbar.js');
+    
+  $(function() {
+    userbar.buildUserbar($('.wgt-userbar'), null);
+  });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js'),
+      initSearchbar = require('wiki-common:widget/component/searchbar/searchbar.js');  
+    initSearchbar($('.wgt-searchbar-main'));
+  }();
+!function(){  var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+
+  var timer = '';
+
+  $('.wgt-navbar').on('mouseenter', 'dl', function() {
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      $('.wgt-navbar').addClass('wgt-navbar-hover');
+    }, 300);
+  }).on('mouseleave', function() {
+    clearTimeout(timer);
+    $('.wgt-navbar').removeClass('wgt-navbar-hover');
+  }).on('click', 'a', function() {
+    clearTimeout(timer);
+    $('.wgt-navbar').removeClass('wgt-navbar-hover');
+  });
+}();
+!function(){        require('wiki-lemma:widget/lemma_content/mainContent/polysemantList/polysemantList.js')();
+    }();
+!function(){        var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+        var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+        // 展现策略
+        rightCheck.editView('24470', function(res) {
+            if (!res.errno) {
+                if (res.data.divide) {
+                    $('.top-tool .split-icon').css('display', 'block');
+                }
+            }
+        });
+    }();
+!function(){	require.async("wiki-lemma:widget/basicElement/collect/collect.js",function(collect){
+		collect({
+            newLemmaId:"24470",
+			lemmaId:"1644",
+			subLemmaId:"7031575"
+		});
+	});
+}();
+!function(){	require.async("wiki-lemma:widget/basicElement/vote/vote.js",function(vote){
+		vote({
+			lemmaId:"1644",
+            subLemmaId:"7031575"
+		});
+	});
+}();
+!function(){	!!window.BKShare && window.BKShare.regist({
+		"tag" : "top-share",
+		"bdSize" : 32,
+		"bdMini":1
+	});
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+            } else {
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+            }
+        } else {
+            if ('') {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+            } else {
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+            }
+        }
+    });
+}();
+!function(){	require.async("wiki-lemma:widget/lemma_content/mainContent/basicInfo/basicInfo.js",function(init){
+		init();
+	});
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+    // 展现策略
+    rightCheck.editView('24470', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){        SyntaxHighlighter.all();
+    }();
+!function(){	require.async(["wiki-common:widget/lib/jquery/jquery.js", "wiki-lemma:widget/lemma_content/mainContent/albumList/albumList.js", "wiki-common:widget/component/nslog/nslog.js"],function($,AlbumList,nslog){
+		var list=new AlbumList({
+			lemmaId:"1644",
+			subLemmaId:"7031575",
+			data:{"346377":{"coverpic":"3bc6f7507f47c63a1138c270","desc":"RSS\u5c55\u793a","total":13,"coverurl":"http:\/\/c.hiphotos.baidu.com\/baike\/s%3D235\/sign=e36c4c6e6e061d957946303b4ef50a5d\/f7246b600c338744a1951a2a510fd9f9d72aa017.jpg"},"346378":{"coverpic":"566d0fdf96e75f4c632798c8","desc":"\u56fd\u5185\u5916RSS\u9605\u8bfb\u5668","total":5,"coverurl":"http:\/\/h.hiphotos.baidu.com\/baike\/s%3D235\/sign=302f97f8d933c895a27e9f78e4137397\/8ad4b31c8701a18bb8ddf2209e2f07082838feaf.jpg"},"346379":{"coverpic":"d57e9994435aa841d31b705d","desc":"\u624b\u673aRSS\u8ba2\u9605","total":4,"coverurl":"http:\/\/h.hiphotos.baidu.com\/baike\/s%3D235\/sign=1a627a0ef3deb48fff69a6ddc51e3aef\/d0c8a786c9177f3e80911c6270cf3bc79f3d563c.jpg"},"0":{"coverpic":"500fd9f9d72a60591a55c55d2834349b033bba2b","desc":"\u8bcd\u6761\u56fe\u7247","total":3,"coverurl":"http:\/\/h.hiphotos.baidu.com\/baike\/s%3D235\/sign=448c1ba662d9f2d3241123ec9ced8a53\/500fd9f9d72a60591a55c55d2834349b033bba2b.jpg"}}
+		});
+		!!window.ScriptLazyLoad && window.ScriptLazyLoad.regist({
+			dom:$('.album-list'),
+			loadFunc:function(){
+				list.load();
+				nslog(1258);
+			},
+			distance:500
+		});
+	});
+}();
+!function(){        require.async(['wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/lemmaInsert.js'], function(init) {
+            init();
+        });
+    }();
+!function(){		require.async(["wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReference.js", "wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip.js"],function(Reference,ReferenceTip){
+			new Reference({
+				subLemmaId:"7031575"
+			});
+			new ReferenceTip({
+				subLemmaId:"7031575"
+			});
+		});
+	}();
+!function(){        require.async("wiki-common:widget/lib/jquery/jquery.js",function($){
+            function openTagToggle(node) {
+                if ($(node).hasClass("collapse")) {
+                    $(node).removeClass("collapse");
+                    $("#open-tag").css("height", '22px');
+                } else {
+                    $(node).addClass("collapse");
+                    $("#open-tag").css("height", $("#open-tag-item").css("height"));
+                }
+            }
+            if (parseInt($("#open-tag-item").css("height")) <= 30) {
+                $('#open-tag-collapse').hide();
+            }
+            $("#open-tag-collapse").on("click", function () {
+                openTagToggle($("#open-tag")[0]);
+            });
+        });
+    }();
+!function(){            require.async("wiki-lemma:widget/lemma_content/configModule/zhixin/zhixin.js",function(init){
+                init();
+            });
+        }();
+!function(){    require.async("wiki-lemma:widget/lemma_content/mainContent/lemmaStatistics/lemmaStatistics.js",function(init){
+        init({
+            newLemmaIdEnc:"f483ebd1487f66d63610c6c4"
+        });
+    });
+}();
+!function(){	require.async("wiki-lemma:widget/lemma_content/mainContent/sideCatalog/sideCatalog.js",function(SideCatalog){
+		new SideCatalog();
+	});
+}();
+!function(){        require.async(['wiki-lemma:widget/promotion/unionAdFromPs/unionAdFromPs.js'], function (init) {
+            init();
+        });
+    }();
+!function(){    require.async(["wiki-lemma:widget/promotion/fengchao/fengchao.js", "wiki-lemma:widget/promotion/unionAd/unionAd.js"], function (init, unionAd) {
+        init({
+            newLemmaId: "24470",
+            lemmaTitle: "rss",
+            encodeLemmaTitle: "rss"
+        }, {
+            errFn: unionAd,
+            dom: $('.unionAd')
+        });
+    });
+}();
+!function(){        require.async('wiki-lemma:widget/promotion/bottomAd/bottomAd.js', function (init) {
+            init('BOTTOM_PRO_AD');
+        });
+    }();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var Dialog = require("wiki-common:widget/ui/dialog/dialog.js");
+    var userLogin = require('wiki-common:widget/component/userLogin/userLogin.js');
+    var unameFiller = require('wiki-common:widget/component/unameFiller/unameFiller.js');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck.js');
+
+
+    var editUrl = '/edit/' + encodeURIComponent('rss') + '/' + '24470';
+
+    function gotoEdit(url, isMidNight) {
+        if (isMidNight) {
+            Dialog.alert({
+                title: '编辑提示',
+                subMsg: '晚23:00至次日8:00，因审核系统例行维护，您提交的版本可能需要较长时间才能通过，望您谅解。',
+                onConfirm: function() {
+                    window.location.href = url;
+                }
+            });
+        } else {
+            window.location.href = url;
+        }    
+    }
+
+    $(document.body).on('click', '.j-edit-link', function() {
+        var dl = $(this).attr('data-edit-dl');
+        if (dl) {
+            var url = editUrl + '?dl=' + dl;
+        } else {
+            var url = editUrl;
+        }
+
+        rightCheck.preeditCheck('24470', 'rss', '', '73417030', function(res) {
+            if (res.errno) {
+                switch (res.errno) {
+                    case 100001:
+                        userLogin.showLoginPop();
+                        break;
+                    case 100006: 
+                        unameFiller.show();
+                        break;
+                    case 100005:
+                        alert('对不起，您目前被封禁');
+                        break;
+                    case 110001:
+                        alert('对不起，该词条被锁定');
+                        break;
+                    case 110007:
+                        alert('对不起，消歧页无法编辑');
+                        break;
+                    case 110005:
+                        Dialog.alert({
+                            title: '编辑提示',
+                            mainMsg: '对不起，您暂时没有权限编辑该词条。',
+                            subMsg: '<p>您好，该词条内容已较丰富，现仅对百科等级达到<b>四级</b>且通过率达到<b>85%</b>的科友开放编辑。</p><p>当您通过努力达到以上要求，就可以参与编辑该词条了。</p><p><img src="http://img.baidu.com/img/baike/usercenter/growuptask/star.gif" class="star" />参加<a target="_blank" href="/usercenter#guide">成长任务</a>，更快掌握百科编辑技巧，加速升级！</p>'
+                        });
+                        break;
+                    case 110008:
+                        Dialog.alert({
+                            title: '编辑提示',
+                            mainMsg: '对不起，您暂时没有权限编辑该词条。',
+                            subMsg: '<p>您好，该词条内容已较丰富，现仅对百科等级达到<b>六级</b>且通过率达到<b>85%</b>的科友开放编辑。</p><p>当您通过努力达到以上要求，就可以参与编辑该词条了。</p><p><img src="http://img.baidu.com/img/baike/usercenter/growuptask/star.gif" class="star" />参加<a target="_blank" href="/usercenter#guide">成长任务</a>，更快掌握百科编辑技巧，加速升级！</p>'
+                        });
+                        break;
+                    case 470001:
+                        alert('系统错误，请刷新重试');
+                        break;
+                }
+            } else {
+                // 兼容代码，后续接口调整需下掉 commented by lijijun 2015-09-22
+                // start
+                if (!res.data.right.edit) {
+                    Dialog.alert({
+                        title: '编辑提示',
+                        mainMsg: '对不起，您暂时没有权限编辑该词条。',
+                        subMsg: '<p>您好，该词条内容已较丰富，现仅对百科等级达到<b>四级</b>且通过率达到<b>85%</b>的科友开放编辑。</p><p>当您通过努力达到以上要求，就可以参与编辑该词条了。</p><p><img src="http://img.baidu.com/img/baike/usercenter/growuptask/star.gif" class="star" />参加<a target="_blank" href="/usercenter#guide">成长任务</a>，更快掌握百科编辑技巧，加速升级！</p>'
+                    });
+                    return;
+                }
+                // end
+
+                if (!res.data.right.noAudit) {
+                    Dialog.alert({
+                        title: '编辑提示',
+                        subMsg: '很抱歉，该词条有其他用户编辑的版本正在提交，您暂时无法编辑。<br/>百科建议您晚些时候再编辑该词条，或者尝试编辑其他的词条。'
+                    });
+                    return;
+                }
+
+                gotoEdit(url, res.data.notice.isMidNight);
+            }
+        });
+    });
+}();
+!function(){    require.async("wiki-lemma:widget/tools/searchHeader/toolButtons/toolButtons.js",function(init){
+        init({
+            newLemmaId:"24470",
+            lemmaId:"1644",
+            subLemmaId:"7031575"
+        });
+    });
+}();
+!function(){    require('wiki-lemma:widget/tools/searchHeader/toolButtons/userInfo.js')();
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js'),
+      animation = require('wiki-common:widget/util/animation.js'),
+      initSearchbar = require('wiki-common:widget/component/searchbar/searchbar.js');
+
+    var isFadeIn = false,
+        isFadeOut = false;
+
+    var fadeInAni, fadeOutAni;
+
+    $(window).on('scroll', function(e) {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > 200 && !isFadeIn && $('.lemmaWgt-searchHeader').css('display') == 'none') {
+            fadeOutAni && fadeOutAni.stop();
+            fadeInAni = animation({
+                duration: 200,
+                easing: 'linear',
+                onStart: function() {
+                    isFadeOut = false;
+                    isFadeIn = true;
+                    $('.lemmaWgt-searchHeader').css('display', 'block');
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', progress)
+                },
+                onComplete: function(progress) {
+                    isFadeIn = false;
+                }
+            });
+        } else if (scrollTop <= 200 && !isFadeOut && $('.lemmaWgt-searchHeader').css('display') == 'block') {
+            fadeInAni && fadeInAni.stop();
+            fadeOutAni = animation({
+                duration: 300,
+                easing: 'linear',
+                onStart: function() {
+                    $('.lemmaWgt-searchHeader #suggestion').hide();
+                    isFadeIn = false;
+                    isFadeOut = true;
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', 1 - progress);
+                },
+                onComplete: function(progress) {
+                    isFadeOut = false;
+                    $('.lemmaWgt-searchHeader').css('display', 'none');
+                }
+            });
+        }
+    });
+
+    initSearchbar($('.lemmaWgt-searchHeader'));
+}();
+!function(){	!!window.BKShare && window.BKShare.regist({
+		"tag" : "side-share",
+		"bdSize" : 32,
+		"bdMini":1,
+		"bdPopupOffsetLeft":-72
+	});
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery.js');
+    var nslog = require("wiki-common:widget/component/nslog/nslog.js");
+
+    require.async("wiki-lemma:widget/tools/lazyLoad/lazyLoad.js", function(LazyLoad) {
+        new LazyLoad();
+    });
+
+    require.async(['wiki-common:widget/component/nslog/nslog.js', 'wiki-common:widget/lib/jquery/jquery.js'], function(nslog, $) {
+        nslog().setGlobal({
+            lemmaId: "1644",
+            newLemmaId: "24470",
+            subLemmaId: "7031575",
+            lemmaTitle: "rss"
+        });
+        nslog(9322);
+    });
+
+    var map = [1, 2, 4, 3];
+    $('.wgt-footer-main .suggestion').find('a').each(function(i) {
+        $(this).attr('href', 'http://tousu.baidu.com/baike/add?word=rss' + '&&submit_link=' + encodeURIComponent(window.location.href) + '#' + map[i]);
+    });
+
+    window.BKShare.setCommon({
+        bdText: '【rss_百度百科】简易信息聚合（也叫聚合内容）是一种RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议。RSS(Really Simple Syndication)是一种描述和同步网站内容的格式，是使用最广泛的XML应用。RSS搭建了信息迅速传播的一个技术平台，使得每个人都成为潜在的信息提供者。发布一个RSS文件后，这个RSS Feed中包.....（分享自@百度百科）',
+        bdDesc: '',
+        bdUrl: '',
+        bdPic: ''
+    });
+
+    $.getJSON('/api/wikiad/getads?lemmaId=' + 24470, function(res) {
+        if (!res.errno) {
+            if (res.data[5]) {
+                require.async(['wiki-lemma:widget/promotion/rightPreciseAd/rightPreciseAd.js'], function(rightPreciseAd) {
+                    rightPreciseAd(res.data[5]);
+                    nslog(10002201, location.href, {
+                        adId: res.data[5][0].adId,
+                        adTitle: res.data[5][0].name,
+                        adPos: 5
+                    });
+                });
+            } else if (res.data[1]) {
+                require.async(['wiki-lemma:widget/promotion/vbaike/vbaike.js'], function(vbaike) {
+                    vbaike(res.data[1]);
+                    for(var i in res.data[1]) {
+                        nslog(10002201, location.href, {
+                            adId: res.data[1][i].adId,
+                            adTitle: res.data[1][i].name,
+                            adPos: 1
+                        });
+                    }
+                });
+            }
+            if (res.data[2]) {
+                require.async(['wiki-lemma:widget/promotion/slide/slide.js'], function(slide) {
+                    slide(res.data[2]);
+                    for(var i in res.data[2]) {
+                        nslog(10002201, location.href, {
+                            adId: res.data[2][i].adId,
+                            adTitle: res.data[2][i].name,
+                            adPos: 2
+                        });
+                    }
+                });
+            }
+            if (res.data[3]) {
+                require.async(['wiki-lemma:widget/promotion/topAd/topAd.js'], function(topAd) {
+                    topAd(res.data[3]);
+                    nslog(10002201, location.href, {
+                        adId: res.data[3][0].adId,
+                        adTitle: res.data[3][0].name,
+                        adPos: 3
+                    });
+                });
+            }
+            if (res.data[4]) {
+                require.async(['wiki-lemma:widget/promotion/rightAd/rightAd.js'], function(rightAd) {
+                    rightAd(res.data[4]);
+                    nslog(10002201, location.href, {
+                        adId: res.data[4][0].adId,
+                        adTitle: res.data[4][0].name,
+                        adPos: 4
+                    });
+                });
+            }
+        }
+    });
+}();
+!function(){      require('wiki-common:widget/component/psLink/psLink.js');
+    }();</script>
+<script type="text/javascript">
+  var Hunter = window.Hunter || {};
+  Hunter.userConfig = Hunter.userConfig || [];
+  </script>
+<script type="text/javascript" src="http://img.baidu.com/hunter/baike.js?st=16702" defer></script></html><!--11243173040198060554100221-->
+<script> var _trace_page_logid = 1124317304; </script>
